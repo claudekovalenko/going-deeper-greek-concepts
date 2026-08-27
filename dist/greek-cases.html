@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Greek Cases — Mnemonics (offline)</title>
+    <meta
+      name="description"
+      content="Mnemonics and drills for the nominative and accusative uses in Going Deeper with New Testament Greek, ch. 2."
+    />
+    <meta name="theme-color" content="#12141c" />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkdyZWVrIENhc2VzIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzEyMTQxYyIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdiOGNmZiIgc3Ryb2tlLXdpZHRoPSI0NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0xNDMgNDAwIDI1NiAxMTIgMzY5IDQwMCIvPgogICAgPHBhdGggZD0iTTE4NiAzMTJoMTQwIi8+CiAgPC9nPgo8L3N2Zz4K" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkdyZWVrIENhc2VzIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzEyMTQxYyIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdiOGNmZiIgc3Ryb2tlLXdpZHRoPSI0NiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0xNDMgNDAwIDI1NiAxMTIgMzY5IDQwMCIvPgogICAgPHBhdGggZD0iTTE4NiAzMTJoMTQwIi8+CiAgPC9nPgo8L3N2Zz4K" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Greek Cases" />
+    <style>
+/* Deliberately a sibling of the seminary-homework-2026 stylesheet: same palette,
+   same card/tabbar furniture. Tapping through from one app to the other should
+   feel like moving between rooms, not between buildings. */
+
+:root {
+  --bg: #0e1016;
+  --bg-elev: #171a23;
+  --bg-elev-2: #1e222d;
+  --line: #272c39;
+  --text: #e8eaf2;
+  --muted: #9aa1b5;
+  --accent: #7b8cff;
+  --accent-soft: #2a3160;
+  --warn: #efb057;
+  --danger: #f0736a;
+  --ok: #4fbf8b;
+  --nom: #1f9d78;
+  --acc: #c8642a;
+  --radius: 14px;
+  --tabbar: 62px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f5f9;
+    --bg-elev: #ffffff;
+    --bg-elev-2: #f0f2f7;
+    --line: #e0e3ec;
+    --text: #191c25;
+    --muted: #6b7285;
+    --accent: #4d5fe0;
+    --accent-soft: #e4e7ff;
+    --nom: #12775a;
+    --acc: #a24c1b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(var(--tabbar) + env(safe-area-inset-bottom));
+}
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  padding: calc(env(safe-area-inset-top) + 10px) 16px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brand strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* The countdown to the day you said you wanted this learned by. */
+.brand-right {
+  text-align: right;
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.brand-right strong {
+  display: block;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.brand-right.is-due strong {
+  color: var(--warn);
+}
+
+/* ---------- layout ---------- */
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card h3 {
+  margin: 14px 0 8px;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 7px;
+  vertical-align: baseline;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 9px;
+  padding: 9px 13px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.btn.wide {
+  width: 100%;
+}
+
+.btn.good {
+  border-color: color-mix(in srgb, var(--ok) 55%, var(--line));
+  color: var(--ok);
+}
+
+.btn.bad {
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--line));
+  color: var(--danger);
+}
+
+.btnrow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btnrow.split > * {
+  flex: 1 1 0;
+}
+
+/* ---------- the map ---------- */
+
+.hero {
+  background: linear-gradient(160deg, var(--bg-elev) 0%, var(--bg-elev-2) 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.hero-line {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.hero-mnemonic {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 6px 0 4px;
+  letter-spacing: 0.2px;
+}
+
+.hero-sub {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.acro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.acro-item {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 9px 10px;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.acro-letter {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.acro-word {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.set-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.set-head h2 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.set-sub {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin: 0 0 10px;
+}
+
+.bigidea {
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  margin: 10px 0 0;
+}
+
+.mnemonic-line {
+  font-size: 17px;
+  font-weight: 650;
+  margin: 2px 0 6px;
+}
+
+.mnemonic-why {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ---------- cards (Learn) ---------- */
+
+.concept {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elev);
+  overflow: hidden;
+}
+
+.concept + .concept {
+  margin-top: 8px;
+}
+
+.concept > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 11px 13px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.concept > summary::-webkit-details-marker {
+  display: none;
+}
+
+.concept-name {
+  font-weight: 620;
+  flex: 1;
+}
+
+.concept-hook {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.concept-body {
+  padding: 0 13px 13px;
+  border-top: 1px solid var(--line);
+}
+
+.concept-body > * {
+  margin-top: 11px;
+}
+
+.label {
+  display: block;
+  font-size: 10.5px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.hook {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-elev-2));
+  border-left: 3px solid var(--accent);
+  border-radius: 0 9px 9px 0;
+  padding: 9px 11px;
+}
+
+.hook-line {
+  font-size: 15.5px;
+  font-weight: 650;
+}
+
+.hook-why {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.spot {
+  background: var(--bg-elev-2);
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 13.5px;
+}
+
+.watch {
+  border: 1px dashed color-mix(in srgb, var(--warn) 50%, var(--line));
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--warn) 75%, var(--text));
+}
+
+.ex {
+  border-top: 1px solid var(--line);
+  padding-top: 9px;
+}
+
+.ex + .ex {
+  margin-top: 9px;
+}
+
+.ex-ref {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.greek {
+  font-family: 'Gentium Plus', 'SBL Greek', 'Palatino Linotype', Palatino, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+
+.ex-en {
+  font-size: 13.5px;
+}
+
+.ex-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+mark {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* ---------- filters ---------- */
+
+.chips {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 11px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.chip.on {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  color: var(--accent);
+}
+
+/* ---------- drill ---------- */
+
+.flash {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 22px 16px;
+}
+
+.flash-prompt-label {
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.flash-prompt {
+  font-size: 21px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.flash-prompt.is-small {
+  font-size: 16.5px;
+  font-weight: 500;
+}
+
+.flash-answer {
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+  text-align: left;
+}
+
+.flash-answer .name {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.flash-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.box-pips {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+}
+
+.pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--line);
+}
+
+.pip.on {
+  background: var(--ok);
+}
+
+/* ---------- spot it ---------- */
+
+.q-prompt {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.option {
+  text-align: left;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.option.correct {
+  border-color: var(--ok);
+  background: color-mix(in srgb, var(--ok) 16%, var(--bg-elev-2));
+}
+
+.option.wrong {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 14%, var(--bg-elev-2));
+}
+
+.option:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.option.correct:disabled,
+.option.wrong:disabled {
+  opacity: 1;
+}
+
+.verdict {
+  margin-top: 12px;
+  font-size: 13.5px;
+}
+
+.verdict .why {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.score {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- progress ---------- */
+
+.bar {
+  height: 7px;
+  background: var(--bg-elev-2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 4px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--ok);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.stats > div {
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stat {
+  display: block;
+  font-size: 21px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.mastery {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.mastery:last-child {
+  border-bottom: 0;
+}
+
+.mastery-name {
+  flex: 1;
+  font-size: 13.5px;
+}
+
+/* ---------- confusion pairs ---------- */
+
+.confusion {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 11px 12px;
+}
+
+.confusion + .confusion {
+  margin-top: 8px;
+}
+
+.confusion-q {
+  font-weight: 620;
+  font-size: 14px;
+}
+
+.confusion-test {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.confusion-test b {
+  color: var(--accent);
+}
+
+.confusion-ex {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+/* ---------- back link to the homework app ---------- */
+
+.backlink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.backlink svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- tab bar ---------- */
+
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  backdrop-filter: blur(14px);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tab {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font: inherit;
+  font-size: 10.5px;
+  padding: 8px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.tab svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tab.on {
+  color: var(--accent);
+}
+
+</style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">Α</span>
+        <span>
+          <strong>Greek Cases</strong>
+          <small>Going Deeper, ch. 2</small>
+        </span>
+      </div>
+      <div class="brand-right" id="target"></div>
+    </header>
+
+    <main id="app" class="app">
+      <section class="card"><p class="note">Loading the cards…</p></section>
+    </main>
+
+    <nav class="tabbar">
+      <button class="tab on" data-view="map">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" /><path d="M9 4v14M15 6v14" /></svg>
+        Map
+      </button>
+      <button class="tab" data-view="learn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z" /><path d="M20 5h-7a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h7z" /></svg>
+        Learn
+      </button>
+      <button class="tab" data-view="drill">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="12" rx="2" /><path d="M7 18v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1" /></svg>
+        Drill
+      </button>
+      <button class="tab" data-view="spot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        Spot it
+      </button>
+      <button class="tab" data-view="progress">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-6M22 19H2" /></svg>
+        Progress
+      </button>
+    </nav>
+
+    <script type="module">
+globalThis.__CONCEPTS__ = {"book":"Going Deeper with New Testament Greek","chapter":"ch. 2 — Nominative, Vocative, Accusative","course":"Intermediate Greek (GREK 6003), Fall 2026","generated":"2026-08-27","notes":["Every card carries a mnemonic hook, a one-line definition, a 'spot it' test you can actually run on a text, and real examples.","Greek is given in the text with the key word marked by * asterisks *, so the app can highlight it without any markup engine.","confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.","extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples."],"sets":[{"id":"nominative","name":"Nominative","subtitle":"The naming case — the case that puts the crown on someone","color":"#1f9d78","bigIdea":"The nominative NAMES. Whatever wears it is being named, identified or hailed — never acted upon.","masterMnemonic":"Go to the SPA, then say AAAH.","masterMnemonicWhy":"SPA = the three major uses (Subject, Predicate nominative, Apposition). AAAH = the four other uses (Address, Appellation, Absolute, Hanging). Seven uses, two words, one silly picture: you sit down in the spa and go aaah.","groups":[{"id":"nominative-major","name":"Major uses — the SPA","mnemonic":"S-P-A","expand":"Subject · Predicate nominative · Apposition"},{"id":"nominative-other","name":"Other uses — the AAAH","mnemonic":"A-A-A-H","expand":"Address · Appellation · Absolute · Hanging"}]},{"id":"accusative","name":"Accusative","subtitle":"The case of limitation — the case that puts a fence around the verb","color":"#c8642a","bigIdea":"The accusative LIMITS. It says how far the verb's action reaches: onto whom, how far, in what way, with respect to what.","masterMnemonic":"One object with four twists, then the MMR shot.","masterMnemonicWhy":"Substantival = the direct object plus four twists on it — Echo, Two, Sub, Alias. Adverbial = the MMR shot: Measure, Manner, Respect — How far? How? How so?","groups":[{"id":"accusative-overview","name":"The idea","mnemonic":"The fence","expand":"The nominative crowns; the accusative fences."},{"id":"accusative-substantival","name":"Substantival — one object, four twists","mnemonic":"Echo · Two · Sub · Alias","expand":"Direct object, then: Cognate (Echo), Double (Two), Subject of infinitive (Sub), Apposition (Alias)"},{"id":"accusative-adverbial","name":"Adverbial — the MMR shot","mnemonic":"M-M-R","expand":"Measure (how far?) · Manner (how?) · Respect (how so?)"}]}],"cards":[{"id":"subject","set":"nominative","group":"nominative-major","name":"Subject","short":"Subject","tile":"S","oneLine":"The nominative that performs the verb — the one the sentence is about.","mnemonic":"The subject wears the crown.","mnemonicWhy":"The nominative is the naming case, and the crown sits on whoever the verb is about. If a verb has exactly one nominative near it, that nominative is wearing the crown.","spotIt":"Ask the verb \"who or what?\" — and check that the answer is nominative, not accusative.","examples":[{"ref":"John 1:15","greek":"*Ἰωάννης* μαρτυρεῖ περὶ αὐτοῦ","english":"*John* bears witness about him","note":"Ἰωάννης is nominative and does the witnessing — the plainest kind of subject there is."},{"ref":"English drill","greek":null,"english":"*Ivan* came to class.","note":"One verb, one nominative, no complications."}],"tags":["nominative","major","saturday"]},{"id":"predicate-nominative","set":"nominative","group":"nominative-major","name":"Predicate Nominative","short":"Pred. nom.","tile":"P","oneLine":"Two nominatives joined by a copulative (\"to be\") verb; the predicate nominative asserts something about the subject.","mnemonic":"The subject is the small circle; the predicate is the big one.","mnemonicWhy":"The copula looks like an equals sign, but it is not a two-way street. \"The Word was God\" puts the Word inside God — not God inside the Word. Draw the small circle inside the big one and the whole doctrine of John 1:1 sits in one picture.","spotIt":"Look for a to-be verb — εἰμί, γίνομαι, ὑπάρχω — with a nominative on both sides of it.","examples":[{"ref":"John 1:1c","greek":"καὶ *θεὸς* ἦν ὁ λόγος","english":"and the Word was *God*","note":"ὁ λόγος has the article, so it is the subject; θεός is the predicate nominative."},{"ref":"1 John 4:8","greek":"ὁ θεὸς *ἀγάπη* ἐστίν","english":"God is *love*","note":"ὁ θεός is articular and so is the subject; ἀγάπη is what is asserted about him."},{"ref":"Eph. 2:14","greek":"αὐτὸς γάρ ἐστιν *ἡ εἰρήνη* ἡμῶν","english":"for he himself is *our peace*","note":"αὐτός is a pronoun, so it takes the subject slot outright — see the pecking order."}],"watchOut":"Apposition looks similar but has no to-be verb. Verb ⇒ predicate nominative; comma only ⇒ apposition.","tags":["nominative","major","john-1-1","saturday"]},{"id":"pecking-order","set":"nominative","group":"nominative-major","name":"The Pecking Order","short":"Pecking order","type":"rule","oneLine":"When two nominatives sit around one to-be verb, this is the order that decides which one is the subject.","mnemonic":"PAP — ask Papa who is in charge.","mnemonicWhy":"Pronoun, then Article, then Proper name. Papa answers in that order every time: a pronoun wins outright; failing that, the one with the article is the subject; failing that, the proper name.","spotIt":"Work down the list and stop at the first hit. 1. Is either one a pronoun? 2. Does either one have the article? 3. Is either one a proper name?","examples":[{"ref":"John 1:1c","greek":"καὶ θεὸς ἦν *ὁ λόγος*","english":"and the Word was God","note":"No pronoun, so rung two decides: ὁ λόγος has the article and is therefore the subject. θεός is the predicate nominative — not \"a god\". In Greek a word can be perfectly definite with no article at all."},{"ref":"Eph. 2:14","greek":"*αὐτὸς* γάρ ἐστιν ἡ εἰρήνη ἡμῶν","english":"for *he himself* is our peace","note":"Rung one: αὐτός is a pronoun, so it is the subject even though ἡ εἰρήνη carries the article."}],"watchOut":"Anarthrous ≠ indefinite. \"No article\" is not an argument for \"a god\"; it is what a predicate nominative before the verb normally looks like.","tags":["nominative","major","john-1-1","saturday"]},{"id":"nominative-apposition","set":"nominative","group":"nominative-major","name":"Apposition","short":"Apposition (nom.)","tile":"A","oneLine":"Two nominatives side by side where the second renames or elaborates the first — with no verb between them.","mnemonic":"No verb, just a name tag.","mnemonicWhy":"Apposition is a sticker slapped on the first noun: \"Andrew — HELLO MY NAME IS the brother of Simon Peter.\" Diagram it with an equals sign under the first word; there is no verb to hang anything from.","spotIt":"Two nominatives, a comma's worth of pause between them, and no copula anywhere.","examples":[{"ref":"John 1:40","greek":"Ἀνδρέας *ὁ ἀδελφὸς* Σίμωνος Πέτρου","english":"Andrew, *the brother* of Simon Peter","note":"ἀδελφός is the appositive. Nothing is being asserted — he is simply being identified."},{"ref":"Rom. 1:1","greek":"Παῦλος *δοῦλος* Χριστοῦ Ἰησοῦ","english":"Paul, *a servant* of Christ Jesus","note":"δοῦλος apposits Παῦλος."},{"ref":"English drill","greek":null,"english":"Ivan, *the student*, came to class.","note":"Name tag. Compare \"Ivan is the student\" — that one is a predicate nominative, because there is a verb making a claim."}],"watchOut":"The whole difference from a predicate nominative is the to-be verb. Comma = label. \"Is\" = claim.","tags":["nominative","major","saturday"]},{"id":"nominative-address","set":"nominative","group":"nominative-other","name":"Nominative of Address","short":"Address","tile":"A","oneLine":"A nominative doing a vocative's job — calling out to someone directly.","mnemonic":"\"Hey, you!\" in a nominative coat.","mnemonicWhy":"The word is being hailed, not described. It is logically the subject of the imperative that follows, but grammatically it is not the subject of anything.","spotIt":"Try putting a comma and an exclamation mark after it. \"Husbands! — love your wives.\" If that works, it is address, not subject.","examples":[{"ref":"Matt. 9:27","greek":"ἐλέησον ἡμᾶς, *υἱὸς Δαυίδ*","english":"Have mercy on us, *Son of David*","note":"Son of David is not doing the having-mercy in a subject sense — he is being called out to. The form is nominative; the function is vocative."},{"ref":"Eph. 5:25","greek":"*οἱ ἄνδρες*, ἀγαπᾶτε τὰς γυναῖκας","english":"*Husbands*, love your wives","note":"Not a statement about husbands. A summons to them."}],"watchOut":"A subject is talked ABOUT. An address is talked TO. Same case, opposite direction.","tags":["nominative","other","saturday"]},{"id":"nominative-appellation","set":"nominative","group":"nominative-other","name":"Nominative of Appellation","short":"Appellation","tile":"A","oneLine":"A title used as a personal name, kept in the nominative even where the syntax was expecting another case.","mnemonic":"The title is on the name badge — and badges don't decline.","mnemonicWhy":"Once \"Teacher\" is what people actually call him, it stops behaving like a noun in a sentence and starts behaving like the name printed on a badge. (Second hook if you have any Spanish: appellation ≈ apellido, \"surname\".)","spotIt":"The word is a title, it is being quoted as what someone is called, and it is in the nominative when the surrounding grammar wanted an accusative.","examples":[{"ref":"John 13:13","greek":"ὑμεῖς φωνεῖτέ με *ὁ διδάσκαλος* καὶ *ὁ κύριος*","english":"You call me *Teacher* and *Lord*","note":"φωνεῖτέ με wants an accusative complement, but the titles stay nominative — they are functioning as the name itself."}],"watchOut":"This is the simplest of the four 'other' uses. If a nominative is plainly a title-as-name, stop looking for anything cleverer.","tags":["nominative","other","saturday"]},{"id":"nominative-absolute","set":"nominative","group":"nominative-other","name":"Nominative Absolute","short":"Absolute","tile":"A","oneLine":"A nominative with no grammatical connection to any sentence — usually a heading, a title or a greeting.","mnemonic":"Absolute = the headline.","mnemonicWhy":"A headline floats above the page attached to nothing. No verb, no clause, no rope — it is just announced.","spotIt":"Introductory material — a book title, a salutation, a list — with no verb anywhere to attach it to.","examples":[{"ref":"Mark 1:1","greek":"*Ἀρχὴ* τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ","english":"*The beginning* of the gospel of Jesus Christ","note":"ἀρχή is nominative and stands entirely alone; every word hanging off it is genitive."},{"ref":"1 Tim. 1:2","greek":"*χάρις ἔλεος εἰρήνη* ἀπὸ θεοῦ πατρός","english":"*Grace, mercy, peace* from God the Father","note":"All nominative, all introductory, all grammatically independent."}],"watchOut":"Absolute has NO rope. If a pronoun later in the sentence picks the word back up, it is hanging, not absolute.","tags":["nominative","other","saturday"]},{"id":"hanging-nominative","set":"nominative","group":"nominative-other","name":"Hanging Nominative","short":"Hanging","tile":"H","oneLine":"Grammatically independent like the absolute, but logically the subject — picked up later by a pronoun.","mnemonic":"It hangs by a pronoun.","mnemonicWhy":"The pronoun downstream is the rope. Cut the pronoun and the word drops — which is exactly the difference from an absolute, which was never tied to anything.","spotIt":"Find the stray nominative, then look ahead: is there a pronoun in the next clause standing in its place?","examples":[{"ref":"Matt. 13:38","greek":"τὸ δὲ καλὸν *σπέρμα*, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας","english":"and the good *seed* — these are the sons of the kingdom","note":"σπέρμα is grammatically loose, but οὗτοι (\"these\") is doing its job in the main clause. That pronoun is the rope."}],"watchOut":"Absolute = no connection at all. Hanging = a logical connection with no grammatical one.","tags":["nominative","other","saturday"]},{"id":"accusative-idea","set":"accusative","group":"accusative-overview","name":"The Case of Limitation","short":"The idea","type":"rule","oneLine":"The accusative limits or specifies the action of the verb.","mnemonic":"The nominative crowns; the accusative fences.","mnemonicWhy":"Every accusative use is a fence post: it marks how far the verb's action goes — onto whom (direct object), how far (measure), in what way (manner), with respect to what (respect).","spotIt":"Two families to sort into: does it behave like a noun (substantival) or like an adverb (adverbial)?","examples":[{"ref":"The whole chapter in one line","greek":null,"english":"One object with four twists — Echo, Two, Sub, Alias — then the MMR shot: Measure, Manner, Respect.","note":"Substantival first, adverbial second."}],"tags":["accusative","saturday"]},{"id":"direct-object","set":"accusative","group":"accusative-substantival","name":"Direct Object","short":"Direct object","tile":"DO","oneLine":"The thing the verb's action lands on — far and away the most common accusative.","mnemonic":"The verb throws; the object catches.","mnemonicWhy":"Everything else in the substantival family is a twist on this one throw, so fix the plain case first.","spotIt":"Transitive verb, then ask \"whom?\" or \"what?\"","examples":[{"ref":"English drill","greek":null,"english":"I hit *Ivan*.","note":"Ivan catches the hitting."}],"tags":["accusative","substantival","saturday"]},{"id":"cognate-accusative","set":"accusative","group":"accusative-substantival","name":"Cognate Accusative","short":"Cognate","tile":"Echo","oneLine":"A direct object that shares the verb's lexical root, or its concept.","mnemonic":"Echo — the object echoes the verb.","mnemonicWhy":"Twist one of four. Say the verb and hear it come back: sing a song, fight a fight, shepherd a flock.","spotIt":"Say the verb and the object out loud. If it sounds redundant in English, it is cognate.","examples":[{"ref":"1 Tim. 1:18","greek":"στρατεύῃ … *τὴν καλὴν στρατείαν*","english":"fight *the good fight*","note":"Same root twice — the tightest kind of echo."},{"ref":"English drill","greek":null,"english":"I shepherd *a flock*.","note":"Not the same root, but the same concept — a conceptual echo still counts."},{"ref":"English drill","greek":null,"english":"I sing *a song*.","note":"The textbook case."}],"watchOut":"It is still a direct object. Cognate names the flavour, not a different slot.","tags":["accusative","substantival","saturday"]},{"id":"double-accusative","set":"accusative","group":"accusative-substantival","name":"Double Accusative","short":"Double","tile":"Two","oneLine":"Two accusatives in one clause — either person + thing, or object + complement.","mnemonic":"Two — \"ask someone something\" vs \"call someone something\".","mnemonicWhy":"Twist two of four. Both types have two accusatives; the two English frames keep them apart. You ASK a person FOR a thing. You CALL an object A NAME.","spotIt":"Try to slip \"as\" or \"to be\" between the two accusatives. If it fits, it is object + complement. If it does not, it is personal + impersonal.","examples":[{"ref":"Matt. 7:9","greek":"ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*","english":"if his son asks *him* for *bread*","note":"him (personal) + bread (impersonal). You cannot say \"asks him AS bread\"."},{"ref":"Mark 10:45","greek":"δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν","english":"to give his *life* as a *ransom* for many","note":"life is the direct object; λύτρον is the complement. \"As\" slips right in — object + complement."}],"tags":["accusative","substantival","saturday"]},{"id":"accusative-subject-infinitive","set":"accusative","group":"accusative-substantival","name":"Accusative Subject of the Infinitive","short":"Subj. of inf.","tile":"Sub","oneLine":"An infinitive takes its subject in the accusative, where a finite verb would take a nominative.","mnemonic":"Sub — finite verbs pay in nominative, infinitives pay in accusative.","mnemonicWhy":"Twist three of four. The odd one out: this accusative is doing the action, not receiving it. Infinitives simply pay their staff in a different currency.","spotIt":"Find the infinitive, then find the accusative that is performing it rather than catching it.","examples":[{"ref":"Pattern","greek":null,"english":"…for *him* to go away","note":"\"Him\" is doing the going. In Greek that word is accusative, and it is the infinitive's subject."}],"watchOut":"The only accusative that translates as the doer. If \"the one doing it\" fits, you are here.","tags":["accusative","substantival","saturday"]},{"id":"accusative-apposition","set":"accusative","group":"accusative-substantival","name":"Accusative of Apposition","short":"Apposition (acc.)","tile":"Alias","oneLine":"The same move as nominative apposition, in accusative dress: a second accusative renaming the first.","mnemonic":"Alias — the name tag, now on the object.","mnemonicWhy":"Twist four of four. If you have the nominative name tag, you already have this one; only the case changed.","spotIt":"Two accusatives, no verb between them, and the second answers \"which one, exactly?\"","examples":[{"ref":"Acts 6:5","greek":"ἐξελέξαντο Στέφανον, *ἄνδρα* πλήρη πίστεως","english":"they chose Stephen, *a man* full of faith","note":"Στέφανον is the direct object; ἄνδρα apposits it."},{"ref":"Matt. 2:6","greek":"ποιμανεῖ τὸν λαόν μου *τὸν Ἰσραήλ*","english":"he will shepherd my people, *Israel*","note":"Ἰσραήλ apposits λαόν."}],"watchOut":"Do not confuse with a double accusative. Apposition renames; a complement predicates something of the object.","tags":["accusative","substantival","saturday"]},{"id":"accusative-measure","set":"accusative","group":"accusative-adverbial","name":"Accusative of Measure","short":"Measure","tile":"M","oneLine":"Extent or degree — how far, how long, how much.","mnemonic":"MMR, shot one: How far?","mnemonicWhy":"The three adverbial accusatives come as one MMR jab: Measure, Manner, Respect. Measure is the one with a tape measure on it.","spotIt":"Ask \"how far / how long?\" and see whether the accusative answers.","examples":[{"ref":"Mark 14:35","greek":"προελθὼν *μικρὸν*","english":"going *a little* farther","note":"μικρόν measures the distance, not the object of any verb."}],"tags":["accusative","adverbial","saturday"]},{"id":"accusative-manner","set":"accusative","group":"accusative-adverbial","name":"Accusative of Manner","short":"Manner","tile":"M","oneLine":"How the action is carried out.","mnemonic":"MMR, shot two: How?","mnemonicWhy":"Manner turns the noun into an adverb: δωρεάν stops being \"a gift\" and becomes \"gift-wise\", i.e. freely.","spotIt":"Ask \"how?\" — and check that an -ly adverb is the natural English.","examples":[{"ref":"Rom. 3:24","greek":"δικαιούμενοι *δωρεὰν* τῇ αὐτοῦ χάριτι","english":"being justified *freely* by his grace","note":"δωρεάν = freely, as a gift. It describes the manner of the justifying."}],"tags":["accusative","adverbial","saturday"]},{"id":"accusative-respect","set":"accusative","group":"accusative-adverbial","name":"Accusative of Respect","short":"Respect","tile":"R","oneLine":"Limits the scope of the verb — supply \"with reference to\" or \"concerning\" when you translate.","mnemonic":"MMR, shot three: How so? — slot in \"as to\".","mnemonicWhy":"The fence at its narrowest. The verb happened, but only in one respect, and this accusative names that respect.","spotIt":"Say the clause with \"with respect to\" in front of the accusative. If that rescues the sense, you have found it.","examples":[{"ref":"Acts 2:37","greek":"κατενύγησαν *τὴν καρδίαν*","english":"they were pierced *with respect to the heart*","note":"Not a physical piercing of an organ — an inner wound. \"With respect to\" is what keeps it from sounding surgical."}],"watchOut":"Easy to mistake for a direct object. If \"with respect to\" makes the sentence better rather than worse, it is respect.","tags":["accusative","adverbial","saturday"]}],"confusions":[{"id":"pn-vs-apposition","pair":["predicate-nominative","nominative-apposition"],"question":"Predicate nominative or apposition?","test":"Is there a to-be verb?","answer":"Verb ⇒ predicate nominative (a claim). No verb, just a comma ⇒ apposition (a label).","example":"\"Ivan is the student\" (claim) vs \"Ivan, the student, came to class\" (label)."},{"id":"absolute-vs-hanging","pair":["nominative-absolute","hanging-nominative"],"question":"Absolute or hanging?","test":"Does a pronoun later in the sentence pick the word back up?","answer":"No rope at all ⇒ absolute. Hangs by a pronoun ⇒ hanging.","example":"Mark 1:1 \"The beginning of the gospel…\" (headline) vs Matt. 13:38 \"the good seed — THESE are the sons…\" (rope)."},{"id":"address-vs-subject","pair":["nominative-address","subject"],"question":"Address or subject?","test":"Is the person being talked about, or talked to?","answer":"Talked about ⇒ subject. Talked to ⇒ address, however nominative the form looks.","example":"\"Husbands love their wives\" (subject) vs \"Husbands, love your wives\" (address)."},{"id":"which-nominative-is-subject","pair":["pecking-order","predicate-nominative"],"question":"Two nominatives round one verb — which is the subject?","test":"Run PAP: pronoun, then article, then proper name.","answer":"First hit wins. In John 1:1c ὁ λόγος has the article, so it is the subject and θεός is the predicate nominative — definite, not \"a god\".","example":"καὶ θεὸς ἦν ὁ λόγος."},{"id":"cognate-vs-plain-object","pair":["cognate-accusative","direct-object"],"question":"Cognate or plain direct object?","test":"Does the object echo the verb — same root, or same concept?","answer":"Echo ⇒ cognate. No echo ⇒ just a direct object. Either way it is still the object.","example":"\"Fight the good fight\" (echo) vs \"I hit Ivan\" (no echo)."},{"id":"double-which-kind","pair":["double-accusative","accusative-apposition"],"question":"Two accusatives — which arrangement?","test":"Can you slip \"as\" or \"to be\" between them?","answer":"\"As\" fits ⇒ object + complement. \"As\" does not fit and one is a person ⇒ personal + impersonal. No verb and the second merely renames the first ⇒ apposition.","example":"\"gave his life AS a ransom\" (complement) vs \"asks him for bread\" (person + thing) vs \"chose Stephen, a man full of faith\" (apposition)."},{"id":"respect-vs-object","pair":["accusative-respect","direct-object"],"question":"Accusative of respect or direct object?","test":"Put \"with respect to\" in front of it.","answer":"Sense improves ⇒ respect. Sense gets worse ⇒ direct object.","example":"Acts 2:37 \"pierced WITH RESPECT TO the heart\" — better. \"I hit WITH RESPECT TO Ivan\" — worse."}],"extraQuiz":[{"prompt":"\"Grace, mercy, peace from God our Father\" (1 Tim. 1:2) — all nominative, no verb, opening a letter.","answer":"nominative-absolute","why":"Introductory material with no grammatical tie to anything. A headline, not a rope."},{"prompt":"\"You call me Teacher and Lord\" (John 13:13) — the titles are nominative where you expected accusative.","answer":"nominative-appellation","why":"A title functioning as the name people use. Badges don't decline."},{"prompt":"\"Son of David, have mercy on us\" (Matt. 9:27).","answer":"nominative-address","why":"He is being hailed, not described. Nominative form, vocative job."},{"prompt":"\"Paul, a servant of Christ Jesus\" (Rom. 1:1) — two nominatives, no verb.","answer":"nominative-apposition","why":"δοῦλος renames Παῦλος. No copula, so no claim is being made — it is a label."},{"prompt":"\"He is our peace\" (Eph. 2:14).","answer":"predicate-nominative","why":"A copula with a nominative each side. αὐτός is a pronoun, so it takes the subject slot; ἡ εἰρήνη is what is asserted."},{"prompt":"\"The good seed — these are the sons of the kingdom\" (Matt. 13:38).","answer":"hanging-nominative","why":"σπέρμα is grammatically loose but οὗτοι picks it up. Hanging by a pronoun."},{"prompt":"\"Fight the good fight\" (1 Tim. 1:18).","answer":"cognate-accusative","why":"The object echoes the verb — same root, even."},{"prompt":"\"He gave his life as a ransom for many\" (Mark 10:45).","answer":"double-accusative","why":"Two accusatives, and \"as\" slips between them: object + complement."},{"prompt":"\"They were cut to the heart\" (Acts 2:37) — an inner wound, not a surgical one.","answer":"accusative-respect","why":"Supply \"with respect to\" and the sense improves."},{"prompt":"\"Going a little farther, he fell on the ground\" (Mark 14:35).","answer":"accusative-measure","why":"μικρόν answers \"how far?\" — MMR shot one."},{"prompt":"\"Being justified freely by his grace\" (Rom. 3:24).","answer":"accusative-manner","why":"δωρεάν answers \"how?\" — MMR shot two."},{"prompt":"\"They chose Stephen, a man full of faith\" (Acts 6:5).","answer":"accusative-apposition","why":"ἄνδρα renames the direct object. Alias."},{"prompt":"An infinitive's subject — the one performing the infinitive's action.","answer":"accusative-subject-infinitive","why":"Finite verbs take nominative subjects; infinitives take accusative ones."},{"prompt":"\"and the Word was God\" (John 1:1c) — which use is θεός?","answer":"predicate-nominative","why":"ὁ λόγος has the article and wins the pecking order, so θεός is the predicate nominative. Anarthrous, and still definite."}]};
+/**
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2.
+ *
+ * Deliberately one file. The sibling app (seminary-homework-2026) learned the
+ * hard way that a module graph behind a service worker can serve a fresh page
+ * beside stale code; one file means one cache key, so `?v=vN` invalidates the
+ * whole app at once and there is nothing to bundle.
+ */
+
+const BUILD = 'v1 · 2026-08-27';
+
+// Where the "back to homework" link points. The seminary app links here; this
+// links back, so the two feel like two rooms rather than two buildings.
+const HOMEWORK_APP = 'https://claudekovalenko.github.io/seminary-homework-2026/';
+
+// What you said you wanted these learned by. Editable under Progress.
+const DEFAULT_TARGET = '2026-08-29';
+
+const KEY = 'gdgc.v1';
+const BOXES = 5; // Leitner boxes; box 4 and up counts as learned.
+const LEARNED_AT = 4;
+
+let DATA = null;
+let route = parseRoute(location.hash);
+
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+const esc = (s) =>
+  String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+
+/** Escape, then turn the data files' *asterisk markers* into highlights. */
+const mk = (s) => esc(s).replace(/\*([^*]+)\*/g, '<mark>$1</mark>');
+
+/** The same text with the markers simply removed — for quiz prompts. */
+const plain = (s) => String(s ?? '').replace(/\*/g, '');
+
+/* ---------------- storage ---------------- */
+
+const blank = () => ({
+  cards: {}, // id -> { box, seen, right, wrong, last }
+  spot: { asked: 0, right: 0, best: 0, streak: 0 },
+  target: DEFAULT_TARGET,
+  // Which set the Learn/Drill/Spot views were last filtered to, so the app
+  // reopens where you left it rather than at the top every time.
+  filter: 'all'
+});
+
+let state = load();
+
+function load() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
+    return raw ? { ...blank(), ...raw, spot: { ...blank().spot, ...(raw.spot || {}) } } : blank();
+  } catch {
+    return blank();
+  }
+}
+
+function save() {
+  try {
+    localStorage.setItem(KEY, JSON.stringify(state));
+  } catch {
+    /* private mode, a full quota — the app still works, it just forgets. */
+  }
+}
+
+function progressOf(id) {
+  return state.cards[id] || { box: 0, seen: 0, right: 0, wrong: 0, last: null };
+}
+
+/** Right answer: up a box. Wrong: all the way back to box 1, which is the point. */
+function grade(id, correct) {
+  const p = { ...progressOf(id) };
+  p.seen += 1;
+  p.last = Date.now();
+  if (correct) {
+    p.right += 1;
+    p.box = Math.min(BOXES, Math.max(1, p.box) + 1);
+  } else {
+    p.wrong += 1;
+    p.box = 1;
+  }
+  state.cards[id] = p;
+  save();
+}
+
+const isLearned = (id) => progressOf(id).box >= LEARNED_AT;
+
+/* ---------------- the target date ---------------- */
+
+function parseDay(iso) {
+  const [y, m, d] = String(iso).split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function daysToTarget() {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return Math.round((parseDay(state.target) - today) / 86400000);
+}
+
+function targetLabel() {
+  const n = daysToTarget();
+  if (n > 1) return `${n} days left`;
+  if (n === 1) return 'tomorrow';
+  if (n === 0) return 'today';
+  return 'target passed';
+}
+
+/* ---------------- data helpers ---------------- */
+
+const cardById = (id) => DATA.cards.find((c) => c.id === id);
+const setById = (id) => DATA.sets.find((s) => s.id === id);
+const groupById = (id) => DATA.sets.flatMap((s) => s.groups).find((g) => g.id === id);
+const setColor = (id) => setById(id)?.color || 'var(--accent)';
+
+/** The cards a view is currently working with, honouring set or tag filters. */
+function selection(filter = state.filter) {
+  if (!filter || filter === 'all') return DATA.cards;
+  if (filter.startsWith('tag:')) {
+    const tag = filter.slice(4);
+    return DATA.cards.filter((c) => (c.tags || []).includes(tag));
+  }
+  return DATA.cards.filter((c) => c.set === filter);
+}
+
+function filterLabel(filter = state.filter) {
+  if (!filter || filter === 'all') return 'Everything';
+  if (filter.startsWith('tag:')) return `#${filter.slice(4)}`;
+  return setById(filter)?.name || filter;
+}
+
+/* ---------------- routing ---------------- */
+
+/**
+ * `#/learn/nominative`, `#/card/predicate-nominative`, `#/tag/saturday`.
+ * Bare `#learn` works too, so a hand-typed or older link still lands somewhere.
+ */
+function parseRoute(hash) {
+  const raw = String(hash || '').replace(/^#\/?/, '');
+  const [name = 'map', arg = null] = raw.split('/');
+  return { name: name || 'map', arg: arg || null };
+}
+
+const VIEW_NAMES = new Set(['map', 'learn', 'drill', 'spot', 'progress', 'card', 'tag', 'confusions']);
+
+function go(hash) {
+  if (location.hash === hash) render();
+  else location.hash = hash;
+}
+
+/**
+ * A link in from the homework app may carry `?from=<url>`, and we send the user
+ * back there rather than guessing. Anything that is not an http(s) URL is
+ * ignored — a hash parameter is attacker-supplied by definition.
+ */
+function returnLink() {
+  const from = new URLSearchParams(location.search).get('from');
+  if (!from) return HOMEWORK_APP;
+  try {
+    const url = new URL(from, location.href);
+    return url.protocol === 'https:' || url.protocol === 'http:' ? url.href : HOMEWORK_APP;
+  } catch {
+    return HOMEWORK_APP;
+  }
+}
+
+const backRow = () => `
+  <a class="backlink" href="${esc(returnLink())}">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" /></svg>
+    Back to Seminary Homework
+  </a>`;
+
+/* ---------------- shared bits ---------------- */
+
+const dot = (color) => `<span class="dot" style="background:${esc(color)}"></span>`;
+
+function pips(box) {
+  return `<span class="box-pips">${Array.from({ length: BOXES }, (_, i) => `<span class="pip ${i < box ? 'on' : ''}"></span>`).join(
+    ''
+  )}</span>`;
+}
+
+function bar(done, total) {
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  return `<div class="bar"><div class="bar-fill" style="width:${pct}%"></div></div>`;
+}
+
+/** The set / tag chips that every drilling view shares. */
+function filterChips(base) {
+  const opts = [
+    { id: 'all', label: 'Everything' },
+    ...DATA.sets.map((s) => ({ id: s.id, label: s.name }))
+  ];
+  return `<div class="chips">${opts
+    .map(
+      (o) =>
+        `<button class="chip ${state.filter === o.id ? 'on' : ''}" data-action="filter" data-filter="${esc(o.id)}" data-base="${esc(
+          base
+        )}">${esc(o.label)}</button>`
+    )
+    .join('')}</div>`;
+}
+
+/* ---------------- view: map ---------------- */
+
+/** The acrostic, split into one tappable tile per letter. */
+function acroTiles(set) {
+  const cards = DATA.cards.filter((c) => c.set === set.id && c.type !== 'rule');
+  return set.groups
+    .map((g) => {
+      const mine = cards.filter((c) => c.group === g.id);
+      if (!mine.length) return '';
+      return `
+        <div>
+          <h3>${esc(g.name)}</h3>
+          <div class="acro">
+            ${mine
+              .map(
+                (c) => `
+              <button class="acro-item" data-action="open-card" data-card="${esc(c.id)}"
+                      style="border-left-color:${esc(set.color)}">
+                <span class="acro-letter">${esc(c.tile || c.short.slice(0, 1))}</span>
+                <span class="acro-word">${esc(c.short)}</span>
+              </button>`
+              )
+              .join('')}
+          </div>
+        </div>`;
+    })
+    .join('');
+}
+
+function viewMap() {
+  const learned = DATA.cards.filter((c) => isLearned(c.id)).length;
+
+  return `
+    <section class="hero">
+      <div class="hero-line">The whole chapter in two sentences</div>
+      <div class="hero-mnemonic">Go to the SPA, say AAAH.</div>
+      <div class="hero-sub">One object with four twists, then the MMR shot.</div>
+      ${bar(learned, DATA.cards.length)}
+      <div class="hero-sub">${learned} of ${DATA.cards.length} learned · ${esc(targetLabel())}</div>
+      <div class="btnrow split">
+        <button class="btn primary" data-action="goto" data-to="#/drill">Drill</button>
+        <button class="btn" data-action="goto" data-to="#/spot">Spot it</button>
+      </div>
+    </section>
+
+    ${DATA.sets
+      .map(
+        (set) => `
+      <section class="card" style="--accent:${esc(set.color)}">
+        <div class="set-head">
+          <h2>${dot(set.color)}${esc(set.name)}</h2>
+          <span class="muted" style="font-size:12px">${DATA.cards.filter((c) => c.set === set.id && isLearned(c.id)).length}/${
+            DATA.cards.filter((c) => c.set === set.id).length
+          }</span>
+        </div>
+        <p class="set-sub">${esc(set.subtitle)}</p>
+        <div class="hook" style="border-left-color:${esc(set.color)}">
+          <div class="hook-line">${esc(set.masterMnemonic)}</div>
+          <div class="hook-why">${esc(set.masterMnemonicWhy)}</div>
+        </div>
+        <p class="bigidea">${esc(set.bigIdea)}</p>
+        ${acroTiles(set)}
+        <div class="btnrow">
+          <button class="btn small" data-action="goto" data-to="#/learn/${esc(set.id)}">Read the cards</button>
+          <button class="btn small" data-action="goto" data-to="#/drill/${esc(set.id)}">Drill this set</button>
+        </div>
+      </section>`
+      )
+      .join('')}
+
+    <section class="card">
+      <h2>The pairs that get missed</h2>
+      <p class="note" style="margin-top:0">Nearly every wrong answer is one of these seven. Each one comes down to a single test.</p>
+      ${DATA.confusions.map(confusionRow).join('')}
+    </section>
+
+    <section class="card">${backRow()}</section>`;
+}
+
+function confusionRow(c) {
+  return `
+    <div class="confusion">
+      <div class="confusion-q">${esc(c.question)}</div>
+      <div class="confusion-test"><b>Test:</b> ${esc(c.test)}</div>
+      <div class="confusion-test">${esc(c.answer)}</div>
+      <div class="confusion-ex">${esc(c.example)}</div>
+    </div>`;
+}
+
+/* ---------------- view: learn ---------------- */
+
+function conceptCard(c, { open = false } = {}) {
+  const set = setById(c.set);
+  const p = progressOf(c.id);
+  return `
+    <details class="concept" id="card-${esc(c.id)}" ${open ? 'open' : ''}>
+      <summary>
+        ${dot(set.color)}
+        <span class="concept-name">${esc(c.name)}<span class="concept-hook">${esc(c.mnemonic)}</span></span>
+        ${pips(p.box)}
+      </summary>
+      <div class="concept-body">
+        <div>
+          <span class="label">What it is</span>
+          ${esc(c.oneLine)}
+        </div>
+
+        <div class="hook" style="border-left-color:${esc(set.color)}">
+          <span class="label">Mnemonic</span>
+          <div class="hook-line">${esc(c.mnemonic)}</div>
+          <div class="hook-why">${esc(c.mnemonicWhy)}</div>
+        </div>
+
+        <div class="spot">
+          <span class="label">How to spot it</span>
+          ${esc(c.spotIt)}
+        </div>
+
+        ${c.watchOut ? `<div class="watch"><span class="label">Watch out</span>${esc(c.watchOut)}</div>` : ''}
+
+        <div>
+          <span class="label">Examples</span>
+          ${(c.examples || [])
+            .map(
+              (e) => `
+            <div class="ex">
+              <div class="ex-ref">${esc(e.ref)}</div>
+              ${e.greek ? `<div class="greek">${mk(e.greek)}</div>` : ''}
+              <div class="ex-en">${mk(e.english)}</div>
+              ${e.note ? `<div class="ex-note">${esc(e.note)}</div>` : ''}
+            </div>`
+            )
+            .join('')}
+        </div>
+      </div>
+    </details>`;
+}
+
+function viewLearn(arg) {
+  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) state.filter = arg;
+  const cards = selection();
+  const bySet = DATA.sets.filter((s) => cards.some((c) => c.set === s.id));
+
+  return `
+    <section class="card">
+      <h2>Learn — ${esc(filterLabel())}</h2>
+      ${filterChips('learn')}
+      <p class="note">Tap a card to open it. The pips on the right are how far it has climbed the drill boxes.</p>
+    </section>
+
+    ${bySet
+      .map((set) => {
+        const groups = set.groups.filter((g) => cards.some((c) => c.group === g.id));
+        return `
+        <section class="card" style="--accent:${esc(set.color)}">
+          <div class="set-head"><h2>${dot(set.color)}${esc(set.name)}</h2></div>
+          <p class="set-sub">${esc(set.masterMnemonic)}</p>
+          ${groups
+            .map(
+              (g) => `
+            <h3>${esc(g.name)}</h3>
+            <p class="note" style="margin:0 0 8px">${esc(g.expand)}</p>
+            ${cards
+              .filter((c) => c.group === g.id)
+              .map((c) => conceptCard(c))
+              .join('')}`
+            )
+            .join('')}
+        </section>`;
+      })
+      .join('')}
+
+    <section class="card">
+      <h2>Confusion pairs</h2>
+      ${DATA.confusions.map(confusionRow).join('')}
+    </section>`;
+}
+
+/** A single card, deep-linked: `#/card/predicate-nominative`. */
+function viewCard(arg) {
+  const c = cardById(arg);
+  if (!c) return `<section class="card"><p class="empty">No card called “${esc(arg)}”.</p></section>`;
+  const set = setById(c.set);
+  const pairs = DATA.confusions.filter((x) => x.pair.includes(c.id));
+  return `
+    <section class="card">
+      <div class="set-head">
+        <h2>${dot(set.color)}${esc(set.name)}</h2>
+        <button class="btn small" data-action="goto" data-to="#/learn/${esc(set.id)}">All ${esc(set.name)} cards</button>
+      </div>
+    </section>
+    ${conceptCard(c, { open: true })}
+    ${
+      pairs.length
+        ? `<section class="card"><h2>Easily confused with</h2>${pairs.map(confusionRow).join('')}</section>`
+        : ''
+    }
+    <section class="card">
+      <div class="btnrow split">
+        <button class="btn primary" data-action="goto" data-to="#/drill/${esc(set.id)}">Drill this set</button>
+        <button class="btn" data-action="goto" data-to="#/map">Back to the map</button>
+      </div>
+    </section>`;
+}
+
+/* ---------------- view: drill ---------------- */
+
+/**
+ * Three ways of asking about one card, so the drill never becomes "recognise
+ * the shape of the front of this card". Which one you get depends on how many
+ * times you have seen it, so early reps are recognition and later ones recall.
+ */
+const PROMPTS = [
+  { label: 'What is the hook?', front: (c) => c.name, small: false },
+  { label: 'Which use is this?', front: (c) => c.mnemonic, small: false },
+  { label: 'Which use does this test find?', front: (c) => c.spotIt, small: true }
+];
+
+function promptFor(card) {
+  return PROMPTS[progressOf(card.id).seen % PROMPTS.length];
+}
+
+/**
+ * Due order: lowest box first (what you know least), then least recently seen.
+ * Nothing here is a real spaced-repetition schedule — there are four days until
+ * Saturday, so "show me the shakiest thing I have not just seen" is the whole
+ * algorithm.
+ */
+function deck() {
+  return [...selection()].sort((a, b) => {
+    const pa = progressOf(a.id);
+    const pb = progressOf(b.id);
+    return pa.box - pb.box || (pa.last || 0) - (pb.last || 0);
+  });
+}
+
+let flipped = false;
+let current = null;
+
+function viewDrill(arg) {
+  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) state.filter = arg;
+  const due = deck();
+  if (!current || !due.some((c) => c.id === current)) {
+    current = due[0]?.id || null;
+    flipped = false;
+  }
+  const card = current && cardById(current);
+  if (!card) return `<section class="card"><p class="empty">Nothing in this set.</p></section>`;
+
+  const set = setById(card.set);
+  const p = progressOf(card.id);
+  const prompt = promptFor(card);
+  const learned = selection().filter((c) => isLearned(c.id)).length;
+
+  return `
+    <section class="card">
+      <h2>Drill — ${esc(filterLabel())}</h2>
+      ${filterChips('drill')}
+      ${bar(learned, selection().length)}
+      <div class="flash-meta">
+        <span>${learned} of ${selection().length} in box ${LEARNED_AT}+</span>
+        <span>${esc(targetLabel())}</span>
+      </div>
+    </section>
+
+    <section class="card flash" style="--accent:${esc(set.color)}">
+      <div class="flash-prompt-label">${dot(set.color)}${esc(prompt.label)}</div>
+      <div class="flash-prompt ${prompt.small ? 'is-small' : ''}">${esc(prompt.front(card))}</div>
+
+      ${
+        flipped
+          ? `<div class="flash-answer">
+               <div class="name">${esc(card.name)}</div>
+               <div class="hook" style="border-left-color:${esc(set.color)};margin-top:9px">
+                 <div class="hook-line">${esc(card.mnemonic)}</div>
+                 <div class="hook-why">${esc(card.mnemonicWhy)}</div>
+               </div>
+               <p class="note">${esc(card.oneLine)}</p>
+               <div class="spot" style="margin-top:9px"><span class="label">Spot it</span>${esc(card.spotIt)}</div>
+               ${
+                 card.examples && card.examples[0]
+                   ? `<div class="ex">
+                        <div class="ex-ref">${esc(card.examples[0].ref)}</div>
+                        ${card.examples[0].greek ? `<div class="greek">${mk(card.examples[0].greek)}</div>` : ''}
+                        <div class="ex-en">${mk(card.examples[0].english)}</div>
+                      </div>`
+                   : ''
+               }
+             </div>`
+          : ''
+      }
+
+      <div class="flash-meta">
+        <span>${pips(p.box)} box ${p.box || 0}</span>
+        <span>seen ${p.seen}×</span>
+      </div>
+
+      ${
+        flipped
+          ? `<div class="btnrow split">
+               <button class="btn bad" data-action="grade" data-ok="0">Again</button>
+               <button class="btn good" data-action="grade" data-ok="1">Got it</button>
+             </div>`
+          : `<div class="btnrow"><button class="btn primary wide" data-action="flip">Show the answer</button></div>`
+      }
+    </section>
+
+    <section class="card">
+      <div class="btnrow split">
+        <button class="btn small" data-action="goto" data-to="#/card/${esc(card.id)}">Open the full card</button>
+        <button class="btn small" data-action="skip">Skip</button>
+      </div>
+    </section>`;
+}
+
+/* ---------------- view: spot it ---------------- */
+
+/**
+ * Quiz items: the hand-written ones from the data file, plus one generated from
+ * every worked example. Distractors come from the same set — being asked to
+ * tell a nominative use from an accusative one is not the exam.
+ */
+function quizPool() {
+  const items = [];
+
+  for (const q of DATA.extraQuiz) {
+    const card = cardById(q.answer);
+    if (card && card.type !== 'rule' && selection().some((c) => c.id === card.id)) {
+      items.push({ id: `x:${q.answer}:${items.length}`, prompt: q.prompt, answer: card.id, why: q.why, set: card.set });
+    }
+  }
+
+  for (const card of selection()) {
+    if (card.type === 'rule') continue;
+    for (const [i, ex] of (card.examples || []).entries()) {
+      if (!ex.note) continue;
+      const line = ex.greek ? `${plain(ex.english)}  —  ${plain(ex.greek)}` : plain(ex.english);
+      items.push({
+        id: `e:${card.id}:${i}`,
+        prompt: `${ex.ref} — ${line}`,
+        answer: card.id,
+        why: ex.note,
+        set: card.set
+      });
+    }
+  }
+
+  return items;
+}
+
+function optionsFor(item) {
+  const partners = DATA.confusions.filter((c) => c.pair.includes(item.answer)).flatMap((c) => c.pair);
+  const sameSet = DATA.cards.filter((c) => c.set === item.set && c.id !== item.answer && c.type !== 'rule');
+  const ranked = [
+    ...sameSet.filter((c) => partners.includes(c.id)),
+    ...shuffle(sameSet.filter((c) => !partners.includes(c.id)))
+  ];
+  return shuffle([item.answer, ...ranked.slice(0, 3).map((c) => c.id)]);
+}
+
+function shuffle(list) {
+  const a = [...list];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+let quiz = null; // { item, options, picked }
+
+function nextQuestion() {
+  const pool = quizPool();
+  if (!pool.length) {
+    quiz = null;
+    return;
+  }
+  // Weight toward cards that are not yet learned — twice the tickets each.
+  const weighted = pool.flatMap((it) => (isLearned(it.answer) ? [it] : [it, it]));
+  const item = weighted[Math.floor(Math.random() * weighted.length)];
+  quiz = { item, options: optionsFor(item), picked: null };
+}
+
+function viewSpot(arg) {
+  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) {
+    state.filter = arg;
+    quiz = null;
+  }
+  if (!quiz) nextQuestion();
+  if (!quiz) return `<section class="card"><p class="empty">No questions in this set.</p></section>`;
+
+  const { item, options, picked } = quiz;
+  const s = state.spot;
+
+  return `
+    <section class="card">
+      <h2>Spot it — ${esc(filterLabel())}</h2>
+      ${filterChips('spot')}
+      <div class="flash-meta" style="margin-top:10px">
+        <span class="score">${s.right} / ${s.asked} right</span>
+        <span class="score">streak ${s.streak} · best ${s.best}</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="q-prompt">${esc(item.prompt)}</div>
+      <div class="options">
+        ${options
+          .map((id) => {
+            const c = cardById(id);
+            const cls = !picked ? '' : id === item.answer ? 'correct' : id === picked ? 'wrong' : '';
+            return `<button class="option ${cls}" data-action="answer" data-pick="${esc(id)}" ${picked ? 'disabled' : ''}>
+                      ${esc(c.name)}<span class="concept-hook">${esc(c.mnemonic)}</span>
+                    </button>`;
+          })
+          .join('')}
+      </div>
+      ${
+        picked
+          ? `<div class="verdict">
+               <strong>${picked === item.answer ? 'Right.' : `Not quite — it is ${esc(cardById(item.answer).name)}.`}</strong>
+               <div class="why">${esc(item.why)}</div>
+               <div class="btnrow split">
+                 <button class="btn small" data-action="goto" data-to="#/card/${esc(item.answer)}">Open that card</button>
+                 <button class="btn primary" data-action="next-q">Next</button>
+               </div>
+             </div>`
+          : ''
+      }
+    </section>`;
+}
+
+/* ---------------- view: progress ---------------- */
+
+function viewProgress() {
+  const learned = DATA.cards.filter((c) => isLearned(c.id));
+  const untouched = DATA.cards.filter((c) => progressOf(c.id).seen === 0);
+  const shaky = DATA.cards
+    .filter((c) => progressOf(c.id).seen > 0 && !isLearned(c.id))
+    .sort((a, b) => progressOf(a.id).box - progressOf(b.id).box);
+  const s = state.spot;
+
+  return `
+    <section class="card">
+      <h2>Where you are</h2>
+      ${bar(learned.length, DATA.cards.length)}
+      <div class="stats">
+        <div><span class="stat">${learned.length}</span><small>of ${DATA.cards.length} learned</small></div>
+        <div><span class="stat">${s.asked ? Math.round((s.right / s.asked) * 100) : 0}%</span><small>spot-it accuracy</small></div>
+        <div><span class="stat">${daysToTarget()}</span><small>days to target</small></div>
+      </div>
+      <p class="note">A card counts as learned once it has climbed to box ${LEARNED_AT} — four right answers in a row, with any
+         wrong answer knocking it back to box 1.</p>
+    </section>
+
+    ${
+      shaky.length
+        ? `<section class="card">
+             <h2>Shakiest first</h2>
+             ${shaky
+               .map(
+                 (c) => `
+               <div class="mastery">
+                 ${dot(setColor(c.set))}
+                 <span class="mastery-name">${esc(c.name)}</span>
+                 ${pips(progressOf(c.id).box)}
+                 <button class="btn small" data-action="goto" data-to="#/card/${esc(c.id)}">Open</button>
+               </div>`
+               )
+               .join('')}
+           </section>`
+        : ''
+    }
+
+    ${
+      untouched.length
+        ? `<section class="card">
+             <h2>Not yet seen (${untouched.length})</h2>
+             ${untouched
+               .map(
+                 (c) => `
+               <div class="mastery">
+                 ${dot(setColor(c.set))}
+                 <span class="mastery-name">${esc(c.name)}</span>
+                 <button class="btn small" data-action="goto" data-to="#/card/${esc(c.id)}">Open</button>
+               </div>`
+               )
+               .join('')}
+           </section>`
+        : ''
+    }
+
+    ${
+      learned.length
+        ? `<section class="card">
+             <h2>Learned (${learned.length})</h2>
+             ${learned
+               .map(
+                 (c) => `
+               <div class="mastery">
+                 ${dot(setColor(c.set))}
+                 <span class="mastery-name">${esc(c.name)}</span>
+                 ${pips(progressOf(c.id).box)}
+               </div>`
+               )
+               .join('')}
+           </section>`
+        : ''
+    }
+
+    <section class="card">
+      <h2>Settings</h2>
+      <div class="mastery">
+        <span class="mastery-name">Learn it all by</span>
+        <input type="date" id="target-date" value="${esc(state.target)}" />
+      </div>
+      <div class="btnrow">
+        <button class="btn small" data-action="reset">Reset all progress</button>
+      </div>
+      <p class="note">Progress lives in this browser's local storage. Nothing is uploaded anywhere.</p>
+      <p class="note">Version ${esc(BUILD)}</p>
+      ${backRow()}
+    </section>`;
+}
+
+/* ---------------- render ---------------- */
+
+const VIEWS = {
+  map: viewMap,
+  learn: viewLearn,
+  card: viewCard,
+  drill: viewDrill,
+  spot: viewSpot,
+  progress: viewProgress,
+  confusions: () => `<section class="card"><h2>Confusion pairs</h2>${DATA.confusions.map(confusionRow).join('')}</section>`
+};
+
+function render() {
+  route = parseRoute(location.hash);
+  if (!VIEW_NAMES.has(route.name)) route = { name: 'map', arg: null };
+
+  // `#/tag/saturday` is Learn with a tag filter, not a view of its own.
+  if (route.name === 'tag') {
+    state.filter = `tag:${route.arg}`;
+    route = { name: 'learn', arg: state.filter };
+  }
+
+  $('#app').innerHTML = (VIEWS[route.name] || viewMap)(route.arg);
+
+  const tabFor = route.name === 'card' ? 'learn' : route.name === 'confusions' ? 'map' : route.name;
+  $$('.tab').forEach((el) => el.classList.toggle('on', el.dataset.view === tabFor));
+
+  const due = daysToTarget();
+  const target = $('#target');
+  if (target) {
+    target.classList.toggle('is-due', due <= 1);
+    target.innerHTML = `<strong>${esc(targetLabel())}</strong>${esc(
+      parseDay(state.target).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })
+    )}`;
+  }
+
+  document.title = route.name === 'map' ? 'Greek Cases — Mnemonics' : `Greek Cases — ${route.name}`;
+  window.scrollTo(0, 0);
+}
+
+/* ---------------- events ---------------- */
+
+document.addEventListener('click', (e) => {
+  const tab = e.target.closest('.tab');
+  if (tab) return go(`#/${tab.dataset.view}`);
+
+  const el = e.target.closest('[data-action]');
+  if (!el) return;
+  const { action } = el.dataset;
+
+  if (action === 'goto') return go(el.dataset.to);
+  if (action === 'open-card') return go(`#/card/${el.dataset.card}`);
+
+  if (action === 'filter') {
+    state.filter = el.dataset.filter;
+    save();
+    quiz = null;
+    current = null;
+    flipped = false;
+    return go(`#/${el.dataset.base}/${state.filter}`);
+  }
+
+  if (action === 'flip') {
+    flipped = true;
+    return render();
+  }
+
+  if (action === 'grade') {
+    grade(current, el.dataset.ok === '1');
+    current = null;
+    flipped = false;
+    return render();
+  }
+
+  if (action === 'skip') {
+    // Push it to the back of the queue without pretending you answered it.
+    const p = { ...progressOf(current), last: Date.now() };
+    state.cards[current] = p;
+    save();
+    current = null;
+    flipped = false;
+    return render();
+  }
+
+  if (action === 'answer') {
+    if (quiz.picked) return;
+    const pick = el.dataset.pick;
+    quiz.picked = pick;
+    const correct = pick === quiz.item.answer;
+    grade(quiz.item.answer, correct);
+    const s = state.spot;
+    s.asked += 1;
+    if (correct) {
+      s.right += 1;
+      s.streak += 1;
+      s.best = Math.max(s.best, s.streak);
+    } else {
+      s.streak = 0;
+    }
+    save();
+    return render();
+  }
+
+  if (action === 'next-q') {
+    nextQuestion();
+    return render();
+  }
+
+  if (action === 'reset') {
+    if (!confirm('Clear every box and score, and start these 17 cards over?')) return;
+    const target = state.target;
+    state = blank();
+    state.target = target;
+    save();
+    quiz = null;
+    current = null;
+    return render();
+  }
+});
+
+document.addEventListener('change', (e) => {
+  if (e.target.id !== 'target-date') return;
+  state.target = e.target.value || DEFAULT_TARGET;
+  save();
+  render();
+});
+
+// Space flips, 1/2 grade — for anyone drilling at a desk rather than on a phone.
+document.addEventListener('keydown', (e) => {
+  if (route.name !== 'drill' || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === ' ' || e.key === 'Enter') {
+    e.preventDefault();
+    if (!flipped) {
+      flipped = true;
+      render();
+    }
+  } else if (flipped && (e.key === '1' || e.key === '2')) {
+    grade(current, e.key === '2');
+    current = null;
+    flipped = false;
+    render();
+  }
+});
+
+window.addEventListener('hashchange', render);
+
+/* ---------------- boot ---------------- */
+
+async function loadData() {
+  // The single-file build embeds the cards here so it works with no server.
+  if (globalThis.__CONCEPTS__) return globalThis.__CONCEPTS__;
+  const res = await fetch('./data/concepts.json', { cache: 'no-cache' });
+  if (!res.ok) throw new Error(`Could not load the cards (${res.status})`);
+  return res.json();
+}
+
+async function boot() {
+  try {
+    DATA = await loadData();
+  } catch (err) {
+    $('#app').innerHTML = `<section class="card"><p class="empty">${esc(err.message)}</p></section>`;
+    return;
+  }
+  render();
+
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
+}
+
+boot();
+
+</script>
+  </body>
+</html>

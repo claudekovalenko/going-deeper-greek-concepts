@@ -1,0 +1,23 @@
+{
+  "name": "Greek Cases — Mnemonics",
+  "short_name": "Greek Cases",
+  "description": "Mnemonics and drills for the nominative and accusative uses in Going Deeper with New Testament Greek, ch. 2.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e1016",
+  "theme_color": "#12141c",
+  "categories": ["education"],
+  "icons": [
+    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "The map", "url": "./#/map" },
+    { "name": "Drill", "url": "./#/drill" },
+    { "name": "Spot it", "url": "./#/spot" }
+  ]
+}

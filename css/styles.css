@@ -1,0 +1,767 @@
+/* Deliberately a sibling of the seminary-homework-2026 stylesheet: same palette,
+   same card/tabbar furniture. Tapping through from one app to the other should
+   feel like moving between rooms, not between buildings. */
+
+:root {
+  --bg: #0e1016;
+  --bg-elev: #171a23;
+  --bg-elev-2: #1e222d;
+  --line: #272c39;
+  --text: #e8eaf2;
+  --muted: #9aa1b5;
+  --accent: #7b8cff;
+  --accent-soft: #2a3160;
+  --warn: #efb057;
+  --danger: #f0736a;
+  --ok: #4fbf8b;
+  --nom: #1f9d78;
+  --acc: #c8642a;
+  --radius: 14px;
+  --tabbar: 62px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f5f9;
+    --bg-elev: #ffffff;
+    --bg-elev-2: #f0f2f7;
+    --line: #e0e3ec;
+    --text: #191c25;
+    --muted: #6b7285;
+    --accent: #4d5fe0;
+    --accent-soft: #e4e7ff;
+    --nom: #12775a;
+    --acc: #a24c1b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(var(--tabbar) + env(safe-area-inset-bottom));
+}
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  padding: calc(env(safe-area-inset-top) + 10px) 16px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brand strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* The countdown to the day you said you wanted this learned by. */
+.brand-right {
+  text-align: right;
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.brand-right strong {
+  display: block;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.brand-right.is-due strong {
+  color: var(--warn);
+}
+
+/* ---------- layout ---------- */
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 14px 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card h3 {
+  margin: 14px 0 8px;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 8px 0 0;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 7px;
+  vertical-align: baseline;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 9px;
+  padding: 9px 13px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn.small {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.btn.wide {
+  width: 100%;
+}
+
+.btn.good {
+  border-color: color-mix(in srgb, var(--ok) 55%, var(--line));
+  color: var(--ok);
+}
+
+.btn.bad {
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--line));
+  color: var(--danger);
+}
+
+.btnrow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btnrow.split > * {
+  flex: 1 1 0;
+}
+
+/* ---------- the map ---------- */
+
+.hero {
+  background: linear-gradient(160deg, var(--bg-elev) 0%, var(--bg-elev-2) 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.hero-line {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.hero-mnemonic {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 6px 0 4px;
+  letter-spacing: 0.2px;
+}
+
+.hero-sub {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.acro {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.acro-item {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 9px 10px;
+  text-align: left;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.acro-letter {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.acro-word {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.set-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.set-head h2 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.set-sub {
+  color: var(--muted);
+  font-size: 12.5px;
+  margin: 0 0 10px;
+}
+
+.bigidea {
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  margin: 10px 0 0;
+}
+
+.mnemonic-line {
+  font-size: 17px;
+  font-weight: 650;
+  margin: 2px 0 6px;
+}
+
+.mnemonic-why {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ---------- cards (Learn) ---------- */
+
+.concept {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elev);
+  overflow: hidden;
+}
+
+.concept + .concept {
+  margin-top: 8px;
+}
+
+.concept > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 11px 13px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.concept > summary::-webkit-details-marker {
+  display: none;
+}
+
+.concept-name {
+  font-weight: 620;
+  flex: 1;
+}
+
+.concept-hook {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.concept-body {
+  padding: 0 13px 13px;
+  border-top: 1px solid var(--line);
+}
+
+.concept-body > * {
+  margin-top: 11px;
+}
+
+.label {
+  display: block;
+  font-size: 10.5px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.hook {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-elev-2));
+  border-left: 3px solid var(--accent);
+  border-radius: 0 9px 9px 0;
+  padding: 9px 11px;
+}
+
+.hook-line {
+  font-size: 15.5px;
+  font-weight: 650;
+}
+
+.hook-why {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.spot {
+  background: var(--bg-elev-2);
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 13.5px;
+}
+
+.watch {
+  border: 1px dashed color-mix(in srgb, var(--warn) 50%, var(--line));
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--warn) 75%, var(--text));
+}
+
+.ex {
+  border-top: 1px solid var(--line);
+  padding-top: 9px;
+}
+
+.ex + .ex {
+  margin-top: 9px;
+}
+
+.ex-ref {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.3px;
+}
+
+.greek {
+  font-family: 'Gentium Plus', 'SBL Greek', 'Palatino Linotype', Palatino, Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 3px 0;
+}
+
+.ex-en {
+  font-size: 13.5px;
+}
+
+.ex-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+mark {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* ---------- filters ---------- */
+
+.chips {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 6px 11px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.chip.on {
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  color: var(--accent);
+}
+
+/* ---------- drill ---------- */
+
+.flash {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  padding: 22px 16px;
+}
+
+.flash-prompt-label {
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.flash-prompt {
+  font-size: 21px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.flash-prompt.is-small {
+  font-size: 16.5px;
+  font-weight: 500;
+}
+
+.flash-answer {
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+  text-align: left;
+}
+
+.flash-answer .name {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.flash-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.box-pips {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+}
+
+.pip {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--line);
+}
+
+.pip.on {
+  background: var(--ok);
+}
+
+/* ---------- spot it ---------- */
+
+.q-prompt {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.option {
+  text-align: left;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.option.correct {
+  border-color: var(--ok);
+  background: color-mix(in srgb, var(--ok) 16%, var(--bg-elev-2));
+}
+
+.option.wrong {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 14%, var(--bg-elev-2));
+}
+
+.option:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+
+.option.correct:disabled,
+.option.wrong:disabled {
+  opacity: 1;
+}
+
+.verdict {
+  margin-top: 12px;
+  font-size: 13.5px;
+}
+
+.verdict .why {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.score {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- progress ---------- */
+
+.bar {
+  height: 7px;
+  background: var(--bg-elev-2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 8px 0 4px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--ok);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.stats > div {
+  background: var(--bg-elev-2);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stat {
+  display: block;
+  font-size: 21px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats small {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.mastery {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.mastery:last-child {
+  border-bottom: 0;
+}
+
+.mastery-name {
+  flex: 1;
+  font-size: 13.5px;
+}
+
+/* ---------- confusion pairs ---------- */
+
+.confusion {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 11px 12px;
+}
+
+.confusion + .confusion {
+  margin-top: 8px;
+}
+
+.confusion-q {
+  font-weight: 620;
+  font-size: 14px;
+}
+
+.confusion-test {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.confusion-test b {
+  color: var(--accent);
+}
+
+.confusion-ex {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+
+/* ---------- back link to the homework app ---------- */
+
+.backlink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.backlink svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- tab bar ---------- */
+
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  backdrop-filter: blur(14px);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.tab {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font: inherit;
+  font-size: 10.5px;
+  padding: 8px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.tab svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tab.on {
+  color: var(--accent);
+}

@@ -1,0 +1,728 @@
+{
+  "book": "Going Deeper with New Testament Greek",
+  "chapter": "ch. 2 — Nominative, Vocative, Accusative",
+  "course": "Intermediate Greek (GREK 6003), Fall 2026",
+  "generated": "2026-08-27",
+  "notes": [
+    "Every card carries a mnemonic hook, a one-line definition, a 'spot it' test you can actually run on a text, and real examples.",
+    "Greek is given in the text with the key word marked by * asterisks *, so the app can highlight it without any markup engine.",
+    "confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.",
+    "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples."
+  ],
+  "sets": [
+    {
+      "id": "nominative",
+      "name": "Nominative",
+      "subtitle": "The naming case — the case that puts the crown on someone",
+      "color": "#1f9d78",
+      "bigIdea": "The nominative NAMES. Whatever wears it is being named, identified or hailed — never acted upon.",
+      "masterMnemonic": "Go to the SPA, then say AAAH.",
+      "masterMnemonicWhy": "SPA = the three major uses (Subject, Predicate nominative, Apposition). AAAH = the four other uses (Address, Appellation, Absolute, Hanging). Seven uses, two words, one silly picture: you sit down in the spa and go aaah.",
+      "groups": [
+        {
+          "id": "nominative-major",
+          "name": "Major uses — the SPA",
+          "mnemonic": "S-P-A",
+          "expand": "Subject · Predicate nominative · Apposition"
+        },
+        {
+          "id": "nominative-other",
+          "name": "Other uses — the AAAH",
+          "mnemonic": "A-A-A-H",
+          "expand": "Address · Appellation · Absolute · Hanging"
+        }
+      ]
+    },
+    {
+      "id": "accusative",
+      "name": "Accusative",
+      "subtitle": "The case of limitation — the case that puts a fence around the verb",
+      "color": "#c8642a",
+      "bigIdea": "The accusative LIMITS. It says how far the verb's action reaches: onto whom, how far, in what way, with respect to what.",
+      "masterMnemonic": "One object with four twists, then the MMR shot.",
+      "masterMnemonicWhy": "Substantival = the direct object plus four twists on it — Echo, Two, Sub, Alias. Adverbial = the MMR shot: Measure, Manner, Respect — How far? How? How so?",
+      "groups": [
+        {
+          "id": "accusative-overview",
+          "name": "The idea",
+          "mnemonic": "The fence",
+          "expand": "The nominative crowns; the accusative fences."
+        },
+        {
+          "id": "accusative-substantival",
+          "name": "Substantival — one object, four twists",
+          "mnemonic": "Echo · Two · Sub · Alias",
+          "expand": "Direct object, then: Cognate (Echo), Double (Two), Subject of infinitive (Sub), Apposition (Alias)"
+        },
+        {
+          "id": "accusative-adverbial",
+          "name": "Adverbial — the MMR shot",
+          "mnemonic": "M-M-R",
+          "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "subject",
+      "set": "nominative",
+      "group": "nominative-major",
+      "name": "Subject",
+      "short": "Subject",
+      "tile": "S",
+      "oneLine": "The nominative that performs the verb — the one the sentence is about.",
+      "mnemonic": "The subject wears the crown.",
+      "mnemonicWhy": "The nominative is the naming case, and the crown sits on whoever the verb is about. If a verb has exactly one nominative near it, that nominative is wearing the crown.",
+      "spotIt": "Ask the verb \"who or what?\" — and check that the answer is nominative, not accusative.",
+      "examples": [
+        {
+          "ref": "John 1:15",
+          "greek": "*Ἰωάννης* μαρτυρεῖ περὶ αὐτοῦ",
+          "english": "*John* bears witness about him",
+          "note": "Ἰωάννης is nominative and does the witnessing — the plainest kind of subject there is."
+        },
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "*Ivan* came to class.",
+          "note": "One verb, one nominative, no complications."
+        }
+      ],
+      "tags": [
+        "nominative",
+        "major",
+        "saturday"
+      ]
+    },
+    {
+      "id": "predicate-nominative",
+      "set": "nominative",
+      "group": "nominative-major",
+      "name": "Predicate Nominative",
+      "short": "Pred. nom.",
+      "tile": "P",
+      "oneLine": "Two nominatives joined by a copulative (\"to be\") verb; the predicate nominative asserts something about the subject.",
+      "mnemonic": "The subject is the small circle; the predicate is the big one.",
+      "mnemonicWhy": "The copula looks like an equals sign, but it is not a two-way street. \"The Word was God\" puts the Word inside God — not God inside the Word. Draw the small circle inside the big one and the whole doctrine of John 1:1 sits in one picture.",
+      "spotIt": "Look for a to-be verb — εἰμί, γίνομαι, ὑπάρχω — with a nominative on both sides of it.",
+      "examples": [
+        {
+          "ref": "John 1:1c",
+          "greek": "καὶ *θεὸς* ἦν ὁ λόγος",
+          "english": "and the Word was *God*",
+          "note": "ὁ λόγος has the article, so it is the subject; θεός is the predicate nominative."
+        },
+        {
+          "ref": "1 John 4:8",
+          "greek": "ὁ θεὸς *ἀγάπη* ἐστίν",
+          "english": "God is *love*",
+          "note": "ὁ θεός is articular and so is the subject; ἀγάπη is what is asserted about him."
+        },
+        {
+          "ref": "Eph. 2:14",
+          "greek": "αὐτὸς γάρ ἐστιν *ἡ εἰρήνη* ἡμῶν",
+          "english": "for he himself is *our peace*",
+          "note": "αὐτός is a pronoun, so it takes the subject slot outright — see the pecking order."
+        }
+      ],
+      "watchOut": "Apposition looks similar but has no to-be verb. Verb ⇒ predicate nominative; comma only ⇒ apposition.",
+      "tags": [
+        "nominative",
+        "major",
+        "john-1-1",
+        "saturday"
+      ]
+    },
+    {
+      "id": "pecking-order",
+      "set": "nominative",
+      "group": "nominative-major",
+      "name": "The Pecking Order",
+      "short": "Pecking order",
+      "type": "rule",
+      "oneLine": "When two nominatives sit around one to-be verb, this is the order that decides which one is the subject.",
+      "mnemonic": "PAP — ask Papa who is in charge.",
+      "mnemonicWhy": "Pronoun, then Article, then Proper name. Papa answers in that order every time: a pronoun wins outright; failing that, the one with the article is the subject; failing that, the proper name.",
+      "spotIt": "Work down the list and stop at the first hit. 1. Is either one a pronoun? 2. Does either one have the article? 3. Is either one a proper name?",
+      "examples": [
+        {
+          "ref": "John 1:1c",
+          "greek": "καὶ θεὸς ἦν *ὁ λόγος*",
+          "english": "and the Word was God",
+          "note": "No pronoun, so rung two decides: ὁ λόγος has the article and is therefore the subject. θεός is the predicate nominative — not \"a god\". In Greek a word can be perfectly definite with no article at all."
+        },
+        {
+          "ref": "Eph. 2:14",
+          "greek": "*αὐτὸς* γάρ ἐστιν ἡ εἰρήνη ἡμῶν",
+          "english": "for *he himself* is our peace",
+          "note": "Rung one: αὐτός is a pronoun, so it is the subject even though ἡ εἰρήνη carries the article."
+        }
+      ],
+      "watchOut": "Anarthrous ≠ indefinite. \"No article\" is not an argument for \"a god\"; it is what a predicate nominative before the verb normally looks like.",
+      "tags": [
+        "nominative",
+        "major",
+        "john-1-1",
+        "saturday"
+      ]
+    },
+    {
+      "id": "nominative-apposition",
+      "set": "nominative",
+      "group": "nominative-major",
+      "name": "Apposition",
+      "short": "Apposition (nom.)",
+      "tile": "A",
+      "oneLine": "Two nominatives side by side where the second renames or elaborates the first — with no verb between them.",
+      "mnemonic": "No verb, just a name tag.",
+      "mnemonicWhy": "Apposition is a sticker slapped on the first noun: \"Andrew — HELLO MY NAME IS the brother of Simon Peter.\" Diagram it with an equals sign under the first word; there is no verb to hang anything from.",
+      "spotIt": "Two nominatives, a comma's worth of pause between them, and no copula anywhere.",
+      "examples": [
+        {
+          "ref": "John 1:40",
+          "greek": "Ἀνδρέας *ὁ ἀδελφὸς* Σίμωνος Πέτρου",
+          "english": "Andrew, *the brother* of Simon Peter",
+          "note": "ἀδελφός is the appositive. Nothing is being asserted — he is simply being identified."
+        },
+        {
+          "ref": "Rom. 1:1",
+          "greek": "Παῦλος *δοῦλος* Χριστοῦ Ἰησοῦ",
+          "english": "Paul, *a servant* of Christ Jesus",
+          "note": "δοῦλος apposits Παῦλος."
+        },
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "Ivan, *the student*, came to class.",
+          "note": "Name tag. Compare \"Ivan is the student\" — that one is a predicate nominative, because there is a verb making a claim."
+        }
+      ],
+      "watchOut": "The whole difference from a predicate nominative is the to-be verb. Comma = label. \"Is\" = claim.",
+      "tags": [
+        "nominative",
+        "major",
+        "saturday"
+      ]
+    },
+    {
+      "id": "nominative-address",
+      "set": "nominative",
+      "group": "nominative-other",
+      "name": "Nominative of Address",
+      "short": "Address",
+      "tile": "A",
+      "oneLine": "A nominative doing a vocative's job — calling out to someone directly.",
+      "mnemonic": "\"Hey, you!\" in a nominative coat.",
+      "mnemonicWhy": "The word is being hailed, not described. It is logically the subject of the imperative that follows, but grammatically it is not the subject of anything.",
+      "spotIt": "Try putting a comma and an exclamation mark after it. \"Husbands! — love your wives.\" If that works, it is address, not subject.",
+      "examples": [
+        {
+          "ref": "Matt. 9:27",
+          "greek": "ἐλέησον ἡμᾶς, *υἱὸς Δαυίδ*",
+          "english": "Have mercy on us, *Son of David*",
+          "note": "Son of David is not doing the having-mercy in a subject sense — he is being called out to. The form is nominative; the function is vocative."
+        },
+        {
+          "ref": "Eph. 5:25",
+          "greek": "*οἱ ἄνδρες*, ἀγαπᾶτε τὰς γυναῖκας",
+          "english": "*Husbands*, love your wives",
+          "note": "Not a statement about husbands. A summons to them."
+        }
+      ],
+      "watchOut": "A subject is talked ABOUT. An address is talked TO. Same case, opposite direction.",
+      "tags": [
+        "nominative",
+        "other",
+        "saturday"
+      ]
+    },
+    {
+      "id": "nominative-appellation",
+      "set": "nominative",
+      "group": "nominative-other",
+      "name": "Nominative of Appellation",
+      "short": "Appellation",
+      "tile": "A",
+      "oneLine": "A title used as a personal name, kept in the nominative even where the syntax was expecting another case.",
+      "mnemonic": "The title is on the name badge — and badges don't decline.",
+      "mnemonicWhy": "Once \"Teacher\" is what people actually call him, it stops behaving like a noun in a sentence and starts behaving like the name printed on a badge. (Second hook if you have any Spanish: appellation ≈ apellido, \"surname\".)",
+      "spotIt": "The word is a title, it is being quoted as what someone is called, and it is in the nominative when the surrounding grammar wanted an accusative.",
+      "examples": [
+        {
+          "ref": "John 13:13",
+          "greek": "ὑμεῖς φωνεῖτέ με *ὁ διδάσκαλος* καὶ *ὁ κύριος*",
+          "english": "You call me *Teacher* and *Lord*",
+          "note": "φωνεῖτέ με wants an accusative complement, but the titles stay nominative — they are functioning as the name itself."
+        }
+      ],
+      "watchOut": "This is the simplest of the four 'other' uses. If a nominative is plainly a title-as-name, stop looking for anything cleverer.",
+      "tags": [
+        "nominative",
+        "other",
+        "saturday"
+      ]
+    },
+    {
+      "id": "nominative-absolute",
+      "set": "nominative",
+      "group": "nominative-other",
+      "name": "Nominative Absolute",
+      "short": "Absolute",
+      "tile": "A",
+      "oneLine": "A nominative with no grammatical connection to any sentence — usually a heading, a title or a greeting.",
+      "mnemonic": "Absolute = the headline.",
+      "mnemonicWhy": "A headline floats above the page attached to nothing. No verb, no clause, no rope — it is just announced.",
+      "spotIt": "Introductory material — a book title, a salutation, a list — with no verb anywhere to attach it to.",
+      "examples": [
+        {
+          "ref": "Mark 1:1",
+          "greek": "*Ἀρχὴ* τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ",
+          "english": "*The beginning* of the gospel of Jesus Christ",
+          "note": "ἀρχή is nominative and stands entirely alone; every word hanging off it is genitive."
+        },
+        {
+          "ref": "1 Tim. 1:2",
+          "greek": "*χάρις ἔλεος εἰρήνη* ἀπὸ θεοῦ πατρός",
+          "english": "*Grace, mercy, peace* from God the Father",
+          "note": "All nominative, all introductory, all grammatically independent."
+        }
+      ],
+      "watchOut": "Absolute has NO rope. If a pronoun later in the sentence picks the word back up, it is hanging, not absolute.",
+      "tags": [
+        "nominative",
+        "other",
+        "saturday"
+      ]
+    },
+    {
+      "id": "hanging-nominative",
+      "set": "nominative",
+      "group": "nominative-other",
+      "name": "Hanging Nominative",
+      "short": "Hanging",
+      "tile": "H",
+      "oneLine": "Grammatically independent like the absolute, but logically the subject — picked up later by a pronoun.",
+      "mnemonic": "It hangs by a pronoun.",
+      "mnemonicWhy": "The pronoun downstream is the rope. Cut the pronoun and the word drops — which is exactly the difference from an absolute, which was never tied to anything.",
+      "spotIt": "Find the stray nominative, then look ahead: is there a pronoun in the next clause standing in its place?",
+      "examples": [
+        {
+          "ref": "Matt. 13:38",
+          "greek": "τὸ δὲ καλὸν *σπέρμα*, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας",
+          "english": "and the good *seed* — these are the sons of the kingdom",
+          "note": "σπέρμα is grammatically loose, but οὗτοι (\"these\") is doing its job in the main clause. That pronoun is the rope."
+        }
+      ],
+      "watchOut": "Absolute = no connection at all. Hanging = a logical connection with no grammatical one.",
+      "tags": [
+        "nominative",
+        "other",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-idea",
+      "set": "accusative",
+      "group": "accusative-overview",
+      "name": "The Case of Limitation",
+      "short": "The idea",
+      "type": "rule",
+      "oneLine": "The accusative limits or specifies the action of the verb.",
+      "mnemonic": "The nominative crowns; the accusative fences.",
+      "mnemonicWhy": "Every accusative use is a fence post: it marks how far the verb's action goes — onto whom (direct object), how far (measure), in what way (manner), with respect to what (respect).",
+      "spotIt": "Two families to sort into: does it behave like a noun (substantival) or like an adverb (adverbial)?",
+      "examples": [
+        {
+          "ref": "The whole chapter in one line",
+          "greek": null,
+          "english": "One object with four twists — Echo, Two, Sub, Alias — then the MMR shot: Measure, Manner, Respect.",
+          "note": "Substantival first, adverbial second."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "saturday"
+      ]
+    },
+    {
+      "id": "direct-object",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Direct Object",
+      "short": "Direct object",
+      "tile": "DO",
+      "oneLine": "The thing the verb's action lands on — far and away the most common accusative.",
+      "mnemonic": "The verb throws; the object catches.",
+      "mnemonicWhy": "Everything else in the substantival family is a twist on this one throw, so fix the plain case first.",
+      "spotIt": "Transitive verb, then ask \"whom?\" or \"what?\"",
+      "examples": [
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "I hit *Ivan*.",
+          "note": "Ivan catches the hitting."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "substantival",
+        "saturday"
+      ]
+    },
+    {
+      "id": "cognate-accusative",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Cognate Accusative",
+      "short": "Cognate",
+      "tile": "Echo",
+      "oneLine": "A direct object that shares the verb's lexical root, or its concept.",
+      "mnemonic": "Echo — the object echoes the verb.",
+      "mnemonicWhy": "Twist one of four. Say the verb and hear it come back: sing a song, fight a fight, shepherd a flock.",
+      "spotIt": "Say the verb and the object out loud. If it sounds redundant in English, it is cognate.",
+      "examples": [
+        {
+          "ref": "1 Tim. 1:18",
+          "greek": "στρατεύῃ … *τὴν καλὴν στρατείαν*",
+          "english": "fight *the good fight*",
+          "note": "Same root twice — the tightest kind of echo."
+        },
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "I shepherd *a flock*.",
+          "note": "Not the same root, but the same concept — a conceptual echo still counts."
+        },
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "I sing *a song*.",
+          "note": "The textbook case."
+        }
+      ],
+      "watchOut": "It is still a direct object. Cognate names the flavour, not a different slot.",
+      "tags": [
+        "accusative",
+        "substantival",
+        "saturday"
+      ]
+    },
+    {
+      "id": "double-accusative",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Double Accusative",
+      "short": "Double",
+      "tile": "Two",
+      "oneLine": "Two accusatives in one clause — either person + thing, or object + complement.",
+      "mnemonic": "Two — \"ask someone something\" vs \"call someone something\".",
+      "mnemonicWhy": "Twist two of four. Both types have two accusatives; the two English frames keep them apart. You ASK a person FOR a thing. You CALL an object A NAME.",
+      "spotIt": "Try to slip \"as\" or \"to be\" between the two accusatives. If it fits, it is object + complement. If it does not, it is personal + impersonal.",
+      "examples": [
+        {
+          "ref": "Matt. 7:9",
+          "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
+          "english": "if his son asks *him* for *bread*",
+          "note": "him (personal) + bread (impersonal). You cannot say \"asks him AS bread\"."
+        },
+        {
+          "ref": "Mark 10:45",
+          "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
+          "english": "to give his *life* as a *ransom* for many",
+          "note": "life is the direct object; λύτρον is the complement. \"As\" slips right in — object + complement."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "substantival",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-subject-infinitive",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Accusative Subject of the Infinitive",
+      "short": "Subj. of inf.",
+      "tile": "Sub",
+      "oneLine": "An infinitive takes its subject in the accusative, where a finite verb would take a nominative.",
+      "mnemonic": "Sub — finite verbs pay in nominative, infinitives pay in accusative.",
+      "mnemonicWhy": "Twist three of four. The odd one out: this accusative is doing the action, not receiving it. Infinitives simply pay their staff in a different currency.",
+      "spotIt": "Find the infinitive, then find the accusative that is performing it rather than catching it.",
+      "examples": [
+        {
+          "ref": "Pattern",
+          "greek": null,
+          "english": "…for *him* to go away",
+          "note": "\"Him\" is doing the going. In Greek that word is accusative, and it is the infinitive's subject."
+        }
+      ],
+      "watchOut": "The only accusative that translates as the doer. If \"the one doing it\" fits, you are here.",
+      "tags": [
+        "accusative",
+        "substantival",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-apposition",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Accusative of Apposition",
+      "short": "Apposition (acc.)",
+      "tile": "Alias",
+      "oneLine": "The same move as nominative apposition, in accusative dress: a second accusative renaming the first.",
+      "mnemonic": "Alias — the name tag, now on the object.",
+      "mnemonicWhy": "Twist four of four. If you have the nominative name tag, you already have this one; only the case changed.",
+      "spotIt": "Two accusatives, no verb between them, and the second answers \"which one, exactly?\"",
+      "examples": [
+        {
+          "ref": "Acts 6:5",
+          "greek": "ἐξελέξαντο Στέφανον, *ἄνδρα* πλήρη πίστεως",
+          "english": "they chose Stephen, *a man* full of faith",
+          "note": "Στέφανον is the direct object; ἄνδρα apposits it."
+        },
+        {
+          "ref": "Matt. 2:6",
+          "greek": "ποιμανεῖ τὸν λαόν μου *τὸν Ἰσραήλ*",
+          "english": "he will shepherd my people, *Israel*",
+          "note": "Ἰσραήλ apposits λαόν."
+        }
+      ],
+      "watchOut": "Do not confuse with a double accusative. Apposition renames; a complement predicates something of the object.",
+      "tags": [
+        "accusative",
+        "substantival",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-measure",
+      "set": "accusative",
+      "group": "accusative-adverbial",
+      "name": "Accusative of Measure",
+      "short": "Measure",
+      "tile": "M",
+      "oneLine": "Extent or degree — how far, how long, how much.",
+      "mnemonic": "MMR, shot one: How far?",
+      "mnemonicWhy": "The three adverbial accusatives come as one MMR jab: Measure, Manner, Respect. Measure is the one with a tape measure on it.",
+      "spotIt": "Ask \"how far / how long?\" and see whether the accusative answers.",
+      "examples": [
+        {
+          "ref": "Mark 14:35",
+          "greek": "προελθὼν *μικρὸν*",
+          "english": "going *a little* farther",
+          "note": "μικρόν measures the distance, not the object of any verb."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "adverbial",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-manner",
+      "set": "accusative",
+      "group": "accusative-adverbial",
+      "name": "Accusative of Manner",
+      "short": "Manner",
+      "tile": "M",
+      "oneLine": "How the action is carried out.",
+      "mnemonic": "MMR, shot two: How?",
+      "mnemonicWhy": "Manner turns the noun into an adverb: δωρεάν stops being \"a gift\" and becomes \"gift-wise\", i.e. freely.",
+      "spotIt": "Ask \"how?\" — and check that an -ly adverb is the natural English.",
+      "examples": [
+        {
+          "ref": "Rom. 3:24",
+          "greek": "δικαιούμενοι *δωρεὰν* τῇ αὐτοῦ χάριτι",
+          "english": "being justified *freely* by his grace",
+          "note": "δωρεάν = freely, as a gift. It describes the manner of the justifying."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "adverbial",
+        "saturday"
+      ]
+    },
+    {
+      "id": "accusative-respect",
+      "set": "accusative",
+      "group": "accusative-adverbial",
+      "name": "Accusative of Respect",
+      "short": "Respect",
+      "tile": "R",
+      "oneLine": "Limits the scope of the verb — supply \"with reference to\" or \"concerning\" when you translate.",
+      "mnemonic": "MMR, shot three: How so? — slot in \"as to\".",
+      "mnemonicWhy": "The fence at its narrowest. The verb happened, but only in one respect, and this accusative names that respect.",
+      "spotIt": "Say the clause with \"with respect to\" in front of the accusative. If that rescues the sense, you have found it.",
+      "examples": [
+        {
+          "ref": "Acts 2:37",
+          "greek": "κατενύγησαν *τὴν καρδίαν*",
+          "english": "they were pierced *with respect to the heart*",
+          "note": "Not a physical piercing of an organ — an inner wound. \"With respect to\" is what keeps it from sounding surgical."
+        }
+      ],
+      "watchOut": "Easy to mistake for a direct object. If \"with respect to\" makes the sentence better rather than worse, it is respect.",
+      "tags": [
+        "accusative",
+        "adverbial",
+        "saturday"
+      ]
+    }
+  ],
+  "confusions": [
+    {
+      "id": "pn-vs-apposition",
+      "pair": [
+        "predicate-nominative",
+        "nominative-apposition"
+      ],
+      "question": "Predicate nominative or apposition?",
+      "test": "Is there a to-be verb?",
+      "answer": "Verb ⇒ predicate nominative (a claim). No verb, just a comma ⇒ apposition (a label).",
+      "example": "\"Ivan is the student\" (claim) vs \"Ivan, the student, came to class\" (label)."
+    },
+    {
+      "id": "absolute-vs-hanging",
+      "pair": [
+        "nominative-absolute",
+        "hanging-nominative"
+      ],
+      "question": "Absolute or hanging?",
+      "test": "Does a pronoun later in the sentence pick the word back up?",
+      "answer": "No rope at all ⇒ absolute. Hangs by a pronoun ⇒ hanging.",
+      "example": "Mark 1:1 \"The beginning of the gospel…\" (headline) vs Matt. 13:38 \"the good seed — THESE are the sons…\" (rope)."
+    },
+    {
+      "id": "address-vs-subject",
+      "pair": [
+        "nominative-address",
+        "subject"
+      ],
+      "question": "Address or subject?",
+      "test": "Is the person being talked about, or talked to?",
+      "answer": "Talked about ⇒ subject. Talked to ⇒ address, however nominative the form looks.",
+      "example": "\"Husbands love their wives\" (subject) vs \"Husbands, love your wives\" (address)."
+    },
+    {
+      "id": "which-nominative-is-subject",
+      "pair": [
+        "pecking-order",
+        "predicate-nominative"
+      ],
+      "question": "Two nominatives round one verb — which is the subject?",
+      "test": "Run PAP: pronoun, then article, then proper name.",
+      "answer": "First hit wins. In John 1:1c ὁ λόγος has the article, so it is the subject and θεός is the predicate nominative — definite, not \"a god\".",
+      "example": "καὶ θεὸς ἦν ὁ λόγος."
+    },
+    {
+      "id": "cognate-vs-plain-object",
+      "pair": [
+        "cognate-accusative",
+        "direct-object"
+      ],
+      "question": "Cognate or plain direct object?",
+      "test": "Does the object echo the verb — same root, or same concept?",
+      "answer": "Echo ⇒ cognate. No echo ⇒ just a direct object. Either way it is still the object.",
+      "example": "\"Fight the good fight\" (echo) vs \"I hit Ivan\" (no echo)."
+    },
+    {
+      "id": "double-which-kind",
+      "pair": [
+        "double-accusative",
+        "accusative-apposition"
+      ],
+      "question": "Two accusatives — which arrangement?",
+      "test": "Can you slip \"as\" or \"to be\" between them?",
+      "answer": "\"As\" fits ⇒ object + complement. \"As\" does not fit and one is a person ⇒ personal + impersonal. No verb and the second merely renames the first ⇒ apposition.",
+      "example": "\"gave his life AS a ransom\" (complement) vs \"asks him for bread\" (person + thing) vs \"chose Stephen, a man full of faith\" (apposition)."
+    },
+    {
+      "id": "respect-vs-object",
+      "pair": [
+        "accusative-respect",
+        "direct-object"
+      ],
+      "question": "Accusative of respect or direct object?",
+      "test": "Put \"with respect to\" in front of it.",
+      "answer": "Sense improves ⇒ respect. Sense gets worse ⇒ direct object.",
+      "example": "Acts 2:37 \"pierced WITH RESPECT TO the heart\" — better. \"I hit WITH RESPECT TO Ivan\" — worse."
+    }
+  ],
+  "extraQuiz": [
+    {
+      "prompt": "\"Grace, mercy, peace from God our Father\" (1 Tim. 1:2) — all nominative, no verb, opening a letter.",
+      "answer": "nominative-absolute",
+      "why": "Introductory material with no grammatical tie to anything. A headline, not a rope."
+    },
+    {
+      "prompt": "\"You call me Teacher and Lord\" (John 13:13) — the titles are nominative where you expected accusative.",
+      "answer": "nominative-appellation",
+      "why": "A title functioning as the name people use. Badges don't decline."
+    },
+    {
+      "prompt": "\"Son of David, have mercy on us\" (Matt. 9:27).",
+      "answer": "nominative-address",
+      "why": "He is being hailed, not described. Nominative form, vocative job."
+    },
+    {
+      "prompt": "\"Paul, a servant of Christ Jesus\" (Rom. 1:1) — two nominatives, no verb.",
+      "answer": "nominative-apposition",
+      "why": "δοῦλος renames Παῦλος. No copula, so no claim is being made — it is a label."
+    },
+    {
+      "prompt": "\"He is our peace\" (Eph. 2:14).",
+      "answer": "predicate-nominative",
+      "why": "A copula with a nominative each side. αὐτός is a pronoun, so it takes the subject slot; ἡ εἰρήνη is what is asserted."
+    },
+    {
+      "prompt": "\"The good seed — these are the sons of the kingdom\" (Matt. 13:38).",
+      "answer": "hanging-nominative",
+      "why": "σπέρμα is grammatically loose but οὗτοι picks it up. Hanging by a pronoun."
+    },
+    {
+      "prompt": "\"Fight the good fight\" (1 Tim. 1:18).",
+      "answer": "cognate-accusative",
+      "why": "The object echoes the verb — same root, even."
+    },
+    {
+      "prompt": "\"He gave his life as a ransom for many\" (Mark 10:45).",
+      "answer": "double-accusative",
+      "why": "Two accusatives, and \"as\" slips between them: object + complement."
+    },
+    {
+      "prompt": "\"They were cut to the heart\" (Acts 2:37) — an inner wound, not a surgical one.",
+      "answer": "accusative-respect",
+      "why": "Supply \"with respect to\" and the sense improves."
+    },
+    {
+      "prompt": "\"Going a little farther, he fell on the ground\" (Mark 14:35).",
+      "answer": "accusative-measure",
+      "why": "μικρόν answers \"how far?\" — MMR shot one."
+    },
+    {
+      "prompt": "\"Being justified freely by his grace\" (Rom. 3:24).",
+      "answer": "accusative-manner",
+      "why": "δωρεάν answers \"how?\" — MMR shot two."
+    },
+    {
+      "prompt": "\"They chose Stephen, a man full of faith\" (Acts 6:5).",
+      "answer": "accusative-apposition",
+      "why": "ἄνδρα renames the direct object. Alias."
+    },
+    {
+      "prompt": "An infinitive's subject — the one performing the infinitive's action.",
+      "answer": "accusative-subject-infinitive",
+      "why": "Finite verbs take nominative subjects; infinitives take accusative ones."
+    },
+    {
+      "prompt": "\"and the Word was God\" (John 1:1c) — which use is θεός?",
+      "answer": "predicate-nominative",
+      "why": "ὁ λόγος has the article and wins the pecking order, so θεός is the predicate nominative. Anarthrous, and still definite."
+    }
+  ]
+}
