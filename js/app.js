@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v2 · 2026-08-27';
+const BUILD = 'v3 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -432,7 +432,7 @@ function viewLearn(arg) {
     <section class="card">
       <h2>Learn — ${esc(filterLabel())}</h2>
       ${filterChips('learn')}
-      <p class="note">Tap a card to open it. The pips on the right are how far it has climbed the drill boxes.</p>
+      <p class="note">Tap a card to open it. The pips on the right show how far it has climbed the drill boxes.</p>
     </section>
 
     ${bySet
