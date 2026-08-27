@@ -893,3 +893,35 @@ code {
   background: var(--bg-elev);
   margin-top: 9px;
 }
+
+/* ---------- Greek-first quiz prompts ----------
+   The exam is on the Greek, so the Greek is the question and the English
+   is a gloss you can put away. */
+
+.q-ref {
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.q-greek {
+  font-size: 21px;
+  line-height: 1.55;
+  margin: 0 0 8px;
+}
+
+.q-prompt.is-gloss {
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* Blurred rather than removed, so the layout does not jump when you peek. */
+.q-prompt.is-hidden {
+  filter: blur(5px);
+  user-select: none;
+}
+
+.q-prompt + .btn.ghost {
+  margin-top: 8px;
+}

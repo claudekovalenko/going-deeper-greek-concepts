@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2 — Nominative, Vocative, Accusative",
+  "chapter": "ch. 2–3 — Nominative, Accusative, Genitive",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-08-27",
   "notes": [
@@ -60,6 +60,41 @@
           "name": "Adverbial (adverb-like) — the MMR shot",
           "mnemonic": "M-M-R",
           "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)"
+        }
+      ]
+    },
+    {
+      "id": "genitive",
+      "name": "Genitive",
+      "subtitle": "The “of” case. The question is always: which kind of “of”?",
+      "color": "#7a5cc8",
+      "bigIdea": "The genitive describes. The nominative names, the accusative fences, the genitive tells you which kind.",
+      "masterMnemonic": "Every genitive is an “of”. Ask which kind.",
+      "masterMnemonicWhy": "Four drawers. It describes a noun. It hides a verb — X does it, or X gets it. It modifies a verb, and those five make PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
+      "groups": [
+        {
+          "id": "genitive-adjectival",
+          "name": "Adjectival — describes the noun",
+          "mnemonic": "Which kind of “of”?",
+          "expand": "From · Made of · Part of"
+        },
+        {
+          "id": "genitive-verbal",
+          "name": "Verbal — a verb hiding in the noun",
+          "mnemonic": "Does it · Gets it",
+          "expand": "Subjective (X does it) · Objective (X gets it)"
+        },
+        {
+          "id": "genitive-adverbial",
+          "name": "Adverbial — modifies the verb: PACTS",
+          "mnemonic": "P-A-C-T-S",
+          "expand": "Price · Agency · Comparison · Time or place · Separation"
+        },
+        {
+          "id": "genitive-other",
+          "name": "Other — the odd drawer",
+          "mnemonic": "Another name · Genitive object",
+          "expand": "Apposition · Direct object"
         }
       ]
     }
@@ -746,6 +781,468 @@
         "adverbial",
         "saturday"
       ]
+    },
+    {
+      "id": "genitive-source",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Source",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the righteousness",
+          "of God"
+        ],
+        "note": "= that comes FROM X."
+      },
+      "short": "Source",
+      "tile": "From",
+      "oneLine": "Indicates the origin of the head noun (“from”).",
+      "mnemonic": "Source = where it came from.",
+      "mnemonicWhy": "Swap “of” for “from” and see whether it still works. “The righteousness from God.”",
+      "spotIt": "Try “from” in place of “of”. Still makes sense? Source.",
+      "examples": [
+        {
+          "ref": "Rom 10:3",
+          "greek": "τὴν *τοῦ θεοῦ* δικαιοσύνην",
+          "english": "the righteousness *of God*",
+          "note": "The righteousness comes from God. Swap in “from” and it still reads."
+        }
+      ],
+      "watchOut": "Separation also translates “from”. Source is where a noun came from; separation is what a verb moves away from.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-material",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Material or Content",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "a cup",
+          "of water"
+        ],
+        "note": "= made of X, or full of X."
+      },
+      "short": "Material",
+      "tile": "Made of",
+      "oneLine": "Indicates the material of which the head term is made or specifies the content of an object or abstract noun.",
+      "mnemonic": "Made of it, or full of it.",
+      "mnemonicWhy": "Cargo of gold is made of gold. A cup of water is full of water. One case, two flavours.",
+      "spotIt": "Ask: made of what? or full of what?",
+      "examples": [
+        {
+          "ref": "Rev 18:12",
+          "greek": "γόμον *χρυσοῦ*",
+          "english": "cargo *of gold*",
+          "note": "Material — the cargo is made of gold."
+        },
+        {
+          "ref": "Mark 9:41",
+          "greek": "ποτήριον *ὕδατος*",
+          "english": "a cup *of water*",
+          "note": "Content — the cup is full of water."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-partitive",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Partitive",
+      "formula": {
+        "pattern": [
+          "one",
+          "of X"
+        ],
+        "filled": [
+          "one",
+          "of the boats"
+        ],
+        "note": "The genitive is the WHOLE. The head noun is the part."
+      },
+      "short": "Partitive",
+      "tile": "Part of",
+      "oneLine": "Whether by itself or in conjunction with the preposition ἀπό or ἐκ, the articular noun in the genitive denotes the whole of which the head noun is a part.",
+      "mnemonic": "The genitive is the whole pie. The head noun is your slice.",
+      "mnemonicWhy": "Backwards from what you expect: the word in the genitive is the bigger thing, not the smaller one.",
+      "spotIt": "Ask: is the genitive word the whole that the other word is a piece of?",
+      "examples": [
+        {
+          "ref": "Luke 5:3",
+          "greek": "ἓν *τῶν πλοίων*",
+          "english": "one *of the boats*",
+          "note": "The boats are the whole; the one boat is the part."
+        }
+      ],
+      "watchOut": "Often turns up with ἀπό or ἐκ, and the genitive noun carries the article.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-subjective",
+      "set": "genitive",
+      "group": "genitive-verbal",
+      "name": "Subjective",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the love",
+          "of Christ"
+        ],
+        "note": "→ Christ loves. X does the action."
+      },
+      "short": "Subjective",
+      "tile": "Does it",
+      "oneLine": "Functions semantically as the subject of the verbal idea implied in the head noun, producing the action.",
+      "mnemonic": "Subject does it.",
+      "mnemonicWhy": "Turn the head noun back into a verb. “The love of Christ” → Christ loves. X is the one doing it.",
+      "spotIt": "Make the head noun a verb, then ask: is X doing it?",
+      "examples": [
+        {
+          "ref": "Rom 8:35",
+          "greek": "τίς ἡμᾶς χωρίσει ἀπὸ τῆς ἀγάπης *τοῦ Χριστοῦ*;",
+          "english": "Who can separate us from the love *of Christ*?",
+          "note": "Christ is the one loving. Make the noun a verb and X is doing it."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "verbal",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-objective",
+      "set": "genitive",
+      "group": "genitive-verbal",
+      "name": "Objective",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "faith",
+          "in God"
+        ],
+        "note": "→ you believe God. X receives the action."
+      },
+      "short": "Objective",
+      "tile": "Gets it",
+      "oneLine": "Functions semantically as the direct object of the verbal idea implicit in the head noun, receiving the action.",
+      "mnemonic": "Object gets it.",
+      "mnemonicWhy": "Same move, other direction. “Faith of God” means faith IN God — God is on the receiving end.",
+      "spotIt": "Make the head noun a verb, then ask: is X getting it?",
+      "examples": [
+        {
+          "ref": "Mark 11:22",
+          "greek": "ἔχετε πίστιν *θεοῦ*",
+          "english": "Have faith *in God*",
+          "note": "God is believed in, not believing. X is receiving the action."
+        }
+      ],
+      "watchOut": "Subjective and objective look identical in Greek. Only the sense decides which one it is.",
+      "tags": [
+        "genitive",
+        "verbal",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-price",
+      "set": "genitive",
+      "group": "genitive-adverbial",
+      "name": "Price",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (gen.)"
+        ],
+        "filled": [
+          "bought",
+          "with a price"
+        ],
+        "note": "for how much?"
+      },
+      "short": "Price",
+      "tile": "P",
+      "oneLine": "Indicates the price that is paid or the value that attaches to a given item.",
+      "mnemonic": "PACTS — P: for how much?",
+      "mnemonicWhy": "What it cost, or what it is worth.",
+      "spotIt": "Ask: at what price? worth how much?",
+      "examples": [
+        {
+          "ref": "1 Cor 6:20 NASB",
+          "greek": "ἠγοράσθητε … *τιμῆς*",
+          "english": "you have been bought *with a price*",
+          "note": "τιμῆς is what was paid."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adverbial",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-agency",
+      "set": "genitive",
+      "group": "genitive-adverbial",
+      "name": "Means or Agency",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (gen.)"
+        ],
+        "filled": [
+          "blessed",
+          "by my Father"
+        ],
+        "note": "by what? by whom?"
+      },
+      "short": "Means/Agency",
+      "tile": "A",
+      "oneLine": "Conveys the impersonal means or personal agent by which a given action is carried out (“by”).",
+      "mnemonic": "PACTS — A: by what? by whom?",
+      "mnemonicWhy": "A thing did it (means) or a person did it (agency). Both come out as “by”.",
+      "spotIt": "Ask: by what, or by whom? A thing = means. A person = agency.",
+      "examples": [
+        {
+          "ref": "Jas 1:13",
+          "greek": "ὁ γὰρ θεὸς ἀπείραστός ἐστιν *κακῶν*",
+          "english": "Since God is not tempted *by evil*",
+          "note": "Means — evil is a thing, not a person."
+        },
+        {
+          "ref": "Matt 25:34",
+          "greek": "δεῦτε, οἱ εὐλογημένοι *τοῦ πατρός μου*",
+          "english": "Come, you who are blessed *by my Father*",
+          "note": "Agency — the Father is a person."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adverbial",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-comparison",
+      "set": "genitive",
+      "group": "genitive-adverbial",
+      "name": "Comparison",
+      "formula": {
+        "pattern": [
+          "comparative",
+          "X (gen.)"
+        ],
+        "filled": [
+          "greater",
+          "than our heart"
+        ],
+        "note": "than what?"
+      },
+      "short": "Comparison",
+      "tile": "C",
+      "oneLine": "Used to denote comparison in conjunction with a comparative adjective (“than”).",
+      "mnemonic": "PACTS — C: than what?",
+      "mnemonicWhy": "Find a comparative — greater, better, more — and the genitive beside it is the thing being beaten.",
+      "spotIt": "See a comparative adjective? The genitive next to it is the “than”.",
+      "examples": [
+        {
+          "ref": "1 John 3:20",
+          "greek": "μείζων ἐστὶν ὁ θεὸς *τῆς καρδίας* ἡμῶν",
+          "english": "God is greater *than our heart*",
+          "note": "μείζων is the comparative; the genitive is what he is greater than."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adverbial",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-time-place",
+      "set": "genitive",
+      "group": "genitive-adverbial",
+      "name": "Time or Place",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (gen.)"
+        ],
+        "filled": [
+          "came",
+          "at night"
+        ],
+        "note": "when? where?"
+      },
+      "short": "Time/Place",
+      "tile": "T",
+      "oneLine": "Indicates the location in time or space where an action occurs. The focus is on kind or quality.",
+      "mnemonic": "PACTS — T: when? where?",
+      "mnemonicWhy": "The one with a clock and a map on it. Note the focus is the kind of time, not a point on a clock.",
+      "spotIt": "Ask: when did it happen? where did it happen?",
+      "examples": [
+        {
+          "ref": "John 19:39",
+          "greek": "ὁ ἐλθὼν πρὸς αὐτὸν *νυκτὸς* τὸ πρῶτον",
+          "english": "who had previously come to him *at night*",
+          "note": "Time — night is the kind of time it happened in."
+        },
+        {
+          "ref": "Matt 1:12 NIV",
+          "greek": "μετὰ δὲ τὴν μετοικεσίαν *Βαβυλῶνος*",
+          "english": "After the exile *to Babylon*",
+          "note": "Place — where the exile went."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adverbial",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-separation",
+      "set": "genitive",
+      "group": "genitive-adverbial",
+      "name": "Separation",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (gen.)"
+        ],
+        "filled": [
+          "depart",
+          "from the faith"
+        ],
+        "note": "away from what?"
+      },
+      "short": "Separation",
+      "tile": "S",
+      "oneLine": "Indicates motion away from or distance, whether literally or figuratively (“from”).",
+      "mnemonic": "PACTS — S: away from what?",
+      "mnemonicWhy": "Movement away, real or figurative — walking away from a place, or away from the faith.",
+      "spotIt": "Ask: away from what? Does “from” fit?",
+      "examples": [
+        {
+          "ref": "1 Tim 4:1",
+          "greek": "ἀποστήσονταί τινες *τῆς πίστεως*",
+          "english": "some will depart *from the faith*",
+          "note": "Movement away from — figurative, but still away."
+        }
+      ],
+      "watchOut": "Source also translates “from”. Separation moves away from something; source is where a noun came from.",
+      "tags": [
+        "genitive",
+        "adverbial",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-apposition",
+      "set": "genitive",
+      "group": "genitive-other",
+      "name": "Apposition",
+      "formula": {
+        "pattern": [
+          "head noun,",
+          "X (gen.)"
+        ],
+        "filled": [
+          "Jeremiah",
+          "the prophet"
+        ],
+        "note": "X is another name for the head noun."
+      },
+      "short": "Apposition (gen.)",
+      "tile": "Another name",
+      "oneLine": "The genitive of apposition provides an alternate designation (simple) of a genitive head noun or provides an explanatory (epexegetical) restatement of a head noun in any case.",
+      "mnemonic": "The name tag again — third case running.",
+      "mnemonicWhy": "You have met this in the nominative and the accusative. Same move: the second word renames the first.",
+      "spotIt": "Ask: is the genitive another name for the head noun? “Jeremiah, who is the prophet.” “The gift, which is the Holy Spirit.”",
+      "examples": [
+        {
+          "ref": "Matt 2:17",
+          "greek": "διὰ Ἰερεμίου *τοῦ προφήτου*",
+          "english": "through Jeremiah *the prophet*",
+          "note": "Simple — the head noun Ἰερεμίου is itself genitive."
+        },
+        {
+          "ref": "Acts 2:38",
+          "greek": "τὴν δωρεὰν *τοῦ ἁγίου πνεύματος*",
+          "english": "the gift *of the Holy Spirit*",
+          "note": "Epexegetical — the gift IS the Spirit. The head noun here is accusative."
+        }
+      ],
+      "watchOut": "Simple: the head noun is genitive too. Epexegetical: the head noun can be any case.",
+      "tags": [
+        "genitive",
+        "other",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-direct-object",
+      "set": "genitive",
+      "group": "genitive-other",
+      "name": "Direct Object",
+      "formula": {
+        "pattern": [
+          "certain verbs",
+          "X (gen.)"
+        ],
+        "filled": [
+          "you did not lack",
+          "anything"
+        ],
+        "note": "The verb wanted a genitive, not an accusative."
+      },
+      "short": "Direct object (gen.)",
+      "tile": "Genitive DO",
+      "oneLine": "Verbs of sensation, emotion or volition, sharing, ruling, or separation take their direct object in the genitive case (instead of the accusative case).",
+      "mnemonic": "Feel it, want it, share it, rule it, leave it.",
+      "mnemonicWhy": "Six kinds of verb do this: sensation and emotion (feel it), volition (want it), sharing, ruling, separation (leave it). It is a habit of the verb, not a meaning.",
+      "spotIt": "A genitive sitting where you expected an accusative? Check the verb: sensing, feeling, wanting, sharing, ruling, separating?",
+      "examples": [
+        {
+          "ref": "Luke 22:35 NASB",
+          "greek": "μή *τινος* ὑστερήσατε",
+          "english": "you did not lack *anything*, did you?",
+          "note": "ὑστερέω takes its object in the genitive."
+        }
+      ],
+      "watchOut": "This one follows a VERB. The objective genitive follows a NOUN.",
+      "tags": [
+        "genitive",
+        "other",
+        "quiz"
+      ]
     }
   ],
   "confusions": [
@@ -825,6 +1322,50 @@
       "test": "Put “with respect to” in front of it.",
       "answer": "Better ⇒ respect. Worse ⇒ direct object.",
       "example": "“pierced WITH RESPECT TO the heart” — better. “I hit WITH RESPECT TO Ivan” — worse."
+    },
+    {
+      "id": "subjective-vs-objective",
+      "pair": [
+        "genitive-subjective",
+        "genitive-objective"
+      ],
+      "question": "Subjective or objective?",
+      "test": "Turn the head noun into a verb. Is X doing it, or getting it?",
+      "answer": "Doing it ⇒ subjective. Getting it ⇒ objective.",
+      "example": "“the love of Christ” — Christ loving (subjective) or Christ being loved (objective). The Greek is identical either way."
+    },
+    {
+      "id": "source-vs-separation",
+      "pair": [
+        "genitive-source",
+        "genitive-separation"
+      ],
+      "question": "Source or separation? Both say “from”.",
+      "test": "Is the “from” attached to a noun or to a verb?",
+      "answer": "Where a noun came from ⇒ source. What a verb moves away from ⇒ separation.",
+      "example": "“the righteousness from God” (source) vs “depart from the faith” (separation)."
+    },
+    {
+      "id": "gendo-vs-objective",
+      "pair": [
+        "genitive-direct-object",
+        "genitive-objective"
+      ],
+      "question": "Genitive direct object or objective genitive?",
+      "test": "What is the genitive hanging off — a verb or a noun?",
+      "answer": "Off a verb ⇒ genitive direct object. Off a noun ⇒ objective genitive.",
+      "example": "“you did not lack anything” (verb) vs “faith in God” (noun)."
+    },
+    {
+      "id": "partitive-whole-or-part",
+      "pair": [
+        "genitive-partitive",
+        "genitive-material"
+      ],
+      "question": "Partitive or material/content?",
+      "test": "Is the genitive the whole the head noun is a slice of, or the stuff the head noun is made of?",
+      "answer": "Whole ⇒ partitive. Stuff ⇒ material or content.",
+      "example": "“one of the boats” (a slice of the fleet) vs “a cup of water” (what fills the cup)."
     }
   ],
   "extraQuiz": [
@@ -897,6 +1438,21 @@
       "prompt": "\"and the Word was God\" (John 1:1c) — which use is θεός?",
       "answer": "predicate-nominative",
       "why": "ὁ λόγος has the article and wins the pecking order, so θεός is the predicate. No article, and still definite."
+    },
+    {
+      "prompt": "ἐμβὰς δὲ εἰς ἓν τῶν πλοίων (Luke 5:3) — the underlined τῶν πλοίων.",
+      "answer": "genitive-partitive",
+      "why": "The boats are the whole; the one boat is the slice. Book practice exercise 2."
+    },
+    {
+      "prompt": "μνημονεύετε τῆς γυναικὸς Λώτ (Luke 17:32) — the underlined τῆς γυναικός.",
+      "answer": "genitive-direct-object",
+      "why": "μνημονεύω is a verb of memory — sensation — so it takes its object in the genitive. Book practice exercise 3."
+    },
+    {
+      "prompt": "ὁ δὲ μικρότερος … μείζων αὐτοῦ ἐστιν (Matt 11:11) — the underlined αὐτοῦ.",
+      "answer": "genitive-comparison",
+      "why": "μείζων is a comparative, so the genitive beside it is the “than”. Book practice exercise 1, second underline."
     }
   ]
 }

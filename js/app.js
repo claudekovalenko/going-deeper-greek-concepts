@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v4 · 2026-08-27';
+const BUILD = 'v5 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -45,7 +45,9 @@ const blank = () => ({
   filter: 'all',
   // Set once you have waved away the "add it to your home screen" card. The
   // one in Settings is permanent; this only silences the one on the Map.
-  installDismissed: false
+  installDismissed: false,
+  // Quiz prep: the exam is on the Greek, so you can put the gloss away.
+  hideEnglish: false
 });
 
 let state = load();
@@ -650,10 +652,13 @@ function quizPool() {
     if (card.type === 'rule') continue;
     for (const [i, ex] of (card.examples || []).entries()) {
       if (!ex.note) continue;
-      const line = ex.greek ? `${plain(ex.english)}  —  ${plain(ex.greek)}` : plain(ex.english);
       items.push({
         id: `e:${card.id}:${i}`,
-        prompt: `${ex.ref} — ${line}`,
+        ref: ex.ref,
+        // The exam is on the Greek, so the Greek is the question and the
+        // English is a gloss you can put away.
+        greek: plain(ex.greek),
+        prompt: plain(ex.english),
         answer: card.id,
         why: ex.note,
         set: card.set
@@ -661,7 +666,8 @@ function quizPool() {
     }
   }
 
-  return items;
+  // Greek-bearing items first: an English-only drill is a warm-up, not the exam.
+  return items.sort((a, b) => (b.greek ? 1 : 0) - (a.greek ? 1 : 0));
 }
 
 function optionsFor(item) {
@@ -691,17 +697,28 @@ function nextQuestion() {
     quiz = null;
     return;
   }
-  // Weight toward cards that are not yet learned — twice the tickets each.
-  const weighted = pool.flatMap((it) => (isLearned(it.answer) ? [it] : [it, it]));
+  // Twice the tickets for a card you have not learned, twice again for an item
+  // that carries Greek — that is what the quiz is actually on.
+  const weighted = pool.flatMap((it) => {
+    const tickets = (isLearned(it.answer) ? 1 : 2) * (it.greek ? 2 : 1);
+    return Array.from({ length: tickets }, () => it);
+  });
   const item = weighted[Math.floor(Math.random() * weighted.length)];
   quiz = { item, options: optionsFor(item), picked: null };
 }
 
 function viewSpot(arg) {
+  // Only when the filter actually changes. This runs on every render, and
+  // blanking the question here threw away the answer you had just given —
+  // so answering did nothing at all if you arrived by a #/spot/<set> link.
   if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) {
-    state.filter = arg;
-    quiz = null;
+    if (state.filter !== arg) {
+      state.filter = arg;
+      quiz = null;
+    }
   }
+  // A question left over from another set is not this set's question.
+  if (quiz && !selection().some((c) => c.id === quiz.item.answer)) quiz = null;
   if (!quiz) nextQuestion();
   if (!quiz) return `<section class="card"><p class="empty">No questions in this set.</p></section>`;
 
@@ -719,7 +736,18 @@ function viewSpot(arg) {
     </section>
 
     <section class="card">
-      <div class="q-prompt">${esc(item.prompt)}</div>
+      ${item.ref ? `<div class="q-ref">${esc(item.ref)}</div>` : ''}
+      ${item.greek ? `<div class="greek q-greek">${esc(item.greek)}</div>` : ''}
+      <div class="q-prompt ${item.greek ? 'is-gloss' : ''} ${item.greek && state.hideEnglish ? 'is-hidden' : ''}">
+        ${esc(item.prompt)}
+      </div>
+      ${
+        item.greek
+          ? `<button class="btn small ghost" data-action="toggle-english">
+               ${state.hideEnglish ? 'Show the English' : 'Hide the English'}
+             </button>`
+          : ''
+      }
       <div class="options">
         ${options
           .map((id) => {
@@ -946,6 +974,12 @@ document.addEventListener('click', (e) => {
     } else {
       s.streak = 0;
     }
+    save();
+    return render();
+  }
+
+  if (action === 'toggle-english') {
+    state.hideEnglish = !state.hideEnglish;
     save();
     return render();
   }

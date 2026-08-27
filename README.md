@@ -1,9 +1,9 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–3
 
-A small offline-first PWA for getting the **nominative** and **accusative**
-uses into your head and keeping them there. Seventeen cards, each with a
-mnemonic hook, a one-line definition, a test you can actually run on a text,
-and the Greek examples.
+A small offline-first PWA for getting the **nominative**, **accusative** and
+**genitive** uses into your head and keeping them there. Twenty-nine cards, each
+opening with the bare pattern of the construction, then a mnemonic hook, a test
+you can run on a text, and the Greek examples.
 
 It is the study half of [seminary-homework-2026][hw]; that app tells you *what*
 is due, this one drills the thing itself. Each links to the other.
@@ -32,6 +32,29 @@ then **A**rticle, then **P**roper name. That is what settles John 1:1 — *ὁ*
 λόγος has the article and is the subject, so θεός is the predicate nominative,
 anarthrous and still definite.
 
+**Genitive — every genitive is an "of"; ask which kind**
+
+Four drawers. It describes a noun; it hides a verb; it modifies a verb; and two
+oddities are left over.
+
+| | |
+|---|---|
+| Source | *from* — where it came from |
+| Material or content | *made of*, or *full of* |
+| Partitive | the genitive is the whole pie, the head noun your slice |
+| Subjective | subject **does** it — "the love of Christ" = Christ loves |
+| Objective | object **gets** it — "faith of God" = faith in God |
+| **P**rice | for how much? |
+| **A**gency or means | by whom? by what? |
+| **C**omparison | than what? |
+| **T**ime or place | when? where? |
+| **S**eparation | away from what? |
+| Apposition | another name for the head noun |
+| Direct object | feel it, want it, share it, rule it, leave it |
+
+The five adverbial genitives spell **PACTS**. The definitions on these cards are
+the chapter summary chart's own wording.
+
 **Accusative — one object, four twists, then MMR**
 
 The accusative is the case of limitation: the nominative crowns, the accusative
@@ -59,9 +82,12 @@ fences.
   The front rotates between three questions — *what is the hook*, *which use is
   this hook*, *which use does this test find* — so you are learning the concept
   rather than the shape of a card.
-- **Spot it** — multiple choice on real examples. Distractors are drawn from the
-  same case, and preferentially from that card's confusion partners: telling a
-  nominative use from an accusative one is not the exam.
+- **Spot it** — multiple choice on real examples, and the **Greek is the
+  question**: the verse comes first and large, the English sits under it as a
+  gloss you can blur out with one tap. Items carrying Greek are drawn twice as
+  often as English-only drills. Distractors come from the same case, and
+  preferentially from that card's confusion partners: telling a nominative use
+  from an accusative one is not the exam.
 - **Progress** — what is learned, what is shaky, what you have not seen yet, and
   the countdown to the date you are learning it by.
 
@@ -156,7 +182,7 @@ Every release bumps `BUILD` in `js/app.js` and `CACHE` in `sw.js` together.
 ## Editing the cards
 
 Everything the app knows lives in [`data/concepts.json`](data/concepts.json).
-Adding chapter 3 means appending to `sets`, `cards` and `confusions`; nothing in
+Adding a chapter means appending to `sets`, `cards` and `confusions`; nothing in
 `js/app.js` is chapter-specific.
 
 ```jsonc
@@ -202,3 +228,12 @@ Two places where the app is more precise than a lecture note usually is:
   prologue at 1:6 and does the witnessing at 1:7, 1:15.
 - **Matt. 9:27** reads *ἐλέησον ἡμᾶς, υἱὸς Δαυίδ* — the address follows the
   imperative in the Greek, though it is usually quoted first in English.
+
+## Still to come
+
+The genitive cards were built from the chapter's summary chart, and the
+screenshots they came from start partway down it. Three adjectival rows are
+missing: **description**, **possession** and **relationship** (only the tail of
+its definition is legible). Two of the book's four practice exercises need those
+categories to answer — Matt 11:12's τῶν οὐρανῶν and Acts 1:13's Ἰακώβου — so
+they are not in the quiz yet.
