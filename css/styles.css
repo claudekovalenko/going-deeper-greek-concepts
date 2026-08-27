@@ -925,3 +925,11 @@ code {
 .q-prompt + .btn.ghost {
   margin-top: 8px;
 }
+
+/* The group's own hook, above its tiles on the map. */
+.group-hook {
+  margin: -4px 0 8px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}

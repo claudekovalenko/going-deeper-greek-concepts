@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v5 · 2026-08-27';
+const BUILD = 'v6 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -297,6 +297,7 @@ function acroTiles(set) {
       return `
         <div>
           <h3>${esc(g.name)}</h3>
+          ${g.mnemonic ? `<p class="group-hook">${esc(g.mnemonic)}</p>` : ''}
           <div class="acro">
             ${mine
               .map(

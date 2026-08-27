@@ -1,7 +1,7 @@
 # Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–3
 
 A small offline-first PWA for getting the **nominative**, **accusative** and
-**genitive** uses into your head and keeping them there. Twenty-nine cards, each
+**genitive** uses into your head and keeping them there. Thirty-three cards, each
 opening with the bare pattern of the construction, then a mnemonic hook, a test
 you can run on a text, and the Greek examples.
 
@@ -34,14 +34,19 @@ anarthrous and still definite.
 
 **Genitive — every genitive is an "of"; ask which kind**
 
-Four drawers. It describes a noun; it hides a verb; it modifies a verb; and two
-oddities are left over.
+Four drawers. Seven describe a noun — walk the **"of" ladder** and stop at the
+first yes, with Description catching whatever falls off the bottom. Two hide a
+verb. Five modify a verb. Two oddities are left over.
 
 | | |
 |---|---|
+| Possession | *whose* — try the apostrophe-s |
+| Relationship | *whose kin* — supply the missing "son of" |
 | Source | *from* — where it came from |
 | Material or content | *made of*, or *full of* |
 | Partitive | the genitive is the whole pie, the head noun your slice |
+| Attributive | *what quality* — rewrite it as an adjective |
+| Description | the catch-all at the bottom of the ladder |
 | Subjective | subject **does** it — "the love of Christ" = Christ loves |
 | Objective | object **gets** it — "faith of God" = faith in God |
 | **P**rice | for how much? |
@@ -229,11 +234,10 @@ Two places where the app is more precise than a lecture note usually is:
 - **Matt. 9:27** reads *ἐλέησον ἡμᾶς, υἱὸς Δαυίδ* — the address follows the
   imperative in the Greek, though it is usually quoted first in English.
 
-## Still to come
+## A note on one of the practice exercises
 
-The genitive cards were built from the chapter's summary chart, and the
-screenshots they came from start partway down it. Three adjectival rows are
-missing: **description**, **possession** and **relationship** (only the tail of
-its definition is legible). Two of the book's four practice exercises need those
-categories to answer — Matt 11:12's τῶν οὐρανῶν and Acts 1:13's Ἰακώβου — so
-they are not in the quiz yet.
+Three of the chapter's four practice exercises are in the quiz. The fourth,
+Matt 11:11's τῶν οὐρανῶν in ἡ βασιλεία τῶν οὐρανῶν, is left out on purpose: it
+sits between **attributive** ("the heavenly kingdom") and **description**, and
+that is a judgement call worth hearing your professor make rather than having
+this app assert one. The αὐτοῦ in the same verse is in, as comparison.

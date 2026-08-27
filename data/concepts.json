@@ -70,13 +70,13 @@
       "color": "#7a5cc8",
       "bigIdea": "The genitive describes. The nominative names, the accusative fences, the genitive tells you which kind.",
       "masterMnemonic": "Every genitive is an “of”. Ask which kind.",
-      "masterMnemonicWhy": "Four drawers. It describes a noun. It hides a verb — X does it, or X gets it. It modifies a verb, and those five make PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
+      "masterMnemonicWhy": "Four drawers. Seven describe a noun — walk the “of” ladder and stop at the first yes, with Description catching whatever falls off the bottom. Two hide a verb: X does it, or X gets it. Five modify a verb and spell PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
       "groups": [
         {
           "id": "genitive-adjectival",
-          "name": "Adjectival — describes the noun",
-          "mnemonic": "Which kind of “of”?",
-          "expand": "From · Made of · Part of"
+          "name": "Adjectival — the “of” ladder",
+          "mnemonic": "Whose? Whose kin? From? Made of? Part of? What quality? Or just describing.",
+          "expand": "Walk down and stop at the first yes: Possession · Relationship · Source · Material or content · Partitive · Attributive · Description (the catch-all)"
         },
         {
           "id": "genitive-verbal",
@@ -783,6 +783,80 @@
       ]
     },
     {
+      "id": "genitive-possession",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Possession",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the house",
+          "of Philip"
+        ],
+        "note": "= X’s. Try the apostrophe-s."
+      },
+      "short": "Possession",
+      "tile": "Whose",
+      "oneLine": "Identifies ownership with regard to the noun it modifies, often employing the use of a possessive pronoun.",
+      "mnemonic": "Whose? Try the apostrophe-s.",
+      "mnemonicWhy": "“The house of Philip” → “Philip’s house.” If the apostrophe-s works and means he owns it, it is possession.",
+      "spotIt": "Rewrite it with ’s. Does it mean he owns the thing?",
+      "examples": [
+        {
+          "ref": "Acts 21:8",
+          "greek": "καὶ εἰσελθόντες εἰς τὸν οἶκον *Φιλίππου*",
+          "english": "we entered the house *of Philip*",
+          "note": "Philip’s house. He owns it."
+        }
+      ],
+      "watchOut": "Relationship takes an apostrophe-s too — “Zebedee’s son”. Owning a thing is possession; family is relationship.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-relationship",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Relationship",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "James",
+          "of Zebedee"
+        ],
+        "note": "→ James, the SON of Zebedee. The kin word is missing."
+      },
+      "short": "Relationship",
+      "tile": "Whose kin",
+      "oneLine": "Denotes a family relationship such as a person’s parent or spouse. The word indicating the relationship is often omitted and must be inferred.",
+      "mnemonic": "Supply the missing kin word.",
+      "mnemonicWhy": "Greek leaves out “son” or “wife” and expects you to know. Ἰάκωβον τὸν τοῦ Ζεβεδαίου is “James the [son] of Zebedee.”",
+      "spotIt": "A name in the genitive with no thing to own? Try slotting in “son of” or “wife of”.",
+      "examples": [
+        {
+          "ref": "Matt 4:21",
+          "greek": "Ἰάκωβον τὸν *τοῦ Ζεβεδαίου*",
+          "english": "James the son *of Zebedee*",
+          "note": "“Son” is nowhere in the Greek. You supply it."
+        }
+      ],
+      "watchOut": "Possession is owning a thing. Relationship is family, with the kin word usually left out.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
       "id": "genitive-source",
       "set": "genitive",
       "group": "genitive-adjectival",
@@ -892,6 +966,80 @@
         }
       ],
       "watchOut": "Often turns up with ἀπό or ἐκ, and the genitive noun carries the article.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-attributive",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Attributive",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the word",
+          "of his power"
+        ],
+        "note": "→ his POWERFUL word. X becomes the adjective."
+      },
+      "short": "Attributive",
+      "tile": "What quality",
+      "oneLine": "Denotes an attribute or innate quality of the head term, conveying an emphatic adjectival idea.",
+      "mnemonic": "Turn the genitive into an adjective.",
+      "mnemonicWhy": "“The word of his power” → “his powerful word.” If the genitive can become the adjective, and saying it that way is stronger, it is attributive.",
+      "spotIt": "Try rewriting the genitive as an adjective in front of the head noun. Does it work?",
+      "examples": [
+        {
+          "ref": "Heb 1:3",
+          "greek": "τῷ ῥήματι *τῆς δυνάμεως* αὐτοῦ",
+          "english": "by his *powerful* word",
+          "note": "“Word of power” becomes “powerful word”. That rewrite is the test."
+        }
+      ],
+      "watchOut": "Description is the vaguer cousin. Attributive earns its name because the genitive really does become an adjective.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "quiz"
+      ]
+    },
+    {
+      "id": "genitive-description",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Description",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "a baptism",
+          "of repentance"
+        ],
+        "note": "Nothing more specific fits."
+      },
+      "short": "Description",
+      "tile": "Just describes",
+      "oneLine": "Further limits or describes the head noun, but other common genitival categories do not capture the specific nuance.",
+      "mnemonic": "The catch-all at the bottom of the ladder.",
+      "mnemonicWhy": "Walk the ladder first. When nothing more specific fits, this catches it. A baptism of repentance is not owned by repentance, not made of it — just described by it.",
+      "spotIt": "Run the ladder. If no other category fits, it is description.",
+      "examples": [
+        {
+          "ref": "Mark 1:4",
+          "greek": "βάπτισμα *μετανοίας*",
+          "english": "a baptism *of repentance*",
+          "note": "Not possessed, not made of, not from. Just described."
+        }
+      ],
+      "watchOut": "Do not reach for this first. It is the bottom of the ladder, not the top.",
       "tags": [
         "genitive",
         "adjectival",
@@ -1235,6 +1383,30 @@
           "greek": "μή *τινος* ὑστερήσατε",
           "english": "you did not lack *anything*, did you?",
           "note": "ὑστερέω takes its object in the genitive."
+        },
+        {
+          "ref": "John 5:25",
+          "greek": "οἱ νεκροὶ ἀκούσουσιν *τῆς φωνῆς* τοῦ υἱοῦ τοῦ θεοῦ",
+          "english": "the dead will hear *the voice* of the Son of God",
+          "note": "Sensation — hearing. Feel it."
+        },
+        {
+          "ref": "Acts 20:33",
+          "greek": "*ἀργυρίου* ἢ *χρυσίου* ἢ *ἱματισμοῦ* οὐδενὸς ἐπεθύμησα",
+          "english": "I have not coveted anyone’s *silver* or *gold* or *clothing*",
+          "note": "Emotion and volition — coveting. Want it."
+        },
+        {
+          "ref": "1 Cor 10:21",
+          "greek": "οὐ δύνασθε *τραπέζης* κυρίου μετέχειν",
+          "english": "You cannot share in the Lord’s *table*",
+          "note": "Sharing. Share it."
+        },
+        {
+          "ref": "Rom 6:14",
+          "greek": "ἁμαρτία γὰρ *ὑμῶν* οὐ κυριεύσει",
+          "english": "For sin will not rule over *you*",
+          "note": "Ruling. Rule it."
         }
       ],
       "watchOut": "This one follows a VERB. The objective genitive follows a NOUN.",
@@ -1366,6 +1538,28 @@
       "test": "Is the genitive the whole the head noun is a slice of, or the stuff the head noun is made of?",
       "answer": "Whole ⇒ partitive. Stuff ⇒ material or content.",
       "example": "“one of the boats” (a slice of the fleet) vs “a cup of water” (what fills the cup)."
+    },
+    {
+      "id": "possession-vs-relationship",
+      "pair": [
+        "genitive-possession",
+        "genitive-relationship"
+      ],
+      "question": "Possession or relationship?",
+      "test": "Is the genitive owning a thing, or being kin to a person?",
+      "answer": "Owns a thing ⇒ possession. Family, with “son of” or “wife of” left out ⇒ relationship.",
+      "example": "“the house of Philip” (owns it) vs “James the [son] of Zebedee” (kin)."
+    },
+    {
+      "id": "attributive-vs-description",
+      "pair": [
+        "genitive-attributive",
+        "genitive-description"
+      ],
+      "question": "Attributive or description?",
+      "test": "Can the genitive be rewritten as an adjective?",
+      "answer": "Becomes a real adjective ⇒ attributive. Nothing more specific fits ⇒ description, the catch-all.",
+      "example": "“the word of his power” → “his powerful word” (attributive) vs “a baptism of repentance” (description)."
     }
   ],
   "extraQuiz": [
@@ -1453,6 +1647,11 @@
       "prompt": "ὁ δὲ μικρότερος … μείζων αὐτοῦ ἐστιν (Matt 11:11) — the underlined αὐτοῦ.",
       "answer": "genitive-comparison",
       "why": "μείζων is a comparative, so the genitive beside it is the “than”. Book practice exercise 1, second underline."
+    },
+    {
+      "prompt": "καὶ Σίμων ὁ ζηλωτὴς καὶ Ἰούδας Ἰακώβου (Acts 1:13) — the underlined Ἰακώβου.",
+      "answer": "genitive-relationship",
+      "why": "“Judas [son] of James.” The kin word is left out for you to supply. Book practice exercise 4."
     }
   ]
 }
