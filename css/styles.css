@@ -816,3 +816,80 @@ code {
   padding: 1px 5px;
   font-size: 12.5px;
 }
+
+/* ---------- the formula block ----------
+   The bare shape of the construction, before a word of prose. */
+
+.formula {
+  background: var(--bg-elev-2);
+  border-radius: 11px;
+  padding: 14px 12px 12px;
+  margin-top: 11px;
+}
+
+.fcols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px 18px;
+  text-align: center;
+}
+
+.fcol {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+/* The pattern row: the thing to remember. */
+.fpat {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+/* The worked row underneath, in the accent so the eye pairs them up. */
+.ffill {
+  font-size: 13px;
+  color: var(--accent);
+  line-height: 1.3;
+}
+
+.fladder {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.fladder li + li {
+  margin-top: 4px;
+}
+
+.fnote,
+.fcaption {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* A ladder is read down the left edge, so its prose lines up with it. */
+.formula.is-ladder .fnote,
+.formula.is-ladder .fcaption {
+  text-align: left;
+}
+
+.fnote + .fcaption {
+  margin-top: 5px;
+}
+
+.flash .formula {
+  background: var(--bg-elev);
+  margin-top: 9px;
+}

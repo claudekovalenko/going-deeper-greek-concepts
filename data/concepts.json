@@ -5,6 +5,7 @@
   "generated": "2026-08-27",
   "notes": [
     "Every card carries a mnemonic hook, a plain one-line definition, a test you can actually run on a text, and real examples.",
+    "formula: the bare pattern, shown before any prose. pattern[]/filled[] render as aligned columns; ladder[] renders as a numbered list. oneLine is the caption underneath it.",
     "Greek is given in the text with the key word marked by * asterisks *, so the app can highlight it without any markup engine.",
     "confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.",
     "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples."
@@ -69,6 +70,16 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Subject",
+      "formula": {
+        "pattern": [
+          "X",
+          "verbs"
+        ],
+        "filled": [
+          "John",
+          "bears witness"
+        ]
+      },
       "short": "Subject",
       "tile": "S",
       "oneLine": "The one doing the verb.",
@@ -100,6 +111,18 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Predicate Nominative",
+      "formula": {
+        "pattern": [
+          "X",
+          "is",
+          "Y"
+        ],
+        "filled": [
+          "the Word",
+          "was",
+          "God"
+        ]
+      },
       "short": "Pred. nom.",
       "tile": "P",
       "oneLine": "Two nominatives with “is” between them. The second says what the first is.",
@@ -139,12 +162,20 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "The Pecking Order",
+      "formula": {
+        "ladder": [
+          "Is either a pronoun?",
+          "Does either have the article?",
+          "Is either a proper name?"
+        ],
+        "note": "First yes wins. John 1:1c: no pronoun, ὁ λόγος has the article — so it is the subject."
+      },
       "short": "Pecking order",
       "type": "rule",
       "oneLine": "Two nominatives, one “is”. This is how you tell which one is the subject.",
       "mnemonic": "PAP — ask Papa who is in charge.",
       "mnemonicWhy": "Pronoun, then Article, then Proper name. Papa answers in that order every time.",
-      "spotIt": "Go down the list and stop at the first yes. Is either a pronoun? Does either have the article? Is either a name?",
+      "spotIt": "Go down the list and stop at the first yes.",
       "examples": [
         {
           "ref": "John 1:1c",
@@ -172,6 +203,17 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Apposition",
+      "formula": {
+        "pattern": [
+          "X,",
+          "Y"
+        ],
+        "filled": [
+          "Andrew,",
+          "the brother of Simon Peter"
+        ],
+        "note": "No verb anywhere."
+      },
       "short": "Apposition (nom.)",
       "tile": "A",
       "oneLine": "Two nominatives side by side, no verb. The second renames the first.",
@@ -210,6 +252,16 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Address",
+      "formula": {
+        "pattern": [
+          "X,",
+          "do it!"
+        ],
+        "filled": [
+          "Husbands,",
+          "love your wives"
+        ]
+      },
       "short": "Address",
       "tile": "A",
       "oneLine": "A nominative used to call out to someone.",
@@ -242,6 +294,17 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Appellation",
+      "formula": {
+        "pattern": [
+          "they call me",
+          "X"
+        ],
+        "filled": [
+          "you call me",
+          "Teacher"
+        ],
+        "note": "X stays nominative."
+      },
       "short": "Appellation",
       "tile": "A",
       "oneLine": "A title used as somebody's name, left in the nominative.",
@@ -268,6 +331,16 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative Absolute",
+      "formula": {
+        "pattern": [
+          "X",
+          "— and nothing"
+        ],
+        "filled": [
+          "The beginning of the gospel",
+          "— no verb at all"
+        ]
+      },
       "short": "Absolute",
       "tile": "A",
       "oneLine": "A nominative attached to nothing — a heading or a greeting.",
@@ -300,6 +373,18 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Hanging Nominative",
+      "formula": {
+        "pattern": [
+          "X",
+          "…",
+          "it …"
+        ],
+        "filled": [
+          "The good seed",
+          "—",
+          "these are the sons"
+        ]
+      },
       "short": "Hanging",
       "tile": "H",
       "oneLine": "A loose nominative that a pronoun picks up later.",
@@ -326,6 +411,14 @@
       "set": "accusative",
       "group": "accusative-overview",
       "name": "The Case of Limitation",
+      "formula": {
+        "ladder": [
+          "Onto whom?  →  direct object",
+          "How far?  →  measure",
+          "In what way?  →  manner",
+          "About what?  →  respect"
+        ]
+      },
       "short": "The idea",
       "type": "rule",
       "oneLine": "The accusative fences the verb in — it says how far the action goes.",
@@ -350,6 +443,16 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Direct Object",
+      "formula": {
+        "pattern": [
+          "verb",
+          "whom / what?"
+        ],
+        "filled": [
+          "I hit",
+          "Ivan"
+        ]
+      },
       "short": "Direct object",
       "tile": "DO",
       "oneLine": "What the verb lands on. By far the most common one.",
@@ -375,6 +478,16 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Cognate Accusative",
+      "formula": {
+        "pattern": [
+          "verb",
+          "its own noun"
+        ],
+        "filled": [
+          "fight",
+          "the good fight"
+        ]
+      },
       "short": "Cognate",
       "tile": "Echo",
       "oneLine": "An object that repeats the verb — same root, or same idea.",
@@ -413,6 +526,12 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Double Accusative",
+      "formula": {
+        "ladder": [
+          "ask someone something  —  “asks him for bread”",
+          "call something a name  —  “gave his life as a ransom”"
+        ]
+      },
       "short": "Double",
       "tile": "Two",
       "oneLine": "Two accusatives in one clause. Two kinds.",
@@ -444,6 +563,19 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative Subject of the Infinitive",
+      "formula": {
+        "pattern": [
+          "for",
+          "X",
+          "to verb"
+        ],
+        "filled": [
+          "for",
+          "him",
+          "to go away"
+        ],
+        "note": "X is accusative — and X is the one doing it."
+      },
       "short": "Subj. of inf.",
       "tile": "Sub",
       "oneLine": "An infinitive's subject is accusative, not nominative.",
@@ -470,6 +602,18 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative of Apposition",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X,",
+          "Y"
+        ],
+        "filled": [
+          "they chose",
+          "Stephen,",
+          "a man full of faith"
+        ]
+      },
       "short": "Apposition (acc.)",
       "tile": "Alias",
       "oneLine": "A second accusative that renames the first. No verb between them.",
@@ -502,6 +646,16 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Measure",
+      "formula": {
+        "pattern": [
+          "verb",
+          "how far?"
+        ],
+        "filled": [
+          "going",
+          "a little farther"
+        ]
+      },
       "short": "Measure",
       "tile": "M",
       "oneLine": "How far, how long, how much.",
@@ -527,6 +681,16 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Manner",
+      "formula": {
+        "pattern": [
+          "verb",
+          "how?"
+        ],
+        "filled": [
+          "justified",
+          "freely"
+        ]
+      },
       "short": "Manner",
       "tile": "M",
       "oneLine": "How the action is done.",
@@ -552,6 +716,16 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Respect",
+      "formula": {
+        "pattern": [
+          "verb",
+          "as to what?"
+        ],
+        "filled": [
+          "pierced",
+          "as to the heart"
+        ]
+      },
       "short": "Respect",
       "tile": "R",
       "oneLine": "In one way only — put “with respect to” in front of it.",

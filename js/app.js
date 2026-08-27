@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v3 · 2026-08-27';
+const BUILD = 'v4 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -374,6 +374,38 @@ function confusionRow(c) {
     </div>`;
 }
 
+/**
+ * The bare shape of the construction, before a word of prose. Two forms:
+ * pattern/filled renders aligned columns (X is Y over "the Word was God"),
+ * ladder renders a numbered list for the cards that are a procedure, not a
+ * shape. The caption underneath is the one-line definition.
+ */
+function formulaBlock(card, { caption = true } = {}) {
+  const f = card.formula;
+  if (!f) return '';
+
+  const body = f.ladder
+    ? `<ol class="fladder">${f.ladder.map((step) => `<li>${esc(step)}</li>`).join('')}</ol>`
+    : `<div class="fcols">
+         ${f.pattern
+           .map(
+             (tok, i) => `
+           <div class="fcol">
+             <span class="fpat">${esc(tok)}</span>
+             <span class="ffill">${esc(f.filled[i])}</span>
+           </div>`
+           )
+           .join('')}
+       </div>`;
+
+  return `
+    <div class="formula ${f.ladder ? 'is-ladder' : ''}">
+      ${body}
+      ${f.note ? `<p class="fnote">${esc(f.note)}</p>` : ''}
+      ${caption ? `<p class="fcaption">${esc(card.oneLine)}</p>` : ''}
+    </div>`;
+}
+
 /* ---------------- view: learn ---------------- */
 
 function conceptCard(c, { open = false } = {}) {
@@ -387,10 +419,7 @@ function conceptCard(c, { open = false } = {}) {
         ${pips(p.box)}
       </summary>
       <div class="concept-body">
-        <div>
-          <span class="label">What it is</span>
-          ${esc(c.oneLine)}
-        </div>
+        ${formulaBlock(c)}
 
         <div class="hook" style="border-left-color:${esc(set.color)}">
           <span class="label">Mnemonic</span>
@@ -558,11 +587,11 @@ function viewDrill(arg) {
         flipped
           ? `<div class="flash-answer">
                <div class="name">${esc(card.name)}</div>
+               ${formulaBlock(card)}
                <div class="hook" style="border-left-color:${esc(set.color)};margin-top:9px">
                  <div class="hook-line">${esc(card.mnemonic)}</div>
                  <div class="hook-why">${esc(card.mnemonicWhy)}</div>
                </div>
-               <p class="note">${esc(card.oneLine)}</p>
                <div class="spot" style="margin-top:9px"><span class="label">Spot it</span>${esc(card.spotIt)}</div>
                ${
                  card.examples && card.examples[0]
