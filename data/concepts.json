@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–3 — Nominative, Accusative, Genitive",
+  "chapter": "ch. 2–3 — Nominative, Vocative, Accusative, Genitive",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-08-27",
   "notes": [
@@ -9,7 +9,9 @@
     "formula: the bare pattern, shown before any prose. pattern[]/filled[] render as aligned columns; ladder[] renders as a numbered list. oneLine is the caption underneath it.",
     "Greek is given in the text with the key word marked by * asterisks *, so the app can highlight it without any markup engine.",
     "confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.",
-    "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples."
+    "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples.",
+    "bookDef: the summary chart's own wording, kept verbatim, shown under 'What the book says'. oneLine is the plain-English caption; the two are deliberately different.",
+    "tags this-week / next-week track the syllabus: ch. 2 (nominative, vocative, accusative) is this week, ch. 3 (genitive) next. Reachable as #/tag/this-week."
   ],
   "sets": [
     {
@@ -33,6 +35,24 @@
           "name": "Other uses — the AAAH",
           "mnemonic": "A-A-A-H",
           "expand": "Address · Appellation · Absolute · Hanging"
+        }
+      ]
+    },
+    {
+      "id": "vocative",
+      "name": "Vocative",
+      "subtitle": "The calling case. One job: naming who you are talking to.",
+      "eli5": "This is the case for shouting someone’s name. “Lazarus, come out!” You said his name so he knows you mean him. That is the whole case — it has one job.",
+      "color": "#2f9fc8",
+      "bigIdea": "The vocative calls. It is the only case with a single use, so it is the cheapest one you will ever learn.",
+      "masterMnemonic": "One case, one job: say the name.",
+      "masterMnemonicWhy": "Everything else in the chapter has three, five, seven uses. This one has one. Learn it in ten seconds and spend the time you saved on the accusative.",
+      "groups": [
+        {
+          "id": "vocative-uses",
+          "name": "Uses of the vocative",
+          "mnemonic": "Say the name.",
+          "expand": "Direct address — and that is the list"
         }
       ]
     },
@@ -126,6 +146,7 @@
       "mnemonic": "The subject wears the crown.",
       "mnemonicWhy": "The nominative names, and the crown sits on whoever the verb is about. One verb, one nominative — that one is wearing it.",
       "spotIt": "Ask the verb: who or what? That is your subject.",
+      "bookDef": "The subject of a finite verb.",
       "examples": [
         {
           "ref": "John 1:15",
@@ -143,7 +164,7 @@
       "tags": [
         "nominative",
         "major",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -170,6 +191,7 @@
       "mnemonic": "The subject is the small circle; the predicate is the big one.",
       "mnemonicWhy": "“Is” looks like an equals sign, but it only points one way. “The Word was God” puts the Word inside God, not God inside the Word. Small circle inside a big one.",
       "spotIt": "Find a form of “to be” — εἰμί, γίνομαι, ὑπάρχω — with a nominative on each side of it.",
+      "bookDef": "Provides further information about the subject as a complement of a copulative verb (expressing a state of being).",
       "examples": [
         {
           "ref": "John 1:1c",
@@ -184,10 +206,16 @@
           "note": "ὁ θεός has the article, so it is the subject. Love is what is said about him."
         },
         {
-          "ref": "Eph. 2:14",
+          "ref": "Eph 2:14",
           "greek": "αὐτὸς γάρ ἐστιν *ἡ εἰρήνη* ἡμῶν",
           "english": "for he himself is *our peace*",
           "note": "αὐτός is a pronoun, so it takes the subject slot. See the pecking order."
+        },
+        {
+          "ref": "John 1:14",
+          "greek": "ὁ λόγος *σὰρξ* ἐγένετο",
+          "english": "the Word became *flesh*",
+          "note": "ἐγένετο is a “became” verb, which counts. σάρξ is what is said about the Word."
         }
       ],
       "watchOut": "Apposition looks the same but has no verb. A verb makes a claim. A comma only makes a label.",
@@ -195,7 +223,7 @@
         "nominative",
         "major",
         "john-1-1",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -226,7 +254,7 @@
           "note": "No pronoun, so the article decides: ὁ λόγος has it and is the subject, which makes θεός the predicate. Not “a god” — Greek can be perfectly definite with no article."
         },
         {
-          "ref": "Eph. 2:14",
+          "ref": "Eph 2:14",
           "greek": "*αὐτὸς* γάρ ἐστιν ἡ εἰρήνη ἡμῶν",
           "english": "for *he himself* is our peace",
           "note": "αὐτός is a pronoun, so it wins — even though ἡ εἰρήνη has the article."
@@ -237,7 +265,7 @@
         "nominative",
         "major",
         "john-1-1",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -263,6 +291,7 @@
       "mnemonic": "No verb, just a name tag.",
       "mnemonicWhy": "A sticker slapped on the first word: “Andrew — HELLO MY NAME IS the brother of Simon Peter.” Nothing is claimed; he is just being identified.",
       "spotIt": "Two nominatives, a pause between them, and no “is” anywhere.",
+      "bookDef": "Further explains the subject by clarification, description, or identification.",
       "examples": [
         {
           "ref": "John 1:40",
@@ -271,7 +300,7 @@
           "note": "ἀδελφός renames Andrew. Nothing is being claimed about him."
         },
         {
-          "ref": "Rom. 1:1",
+          "ref": "Rom 1:1",
           "greek": "Παῦλος *δοῦλος* Χριστοῦ Ἰησοῦ",
           "english": "Paul, *a servant* of Christ Jesus",
           "note": "δοῦλος renames Paul."
@@ -283,11 +312,11 @@
           "note": "A name tag. Compare “Ivan is the student” — that one has a verb, so it is a claim."
         }
       ],
-      "watchOut": "The only difference from a predicate nominative is the verb. Comma = label. “Is” = claim.",
+      "watchOut": "The only difference from a predicate nominative is the verb. Comma = label. “Is” = claim. And watch the chart: Rom 1:1 is filed here because δοῦλος explains Παῦλος, while the near-identical Titus 1:1 is filed under absolute because there the whole salutation stands alone.",
       "tags": [
         "nominative",
         "major",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -312,15 +341,16 @@
       "mnemonic": "\"Hey, you!\" in a nominative coat.",
       "mnemonicWhy": "He is being spoken to, not described. It looks like a subject and works like a shout.",
       "spotIt": "Try an exclamation mark after it. “Husbands! — love your wives.” If that works, it is address.",
+      "bookDef": "Used in the place of a vocative in direct address.",
       "examples": [
         {
-          "ref": "Matt. 9:27",
+          "ref": "Matt 9:27",
           "greek": "ἐλέησον ἡμᾶς, *υἱὸς Δαυίδ*",
           "english": "Have mercy on us, *Son of David*",
           "note": "He is being called out to, not described. Nominative shape, vocative job."
         },
         {
-          "ref": "Eph. 5:25",
+          "ref": "Eph 5:25",
           "greek": "*οἱ ἄνδρες*, ἀγαπᾶτε τὰς γυναῖκας",
           "english": "*Husbands*, love your wives",
           "note": "Not a statement about husbands. A shout at them."
@@ -330,7 +360,7 @@
       "tags": [
         "nominative",
         "other",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -356,6 +386,7 @@
       "mnemonic": "The title is on the name badge — and badges don't decline.",
       "mnemonicWhy": "Once “Teacher” is what people call him, it stops behaving like a word in a sentence and behaves like the name printed on a badge.",
       "spotIt": "It is a title, it is what someone is called, and it stayed nominative when the sentence wanted an accusative.",
+      "bookDef": "Used in conjunction with an address or title where a case other than the nominative would be expected.",
       "examples": [
         {
           "ref": "John 13:13",
@@ -368,7 +399,7 @@
       "tags": [
         "nominative",
         "other",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -393,6 +424,7 @@
       "mnemonic": "Absolute = the headline.",
       "mnemonicWhy": "A headline floats above the page, tied to nothing. No verb, no clause, no rope.",
       "spotIt": "Opening material — a title, a greeting, a list — with no verb to hook it to.",
+      "bookDef": "Grammatically independent use of the nominative in introductory material (such as titles, headings, salutations, or addresses).",
       "examples": [
         {
           "ref": "Mark 1:1",
@@ -401,17 +433,23 @@
           "note": "ἀρχή is nominative and stands completely alone. Everything hanging off it is genitive."
         },
         {
-          "ref": "1 Tim. 1:2",
+          "ref": "1 Tim 1:2",
           "greek": "*χάρις ἔλεος εἰρήνη* ἀπὸ θεοῦ πατρός",
           "english": "*Grace, mercy, peace* from God the Father",
           "note": "All nominative, all opening material, all tied to nothing."
+        },
+        {
+          "ref": "Titus 1:1",
+          "greek": "*Παῦλος* δοῦλος θεοῦ",
+          "english": "*Paul*, a servant of God",
+          "note": "The whole salutation stands alone, and Παῦλος is the word left hanging. Compare Rom 1:1, where the same phrase is filed under apposition."
         }
       ],
       "watchOut": "No rope at all. If a pronoun later picks the word back up, it is hanging, not absolute.",
       "tags": [
         "nominative",
         "other",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -438,19 +476,64 @@
       "mnemonic": "It hangs by a pronoun.",
       "mnemonicWhy": "The pronoun downstream is the rope. Cut it and the word drops — which is exactly what an absolute never had.",
       "spotIt": "Find the loose nominative, then look ahead for the pronoun standing in its place.",
+      "bookDef": "The logical rather than syntactical subject at the beginning of a sentence.",
       "examples": [
         {
-          "ref": "Matt. 13:38",
+          "ref": "Matt 13:38",
           "greek": "τὸ δὲ καλὸν *σπέρμα*, οὗτοί εἰσιν οἱ υἱοὶ τῆς βασιλείας",
           "english": "and the good *seed* — these are the sons of the kingdom",
           "note": "σπέρμα is left dangling, but οὗτοι (“these”) does its job in the main clause. That pronoun is the rope."
+        },
+        {
+          "ref": "Rev 3:12",
+          "greek": "*ὁ νικῶν* ποιήσω αὐτὸν στῦλον ἐν τῷ ναῷ τοῦ θεοῦ μου",
+          "english": "*The one who conquers*, I will make him a pillar in the temple of my God",
+          "note": "ὁ νικῶν is left dangling, and αὐτόν picks it up. That pronoun is the rope."
         }
       ],
       "watchOut": "Absolute = no connection. Hanging = connected in sense, but not in grammar.",
       "tags": [
         "nominative",
         "other",
-        "saturday"
+        "this-week"
+      ]
+    },
+    {
+      "id": "vocative-direct-address",
+      "set": "vocative",
+      "group": "vocative-uses",
+      "name": "Direct Address",
+      "eli5": "You are calling someone by name. “Lazarus, come out!” The name is not doing anything in the sentence — it is just how you got his attention.",
+      "formula": {
+        "pattern": [
+          "X!",
+          "do it"
+        ],
+        "filled": [
+          "Lazarus,",
+          "come out!"
+        ],
+        "note": "The name is not the doer. It is who you are shouting at."
+      },
+      "short": "Direct address",
+      "tile": "Say the name",
+      "oneLine": "Naming the person or thing you are speaking to.",
+      "mnemonic": "Say the name, then say the thing.",
+      "mnemonicWhy": "The whole case is one move: get their attention, then tell them. With or without “the” in front — the chart allows both.",
+      "spotIt": "Somebody is being called by name or title, and that word is not doing any work in the sentence.",
+      "bookDef": "The use of the articular or non-articular vocative to designate the person or thing being addressed.",
+      "examples": [
+        {
+          "ref": "John 11:43",
+          "greek": "*Λάζαρε*, δεῦρο ἔξω",
+          "english": "*Lazarus*, come out!",
+          "note": "He is being called, not described. That is the vocative’s only job."
+        }
+      ],
+      "watchOut": "When a word does this job but is shaped like a nominative, the chart calls it nominative of address instead. Same job, different clothes.",
+      "tags": [
+        "vocative",
+        "this-week"
       ]
     },
     {
@@ -483,7 +566,7 @@
       ],
       "tags": [
         "accusative",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -508,18 +591,25 @@
       "mnemonic": "The verb throws; the object catches.",
       "mnemonicWhy": "Every other noun-like use is a twist on this one throw, so get this one solid first.",
       "spotIt": "After the verb, ask: whom? what?",
+      "bookDef": "Serves as the recipient of the action.",
       "examples": [
         {
           "ref": "English drill",
           "greek": null,
           "english": "I hit *Ivan*.",
           "note": "Ivan catches the hitting."
+        },
+        {
+          "ref": "John 3:16",
+          "greek": "οὕτως γὰρ ἠγάπησεν ὁ θεὸς *τὸν κόσμον*",
+          "english": "For God so loved *the world*",
+          "note": "The world is what the loving lands on."
         }
       ],
       "tags": [
         "accusative",
         "substantival",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -544,9 +634,10 @@
       "mnemonic": "Echo — the object echoes the verb.",
       "mnemonicWhy": "Twist one of four. Say the verb and hear it come straight back: sing a song, fight a fight, shepherd a flock.",
       "spotIt": "Say the verb and the object out loud. Sounds redundant in English? Cognate.",
+      "bookDef": "Aligned with the verb either with regard to the lexical root or the idea conveyed.",
       "examples": [
         {
-          "ref": "1 Tim. 1:18",
+          "ref": "1 Tim 1:18",
           "greek": "στρατεύῃ … *τὴν καλὴν στρατείαν*",
           "english": "fight *the good fight*",
           "note": "The same root twice — the tightest echo there is."
@@ -568,7 +659,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -589,9 +680,10 @@
       "mnemonic": "Two — \"ask someone something\" vs \"call someone something\".",
       "mnemonicWhy": "Twist two of four. Two English frames keep them apart: you ASK a person FOR a thing, and you CALL a thing A NAME.",
       "spotIt": "Try slipping “as” between the two. Fits — object + complement. Doesn't — person + thing.",
+      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
       "examples": [
         {
-          "ref": "Matt. 7:9",
+          "ref": "Matt 7:9",
           "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
           "english": "if his son asks *him* for *bread*",
           "note": "him (a person) + bread (a thing). You cannot say “asks him as bread”."
@@ -601,12 +693,18 @@
           "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
           "english": "to give his *life* as a *ransom* for many",
           "note": "life is the object, ransom says what it was given as. “As” slips right in."
+        },
+        {
+          "ref": "1 Tim 2:6",
+          "greek": "ὁ δοὺς *ἑαυτὸν* *ἀντίλυτρον* ὑπὲρ πάντων",
+          "english": "who gave *himself* as *a ransom* for all",
+          "note": "“As” slips in, so this is object + complement."
         }
       ],
       "tags": [
         "accusative",
         "substantival",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -634,19 +732,26 @@
       "mnemonic": "Sub — finite verbs pay in nominative, infinitives pay in accusative.",
       "mnemonicWhy": "Twist three of four, and the odd one out — this accusative is doing the action, not catching it.",
       "spotIt": "Find the infinitive, then the accusative that is doing it rather than receiving it.",
+      "bookDef": "Functions as the subject of an infinitive, indicating the agent performing the action conveyed by the infinitive.",
       "examples": [
         {
           "ref": "Pattern",
           "greek": null,
           "english": "…for *him* to go away",
           "note": "“Him” is the one going. In Greek that word is accusative."
+        },
+        {
+          "ref": "John 1:48",
+          "greek": "πρὸ τοῦ σε *Φίλιππον* φωνῆσαι … εἶδόν σε",
+          "english": "Before *Philip* called you … I saw you",
+          "note": "φωνῆσαι is the infinitive, and Philip is the one doing the calling — accusative, but the doer."
         }
       ],
       "watchOut": "The only accusative you translate as the doer.",
       "tags": [
         "accusative",
         "substantival",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -673,6 +778,7 @@
       "mnemonic": "Alias — the name tag, now on the object.",
       "mnemonicWhy": "Twist four of four. The same name tag as before, now stuck on the object.",
       "spotIt": "Two accusatives, no verb between them, and the second answers “which one, exactly?”",
+      "bookDef": "Two accusatives are juxtaposed, both referring to the same person or thing, with the second accusative further specifying the first accusative.",
       "examples": [
         {
           "ref": "Acts 6:5",
@@ -681,17 +787,23 @@
           "note": "Stephen is the object; “a man” renames him."
         },
         {
-          "ref": "Matt. 2:6",
+          "ref": "Matt 2:6",
           "greek": "ποιμανεῖ τὸν λαόν μου *τὸν Ἰσραήλ*",
           "english": "he will shepherd my people, *Israel*",
           "note": "Israel renames “my people”."
+        },
+        {
+          "ref": "Matt 21:5",
+          "greek": "καὶ ἐπὶ πῶλον *υἱὸν* ὑποζυγίου",
+          "english": "and on a colt, *the foal* of a donkey",
+          "note": "υἱόν renames πῶλον. One animal, two names."
         }
       ],
       "watchOut": "Not a double accusative. Apposition renames; a complement says something about.",
       "tags": [
         "accusative",
         "substantival",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -716,18 +828,19 @@
       "mnemonic": "MMR, shot one: How far?",
       "mnemonicWhy": "The MMR shot, one of three. This is the one with a tape measure on it.",
       "spotIt": "Ask: how far? how long? Does the accusative answer?",
+      "bookDef": "Functions in essence like an adverb in that it specifies measure (time or space).",
       "examples": [
         {
-          "ref": "Mark 14:35",
-          "greek": "προελθὼν *μικρὸν*",
-          "english": "going *a little* farther",
+          "ref": "Matt 26:39 ESV",
+          "greek": "καὶ προσελθὼν *μικρόν*, ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ",
+          "english": "And going *a little farther* he fell on his face",
           "note": "μικρόν measures the distance. It is not the object of anything."
         }
       ],
       "tags": [
         "accusative",
         "adverbial",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -752,9 +865,10 @@
       "mnemonic": "MMR, shot two: How?",
       "mnemonicWhy": "The MMR shot, two of three. It turns a noun into an adverb: δωρεάν stops being “a gift” and becomes “freely”.",
       "spotIt": "Ask: how? Check that an -ly word is the natural English.",
+      "bookDef": "Functions in essence like an adverb in that it specifies manner.",
       "examples": [
         {
-          "ref": "Rom. 3:24",
+          "ref": "Rom 3:24",
           "greek": "δικαιούμενοι *δωρεὰν* τῇ αὐτοῦ χάριτι",
           "english": "being justified *freely* by his grace",
           "note": "δωρεάν = freely, as a gift. It describes how the justifying happened."
@@ -763,7 +877,7 @@
       "tags": [
         "accusative",
         "adverbial",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -788,19 +902,26 @@
       "mnemonic": "MMR, shot three: How so? — slot in \"as to\".",
       "mnemonicWhy": "The MMR shot, three of three, and the narrowest fence. The verb happened, but only in one respect, and this names which.",
       "spotIt": "Say it with “with respect to” in front. If that rescues the sense, this is it.",
+      "bookDef": "Restricts the reference of the verbal action, indicating in what regard an action is represented as true.",
       "examples": [
         {
           "ref": "Acts 2:37",
           "greek": "κατενύγησαν *τὴν καρδίαν*",
           "english": "they were pierced *with respect to the heart*",
           "note": "Not a surgical piercing — an inner one. “With respect to” is what keeps it from sounding like an operation."
+        },
+        {
+          "ref": "Acts 2:37",
+          "greek": "ἀκούσαντες δὲ κατενύγησαν *τὴν καρδίαν*",
+          "english": "When they heard this, they were pierced *to the heart*",
+          "note": "The book spells the sense out: “they were pierced with reference to the heart.”"
         }
       ],
       "watchOut": "Easy to mistake for the object. If “with respect to” makes it better, it is respect.",
       "tags": [
         "accusative",
         "adverbial",
-        "saturday"
+        "this-week"
       ]
     },
     {
@@ -822,10 +943,11 @@
       },
       "short": "Possession",
       "tile": "Whose",
-      "oneLine": "Identifies ownership with regard to the noun it modifies, often employing the use of a possessive pronoun.",
+      "oneLine": "It belongs to X.",
       "mnemonic": "Whose? Try the apostrophe-s.",
       "mnemonicWhy": "“The house of Philip” → “Philip’s house.” If the apostrophe-s works and means he owns it, it is possession.",
       "spotIt": "Rewrite it with ’s. Does it mean he owns the thing?",
+      "bookDef": "Identifies ownership with regard to the noun it modifies, often employing the use of a possessive pronoun.",
       "examples": [
         {
           "ref": "Acts 21:8",
@@ -838,7 +960,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -860,10 +982,11 @@
       },
       "short": "Relationship",
       "tile": "Whose kin",
-      "oneLine": "Denotes a family relationship such as a person’s parent or spouse. The word indicating the relationship is often omitted and must be inferred.",
+      "oneLine": "X’s son, wife or parent — with the family word left out.",
       "mnemonic": "Supply the missing kin word.",
       "mnemonicWhy": "Greek leaves out “son” or “wife” and expects you to know. Ἰάκωβον τὸν τοῦ Ζεβεδαίου is “James the [son] of Zebedee.”",
       "spotIt": "A name in the genitive with no thing to own? Try slotting in “son of” or “wife of”.",
+      "bookDef": "Denotes a family relationship such as a person’s parent or spouse. The word indicating the relationship is often omitted and must be inferred.",
       "examples": [
         {
           "ref": "Matt 4:21",
@@ -876,7 +999,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -898,10 +1021,11 @@
       },
       "short": "Source",
       "tile": "From",
-      "oneLine": "Indicates the origin of the head noun (“from”).",
+      "oneLine": "Where the head word came from.",
       "mnemonic": "Source = where it came from.",
       "mnemonicWhy": "Swap “of” for “from” and see whether it still works. “The righteousness from God.”",
       "spotIt": "Try “from” in place of “of”. Still makes sense? Source.",
+      "bookDef": "Indicates the origin of the head noun (“from”).",
       "examples": [
         {
           "ref": "Rom 10:3",
@@ -914,7 +1038,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -936,10 +1060,11 @@
       },
       "short": "Material",
       "tile": "Made of",
-      "oneLine": "Indicates the material of which the head term is made or specifies the content of an object or abstract noun.",
+      "oneLine": "What it is made of, or what is inside it.",
       "mnemonic": "Made of it, or full of it.",
       "mnemonicWhy": "Cargo of gold is made of gold. A cup of water is full of water. One case, two flavours.",
       "spotIt": "Ask: made of what? or full of what?",
+      "bookDef": "Indicates the material of which the head term is made or specifies the content of an object or abstract noun.",
       "examples": [
         {
           "ref": "Rev 18:12",
@@ -957,7 +1082,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -979,10 +1104,11 @@
       },
       "short": "Partitive",
       "tile": "Part of",
-      "oneLine": "Whether by itself or in conjunction with the preposition ἀπό or ἐκ, the articular noun in the genitive denotes the whole of which the head noun is a part.",
+      "oneLine": "The genitive is the whole; the head word is a piece of it.",
       "mnemonic": "The genitive is the whole pie. The head noun is your slice.",
       "mnemonicWhy": "Backwards from what you expect: the word in the genitive is the bigger thing, not the smaller one.",
       "spotIt": "Ask: is the genitive word the whole that the other word is a piece of?",
+      "bookDef": "Whether by itself or in conjunction with the preposition ἀπό or ἐκ, the articular noun in the genitive denotes the whole of which the head noun is a part.",
       "examples": [
         {
           "ref": "Luke 5:3",
@@ -995,7 +1121,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1017,10 +1143,11 @@
       },
       "short": "Attributive",
       "tile": "What quality",
-      "oneLine": "Denotes an attribute or innate quality of the head term, conveying an emphatic adjectival idea.",
+      "oneLine": "A quality of the head word — it could have been an adjective.",
       "mnemonic": "Turn the genitive into an adjective.",
       "mnemonicWhy": "“The word of his power” → “his powerful word.” If the genitive can become the adjective, and saying it that way is stronger, it is attributive.",
       "spotIt": "Try rewriting the genitive as an adjective in front of the head noun. Does it work?",
+      "bookDef": "Denotes an attribute or innate quality of the head term, conveying an emphatic adjectival idea.",
       "examples": [
         {
           "ref": "Heb 1:3",
@@ -1033,7 +1160,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1055,10 +1182,11 @@
       },
       "short": "Description",
       "tile": "Just describes",
-      "oneLine": "Further limits or describes the head noun, but other common genitival categories do not capture the specific nuance.",
+      "oneLine": "It describes the head word, and nothing more specific fits.",
       "mnemonic": "The catch-all at the bottom of the ladder.",
       "mnemonicWhy": "Walk the ladder first. When nothing more specific fits, this catches it. A baptism of repentance is not owned by repentance, not made of it — just described by it.",
       "spotIt": "Run the ladder. If no other category fits, it is description.",
+      "bookDef": "Further limits or describes the head noun, but other common genitival categories do not capture the specific nuance.",
       "examples": [
         {
           "ref": "Mark 1:4",
@@ -1071,7 +1199,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1093,10 +1221,11 @@
       },
       "short": "Subjective",
       "tile": "Does it",
-      "oneLine": "Functions semantically as the subject of the verbal idea implied in the head noun, producing the action.",
+      "oneLine": "X is doing the action hidden in the head word.",
       "mnemonic": "Subject does it.",
       "mnemonicWhy": "Turn the head noun back into a verb. “The love of Christ” → Christ loves. X is the one doing it.",
       "spotIt": "Make the head noun a verb, then ask: is X doing it?",
+      "bookDef": "Functions semantically as the subject of the verbal idea implied in the head noun, producing the action.",
       "examples": [
         {
           "ref": "Rom 8:35",
@@ -1108,7 +1237,7 @@
       "tags": [
         "genitive",
         "verbal",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1130,10 +1259,11 @@
       },
       "short": "Objective",
       "tile": "Gets it",
-      "oneLine": "Functions semantically as the direct object of the verbal idea implicit in the head noun, receiving the action.",
+      "oneLine": "X is receiving the action hidden in the head word.",
       "mnemonic": "Object gets it.",
       "mnemonicWhy": "Same move, other direction. “Faith of God” means faith IN God — God is on the receiving end.",
       "spotIt": "Make the head noun a verb, then ask: is X getting it?",
+      "bookDef": "Functions semantically as the direct object of the verbal idea implicit in the head noun, receiving the action.",
       "examples": [
         {
           "ref": "Mark 11:22",
@@ -1146,7 +1276,7 @@
       "tags": [
         "genitive",
         "verbal",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1168,10 +1298,11 @@
       },
       "short": "Price",
       "tile": "P",
-      "oneLine": "Indicates the price that is paid or the value that attaches to a given item.",
+      "oneLine": "What it cost, or what it is worth.",
       "mnemonic": "PACTS — P: for how much?",
       "mnemonicWhy": "What it cost, or what it is worth.",
       "spotIt": "Ask: at what price? worth how much?",
+      "bookDef": "Indicates the price that is paid or the value that attaches to a given item.",
       "examples": [
         {
           "ref": "1 Cor 6:20 NASB",
@@ -1183,7 +1314,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1205,10 +1336,11 @@
       },
       "short": "Means/Agency",
       "tile": "A",
-      "oneLine": "Conveys the impersonal means or personal agent by which a given action is carried out (“by”).",
+      "oneLine": "By what, or by whom, the action was done.",
       "mnemonic": "PACTS — A: by what? by whom?",
       "mnemonicWhy": "A thing did it (means) or a person did it (agency). Both come out as “by”.",
       "spotIt": "Ask: by what, or by whom? A thing = means. A person = agency.",
+      "bookDef": "Conveys the impersonal means or personal agent by which a given action is carried out (“by”).",
       "examples": [
         {
           "ref": "Jas 1:13",
@@ -1226,7 +1358,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1248,10 +1380,11 @@
       },
       "short": "Comparison",
       "tile": "C",
-      "oneLine": "Used to denote comparison in conjunction with a comparative adjective (“than”).",
+      "oneLine": "What something is being measured against.",
       "mnemonic": "PACTS — C: than what?",
       "mnemonicWhy": "Find a comparative — greater, better, more — and the genitive beside it is the thing being beaten.",
       "spotIt": "See a comparative adjective? The genitive next to it is the “than”.",
+      "bookDef": "Used to denote comparison in conjunction with a comparative adjective (“than”).",
       "examples": [
         {
           "ref": "1 John 3:20",
@@ -1263,7 +1396,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1285,10 +1418,11 @@
       },
       "short": "Time/Place",
       "tile": "T",
-      "oneLine": "Indicates the location in time or space where an action occurs. The focus is on kind or quality.",
+      "oneLine": "When or where the action happened.",
       "mnemonic": "PACTS — T: when? where?",
       "mnemonicWhy": "The one with a clock and a map on it. Note the focus is the kind of time, not a point on a clock.",
       "spotIt": "Ask: when did it happen? where did it happen?",
+      "bookDef": "Indicates the location in time or space where an action occurs. The focus is on kind or quality.",
       "examples": [
         {
           "ref": "John 19:39",
@@ -1306,7 +1440,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1328,10 +1462,11 @@
       },
       "short": "Separation",
       "tile": "S",
-      "oneLine": "Indicates motion away from or distance, whether literally or figuratively (“from”).",
+      "oneLine": "What the action moves away from.",
       "mnemonic": "PACTS — S: away from what?",
       "mnemonicWhy": "Movement away, real or figurative — walking away from a place, or away from the faith.",
       "spotIt": "Ask: away from what? Does “from” fit?",
+      "bookDef": "Indicates motion away from or distance, whether literally or figuratively (“from”).",
       "examples": [
         {
           "ref": "1 Tim 4:1",
@@ -1344,7 +1479,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1366,10 +1501,11 @@
       },
       "short": "Apposition (gen.)",
       "tile": "Another name",
-      "oneLine": "The genitive of apposition provides an alternate designation (simple) of a genitive head noun or provides an explanatory (epexegetical) restatement of a head noun in any case.",
+      "oneLine": "A second name for the head word.",
       "mnemonic": "The name tag again — third case running.",
       "mnemonicWhy": "You have met this in the nominative and the accusative. Same move: the second word renames the first.",
       "spotIt": "Ask: is the genitive another name for the head noun? “Jeremiah, who is the prophet.” “The gift, which is the Holy Spirit.”",
+      "bookDef": "The genitive of apposition provides an alternate designation (simple) of a genitive head noun or provides an explanatory (epexegetical) restatement of a head noun in any case.",
       "examples": [
         {
           "ref": "Matt 2:17",
@@ -1388,7 +1524,7 @@
       "tags": [
         "genitive",
         "other",
-        "quiz"
+        "next-week"
       ]
     },
     {
@@ -1410,10 +1546,11 @@
       },
       "short": "Direct object (gen.)",
       "tile": "Genitive DO",
-      "oneLine": "Verbs of sensation, emotion or volition, sharing, ruling, or separation take their direct object in the genitive case (instead of the accusative case).",
+      "oneLine": "The object of a verb that wants the genitive instead of the accusative.",
       "mnemonic": "Feel it, want it, share it, rule it, leave it.",
       "mnemonicWhy": "Six kinds of verb do this: sensation and emotion (feel it), volition (want it), sharing, ruling, separation (leave it). It is a habit of the verb, not a meaning.",
       "spotIt": "A genitive sitting where you expected an accusative? Check the verb: sensing, feeling, wanting, sharing, ruling, separating?",
+      "bookDef": "Verbs of sensation, emotion or volition, sharing, ruling, or separation take their direct object in the genitive case (instead of the accusative case).",
       "examples": [
         {
           "ref": "Luke 22:35 NASB",
@@ -1450,7 +1587,7 @@
       "tags": [
         "genitive",
         "other",
-        "quiz"
+        "next-week"
       ]
     }
   ],
@@ -1597,6 +1734,17 @@
       "test": "Can the genitive be rewritten as an adjective?",
       "answer": "Becomes a real adjective ⇒ attributive. Nothing more specific fits ⇒ description, the catch-all.",
       "example": "“the word of his power” → “his powerful word” (attributive) vs “a baptism of repentance” (description)."
+    },
+    {
+      "id": "vocative-vs-nominative-address",
+      "pair": [
+        "vocative-direct-address",
+        "nominative-address"
+      ],
+      "question": "Vocative, or nominative of address?",
+      "test": "What shape is the word in?",
+      "answer": "Vocative shape ⇒ vocative of direct address. Nominative shape doing the same job ⇒ nominative of address.",
+      "example": "Λάζαρε (vocative) vs οἱ ἄνδρες, “Husbands…” (nominative doing a vocative’s work)."
     }
   ],
   "extraQuiz": [
@@ -1689,6 +1837,11 @@
       "prompt": "καὶ Σίμων ὁ ζηλωτὴς καὶ Ἰούδας Ἰακώβου (Acts 1:13) — the underlined Ἰακώβου.",
       "answer": "genitive-relationship",
       "why": "“Judas [son] of James.” The kin word is left out for you to supply. Book practice exercise 4."
+    },
+    {
+      "prompt": "Λάζαρε, δεῦρο ἔξω (John 11:43) — the underlined Λάζαρε.",
+      "answer": "vocative-direct-address",
+      "why": "He is being called by name. The vocative has exactly one use, and this is it."
     }
   ]
 }

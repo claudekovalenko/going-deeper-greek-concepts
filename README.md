@@ -1,7 +1,8 @@
 # Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–3
 
-A small offline-first PWA for getting the **nominative**, **accusative** and
-**genitive** uses into your head and keeping them there. Thirty-three cards, each
+A small offline-first PWA for getting the **nominative**, **vocative**,
+**accusative** and **genitive** uses into your head and keeping them there.
+Thirty-four cards, each
 opening with a plain-words paragraph anyone could follow, then the bare pattern
 of the construction, then a mnemonic hook, a test you can run on a text, and the
 Greek examples.
@@ -83,7 +84,8 @@ fences.
   that account for nearly every wrong answer.
 - **Learn** — every card, in four tiers, hardest-first being exactly wrong: an
   **explain-it-like-I'm-five** paragraph, then the bare pattern, then the
-  mnemonic hook, then the chapter's own definition and the Greek.
+  mnemonic hook, then the summary chart's own wording under *What the book
+  says*, then the Greek. Read one tier or all five.
 - **Drill** — flashcards on Leitner boxes. A right answer moves a card up a box,
   a wrong one knocks it back to box 1, and a card counts as learned at box 4.
   The front rotates between three questions — *what is the hook*, *which use is
@@ -235,6 +237,25 @@ Two places where the app is more precise than a lecture note usually is:
   prologue at 1:6 and does the witnessing at 1:7, 1:15.
 - **Matt. 9:27** reads *ἐλέησον ἡμᾶς, υἱὸς Δαυίδ* — the address follows the
   imperative in the Greek, though it is usually quoted first in English.
+
+## This week and next
+
+The syllabus splits the chapters: ch. 2 — nominative, vocative, accusative — is
+this week, and ch. 3's genitive is next. Every card is tagged accordingly, and a
+**This week** chip sits beside the case chips in Learn, Drill and Spot it, so you
+can put the genitive away until it is due. It is also `#/tag/this-week`.
+
+## Where the wording comes from
+
+Two layers, deliberately different:
+
+- **`oneLine`** is the plain caption under the pattern, in my words.
+- **`bookDef`** is the chapter summary chart's own sentence, kept verbatim, shown
+  under *What the book says*. That is the wording an exam will use, so it is
+  reproduced rather than paraphrased.
+
+Every Greek example the two charts supply is in, with the chart's own reference
+and translation.
 
 ## A note on one of the practice exercises
 

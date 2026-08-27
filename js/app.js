@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v7 · 2026-08-27';
+const BUILD = 'v8 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -273,6 +273,9 @@ function bar(done, total) {
 function filterChips(base) {
   const opts = [
     { id: 'all', label: 'Everything' },
+    // The syllabus splits the chapters across two weeks, and drilling next
+    // week's genitive the night before this week's quiz is wasted effort.
+    { id: 'tag:this-week', label: 'This week' },
     ...DATA.sets.map((s) => ({ id: s.id, label: s.name }))
   ];
   return `<div class="chips">${opts
@@ -452,6 +455,15 @@ function conceptCard(c, { open = false } = {}) {
         </div>
 
         ${c.watchOut ? `<div class="watch"><span class="label">Watch out</span>${esc(c.watchOut)}</div>` : ''}
+
+        ${
+          c.bookDef
+            ? `<div class="bookdef">
+                 <span class="label">What the book says</span>
+                 ${esc(c.bookDef)}
+               </div>`
+            : ''
+        }
 
         <div>
           <span class="label">Examples</span>

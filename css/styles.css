@@ -960,3 +960,13 @@ code {
 .hero + .card .eli5 {
   text-align: left;
 }
+
+/* The summary chart's own wording, kept verbatim — the tier you want the night
+   before, when the exam will use these words and not mine. */
+.bookdef {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 13px;
+  color: var(--muted);
+}
