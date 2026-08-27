@@ -933,3 +933,30 @@ code {
   color: var(--muted);
   line-height: 1.4;
 }
+
+/* ---------- the like-I'm-five block ----------
+   Leads every card. Bigger and warmer than the prose under it, because it is
+   the one part you should be able to read at a glance and understand. */
+
+.eli5 {
+  background: color-mix(in srgb, var(--warn) 13%, var(--bg-elev-2));
+  border-left: 3px solid var(--warn);
+  border-radius: 0 11px 11px 0;
+  padding: 11px 13px;
+  margin-top: 11px;
+}
+
+.eli5 .label {
+  color: color-mix(in srgb, var(--warn) 78%, var(--text));
+}
+
+.eli5 p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.flash .eli5,
+.hero + .card .eli5 {
+  text-align: left;
+}

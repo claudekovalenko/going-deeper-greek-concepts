@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v6 · 2026-08-27';
+const BUILD = 'v7 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -342,6 +342,7 @@ function viewMap() {
           }</span>
         </div>
         <p class="set-sub">${esc(set.subtitle)}</p>
+        ${eli5Block(set.eli5)}
         <div class="hook" style="border-left-color:${esc(set.color)}">
           <div class="hook-line">${esc(set.masterMnemonic)}</div>
           <div class="hook-why">${esc(set.masterMnemonicWhy)}</div>
@@ -374,6 +375,20 @@ function confusionRow(c) {
       <div class="confusion-test"><b>Test:</b> ${esc(c.test)}</div>
       <div class="confusion-test">${esc(c.answer)}</div>
       <div class="confusion-ex">${esc(c.example)}</div>
+    </div>`;
+}
+
+/**
+ * The plain-words version, in front of everything else. Whatever else a card
+ * carries, you should be able to read this one paragraph and know what the
+ * thing is — no grammar terms, and a picture you can actually see.
+ */
+function eli5Block(text) {
+  if (!text) return '';
+  return `
+    <div class="eli5">
+      <span class="label">Like I'm five</span>
+      <p>${esc(text)}</p>
     </div>`;
 }
 
@@ -422,6 +437,7 @@ function conceptCard(c, { open = false } = {}) {
         ${pips(p.box)}
       </summary>
       <div class="concept-body">
+        ${eli5Block(c.eli5)}
         ${formulaBlock(c)}
 
         <div class="hook" style="border-left-color:${esc(set.color)}">
@@ -590,6 +606,7 @@ function viewDrill(arg) {
         flipped
           ? `<div class="flash-answer">
                <div class="name">${esc(card.name)}</div>
+               ${eli5Block(card.eli5)}
                ${formulaBlock(card)}
                <div class="hook" style="border-left-color:${esc(set.color)};margin-top:9px">
                  <div class="hook-line">${esc(card.mnemonic)}</div>

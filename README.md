@@ -2,8 +2,9 @@
 
 A small offline-first PWA for getting the **nominative**, **accusative** and
 **genitive** uses into your head and keeping them there. Thirty-three cards, each
-opening with the bare pattern of the construction, then a mnemonic hook, a test
-you can run on a text, and the Greek examples.
+opening with a plain-words paragraph anyone could follow, then the bare pattern
+of the construction, then a mnemonic hook, a test you can run on a text, and the
+Greek examples.
 
 It is the study half of [seminary-homework-2026][hw]; that app tells you *what*
 is due, this one drills the thing itself. Each links to the other.
@@ -80,8 +81,9 @@ fences.
 
 - **Map** — the two acrostics as tappable tiles, plus the seven confusion pairs
   that account for nearly every wrong answer.
-- **Learn** — all seventeen cards: hook, why the hook works, how to spot it,
-  what it is easily confused with, and the examples in Greek and English.
+- **Learn** — every card, in four tiers, hardest-first being exactly wrong: an
+  **explain-it-like-I'm-five** paragraph, then the bare pattern, then the
+  mnemonic hook, then the chapter's own definition and the Greek.
 - **Drill** — flashcards on Leitner boxes. A right answer moves a card up a box,
   a wrong one knocks it back to box 1, and a card counts as learned at box 4.
   The front rotates between three questions — *what is the hook*, *which use is
