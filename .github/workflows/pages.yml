@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Lets you publish from whatever branch you are standing on, before anything
+  # has been merged: Actions tab -> Deploy to GitHub Pages -> Run workflow.
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          # Turns Pages on for the repository if it is off, using the token this
+          # workflow already has. Without it, a brand-new repo needs somebody to
+          # visit Settings -> Pages first, and the first run just fails.
+          enablement: true
       # The site is static — publish the repository root as-is.
       - uses: actions/upload-pages-artifact@v3
         with:
