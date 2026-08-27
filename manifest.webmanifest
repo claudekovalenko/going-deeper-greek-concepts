@@ -1,23 +1,77 @@
 {
+  "id": "./",
   "name": "Greek Cases — Mnemonics",
   "short_name": "Greek Cases",
   "description": "Mnemonics and drills for the nominative and accusative uses in Going Deeper with New Testament Greek, ch. 2.",
+  "lang": "en",
+  "dir": "ltr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "orientation": "portrait",
   "background_color": "#0e1016",
   "theme_color": "#12141c",
-  "categories": ["education"],
+  "categories": [
+    "education"
+  ],
   "icons": [
-    { "src": "./icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
-    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./icons/screenshot-map.png",
+      "sizes": "420x900",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "The two acrostics that carry the chapter"
+    },
+    {
+      "src": "./icons/screenshot-drill.png",
+      "sizes": "420x900",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Flashcards on Leitner boxes"
+    }
   ],
   "shortcuts": [
-    { "name": "The map", "url": "./#/map" },
-    { "name": "Drill", "url": "./#/drill" },
-    { "name": "Spot it", "url": "./#/spot" }
+    {
+      "name": "The map",
+      "url": "./#/map"
+    },
+    {
+      "name": "Drill",
+      "url": "./#/drill"
+    },
+    {
+      "name": "Spot it",
+      "url": "./#/spot"
+    }
   ]
 }

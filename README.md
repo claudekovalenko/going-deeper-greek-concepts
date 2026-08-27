@@ -117,15 +117,36 @@ The icons are generated too, straight from Node with no image library:
 node tools/icons.mjs
 ```
 
+`icons/screenshot-*.png` are what Android's install sheet shows. They are real
+screenshots at 420×900; retake them from a browser if the design moves.
+
 ## Putting it on your home screen
 
-Merge this branch to `main` and turn on GitHub Pages for the repo
-(**Settings → Pages → Source: GitHub Actions**). The included workflow publishes
-the site on every push to `main`, at
-`https://claudekovalenko.github.io/going-deeper-greek-concepts/`. Then:
+It is a full PWA: a manifest with maskable icons and install screenshots, a
+service worker that caches the entire app on first load, and `standalone`
+display so it opens without browser chrome. Installed, it works with no signal
+at all — the cards, the drill and your progress are all on the device.
 
-- **iPhone/iPad** — open it in Safari → Share → *Add to Home Screen*.
-- **Android** — Chrome will offer *Install app*, or use the ⋮ menu.
+**It has to be served over https first.** A browser will not install a page
+opened off the filesystem, and GitHub Pages will not publish until the branch is
+on `main`. So:
+
+1. Merge this branch to `main`.
+2. Turn on Pages for the repo: **Settings → Pages → Source: GitHub Actions**.
+   The included workflow publishes on every push to `main`, at
+   `https://claudekovalenko.github.io/going-deeper-greek-concepts/`.
+3. Open that address on the phone. The app's own **Put it on your home screen**
+   card tells you what to do next, and knows which browser you are in:
+   - **iPhone/iPad** — Safari → Share → *Add to Home Screen*. It must be Safari;
+     Chrome on iOS cannot install a web app.
+   - **Android** — the app shows an **Install** button of its own, because
+     Chrome hands the prompt to the page rather than showing its own.
+
+**Settings → App version** shows what a device is really running, and has a
+button that throws away its offline copy and fetches the app again — for the
+phone that stubbornly will not update. Your progress survives that.
+
+Every release bumps `BUILD` in `js/app.js` and `CACHE` in `sw.js` together.
 
 ## Editing the cards
 

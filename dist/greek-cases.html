@@ -783,6 +783,57 @@ mark {
   color: var(--accent);
 }
 
+/* ---------- installing it ---------- */
+
+.card h2 .dismiss {
+  margin-left: auto;
+  padding: 3px 8px;
+  line-height: 1;
+}
+
+.btn.ghost {
+  background: none;
+  color: var(--muted);
+}
+
+.inline-icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: -2px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.btn .inline-icon {
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+
+.steps {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.steps li + li {
+  margin-top: 6px;
+}
+
+.note.ready {
+  color: var(--ok);
+}
+
+code {
+  background: var(--bg-elev-2);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 12.5px;
+}
+
 </style>
   </head>
   <body>
@@ -835,7 +886,7 @@ globalThis.__CONCEPTS__ = {"book":"Going Deeper with New Testament Greek","chapt
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v1 · 2026-08-27';
+const BUILD = 'v2 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -870,7 +921,10 @@ const blank = () => ({
   target: DEFAULT_TARGET,
   // Which set the Learn/Drill/Spot views were last filtered to, so the app
   // reopens where you left it rather than at the top every time.
-  filter: 'all'
+  filter: 'all',
+  // Set once you have waved away the "add it to your home screen" card. The
+  // one in Settings is permanent; this only silences the one on the Map.
+  installDismissed: false
 });
 
 let state = load();
@@ -999,6 +1053,84 @@ const backRow = () => `
     Back to Seminary Homework
   </a>`;
 
+/* ---------------- installing it ---------------- */
+
+// Chrome hands us the install prompt instead of showing its own, so we hold on
+// to it and put it behind a button. Safari never fires this and has no API for
+// it at all — there, all we can do is say where the button is.
+let installPrompt = null;
+let swReady = false;
+
+const standalone = () =>
+  matchMedia('(display-mode: standalone)').matches ||
+  matchMedia('(display-mode: minimal-ui)').matches ||
+  navigator.standalone === true;
+
+const isIos = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  installPrompt = e;
+  render();
+});
+
+window.addEventListener('appinstalled', () => {
+  installPrompt = null;
+  render();
+});
+
+const ICON_SHARE = `<svg viewBox="0 0 24 24" aria-hidden="true" class="inline-icon"><path d="M12 15V4"/><path d="M8.5 7.5 12 4l3.5 3.5"/><path d="M6 12H4v8h16v-8h-2"/></svg>`;
+const ICON_PLUS = `<svg viewBox="0 0 24 24" aria-hidden="true" class="inline-icon"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 9v6M9 12h6"/></svg>`;
+
+/**
+ * How to get this onto a home screen, in whichever of the three situations you
+ * are actually in. `dismissible` is the copy that lives on the Map and can be
+ * waved away; Settings keeps a permanent one.
+ */
+function installCard({ dismissible = false } = {}) {
+  if (dismissible && (state.installDismissed || standalone())) return '';
+
+  const offline = location.protocol === 'file:';
+
+  const body = offline
+    ? `<p class="note">This is the single-file copy, opened straight off the disk. It works with no network at all, but a
+         browser will not install a <code>file://</code> page to a home screen — for that, open the hosted address instead.</p>`
+    : standalone()
+      ? `<p class="note">Installed — you are running it from your home screen. It works with no network, and the drill,
+           the cards and your progress are all on the device.</p>`
+      : installPrompt
+        ? `<p class="note">Add it to your home screen and it opens full-screen, with no browser chrome, and works offline.</p>
+           <div class="btnrow"><button class="btn primary wide" data-action="install">${ICON_PLUS} Install</button></div>`
+        : isIos()
+          ? `<p class="note">On iPhone and iPad, Safari puts this behind the Share button:</p>
+             <ol class="steps">
+               <li>Tap ${ICON_SHARE} <strong>Share</strong> at the bottom of Safari.</li>
+               <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+               <li>Tap <strong>Add</strong>.</li>
+             </ol>
+             <p class="note">It has to be Safari — Chrome on iOS cannot install a web app. Once it is on the home screen it
+                opens full-screen and works with no signal.</p>`
+          : `<p class="note">Your browser will offer <strong>Install app</strong> in its menu once it has seen the page a
+               couple of times — in Chrome it is the ⋮ menu, or an icon in the address bar. Installed, it opens full-screen
+               and works offline.</p>`;
+
+  return `
+    <section class="card">
+      <h2>
+        ${standalone() ? 'On your home screen' : 'Put it on your home screen'}
+        ${dismissible ? `<button class="btn small ghost dismiss" data-action="dismiss-install" aria-label="Dismiss">✕</button>` : ''}
+      </h2>
+      ${body}
+      ${
+        offline
+          ? ''
+          : `<p class="note ${swReady ? 'ready' : ''}">${
+              swReady ? 'Ready to use offline — the whole app is cached on this device.' : 'Caching for offline use…'
+            }</p>`
+      }
+    </section>`;
+}
+
 /* ---------------- shared bits ---------------- */
 
 const dot = (color) => `<span class="dot" style="background:${esc(color)}"></span>`;
@@ -1105,6 +1237,8 @@ function viewMap() {
       <p class="note" style="margin-top:0">Nearly every wrong answer is one of these seven. Each one comes down to a single test.</p>
       ${DATA.confusions.map(confusionRow).join('')}
     </section>
+
+    ${installCard({ dismissible: true })}
 
     <section class="card">${backRow()}</section>`;
 }
@@ -1550,8 +1684,16 @@ function viewProgress() {
         <button class="btn small" data-action="reset">Reset all progress</button>
       </div>
       <p class="note">Progress lives in this browser's local storage. Nothing is uploaded anywhere.</p>
-      <p class="note">Version ${esc(BUILD)}</p>
       ${backRow()}
+    </section>
+
+    ${installCard()}
+
+    <section class="card">
+      <h2>App version</h2>
+      <p class="note">Running <strong>${esc(BUILD)}</strong>${standalone() ? ' from the home screen' : ''}.</p>
+      <p class="note">If a device is stuck on an old version, this throws away its offline copy and fetches the app again.</p>
+      <div class="btnrow"><button class="btn small" data-action="clear-cache">Clear the offline copy</button></div>
     </section>`;
 }
 
@@ -1663,6 +1805,39 @@ document.addEventListener('click', (e) => {
     return render();
   }
 
+  if (action === 'dismiss-install') {
+    state.installDismissed = true;
+    save();
+    return render();
+  }
+
+  if (action === 'install') {
+    if (!installPrompt) return;
+    const prompt = installPrompt;
+    installPrompt = null;
+    prompt.prompt();
+    // Whatever they choose, the event is spent — Chrome will fire a fresh one
+    // later if they dismiss it, so there is nothing to hold on to here.
+    prompt.userChoice.finally(() => render());
+    return;
+  }
+
+  if (action === 'clear-cache') {
+    if (!confirm('Throw away the offline copy and fetch the app again? Your progress is kept.')) return;
+    (async () => {
+      try {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map((r) => r.unregister()));
+        const keys = await caches.keys();
+        await Promise.all(keys.map((k) => caches.delete(k)));
+      } catch (err) {
+        console.warn('Could not clear the offline copy', err);
+      }
+      location.reload();
+    })();
+    return;
+  }
+
   if (action === 'reset') {
     if (!confirm('Clear every box and score, and start these 17 cards over?')) return;
     const target = state.target;
@@ -1721,7 +1896,14 @@ async function boot() {
   render();
 
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker
+      .register('./sw.js')
+      .then(() => navigator.serviceWorker.ready)
+      .then(() => {
+        swReady = true;
+        render();
+      })
+      .catch(() => {});
   }
 }
 
