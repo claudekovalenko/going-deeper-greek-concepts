@@ -102,6 +102,22 @@ fences.
 
 Everything is stored in `localStorage` on the device. Nothing is uploaded.
 
+## More than one person on one device
+
+A dropdown in the top right picks who is using it. Each person gets their own
+Leitner boxes, their own quiz scores, their own filters and their own target
+date; switching is instant and nothing is shared. Add, rename and remove people
+under **Progress → Who is using this**.
+
+It is still `localStorage`, one entry per person (`gdgc.v1:<id>`, with the roster
+in `gdgc.people`), so it needs no server and works offline like everything else.
+Progress from before the picker existed is adopted by the first person rather
+than orphaned.
+
+Worth knowing: `localStorage` is per-browser-per-device anyway, so two people on
+two phones were never sharing anything. This is for the shared laptop or tablet
+— or for keeping a second, separate run of the cards.
+
 ## Linking into it
 
 Every screen has a URL, so the homework app (or a bookmark, or a note) can point

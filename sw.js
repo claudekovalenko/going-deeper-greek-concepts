@@ -4,7 +4,7 @@
 // that had once loaded the app kept serving that version for ever. Every load
 // paints instantly from cache *and* refreshes the cache behind it, so the next
 // load is current. Bump CACHE alongside BUILD in js/app.js.
-const CACHE = 'greek-cases-v8';
+const CACHE = 'greek-cases-v9';
 
 const SHELL = [
   './',

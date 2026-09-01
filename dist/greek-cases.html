@@ -988,6 +988,39 @@ code {
   color: var(--muted);
 }
 
+/* ---------- the person picker ----------
+   Top right, always one tap away, because a shared tablet needs it more than
+   the person who set the app up does. */
+
+.topbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  min-width: 0;
+}
+
+.whoami {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 12.5px;
+  max-width: 46vw;
+  cursor: pointer;
+}
+
+.whoami:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.mastery .pill {
+  font-size: 10.5px;
+}
+
 </style>
   </head>
   <body>
@@ -999,7 +1032,10 @@ code {
           <small>Going Deeper, ch. 2–3</small>
         </span>
       </div>
-      <div class="brand-right" id="target"></div>
+      <div class="topbar-right">
+        <select id="whoami" class="whoami" aria-label="Who is using this"></select>
+        <div class="brand-right" id="target"></div>
+      </div>
     </header>
 
     <main id="app" class="app">
@@ -1040,16 +1076,31 @@ globalThis.__CONCEPTS__ = {"book":"Going Deeper with New Testament Greek","chapt
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v8 · 2026-08-27';
+const BUILD = 'v9 · 2026-08-27';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
 const HOMEWORK_APP = 'https://claudekovalenko.github.io/seminary-homework-2026/';
 
-// What you said you wanted these learned by. Editable under Progress.
-const DEFAULT_TARGET = '2026-08-29';
+/**
+ * What a new person is aiming at, until they set their own under Progress.
+ * Computed rather than hard-coded: a fixed date silently rots, and a countdown
+ * reading "-3 days" is worse than no countdown at all.
+ */
+function nextSaturday(from = new Date()) {
+  const d = new Date(from);
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + ((6 - d.getDay() + 7) % 7)); // today, if today is Saturday
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+}
 
-const KEY = 'gdgc.v1';
+// Where the list of people lives. Each person's progress is a separate entry
+// under gdgc.v1:<id>, so switching is just reading a different key — no server,
+// no accounts, nothing leaves the device.
+const PEOPLE_KEY = 'gdgc.people';
+const LEGACY_KEY = 'gdgc.v1';
+const stateKey = (id) => `${LEGACY_KEY}:${id}`;
 const BOXES = 5; // Leitner boxes; box 4 and up counts as learned.
 const LEARNED_AT = 4;
 
@@ -1067,12 +1118,92 @@ const mk = (s) => esc(s).replace(/\*([^*]+)\*/g, '<mark>$1</mark>');
 /** The same text with the markers simply removed — for quiz prompts. */
 const plain = (s) => String(s ?? '').replace(/\*/g, '');
 
+/* ---------------- who is using it ---------------- */
+
+let people = loadPeople();
+
+function loadPeople() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(PEOPLE_KEY) || 'null');
+    if (raw && Array.isArray(raw.list) && raw.list.length) return raw;
+  } catch {
+    /* fall through and start a fresh list */
+  }
+  // First run, or an upgrade from the version that only knew one person:
+  // whatever progress is already stored belongs to whoever has been using it,
+  // so it becomes that person's rather than being orphaned.
+  const first = { id: 'p1', name: 'Me' };
+  const seeded = { list: [first], active: first.id };
+  try {
+    const legacy = localStorage.getItem(LEGACY_KEY);
+    if (legacy && !localStorage.getItem(stateKey(first.id))) {
+      localStorage.setItem(stateKey(first.id), legacy);
+    }
+    localStorage.setItem(PEOPLE_KEY, JSON.stringify(seeded));
+  } catch {
+    /* private mode: the picker still works, it just will not be remembered */
+  }
+  return seeded;
+}
+
+function savePeople() {
+  try {
+    localStorage.setItem(PEOPLE_KEY, JSON.stringify(people));
+  } catch {
+    /* as above */
+  }
+}
+
+const activePerson = () => people.list.find((x) => x.id === people.active) || people.list[0];
+
+/** Everything transient belongs to whoever was here a moment ago. Drop it. */
+function usePerson(id) {
+  if (!people.list.some((x) => x.id === id)) return;
+  people.active = id;
+  savePeople();
+  state = load();
+  quiz = null;
+  current = null;
+  flipped = false;
+  render();
+}
+
+function addPerson(rawName) {
+  const name = String(rawName || '').trim().slice(0, 24);
+  if (!name) return;
+  const person = { id: `p${Date.now().toString(36)}`, name };
+  people.list.push(person);
+  usePerson(person.id);
+}
+
+function renamePerson(id, rawName) {
+  const name = String(rawName || '').trim().slice(0, 24);
+  const person = people.list.find((x) => x.id === id);
+  if (!person || !name) return;
+  person.name = name;
+  savePeople();
+  render();
+}
+
+function removePerson(id) {
+  // Never leave the app with nobody in it.
+  if (people.list.length < 2) return;
+  people.list = people.list.filter((x) => x.id !== id);
+  try {
+    localStorage.removeItem(stateKey(id));
+  } catch {
+    /* nothing to clean up */
+  }
+  savePeople();
+  usePerson(people.active === id ? people.list[0].id : people.active);
+}
+
 /* ---------------- storage ---------------- */
 
 const blank = () => ({
   cards: {}, // id -> { box, seen, right, wrong, last }
   spot: { asked: 0, right: 0, best: 0, streak: 0 },
-  target: DEFAULT_TARGET,
+  target: nextSaturday(),
   // Which set the Learn/Drill/Spot views were last filtered to, so the app
   // reopens where you left it rather than at the top every time.
   filter: 'all',
@@ -1087,7 +1218,7 @@ let state = load();
 
 function load() {
   try {
-    const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
+    const raw = JSON.parse(localStorage.getItem(stateKey(people.active)) || 'null');
     return raw ? { ...blank(), ...raw, spot: { ...blank().spot, ...(raw.spot || {}) } } : blank();
   } catch {
     return blank();
@@ -1096,7 +1227,7 @@ function load() {
 
 function save() {
   try {
-    localStorage.setItem(KEY, JSON.stringify(state));
+    localStorage.setItem(stateKey(people.active), JSON.stringify(state));
   } catch {
     /* private mode, a full quota — the app still works, it just forgets. */
   }
@@ -1123,6 +1254,16 @@ function grade(id, correct) {
 }
 
 const isLearned = (id) => progressOf(id).box >= LEARNED_AT;
+
+/** Another person's card progress, read without switching to them. */
+function personCards(id) {
+  if (id === people.active) return state.cards;
+  try {
+    return JSON.parse(localStorage.getItem(stateKey(id)) || '{}').cards || {};
+  } catch {
+    return {};
+  }
+}
 
 /* ---------------- the target date ---------------- */
 
@@ -1854,7 +1995,10 @@ function viewProgress() {
       <div class="stats">
         <div><span class="stat">${learned.length}</span><small>of ${DATA.cards.length} learned</small></div>
         <div><span class="stat">${s.asked ? Math.round((s.right / s.asked) * 100) : 0}%</span><small>spot-it accuracy</small></div>
-        <div><span class="stat">${daysToTarget()}</span><small>days to target</small></div>
+        <div>
+          <span class="stat">${Math.max(0, daysToTarget())}</span>
+          <small>${daysToTarget() < 0 ? 'target has passed' : 'days to target'}</small>
+        </div>
       </div>
       <p class="note">A card counts as learned once it has climbed to box ${LEARNED_AT} — four right answers in a row, with any
          wrong answer knocking it back to box 1.</p>
@@ -1916,7 +2060,40 @@ function viewProgress() {
     }
 
     <section class="card">
-      <h2>Settings</h2>
+      <h2>Who is using this</h2>
+      <p class="note" style="margin-top:0">Each person gets their own boxes, their own scores and their own target date.
+         Nothing is shared, and nothing leaves this device.</p>
+      ${people.list
+        .map(
+          (x) => `
+        <div class="mastery">
+          <span class="mastery-name">${x.id === people.active ? '<strong>' : ''}${esc(x.name)}${
+            x.id === people.active ? '</strong>' : ''
+          }</span>
+          <span class="muted" style="font-size:12px">${
+            Object.keys(personCards(x.id)).length
+          } cards started</span>
+          ${
+            x.id === people.active
+              ? '<span class="pill">here now</span>'
+              : `<button class="btn small" data-action="use-person" data-person="${esc(x.id)}">Switch</button>`
+          }
+          <button class="btn small ghost" data-action="rename-person" data-person="${esc(x.id)}">Rename</button>
+          ${
+            people.list.length > 1
+              ? `<button class="btn small ghost" data-action="remove-person" data-person="${esc(x.id)}">Remove</button>`
+              : ''
+          }
+        </div>`
+        )
+        .join('')}
+      <div class="btnrow">
+        <button class="btn small" data-action="add-person">Add someone</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Settings for ${esc(activePerson().name)}</h2>
       <div class="mastery">
         <span class="mastery-name">Learn it all by</span>
         <input type="date" id="target-date" value="${esc(state.target)}" />
@@ -1964,6 +2141,15 @@ function render() {
 
   const tabFor = route.name === 'card' ? 'learn' : route.name === 'confusions' ? 'map' : route.name;
   $$('.tab').forEach((el) => el.classList.toggle('on', el.dataset.view === tabFor));
+
+  const who = $('#whoami');
+  if (who) {
+    who.innerHTML = `
+      ${people.list
+        .map((x) => `<option value="${esc(x.id)}" ${x.id === people.active ? 'selected' : ''}>${esc(x.name)}</option>`)
+        .join('')}
+      <option value="__add">＋ Add someone…</option>`;
+  }
 
   const due = daysToTarget();
   const target = $('#target');
@@ -2085,8 +2271,24 @@ document.addEventListener('click', (e) => {
     return;
   }
 
+  if (action === 'use-person') return usePerson(el.dataset.person);
+
+  if (action === 'add-person') return addPerson(prompt('Who is this for? (a first name is plenty)', ''));
+
+  if (action === 'rename-person') {
+    const person = people.list.find((x) => x.id === el.dataset.person);
+    return renamePerson(el.dataset.person, prompt('Call them what?', person ? person.name : ''));
+  }
+
+  if (action === 'remove-person') {
+    const person = people.list.find((x) => x.id === el.dataset.person);
+    if (!person) return;
+    if (!confirm(`Remove ${person.name}, and throw away everything they have learned here?`)) return;
+    return removePerson(el.dataset.person);
+  }
+
   if (action === 'reset') {
-    if (!confirm('Clear every box and score, and start these 17 cards over?')) return;
+    if (!confirm(`Clear every box and score for ${activePerson().name}, and start over?`)) return;
     const target = state.target;
     state = blank();
     state.target = target;
@@ -2098,8 +2300,18 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('change', (e) => {
+  if (e.target.id === 'whoami') {
+    if (e.target.value === '__add') {
+      // Put the picker back where it was first: if they cancel the prompt,
+      // the dropdown must not be left sitting on "Add someone".
+      e.target.value = people.active;
+      addPerson(prompt('Who is this for? (a first name is plenty)', ''));
+      return;
+    }
+    return usePerson(e.target.value);
+  }
   if (e.target.id !== 'target-date') return;
-  state.target = e.target.value || DEFAULT_TARGET;
+  state.target = e.target.value || nextSaturday();
   save();
   render();
 });
