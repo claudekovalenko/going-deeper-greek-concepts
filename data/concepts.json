@@ -27,13 +27,13 @@
         {
           "id": "nominative-major",
           "name": "Major uses — the SPA",
-          "mnemonic": "S-P-A",
+          "mnemonic": "S-P-A — sit down in the spa.",
           "expand": "Subject · Predicate nominative · Apposition"
         },
         {
           "id": "nominative-other",
           "name": "Other uses — the AAAH",
-          "mnemonic": "A-A-A-H",
+          "mnemonic": "A-A-A-H — then say aaah.",
           "expand": "Address · Appellation · Absolute · Hanging"
         }
       ]
@@ -63,25 +63,25 @@
       "eli5": "This one builds a fence. It says where the doing stops.",
       "color": "#c8642a",
       "bigIdea": "The accusative fences the verb in. It says how far the action reaches — onto whom, how far, in what way.",
-      "masterMnemonic": "One object with four twists, then the MMR shot.",
-      "masterMnemonicWhy": "Noun-like: the direct object plus four twists on it — Echo, Two, Sub, Alias. Adverb-like: the MMR shot — Measure, Manner, Respect. How far? How? How so?",
+      "masterMnemonic": "The object goes on DATES, then gets the MMR shot.",
+      "masterMnemonicWhy": "Noun-like: the direct object and its four twists spell DATES — Direct object, Alias, Two, Echo, Sub. Adverb-like: the MMR shot — Measure, Manner, Respect. How far? How? How so?",
       "groups": [
         {
           "id": "accusative-overview",
           "name": "The idea",
-          "mnemonic": "The fence",
+          "mnemonic": "The nominative crowns. The accusative fences.",
           "expand": "The nominative crowns. The accusative fences."
         },
         {
           "id": "accusative-substantival",
-          "name": "Substantival (noun-like) — one object, four twists",
-          "mnemonic": "Echo · Two · Sub · Alias",
-          "expand": "Direct object, then Echo (cognate), Two (double), Sub (subject of an infinitive), Alias (apposition)"
+          "name": "Substantival (noun-like) — DATES",
+          "mnemonic": "D-A-T-E-S — take the object out on five DATES.",
+          "expand": "Direct object · Alias (apposition) · Two (double) · Echo (cognate) · Sub (subject of an infinitive)"
         },
         {
           "id": "accusative-adverbial",
           "name": "Adverbial (adverb-like) — the MMR shot",
-          "mnemonic": "M-M-R",
+          "mnemonic": "M-M-R — one shot, three jabs: how far? how? how so?",
           "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)"
         }
       ]
@@ -94,31 +94,31 @@
       "color": "#7a5cc8",
       "bigIdea": "The genitive describes. The nominative names, the accusative fences, the genitive tells you which kind.",
       "masterMnemonic": "Every genitive is an “of”. Ask which kind.",
-      "masterMnemonicWhy": "Four drawers. Seven describe a noun — walk the “of” ladder and stop at the first yes, with Description catching whatever falls off the bottom. Two hide a verb: X does it, or X gets it. Five modify a verb and spell PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
+      "masterMnemonicWhy": "Four drawers. Seven describe a noun and spell SWAMP RD — Source, Whole, Adjective, Made of, Possession, Relationship, Description. Two hide a verb: X does it, or X gets it. Five modify a verb and spell PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
       "groups": [
         {
           "id": "genitive-adjectival",
-          "name": "Adjectival — the “of” ladder",
-          "mnemonic": "Whose? Whose kin? From? Made of? Part of? What quality? Or just describing.",
-          "expand": "Walk down and stop at the first yes: Possession · Relationship · Source · Material or content · Partitive · Attributive · Description (the catch-all)"
+          "name": "Adjectival — SWAMP RD",
+          "mnemonic": "S-W-A-M-P R-D — the genitive lives on Swamp Rd, and whatever falls off the end lands in the Ditch. That is Description, the catch-all.",
+          "expand": "Source (from?) · Whole (part of?) · Adjective (what quality?) · Made of? · Possession (whose?) · Relationship (whose kin?) · Description (nothing else fits)"
         },
         {
           "id": "genitive-verbal",
           "name": "Verbal — a verb hiding in the noun",
-          "mnemonic": "Does it · Gets it",
+          "mnemonic": "Does it · Gets it — say the head word as a verb and ask which.",
           "expand": "Subjective (X does it) · Objective (X gets it)"
         },
         {
           "id": "genitive-adverbial",
           "name": "Adverbial — modifies the verb: PACTS",
-          "mnemonic": "P-A-C-T-S",
+          "mnemonic": "P-A-C-T-S — the adverbial genitive makes PACTS.",
           "expand": "Price · Agency · Comparison · Time or place · Separation"
         },
         {
           "id": "genitive-other",
           "name": "Other — the odd drawer",
-          "mnemonic": "Another name · Genitive object",
-          "expand": "Apposition · Direct object"
+          "mnemonic": "A nickname, and a fussy verb.",
+          "expand": "Apposition (another name for it) · Direct object (the verb wanted a genitive)"
         }
       ]
     }
@@ -586,10 +586,10 @@
         ]
       },
       "short": "Direct object",
-      "tile": "DO",
+      "tile": "D",
       "oneLine": "What the verb lands on. By far the most common one.",
-      "mnemonic": "The verb throws; the object catches.",
-      "mnemonicWhy": "Every other noun-like use is a twist on this one throw, so get this one solid first.",
+      "mnemonic": "DATES — D: the verb throws, the object catches.",
+      "mnemonicWhy": "The plain one, and the trunk the other four grow off. Get this solid first.",
       "spotIt": "After the verb, ask: whom? what?",
       "bookDef": "Serves as the recipient of the action.",
       "examples": [
@@ -604,6 +604,103 @@
           "greek": "οὕτως γὰρ ἠγάπησεν ὁ θεὸς *τὸν κόσμον*",
           "english": "For God so loved *the world*",
           "note": "The world is what the loving lands on."
+        }
+      ],
+      "tags": [
+        "accusative",
+        "substantival",
+        "this-week"
+      ]
+    },
+    {
+      "id": "accusative-apposition",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Accusative of Apposition",
+      "eli5": "Two stickers again, on the catcher. “They picked Stephen, a good man.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X,",
+          "Y"
+        ],
+        "filled": [
+          "they chose",
+          "Stephen,",
+          "a man full of faith"
+        ]
+      },
+      "short": "Alias — apposition",
+      "tile": "A",
+      "oneLine": "A second accusative that renames the first. No verb between them.",
+      "mnemonic": "DATES — A: alias, the name tag on the object.",
+      "mnemonicWhy": "The same sticker you met in the nominative, now stuck on the catcher.",
+      "spotIt": "Two accusatives, no verb between them, and the second answers “which one, exactly?”",
+      "bookDef": "Two accusatives are juxtaposed, both referring to the same person or thing, with the second accusative further specifying the first accusative.",
+      "examples": [
+        {
+          "ref": "Acts 6:5",
+          "greek": "ἐξελέξαντο Στέφανον, *ἄνδρα* πλήρη πίστεως",
+          "english": "they chose Stephen, *a man* full of faith",
+          "note": "Stephen is the object; “a man” renames him."
+        },
+        {
+          "ref": "Matt 2:6",
+          "greek": "ποιμανεῖ τὸν λαόν μου *τὸν Ἰσραήλ*",
+          "english": "he will shepherd my people, *Israel*",
+          "note": "Israel renames “my people”."
+        },
+        {
+          "ref": "Matt 21:5",
+          "greek": "καὶ ἐπὶ πῶλον *υἱὸν* ὑποζυγίου",
+          "english": "and on a colt, *the foal* of a donkey",
+          "note": "υἱόν renames πῶλον. One animal, two names."
+        }
+      ],
+      "watchOut": "Not a double accusative. Apposition renames; a complement says something about.",
+      "tags": [
+        "accusative",
+        "substantival",
+        "this-week"
+      ]
+    },
+    {
+      "id": "double-accusative",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Double Accusative",
+      "eli5": "Two catchers. “Ask Dad for bread.” Or “he gave his life as a gift.”",
+      "formula": {
+        "ladder": [
+          "ask someone something  —  “asks him for bread”",
+          "call something a name  —  “gave his life as a ransom”"
+        ]
+      },
+      "short": "Two — double",
+      "tile": "T",
+      "oneLine": "Two accusatives in one clause. Two kinds.",
+      "mnemonic": "DATES — T: two catchers.",
+      "mnemonicWhy": "Two English frames keep the kinds apart: you ASK a person FOR a thing, and you CALL a thing A NAME.",
+      "spotIt": "Try slipping “as” between the two. Fits — object + complement. Doesn't — person + thing.",
+      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
+      "examples": [
+        {
+          "ref": "Matt 7:9",
+          "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
+          "english": "if his son asks *him* for *bread*",
+          "note": "him (a person) + bread (a thing). You cannot say “asks him as bread”."
+        },
+        {
+          "ref": "Mark 10:45",
+          "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
+          "english": "to give his *life* as a *ransom* for many",
+          "note": "life is the object, ransom says what it was given as. “As” slips right in."
+        },
+        {
+          "ref": "1 Tim 2:6",
+          "greek": "ὁ δοὺς *ἑαυτὸν* *ἀντίλυτρον* ὑπὲρ πάντων",
+          "english": "who gave *himself* as *a ransom* for all",
+          "note": "“As” slips in, so this is object + complement."
         }
       ],
       "tags": [
@@ -628,11 +725,11 @@
           "the good fight"
         ]
       },
-      "short": "Cognate",
-      "tile": "Echo",
+      "short": "Echo — cognate",
+      "tile": "E",
       "oneLine": "An object that repeats the verb — same root, or same idea.",
-      "mnemonic": "Echo — the object echoes the verb.",
-      "mnemonicWhy": "Twist one of four. Say the verb and hear it come straight back: sing a song, fight a fight, shepherd a flock.",
+      "mnemonic": "DATES — E: echo, the object repeats the verb.",
+      "mnemonicWhy": "Say the verb and hear it come straight back: sing a song, fight a fight, shepherd a flock.",
       "spotIt": "Say the verb and the object out loud. Sounds redundant in English? Cognate.",
       "bookDef": "Aligned with the verb either with regard to the lexical root or the idea conveyed.",
       "examples": [
@@ -663,51 +760,6 @@
       ]
     },
     {
-      "id": "double-accusative",
-      "set": "accusative",
-      "group": "accusative-substantival",
-      "name": "Double Accusative",
-      "eli5": "Two catchers. “Ask Dad for bread.” Or “he gave his life as a gift.”",
-      "formula": {
-        "ladder": [
-          "ask someone something  —  “asks him for bread”",
-          "call something a name  —  “gave his life as a ransom”"
-        ]
-      },
-      "short": "Double",
-      "tile": "Two",
-      "oneLine": "Two accusatives in one clause. Two kinds.",
-      "mnemonic": "Two — \"ask someone something\" vs \"call someone something\".",
-      "mnemonicWhy": "Twist two of four. Two English frames keep them apart: you ASK a person FOR a thing, and you CALL a thing A NAME.",
-      "spotIt": "Try slipping “as” between the two. Fits — object + complement. Doesn't — person + thing.",
-      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
-      "examples": [
-        {
-          "ref": "Matt 7:9",
-          "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
-          "english": "if his son asks *him* for *bread*",
-          "note": "him (a person) + bread (a thing). You cannot say “asks him as bread”."
-        },
-        {
-          "ref": "Mark 10:45",
-          "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
-          "english": "to give his *life* as a *ransom* for many",
-          "note": "life is the object, ransom says what it was given as. “As” slips right in."
-        },
-        {
-          "ref": "1 Tim 2:6",
-          "greek": "ὁ δοὺς *ἑαυτὸν* *ἀντίλυτρον* ὑπὲρ πάντων",
-          "english": "who gave *himself* as *a ransom* for all",
-          "note": "“As” slips in, so this is object + complement."
-        }
-      ],
-      "tags": [
-        "accusative",
-        "substantival",
-        "this-week"
-      ]
-    },
-    {
       "id": "accusative-subject-infinitive",
       "set": "accusative",
       "group": "accusative-substantival",
@@ -726,11 +778,11 @@
         ],
         "note": "X is accusative — and X is the one doing it."
       },
-      "short": "Subj. of inf.",
-      "tile": "Sub",
+      "short": "Sub — subj. of inf.",
+      "tile": "S",
       "oneLine": "An infinitive's subject is accusative, not nominative.",
-      "mnemonic": "Sub — finite verbs pay in nominative, infinitives pay in accusative.",
-      "mnemonicWhy": "Twist three of four, and the odd one out — this accusative is doing the action, not catching it.",
+      "mnemonic": "DATES — S: sub, the infinitive's own subject.",
+      "mnemonicWhy": "The odd one out — this accusative is doing the action, not catching it.",
       "spotIt": "Find the infinitive, then the accusative that is doing it rather than receiving it.",
       "bookDef": "Functions as the subject of an infinitive, indicating the agent performing the action conveyed by the infinitive.",
       "examples": [
@@ -748,58 +800,6 @@
         }
       ],
       "watchOut": "The only accusative you translate as the doer.",
-      "tags": [
-        "accusative",
-        "substantival",
-        "this-week"
-      ]
-    },
-    {
-      "id": "accusative-apposition",
-      "set": "accusative",
-      "group": "accusative-substantival",
-      "name": "Accusative of Apposition",
-      "eli5": "Two stickers again, on the catcher. “They picked Stephen, a good man.”",
-      "formula": {
-        "pattern": [
-          "verb",
-          "X,",
-          "Y"
-        ],
-        "filled": [
-          "they chose",
-          "Stephen,",
-          "a man full of faith"
-        ]
-      },
-      "short": "Apposition (acc.)",
-      "tile": "Alias",
-      "oneLine": "A second accusative that renames the first. No verb between them.",
-      "mnemonic": "Alias — the name tag, now on the object.",
-      "mnemonicWhy": "Twist four of four. The same name tag as before, now stuck on the object.",
-      "spotIt": "Two accusatives, no verb between them, and the second answers “which one, exactly?”",
-      "bookDef": "Two accusatives are juxtaposed, both referring to the same person or thing, with the second accusative further specifying the first accusative.",
-      "examples": [
-        {
-          "ref": "Acts 6:5",
-          "greek": "ἐξελέξαντο Στέφανον, *ἄνδρα* πλήρη πίστεως",
-          "english": "they chose Stephen, *a man* full of faith",
-          "note": "Stephen is the object; “a man” renames him."
-        },
-        {
-          "ref": "Matt 2:6",
-          "greek": "ποιμανεῖ τὸν λαόν μου *τὸν Ἰσραήλ*",
-          "english": "he will shepherd my people, *Israel*",
-          "note": "Israel renames “my people”."
-        },
-        {
-          "ref": "Matt 21:5",
-          "greek": "καὶ ἐπὶ πῶλον *υἱὸν* ὑποζυγίου",
-          "english": "and on a colt, *the foal* of a donkey",
-          "note": "υἱόν renames πῶλον. One animal, two names."
-        }
-      ],
-      "watchOut": "Not a double accusative. Apposition renames; a complement says something about.",
       "tags": [
         "accusative",
         "substantival",
@@ -925,6 +925,167 @@
       ]
     },
     {
+      "id": "genitive-source",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Source",
+      "eli5": "Where it came from. Swap “of” for “from” and see if it still works.",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the righteousness",
+          "of God"
+        ],
+        "note": "= that comes FROM X."
+      },
+      "short": "Source",
+      "tile": "S",
+      "oneLine": "Where the head word came from.",
+      "mnemonic": "SWAMP RD — S: where it came from.",
+      "mnemonicWhy": "Swap “of” for “from” and see whether it still works. “The righteousness from God.”",
+      "spotIt": "Try “from” in place of “of”. Still makes sense? Source.",
+      "bookDef": "Indicates the origin of the head noun (“from”).",
+      "examples": [
+        {
+          "ref": "Rom 10:3",
+          "greek": "τὴν *τοῦ θεοῦ* δικαιοσύνην",
+          "english": "the righteousness *of God*",
+          "note": "The righteousness comes from God. Swap in “from” and it still reads."
+        }
+      ],
+      "watchOut": "Separation also translates “from”. Source is where a noun came from; separation is what a verb moves away from.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "next-week"
+      ]
+    },
+    {
+      "id": "genitive-partitive",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Partitive",
+      "eli5": "The “of” word is the big pile. The other word is your piece. “One of the boats.”",
+      "formula": {
+        "pattern": [
+          "one",
+          "of X"
+        ],
+        "filled": [
+          "one",
+          "of the boats"
+        ],
+        "note": "The genitive is the WHOLE. The head noun is the part."
+      },
+      "short": "Whole — partitive",
+      "tile": "W",
+      "oneLine": "The genitive is the whole; the head word is a piece of it.",
+      "mnemonic": "SWAMP RD — W: the genitive is the whole pie, the head word your slice.",
+      "mnemonicWhy": "Backwards from what you expect: the word in the genitive is the bigger thing, not the smaller one.",
+      "spotIt": "Ask: is the genitive word the whole that the other word is a piece of?",
+      "bookDef": "Whether by itself or in conjunction with the preposition ἀπό or ἐκ, the articular noun in the genitive denotes the whole of which the head noun is a part.",
+      "examples": [
+        {
+          "ref": "Luke 5:3",
+          "greek": "ἓν *τῶν πλοίων*",
+          "english": "one *of the boats*",
+          "note": "The boats are the whole; the one boat is the part."
+        }
+      ],
+      "watchOut": "Often turns up with ἀπό or ἐκ, and the genitive noun carries the article.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "next-week"
+      ]
+    },
+    {
+      "id": "genitive-attributive",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Attributive",
+      "eli5": "“The word of his power” really means “his POWERFUL word.” Squish it into a describing word.",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "the word",
+          "of his power"
+        ],
+        "note": "→ his POWERFUL word. X becomes the adjective."
+      },
+      "short": "Adjective — attributive",
+      "tile": "A",
+      "oneLine": "A quality of the head word — it could have been an adjective.",
+      "mnemonic": "SWAMP RD — A: turn the genitive into an adjective.",
+      "mnemonicWhy": "“The word of his power” → “his powerful word.” If the genitive can become the adjective, and saying it that way is stronger, it is attributive.",
+      "spotIt": "Try rewriting the genitive as an adjective in front of the head noun. Does it work?",
+      "bookDef": "Denotes an attribute or innate quality of the head term, conveying an emphatic adjectival idea.",
+      "examples": [
+        {
+          "ref": "Heb 1:3",
+          "greek": "τῷ ῥήματι *τῆς δυνάμεως* αὐτοῦ",
+          "english": "by his *powerful* word",
+          "note": "“Word of power” becomes “powerful word”. That rewrite is the test."
+        }
+      ],
+      "watchOut": "Description is the vaguer cousin. Attributive earns its name because the genitive really does become an adjective.",
+      "tags": [
+        "genitive",
+        "adjectival",
+        "next-week"
+      ]
+    },
+    {
+      "id": "genitive-material",
+      "set": "genitive",
+      "group": "genitive-adjectival",
+      "name": "Material or Content",
+      "eli5": "What it is made of, or what is in it. “A cup of water” is full of water.",
+      "formula": {
+        "pattern": [
+          "head noun",
+          "of X"
+        ],
+        "filled": [
+          "a cup",
+          "of water"
+        ],
+        "note": "= made of X, or full of X."
+      },
+      "short": "Made of — material",
+      "tile": "M",
+      "oneLine": "What it is made of, or what is inside it.",
+      "mnemonic": "SWAMP RD — M: made of it, or full of it.",
+      "mnemonicWhy": "Cargo of gold is made of gold. A cup of water is full of water. One case, two flavours.",
+      "spotIt": "Ask: made of what? or full of what?",
+      "bookDef": "Indicates the material of which the head term is made or specifies the content of an object or abstract noun.",
+      "examples": [
+        {
+          "ref": "Rev 18:12",
+          "greek": "γόμον *χρυσοῦ*",
+          "english": "cargo *of gold*",
+          "note": "Material — the cargo is made of gold."
+        },
+        {
+          "ref": "Mark 9:41",
+          "greek": "ποτήριον *ὕδατος*",
+          "english": "a cup *of water*",
+          "note": "Content — the cup is full of water."
+        }
+      ],
+      "tags": [
+        "genitive",
+        "adjectival",
+        "next-week"
+      ]
+    },
+    {
       "id": "genitive-possession",
       "set": "genitive",
       "group": "genitive-adjectival",
@@ -942,9 +1103,9 @@
         "note": "= X’s. Try the apostrophe-s."
       },
       "short": "Possession",
-      "tile": "Whose",
+      "tile": "P",
       "oneLine": "It belongs to X.",
-      "mnemonic": "Whose? Try the apostrophe-s.",
+      "mnemonic": "SWAMP RD — P: whose? Try the apostrophe-s.",
       "mnemonicWhy": "“The house of Philip” → “Philip’s house.” If the apostrophe-s works and means he owns it, it is possession.",
       "spotIt": "Rewrite it with ’s. Does it mean he owns the thing?",
       "bookDef": "Identifies ownership with regard to the noun it modifies, often employing the use of a possessive pronoun.",
@@ -981,9 +1142,9 @@
         "note": "→ James, the SON of Zebedee. The kin word is missing."
       },
       "short": "Relationship",
-      "tile": "Whose kin",
+      "tile": "R",
       "oneLine": "X’s son, wife or parent — with the family word left out.",
-      "mnemonic": "Supply the missing kin word.",
+      "mnemonic": "SWAMP RD — R: supply the missing kin word.",
       "mnemonicWhy": "Greek leaves out “son” or “wife” and expects you to know. Ἰάκωβον τὸν τοῦ Ζεβεδαίου is “James the [son] of Zebedee.”",
       "spotIt": "A name in the genitive with no thing to own? Try slotting in “son of” or “wife of”.",
       "bookDef": "Denotes a family relationship such as a person’s parent or spouse. The word indicating the relationship is often omitted and must be inferred.",
@@ -996,167 +1157,6 @@
         }
       ],
       "watchOut": "Possession is owning a thing. Relationship is family, with the kin word usually left out.",
-      "tags": [
-        "genitive",
-        "adjectival",
-        "next-week"
-      ]
-    },
-    {
-      "id": "genitive-source",
-      "set": "genitive",
-      "group": "genitive-adjectival",
-      "name": "Source",
-      "eli5": "Where it came from. Swap “of” for “from” and see if it still works.",
-      "formula": {
-        "pattern": [
-          "head noun",
-          "of X"
-        ],
-        "filled": [
-          "the righteousness",
-          "of God"
-        ],
-        "note": "= that comes FROM X."
-      },
-      "short": "Source",
-      "tile": "From",
-      "oneLine": "Where the head word came from.",
-      "mnemonic": "Source = where it came from.",
-      "mnemonicWhy": "Swap “of” for “from” and see whether it still works. “The righteousness from God.”",
-      "spotIt": "Try “from” in place of “of”. Still makes sense? Source.",
-      "bookDef": "Indicates the origin of the head noun (“from”).",
-      "examples": [
-        {
-          "ref": "Rom 10:3",
-          "greek": "τὴν *τοῦ θεοῦ* δικαιοσύνην",
-          "english": "the righteousness *of God*",
-          "note": "The righteousness comes from God. Swap in “from” and it still reads."
-        }
-      ],
-      "watchOut": "Separation also translates “from”. Source is where a noun came from; separation is what a verb moves away from.",
-      "tags": [
-        "genitive",
-        "adjectival",
-        "next-week"
-      ]
-    },
-    {
-      "id": "genitive-material",
-      "set": "genitive",
-      "group": "genitive-adjectival",
-      "name": "Material or Content",
-      "eli5": "What it is made of, or what is in it. “A cup of water” is full of water.",
-      "formula": {
-        "pattern": [
-          "head noun",
-          "of X"
-        ],
-        "filled": [
-          "a cup",
-          "of water"
-        ],
-        "note": "= made of X, or full of X."
-      },
-      "short": "Material",
-      "tile": "Made of",
-      "oneLine": "What it is made of, or what is inside it.",
-      "mnemonic": "Made of it, or full of it.",
-      "mnemonicWhy": "Cargo of gold is made of gold. A cup of water is full of water. One case, two flavours.",
-      "spotIt": "Ask: made of what? or full of what?",
-      "bookDef": "Indicates the material of which the head term is made or specifies the content of an object or abstract noun.",
-      "examples": [
-        {
-          "ref": "Rev 18:12",
-          "greek": "γόμον *χρυσοῦ*",
-          "english": "cargo *of gold*",
-          "note": "Material — the cargo is made of gold."
-        },
-        {
-          "ref": "Mark 9:41",
-          "greek": "ποτήριον *ὕδατος*",
-          "english": "a cup *of water*",
-          "note": "Content — the cup is full of water."
-        }
-      ],
-      "tags": [
-        "genitive",
-        "adjectival",
-        "next-week"
-      ]
-    },
-    {
-      "id": "genitive-partitive",
-      "set": "genitive",
-      "group": "genitive-adjectival",
-      "name": "Partitive",
-      "eli5": "The “of” word is the big pile. The other word is your piece. “One of the boats.”",
-      "formula": {
-        "pattern": [
-          "one",
-          "of X"
-        ],
-        "filled": [
-          "one",
-          "of the boats"
-        ],
-        "note": "The genitive is the WHOLE. The head noun is the part."
-      },
-      "short": "Partitive",
-      "tile": "Part of",
-      "oneLine": "The genitive is the whole; the head word is a piece of it.",
-      "mnemonic": "The genitive is the whole pie. The head noun is your slice.",
-      "mnemonicWhy": "Backwards from what you expect: the word in the genitive is the bigger thing, not the smaller one.",
-      "spotIt": "Ask: is the genitive word the whole that the other word is a piece of?",
-      "bookDef": "Whether by itself or in conjunction with the preposition ἀπό or ἐκ, the articular noun in the genitive denotes the whole of which the head noun is a part.",
-      "examples": [
-        {
-          "ref": "Luke 5:3",
-          "greek": "ἓν *τῶν πλοίων*",
-          "english": "one *of the boats*",
-          "note": "The boats are the whole; the one boat is the part."
-        }
-      ],
-      "watchOut": "Often turns up with ἀπό or ἐκ, and the genitive noun carries the article.",
-      "tags": [
-        "genitive",
-        "adjectival",
-        "next-week"
-      ]
-    },
-    {
-      "id": "genitive-attributive",
-      "set": "genitive",
-      "group": "genitive-adjectival",
-      "name": "Attributive",
-      "eli5": "“The word of his power” really means “his POWERFUL word.” Squish it into a describing word.",
-      "formula": {
-        "pattern": [
-          "head noun",
-          "of X"
-        ],
-        "filled": [
-          "the word",
-          "of his power"
-        ],
-        "note": "→ his POWERFUL word. X becomes the adjective."
-      },
-      "short": "Attributive",
-      "tile": "What quality",
-      "oneLine": "A quality of the head word — it could have been an adjective.",
-      "mnemonic": "Turn the genitive into an adjective.",
-      "mnemonicWhy": "“The word of his power” → “his powerful word.” If the genitive can become the adjective, and saying it that way is stronger, it is attributive.",
-      "spotIt": "Try rewriting the genitive as an adjective in front of the head noun. Does it work?",
-      "bookDef": "Denotes an attribute or innate quality of the head term, conveying an emphatic adjectival idea.",
-      "examples": [
-        {
-          "ref": "Heb 1:3",
-          "greek": "τῷ ῥήματι *τῆς δυνάμεως* αὐτοῦ",
-          "english": "by his *powerful* word",
-          "note": "“Word of power” becomes “powerful word”. That rewrite is the test."
-        }
-      ],
-      "watchOut": "Description is the vaguer cousin. Attributive earns its name because the genitive really does become an adjective.",
       "tags": [
         "genitive",
         "adjectival",
@@ -1181,9 +1181,9 @@
         "note": "Nothing more specific fits."
       },
       "short": "Description",
-      "tile": "Just describes",
+      "tile": "D",
       "oneLine": "It describes the head word, and nothing more specific fits.",
-      "mnemonic": "The catch-all at the bottom of the ladder.",
+      "mnemonic": "SWAMP RD — D: the ditch at the end of the road.",
       "mnemonicWhy": "Walk the ladder first. When nothing more specific fits, this catches it. A baptism of repentance is not owned by repentance, not made of it — just described by it.",
       "spotIt": "Run the ladder. If no other category fits, it is description.",
       "bookDef": "Further limits or describes the head noun, but other common genitival categories do not capture the specific nuance.",

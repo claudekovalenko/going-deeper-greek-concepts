@@ -36,19 +36,20 @@ anarthrous and still definite.
 
 **Genitive — every genitive is an "of"; ask which kind**
 
-Four drawers. Seven describe a noun — walk the **"of" ladder** and stop at the
-first yes, with Description catching whatever falls off the bottom. Two hide a
-verb. Five modify a verb. Two oddities are left over.
+Four drawers. Seven describe a noun and spell **SWAMP RD** — and whatever falls
+off the end of the road lands in the Ditch, which is Description, the catch-all.
+Two hide a verb. Five modify a verb and spell **PACTS**. Two oddities are left
+over.
 
 | | |
 |---|---|
-| Possession | *whose* — try the apostrophe-s |
-| Relationship | *whose kin* — supply the missing "son of" |
-| Source | *from* — where it came from |
-| Material or content | *made of*, or *full of* |
-| Partitive | the genitive is the whole pie, the head noun your slice |
-| Attributive | *what quality* — rewrite it as an adjective |
-| Description | the catch-all at the bottom of the ladder |
+| **S**ource | *from* — where it came from |
+| **W**hole — partitive | the genitive is the whole pie, the head noun your slice |
+| **A**djective — attributive | rewrite it as an adjective: *his powerful word* |
+| **M**ade of — material | *made of*, or *full of* |
+| **P**ossession | *whose* — try the apostrophe-s |
+| **R**elationship | *whose kin* — supply the missing "son of" |
+| **D**escription | the ditch at the end of the road: the catch-all |
 | Subjective | subject **does** it — "the love of Christ" = Christ loves |
 | Objective | object **gets** it — "faith of God" = faith in God |
 | **P**rice | for how much? |
@@ -59,21 +60,21 @@ verb. Five modify a verb. Two oddities are left over.
 | Apposition | another name for the head noun |
 | Direct object | feel it, want it, share it, rule it, leave it |
 
-The five adverbial genitives spell **PACTS**. The definitions on these cards are
-the chapter summary chart's own wording.
+Every group in the app spells something: SPA, AAAH, DATES, MMR, SWAMP RD, PACTS.
+The definitions on these cards are the chapter summary chart's own wording.
 
-**Accusative — one object, four twists, then MMR**
+**Accusative — the object goes on DATES, then gets the MMR shot**
 
 The accusative is the case of limitation: the nominative crowns, the accusative
 fences.
 
 | | |
 |---|---|
-| Direct object | the verb throws, the object catches |
-| **Echo** — cognate | the object echoes the verb: *fight the good fight* |
-| **Two** — double | *ask someone something* vs *call someone something* |
-| **Sub** — subject of infinitive | finite verbs pay in nominative, infinitives in accusative |
-| **Alias** — apposition | the name tag, now on the object |
+| **D**irect object | the verb throws, the object catches |
+| **A**lias — apposition | the name tag, now on the object |
+| **T**wo — double | *ask someone something* vs *call someone something* |
+| **E**cho — cognate | the object echoes the verb: *fight the good fight* |
+| **S**ub — subject of infinitive | finite verbs pay in nominative, infinitives in accusative |
 | **M**easure | how far? |
 | **M**anner | how? |
 | **R**espect | how so? — slot in "as to" |
