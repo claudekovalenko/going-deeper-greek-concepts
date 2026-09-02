@@ -18,7 +18,7 @@
       "id": "nominative",
       "name": "Nominative",
       "subtitle": "The naming case. Who or what the sentence is about.",
-      "eli5": "This is the who-is-it case. It sticks a name tag on somebody. Nobody wearing it ever gets hit, eaten or carried — they just get named, or shouted at.",
+      "eli5": "This one names people. Nobody here gets hit or eaten. They just get named.",
       "color": "#1f9d78",
       "bigIdea": "The nominative names. Whoever wears it is being named or called — never done to.",
       "masterMnemonic": "Go to the SPA, then say AAAH.",
@@ -42,7 +42,7 @@
       "id": "vocative",
       "name": "Vocative",
       "subtitle": "The calling case. One job: naming who you are talking to.",
-      "eli5": "This is the case for shouting someone’s name. “Lazarus, come out!” You said his name so he knows you mean him. That is the whole case — it has one job.",
+      "eli5": "This one is for shouting a name. “Lazarus!” That is all it does.",
       "color": "#2f9fc8",
       "bigIdea": "The vocative calls. It is the only case with a single use, so it is the cheapest one you will ever learn.",
       "masterMnemonic": "One case, one job: say the name.",
@@ -60,7 +60,7 @@
       "id": "accusative",
       "name": "Accusative",
       "subtitle": "The fencing case. How far the verb's action goes.",
-      "eli5": "This is the how-far case. Verbs would run on forever, so this builds a fence: who got hit, how far you walked, how you did it.",
+      "eli5": "This one builds a fence. It says where the doing stops.",
       "color": "#c8642a",
       "bigIdea": "The accusative fences the verb in. It says how far the action reaches — onto whom, how far, in what way.",
       "masterMnemonic": "One object with four twists, then the MMR shot.",
@@ -90,7 +90,7 @@
       "id": "genitive",
       "name": "Genitive",
       "subtitle": "The “of” case. The question is always: which kind of “of”?",
-      "eli5": "This is the “of” case. Any time you say “the something OF something”, the second one lives here. Your only job is working out which kind of “of” it is.",
+      "eli5": "This one is the “of” word. “The hat OF Dad.” You just say which kind of “of”.",
       "color": "#7a5cc8",
       "bigIdea": "The genitive describes. The nominative names, the accusative fences, the genitive tells you which kind.",
       "masterMnemonic": "Every genitive is an “of”. Ask which kind.",
@@ -129,7 +129,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Subject",
-      "eli5": "Somebody is doing something, and this word is the somebody. “John talks.” Who talks? John. John is it.",
+      "eli5": "Who is doing it. “John talks.” Who talks? John.",
       "formula": {
         "pattern": [
           "X",
@@ -172,7 +172,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Predicate Nominative",
-      "eli5": "Two name tags with “is” in the middle. Think of “is” as a box: the first thing goes inside the second. “The Word was God” puts the Word inside the God-box. It does not squeeze all of God into the Word.",
+      "eli5": "“X is Y” puts X inside Y, like a box. The Word goes in the God box. Not the other way round.",
       "formula": {
         "pattern": [
           "X",
@@ -231,7 +231,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "The Pecking Order",
-      "eli5": "Sometimes two words both look like the doer and you have to pick one. It works like picking teams. A “he” or “she” word gets picked first. If there isn’t one, the word wearing “the” gets picked. If there isn’t one of those either, the name gets picked.",
+      "eli5": "Two words both look like the doer. Pick like picking teams: “he” words first, then “the” words, then names.",
       "formula": {
         "ladder": [
           "Is either a pronoun?",
@@ -273,7 +273,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Apposition",
-      "eli5": "Same person, two stickers. “Andrew, the brother of Peter.” You didn’t say anything new about Andrew — you just added a second sticker so people know which Andrew. No “is” anywhere.",
+      "eli5": "Same person, two stickers. “Andrew, Peter’s brother.” No “is” — just a second sticker.",
       "formula": {
         "pattern": [
           "X,",
@@ -324,7 +324,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Address",
-      "eli5": "You’re calling someone. “Hey, Dad!” You are not talking ABOUT Dad, you are talking TO Dad. That’s the whole thing.",
+      "eli5": "“Hey, Dad!” You are talking TO him, not about him.",
       "formula": {
         "pattern": [
           "X,",
@@ -368,7 +368,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Appellation",
-      "eli5": "It’s the name on his badge. Everybody calls him “Teacher”, so “Teacher” turned into his name — the way you call your dad “Dad” instead of his real name.",
+      "eli5": "It is the name on his badge. Everyone says “Teacher”, so that became his name.",
       "formula": {
         "pattern": [
           "they call me",
@@ -407,7 +407,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative Absolute",
-      "eli5": "It’s the title on the front of the book. It isn’t part of a sentence. It just sits at the top and announces what’s coming: “The Beginning of the Good News.”",
+      "eli5": "It is the title on the front of a book. It sits on top and joins nothing.",
       "formula": {
         "pattern": [
           "X",
@@ -457,7 +457,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Hanging Nominative",
-      "eli5": "You say the thing first, then point back at it. “The good seed? THOSE are the king’s kids.” The pointing word is the string that ties it on.",
+      "eli5": "You say the thing, then point back at it. “The good seed? THOSE are the king’s kids.”",
       "formula": {
         "pattern": [
           "X",
@@ -503,7 +503,7 @@
       "set": "vocative",
       "group": "vocative-uses",
       "name": "Direct Address",
-      "eli5": "You are calling someone by name. “Lazarus, come out!” The name is not doing anything in the sentence — it is just how you got his attention.",
+      "eli5": "You call his name. “Lazarus, come out!” The name is just how you got him to look.",
       "formula": {
         "pattern": [
           "X!",
@@ -541,7 +541,7 @@
       "set": "accusative",
       "group": "accusative-overview",
       "name": "The Case of Limitation",
-      "eli5": "Doing-words would go on forever if nothing stopped them. This builds the fence and says: the action goes THIS far, and stops here.",
+      "eli5": "Doing-words need a fence. This builds it. The doing stops here.",
       "formula": {
         "ladder": [
           "Onto whom?  →  direct object",
@@ -574,7 +574,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Direct Object",
-      "eli5": "Somebody throws, somebody catches. This is the catcher. “I hit Ivan.” Ivan got hit. Ivan is the catcher.",
+      "eli5": "This is the catcher. “I hit Ivan.” Ivan got hit.",
       "formula": {
         "pattern": [
           "verb",
@@ -617,7 +617,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Cognate Accusative",
-      "eli5": "The word echoes the doing-word. “Sing a song.” “Fight a fight.” You could just have said “sing”, but you said it twice.",
+      "eli5": "The word says the doing-word again. “Sing a song.” “Fight a fight.”",
       "formula": {
         "pattern": [
           "verb",
@@ -667,7 +667,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Double Accusative",
-      "eli5": "Two catchers instead of one. Either you ask a person for a thing — “ask Dad for bread” — or you call a thing a name — “he gave his life as a payment”. If “as” fits in the middle, it’s the second kind.",
+      "eli5": "Two catchers. “Ask Dad for bread.” Or “he gave his life as a gift.”",
       "formula": {
         "ladder": [
           "ask someone something  —  “asks him for bread”",
@@ -712,7 +712,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative Subject of the Infinitive",
-      "eli5": "Usually this one is the catcher. Not here. Here it’s the doer — but only because there’s a “to do” word next to it. “I want HIM to go.” He’s the one going.",
+      "eli5": "Usually this one catches. Here it does it. “I want HIM to go.” He goes.",
       "formula": {
         "pattern": [
           "for",
@@ -759,7 +759,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative of Apposition",
-      "eli5": "The two-sticker trick again, but now on the catcher. “They picked Stephen, a good man.” Stephen and the good man are one person.",
+      "eli5": "Two stickers again, on the catcher. “They picked Stephen, a good man.”",
       "formula": {
         "pattern": [
           "verb",
@@ -811,7 +811,7 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Measure",
-      "eli5": "How far, or how long? “He walked a little bit.” The “a little bit” is this one.",
+      "eli5": "How far? How long? “He walked a little bit.”",
       "formula": {
         "pattern": [
           "verb",
@@ -848,7 +848,7 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Manner",
-      "eli5": "How did you do it? “He gave it for free.” The “for free” is this one.",
+      "eli5": "How did you do it? “He gave it for free.”",
       "formula": {
         "pattern": [
           "verb",
@@ -885,7 +885,7 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Respect",
-      "eli5": "Only one part of you got it. “They were cut in the heart” doesn’t mean somebody used a knife. It means the part that hurt was the heart. Say “as to the” in front and it makes sense.",
+      "eli5": "Only one bit of you got it. “Cut in the heart” means the heart is the bit that hurt.",
       "formula": {
         "pattern": [
           "verb",
@@ -929,7 +929,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Possession",
-      "eli5": "It’s his. “The house of Philip” just means “Philip’s house.” If you can say it with an apostrophe-s and it means he owns it, this is the one.",
+      "eli5": "It is his. “The house of Philip” means Philip’s house.",
       "formula": {
         "pattern": [
           "head noun",
@@ -968,7 +968,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Relationship",
-      "eli5": "It’s family, and Greek left the family word out. “James of Zebedee” means “James, Zebedee’s SON.” Greek expects you to put “son” back in yourself.",
+      "eli5": "It is family, and Greek left the family word out. “James of Zebedee” means Zebedee’s son.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1007,7 +1007,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Source",
-      "eli5": "Where did it come from? “The righteousness of God” came FROM God. Swap “of” for “from” and see if it still sounds right.",
+      "eli5": "Where it came from. Swap “of” for “from” and see if it still works.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1046,7 +1046,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Material or Content",
-      "eli5": "What is it made of, or what’s inside it? “Cargo of gold” is made of gold. “A cup of water” is full of water.",
+      "eli5": "What it is made of, or what is in it. “A cup of water” is full of water.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1090,7 +1090,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Partitive",
-      "eli5": "The “of” word is the big pile, and the other word is the piece you took. “One of the boats” — the boats are the pile, the one is your piece. It feels backwards: the little word comes first.",
+      "eli5": "The “of” word is the big pile. The other word is your piece. “One of the boats.”",
       "formula": {
         "pattern": [
           "one",
@@ -1129,7 +1129,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Attributive",
-      "eli5": "You could have just used a describing word. “The word of his power” really means “his POWERFUL word.” If the “of” word squishes down into a describing word, this is the one.",
+      "eli5": "“The word of his power” really means “his POWERFUL word.” Squish it into a describing word.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1168,7 +1168,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Description",
-      "eli5": "The leftovers bin. It describes the thing, but none of the other boxes fit. “A baptism of repentance” — nobody owns it, it isn’t made of it, it didn’t come from it. It just describes it.",
+      "eli5": "The leftovers bin. It just describes, and no other box fits.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1207,7 +1207,7 @@
       "set": "genitive",
       "group": "genitive-verbal",
       "name": "Subjective",
-      "eli5": "The “of” word is the DOER. “The love of Christ” means Christ is the one doing the loving.",
+      "eli5": "The “of” word is doing it. “The love of Christ” — Christ is doing the loving.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1245,7 +1245,7 @@
       "set": "genitive",
       "group": "genitive-verbal",
       "name": "Objective",
-      "eli5": "The “of” word is the one it’s done TO. “Faith of God” means faith IN God. God is getting the believing, not doing it.",
+      "eli5": "The “of” word is getting it. “Faith of God” means faith IN God.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1284,7 +1284,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Price",
-      "eli5": "How much did it cost? “You were bought with a price.” The price part is this one.",
+      "eli5": "How much did it cost? “Bought with a price.”",
       "formula": {
         "pattern": [
           "verb",
@@ -1322,7 +1322,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Means or Agency",
-      "eli5": "Who did it, or what did it? “Blessed by my Father” — a person did it. “Tempted by evil” — a thing did it. Either way it’s “by”.",
+      "eli5": "Who did it, or what did it. “Blessed by my Father.”",
       "formula": {
         "pattern": [
           "verb",
@@ -1366,7 +1366,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Comparison",
-      "eli5": "Something is bigger. This is the thing it’s bigger THAN. “God is greater than our heart.” The heart part is this one.",
+      "eli5": "Bigger than what? “Greater than our heart.”",
       "formula": {
         "pattern": [
           "comparative",
@@ -1404,7 +1404,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Time or Place",
-      "eli5": "When did it happen, or where? “He came at night.” The “at night” is this one.",
+      "eli5": "When, or where. “He came at night.”",
       "formula": {
         "pattern": [
           "verb",
@@ -1448,7 +1448,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Separation",
-      "eli5": "Moving away. “They walked away from the faith.” Whatever you’re moving away from is this one.",
+      "eli5": "Moving away. “They walked away from the faith.”",
       "formula": {
         "pattern": [
           "verb",
@@ -1487,7 +1487,7 @@
       "set": "genitive",
       "group": "genitive-other",
       "name": "Apposition",
-      "eli5": "The two-sticker trick, third time now. “Jeremiah the prophet.” One man, two names.",
+      "eli5": "Two stickers, third time. “Jeremiah the prophet.” One man, two names.",
       "formula": {
         "pattern": [
           "head noun,",
@@ -1532,7 +1532,7 @@
       "set": "genitive",
       "group": "genitive-other",
       "name": "Direct Object",
-      "eli5": "Some doing-words are just picky. Most of them want their catcher dressed the usual way, but a few — hearing, wanting, sharing, bossing, leaving — want it dressed like this instead. It isn’t about meaning. It’s just what those words like.",
+      "eli5": "Some doing-words are fussy. Hearing, wanting, sharing, bossing and leaving all want their catcher dressed this way.",
       "formula": {
         "pattern": [
           "certain verbs",

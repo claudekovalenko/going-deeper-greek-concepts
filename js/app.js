@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v9 · 2026-08-27';
+const BUILD = 'v10 · 2026-09-01';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
