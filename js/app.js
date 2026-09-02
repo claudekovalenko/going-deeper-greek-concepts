@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v11 · 2026-09-01';
+const BUILD = 'v12 · 2026-09-01';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -224,9 +224,37 @@ const setById = (id) => DATA.sets.find((s) => s.id === id);
 const groupById = (id) => DATA.sets.flatMap((s) => s.groups).find((g) => g.id === id);
 const setColor = (id) => setById(id)?.color || 'var(--accent)';
 
+/**
+ * Which case is being taught right now: the next class not yet past, or the
+ * last one if the term has run out. A hard-coded "this week" tag went stale the
+ * moment the calendar moved, so this reads the timetable instead.
+ */
+function thisWeekSets() {
+  const dated = DATA.sets.filter((s) => s.classDate);
+  if (!dated.length) return DATA.sets.map((s) => s.id);
+  const today = S_startOfToday();
+  const byDate = (a, b) => parseDay(a.classDate) - parseDay(b.classDate);
+  const ahead = dated.filter((s) => parseDay(s.classDate) >= today).sort(byDate);
+  const when = (ahead.length ? ahead[0] : [...dated].sort(byDate).pop()).classDate;
+  return dated.filter((s) => s.classDate === when).map((s) => s.id);
+}
+
+function S_startOfToday() {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  return d;
+}
+
+/** Is this a filter the views know how to apply? */
+const isFilter = (arg) => arg === 'all' || arg === 'week' || !!setById(arg) || String(arg).startsWith('tag:');
+
 /** The cards a view is currently working with, honouring set or tag filters. */
 function selection(filter = state.filter) {
   if (!filter || filter === 'all') return DATA.cards;
+  if (filter === 'week') {
+    const ids = thisWeekSets();
+    return DATA.cards.filter((c) => ids.includes(c.set));
+  }
   if (filter.startsWith('tag:')) {
     const tag = filter.slice(4);
     return DATA.cards.filter((c) => (c.tags || []).includes(tag));
@@ -236,6 +264,10 @@ function selection(filter = state.filter) {
 
 function filterLabel(filter = state.filter) {
   if (!filter || filter === 'all') return 'Everything';
+  if (filter === 'week') {
+    const names = thisWeekSets().map((id) => setById(id).name);
+    return `This week — ${names.join(', ')}`;
+  }
   if (filter.startsWith('tag:')) return `#${filter.slice(4)}`;
   return setById(filter)?.name || filter;
 }
@@ -380,7 +412,7 @@ function filterChips(base) {
     { id: 'all', label: 'Everything' },
     // The syllabus splits the chapters across two weeks, and drilling next
     // week's genitive the night before this week's quiz is wasted effort.
-    { id: 'tag:this-week', label: 'This week' },
+    { id: 'week', label: 'This week' },
     ...DATA.sets.map((s) => ({ id: s.id, label: s.name }))
   ];
   return `<div class="chips">${opts
@@ -589,7 +621,7 @@ function conceptCard(c, { open = false } = {}) {
 }
 
 function viewLearn(arg) {
-  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) state.filter = arg;
+  if (arg && isFilter(arg)) state.filter = arg;
   const cards = selection();
   const bySet = DATA.sets.filter((s) => cards.some((c) => c.set === s.id));
 
@@ -690,7 +722,7 @@ let flipped = false;
 let current = null;
 
 function viewDrill(arg) {
-  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) state.filter = arg;
+  if (arg && isFilter(arg)) state.filter = arg;
   const due = deck();
   if (!current || !due.some((c) => c.id === current)) {
     current = due[0]?.id || null;
@@ -846,7 +878,7 @@ function viewSpot(arg) {
   // Only when the filter actually changes. This runs on every render, and
   // blanking the question here threw away the answer you had just given —
   // so answering did nothing at all if you arrived by a #/spot/<set> link.
-  if (arg === 'all' || (arg && (setById(arg) || arg.startsWith('tag:')))) {
+  if (arg && isFilter(arg)) {
     if (state.filter !== arg) {
       state.filter = arg;
       quiz = null;

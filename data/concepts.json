@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–3 — Nominative, Vocative, Accusative, Genitive",
+  "chapter": "ch. 2–4 — Nominative, Vocative, Accusative, Genitive, Dative",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-08-27",
   "notes": [
@@ -11,7 +11,7 @@
     "confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.",
     "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples.",
     "bookDef: the summary chart's own wording, kept verbatim, shown under 'What the book says'. oneLine is the plain-English caption; the two are deliberately different.",
-    "tags this-week / next-week track the syllabus: ch. 2 (nominative, vocative, accusative) is this week, ch. 3 (genitive) next. Reachable as #/tag/this-week."
+    "classDate on a set is when that chapter is taught. The 'This week' filter is computed from it, so it never goes stale."
   ],
   "sets": [
     {
@@ -20,6 +20,7 @@
       "subtitle": "The naming case. Who or what the sentence is about.",
       "eli5": "This one names people. Nobody here gets hit or eaten. They just get named.",
       "color": "#1f9d78",
+      "classDate": "2026-08-25",
       "bigIdea": "The nominative names. Whoever wears it is being named or called — never done to.",
       "masterMnemonic": "Go to the SPA, then say AAAH.",
       "masterMnemonicWhy": "SPA is the three main uses: Subject, Predicate nominative, Apposition. AAAH is the other four: Address, Appellation, Absolute, Hanging. Seven uses, one silly picture — you sit down in the spa and go aaah.",
@@ -44,6 +45,7 @@
       "subtitle": "The calling case. One job: naming who you are talking to.",
       "eli5": "This one is for shouting a name. “Lazarus!” That is all it does.",
       "color": "#2f9fc8",
+      "classDate": "2026-08-25",
       "bigIdea": "The vocative calls. It is the only case with a single use, so it is the cheapest one you will ever learn.",
       "masterMnemonic": "One case, one job: say the name.",
       "masterMnemonicWhy": "Everything else in the chapter has three, five, seven uses. This one has one. Learn it in ten seconds and spend the time you saved on the accusative.",
@@ -62,6 +64,7 @@
       "subtitle": "The fencing case. How far the verb's action goes.",
       "eli5": "This one builds a fence. It says where the doing stops.",
       "color": "#c8642a",
+      "classDate": "2026-08-25",
       "bigIdea": "The accusative fences the verb in. It says how far the action reaches — onto whom, how far, in what way.",
       "masterMnemonic": "The object goes on DATES, then gets the MMR shot.",
       "masterMnemonicWhy": "Noun-like: the direct object and its four twists spell DATES — Direct object, Alias, Two, Echo, Sub. Adverb-like: the MMR shot — Measure, Manner, Respect. How far? How? How so?",
@@ -92,6 +95,7 @@
       "subtitle": "The “of” case. The question is always: which kind of “of”?",
       "eli5": "This one is the “of” word. “The hat OF Dad.” You just say which kind of “of”.",
       "color": "#7a5cc8",
+      "classDate": "2026-09-01",
       "bigIdea": "The genitive describes. The nominative names, the accusative fences, the genitive tells you which kind.",
       "masterMnemonic": "Every genitive is an “of”. Ask which kind.",
       "masterMnemonicWhy": "Four drawers. Seven describe a noun and spell SWAMP RD — Source, Whole, Adjective, Made of, Possession, Relationship, Description. Two hide a verb: X does it, or X gets it. Five modify a verb and spell PACTS: Price, Agency, Comparison, Time or place, Separation. Then two oddities: another name, and a direct object that came out genitive.",
@@ -119,6 +123,43 @@
           "name": "Other — the odd drawer",
           "mnemonic": "A nickname, and a fussy verb.",
           "expand": "Apposition (another name for it) · Direct object (the verb wanted a genitive)"
+        }
+      ]
+    },
+    {
+      "id": "dative",
+      "name": "Dative",
+      "subtitle": "The to/for, in/at, with/by case.",
+      "eli5": "Three coats on one hook. To or for someone. In or at a place. With or by a thing.",
+      "color": "#c8547d",
+      "classDate": "2026-09-08",
+      "bigIdea": "The dative is three old cases wearing one coat: to/for, in/at, with/by. Work out which coat, and the use follows.",
+      "masterMnemonic": "To, In, With.",
+      "masterMnemonicWhy": "Three families and a leftover drawer. To or for = PORT. In or at = HIT. With or by = MAMA. Then the odd BEADs.",
+      "groups": [
+        {
+          "id": "dative-pure",
+          "name": "Pure — to or for: PORT",
+          "mnemonic": "P-O-R-T — and the T, plain “to whom”, is the one you meet most.",
+          "expand": "Personal interest · Owns (possession) · Re: (reference) · To whom (indirect object)"
+        },
+        {
+          "id": "dative-locative",
+          "name": "Locative — in or at: HIT",
+          "mnemonic": "H-I-T — Here, In, Then.",
+          "expand": "Here (place) · In what realm (sphere) · Then (time)"
+        },
+        {
+          "id": "dative-instrumental",
+          "name": "Instrumental — with or by: MAMA",
+          "mnemonic": "M-A-M-A — Means, Agency, Manner, Association.",
+          "expand": "Means (with what tool) · Agency (by whom) · Manner (in what style) · Association (along with)"
+        },
+        {
+          "id": "dative-other",
+          "name": "Other — the odd BEADs",
+          "mnemonic": "B-E-A-D — Because, Echo, Alias, Devoted.",
+          "expand": "Because (cause) · Echo (cognate) · Alias (apposition) · Devoted verbs (direct object)"
         }
       ]
     }
@@ -164,7 +205,7 @@
       "tags": [
         "nominative",
         "major",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -223,7 +264,7 @@
         "nominative",
         "major",
         "john-1-1",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -265,7 +306,7 @@
         "nominative",
         "major",
         "john-1-1",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -316,7 +357,7 @@
       "tags": [
         "nominative",
         "major",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -360,7 +401,7 @@
       "tags": [
         "nominative",
         "other",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -399,7 +440,7 @@
       "tags": [
         "nominative",
         "other",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -449,7 +490,7 @@
       "tags": [
         "nominative",
         "other",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -495,7 +536,7 @@
       "tags": [
         "nominative",
         "other",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -533,7 +574,7 @@
       "watchOut": "When a word does this job but is shaped like a nominative, the chart calls it nominative of address instead. Same job, different clothes.",
       "tags": [
         "vocative",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -566,7 +607,7 @@
       ],
       "tags": [
         "accusative",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -609,7 +650,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -661,7 +702,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -706,7 +747,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -756,7 +797,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -803,7 +844,7 @@
       "tags": [
         "accusative",
         "substantival",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -840,7 +881,7 @@
       "tags": [
         "accusative",
         "adverbial",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -877,7 +918,7 @@
       "tags": [
         "accusative",
         "adverbial",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -921,7 +962,7 @@
       "tags": [
         "accusative",
         "adverbial",
-        "this-week"
+        "ch-2"
       ]
     },
     {
@@ -960,7 +1001,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -999,7 +1040,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1038,7 +1079,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1082,7 +1123,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1121,7 +1162,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1160,7 +1201,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1199,7 +1240,7 @@
       "tags": [
         "genitive",
         "adjectival",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1237,7 +1278,7 @@
       "tags": [
         "genitive",
         "verbal",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1276,7 +1317,7 @@
       "tags": [
         "genitive",
         "verbal",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1314,7 +1355,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1358,7 +1399,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1396,7 +1437,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1440,7 +1481,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1479,7 +1520,7 @@
       "tags": [
         "genitive",
         "adverbial",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1524,7 +1565,7 @@
       "tags": [
         "genitive",
         "other",
-        "next-week"
+        "ch-3"
       ]
     },
     {
@@ -1587,7 +1628,595 @@
       "tags": [
         "genitive",
         "other",
-        "next-week"
+        "ch-3"
+      ]
+    },
+    {
+      "id": "dative-personal-interest",
+      "set": "dative",
+      "group": "dative-pure",
+      "name": "Personal Interest",
+      "eli5": "Someone gains or someone loses. “A bride dressed up FOR her husband.” “She had it IN for him.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "adorned",
+          "for her husband"
+        ],
+        "note": "Good for X, or bad for X."
+      },
+      "short": "Personal interest",
+      "tile": "P",
+      "oneLine": "Who benefits, or who suffers.",
+      "mnemonic": "PORT — P: for him, or against him.",
+      "mnemonicWhy": "Two directions, one use. Rev 21:2 is for somebody; Mark 6:19 is against somebody.",
+      "spotIt": "Ask: does this help someone, or hurt someone?",
+      "bookDef": "Denotes the person (or rarely, the thing) to whose benefit or detriment a verbal action occurs.",
+      "examples": [
+        {
+          "ref": "Rev 21:2",
+          "greek": "ὡς νύμφην κεκοσμημένην *τῷ ἀνδρὶ αὐτῆς*",
+          "english": "like a bride adorned *for her husband*",
+          "note": "Advantage — she is dressed for his benefit."
+        },
+        {
+          "ref": "Mark 6:19",
+          "greek": "ἡ δὲ Ἡρῳδιὰς ἐνεῖχεν *αὐτῷ*",
+          "english": "So Herodias held a grudge *against him*",
+          "note": "Disadvantage — the grudge is to his cost."
+        }
+      ],
+      "tags": [
+        "dative",
+        "pure",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-possession",
+      "set": "dative",
+      "group": "dative-pure",
+      "name": "Possession",
+      "eli5": "It is theirs, said backwards. “To you is the promise” means “you have the promise.”",
+      "formula": {
+        "pattern": [
+          "X (dat.)",
+          "is",
+          "the thing"
+        ],
+        "filled": [
+          "to you",
+          "is",
+          "the promise"
+        ],
+        "note": "= X has it."
+      },
+      "short": "Owns — possession",
+      "tile": "O",
+      "oneLine": "The dative owns the subject of a to-be verb.",
+      "mnemonic": "PORT — O: owns it.",
+      "mnemonicWhy": "Greek says “to me is a book” where we say “I have a book”. Flip it round and the owner appears.",
+      "spotIt": "A dative sitting next to εἰμί or γίνομαι? Try flipping it into “X has”.",
+      "bookDef": "Unique construction in which the dative possesses the subject of an equative verb (such as εἰμι or γίνομαι).",
+      "examples": [
+        {
+          "ref": "Acts 2:39",
+          "greek": "*ὑμῖν* γάρ ἐστιν ἡ ἐπαγγελία",
+          "english": "For the promise is *for you*",
+          "note": "“To you is the promise” = you have the promise."
+        }
+      ],
+      "watchOut": "It needs the to-be verb. Without one, you are looking at something else.",
+      "tags": [
+        "dative",
+        "pure",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-reference",
+      "set": "dative",
+      "group": "dative-pure",
+      "name": "Reference or Respect",
+      "eli5": "True in one way only. “He died to sin” means dead as far as sin goes.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "died",
+          "to sin"
+        ],
+        "note": "= with reference to X."
+      },
+      "short": "Re: — reference",
+      "tile": "R",
+      "oneLine": "The one respect in which the statement holds.",
+      "mnemonic": "PORT — R: re:, like the subject line of an email.",
+      "mnemonicWhy": "“Re: sin — he died.” The dative names what the sentence is about, and the claim is only true about that.",
+      "spotIt": "Put “with reference to” in front. Does the sentence stop being odd?",
+      "bookDef": "Limits the extent to which something is presented as true, qualifying a statement that would otherwise not be true.",
+      "examples": [
+        {
+          "ref": "Rom 6:10",
+          "greek": "*τῇ ἁμαρτίᾳ* ἀπέθανεν ἐφάπαξ",
+          "english": "he died *to sin* once for all",
+          "note": "Not dead altogether — dead with reference to sin."
+        }
+      ],
+      "watchOut": "The accusative has a respect use too (Acts 2:37, “cut with respect to the heart”). Same job, different case.",
+      "tags": [
+        "dative",
+        "pure",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-indirect-object",
+      "set": "dative",
+      "group": "dative-pure",
+      "name": "Indirect Object",
+      "eli5": "Who you gave it to. “Give glory to God.” God is the one getting it.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "the thing",
+          "to X (dat.)"
+        ],
+        "filled": [
+          "give",
+          "glory",
+          "to God"
+        ],
+        "note": "The one who receives it."
+      },
+      "short": "To whom — indirect object",
+      "tile": "T",
+      "oneLine": "The one to whom, or for whom, the act is done.",
+      "mnemonic": "PORT — T: to whom. The plain one.",
+      "mnemonicWhy": "The commonest dative there is, and the one English already taught you: you give it TO someone.",
+      "spotIt": "A giving or telling verb, a direct object, and a dative — that dative is the receiver.",
+      "bookDef": "Indicates the one for whom or in whose interest an act is performed.",
+      "examples": [
+        {
+          "ref": "John 9:24",
+          "greek": "δὸς δόξαν *τῷ θεῷ*",
+          "english": "Give glory *to God*",
+          "note": "Glory is what is given; God is who it goes to."
+        }
+      ],
+      "tags": [
+        "dative",
+        "pure",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-place",
+      "set": "dative",
+      "group": "dative-locative",
+      "name": "Place",
+      "eli5": "Where it literally is. “Sitting in a circle.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "sitting",
+          "in a circle"
+        ],
+        "note": "A real spot you could point at."
+      },
+      "short": "Here — place",
+      "tile": "H",
+      "oneLine": "The literal physical location.",
+      "mnemonic": "HIT — H: here, a real spot.",
+      "mnemonicWhy": "If you could stand there, it is place. If you could not, it is sphere.",
+      "spotIt": "Ask: could I actually point at this location?",
+      "bookDef": "Pinpoints the literal physical location of a noun in the dative case.",
+      "examples": [
+        {
+          "ref": "Mark 3:34",
+          "greek": "τοὺς περὶ αὐτὸν *κύκλῳ* καθημένους",
+          "english": "those sitting *in a circle* around him",
+          "note": "A real ring of people on real ground."
+        }
+      ],
+      "tags": [
+        "dative",
+        "locative",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-sphere",
+      "set": "dative",
+      "group": "dative-locative",
+      "name": "Sphere",
+      "eli5": "Where it is, but not really. “Sighing deeply in his spirit” — you cannot point at that.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "sighing",
+          "in his spirit"
+        ],
+        "note": "A place you cannot point at."
+      },
+      "short": "In what realm — sphere",
+      "tile": "I",
+      "oneLine": "The figurative realm the action happens in.",
+      "mnemonic": "HIT — I: in what realm.",
+      "mnemonicWhy": "Place is a spot on a map. Sphere is a spot you can only imagine — in the spirit, in the flesh, in Christ.",
+      "spotIt": "It reads like a location, but nobody could stand there.",
+      "bookDef": "Identifies the figurative or metaphorical location (i.e., sphere or realm) of a noun in the dative case.",
+      "examples": [
+        {
+          "ref": "Mark 8:12",
+          "greek": "ἀναστενάξας *τῷ πνεύματι* αὐτοῦ",
+          "english": "sighing deeply *in* his *spirit*",
+          "note": "A realm, not a room."
+        }
+      ],
+      "watchOut": "Place and sphere are one word doing literal and figurative duty. The test is whether you could point at it.",
+      "tags": [
+        "dative",
+        "locative",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-time",
+      "set": "dative",
+      "group": "dative-locative",
+      "name": "Time",
+      "eli5": "When it happened. “On the third day.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "a wedding took place",
+          "on the third day"
+        ],
+        "note": "A point in time, not a stretch."
+      },
+      "short": "Then — time",
+      "tile": "T",
+      "oneLine": "The point in time at which it happened.",
+      "mnemonic": "HIT — T: then.",
+      "mnemonicWhy": "Location again, but on a calendar instead of a map. A moment, not a duration.",
+      "spotIt": "Ask: when? And check it is a moment rather than a length of time.",
+      "bookDef": "Indicates the point in time (location in time) at which the action of a verb is accomplished.",
+      "examples": [
+        {
+          "ref": "John 2:1",
+          "greek": "καὶ *τῇ ἡμέρᾳ τῇ τρίτῃ* γάμος ἐγένετο",
+          "english": "*On the third day*, a wedding took place",
+          "note": "A point on the calendar."
+        }
+      ],
+      "watchOut": "The accusative measures how long something went on. The dative pins down when it happened.",
+      "tags": [
+        "dative",
+        "locative",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-means",
+      "set": "dative",
+      "group": "dative-instrumental",
+      "name": "Means",
+      "eli5": "The thing you used. “Cutting himself with stones.” The stones did not choose to.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "cutting himself",
+          "with stones"
+        ],
+        "note": "A thing, not a person."
+      },
+      "short": "Means",
+      "tile": "M",
+      "oneLine": "The impersonal thing the action was done with.",
+      "mnemonic": "MAMA — M: means, the tool.",
+      "mnemonicWhy": "A tool has no will of its own. If the dative could have refused, it is agency, not means.",
+      "spotIt": "Ask: with what? And check the answer is a thing.",
+      "bookDef": "Denotes the impersonal means by which the action of a given verb is accomplished.",
+      "examples": [
+        {
+          "ref": "Mark 5:5",
+          "greek": "κατακόπτων ἑαυτὸν *λίθοις*",
+          "english": "cutting himself *with stones*",
+          "note": "Stones are a tool. They did not decide anything."
+        }
+      ],
+      "tags": [
+        "dative",
+        "instrumental",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-agency",
+      "set": "dative",
+      "group": "dative-instrumental",
+      "name": "Agency",
+      "eli5": "The person who did it. “Led by the Spirit.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "led",
+          "by the Spirit"
+        ],
+        "note": "A person, not a thing."
+      },
+      "short": "Agency",
+      "tile": "A",
+      "oneLine": "The personal agent by whom the action was done.",
+      "mnemonic": "MAMA — A: agency, the doer.",
+      "mnemonicWhy": "Same “by”, but somebody chose it. Means is the hammer; agency is the carpenter.",
+      "spotIt": "Ask: by whom? And check the answer is a person.",
+      "bookDef": "Denotes the personal agency by which the action of a given verb is accomplished.",
+      "examples": [
+        {
+          "ref": "Gal 5:18",
+          "greek": "εἰ δὲ *πνεύματι* ἄγεσθε",
+          "english": "But if you are led *by the Spirit*",
+          "note": "The Spirit chooses. That makes it agency."
+        }
+      ],
+      "watchOut": "Means and agency are the same shape on the page. The only test is whether the dative has a will.",
+      "tags": [
+        "dative",
+        "instrumental",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-manner",
+      "set": "dative",
+      "group": "dative-instrumental",
+      "name": "Manner",
+      "eli5": "How you did it. “He spoke openly.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "spoke",
+          "openly"
+        ],
+        "note": "Turn it into an -ly word."
+      },
+      "short": "Manner",
+      "tile": "M",
+      "oneLine": "The style in which the action was done.",
+      "mnemonic": "MAMA — M: manner, the how.",
+      "mnemonicWhy": "Not what you used, but the style you did it in. If an -ly word is the natural English, this is it.",
+      "spotIt": "Ask: how? Check that an -ly adverb fits.",
+      "bookDef": "Denotes the manner in which the action of a given verb is accomplished.",
+      "examples": [
+        {
+          "ref": "Mark 8:32",
+          "greek": "*παρρησίᾳ* τὸν λόγον ἐλάλει",
+          "english": "He spoke *openly* about this",
+          "note": "Openly is a style, not a tool."
+        }
+      ],
+      "watchOut": "Means answers “with what tool”. Manner answers “in what style”.",
+      "tags": [
+        "dative",
+        "instrumental",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-association",
+      "set": "dative",
+      "group": "dative-instrumental",
+      "name": "Association",
+      "eli5": "Who came along. “Buried with him.” You went together.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "buried",
+          "with him"
+        ],
+        "note": "Alongside — not used as a tool."
+      },
+      "short": "Association",
+      "tile": "A",
+      "oneLine": "The one the action is done alongside.",
+      "mnemonic": "MAMA — A: association, the company.",
+      "mnemonicWhy": "Also “with”, but company rather than tool. The verb often starts with συν-, which gives it away.",
+      "spotIt": "Ask: with whom, in the sense of together with? Look for a συν- verb.",
+      "bookDef": "Denotes the person or thing with which a person is associated or by which a person is accompanied.",
+      "examples": [
+        {
+          "ref": "Col 2:12 ESV",
+          "greek": "*συν*ταφέντες *αὐτῷ* ἐν τῷ βαπτισμῷ",
+          "english": "Having been buried *with him* in baptism",
+          "note": "συν- on the verb, and you were buried alongside him, not using him."
+        }
+      ],
+      "watchOut": "Three uses come out as “with”: means (a tool), manner (a style), association (company).",
+      "tags": [
+        "dative",
+        "instrumental",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-cause",
+      "set": "dative",
+      "group": "dative-other",
+      "name": "Cause",
+      "eli5": "Why it happened. “I am dying of hunger.” Hunger is the reason.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "dying",
+          "of hunger"
+        ],
+        "note": "= because of X."
+      },
+      "short": "Because — cause",
+      "tile": "B",
+      "oneLine": "The reason or basis for the action.",
+      "mnemonic": "BEAD — B: because.",
+      "mnemonicWhy": "Slot “because of” in front and the sense holds. The reason can be outside you or inside you.",
+      "spotIt": "Ask: why? Then try “because of”.",
+      "bookDef": "Indicates the basis or reason of the action of a given verb, whether external (occasion) or internal (motivation).",
+      "examples": [
+        {
+          "ref": "Luke 15:17",
+          "greek": "ἐγὼ δὲ *λιμῷ* ὧδε ἀπόλλυμαι",
+          "english": "here I am dying [because] *of hunger*!",
+          "note": "Hunger is the reason, not the tool."
+        }
+      ],
+      "tags": [
+        "dative",
+        "other",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-cognate",
+      "set": "dative",
+      "group": "dative-other",
+      "name": "Cognate Dative",
+      "eli5": "The word says the doing-word again. “They were astounded with a great astoundment.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "its own noun (dat.)"
+        ],
+        "filled": [
+          "they were astounded",
+          "with great astoundment"
+        ],
+        "note": "Same stem, said twice."
+      },
+      "short": "Echo — cognate",
+      "tile": "E",
+      "oneLine": "A dative built from the same stem as its verb.",
+      "mnemonic": "BEAD — E: echo, second case running.",
+      "mnemonicWhy": "You met the echo in the accusative. Greek doubles the word for force where English just says “utterly”.",
+      "spotIt": "Say the verb and the dative out loud. Same root, or same idea?",
+      "bookDef": "Use of a dative noun that is a cognate (of the same stem) to the verb it modifies either formally or conceptually.",
+      "examples": [
+        {
+          "ref": "Mark 5:42",
+          "greek": "ἐξέστησαν *ἐκστάσει μεγάλῃ*",
+          "english": "they were *utterly* astounded",
+          "note": "ἐξέστησαν and ἐκστάσει are the same stem. English flattens it to “utterly”."
+        }
+      ],
+      "tags": [
+        "dative",
+        "other",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-apposition",
+      "set": "dative",
+      "group": "dative-other",
+      "name": "Apposition",
+      "eli5": "Two stickers, fourth time. “Beelzebul, the ruler of the demons.” One person, two names.",
+      "formula": {
+        "pattern": [
+          "X (dat.),",
+          "Y (dat.)"
+        ],
+        "filled": [
+          "Beelzebul,",
+          "the ruler of the demons"
+        ],
+        "note": "Same person, second name."
+      },
+      "short": "Alias — apposition",
+      "tile": "A",
+      "oneLine": "A second dative renaming the first.",
+      "mnemonic": "BEAD — A: alias, fourth case running.",
+      "mnemonicWhy": "Nominative, accusative, genitive, dative — the name tag turns up in all four. Learn it once, keep it forever.",
+      "spotIt": "Two datives side by side, no verb between them, both pointing at the same thing.",
+      "bookDef": "Two related substantives refer to the same person or thing.",
+      "examples": [
+        {
+          "ref": "Matt 12:24",
+          "greek": "ἐν τῷ Βεελζεβοὺλ *ἄρχοντι* τῶν δαιμονίων",
+          "english": "by Beelzebul, *the ruler* of the demons",
+          "note": "ἄρχοντι renames Βεελζεβούλ."
+        }
+      ],
+      "tags": [
+        "dative",
+        "other",
+        "ch-4"
+      ]
+    },
+    {
+      "id": "dative-direct-object",
+      "set": "dative",
+      "group": "dative-other",
+      "name": "Direct Object",
+      "eli5": "Some doing-words want it dressed this way: trusting, obeying, serving, worshipping, thanking, following.",
+      "formula": {
+        "pattern": [
+          "devoted verb",
+          "X (dat.)"
+        ],
+        "filled": [
+          "we thank",
+          "God"
+        ],
+        "note": "The dative is the object."
+      },
+      "short": "Devoted — direct object",
+      "tile": "D",
+      "oneLine": "The object of a verb that takes the dative instead of the accusative.",
+      "mnemonic": "BEAD — D: devoted verbs.",
+      "mnemonicWhy": "Look at the list — trusting, obeying, serving, worshipping, thanking, following. Every one is a verb of devotion. That is the whole category in one word.",
+      "spotIt": "A dative where you expected an accusative? Check whether the verb is one of devotion.",
+      "bookDef": "The dative occurs after certain verbs of trusting, obeying, serving, worshiping, thanksgiving, or following and functions as the direct object.",
+      "examples": [
+        {
+          "ref": "Col 1:3",
+          "greek": "εὐχαριστοῦμεν *τῷ θεῷ* … πάντοτε",
+          "english": "We always thank *God*",
+          "note": "εὐχαριστέω takes its object in the dative."
+        }
+      ],
+      "watchOut": "The genitive has a fussy-verb list too — feel it, want it, share it, rule it, leave it. The dative's list is devotion.",
+      "tags": [
+        "dative",
+        "other",
+        "ch-4"
       ]
     }
   ],
@@ -1745,6 +2374,50 @@
       "test": "What shape is the word in?",
       "answer": "Vocative shape ⇒ vocative of direct address. Nominative shape doing the same job ⇒ nominative of address.",
       "example": "Λάζαρε (vocative) vs οἱ ἄνδρες, “Husbands…” (nominative doing a vocative’s work)."
+    },
+    {
+      "id": "means-vs-agency",
+      "pair": [
+        "dative-means",
+        "dative-agency"
+      ],
+      "question": "Means or agency?",
+      "test": "Could the dative have refused?",
+      "answer": "A thing with no will ⇒ means. A person who chose ⇒ agency.",
+      "example": "“cutting himself with stones” (means) vs “led by the Spirit” (agency)."
+    },
+    {
+      "id": "three-withs",
+      "pair": [
+        "dative-means",
+        "dative-association"
+      ],
+      "question": "Three uses all come out “with”. Which one?",
+      "test": "Tool, style, or company?",
+      "answer": "A tool ⇒ means. A style ⇒ manner. Company ⇒ association, often with a συν- verb.",
+      "example": "“with stones” · “openly” · “buried with him”."
+    },
+    {
+      "id": "place-vs-sphere",
+      "pair": [
+        "dative-place",
+        "dative-sphere"
+      ],
+      "question": "Place or sphere?",
+      "test": "Could you point at it?",
+      "answer": "A real spot ⇒ place. A realm you can only imagine ⇒ sphere.",
+      "example": "“sitting in a circle” (place) vs “sighing in his spirit” (sphere)."
+    },
+    {
+      "id": "indirect-vs-interest",
+      "pair": [
+        "dative-indirect-object",
+        "dative-personal-interest"
+      ],
+      "question": "Indirect object or personal interest?",
+      "test": "Is the dative receiving a thing, or gaining and losing?",
+      "answer": "Receives what was handed over ⇒ indirect object. Benefits or suffers ⇒ personal interest.",
+      "example": "“give glory to God” (receives) vs “adorned for her husband” (benefits)."
     }
   ],
   "extraQuiz": [
@@ -1842,6 +2515,21 @@
       "prompt": "Λάζαρε, δεῦρο ἔξω (John 11:43) — the underlined Λάζαρε.",
       "answer": "vocative-direct-address",
       "why": "He is being called by name. The vocative has exactly one use, and this is it."
+    },
+    {
+      "prompt": "δὸς δόξαν τῷ θεῷ (John 9:24) — the underlined τῷ θεῷ.",
+      "answer": "dative-indirect-object",
+      "why": "Glory is handed over, and God is who it goes to. PORT — T."
+    },
+    {
+      "prompt": "κατακόπτων ἑαυτὸν λίθοις (Mark 5:5) — the underlined λίθοις.",
+      "answer": "dative-means",
+      "why": "Stones are a tool with no will of their own. MAMA — M."
+    },
+    {
+      "prompt": "εἰ δὲ πνεύματι ἄγεσθε (Gal 5:18) — the underlined πνεύματι.",
+      "answer": "dative-agency",
+      "why": "The Spirit chooses, so it is a personal agent. MAMA — A."
     }
   ]
 }

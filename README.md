@@ -1,8 +1,8 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–3
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–4
 
 A small offline-first PWA for getting the **nominative**, **vocative**,
-**accusative** and **genitive** uses into your head and keeping them there.
-Thirty-four cards, each
+**accusative**, **genitive** and **dative** uses into your head and keeping them
+there. Forty-nine cards, each
 opening with a plain-words paragraph anyone could follow, then the bare pattern
 of the construction, then a mnemonic hook, a test you can run on a text, and the
 Greek examples.
@@ -60,8 +60,23 @@ over.
 | Apposition | another name for the head noun |
 | Direct object | feel it, want it, share it, rule it, leave it |
 
-Every group in the app spells something: SPA, AAAH, DATES, MMR, SWAMP RD, PACTS.
+Every group in the app spells something: SPA, AAAH, DATES, MMR, SWAMP RD, PACTS, PORT, HIT, MAMA, BEAD.
 The definitions on these cards are the chapter summary chart's own wording.
+
+**Dative — to, in, with**
+
+Three old cases wearing one coat. Work out which coat and the use follows.
+
+| | |
+|---|---|
+| **to or for** | **PORT** — Personal interest · Owns · Re: · To whom |
+| **in or at** | **HIT** — Here (place) · In what realm (sphere) · Then (time) |
+| **with or by** | **MAMA** — Means · Agency · Manner · Association |
+| the leftovers | **BEAD** — Because · Echo · Alias · Devoted verbs |
+
+Means is the hammer, agency is the carpenter: the only test is whether the
+dative could have refused. And the dative's fussy-verb list — trusting, obeying,
+serving, worshipping, thanking, following — is every one a verb of **devotion**.
 
 **Accusative — the object goes on DATES, then gets the MMR shot**
 
@@ -257,10 +272,10 @@ Two places where the app is more precise than a lecture note usually is:
 
 ## This week and next
 
-The syllabus splits the chapters: ch. 2 — nominative, vocative, accusative — is
-this week, and ch. 3's genitive is next. Every card is tagged accordingly, and a
-**This week** chip sits beside the case chips in Learn, Drill and Spot it, so you
-can put the genitive away until it is due. It is also `#/tag/this-week`.
+Each set carries the `classDate` its chapter is taught on, and a **This week**
+chip beside the case chips filters to whichever case is next up — reading the
+timetable rather than a tag that goes stale the moment the calendar moves. Also
+`#/learn/week`, `#/drill/week`, `#/spot/week`.
 
 ## Where the wording comes from
 
