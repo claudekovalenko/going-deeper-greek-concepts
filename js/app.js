@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v14 · 2026-09-01';
+const BUILD = 'v15 · 2026-09-01';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -443,6 +443,18 @@ function cheatSheet() {
         <h2>The whole thing</h2>
         <span class="muted" style="font-size:12px">${pegs} pegs · ${DATA.cards.length} cards</span>
       </div>
+      <div class="sheet-does">
+        ${DATA.sets
+          .map(
+            (set) => `
+          <button class="does-row" data-action="goto" data-to="#/learn/${esc(set.id)}">
+            <span class="does-name">${dot(set.color)}${esc(set.name)}</span>
+            <span class="does-what">${esc(set.does)}</span>
+          </button>`
+          )
+          .join('')}
+      </div>
+
       ${DATA.sets
         .map(
           (set) => `
@@ -504,12 +516,10 @@ function viewMap() {
   const learned = DATA.cards.filter((c) => isLearned(c.id)).length;
 
   return `
-    ${cheatSheet()}
-
     <section class="hero">
-      <div class="hero-line">The whole chapter in two sentences</div>
-      <div class="hero-mnemonic">Go to the SPA, say AAAH.</div>
-      <div class="hero-sub">One object with four twists, then the MMR shot.</div>
+      <div class="hero-line">The whole app in seven words</div>
+      <div class="hero-mnemonic">${DATA.sets.map((x) => esc(x.verb)).join(' · ')}</div>
+      <div class="hero-sub">${DATA.sets.length} sets — the five cases, the article and the adjective</div>
       ${bar(learned, DATA.cards.length)}
       <div class="hero-sub">${learned} of ${DATA.cards.length} learned · ${esc(targetLabel())}</div>
       <div class="btnrow split">
@@ -517,6 +527,8 @@ function viewMap() {
         <button class="btn" data-action="goto" data-to="#/spot">Spot it</button>
       </div>
     </section>
+
+    ${cheatSheet()}
 
     ${DATA.sets
       .map(

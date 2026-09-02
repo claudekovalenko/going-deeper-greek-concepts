@@ -11,10 +11,21 @@ is due, this one drills the thing itself. Each links to the other.
 
 [hw]: https://github.com/claudekovalenko/seminary-homework-2026
 
-## The whole chapter in two sentences
+## The whole app in seven words
 
-> **Go to the SPA, then say AAAH.**
-> **One object with four twists, then the MMR shot.**
+> **Names · Calls · Fences · Describes · Gives · Points · Colours**
+
+| | |
+|---|---|
+| Nominative | names who or what |
+| Vocative | calls someone by name |
+| Accusative | fences the verb in |
+| Genitive | says which kind of "of" |
+| Dative | gives it, places it, uses it |
+| Article | points at one — or vanishes |
+| Adjective | colours the noun, in degrees |
+
+That is the top tier. Inside each set, the acrostics take over.
 
 **Nominative — SPA + AAAH**
 

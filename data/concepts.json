@@ -13,12 +13,15 @@
     "bookDef: the summary chart's own wording, kept verbatim, shown under 'What the book says'. oneLine is the plain-English caption; the two are deliberately different.",
     "classDate on a set is when that chapter is taught. The 'This week' filter is computed from it, so it never goes stale.",
     "key on a group is the bare peg — the acrostic or catchphrase with no sentence round it. The cheat sheet at the top of the Map is built from these.",
-    "gist: a few words on the tile itself, so the map is readable without opening anything."
+    "gist: a few words on the tile itself, so the map is readable without opening anything.",
+    "verb / does on a set: the one-word and one-line answer to “what does this case do?”. The hero is built from verb, the cheat sheet's first strip from does."
   ],
   "sets": [
     {
       "id": "nominative",
       "name": "Nominative",
+      "verb": "Names",
+      "does": "names who or what",
       "subtitle": "The naming case. Who or what the sentence is about.",
       "eli5": "This one names people. Nobody here gets hit or eaten. They just get named.",
       "color": "#1f9d78",
@@ -46,6 +49,8 @@
     {
       "id": "vocative",
       "name": "Vocative",
+      "verb": "Calls",
+      "does": "calls someone by name",
       "subtitle": "The calling case. One job: naming who you are talking to.",
       "eli5": "This one is for shouting a name. “Lazarus!” That is all it does.",
       "color": "#2f9fc8",
@@ -66,6 +71,8 @@
     {
       "id": "accusative",
       "name": "Accusative",
+      "verb": "Fences",
+      "does": "fences the verb in",
       "subtitle": "The fencing case. How far the verb's action goes.",
       "eli5": "This one builds a fence. It says where the doing stops.",
       "color": "#c8642a",
@@ -100,6 +107,8 @@
     {
       "id": "genitive",
       "name": "Genitive",
+      "verb": "Describes",
+      "does": "says which kind of “of”",
       "subtitle": "The “of” case. The question is always: which kind of “of”?",
       "eli5": "This one is the “of” word. “The hat OF Dad.” You just say which kind of “of”.",
       "color": "#7a5cc8",
@@ -141,6 +150,8 @@
     {
       "id": "dative",
       "name": "Dative",
+      "verb": "Gives",
+      "does": "gives it, places it, uses it",
       "subtitle": "The to/for, in/at, with/by case.",
       "eli5": "Three coats on one hook. To or for someone. In or at a place. With or by a thing.",
       "color": "#c8547d",
@@ -182,6 +193,8 @@
     {
       "id": "article",
       "name": "Article",
+      "verb": "Points",
+      "does": "points at one — or vanishes",
       "subtitle": "Greek's “the”. It points — and its absence is not “a”.",
       "eli5": "Greek's “the” is a finger. It points at one thing. Sometimes it stands in for a word, and sometimes it disappears — and gone does not mean “a”.",
       "color": "#c9a227",
@@ -209,6 +222,8 @@
     {
       "id": "adjective",
       "name": "Adjective",
+      "verb": "Colours",
+      "does": "colours the noun, in degrees",
       "subtitle": "Four jobs, five degrees.",
       "eli5": "A describing word. It can stick to a noun, become the noun, jump to the doing-word, or make a claim. And it comes in degrees: plain, more, most.",
       "color": "#6b7fd7",
