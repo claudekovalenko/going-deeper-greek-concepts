@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–4 — Nominative, Vocative, Accusative, Genitive, Dative",
+  "chapter": "ch. 2–5 — the five cases, the article and the adjective",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-08-27",
   "notes": [
@@ -11,7 +11,9 @@
     "confusions[] are the pairs that actually get missed on a quiz. They are drilled separately from the cards.",
     "extraQuiz[] are hand-written 'Spot it' items; the rest are generated from each card's examples.",
     "bookDef: the summary chart's own wording, kept verbatim, shown under 'What the book says'. oneLine is the plain-English caption; the two are deliberately different.",
-    "classDate on a set is when that chapter is taught. The 'This week' filter is computed from it, so it never goes stale."
+    "classDate on a set is when that chapter is taught. The 'This week' filter is computed from it, so it never goes stale.",
+    "key on a group is the bare peg — the acrostic or catchphrase with no sentence round it. The cheat sheet at the top of the Map is built from these.",
+    "gist: a few words on the tile itself, so the map is readable without opening anything."
   ],
   "sets": [
     {
@@ -28,12 +30,14 @@
         {
           "id": "nominative-major",
           "name": "Major uses — the SPA",
+          "key": "SPA",
           "mnemonic": "S-P-A — sit down in the spa.",
           "expand": "Subject · Predicate nominative · Apposition"
         },
         {
           "id": "nominative-other",
           "name": "Other uses — the AAAH",
+          "key": "AAAH",
           "mnemonic": "A-A-A-H — then say aaah.",
           "expand": "Address · Appellation · Absolute · Hanging"
         }
@@ -53,6 +57,7 @@
         {
           "id": "vocative-uses",
           "name": "Uses of the vocative",
+          "key": "Say the name",
           "mnemonic": "Say the name.",
           "expand": "Direct address — and that is the list"
         }
@@ -72,18 +77,21 @@
         {
           "id": "accusative-overview",
           "name": "The idea",
+          "key": "The fence",
           "mnemonic": "The nominative crowns. The accusative fences.",
           "expand": "The nominative crowns. The accusative fences."
         },
         {
           "id": "accusative-substantival",
           "name": "Substantival (noun-like) — DATES",
+          "key": "DATES",
           "mnemonic": "D-A-T-E-S — take the object out on five DATES.",
           "expand": "Direct object · Alias (apposition) · Two (double) · Echo (cognate) · Sub (subject of an infinitive)"
         },
         {
           "id": "accusative-adverbial",
           "name": "Adverbial (adverb-like) — the MMR shot",
+          "key": "MMR",
           "mnemonic": "M-M-R — one shot, three jabs: how far? how? how so?",
           "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)"
         }
@@ -103,24 +111,28 @@
         {
           "id": "genitive-adjectival",
           "name": "Adjectival — SWAMP RD",
+          "key": "SWAMP RD",
           "mnemonic": "S-W-A-M-P R-D — the genitive lives on Swamp Rd, and whatever falls off the end lands in the Ditch. That is Description, the catch-all.",
           "expand": "Source (from?) · Whole (part of?) · Adjective (what quality?) · Made of? · Possession (whose?) · Relationship (whose kin?) · Description (nothing else fits)"
         },
         {
           "id": "genitive-verbal",
           "name": "Verbal — a verb hiding in the noun",
+          "key": "Does it · Gets it",
           "mnemonic": "Does it · Gets it — say the head word as a verb and ask which.",
           "expand": "Subjective (X does it) · Objective (X gets it)"
         },
         {
           "id": "genitive-adverbial",
           "name": "Adverbial — modifies the verb: PACTS",
+          "key": "PACTS",
           "mnemonic": "P-A-C-T-S — the adverbial genitive makes PACTS.",
           "expand": "Price · Agency · Comparison · Time or place · Separation"
         },
         {
           "id": "genitive-other",
           "name": "Other — the odd drawer",
+          "key": "Nickname · Fussy verb",
           "mnemonic": "A nickname, and a fussy verb.",
           "expand": "Apposition (another name for it) · Direct object (the verb wanted a genitive)"
         }
@@ -140,26 +152,84 @@
         {
           "id": "dative-pure",
           "name": "Pure — to or for: PORT",
+          "key": "PORT",
           "mnemonic": "P-O-R-T — and the T, plain “to whom”, is the one you meet most.",
           "expand": "Personal interest · Owns (possession) · Re: (reference) · To whom (indirect object)"
         },
         {
           "id": "dative-locative",
           "name": "Locative — in or at: HIT",
+          "key": "HIT",
           "mnemonic": "H-I-T — Here, In, Then.",
           "expand": "Here (place) · In what realm (sphere) · Then (time)"
         },
         {
           "id": "dative-instrumental",
           "name": "Instrumental — with or by: MAMA",
+          "key": "MAMA",
           "mnemonic": "M-A-M-A — Means, Agency, Manner, Association.",
           "expand": "Means (with what tool) · Agency (by whom) · Manner (in what style) · Association (along with)"
         },
         {
           "id": "dative-other",
           "name": "Other — the odd BEADs",
+          "key": "BEAD",
           "mnemonic": "B-E-A-D — Because, Echo, Alias, Devoted.",
           "expand": "Because (cause) · Echo (cognate) · Alias (apposition) · Devoted verbs (direct object)"
+        }
+      ]
+    },
+    {
+      "id": "article",
+      "name": "Article",
+      "subtitle": "Greek's “the”. It points — and its absence is not “a”.",
+      "eli5": "Greek's “the” is a finger. It points at one thing. Sometimes it stands in for a word, and sometimes it disappears — and gone does not mean “a”.",
+      "color": "#c9a227",
+      "classDate": "2026-09-15",
+      "bigIdea": "The article points. It particularises. And when it is missing, that is information too — not automatically “a”.",
+      "masterMnemonic": "Point, Pronoun, Poof.",
+      "masterMnemonicWhy": "Three things it does: it Points at something, it stands in as a Pronoun, or it goes Poof and leaves you to work out why. Then three named rules: Sharp joins, Colwell drops, Apollonius matches.",
+      "groups": [
+        {
+          "id": "article-uses",
+          "name": "What it does — the three P's",
+          "key": "Point · Pronoun · Poof",
+          "mnemonic": "Point · Pronoun · Poof.",
+          "expand": "Points at a thing · stands in as a pronoun · vanishes, and that means something"
+        },
+        {
+          "id": "article-rules",
+          "name": "Three men, three rules",
+          "key": "Sharp · Colwell · Apollonius",
+          "mnemonic": "Sharp joins · Colwell drops · Apollonius matches.",
+          "expand": "Granville Sharp · Colwell's Rule · Apollonius's Canon"
+        }
+      ]
+    },
+    {
+      "id": "adjective",
+      "name": "Adjective",
+      "subtitle": "Four jobs, five degrees.",
+      "eli5": "A describing word. It can stick to a noun, become the noun, jump to the doing-word, or make a claim. And it comes in degrees: plain, more, most.",
+      "color": "#6b7fd7",
+      "classDate": "2026-09-15",
+      "bigIdea": "An adjective does one of four jobs, in one of five degrees. Name the job, then name the degree.",
+      "masterMnemonic": "Four jobs ASAP, in five degrees of SPECS.",
+      "masterMnemonicWhy": "ASAP is what it does: Attributive, Substantival, Adverbial, Predicate. SPECS is how strong: Superlative, Positive, Elative, Comparative, Special cases.",
+      "groups": [
+        {
+          "id": "adjective-use",
+          "name": "What it does — ASAP",
+          "key": "ASAP",
+          "mnemonic": "A-S-A-P — Attributive, Substantival, Adverbial, Predicate.",
+          "expand": "Sticks to the noun · becomes the noun · jumps to the verb · makes a claim"
+        },
+        {
+          "id": "adjective-degree",
+          "name": "How strong — SPECS",
+          "key": "SPECS",
+          "mnemonic": "S-P-E-C-S — Superlative, Positive, Elative, Comparative, Special cases.",
+          "expand": "The ladder is positive → comparative → superlative. Elative turns the volume up without comparing; special cases swap the three around."
         }
       ]
     }
@@ -182,6 +252,7 @@
         ]
       },
       "short": "Subject",
+      "gist": "does the verb",
       "tile": "S",
       "oneLine": "The one doing the verb.",
       "mnemonic": "The subject wears the crown.",
@@ -227,6 +298,7 @@
         ]
       },
       "short": "Pred. nom.",
+      "gist": "X is Y",
       "tile": "P",
       "oneLine": "Two nominatives with “is” between them. The second says what the first is.",
       "mnemonic": "The subject is the small circle; the predicate is the big one.",
@@ -282,6 +354,7 @@
         "note": "First yes wins. John 1:1c: no pronoun, ὁ λόγος has the article — so it is the subject."
       },
       "short": "Pecking order",
+      "gist": "which one is the subject",
       "type": "rule",
       "oneLine": "Two nominatives, one “is”. This is how you tell which one is the subject.",
       "mnemonic": "PAP — ask Papa who is in charge.",
@@ -327,6 +400,7 @@
         "note": "No verb anywhere."
       },
       "short": "Apposition (nom.)",
+      "gist": "renames it, no verb",
       "tile": "A",
       "oneLine": "Two nominatives side by side, no verb. The second renames the first.",
       "mnemonic": "No verb, just a name tag.",
@@ -377,6 +451,7 @@
         ]
       },
       "short": "Address",
+      "gist": "talking TO them",
       "tile": "A",
       "oneLine": "A nominative used to call out to someone.",
       "mnemonic": "\"Hey, you!\" in a nominative coat.",
@@ -422,6 +497,7 @@
         "note": "X stays nominative."
       },
       "short": "Appellation",
+      "gist": "a title used as a name",
       "tile": "A",
       "oneLine": "A title used as somebody's name, left in the nominative.",
       "mnemonic": "The title is on the name badge — and badges don't decline.",
@@ -460,6 +536,7 @@
         ]
       },
       "short": "Absolute",
+      "gist": "a headline, tied to nothing",
       "tile": "A",
       "oneLine": "A nominative attached to nothing — a heading or a greeting.",
       "mnemonic": "Absolute = the headline.",
@@ -512,6 +589,7 @@
         ]
       },
       "short": "Hanging",
+      "gist": "picked up by a pronoun",
       "tile": "H",
       "oneLine": "A loose nominative that a pronoun picks up later.",
       "mnemonic": "It hangs by a pronoun.",
@@ -557,6 +635,7 @@
         "note": "The name is not the doer. It is who you are shouting at."
       },
       "short": "Direct address",
+      "gist": "calling them by name",
       "tile": "Say the name",
       "oneLine": "Naming the person or thing you are speaking to.",
       "mnemonic": "Say the name, then say the thing.",
@@ -592,6 +671,7 @@
         ]
       },
       "short": "The idea",
+      "gist": "the fence round the verb",
       "type": "rule",
       "oneLine": "The accusative fences the verb in — it says how far the action goes.",
       "mnemonic": "The nominative crowns; the accusative fences.",
@@ -627,6 +707,7 @@
         ]
       },
       "short": "Direct object",
+      "gist": "catches the action",
       "tile": "D",
       "oneLine": "What the verb lands on. By far the most common one.",
       "mnemonic": "DATES — D: the verb throws, the object catches.",
@@ -671,7 +752,8 @@
           "a man full of faith"
         ]
       },
-      "short": "Alias — apposition",
+      "short": "Apposition",
+      "gist": "Alias — renames the object",
       "tile": "A",
       "oneLine": "A second accusative that renames the first. No verb between them.",
       "mnemonic": "DATES — A: alias, the name tag on the object.",
@@ -717,7 +799,8 @@
           "call something a name  —  “gave his life as a ransom”"
         ]
       },
-      "short": "Two — double",
+      "short": "Double",
+      "gist": "Two objects at once",
       "tile": "T",
       "oneLine": "Two accusatives in one clause. Two kinds.",
       "mnemonic": "DATES — T: two catchers.",
@@ -766,7 +849,8 @@
           "the good fight"
         ]
       },
-      "short": "Echo — cognate",
+      "short": "Cognate",
+      "gist": "Echoes the verb",
       "tile": "E",
       "oneLine": "An object that repeats the verb — same root, or same idea.",
       "mnemonic": "DATES — E: echo, the object repeats the verb.",
@@ -820,6 +904,7 @@
         "note": "X is accusative — and X is the one doing it."
       },
       "short": "Sub — subj. of inf.",
+      "gist": "Subject of the infinitive",
       "tile": "S",
       "oneLine": "An infinitive's subject is accusative, not nominative.",
       "mnemonic": "DATES — S: sub, the infinitive's own subject.",
@@ -864,6 +949,7 @@
         ]
       },
       "short": "Measure",
+      "gist": "how far, how long",
       "tile": "M",
       "oneLine": "How far, how long, how much.",
       "mnemonic": "MMR, shot one: How far?",
@@ -901,6 +987,7 @@
         ]
       },
       "short": "Manner",
+      "gist": "how it was done",
       "tile": "M",
       "oneLine": "How the action is done.",
       "mnemonic": "MMR, shot two: How?",
@@ -938,6 +1025,7 @@
         ]
       },
       "short": "Respect",
+      "gist": "true in one way only",
       "tile": "R",
       "oneLine": "In one way only — put “with respect to” in front of it.",
       "mnemonic": "MMR, shot three: How so? — slot in \"as to\".",
@@ -983,6 +1071,7 @@
         "note": "= that comes FROM X."
       },
       "short": "Source",
+      "gist": "came from it",
       "tile": "S",
       "oneLine": "Where the head word came from.",
       "mnemonic": "SWAMP RD — S: where it came from.",
@@ -1021,7 +1110,8 @@
         ],
         "note": "The genitive is the WHOLE. The head noun is the part."
       },
-      "short": "Whole — partitive",
+      "short": "Partitive",
+      "gist": "the Whole, not the slice",
       "tile": "W",
       "oneLine": "The genitive is the whole; the head word is a piece of it.",
       "mnemonic": "SWAMP RD — W: the genitive is the whole pie, the head word your slice.",
@@ -1060,7 +1150,8 @@
         ],
         "note": "→ his POWERFUL word. X becomes the adjective."
       },
-      "short": "Adjective — attributive",
+      "short": "Attributive",
+      "gist": "could be an Adjective",
       "tile": "A",
       "oneLine": "A quality of the head word — it could have been an adjective.",
       "mnemonic": "SWAMP RD — A: turn the genitive into an adjective.",
@@ -1099,7 +1190,8 @@
         ],
         "note": "= made of X, or full of X."
       },
-      "short": "Made of — material",
+      "short": "Material",
+      "gist": "Made of it, full of it",
       "tile": "M",
       "oneLine": "What it is made of, or what is inside it.",
       "mnemonic": "SWAMP RD — M: made of it, or full of it.",
@@ -1144,6 +1236,7 @@
         "note": "= X’s. Try the apostrophe-s."
       },
       "short": "Possession",
+      "gist": "belongs to them",
       "tile": "P",
       "oneLine": "It belongs to X.",
       "mnemonic": "SWAMP RD — P: whose? Try the apostrophe-s.",
@@ -1183,6 +1276,7 @@
         "note": "→ James, the SON of Zebedee. The kin word is missing."
       },
       "short": "Relationship",
+      "gist": "family, kin word missing",
       "tile": "R",
       "oneLine": "X’s son, wife or parent — with the family word left out.",
       "mnemonic": "SWAMP RD — R: supply the missing kin word.",
@@ -1222,6 +1316,7 @@
         "note": "Nothing more specific fits."
       },
       "short": "Description",
+      "gist": "nothing else fits",
       "tile": "D",
       "oneLine": "It describes the head word, and nothing more specific fits.",
       "mnemonic": "SWAMP RD — D: the ditch at the end of the road.",
@@ -1261,6 +1356,7 @@
         "note": "→ Christ loves. X does the action."
       },
       "short": "Subjective",
+      "gist": "X does the action",
       "tile": "Does it",
       "oneLine": "X is doing the action hidden in the head word.",
       "mnemonic": "Subject does it.",
@@ -1299,6 +1395,7 @@
         "note": "→ you believe God. X receives the action."
       },
       "short": "Objective",
+      "gist": "X receives the action",
       "tile": "Gets it",
       "oneLine": "X is receiving the action hidden in the head word.",
       "mnemonic": "Object gets it.",
@@ -1338,6 +1435,7 @@
         "note": "for how much?"
       },
       "short": "Price",
+      "gist": "what it cost",
       "tile": "P",
       "oneLine": "What it cost, or what it is worth.",
       "mnemonic": "PACTS — P: for how much?",
@@ -1375,7 +1473,8 @@
         ],
         "note": "by what? by whom?"
       },
-      "short": "Means/Agency",
+      "short": "Means or agency",
+      "gist": "by whom, by what",
       "tile": "A",
       "oneLine": "By what, or by whom, the action was done.",
       "mnemonic": "PACTS — A: by what? by whom?",
@@ -1420,6 +1519,7 @@
         "note": "than what?"
       },
       "short": "Comparison",
+      "gist": "than what",
       "tile": "C",
       "oneLine": "What something is being measured against.",
       "mnemonic": "PACTS — C: than what?",
@@ -1458,6 +1558,7 @@
         "note": "when? where?"
       },
       "short": "Time/Place",
+      "gist": "when, where",
       "tile": "T",
       "oneLine": "When or where the action happened.",
       "mnemonic": "PACTS — T: when? where?",
@@ -1502,6 +1603,7 @@
         "note": "away from what?"
       },
       "short": "Separation",
+      "gist": "away from what",
       "tile": "S",
       "oneLine": "What the action moves away from.",
       "mnemonic": "PACTS — S: away from what?",
@@ -1541,6 +1643,7 @@
         "note": "X is another name for the head noun."
       },
       "short": "Apposition (gen.)",
+      "gist": "another name for it",
       "tile": "Another name",
       "oneLine": "A second name for the head word.",
       "mnemonic": "The name tag again — third case running.",
@@ -1586,6 +1689,7 @@
         "note": "The verb wanted a genitive, not an accusative."
       },
       "short": "Direct object (gen.)",
+      "gist": "verb wants a genitive",
       "tile": "Genitive DO",
       "oneLine": "The object of a verb that wants the genitive instead of the accusative.",
       "mnemonic": "Feel it, want it, share it, rule it, leave it.",
@@ -1649,6 +1753,7 @@
         "note": "Good for X, or bad for X."
       },
       "short": "Personal interest",
+      "gist": "helps or hurts them",
       "tile": "P",
       "oneLine": "Who benefits, or who suffers.",
       "mnemonic": "PORT — P: for him, or against him.",
@@ -1694,7 +1799,8 @@
         ],
         "note": "= X has it."
       },
-      "short": "Owns — possession",
+      "short": "Possession",
+      "gist": "they Own it",
       "tile": "O",
       "oneLine": "The dative owns the subject of a to-be verb.",
       "mnemonic": "PORT — O: owns it.",
@@ -1733,7 +1839,8 @@
         ],
         "note": "= with reference to X."
       },
-      "short": "Re: — reference",
+      "short": "Reference",
+      "gist": "Re: this only",
       "tile": "R",
       "oneLine": "The one respect in which the statement holds.",
       "mnemonic": "PORT — R: re:, like the subject line of an email.",
@@ -1774,7 +1881,8 @@
         ],
         "note": "The one who receives it."
       },
-      "short": "To whom — indirect object",
+      "short": "Indirect object",
+      "gist": "who it goes To",
       "tile": "T",
       "oneLine": "The one to whom, or for whom, the act is done.",
       "mnemonic": "PORT — T: to whom. The plain one.",
@@ -1812,7 +1920,8 @@
         ],
         "note": "A real spot you could point at."
       },
-      "short": "Here — place",
+      "short": "Place",
+      "gist": "Here, a real spot",
       "tile": "H",
       "oneLine": "The literal physical location.",
       "mnemonic": "HIT — H: here, a real spot.",
@@ -1850,7 +1959,8 @@
         ],
         "note": "A place you cannot point at."
       },
-      "short": "In what realm — sphere",
+      "short": "Sphere",
+      "gist": "In a realm, not a spot",
       "tile": "I",
       "oneLine": "The figurative realm the action happens in.",
       "mnemonic": "HIT — I: in what realm.",
@@ -1889,7 +1999,8 @@
         ],
         "note": "A point in time, not a stretch."
       },
-      "short": "Then — time",
+      "short": "Time",
+      "gist": "Then — when it happened",
       "tile": "T",
       "oneLine": "The point in time at which it happened.",
       "mnemonic": "HIT — T: then.",
@@ -1929,6 +2040,7 @@
         "note": "A thing, not a person."
       },
       "short": "Means",
+      "gist": "the tool used",
       "tile": "M",
       "oneLine": "The impersonal thing the action was done with.",
       "mnemonic": "MAMA — M: means, the tool.",
@@ -1967,6 +2079,7 @@
         "note": "A person, not a thing."
       },
       "short": "Agency",
+      "gist": "the person who did it",
       "tile": "A",
       "oneLine": "The personal agent by whom the action was done.",
       "mnemonic": "MAMA — A: agency, the doer.",
@@ -2006,6 +2119,7 @@
         "note": "Turn it into an -ly word."
       },
       "short": "Manner",
+      "gist": "the style of it",
       "tile": "M",
       "oneLine": "The style in which the action was done.",
       "mnemonic": "MAMA — M: manner, the how.",
@@ -2045,6 +2159,7 @@
         "note": "Alongside — not used as a tool."
       },
       "short": "Association",
+      "gist": "who came along",
       "tile": "A",
       "oneLine": "The one the action is done alongside.",
       "mnemonic": "MAMA — A: association, the company.",
@@ -2083,7 +2198,8 @@
         ],
         "note": "= because of X."
       },
-      "short": "Because — cause",
+      "short": "Cause",
+      "gist": "Because of it",
       "tile": "B",
       "oneLine": "The reason or basis for the action.",
       "mnemonic": "BEAD — B: because.",
@@ -2121,7 +2237,8 @@
         ],
         "note": "Same stem, said twice."
       },
-      "short": "Echo — cognate",
+      "short": "Cognate",
+      "gist": "Echoes its verb",
       "tile": "E",
       "oneLine": "A dative built from the same stem as its verb.",
       "mnemonic": "BEAD — E: echo, second case running.",
@@ -2159,7 +2276,8 @@
         ],
         "note": "Same person, second name."
       },
-      "short": "Alias — apposition",
+      "short": "Apposition",
+      "gist": "Alias — another name",
       "tile": "A",
       "oneLine": "A second dative renaming the first.",
       "mnemonic": "BEAD — A: alias, fourth case running.",
@@ -2197,7 +2315,8 @@
         ],
         "note": "The dative is the object."
       },
-      "short": "Devoted — direct object",
+      "short": "Direct object",
+      "gist": "Devoted verbs",
       "tile": "D",
       "oneLine": "The object of a verb that takes the dative instead of the accusative.",
       "mnemonic": "BEAD — D: devoted verbs.",
@@ -2217,6 +2336,719 @@
         "dative",
         "other",
         "ch-4"
+      ]
+    },
+    {
+      "id": "article-substantives",
+      "set": "article",
+      "group": "article-uses",
+      "name": "With Substantives",
+      "eli5": "It points at one. “The Prophet” is not any prophet. That one.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "Prophet"
+        ],
+        "note": "Not any one of them. THAT one."
+      },
+      "short": "With substantives",
+      "gist": "points at one",
+      "tile": "Point",
+      "oneLine": "The article picks a thing out, or names the whole class.",
+      "mnemonic": "Point — it aims at one.",
+      "mnemonicWhy": "Six ways of aiming: at this one (identification), at THE one (par excellence), at the only one (monadic), at the idea itself (abstract), at the one just mentioned (anaphoric), or at all of them at once (generic).",
+      "spotIt": "Ask which aim it is taking: one, the best, the only, an idea, the one just named, or the whole class.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
+        {
+          "ref": "Matt 2:2",
+          "greek": "ποῦ ἐστιν *ὁ* τεχθεὶς βασιλεὺς τῶν Ἰουδαίων",
+          "english": "Where is *he* who has been born King of the Jews?",
+          "note": "Identification — it picks out one particular person."
+        },
+        {
+          "ref": "John 1:21",
+          "greek": "*ὁ* προφήτης εἶ σύ;",
+          "english": "Are you *the* Prophet?",
+          "note": "Par excellence — not a prophet, THE prophet."
+        },
+        {
+          "ref": "John 3:16 ESV",
+          "greek": "*τὸν* υἱὸν *τὸν* μονογενῆ ἔδωκεν",
+          "english": "that he gave *his* only Son",
+          "note": "Monadic — there is only one of him."
+        },
+        {
+          "ref": "John 4:22",
+          "greek": "*ἡ* σωτηρία ἐκ τῶν Ἰουδαίων ἐστίν",
+          "english": "*salvation* is from the Jews",
+          "note": "Abstract — the idea itself, not one instance of it."
+        },
+        {
+          "ref": "John 4:11 ESV",
+          "greek": "πόθεν οὖν ἔχεις *τὸ* ὕδωρ τὸ ζῶν",
+          "english": "So where do You get *that* ‘living water’?",
+          "note": "Anaphoric — the water already mentioned. Translate it “that”."
+        },
+        {
+          "ref": "Matt 7:15",
+          "greek": "Προσέχετε ἀπὸ *τῶν* ψευδοπροφητῶν",
+          "english": "Be on your guard against *false prophets*",
+          "note": "Generic — the whole class of them, not particular ones."
+        }
+      ],
+      "tags": [
+        "article",
+        "uses",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pronoun",
+      "set": "article",
+      "group": "article-uses",
+      "name": "As a Pronoun",
+      "eli5": "It stands in for a word. “They told him” — the “they” is just the article.",
+      "formula": {
+        "pattern": [
+          "ὁ / οἱ",
+          "(no noun)"
+        ],
+        "filled": [
+          "they",
+          "told him"
+        ],
+        "note": "The article is naming somebody all by itself."
+      },
+      "short": "As a pronoun",
+      "gist": "stands in for a word",
+      "tile": "Pronoun",
+      "oneLine": "The article doing a pronoun's job.",
+      "mnemonic": "Pronoun — the article with nothing to point at.",
+      "mnemonicWhy": "Five kinds, and English tells you which: they (personal), who (relative), his (possessive), those (demonstrative), some… others (alternate).",
+      "spotIt": "An article with no noun after it. Work out which English pronoun fills the hole.",
+      "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
+      "examples": [
+        {
+          "ref": "Matt 2:5",
+          "greek": "*οἱ* δὲ εἶπαν αὐτῷ",
+          "english": "*They* told him",
+          "note": "Personal — the article is the subject on its own."
+        },
+        {
+          "ref": "Matt 5:16 ESV",
+          "greek": "τὸν πατέρα ὑμῶν *τὸν* ἐν τοῖς οὐρανοῖς",
+          "english": "your Father *who* is in heaven",
+          "note": "Relative — the article introduces the clause."
+        },
+        {
+          "ref": "Luke 15:12 ESV",
+          "greek": "ὁ δὲ διεῖλεν αὐτοῖς *τὸν* βίον",
+          "english": "And he divided *his* property between them",
+          "note": "Possessive — no αὐτοῦ needed, the article carries it."
+        },
+        {
+          "ref": "Matt 14:33",
+          "greek": "*οἱ* ἐν τῷ πλοίῳ προσεκύνησαν αὐτῷ",
+          "english": "*those* in the boat worshiped him",
+          "note": "Demonstrative — “those”."
+        },
+        {
+          "ref": "Eph 4:11 NASB",
+          "greek": "αὐτὸς ἔδωκεν *τοὺς* μὲν ἀποστόλους",
+          "english": "He gave *some* as apostles",
+          "note": "Alternate — μέν … δέ, some … others."
+        }
+      ],
+      "tags": [
+        "article",
+        "uses",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-absence",
+      "set": "article",
+      "group": "article-uses",
+      "name": "Absence of the Article",
+      "eli5": "No “the” does not mean “a”. It can still mean THE.",
+      "formula": {
+        "pattern": [
+          "no article",
+          "→",
+          "a? quality? or still THE?"
+        ],
+        "filled": [
+          "θεοῦ εἰμι υἱός",
+          "→",
+          "“I am THE Son of God”"
+        ],
+        "note": "Three things it can mean, and only one of them is “a”."
+      },
+      "short": "Absence of article",
+      "gist": "missing, and not “a”",
+      "tile": "Poof",
+      "oneLine": "What a missing article can mean — and it is not always “a”.",
+      "mnemonic": "Poof — the article vanishes, the meaning does not.",
+      "mnemonicWhy": "Three readings: indefinite (a boat), qualitative (full of grace — the quality itself), or still perfectly definite (Paul, in the Lord, the Son of God).",
+      "spotIt": "No article? Ask three questions in order: a? the quality? or still THE?",
+      "bookDef": "The absence of the article may convey that a given substantive is non-particular (indefinite or qualitative) or definite. If definite, this may be in conjunction with a proper name, a prepositional object, ordinal numbers, in predicate nominatives, as the complement in an object, complement construction, with monadic (one-of-a-kind) nouns, with abstract or generic nouns, with a pronominal adjective, or with technical expressions.",
+      "examples": [
+        {
+          "ref": "Mark 3:9",
+          "greek": "ἵνα *πλοιάριον* προσκαρτερῇ αὐτῷ",
+          "english": "to have *a small boat* ready for him",
+          "note": "Indefinite — genuinely “a”."
+        },
+        {
+          "ref": "John 1:14",
+          "greek": "πλήρης *χάριτος* καὶ *ἀληθείας*",
+          "english": "full of *grace* and *truth*",
+          "note": "Qualitative — the qualities themselves."
+        },
+        {
+          "ref": "Acts 16:25",
+          "greek": "*Παῦλος* καὶ *Σιλᾶς* προσευχόμενοι",
+          "english": "*Paul* and *Silas* were praying",
+          "note": "Definite — a proper name needs no article."
+        },
+        {
+          "ref": "Phil 4:4",
+          "greek": "Χαίρετε ἐν *κυρίῳ*",
+          "english": "Rejoice in *the Lord*",
+          "note": "Definite — object of a preposition."
+        },
+        {
+          "ref": "Matt 27:43 ESV",
+          "greek": "θεοῦ εἰμι *υἱός*",
+          "english": "I am *the Son* of God!",
+          "note": "Definite — a predicate nominative with no article, and still THE Son."
+        }
+      ],
+      "watchOut": "This is the row that settles John 1:1. Anarthrous does not mean indefinite.",
+      "tags": [
+        "article",
+        "uses",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "granville-sharp",
+      "set": "article",
+      "group": "article-rules",
+      "name": "Granville Sharp Rule",
+      "eli5": "One “the” over two names joined by “and” — usually one person, not two.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "A",
+          "καὶ",
+          "B"
+        ],
+        "filled": [
+          "our great",
+          "God",
+          "and",
+          "Savior"
+        ],
+        "note": "One article ⇒ one person."
+      },
+      "short": "Granville Sharp",
+      "gist": "one article, one person",
+      "tile": "Sharp",
+      "oneLine": "One article governing two joined substantives points at a single person.",
+      "mnemonic": "Sharp joins.",
+      "mnemonicWhy": "The conditions are the rule: singular, personal, not proper names, same case, joined by καί. Miss one condition and it does not apply.",
+      "spotIt": "One article, then καί, then two singular personal non-proper nouns in the same case.",
+      "bookDef": "When a single article governs two singular, personal, non-proper substantives of the same case that are joined by καί, they frequently refer to the same person.",
+      "examples": [
+        {
+          "ref": "Titus 2:13",
+          "greek": "*τοῦ* μεγάλου θεοῦ καὶ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ",
+          "english": "our great *God and Savior*, Jesus Christ",
+          "note": "One article covers both, so God and Savior are one person."
+        }
+      ],
+      "watchOut": "Proper names are excluded, and so are plurals. The rule is narrow on purpose.",
+      "tags": [
+        "article",
+        "rules",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "colwell",
+      "set": "article",
+      "group": "article-rules",
+      "name": "Colwell's Rule",
+      "eli5": "A “the” word drops its “the” when it comes before “is”.",
+      "formula": {
+        "pattern": [
+          "Y (no article)",
+          "ἦν",
+          "ὁ X"
+        ],
+        "filled": [
+          "θεός",
+          "was",
+          "ὁ λόγος"
+        ],
+        "note": "Definite, and the article is gone anyway."
+      },
+      "short": "Colwell's Rule",
+      "gist": "definite drops the article",
+      "tile": "Colwell",
+      "oneLine": "A definite predicate nominative before the copula usually goes without the article.",
+      "mnemonic": "Colwell drops.",
+      "mnemonicWhy": "This is why John 1:1 reads θεὸς ἦν ὁ λόγος with nothing in front of θεός — and why “a god” does not follow from the missing article.",
+      "spotIt": "A predicate nominative, no article, sitting in front of the to-be verb.",
+      "bookDef": "A definite predicate nominative does not usually take the article when preceding the copula (linking verb).",
+      "examples": [
+        {
+          "ref": "John 1:1",
+          "greek": "*θεὸς* ἦν ὁ λόγος",
+          "english": "the Word was *God*",
+          "note": "θεός is definite and drops the article because it comes first."
+        }
+      ],
+      "watchOut": "Read the rule in the direction it is written. It says definite nouns usually drop the article. It does not say every article-less noun before a copula is definite.",
+      "tags": [
+        "article",
+        "rules",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "apollonius",
+      "set": "article",
+      "group": "article-rules",
+      "name": "Apollonius's Canon",
+      "eli5": "Both wear “the”, or neither does. No mixing.",
+      "formula": {
+        "pattern": [
+          "ὁ λόγος",
+          "τοῦ θεοῦ"
+        ],
+        "filled": [
+          "both have it",
+          "or neither does"
+        ],
+        "note": "λόγος θεοῦ works too. One of each does not."
+      },
+      "short": "Apollonius's Canon",
+      "gist": "both or neither",
+      "tile": "Apollonius",
+      "oneLine": "In a genitive chain, head noun and genitive both take the article or both go without.",
+      "mnemonic": "Apollonius matches.",
+      "mnemonicWhy": "They dress alike. ὁ λόγος τοῦ θεοῦ, or λόγος θεοῦ — you do not get one of each.",
+      "spotIt": "A noun with a genitive after it. Check whether both carry the article, or neither.",
+      "bookDef": "When two nouns are in a genitive construction, both the head noun and the noun in the genitive case either have or lack the article.",
+      "examples": [
+        {
+          "ref": "John 10:35",
+          "greek": "ὁ λόγος *τοῦ* θεοῦ",
+          "english": "*the* Word of God",
+          "note": "Both have the article."
+        },
+        {
+          "ref": "1 Pet 1:23",
+          "greek": "λόγος θεοῦ",
+          "english": "word of God",
+          "note": "Neither has it. Still the same construction."
+        }
+      ],
+      "tags": [
+        "article",
+        "rules",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-attributive",
+      "set": "adjective",
+      "group": "adjective-use",
+      "name": "Attributive",
+      "eli5": "It describes the noun. “The TRUE God.”",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "adj",
+          "noun"
+        ],
+        "filled": [
+          "the",
+          "true",
+          "God"
+        ],
+        "note": "The adjective sticks to the noun."
+      },
+      "short": "Attributive",
+      "gist": "sticks to the noun",
+      "tile": "A",
+      "oneLine": "The adjective giving the noun a quality.",
+      "mnemonic": "ASAP — A: attributive, it sticks to the noun.",
+      "mnemonicWhy": "Say adjective and noun together and they still make one phrase: the true God.",
+      "spotIt": "Can you say it as “the ___ noun”? Attributive.",
+      "bookDef": "An adjective that ascribes a particular quality to a noun or substantive.",
+      "examples": [
+        {
+          "ref": "1 John 5:20",
+          "greek": "ὁ *ἀληθινὸς* θεός",
+          "english": "the *true* God",
+          "note": "With the article. One phrase, one idea."
+        },
+        {
+          "ref": "Matt 10:31",
+          "greek": "*πολλῶν* στρουθίων διαφέρετε ὑμεῖς",
+          "english": "you are worth more than *many* sparrows",
+          "note": "Without the article, and still attributive."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "use",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-substantival",
+      "set": "adjective",
+      "group": "adjective-use",
+      "name": "Substantival",
+      "eli5": "The adjective becomes the noun. “The Holy One” — no noun needed.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "adj"
+        ],
+        "filled": [
+          "the",
+          "Holy One"
+        ],
+        "note": "The noun is missing and nobody minds."
+      },
+      "short": "Substantival",
+      "gist": "becomes the noun",
+      "tile": "S",
+      "oneLine": "The adjective acting as a noun.",
+      "mnemonic": "ASAP — S: substantival, it becomes the noun.",
+      "mnemonicWhy": "It usually takes the article, and that is the giveaway: ὁ ἅγιος, the Holy One.",
+      "spotIt": "An adjective with an article and no noun anywhere for it to describe.",
+      "bookDef": "The adjective normally takes on the characteristics of a noun (e.g., the article) and functions as a noun or substantive in a given phrase.",
+      "examples": [
+        {
+          "ref": "John 6:69 NASB",
+          "greek": "σὺ εἶ *ὁ ἅγιος*",
+          "english": "You are *the Holy One*",
+          "note": "No noun after it. The adjective is the noun."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "use",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-adverbial",
+      "set": "adjective",
+      "group": "adjective-use",
+      "name": "Adverbial",
+      "eli5": "The adjective jumps to the doing-word. “Going a little farther.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "adj (neut. acc. sg.)"
+        ],
+        "filled": [
+          "going",
+          "a little farther"
+        ],
+        "note": "It modifies the verb, not a noun."
+      },
+      "short": "Adverbial",
+      "gist": "jumps to the verb",
+      "tile": "A",
+      "oneLine": "The adjective modifying a verb.",
+      "mnemonic": "ASAP — A: adverbial, it jumps to the verb.",
+      "mnemonicWhy": "Usually neuter accusative singular — and you have met this exact word before, as the accusative of measure. Same μικρόν, same verse.",
+      "spotIt": "An adjective answering how or how far, describing no noun at all.",
+      "bookDef": "Use of an adjective (usually in the neuter accusative singular) to modify a verb rather than noun.",
+      "examples": [
+        {
+          "ref": "Matt 26:39",
+          "greek": "καὶ προελθὼν *μικρὸν* ἔπεσεν ἐπὶ πρόσωπον αὐτοῦ",
+          "english": "Going *a little farther*, he fell facedown",
+          "note": "The same word the accusative chapter files under measure. Two chapters, one form."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "use",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-predicate",
+      "set": "adjective",
+      "group": "adjective-use",
+      "name": "Predicate",
+      "eli5": "It says something about the subject. “God is faithful.”",
+      "formula": {
+        "pattern": [
+          "adj",
+          "(is)",
+          "noun"
+        ],
+        "filled": [
+          "faithful",
+          "—",
+          "ὁ θεός"
+        ],
+        "note": "A claim, not a label."
+      },
+      "short": "Predicate",
+      "gist": "makes a claim",
+      "tile": "P",
+      "oneLine": "The adjective asserting a quality of the subject.",
+      "mnemonic": "ASAP — P: predicate, it makes a claim.",
+      "mnemonicWhy": "Often with a to-be verb, and often with none written at all: πιστὸς ὁ θεός is “God is faithful” with the verb left out.",
+      "spotIt": "Does it assert something, or just label something? Assert ⇒ predicate.",
+      "bookDef": "An adjective that predicates a certain quality to the subject, frequently by way of a copulative (linking) verb.",
+      "examples": [
+        {
+          "ref": "1 Cor 1:9",
+          "greek": "*πιστὸς* ὁ θεός",
+          "english": "God is *faithful*",
+          "note": "No verb written. The adjective still makes the claim."
+        },
+        {
+          "ref": "Rom 4:8 ESV",
+          "greek": "*μακάριος* ἀνὴρ οὗ οὐ μὴ λογίσηται κύριος ἁμαρτίαν",
+          "english": "*blessed* is the man against whom the Lord will not count his sin",
+          "note": "Without the article, and still a claim."
+        }
+      ],
+      "watchOut": "Attributive and predicate is the pair that gets missed. “The true God” labels. “God is true” claims.",
+      "tags": [
+        "adjective",
+        "use",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-superlative",
+      "set": "adjective",
+      "group": "adjective-degree",
+      "name": "Superlative",
+      "eli5": "Best of three or more. “Most High God.”",
+      "formula": {
+        "pattern": [
+          "adj",
+          "-est"
+        ],
+        "filled": [
+          "ὕψιστος",
+          "Most High"
+        ],
+        "note": "Three or more in the running."
+      },
+      "short": "Superlative",
+      "gist": "best of three or more",
+      "tile": "S",
+      "oneLine": "Comparing three or more.",
+      "mnemonic": "SPECS — S: superlative, the -est.",
+      "mnemonicWhy": "Two things get a comparative. Three or more get a superlative.",
+      "spotIt": "Ask how many are being compared. Three or more ⇒ superlative.",
+      "bookDef": "Compares the qualities of three or more entities.",
+      "examples": [
+        {
+          "ref": "Luke 8:28",
+          "greek": "Ἰησοῦ υἱὲ τοῦ θεοῦ τοῦ *ὑψίστου*",
+          "english": "Jesus, Son of the *Most High* God",
+          "note": "Highest of all, not higher than one other."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "degree",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-positive",
+      "set": "adjective",
+      "group": "adjective-degree",
+      "name": "Positive",
+      "eli5": "Plain. “The law is spiritual.” Nothing is being compared.",
+      "formula": {
+        "pattern": [
+          "adj"
+        ],
+        "filled": [
+          "spiritual"
+        ],
+        "note": "Kind, not degree."
+      },
+      "short": "Positive",
+      "gist": "plain, no comparing",
+      "tile": "P",
+      "oneLine": "The plain form, describing kind rather than degree.",
+      "mnemonic": "SPECS — P: positive, the plain one.",
+      "mnemonicWhy": "No -er, no -est, nothing to measure against. It just says what sort of thing it is.",
+      "spotIt": "No comparison anywhere in sight? Positive.",
+      "bookDef": "Focuses on the properties of a noun in terms of kind rather than degree.",
+      "examples": [
+        {
+          "ref": "Rom 7:14",
+          "greek": "ὁ νόμος *πνευματικός* ἐστιν",
+          "english": "the law is *spiritual*",
+          "note": "Not more spiritual than anything. Just spiritual."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "degree",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-elative",
+      "set": "adjective",
+      "group": "adjective-degree",
+      "name": "Elative",
+      "eli5": "Not comparing at all — just turning it up. “A very large crowd.”",
+      "formula": {
+        "pattern": [
+          "-er or -est form",
+          "= very ___"
+        ],
+        "filled": [
+          "πλεῖστος",
+          "very large"
+        ],
+        "note": "No comparison. Just louder."
+      },
+      "short": "Elative",
+      "gist": "just means “very”",
+      "tile": "E",
+      "oneLine": "A comparative or superlative used to intensify, not to compare.",
+      "mnemonic": "SPECS — E: elative, the volume knob.",
+      "mnemonicWhy": "A -er or -est form with nothing to compare it against. Translate it “very”.",
+      "spotIt": "See a comparative or superlative, then look for what it is compared to. Nothing there? Elative.",
+      "bookDef": "Use of the comparative or superlative adjective to describe an intensification of the positive notion.",
+      "examples": [
+        {
+          "ref": "2 Cor 8:17",
+          "greek": "*σπουδαιότερος* … ἐξῆλθεν",
+          "english": "[he] being *very diligent*, went out",
+          "note": "Comparative form, elative sense — not more diligent than someone."
+        },
+        {
+          "ref": "Mark 4:1",
+          "greek": "ὄχλος *πλεῖστος*",
+          "english": "a *very large* crowd",
+          "note": "Superlative form, elative sense."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "degree",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-comparative",
+      "set": "adjective",
+      "group": "adjective-degree",
+      "name": "Comparative",
+      "eli5": "More than one other. “More powerful than I am.”",
+      "formula": {
+        "pattern": [
+          "adj",
+          "-er than"
+        ],
+        "filled": [
+          "ἰσχυρότερος",
+          "more powerful than I"
+        ],
+        "note": "Two in the running."
+      },
+      "short": "Comparative",
+      "gist": "more than one other",
+      "tile": "C",
+      "oneLine": "Comparing two, by degree.",
+      "mnemonic": "SPECS — C: comparative, the -er.",
+      "mnemonicWhy": "Degree, not kind — and there is something on the other side of the scale.",
+      "spotIt": "Ask what it is being compared to. If there is an answer, comparative. If not, look at elative.",
+      "bookDef": "Focuses on the properties of a noun in terms of degree rather than kind.",
+      "examples": [
+        {
+          "ref": "Mark 1:7",
+          "greek": "ἔρχεται ὁ *ἰσχυρότερός* μου ὀπίσω μου",
+          "english": "One who is *more powerful* than I am is coming after me",
+          "note": "μου is what he is more powerful than."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "degree",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-special-cases",
+      "set": "adjective",
+      "group": "adjective-degree",
+      "name": "Special Cases",
+      "eli5": "The forms swap jobs. A plain word doing a “more” job, or a “more” word doing a “most” job.",
+      "formula": {
+        "pattern": [
+          "one form",
+          "doing another's job"
+        ],
+        "filled": [
+          "μείζων (“more”)",
+          "= “greatest”"
+        ],
+        "note": "Everyday speech blurred the three."
+      },
+      "short": "Special cases",
+      "gist": "forms swap jobs",
+      "tile": "S",
+      "oneLine": "One degree standing in for another.",
+      "mnemonic": "SPECS — S: special cases, the swaps.",
+      "mnemonicWhy": "Three swaps to know: positive for comparative, positive for superlative, and comparative for superlative. 1 Cor 13:13 literally says “more” and means “most”.",
+      "spotIt": "The form and the sense disagree. Translate by sense and name the swap.",
+      "bookDef": "Instances where popular speech and/or Semitic influence affected the use of the positive, comparative and superlative for one another.",
+      "examples": [
+        {
+          "ref": "Matt 18:8",
+          "greek": "*καλόν* σοί ἐστιν",
+          "english": "It is *better* for you",
+          "note": "Positive form, comparative sense."
+        },
+        {
+          "ref": "Matt 22:38",
+          "greek": "ἡ *μεγάλη* καὶ πρώτη ἐντολή",
+          "english": "the *greatest* and most important command",
+          "note": "Positive form, superlative sense."
+        },
+        {
+          "ref": "1 Cor 13:13",
+          "greek": "*μείζων* δὲ τούτων ἡ ἀγάπη",
+          "english": "but the *greatest* of these is love",
+          "note": "Comparative form, superlative sense. Three are in view, so “greater” means “greatest”."
+        }
+      ],
+      "tags": [
+        "adjective",
+        "degree",
+        "ch-5"
       ]
     }
   ],
@@ -2418,6 +3250,39 @@
       "test": "Is the dative receiving a thing, or gaining and losing?",
       "answer": "Receives what was handed over ⇒ indirect object. Benefits or suffers ⇒ personal interest.",
       "example": "“give glory to God” (receives) vs “adorned for her husband” (benefits)."
+    },
+    {
+      "id": "attributive-vs-predicate",
+      "pair": [
+        "adj-attributive",
+        "adj-predicate"
+      ],
+      "question": "Attributive or predicate?",
+      "test": "Does it label, or does it claim?",
+      "answer": "“The true God” labels ⇒ attributive. “God is true” claims ⇒ predicate.",
+      "example": "ὁ ἀληθινὸς θεός (label) vs πιστὸς ὁ θεός (claim, with no verb written)."
+    },
+    {
+      "id": "comparative-vs-elative",
+      "pair": [
+        "adj-comparative",
+        "adj-elative"
+      ],
+      "question": "Comparative or elative?",
+      "test": "Is there anything on the other side of the scale?",
+      "answer": "Something to compare against ⇒ comparative. Nothing ⇒ elative, and translate it “very”.",
+      "example": "“more powerful than I” (comparative) vs “a very large crowd” (elative)."
+    },
+    {
+      "id": "absence-vs-colwell",
+      "pair": [
+        "article-absence",
+        "colwell"
+      ],
+      "question": "No article — indefinite, or Colwell?",
+      "test": "Is it a predicate nominative sitting in front of the to-be verb?",
+      "answer": "In front of the copula ⇒ Colwell explains the missing article, and the noun can still be definite. Elsewhere, run the three questions: a? quality? or still THE?",
+      "example": "θεὸς ἦν ὁ λόγος — Colwell, definite. πλοιάριον in Mark 3:9 — genuinely “a”."
     }
   ],
   "extraQuiz": [
@@ -2530,6 +3395,21 @@
       "prompt": "εἰ δὲ πνεύματι ἄγεσθε (Gal 5:18) — the underlined πνεύματι.",
       "answer": "dative-agency",
       "why": "The Spirit chooses, so it is a personal agent. MAMA — A."
+    },
+    {
+      "prompt": "θεὸς ἦν ὁ λόγος (John 1:1) — why does θεός have no article?",
+      "answer": "colwell",
+      "why": "A definite predicate nominative in front of the copula usually drops it. Colwell drops."
+    },
+    {
+      "prompt": "τοῦ μεγάλου θεοῦ καὶ σωτῆρος ἡμῶν Ἰησοῦ Χριστοῦ (Titus 2:13) — one article over both nouns.",
+      "answer": "granville-sharp",
+      "why": "Singular, personal, non-proper, same case, joined by καί. Sharp joins them into one person."
+    },
+    {
+      "prompt": "σὺ εἶ ὁ ἅγιος (John 6:69) — the underlined ὁ ἅγιος.",
+      "answer": "adj-substantival",
+      "why": "An adjective with the article and no noun to describe. It has become the noun. ASAP — S."
     }
   ]
 }

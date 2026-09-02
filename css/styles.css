@@ -260,12 +260,18 @@ body {
 
 .acro {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  /* Wider than it was: a tile now carries a letter, a name and a gist. */
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
   gap: 8px;
   margin-top: 12px;
 }
 
 .acro-item {
+  /* A tile is only ~76px wide on a small phone, and names like
+     "Apollonius's Canon" are longer than that. break-word splits a word only
+     when it cannot fit a line by itself — `anywhere` also shrinks the column's
+     min-content, which had the grid hyphenating "Possessio/n" for no reason. */
+  overflow-wrap: break-word;
   background: var(--bg-elev-2);
   border: 1px solid var(--line);
   border-left: 3px solid var(--accent);
@@ -1002,4 +1008,77 @@ code {
 
 .mastery .pill {
   font-size: 10.5px;
+}
+
+/* ---------- the cheat sheet ----------
+   Every peg in the app, on one screen, at the top of the Map. */
+
+.sheet-set + .sheet-set {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.sheet-case {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.sheet-row {
+  display: grid;
+  grid-template-columns: minmax(74px, auto) 1fr;
+  gap: 4px 12px;
+  align-items: baseline;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 6px 8px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.sheet-row + .sheet-row {
+  margin-top: 4px;
+}
+
+.sheet-row:active {
+  background: var(--bg-elev-2);
+}
+
+.sheet-key {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.sheet-members {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+/* Narrow screens stack the peg above what it stands for. */
+@media (max-width: 380px) {
+  .sheet-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* A few plain words under each tile, so the map explains itself. */
+.acro-gist {
+  display: block;
+  font-size: 11.5px;
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--accent) 80%, var(--text));
+  margin-top: 3px;
 }

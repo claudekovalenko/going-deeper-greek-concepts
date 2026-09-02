@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v12 · 2026-09-01';
+const BUILD = 'v14 · 2026-09-01';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -425,6 +425,50 @@ function filterChips(base) {
     .join('')}</div>`;
 }
 
+/**
+ * Every hook in the app on one screen: each case, each of its groups, the bare
+ * peg and what the peg stands for. This is the thing you read on the bus — the
+ * cards underneath are for when a peg does not hold.
+ */
+function cheatSheet() {
+  // Count the pegs that actually get a row, not every group: a group whose only
+  // card is a rule card renders nothing, and a count nobody can verify is worse
+  // than no count.
+  const hasCards = (g) => DATA.cards.some((c) => c.group === g.id && c.type !== 'rule');
+  const pegs = DATA.sets.reduce((n, s) => n + s.groups.filter(hasCards).length, 0);
+
+  return `
+    <section class="card sheet">
+      <div class="card-head">
+        <h2>The whole thing</h2>
+        <span class="muted" style="font-size:12px">${pegs} pegs · ${DATA.cards.length} cards</span>
+      </div>
+      ${DATA.sets
+        .map(
+          (set) => `
+        <div class="sheet-set">
+          <div class="sheet-case">${dot(set.color)}${esc(set.name)}</div>
+          ${set.groups
+            .map((g) => {
+              const members = DATA.cards
+                .filter((c) => c.group === g.id && c.type !== 'rule')
+                .map((c) => c.short);
+              if (!members.length) return '';
+              return `
+              <button class="sheet-row" data-action="goto" data-to="#/learn/${esc(set.id)}"
+                      style="--accent:${esc(set.color)}">
+                <span class="sheet-key">${esc(g.key || g.mnemonic)}</span>
+                <span class="sheet-members">${esc(members.join(' · '))}</span>
+              </button>`;
+            })
+            .join('')}
+        </div>`
+        )
+        .join('')}
+      <p class="note">Tap any line to open its cards.</p>
+    </section>`;
+}
+
 /* ---------------- view: map ---------------- */
 
 /** The acrostic, split into one tappable tile per letter. */
@@ -446,6 +490,7 @@ function acroTiles(set) {
                       style="border-left-color:${esc(set.color)}">
                 <span class="acro-letter">${esc(c.tile || c.short.slice(0, 1))}</span>
                 <span class="acro-word">${esc(c.short)}</span>
+                ${c.gist ? `<span class="acro-gist">${esc(c.gist)}</span>` : ''}
               </button>`
               )
               .join('')}
@@ -459,6 +504,8 @@ function viewMap() {
   const learned = DATA.cards.filter((c) => isLearned(c.id)).length;
 
   return `
+    ${cheatSheet()}
+
     <section class="hero">
       <div class="hero-line">The whole chapter in two sentences</div>
       <div class="hero-mnemonic">Go to the SPA, say AAAH.</div>

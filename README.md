@@ -1,8 +1,7 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–4
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–5
 
-A small offline-first PWA for getting the **nominative**, **vocative**,
-**accusative**, **genitive** and **dative** uses into your head and keeping them
-there. Forty-nine cards, each
+A small offline-first PWA for getting the five cases, the **article** and the
+**adjective** into your head and keeping them there. Sixty-four cards, each
 opening with a plain-words paragraph anyone could follow, then the bare pattern
 of the construction, then a mnemonic hook, a test you can run on a text, and the
 Greek examples.
@@ -60,7 +59,7 @@ over.
 | Apposition | another name for the head noun |
 | Direct object | feel it, want it, share it, rule it, leave it |
 
-Every group in the app spells something: SPA, AAAH, DATES, MMR, SWAMP RD, PACTS, PORT, HIT, MAMA, BEAD.
+Every group spells something: SPA, AAAH, DATES, MMR, SWAMP RD, PACTS, PORT, HIT, MAMA, BEAD, ASAP, SPECS, plus the article's three P's and three rules.
 The definitions on these cards are the chapter summary chart's own wording.
 
 **Dative — to, in, with**
@@ -77,6 +76,21 @@ Three old cases wearing one coat. Work out which coat and the use follows.
 Means is the hammer, agency is the carpenter: the only test is whether the
 dative could have refused. And the dative's fussy-verb list — trusting, obeying,
 serving, worshipping, thanking, following — is every one a verb of **devotion**.
+
+**Article — Point, Pronoun, Poof**
+
+It points at one, or stands in for a word, or vanishes — and vanishing is not
+"a". Then three named rules: **Sharp joins** (one article over two nouns means
+one person), **Colwell drops** (a definite predicate nominative before the copula
+loses its article — which is John 1:1), **Apollonius matches** (in a genitive
+chain, both take the article or neither does).
+
+**Adjective — four jobs ASAP, five degrees of SPECS**
+
+**A**ttributive (sticks to the noun) · **S**ubstantival (becomes the noun) ·
+**A**dverbial (jumps to the verb) · **P**redicate (makes a claim). And
+**S**uperlative · **P**ositive · **E**lative · **C**omparative · **S**pecial
+cases.
 
 **Accusative — the object goes on DATES, then gets the MMR shot**
 
@@ -96,7 +110,10 @@ fences.
 
 ## What is in the app
 
-- **Map** — the two acrostics as tappable tiles, plus the seven confusion pairs
+- **The whole thing** — every peg in the app on one screen, at the top of the
+  Map: seventeen acrostics and what each one stands for. This is the bus-stop
+  page; the cards underneath are for when a peg does not hold.
+- **Map** — the acrostics as tappable tiles, plus the seven confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, in four tiers, hardest-first being exactly wrong: an
   **explain-it-like-I'm-five** paragraph, then the bare pattern, then the
