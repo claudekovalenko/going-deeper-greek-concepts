@@ -1123,3 +1123,39 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- pictures ----------
+   One emoji per card, standing next to the plain words so the two are learned
+   together. It never appears on the front of a drill card: recognising the
+   picture is not the same as recalling the answer. */
+
+.eli5 {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.eli5-pic {
+  font-size: 30px;
+  line-height: 1.1;
+  flex: none;
+}
+
+.concept-pic {
+  font-size: 19px;
+  width: 24px;
+  flex: none;
+  text-align: center;
+}
+
+.acro-pic {
+  display: block;
+  font-size: 19px;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+/* The answer side of a drill card leads with it, big. */
+.flash .eli5-pic {
+  font-size: 34px;
+}

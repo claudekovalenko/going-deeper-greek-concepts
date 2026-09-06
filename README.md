@@ -127,7 +127,7 @@ fences.
 - **Map** — the acrostics as tappable tiles, plus the seven confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, in four tiers, hardest-first being exactly wrong: an
-  **explain-it-like-I'm-five** paragraph, then the bare pattern, then the
+  **picture and an explain-it-like-I'm-five** paragraph, then the bare pattern, then the
   mnemonic hook, then the summary chart's own wording under *What the book
   says*, then the Greek. Read one tier or all five.
 - **Drill** — flashcards on Leitner boxes. A right answer moves a card up a box,
@@ -143,6 +143,21 @@ fences.
   from an accusative one is not the exam.
 - **Progress** — what is learned, what is shaky, what you have not seen yet, and
   the countdown to the date you are learning it by.
+
+## Pictures
+
+Every card carries one emoji, chosen to be the mnemonic's own image — 👑 for the
+subject wearing the crown, 📦 for "X goes in the Y box", 🍕 for the partitive's
+pile and slice, 🙏 for the dative's verbs of devotion. It sits beside the plain
+words, so picture and sentence are learned together, and it repeats on the tiles
+and down the Learn list so a card can be found by its picture.
+
+Emoji rather than drawings on purpose: no files, no network, nothing to load,
+and it works in the single-file offline copy exactly as it does on the site.
+
+It never appears on the **front** of a drill card. Recognising a picture is not
+the same as recalling an answer, and a picture on the front would let you pass
+the card without knowing it.
 
 Everything is stored in `localStorage` on the device. Nothing is uploaded.
 

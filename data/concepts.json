@@ -14,7 +14,8 @@
     "classDate on a set is when that chapter is taught. The 'This week' filter is computed from it, so it never goes stale.",
     "key on a group is the bare peg — the acrostic or catchphrase with no sentence round it. The cheat sheet at the top of the Map is built from these.",
     "gist: a few words on the tile itself, so the map is readable without opening anything.",
-    "verb / does on a set: the one-word and one-line answer to “what does this case do?”. The hero is built from verb, the cheat sheet's first strip from does."
+    "verb / does on a set: the one-word and one-line answer to “what does this case do?”. The hero is built from verb, the cheat sheet's first strip from does.",
+    "pic: one emoji per card, chosen to be the mnemonic's own image. It shows on the Learn card, in the Learn list, and on the BACK of a drill card — never the front, which would give the answer away."
   ],
   "sets": [
     {
@@ -255,6 +256,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Subject",
+      "pic": "👑",
       "eli5": "Who is doing it. “John talks.” Who talks? John.",
       "formula": {
         "pattern": [
@@ -299,6 +301,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Predicate Nominative",
+      "pic": "📦",
       "eli5": "“X is Y” puts X inside Y, like a box. The Word goes in the God box. Not the other way round.",
       "formula": {
         "pattern": [
@@ -359,6 +362,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "The Pecking Order",
+      "pic": "🪜",
       "eli5": "Two words both look like the doer. Pick like picking teams: “he” words first, then “the” words, then names.",
       "formula": {
         "ladder": [
@@ -402,6 +406,7 @@
       "set": "nominative",
       "group": "nominative-major",
       "name": "Apposition",
+      "pic": "🏷️",
       "eli5": "Same person, two stickers. “Andrew, Peter’s brother.” No “is” — just a second sticker.",
       "formula": {
         "pattern": [
@@ -454,6 +459,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Address",
+      "pic": "📣",
       "eli5": "“Hey, Dad!” You are talking TO him, not about him.",
       "formula": {
         "pattern": [
@@ -499,6 +505,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative of Appellation",
+      "pic": "📛",
       "eli5": "It is the name on his badge. Everyone says “Teacher”, so that became his name.",
       "formula": {
         "pattern": [
@@ -539,6 +546,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Nominative Absolute",
+      "pic": "📖",
       "eli5": "It is the title on the front of a book. It sits on top and joins nothing.",
       "formula": {
         "pattern": [
@@ -590,6 +598,7 @@
       "set": "nominative",
       "group": "nominative-other",
       "name": "Hanging Nominative",
+      "pic": "🪢",
       "eli5": "You say the thing, then point back at it. “The good seed? THOSE are the king’s kids.”",
       "formula": {
         "pattern": [
@@ -637,6 +646,7 @@
       "set": "vocative",
       "group": "vocative-uses",
       "name": "Direct Address",
+      "pic": "🗣️",
       "eli5": "You call his name. “Lazarus, come out!” The name is just how you got him to look.",
       "formula": {
         "pattern": [
@@ -676,6 +686,7 @@
       "set": "accusative",
       "group": "accusative-overview",
       "name": "The Case of Limitation",
+      "pic": "🚧",
       "eli5": "Doing-words need a fence. This builds it. The doing stops here.",
       "formula": {
         "ladder": [
@@ -710,6 +721,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Direct Object",
+      "pic": "🧤",
       "eli5": "This is the catcher. “I hit Ivan.” Ivan got hit.",
       "formula": {
         "pattern": [
@@ -754,6 +766,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative of Apposition",
+      "pic": "🏷️",
       "eli5": "Two stickers again, on the catcher. “They picked Stephen, a good man.”",
       "formula": {
         "pattern": [
@@ -807,6 +820,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Double Accusative",
+      "pic": "2️⃣",
       "eli5": "Two catchers. “Ask Dad for bread.” Or “he gave his life as a gift.”",
       "formula": {
         "ladder": [
@@ -853,6 +867,7 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Cognate Accusative",
+      "pic": "🔁",
       "eli5": "The word says the doing-word again. “Sing a song.” “Fight a fight.”",
       "formula": {
         "pattern": [
@@ -904,7 +919,8 @@
       "set": "accusative",
       "group": "accusative-substantival",
       "name": "Accusative Subject of the Infinitive",
-      "eli5": "Usually this one catches. Here it does it. “I want HIM to go.” He goes.",
+      "pic": "🏃",
+      "eli5": "Usually this one catches the ball. Not here — here it throws. “I want HIM to go.” He is the one going.",
       "formula": {
         "pattern": [
           "for",
@@ -952,6 +968,7 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Measure",
+      "pic": "📏",
       "eli5": "How far? How long? “He walked a little bit.”",
       "formula": {
         "pattern": [
@@ -990,6 +1007,7 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Manner",
+      "pic": "🎭",
       "eli5": "How did you do it? “He gave it for free.”",
       "formula": {
         "pattern": [
@@ -1028,7 +1046,8 @@
       "set": "accusative",
       "group": "accusative-adverbial",
       "name": "Accusative of Respect",
-      "eli5": "Only one bit of you got it. “Cut in the heart” means the heart is the bit that hurt.",
+      "pic": "🎯",
+      "eli5": "Only one part of you is meant. “Cut to the heart” — the heart is the part that hurt, not your skin.",
       "formula": {
         "pattern": [
           "verb",
@@ -1073,7 +1092,8 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Source",
-      "eli5": "Where it came from. Swap “of” for “from” and see if it still works.",
+      "pic": "⛲",
+      "eli5": "It flowed out of that. “Righteousness of God” means righteousness FROM God.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1113,6 +1133,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Partitive",
+      "pic": "🍕",
       "eli5": "The “of” word is the big pile. The other word is your piece. “One of the boats.”",
       "formula": {
         "pattern": [
@@ -1153,6 +1174,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Attributive",
+      "pic": "🖌️",
       "eli5": "“The word of his power” really means “his POWERFUL word.” Squish it into a describing word.",
       "formula": {
         "pattern": [
@@ -1193,6 +1215,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Material or Content",
+      "pic": "🥛",
       "eli5": "What it is made of, or what is in it. “A cup of water” is full of water.",
       "formula": {
         "pattern": [
@@ -1238,6 +1261,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Possession",
+      "pic": "🔑",
       "eli5": "It is his. “The house of Philip” means Philip’s house.",
       "formula": {
         "pattern": [
@@ -1278,6 +1302,7 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Relationship",
+      "pic": "👨‍👦",
       "eli5": "It is family, and Greek left the family word out. “James of Zebedee” means Zebedee’s son.",
       "formula": {
         "pattern": [
@@ -1318,7 +1343,8 @@
       "set": "genitive",
       "group": "genitive-adjectival",
       "name": "Description",
-      "eli5": "The leftovers bin. It just describes, and no other box fits.",
+      "pic": "🗑️",
+      "eli5": "The leftovers bin. Nobody owns it, it is not made of it — it just describes.",
       "formula": {
         "pattern": [
           "head noun",
@@ -1358,6 +1384,7 @@
       "set": "genitive",
       "group": "genitive-verbal",
       "name": "Subjective",
+      "pic": "➡️",
       "eli5": "The “of” word is doing it. “The love of Christ” — Christ is doing the loving.",
       "formula": {
         "pattern": [
@@ -1397,6 +1424,7 @@
       "set": "genitive",
       "group": "genitive-verbal",
       "name": "Objective",
+      "pic": "⬅️",
       "eli5": "The “of” word is getting it. “Faith of God” means faith IN God.",
       "formula": {
         "pattern": [
@@ -1437,6 +1465,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Price",
+      "pic": "💰",
       "eli5": "How much did it cost? “Bought with a price.”",
       "formula": {
         "pattern": [
@@ -1476,7 +1505,8 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Means or Agency",
-      "eli5": "Who did it, or what did it. “Blessed by my Father.”",
+      "pic": "✋",
+      "eli5": "Who did it, or what did it. “Blessed BY my Father” — Dad did the blessing.",
       "formula": {
         "pattern": [
           "verb",
@@ -1521,7 +1551,8 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Comparison",
-      "eli5": "Bigger than what? “Greater than our heart.”",
+      "pic": "⚖️",
+      "eli5": "This is the thing being beaten. “God is greater THAN our heart” — the heart is what he beat.",
       "formula": {
         "pattern": [
           "comparative",
@@ -1560,7 +1591,8 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Time or Place",
-      "eli5": "When, or where. “He came at night.”",
+      "pic": "🕐",
+      "eli5": "When it happened, or where. “He came AT NIGHT” — night is the when.",
       "formula": {
         "pattern": [
           "verb",
@@ -1605,6 +1637,7 @@
       "set": "genitive",
       "group": "genitive-adverbial",
       "name": "Separation",
+      "pic": "🚪",
       "eli5": "Moving away. “They walked away from the faith.”",
       "formula": {
         "pattern": [
@@ -1645,6 +1678,7 @@
       "set": "genitive",
       "group": "genitive-other",
       "name": "Apposition",
+      "pic": "🏷️",
       "eli5": "Two stickers, third time. “Jeremiah the prophet.” One man, two names.",
       "formula": {
         "pattern": [
@@ -1691,7 +1725,8 @@
       "set": "genitive",
       "group": "genitive-other",
       "name": "Direct Object",
-      "eli5": "Some doing-words are fussy. Hearing, wanting, sharing, bossing and leaving all want their catcher dressed this way.",
+      "pic": "🧲",
+      "eli5": "Some doing-words are picky. Hearing, wanting, sharing, bossing and leaving all want their catcher dressed like this.",
       "formula": {
         "pattern": [
           "certain verbs",
@@ -1755,7 +1790,8 @@
       "set": "dative",
       "group": "dative-pure",
       "name": "Personal Interest",
-      "eli5": "Someone gains or someone loses. “A bride dressed up FOR her husband.” “She had it IN for him.”",
+      "pic": "💝",
+      "eli5": "Someone gains, or someone loses. “A bride dressed up FOR her husband.” “She had it IN for him.”",
       "formula": {
         "pattern": [
           "verb",
@@ -1800,6 +1836,7 @@
       "set": "dative",
       "group": "dative-pure",
       "name": "Possession",
+      "pic": "🔑",
       "eli5": "It is theirs, said backwards. “To you is the promise” means “you have the promise.”",
       "formula": {
         "pattern": [
@@ -1842,7 +1879,8 @@
       "set": "dative",
       "group": "dative-pure",
       "name": "Reference or Respect",
-      "eli5": "True in one way only. “He died to sin” means dead as far as sin goes.",
+      "pic": "✉️",
+      "eli5": "Only true about one thing. “He died TO SIN” — dead as far as sin goes, not dead all over.",
       "formula": {
         "pattern": [
           "verb",
@@ -1882,6 +1920,7 @@
       "set": "dative",
       "group": "dative-pure",
       "name": "Indirect Object",
+      "pic": "🎁",
       "eli5": "Who you gave it to. “Give glory to God.” God is the one getting it.",
       "formula": {
         "pattern": [
@@ -1923,6 +1962,7 @@
       "set": "dative",
       "group": "dative-locative",
       "name": "Place",
+      "pic": "📍",
       "eli5": "Where it literally is. “Sitting in a circle.”",
       "formula": {
         "pattern": [
@@ -1962,6 +2002,7 @@
       "set": "dative",
       "group": "dative-locative",
       "name": "Sphere",
+      "pic": "☁️",
       "eli5": "Where it is, but not really. “Sighing deeply in his spirit” — you cannot point at that.",
       "formula": {
         "pattern": [
@@ -2002,6 +2043,7 @@
       "set": "dative",
       "group": "dative-locative",
       "name": "Time",
+      "pic": "🕐",
       "eli5": "When it happened. “On the third day.”",
       "formula": {
         "pattern": [
@@ -2042,6 +2084,7 @@
       "set": "dative",
       "group": "dative-instrumental",
       "name": "Means",
+      "pic": "🔨",
       "eli5": "The thing you used. “Cutting himself with stones.” The stones did not choose to.",
       "formula": {
         "pattern": [
@@ -2081,6 +2124,7 @@
       "set": "dative",
       "group": "dative-instrumental",
       "name": "Agency",
+      "pic": "✋",
       "eli5": "The person who did it. “Led by the Spirit.”",
       "formula": {
         "pattern": [
@@ -2121,6 +2165,7 @@
       "set": "dative",
       "group": "dative-instrumental",
       "name": "Manner",
+      "pic": "🎭",
       "eli5": "How you did it. “He spoke openly.”",
       "formula": {
         "pattern": [
@@ -2161,6 +2206,7 @@
       "set": "dative",
       "group": "dative-instrumental",
       "name": "Association",
+      "pic": "👫",
       "eli5": "Who came along. “Buried with him.” You went together.",
       "formula": {
         "pattern": [
@@ -2201,6 +2247,7 @@
       "set": "dative",
       "group": "dative-other",
       "name": "Cause",
+      "pic": "🔥",
       "eli5": "Why it happened. “I am dying of hunger.” Hunger is the reason.",
       "formula": {
         "pattern": [
@@ -2240,6 +2287,7 @@
       "set": "dative",
       "group": "dative-other",
       "name": "Cognate Dative",
+      "pic": "🔁",
       "eli5": "The word says the doing-word again. “They were astounded with a great astoundment.”",
       "formula": {
         "pattern": [
@@ -2279,6 +2327,7 @@
       "set": "dative",
       "group": "dative-other",
       "name": "Apposition",
+      "pic": "🏷️",
       "eli5": "Two stickers, fourth time. “Beelzebul, the ruler of the demons.” One person, two names.",
       "formula": {
         "pattern": [
@@ -2318,6 +2367,7 @@
       "set": "dative",
       "group": "dative-other",
       "name": "Direct Object",
+      "pic": "🙏",
       "eli5": "Some doing-words want it dressed this way: trusting, obeying, serving, worshipping, thanking, following.",
       "formula": {
         "pattern": [
@@ -2358,6 +2408,7 @@
       "set": "article",
       "group": "article-uses",
       "name": "With Substantives",
+      "pic": "👉",
       "eli5": "It points at one. “The Prophet” is not any prophet. That one.",
       "formula": {
         "pattern": [
@@ -2427,6 +2478,7 @@
       "set": "article",
       "group": "article-uses",
       "name": "As a Pronoun",
+      "pic": "🧩",
       "eli5": "It stands in for a word. “They told him” — the “they” is just the article.",
       "formula": {
         "pattern": [
@@ -2490,7 +2542,8 @@
       "set": "article",
       "group": "article-uses",
       "name": "Absence of the Article",
-      "eli5": "No “the” does not mean “a”. It can still mean THE.",
+      "pic": "👻",
+      "eli5": "A missing “the” is a clue, not an answer. It can mean “a”, or a quality, or still THE.",
       "formula": {
         "pattern": [
           "no article",
@@ -2556,6 +2609,7 @@
       "set": "article",
       "group": "article-rules",
       "name": "Granville Sharp Rule",
+      "pic": "🔗",
       "eli5": "One “the” over two names joined by “and” — usually one person, not two.",
       "formula": {
         "pattern": [
@@ -2600,7 +2654,8 @@
       "set": "article",
       "group": "article-rules",
       "name": "Colwell's Rule",
-      "eli5": "A “the” word drops its “the” when it comes before “is”.",
+      "pic": "⬇️",
+      "eli5": "Put a “the” word in front of “is” and it drops its “the”. That is why John 1:1 has no “the” on God.",
       "formula": {
         "pattern": [
           "Y (no article)",
@@ -2642,7 +2697,8 @@
       "set": "article",
       "group": "article-rules",
       "name": "Apollonius's Canon",
-      "eli5": "Both wear “the”, or neither does. No mixing.",
+      "pic": "🟰",
+      "eli5": "“The Word of the God”, or “Word of God”. Never one of each.",
       "formula": {
         "pattern": [
           "ὁ λόγος",
@@ -2687,6 +2743,7 @@
       "set": "adjective",
       "group": "adjective-use",
       "name": "Attributive",
+      "pic": "🖌️",
       "eli5": "It describes the noun. “The TRUE God.”",
       "formula": {
         "pattern": [
@@ -2734,6 +2791,7 @@
       "set": "adjective",
       "group": "adjective-use",
       "name": "Substantival",
+      "pic": "🧍",
       "eli5": "The adjective becomes the noun. “The Holy One” — no noun needed.",
       "formula": {
         "pattern": [
@@ -2773,6 +2831,7 @@
       "set": "adjective",
       "group": "adjective-use",
       "name": "Adverbial",
+      "pic": "🦘",
       "eli5": "The adjective jumps to the doing-word. “Going a little farther.”",
       "formula": {
         "pattern": [
@@ -2812,6 +2871,7 @@
       "set": "adjective",
       "group": "adjective-use",
       "name": "Predicate",
+      "pic": "💬",
       "eli5": "It says something about the subject. “God is faithful.”",
       "formula": {
         "pattern": [
@@ -2860,6 +2920,7 @@
       "set": "adjective",
       "group": "adjective-degree",
       "name": "Superlative",
+      "pic": "🥇",
       "eli5": "Best of three or more. “Most High God.”",
       "formula": {
         "pattern": [
@@ -2899,7 +2960,8 @@
       "set": "adjective",
       "group": "adjective-degree",
       "name": "Positive",
-      "eli5": "Plain. “The law is spiritual.” Nothing is being compared.",
+      "pic": "1️⃣",
+      "eli5": "Nothing is being compared. “The law is spiritual” — just what sort of thing it is.",
       "formula": {
         "pattern": [
           "adj"
@@ -2936,6 +2998,7 @@
       "set": "adjective",
       "group": "adjective-degree",
       "name": "Elative",
+      "pic": "🔊",
       "eli5": "Not comparing at all — just turning it up. “A very large crowd.”",
       "formula": {
         "pattern": [
@@ -2981,6 +3044,7 @@
       "set": "adjective",
       "group": "adjective-degree",
       "name": "Comparative",
+      "pic": "2️⃣",
       "eli5": "More than one other. “More powerful than I am.”",
       "formula": {
         "pattern": [
@@ -3020,7 +3084,8 @@
       "set": "adjective",
       "group": "adjective-degree",
       "name": "Special Cases",
-      "eli5": "The forms swap jobs. A plain word doing a “more” job, or a “more” word doing a “most” job.",
+      "pic": "🔀",
+      "eli5": "The words swap jobs. “More” can mean “most”: 1 Cor 13:13 says “greater” and means “greatest”.",
       "formula": {
         "pattern": [
           "one form",

@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v15 · 2026-09-01';
+const BUILD = 'v16 · 2026-09-01';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -500,6 +500,7 @@ function acroTiles(set) {
                 (c) => `
               <button class="acro-item" data-action="open-card" data-card="${esc(c.id)}"
                       style="border-left-color:${esc(set.color)}">
+                ${c.pic ? `<span class="acro-pic" aria-hidden="true">${esc(c.pic)}</span>` : ''}
                 <span class="acro-letter">${esc(c.tile || c.short.slice(0, 1))}</span>
                 <span class="acro-word">${esc(c.short)}</span>
                 ${c.gist ? `<span class="acro-gist">${esc(c.gist)}</span>` : ''}
@@ -582,12 +583,15 @@ function confusionRow(c) {
  * carries, you should be able to read this one paragraph and know what the
  * thing is — no grammar terms, and a picture you can actually see.
  */
-function eli5Block(text) {
+function eli5Block(text, pic) {
   if (!text) return '';
   return `
     <div class="eli5">
-      <span class="label">Like I'm five</span>
-      <p>${esc(text)}</p>
+      ${pic ? `<div class="eli5-pic" aria-hidden="true">${esc(pic)}</div>` : ''}
+      <div>
+        <span class="label">Like I'm five</span>
+        <p>${esc(text)}</p>
+      </div>
     </div>`;
 }
 
@@ -631,12 +635,12 @@ function conceptCard(c, { open = false } = {}) {
   return `
     <details class="concept" id="card-${esc(c.id)}" ${open ? 'open' : ''}>
       <summary>
-        ${dot(set.color)}
+        ${c.pic ? `<span class="concept-pic" aria-hidden="true">${esc(c.pic)}</span>` : dot(set.color)}
         <span class="concept-name">${esc(c.name)}<span class="concept-hook">${esc(c.mnemonic)}</span></span>
         ${pips(p.box)}
       </summary>
       <div class="concept-body">
-        ${eli5Block(c.eli5)}
+        ${eli5Block(c.eli5, c.pic)}
         ${formulaBlock(c)}
 
         <div class="hook" style="border-left-color:${esc(set.color)}">
@@ -814,7 +818,7 @@ function viewDrill(arg) {
         flipped
           ? `<div class="flash-answer">
                <div class="name">${esc(card.name)}</div>
-               ${eli5Block(card.eli5)}
+               ${eli5Block(card.eli5, card.pic)}
                ${formulaBlock(card)}
                <div class="hook" style="border-left-color:${esc(set.color)};margin-top:9px">
                  <div class="hook-line">${esc(card.mnemonic)}</div>
