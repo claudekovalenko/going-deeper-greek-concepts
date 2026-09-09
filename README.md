@@ -332,7 +332,24 @@ Two layers, deliberately different:
 Every Greek example the two charts supply is in, with the chart's own reference
 and translation.
 
-## A note on one of the practice exercises
+## Practice exercises
+
+The chapters set practice exercises but print no answers. Where an item is
+unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
+app says on screen that the answer is reasoned rather than the book's, and worth
+checking in class. Ch. 4's dative set is in — thirteen items, covering the ones
+whose category the chapter's own chart settles.
+
+Two of ch. 4's underlined words are deliberately left out because they are
+genuinely arguable, not because they are hard:
+
+- **Matt 15:25, βοήθει μοι.** βοηθέω takes a dative, but *helping* is not one of
+  the six verb types the chart lists for the dative direct object, so it could as
+  easily be read as personal interest.
+- **Eph 2:5, τοῖς παραπτώμασιν.** "Dead in trespasses" sits between sphere,
+  cause and reference, and commentators split on it.
+
+## A note on one of ch. 3's practice exercises
 
 Three of the chapter's four practice exercises are in the quiz. The fourth,
 Matt 11:11's τῶν οὐρανῶν in ἡ βασιλεία τῶν οὐρανῶν, is left out on purpose: it

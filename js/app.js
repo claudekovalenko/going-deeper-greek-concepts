@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v16 · 2026-09-01';
+const BUILD = 'v17 · 2026-09-09';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -874,7 +874,19 @@ function quizPool() {
   for (const q of DATA.extraQuiz) {
     const card = cardById(q.answer);
     if (card && card.type !== 'rule' && selection().some((c) => c.id === card.id)) {
-      items.push({ id: `x:${q.answer}:${items.length}`, prompt: q.prompt, answer: card.id, why: q.why, set: card.set });
+      items.push({
+        id: `x:${q.answer}:${items.length}`,
+        ref: q.ref || null,
+        greek: q.greek ? plain(q.greek) : null,
+        prompt: q.greek ? plain(q.english || '') : q.prompt,
+        target: q.target || null,
+        answer: card.id,
+        why: q.why,
+        // The book sets these exercises without printing answers, so the app
+        // must not pass mine off as the book's.
+        unofficial: !!q.unofficial,
+        set: card.set
+      });
     }
   }
 
@@ -968,6 +980,7 @@ function viewSpot(arg) {
     <section class="card">
       ${item.ref ? `<div class="q-ref">${esc(item.ref)}</div>` : ''}
       ${item.greek ? `<div class="greek q-greek">${esc(item.greek)}</div>` : ''}
+      ${item.target ? `<div class="q-target">which use is <strong>${esc(item.target)}</strong>?</div>` : ''}
       <div class="q-prompt ${item.greek ? 'is-gloss' : ''} ${item.greek && state.hideEnglish ? 'is-hidden' : ''}">
         ${esc(item.prompt)}
       </div>
@@ -994,6 +1007,12 @@ function viewSpot(arg) {
           ? `<div class="verdict">
                <strong>${picked === item.answer ? 'Right.' : `Not quite — it is ${esc(cardById(item.answer).name)}.`}</strong>
                <div class="why">${esc(item.why)}</div>
+               ${
+                 item.unofficial
+                   ? `<p class="why unofficial">From the chapter's practice exercises. The book sets these without
+                        printing answers, so this one is reasoned rather than official — worth checking in class.</p>`
+                   : ''
+               }
                <div class="btnrow split">
                  <button class="btn small" data-action="goto" data-to="#/card/${esc(item.answer)}">Open that card</button>
                  <button class="btn primary" data-action="next-q">Next</button>

@@ -15,7 +15,8 @@
     "key on a group is the bare peg — the acrostic or catchphrase with no sentence round it. The cheat sheet at the top of the Map is built from these.",
     "gist: a few words on the tile itself, so the map is readable without opening anything.",
     "verb / does on a set: the one-word and one-line answer to “what does this case do?”. The hero is built from verb, the cheat sheet's first strip from does.",
-    "pic: one emoji per card, chosen to be the mnemonic's own image. It shows on the Learn card, in the Learn list, and on the BACK of a drill card — never the front, which would give the answer away."
+    "pic: one emoji per card, chosen to be the mnemonic's own image. It shows on the Learn card, in the Learn list, and on the BACK of a drill card — never the front, which would give the answer away.",
+    "unofficial: true marks an item from the chapter's practice exercises. The book prints those questions without answers, so the answer shown is reasoned, not the book's, and the app says so."
   ],
   "sets": [
     {
@@ -3490,6 +3491,136 @@
       "prompt": "σὺ εἶ ὁ ἅγιος (John 6:69) — the underlined ὁ ἅγιος.",
       "answer": "adj-substantival",
       "why": "An adjective with the article and no noun to describe. It has become the noun. ASAP — S."
+    },
+    {
+      "prompt": "ἡ δὲ ἐλθοῦσα προσεκύνει *αὐτῷ* (Matt 15:25)\nshe came and knelt before him",
+      "greek": "ἡ δὲ ἐλθοῦσα προσεκύνει *αὐτῷ* (Matt 15:25)",
+      "english": "she came and knelt before him",
+      "ref": "ch. 4 practice 1a",
+      "target": "αὐτῷ",
+      "answer": "dative-direct-object",
+      "why": "προσκυνέω is a verb of worshipping, and the chart lists worshipping. BEAD — D, devoted verbs.",
+      "unofficial": true
+    },
+    {
+      "prompt": "καὶ εὐθὺς ἐπιγνοὺς ὁ Ἰησοῦς *τῷ πνεύματι* αὐτοῦ (Mark 2:8)\nJesus, knowing at once in his spirit",
+      "greek": "καὶ εὐθὺς ἐπιγνοὺς ὁ Ἰησοῦς *τῷ πνεύματι* αὐτοῦ (Mark 2:8)",
+      "english": "Jesus, knowing at once in his spirit",
+      "ref": "ch. 4 practice 2",
+      "target": "τῷ πνεύματι",
+      "answer": "dative-sphere",
+      "why": "A realm, not a room — the same construction as the chart's own sphere example in Mark 8:12. HIT — I.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ὁ γὰρ ἐσθίων καὶ πίνων κρίμα *ἑαυτῷ* ἐσθίει (1 Cor 11:29)\nhe eats and drinks judgment on himself",
+      "greek": "ὁ γὰρ ἐσθίων καὶ πίνων κρίμα *ἑαυτῷ* ἐσθίει (1 Cor 11:29)",
+      "english": "he eats and drinks judgment on himself",
+      "ref": "ch. 4 practice 3",
+      "target": "ἑαυτῷ",
+      "answer": "dative-personal-interest",
+      "why": "Judgment to his own cost. Personal interest, the disadvantage side. PORT — P.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ἐγὼ … *ὕδατι* βαπτίζω ὑμᾶς (Luke 3:16)\nI baptise you with water",
+      "greek": "ἐγὼ … *ὕδατι* βαπτίζω ὑμᾶς (Luke 3:16)",
+      "english": "I baptise you with water",
+      "ref": "ch. 4 practice 4",
+      "target": "ὕδατι",
+      "answer": "dative-means",
+      "why": "Water is a tool with no will of its own. MAMA — M, not agency.",
+      "unofficial": true
+    },
+    {
+      "prompt": "τί ποιεῖτε ὃ οὐκ ἔξεστιν *τοῖς σάββασιν*; (Luke 6:2)\nWhy are you doing what is not lawful on the Sabbath?",
+      "greek": "τί ποιεῖτε ὃ οὐκ ἔξεστιν *τοῖς σάββασιν*; (Luke 6:2)",
+      "english": "Why are you doing what is not lawful on the Sabbath?",
+      "ref": "ch. 4 practice 5",
+      "target": "τοῖς σάββασιν",
+      "answer": "dative-time",
+      "why": "A point on the calendar. HIT — T.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ἀλλὰ *παρρησίᾳ* περὶ τοῦ πατρὸς ἀπαγγελῶ ὑμῖν (John 16:25)\nbut I will tell you plainly about the Father",
+      "greek": "ἀλλὰ *παρρησίᾳ* περὶ τοῦ πατρὸς ἀπαγγελῶ ὑμῖν (John 16:25)",
+      "english": "but I will tell you plainly about the Father",
+      "ref": "ch. 4 practice 6",
+      "target": "παρρησίᾳ",
+      "answer": "dative-manner",
+      "why": "The same word the chart files under manner at Mark 8:32. A style, not a tool. MAMA — M.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ἠκολούθει δὲ *τῷ Ἰησοῦ* Σίμων Πέτρος (John 18:15)\nSimon Peter was following Jesus",
+      "greek": "ἠκολούθει δὲ *τῷ Ἰησοῦ* Σίμων Πέτρος (John 18:15)",
+      "english": "Simon Peter was following Jesus",
+      "ref": "ch. 4 practice 7a",
+      "target": "τῷ Ἰησοῦ",
+      "answer": "dative-direct-object",
+      "why": "ἀκολουθέω is a verb of following, and the chart lists following. BEAD — D.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ὁ δὲ μαθητὴς ἐκεῖνος … *συν*εισῆλθεν *τῷ Ἰησοῦ* (John 18:15)\nthat disciple went in with Jesus",
+      "greek": "ὁ δὲ μαθητὴς ἐκεῖνος … *συν*εισῆλθεν *τῷ Ἰησοῦ* (John 18:15)",
+      "english": "that disciple went in with Jesus",
+      "ref": "ch. 4 practice 7b",
+      "target": "τῷ Ἰησοῦ",
+      "answer": "dative-association",
+      "why": "συν- on the verb is the giveaway: he went in alongside Jesus, not using him. MAMA — A.",
+      "unofficial": true
+    },
+    {
+      "prompt": "ὥσπερ γὰρ ὑμεῖς ποτε ἠπειθήσατε *τῷ θεῷ* (Rom 11:30)\njust as you once disobeyed God",
+      "greek": "ὥσπερ γὰρ ὑμεῖς ποτε ἠπειθήσατε *τῷ θεῷ* (Rom 11:30)",
+      "english": "just as you once disobeyed God",
+      "ref": "ch. 4 practice 8a",
+      "target": "τῷ θεῷ",
+      "answer": "dative-direct-object",
+      "why": "ἀπειθέω is a verb of obeying — disobeying is the same list. BEAD — D.",
+      "unofficial": true
+    },
+    {
+      "prompt": "νῦν δὲ ἠλεήθητε *τῇ τούτων ἀπειθείᾳ* (Rom 11:30)\nnow you have received mercy because of their disobedience",
+      "greek": "νῦν δὲ ἠλεήθητε *τῇ τούτων ἀπειθείᾳ* (Rom 11:30)",
+      "english": "now you have received mercy because of their disobedience",
+      "ref": "ch. 4 practice 8b",
+      "target": "τῇ ἀπειθείᾳ",
+      "answer": "dative-cause",
+      "why": "Slot in “because of” and it holds. BEAD — B.",
+      "unofficial": true
+    },
+    {
+      "prompt": "καθὼς θέλετε ἵνα ποιῶσιν *ὑμῖν* οἱ ἄνθρωποι, ποιεῖτε *αὐτοῖς* ὁμοίως (Luke 6:31)\nas you want people to do to you, do the same to them",
+      "greek": "καθὼς θέλετε ἵνα ποιῶσιν *ὑμῖν* οἱ ἄνθρωποι, ποιεῖτε *αὐτοῖς* ὁμοίως (Luke 6:31)",
+      "english": "as you want people to do to you, do the same to them",
+      "ref": "ch. 4 practice 9",
+      "target": "ὑμῖν / αὐτοῖς",
+      "answer": "dative-indirect-object",
+      "why": "The doing lands on them: they are who it is done to. PORT — T.",
+      "unofficial": true
+    },
+    {
+      "prompt": "*συν*εζωοποίησεν *τῷ Χριστῷ* (Eph 2:5)\nhe made us alive together with Christ",
+      "greek": "*συν*εζωοποίησεν *τῷ Χριστῷ* (Eph 2:5)",
+      "english": "he made us alive together with Christ",
+      "ref": "ch. 4 practice 10b",
+      "target": "τῷ Χριστῷ",
+      "answer": "dative-association",
+      "why": "συν- again. Alongside Christ, not by means of him. MAMA — A.",
+      "unofficial": true
+    },
+    {
+      "prompt": "*χάριτί* ἐστε σεσῳσμένοι (Eph 2:5)\nby grace you have been saved",
+      "greek": "*χάριτί* ἐστε σεσῳσμένοι (Eph 2:5)",
+      "english": "by grace you have been saved",
+      "ref": "ch. 4 practice 10c",
+      "target": "χάριτι",
+      "answer": "dative-means",
+      "why": "Grace is the instrument, not a person acting. MAMA — M.",
+      "unofficial": true
     }
   ]
 }

@@ -1159,3 +1159,19 @@ code {
 .flash .eli5-pic {
   font-size: 34px;
 }
+
+/* Which word the question is actually about. */
+.q-target {
+  font-size: 13px;
+  color: var(--muted);
+  margin: -2px 0 8px;
+}
+
+/* An answer that is reasoned rather than the book's, and says so. */
+.why.unofficial {
+  border-left: 2px solid var(--warn);
+  padding-left: 9px;
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: color-mix(in srgb, var(--warn) 70%, var(--text));
+}
