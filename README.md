@@ -135,6 +135,11 @@ fences.
   The front rotates between three questions — *what is the hook*, *which use is
   this hook*, *which use does this test find* — so you are learning the concept
   rather than the shape of a card.
+- **Test** — the chapters' own practice exercises, run as a test rather than a
+  drill: a fixed set, each question asked exactly once in a shuffled order, a
+  mark at the end and a list of what you missed with a way back to each card.
+  Filterable by case, and it still feeds the Leitner boxes, so a question you
+  get wrong comes round again in the drill. `#/test`, `#/test/dative`.
 - **Spot it** — multiple choice on real examples, and the **Greek is the
   question**: the verse comes first and large, the English sits under it as a
   gloss you can blur out with one tap. Items carrying Greek are drawn twice as
@@ -337,8 +342,9 @@ and translation.
 The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
-checking in class. Ch. 4's dative set is in — thirteen items, covering the ones
-whose category the chapter's own chart settles.
+checking in class. Seventeen items are in — ch. 3's four and ch. 4's thirteen — covering the ones
+whose category the chapters' own charts settle. **Spot it → Take the book's
+practice test** runs them as a test.
 
 Two of ch. 4's underlined words are deliberately left out because they are
 genuinely arguable, not because they are hard:

@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v17 · 2026-09-09';
+const BUILD = 'v18 · 2026-09-09';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -96,6 +96,7 @@ function usePerson(id) {
   quiz = null;
   current = null;
   flipped = false;
+  test = null;
   render();
 }
 
@@ -284,7 +285,7 @@ function parseRoute(hash) {
   return { name: name || 'map', arg: arg || null };
 }
 
-const VIEW_NAMES = new Set(['map', 'learn', 'drill', 'spot', 'progress', 'card', 'tag', 'confusions']);
+const VIEW_NAMES = new Set(['map', 'learn', 'drill', 'spot', 'test', 'progress', 'card', 'tag', 'confusions']);
 
 function go(hash) {
   if (location.hash === hash) render();
@@ -975,6 +976,15 @@ function viewSpot(arg) {
         <span class="score">${s.right} / ${s.asked} right</span>
         <span class="score">streak ${s.streak} · best ${s.best}</span>
       </div>
+      ${
+        practiceItems().length
+          ? `<div class="btnrow">
+               <button class="btn small" data-action="goto" data-to="#/test/${esc(state.filter)}">
+                 Take the book's practice test (${practiceItems().length})
+               </button>
+             </div>`
+          : ''
+      }
     </section>
 
     <section class="card">
@@ -1016,6 +1026,160 @@ function viewSpot(arg) {
                <div class="btnrow split">
                  <button class="btn small" data-action="goto" data-to="#/card/${esc(item.answer)}">Open that card</button>
                  <button class="btn primary" data-action="next-q">Next</button>
+               </div>
+             </div>`
+          : ''
+      }
+    </section>`;
+}
+
+/* ---------------- view: test ---------------- */
+
+/**
+ * A test is not a drill. The drill is an endless shuffle you dip into; a test
+ * is a fixed set of questions you finish, with a mark at the end and a list of
+ * what you got wrong. These are the book's own practice exercises.
+ */
+let test = null; // { items, i, picked, options, answers: [{ item, picked }] }
+
+const practiceItems = () => quizPool().filter((it) => it.unofficial);
+
+function startTest() {
+  const items = shuffle(practiceItems());
+  test = items.length ? { items, i: 0, picked: null, options: optionsFor(items[0]), answers: [] } : null;
+}
+
+function testAnswer(pick) {
+  if (!test || test.picked) return;
+  test.picked = pick;
+  const item = test.items[test.i];
+  const correct = pick === item.answer;
+  test.answers.push({ item, picked: pick, correct });
+  // A test still feeds the boxes: getting one wrong here should bring the card
+  // round again in the drill.
+  grade(item.answer, correct);
+  save();
+}
+
+function testNext() {
+  if (!test) return;
+  test.i += 1;
+  test.picked = null;
+  test.options = test.i < test.items.length ? optionsFor(test.items[test.i]) : [];
+}
+
+function viewTest(arg) {
+  if (arg && isFilter(arg) && state.filter !== arg) {
+    state.filter = arg;
+    test = null;
+  }
+
+  const pool = practiceItems();
+  if (!pool.length) {
+    return `
+      <section class="card">
+        <h2>Test — ${esc(filterLabel())}</h2>
+        <p class="empty">No practice exercises in this set yet. They arrive a chapter at a time.</p>
+        <div class="btnrow"><button class="btn" data-action="goto" data-to="#/test/all">Try every chapter</button></div>
+      </section>`;
+  }
+
+  if (!test) {
+    return `
+      <section class="card">
+        <h2>Test — ${esc(filterLabel())}</h2>
+        ${filterChips('test')}
+        <p class="note">${pool.length} questions, each one asked once, in a shuffled order. You get a mark at the end
+           and a list of what you missed.</p>
+        <p class="note">These are the chapters' own practice exercises. The book sets them without printing answers,
+           so the answers here are reasoned — worth checking in class.</p>
+        <div class="btnrow"><button class="btn primary wide" data-action="test-start">Start the test</button></div>
+      </section>`;
+  }
+
+  /* ---- the mark ---- */
+  if (test.i >= test.items.length) {
+    const right = test.answers.filter((a) => a.correct).length;
+    const missed = test.answers.filter((a) => !a.correct);
+    const pct = Math.round((right / test.answers.length) * 100);
+    return `
+      <section class="hero">
+        <div class="hero-line">Test finished</div>
+        <div class="hero-mnemonic">${right} of ${test.answers.length}</div>
+        ${bar(right, test.answers.length)}
+        <div class="hero-sub">${pct}%${missed.length ? '' : ' — nothing missed'}</div>
+        <div class="btnrow split">
+          <button class="btn primary" data-action="test-start">Take it again</button>
+          <button class="btn" data-action="goto" data-to="#/spot">Back to Spot it</button>
+        </div>
+      </section>
+
+      ${
+        missed.length
+          ? `<section class="card">
+               <h2>What to look at</h2>
+               ${missed
+                 .map(
+                   ({ item, picked }) => `
+                 <div class="missed">
+                   <div class="ex-ref">${esc(item.ref || '')}</div>
+                   ${item.greek ? `<div class="greek">${esc(item.greek)}</div>` : ''}
+                   <div class="ex-note">You said <strong>${esc(cardById(picked).name)}</strong> —
+                     it is <strong>${esc(cardById(item.answer).name)}</strong>.</div>
+                   <div class="ex-note">${esc(item.why)}</div>
+                   <div class="btnrow">
+                     <button class="btn small" data-action="goto" data-to="#/card/${esc(item.answer)}">Open that card</button>
+                   </div>
+                 </div>`
+                 )
+                 .join('')}
+             </section>`
+          : ''
+      }`;
+  }
+
+  /* ---- a question ---- */
+  const item = test.items[test.i];
+  const { picked, options } = test;
+  const soFar = test.answers.filter((a) => a.correct).length;
+
+  return `
+    <section class="card">
+      <div class="card-head">
+        <h2>Test — ${esc(filterLabel())}</h2>
+        <span class="muted" style="font-size:12px">${test.i + 1} of ${test.items.length} · ${soFar} right</span>
+      </div>
+      ${bar(test.i, test.items.length)}
+    </section>
+
+    <section class="card">
+      ${item.ref ? `<div class="q-ref">${esc(item.ref)}</div>` : ''}
+      ${item.greek ? `<div class="greek q-greek">${esc(item.greek)}</div>` : ''}
+      ${item.target ? `<div class="q-target">which use is <strong>${esc(item.target)}</strong>?</div>` : ''}
+      <div class="q-prompt is-gloss ${state.hideEnglish ? 'is-hidden' : ''}">${esc(item.prompt)}</div>
+      <button class="btn small ghost" data-action="toggle-english">
+        ${state.hideEnglish ? 'Show the English' : 'Hide the English'}
+      </button>
+      <div class="options">
+        ${options
+          .map((id) => {
+            const c = cardById(id);
+            const cls = !picked ? '' : id === item.answer ? 'correct' : id === picked ? 'wrong' : '';
+            return `<button class="option ${cls}" data-action="test-answer" data-pick="${esc(id)}" ${picked ? 'disabled' : ''}>
+                      ${esc(c.name)}<span class="concept-hook">${esc(c.mnemonic)}</span>
+                    </button>`;
+          })
+          .join('')}
+      </div>
+      ${
+        picked
+          ? `<div class="verdict">
+               <strong>${picked === item.answer ? 'Right.' : `Not quite — it is ${esc(cardById(item.answer).name)}.`}</strong>
+               <div class="why">${esc(item.why)}</div>
+               <div class="btnrow">
+                 <button class="btn primary wide" data-action="test-next">
+                   ${test.i + 1 < test.items.length ? 'Next question' : 'See the mark'}
+                 </button>
                </div>
              </div>`
           : ''
@@ -1168,6 +1332,7 @@ const VIEWS = {
   card: viewCard,
   drill: viewDrill,
   spot: viewSpot,
+  test: viewTest,
   progress: viewProgress,
   confusions: () => `<section class="card"><h2>Confusion pairs</h2>${DATA.confusions.map(confusionRow).join('')}</section>`
 };
@@ -1184,7 +1349,8 @@ function render() {
 
   $('#app').innerHTML = (VIEWS[route.name] || viewMap)(route.arg);
 
-  const tabFor = route.name === 'card' ? 'learn' : route.name === 'confusions' ? 'map' : route.name;
+  const tabFor =
+    route.name === 'card' ? 'learn' : route.name === 'confusions' ? 'map' : route.name === 'test' ? 'spot' : route.name;
   $$('.tab').forEach((el) => el.classList.toggle('on', el.dataset.view === tabFor));
 
   const who = $('#whoami');
@@ -1275,6 +1441,21 @@ document.addEventListener('click', (e) => {
   if (action === 'toggle-english') {
     state.hideEnglish = !state.hideEnglish;
     save();
+    return render();
+  }
+
+  if (action === 'test-start') {
+    startTest();
+    return render();
+  }
+
+  if (action === 'test-answer') {
+    testAnswer(el.dataset.pick);
+    return render();
+  }
+
+  if (action === 'test-next') {
+    testNext();
     return render();
   }
 

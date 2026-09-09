@@ -3438,24 +3438,44 @@
       "why": "ὁ λόγος has the article and wins the pecking order, so θεός is the predicate. No article, and still definite."
     },
     {
-      "prompt": "ἐμβὰς δὲ εἰς ἓν τῶν πλοίων (Luke 5:3) — the underlined τῶν πλοίων.",
+      "prompt": "he got into one of the boats",
+      "greek": "ἐμβὰς δὲ εἰς ἓν *τῶν πλοίων* (Luke 5:3)",
+      "english": "he got into one of the boats",
+      "ref": "ch. 3 practice 2",
+      "target": "τῶν πλοίων",
       "answer": "genitive-partitive",
-      "why": "The boats are the whole; the one boat is the slice. Book practice exercise 2."
+      "why": "The boats are the whole; the one boat is the slice.",
+      "unofficial": true
     },
     {
-      "prompt": "μνημονεύετε τῆς γυναικὸς Λώτ (Luke 17:32) — the underlined τῆς γυναικός.",
+      "prompt": "Remember Lot's wife",
+      "greek": "μνημονεύετε *τῆς γυναικὸς* Λώτ (Luke 17:32)",
+      "english": "Remember Lot's wife",
+      "ref": "ch. 3 practice 3",
+      "target": "τῆς γυναικός",
       "answer": "genitive-direct-object",
-      "why": "μνημονεύω is a verb of memory — sensation — so it takes its object in the genitive. Book practice exercise 3."
+      "why": "μνημονεύω is a verb of memory — sensation — so it takes its object in the genitive.",
+      "unofficial": true
     },
     {
-      "prompt": "ὁ δὲ μικρότερος … μείζων αὐτοῦ ἐστιν (Matt 11:11) — the underlined αὐτοῦ.",
+      "prompt": "the least … is greater than he",
+      "greek": "ὁ δὲ μικρότερος … μείζων *αὐτοῦ* ἐστιν (Matt 11:11)",
+      "english": "the least … is greater than he",
+      "ref": "ch. 3 practice 1",
+      "target": "αὐτοῦ",
       "answer": "genitive-comparison",
-      "why": "μείζων is a comparative, so the genitive beside it is the “than”. Book practice exercise 1, second underline."
+      "why": "μείζων is a comparative, so the genitive beside it is the “than”.",
+      "unofficial": true
     },
     {
-      "prompt": "καὶ Σίμων ὁ ζηλωτὴς καὶ Ἰούδας Ἰακώβου (Acts 1:13) — the underlined Ἰακώβου.",
+      "prompt": "and Simon the Zealot, and Judas son of James",
+      "greek": "καὶ Σίμων ὁ ζηλωτὴς καὶ Ἰούδας *Ἰακώβου* (Acts 1:13)",
+      "english": "and Simon the Zealot, and Judas son of James",
+      "ref": "ch. 3 practice 4",
+      "target": "Ἰακώβου",
       "answer": "genitive-relationship",
-      "why": "“Judas [son] of James.” The kin word is left out for you to supply. Book practice exercise 4."
+      "why": "“Judas [son] of James.” The kin word is left out for you to supply.",
+      "unofficial": true
     },
     {
       "prompt": "Λάζαρε, δεῦρο ἔξω (John 11:43) — the underlined Λάζαρε.",

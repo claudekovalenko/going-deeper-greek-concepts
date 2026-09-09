@@ -1175,3 +1175,14 @@ code {
   font-size: 12.5px;
   color: color-mix(in srgb, var(--warn) 70%, var(--text));
 }
+
+/* A missed question on the test's result page. */
+.missed + .missed {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.missed .btnrow {
+  margin-top: 8px;
+}
