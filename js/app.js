@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v18 · 2026-09-09';
+const BUILD = 'v19 · 2026-09-10';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -482,6 +482,101 @@ function cheatSheet() {
     </section>`;
 }
 
+/* ---------------- the peg ----------------
+ * Every card fills one slot of its group's key: the S of SPA, the "Point" of
+ * Point · Pronoun · Poof. Until now the letter lived on the map tiles and the
+ * card lived in the Learn list, and the two never appeared together — so the
+ * acrostic was something you read once and the card was something else you
+ * read later. The peg renders the whole key with this card's slot lit and the
+ * rest dimmed, and it is the first thing on the card, in the drill answer and
+ * in the list row. Same shape everywhere, so the letter and the use are never
+ * on screen apart.
+ */
+
+function groupOf(card) {
+  const set = setById(card.set);
+  return (set.groups || []).find((g) => g.id === card.group) || null;
+}
+
+/** Split a key into its slots: SPA -> S|P|A, "Point · Pronoun" -> two words. */
+function keyParts(key) {
+  if (!key) return [];
+  if (key.includes('\u00b7')) return key.split('\u00b7').map((s, i) => ({ text: s.trim(), slot: i }));
+  if (/^[A-Z][A-Z ]*$/.test(key)) {
+    let n = -1;
+    return [...key].map((ch) => (ch === ' ' ? { text: ' ', slot: -1 } : { text: ch, slot: ++n }));
+  }
+  return [{ text: key, slot: 0 }];
+}
+
+/** Which slot of its group's key a card fills, or null when it is an extra. */
+function pegOf(card) {
+  const g = groupOf(card);
+  if (!g || !g.key || !card.tile) return null;
+  const parts = keyParts(g.key);
+  const slot = DATA.cards.filter((c) => c.group === card.group && c.tile).findIndex((c) => c.id === card.id);
+  if (slot < 0 || !parts.some((p) => p.slot === slot)) return null;
+  return { key: g.key, parts, slot, tile: card.tile, letters: card.tile.length === 1 };
+}
+
+/** The whole key, one slot lit. `slot` of -1 lights nothing (a group heading). */
+function keyHtml(parts, slot, cls) {
+  return `<span class="peg-key ${cls || ''}">${parts
+    .map((part) =>
+      part.text === ' '
+        ? '<span class="peg-gap"></span>'
+        : `<span class="peg-part${part.slot === slot ? ' on' : ''}">${esc(part.text)}</span>`
+    )
+    .join('')}</span>`;
+}
+
+/**
+ * A group heading without the key it ends with: the chip beside it now says
+ * "PORT", so "Pure \u2014 to or for: PORT" would say it twice. Only strips when
+ * the tail after the last dash or colon is the key itself, which leaves
+ * "Other \u2014 the odd BEADs" alone.
+ */
+function groupTitle(group) {
+  if (!group.key) return group.name;
+  const m = group.name.match(/^(.*?)\s*[\u2014:-]\s*(?:the\s+)?([^\u2014:]+?)(?:\s+shot)?$/i);
+  return m && m[2].toLowerCase() === group.key.toLowerCase() ? m[1] : group.name;
+}
+
+/** The key as a heading chip, nothing lit — used above a group's tiles. */
+function keyChip(group) {
+  return group.key ? keyHtml(keyParts(group.key), -1, 'peg-chip') : '';
+}
+
+/** The card's mnemonic, led by its slot in the key. Opens every card. */
+function pegHead(card) {
+  const set = setById(card.set);
+  const peg = pegOf(card);
+  const line = `<div class="hook-line">${esc(card.mnemonic)}</div>
+      <div class="hook-why">${esc(card.mnemonicWhy)}</div>`;
+
+  if (!peg) {
+    return `<div class="peghead is-extra" style="--accent:${esc(set.color)}">
+      <div class="peg-of">Rule \u2014 not one of the letters</div>
+      ${line}
+    </div>`;
+  }
+
+  const tie = peg.letters ? `${esc(peg.tile)} is for ${esc(card.short)}` : esc(card.short);
+  return `<div class="peghead" style="--accent:${esc(set.color)}">
+      ${keyHtml(peg.parts, peg.slot, 'peg-lg')}
+      <div class="peg-of">${tie}</div>
+      ${line}
+    </div>`;
+}
+
+/** The same peg, shrunk to a chip for a collapsed list row. */
+function pegMini(card) {
+  const peg = pegOf(card);
+  if (!peg) return '<span class="peg-key peg-mini is-extra"><span class="peg-part">+</span></span>';
+  if (!peg.letters) return `<span class="peg-key peg-mini"><span class="peg-part on">${esc(peg.tile)}</span></span>`;
+  return keyHtml(peg.parts, peg.slot, 'peg-mini');
+}
+
 /* ---------------- view: map ---------------- */
 
 /** The acrostic, split into one tappable tile per letter. */
@@ -493,7 +588,10 @@ function acroTiles(set) {
       if (!mine.length) return '';
       return `
         <div>
-          <h3>${esc(g.name)}</h3>
+          <div class="group-head">
+            <h3>${esc(groupTitle(g))}</h3>
+            ${keyChip(g)}
+          </div>
           ${g.mnemonic ? `<p class="group-hook">${esc(g.mnemonic)}</p>` : ''}
           <div class="acro">
             ${mine
@@ -502,7 +600,7 @@ function acroTiles(set) {
               <button class="acro-item" data-action="open-card" data-card="${esc(c.id)}"
                       style="border-left-color:${esc(set.color)}">
                 ${c.pic ? `<span class="acro-pic" aria-hidden="true">${esc(c.pic)}</span>` : ''}
-                <span class="acro-letter">${esc(c.tile || c.short.slice(0, 1))}</span>
+                <span class="acro-letter${c.tile ? '' : ' is-extra'}">${esc(c.tile || '+')}</span>
                 <span class="acro-word">${esc(c.short)}</span>
                 ${c.gist ? `<span class="acro-gist">${esc(c.gist)}</span>` : ''}
               </button>`
@@ -638,17 +736,13 @@ function conceptCard(c, { open = false } = {}) {
       <summary>
         ${c.pic ? `<span class="concept-pic" aria-hidden="true">${esc(c.pic)}</span>` : dot(set.color)}
         <span class="concept-name">${esc(c.name)}<span class="concept-hook">${esc(c.mnemonic)}</span></span>
+        ${pegMini(c)}
         ${pips(p.box)}
       </summary>
       <div class="concept-body">
+        ${pegHead(c)}
         ${eli5Block(c.eli5, c.pic)}
         ${formulaBlock(c)}
-
-        <div class="hook" style="border-left-color:${esc(set.color)}">
-          <span class="label">Mnemonic</span>
-          <div class="hook-line">${esc(c.mnemonic)}</div>
-          <div class="hook-why">${esc(c.mnemonicWhy)}</div>
-        </div>
 
         <div class="spot">
           <span class="label">How to spot it</span>
@@ -706,7 +800,11 @@ function viewLearn(arg) {
           ${groups
             .map(
               (g) => `
-            <h3>${esc(g.name)}</h3>
+            <div class="group-head">
+              <h3>${esc(groupTitle(g))}</h3>
+              ${keyChip(g)}
+            </div>
+            ${g.mnemonic ? `<p class="group-hook">${esc(g.mnemonic)}</p>` : ''}
             <p class="note" style="margin:0 0 8px">${esc(g.expand)}</p>
             ${cards
               .filter((c) => c.group === g.id)
@@ -754,18 +852,30 @@ function viewCard(arg) {
 /* ---------------- view: drill ---------------- */
 
 /**
- * Three ways of asking about one card, so the drill never becomes "recognise
+ * Four ways of asking about one card, so the drill never becomes "recognise
  * the shape of the front of this card". Which one you get depends on how many
  * times you have seen it, so early reps are recognition and later ones recall.
+ * The first asks the peg itself \u2014 the lit letter of the key, nothing else \u2014
+ * because that is the direction you need in the exam: you remember PORT, and
+ * the O has to give you back "owns it".
  */
 const PROMPTS = [
+  { label: 'Which use is this letter?', front: (c) => pegFront(c), html: true, small: false },
   { label: 'What is the hook?', front: (c) => c.name, small: false },
   { label: 'Which use is this?', front: (c) => c.mnemonic, small: false },
   { label: 'Which use does this test find?', front: (c) => c.spotIt, small: true }
 ];
 
+/** The key with this card's slot lit, as the whole face of the flashcard. */
+function pegFront(card) {
+  const peg = pegOf(card);
+  return peg ? keyHtml(peg.parts, peg.slot, 'peg-lg peg-front') : esc(card.name);
+}
+
 function promptFor(card) {
-  return PROMPTS[progressOf(card.id).seen % PROMPTS.length];
+  const i = progressOf(card.id).seen % PROMPTS.length;
+  // A card with no slot in its key has nothing to ask in the first mode.
+  return !pegOf(card) && i === 0 ? PROMPTS[1] : PROMPTS[i];
 }
 
 /**
@@ -813,18 +923,17 @@ function viewDrill(arg) {
 
     <section class="card flash" style="--accent:${esc(set.color)}">
       <div class="flash-prompt-label">${dot(set.color)}${esc(prompt.label)}</div>
-      <div class="flash-prompt ${prompt.small ? 'is-small' : ''}">${esc(prompt.front(card))}</div>
+      <div class="flash-prompt ${prompt.small ? 'is-small' : ''}">${
+        prompt.html ? prompt.front(card) : esc(prompt.front(card))
+      }</div>
 
       ${
         flipped
           ? `<div class="flash-answer">
                <div class="name">${esc(card.name)}</div>
+               ${pegHead(card)}
                ${eli5Block(card.eli5, card.pic)}
                ${formulaBlock(card)}
-               <div class="hook" style="border-left-color:${esc(set.color)};margin-top:9px">
-                 <div class="hook-line">${esc(card.mnemonic)}</div>
-                 <div class="hook-why">${esc(card.mnemonicWhy)}</div>
-               </div>
                <div class="spot" style="margin-top:9px"><span class="label">Spot it</span>${esc(card.spotIt)}</div>
                ${
                  card.examples && card.examples[0]

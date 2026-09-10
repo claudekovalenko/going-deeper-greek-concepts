@@ -1186,3 +1186,140 @@ code {
 .missed .btnrow {
   margin-top: 8px;
 }
+
+/* ---------- the peg ----------
+   One shape for "which letter of the key is this card", used at three sizes:
+   peg-lg heads the card and the drill answer, peg-mini rides the collapsed
+   row, peg-chip labels a group. The lit slot is the card; the dim ones are
+   the letters either side of it, which is the part that was missing — a
+   letter on its own is not a peg, a letter with its neighbours is. */
+
+.peg-key {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.peg-part {
+  color: color-mix(in srgb, var(--muted) 72%, transparent);
+  transition: none;
+}
+
+.peg-part.on {
+  color: var(--accent);
+}
+
+.peg-gap {
+  width: 7px;
+}
+
+.peg-lg {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.peg-lg .peg-part.on {
+  /* The one slot that is this card, boxed so it reads before the words do. */
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 6px;
+  padding: 1px 5px;
+  margin: 0 2px;
+}
+
+.peg-mini {
+  font-size: 11px;
+  letter-spacing: 1px;
+  gap: 1.5px;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+.peg-mini .peg-part.on {
+  color: var(--accent);
+}
+
+.peg-mini.is-extra .peg-part {
+  color: color-mix(in srgb, var(--muted) 50%, transparent);
+}
+
+.peg-chip {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.peg-chip .peg-part {
+  color: color-mix(in srgb, var(--accent) 85%, var(--text));
+}
+
+.peghead {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-elev-2));
+  border-left: 3px solid var(--accent);
+  border-radius: 0 11px 11px 0;
+  padding: 11px 13px;
+}
+
+.peghead .peg-of {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--accent) 60%, var(--text));
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+.peghead .hook-line {
+  margin-top: 3px;
+}
+
+.peghead.is-extra {
+  background: var(--bg-elev-2);
+  border-left-color: var(--line);
+}
+
+.peghead.is-extra .peg-of {
+  color: var(--muted);
+}
+
+.flash-answer .peghead {
+  margin-top: 9px;
+}
+
+.group-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.group-head {
+  margin: 14px 0 8px;
+}
+
+.group-head h3 {
+  margin: 0;
+}
+
+.acro-letter.is-extra {
+  /* Not a letter of the key. Say so, instead of inventing one. */
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.peg-front {
+  /* The whole face of a flashcard: the key, one slot lit, nothing else. */
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 6px 0;
+}
+
+.peg-front .peg-part.on {
+  padding: 2px 8px;
+}
