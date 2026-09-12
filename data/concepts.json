@@ -92,8 +92,8 @@
       "color": "#c8642a",
       "classDate": "2026-08-25",
       "bigIdea": "The accusative fences the verb in. It says how far the action reaches — onto whom, how far, in what way.",
-      "masterMnemonic": "The object goes on DATES, then gets the MMR shot.",
-      "masterMnemonicWhy": "Noun-like: the direct object and its four twists spell DATES — Direct object, Alias, Two, Echo, Sub. Adverb-like: the MMR shot — Measure, Manner, Respect. How far? How? How so?",
+      "masterMnemonic": "The object joins the CADETS, then gets the MMR shot.",
+      "masterMnemonicWhy": "Noun-like: the CADETS — Complement, Alias, Direct object, Echo, Two, Sub. Adverb-like: the MMR shot — Measure, Manner, Respect. How far? How? How so?",
       "groups": [
         {
           "id": "accusative-overview",
@@ -106,12 +106,12 @@
         },
         {
           "id": "accusative-substantival",
-          "name": "Substantival (noun-like) — DATES",
-          "key": "DATES",
-          "mnemonic": "D-A-T-E-S — take the object out on five DATES.",
-          "expand": "Direct object · Alias (apposition) · Two (double) · Echo (cognate) · Sub (subject of an infinitive)",
-          "spot": "🌹",
-          "scene": "Five dates in the yard: a glove 🧤 catches what is thrown, a name tag 🏷️ calls it something else, a 2️⃣ means two at once, a loop 🔁 echoes the verb straight back, and a runner 🏃 takes off as the subject of an infinitive."
+          "name": "Substantival (noun-like) — CADETS",
+          "key": "CADETS",
+          "mnemonic": "C-A-D-E-T-S — six cadets line up, and the object is one of them.",
+          "expand": "Complement (calls it something) · Alias (apposition) · Direct object · Echo (cognate) · Two (person + thing) · Sub (subject of an infinitive)",
+          "spot": "🪖",
+          "scene": "Six cadets on parade in the yard: one wears a medal 🎖️ that says what he is called, one wears a name tag 🏷️, one holds a glove 🧤 to catch what is thrown, one shouts his own name back 🔁, one 2️⃣ is handed two things at once, and one breaks rank and runs 🏃 — the only one giving orders instead of taking them."
         },
         {
           "id": "accusative-adverbial",
@@ -125,7 +125,7 @@
       ],
       "place": "🚧",
       "placeName": "The Fenced Yard",
-      "scene": "Everything happens inside the fence 🚧. In the yard you go on five DATES 🌹, then take the MMR jab 💉."
+      "scene": "Everything happens inside the fence 🚧. In the yard six CADETS 🪖 line up for inspection, then take the MMR jab 💉."
     },
     {
       "id": "genitive",
@@ -776,44 +776,54 @@
       "tile": "The fence"
     },
     {
-      "id": "direct-object",
+      "id": "double-accusative-complement",
       "set": "accusative",
       "group": "accusative-substantival",
-      "name": "Direct Object",
-      "pic": "🧤",
-      "eli5": "This is the catcher. “I hit Ivan.” Ivan got hit.",
+      "name": "Double Accusative — Object and Complement",
+      "pic": "🎖️",
+      "eli5": "You call the thing a name. “He gave his life AS a ransom.” The word “as” slips right in.",
       "formula": {
         "pattern": [
           "verb",
-          "whom / what?"
+          "the thing",
+          "what you call it"
         ],
         "filled": [
-          "I hit",
-          "Ivan"
-        ]
+          "he gave",
+          "his life",
+          "as a ransom"
+        ],
+        "note": "Both are accusative. The second one is not a second victim — it is a label."
       },
-      "short": "Direct object",
-      "gist": "catches the action",
-      "tile": "D",
-      "oneLine": "What the verb lands on. By far the most common one.",
-      "mnemonic": "DATES — D: the verb throws, the object catches.",
-      "mnemonicWhy": "The plain one, and the trunk the other four grow off. Get this solid first.",
-      "spotIt": "After the verb, ask: whom? what?",
-      "bookDef": "Serves as the recipient of the action.",
+      "short": "Complement",
+      "gist": "Calls it something",
+      "tile": "C",
+      "oneLine": "Two accusatives, where the second says what the first is called or made.",
+      "mnemonic": "CADETS — C: complement, you Call it something.",
+      "mnemonicWhy": "One test, one word: put “as” between the two accusatives. “His life AS a ransom.” “You AS friends.” If “as” fits, the second one is the complement.",
+      "spotIt": "Two accusatives with no “and” between them, and “as” slips in: object + complement.",
+      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
       "examples": [
         {
-          "ref": "English drill",
-          "greek": null,
-          "english": "I hit *Ivan*.",
-          "note": "Ivan catches the hitting."
+          "ref": "Mark 10:45",
+          "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
+          "english": "to give his *life* as a *ransom* for many",
+          "note": "life is the object, ransom is what it was given as. “As” slips right in."
         },
         {
-          "ref": "John 3:16",
-          "greek": "οὕτως γὰρ ἠγάπησεν ὁ θεὸς *τὸν κόσμον*",
-          "english": "For God so loved *the world*",
-          "note": "The world is what the loving lands on."
+          "ref": "John 15:15",
+          "greek": "οὐκέτι λέγω *ὑμᾶς* *δούλους* … *ὑμᾶς* δὲ εἴρηκα *φίλους*",
+          "english": "I no longer call *you* *servants* … but I have called *you* *friends*",
+          "note": "Same construction twice in one verse. You are the object; servants and friends are what you get called."
+        },
+        {
+          "ref": "1 Tim 2:6",
+          "greek": "ὁ δοὺς *ἑαυτὸν* *ἀντίλυτρον* ὑπὲρ πάντων",
+          "english": "who gave *himself* as *a ransom* for all",
+          "note": "himself is the object, ransom is the label."
         }
       ],
+      "watchOut": "Not apposition. Apposition renames something by what it already is; a complement says what it is being called, made or given as — and there is a verb doing the calling.",
       "tags": [
         "accusative",
         "substantival",
@@ -843,7 +853,7 @@
       "gist": "Alias — renames the object",
       "tile": "A",
       "oneLine": "A second accusative that renames the first. No verb between them.",
-      "mnemonic": "DATES — A: alias, the name tag on the object.",
+      "mnemonic": "CADETS — A: alias, the name tag on the object.",
       "mnemonicWhy": "The same sticker you met in the nominative, now stuck on the catcher.",
       "spotIt": "Two accusatives, no verb between them, and the second answers “which one, exactly?”",
       "bookDef": "Two accusatives are juxtaposed, both referring to the same person or thing, with the second accusative further specifying the first accusative.",
@@ -867,7 +877,7 @@
           "note": "υἱόν renames πῶλον. One animal, two names."
         }
       ],
-      "watchOut": "Not a double accusative. Apposition renames; a complement says something about.",
+      "watchOut": "Not a complement. Apposition has no verb doing the naming: the two words simply sit side by side and the second one says which one, exactly.",
       "tags": [
         "accusative",
         "substantival",
@@ -875,51 +885,56 @@
       ]
     },
     {
-      "id": "double-accusative",
+      "id": "direct-object",
       "set": "accusative",
       "group": "accusative-substantival",
-      "name": "Double Accusative",
-      "pic": "2️⃣",
-      "eli5": "Two catchers. “Ask Dad for bread.” Or “he gave his life as a gift.”",
+      "name": "Direct Object",
+      "pic": "🧤",
+      "eli5": "This is the catcher. “I hit Ivan.” Ivan got hit.",
       "formula": {
-        "ladder": [
-          "ask someone something  —  “asks him for bread”",
-          "call something a name  —  “gave his life as a ransom”"
+        "pattern": [
+          "verb",
+          "whom / what?"
+        ],
+        "filled": [
+          "I hit",
+          "Ivan"
         ]
       },
-      "short": "Double",
-      "gist": "Two objects at once",
-      "tile": "T",
-      "oneLine": "Two accusatives in one clause. Two kinds.",
-      "mnemonic": "DATES — T: two catchers.",
-      "mnemonicWhy": "Two English frames keep the kinds apart: you ASK a person FOR a thing, and you CALL a thing A NAME.",
-      "spotIt": "Try slipping “as” between the two. Fits — object + complement. Doesn't — person + thing.",
-      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
+      "short": "Direct object",
+      "gist": "catches the action",
+      "tile": "D",
+      "oneLine": "What the verb lands on. By far the most common one.",
+      "mnemonic": "CADETS — D: the verb throws, the object catches.",
+      "mnemonicWhy": "The plain one, and the trunk the other four grow off. Get this solid first.",
+      "spotIt": "After the verb, ask: whom? what?",
+      "bookDef": "Serves as the recipient of the action.",
       "examples": [
         {
-          "ref": "Matt 7:9",
-          "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
-          "english": "if his son asks *him* for *bread*",
-          "note": "him (a person) + bread (a thing). You cannot say “asks him as bread”."
+          "ref": "English drill",
+          "greek": null,
+          "english": "I hit *Ivan*.",
+          "note": "Ivan catches the hitting."
         },
         {
-          "ref": "Mark 10:45",
-          "greek": "δοῦναι *τὴν ψυχὴν* αὐτοῦ *λύτρον* ἀντὶ πολλῶν",
-          "english": "to give his *life* as a *ransom* for many",
-          "note": "life is the object, ransom says what it was given as. “As” slips right in."
+          "ref": "John 3:16",
+          "greek": "οὕτως γὰρ ἠγάπησεν ὁ θεὸς *τὸν κόσμον*",
+          "english": "For God so loved *the world*",
+          "note": "The world is what the loving lands on."
         },
         {
-          "ref": "1 Tim 2:6",
-          "greek": "ὁ δοὺς *ἑαυτὸν* *ἀντίλυτρον* ὑπὲρ πάντων",
-          "english": "who gave *himself* as *a ransom* for all",
-          "note": "“As” slips in, so this is object + complement."
+          "ref": "Mark 1:16",
+          "greek": "εἶδεν *Σίμωνα*",
+          "english": "he saw *Simon*",
+          "note": "Ask the verb “whom?” and the accusative answers."
         }
       ],
       "tags": [
         "accusative",
         "substantival",
         "ch-2"
-      ]
+      ],
+      "watchOut": "A few verbs take their object in the genitive or the dative instead — ἀκούω, κρατέω, προσκυνέω. The case follows the verb, not the meaning."
     },
     {
       "id": "cognate-accusative",
@@ -942,7 +957,7 @@
       "gist": "Echoes the verb",
       "tile": "E",
       "oneLine": "An object that repeats the verb — same root, or same idea.",
-      "mnemonic": "DATES — E: echo, the object repeats the verb.",
+      "mnemonic": "CADETS — E: echo, the object repeats the verb.",
       "mnemonicWhy": "Say the verb and hear it come straight back: sing a song, fight a fight, shepherd a flock.",
       "spotIt": "Say the verb and the object out loud. Sounds redundant in English? Cognate.",
       "bookDef": "Aligned with the verb either with regard to the lexical root or the idea conveyed.",
@@ -952,6 +967,12 @@
           "greek": "στρατεύῃ … *τὴν καλὴν στρατείαν*",
           "english": "fight *the good fight*",
           "note": "The same root twice — the tightest echo there is."
+        },
+        {
+          "ref": "Matt 2:10",
+          "greek": "ἐχάρησαν *χαρὰν μεγάλην* σφόδρα",
+          "english": "they rejoiced *with great joy* exceedingly",
+          "note": "ἐχάρησαν and χαράν are the same root. The echo is the whole point — it turns the volume up."
         },
         {
           "ref": "English drill",
@@ -967,6 +988,61 @@
         }
       ],
       "watchOut": "Still the direct object. “Cognate” only names the flavour.",
+      "tags": [
+        "accusative",
+        "substantival",
+        "ch-2"
+      ]
+    },
+    {
+      "id": "double-accusative-person-thing",
+      "set": "accusative",
+      "group": "accusative-substantival",
+      "name": "Double Accusative — Person and Thing",
+      "pic": "2️⃣",
+      "eli5": "Two catchers, and one of them is a person. “Ask Dad for bread.” Dad and bread both catch it.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "the person",
+          "the thing"
+        ],
+        "filled": [
+          "he asks",
+          "him",
+          "for bread"
+        ],
+        "note": "Both are accusative. Neither one is a label — they are two real objects."
+      },
+      "short": "Two — person + thing",
+      "gist": "Ask him for bread",
+      "tile": "T",
+      "oneLine": "Two accusatives: somebody, and the thing done to them.",
+      "mnemonic": "CADETS — T: two catchers, a person and a thing.",
+      "mnemonicWhy": "You ASK a person FOR a thing. You TEACH a person A LESSON. Two objects, and “as” will not go between them — “asks him as bread” is nonsense.",
+      "spotIt": "Two accusatives, one of them a person, and “as” will not fit between them.",
+      "bookDef": "A verb requires more than one accusative object to complete the thought, taking either (1) a personal and impersonal object or (2) a direct and predicate object.",
+      "examples": [
+        {
+          "ref": "Matt 7:9",
+          "greek": "ὃν αἰτήσει ὁ υἱὸς *αὐτὸν* *ἄρτον*",
+          "english": "if his son asks *him* for *bread*",
+          "note": "him (a person) + bread (a thing). “Asks him as bread” is nonsense, so it is not a complement."
+        },
+        {
+          "ref": "John 14:26",
+          "greek": "ἐκεῖνος *ὑμᾶς* διδάξει *πάντα*",
+          "english": "he will teach *you* *all things*",
+          "note": "you (person) + all things (thing). Teaching verbs do this constantly."
+        },
+        {
+          "ref": "English drill",
+          "greek": null,
+          "english": "They taught *the class* *Greek*.",
+          "note": "Two objects, no label. The class is not “being called” Greek."
+        }
+      ],
+      "watchOut": "The usual verbs are asking, teaching, reminding, clothing and anointing — verbs that naturally take somebody and something.",
       "tags": [
         "accusative",
         "substantival",
@@ -997,7 +1073,7 @@
       "gist": "Subject of the infinitive",
       "tile": "S",
       "oneLine": "An infinitive's subject is accusative, not nominative.",
-      "mnemonic": "DATES — S: sub, the infinitive's own subject.",
+      "mnemonic": "CADETS — S: sub, the infinitive's own subject.",
       "mnemonicWhy": "The odd one out — this accusative is doing the action, not catching it.",
       "spotIt": "Find the infinitive, then the accusative that is doing it rather than receiving it.",
       "bookDef": "Functions as the subject of an infinitive, indicating the agent performing the action conveyed by the infinitive.",
@@ -1013,9 +1089,15 @@
           "greek": "πρὸ τοῦ σε *Φίλιππον* φωνῆσαι … εἶδόν σε",
           "english": "Before *Philip* called you … I saw you",
           "note": "φωνῆσαι is the infinitive, and Philip is the one doing the calling — accusative, but the doer."
+        },
+        {
+          "ref": "Acts 1:3",
+          "greek": "παρέστησεν *ἑαυτὸν* ζῶντα",
+          "english": "he presented *himself* alive",
+          "note": "Careful — this one is a plain object, not a subject. There is no infinitive for it to be the subject of."
         }
       ],
-      "watchOut": "The only accusative you translate as the doer.",
+      "watchOut": "The only accusative you translate as the doer — and only when there is an infinitive for it to be the subject of. No infinitive, no sub.",
       "tags": [
         "accusative",
         "substantival",
@@ -3250,13 +3332,13 @@
     {
       "id": "double-which-kind",
       "pair": [
-        "double-accusative",
+        "double-accusative-complement",
         "accusative-apposition"
       ],
-      "question": "Two accusatives — which arrangement?",
-      "test": "Can you slip “as” between them?",
-      "answer": "“As” fits ⇒ object + complement. It doesn't and one is a person ⇒ person + thing. No verb and the second just renames the first ⇒ apposition.",
-      "example": "“gave his life AS a ransom” · “asks him for bread” · “chose Stephen, a man full of faith”."
+      "question": "Two accusatives side by side — renamed, or called something?",
+      "test": "Is there a verb doing the naming?",
+      "answer": "A verb calls, makes or gives it something ⇒ complement. No verb between them, the second just says which one exactly ⇒ apposition.",
+      "example": "“I have called you FRIENDS” · “they chose Stephen, a man full of faith”."
     },
     {
       "id": "respect-vs-object",
@@ -3422,6 +3504,17 @@
       "test": "Is it a predicate nominative sitting in front of the to-be verb?",
       "answer": "In front of the copula ⇒ Colwell explains the missing article, and the noun can still be definite. Elsewhere, run the three questions: a? quality? or still THE?",
       "example": "θεὸς ἦν ὁ λόγος — Colwell, definite. πλοιάριον in Mark 3:9 — genuinely “a”."
+    },
+    {
+      "id": "double-kinds",
+      "pair": [
+        "double-accusative-complement",
+        "double-accusative-person-thing"
+      ],
+      "question": "Two accusative objects — which double is it?",
+      "test": "Slip “as” between them.",
+      "answer": "“As” fits ⇒ object + complement. “As” is nonsense and one of them is a person ⇒ person + thing.",
+      "example": "“gave his life AS a ransom” · “asks him for bread”."
     }
   ],
   "extraQuiz": [
