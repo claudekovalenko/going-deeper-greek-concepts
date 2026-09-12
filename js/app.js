@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v19 · 2026-09-10';
+const BUILD = 'v20 · 2026-09-12';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -285,7 +285,7 @@ function parseRoute(hash) {
   return { name: name || 'map', arg: arg || null };
 }
 
-const VIEW_NAMES = new Set(['map', 'learn', 'drill', 'spot', 'test', 'progress', 'card', 'tag', 'confusions']);
+const VIEW_NAMES = new Set(['map', 'picture', 'learn', 'drill', 'spot', 'test', 'progress', 'card', 'tag', 'confusions']);
 
 function go(hash) {
   if (location.hash === hash) render();
@@ -623,8 +623,8 @@ function viewMap() {
       ${bar(learned, DATA.cards.length)}
       <div class="hero-sub">${learned} of ${DATA.cards.length} learned · ${esc(targetLabel())}</div>
       <div class="btnrow split">
-        <button class="btn primary" data-action="goto" data-to="#/drill">Drill</button>
-        <button class="btn" data-action="goto" data-to="#/spot">Spot it</button>
+        <button class="btn primary" data-action="goto" data-to="#/picture">See it all in one picture</button>
+        <button class="btn" data-action="goto" data-to="#/drill">Drill</button>
       </div>
     </section>
 
@@ -649,6 +649,9 @@ function viewMap() {
         <p class="bigidea">${esc(set.bigIdea)}</p>
         ${acroTiles(set)}
         <div class="btnrow">
+          <button class="btn small" data-action="goto" data-to="#/picture/${esc(set.id)}">${esc(
+            set.place || ''
+          )} ${esc(set.placeName || 'The picture')}</button>
           <button class="btn small" data-action="goto" data-to="#/learn/${esc(set.id)}">Read the cards</button>
           <button class="btn small" data-action="goto" data-to="#/drill/${esc(set.id)}">Drill this set</button>
         </div>
@@ -844,7 +847,7 @@ function viewCard(arg) {
     <section class="card">
       <div class="btnrow split">
         <button class="btn primary" data-action="goto" data-to="#/drill/${esc(set.id)}">Drill this set</button>
-        <button class="btn" data-action="goto" data-to="#/map">Back to the map</button>
+        <button class="btn" data-action="goto" data-to="#/picture/${esc(set.id)}">Where it lives</button>
       </div>
     </section>`;
 }
@@ -1433,10 +1436,143 @@ function viewProgress() {
     </section>`;
 }
 
+/* ---------------- view: picture ----------------
+ * The whole course as one place you can walk, instead of seven lists you can
+ * read. Each case is a stop on one street, each group is a spot inside that
+ * stop, and each card is an object sitting in that spot. The board is built
+ * from the data, so a new chapter opens another door on the same street
+ * without anyone drawing anything.
+ */
+
+function cardsOfGroup(id) {
+  return DATA.cards.filter((c) => c.group === id);
+}
+
+/** Every object in a set, in the order you walk past them. */
+function thingsOfSet(set) {
+  return set.groups.flatMap((g) => cardsOfGroup(g.id));
+}
+
+/** One stop on the street: the place, everything in it, the case it is. */
+function streetStop(set) {
+  const things = thingsOfSet(set);
+  const learned = things.filter((c) => isLearned(c.id)).length;
+  return `
+    <button class="stop" data-action="goto" data-to="#/picture/${esc(set.id)}" style="--accent:${esc(set.color)}">
+      <span class="stop-pic" aria-hidden="true">${esc(set.place || set.name.slice(0, 1))}</span>
+      <span class="stop-name">${esc(set.placeName || set.name)}</span>
+      <span class="stop-things" aria-hidden="true">${things.map((c) => esc(c.pic || '')).join('')}</span>
+      <span class="stop-case">${dot(set.color)}${esc(set.name)}</span>
+      <span class="stop-count">${learned}/${things.length}</span>
+    </button>`;
+}
+
+/** A group's objects, named and tappable. */
+function thingTiles(cards, { named = true } = {}) {
+  return `<div class="things ${named ? '' : 'is-bare'}">
+    ${cards
+      .map(
+        (c) => `
+      <button class="thing" data-action="open-card" data-card="${esc(c.id)}" title="${esc(c.short)}">
+        <span class="thing-pic" aria-hidden="true">${esc(c.pic || '')}</span>
+        ${c.tile && c.tile.length === 1 ? `<span class="thing-tile">${esc(c.tile)}</span>` : ''}
+        ${named ? `<span class="thing-name">${esc(c.short)}</span>` : ''}
+      </button>`
+      )
+      .join('')}
+  </div>`;
+}
+
+/** One spot inside a stop: what it looks like, then what is in it. */
+function sceneBlock(set, group, { named = true } = {}) {
+  const cards = cardsOfGroup(group.id);
+  if (!cards.length) return '';
+  return `
+    <div class="scene" style="--accent:${esc(set.color)}">
+      <div class="scene-head">
+        <span class="scene-spot" aria-hidden="true">${esc(group.spot || set.place || '')}</span>
+        <span class="scene-title">${esc(groupTitle(group))}</span>
+        ${keyChip(group)}
+      </div>
+      ${group.scene ? `<p class="scene-line">${esc(group.scene)}</p>` : ''}
+      ${thingTiles(cards, { named })}
+    </div>`;
+}
+
+function viewPicture(arg) {
+  const set = arg ? setById(arg) : null;
+  if (arg && !set) return `<section class="card"><p class="empty">No place called “${esc(arg)}”.</p></section>`;
+
+  if (set) {
+    const things = thingsOfSet(set);
+    return `
+      <section class="card place" style="--accent:${esc(set.color)}">
+        <div class="place-head">
+          <span class="place-pic" aria-hidden="true">${esc(set.place || '')}</span>
+          <div>
+            <h2>${esc(set.placeName || set.name)}</h2>
+            <p class="place-case">${dot(set.color)}${esc(set.name)} — ${esc(set.does || set.subtitle)}</p>
+          </div>
+        </div>
+        ${set.scene ? `<p class="place-line">${esc(set.scene)}</p>` : ''}
+        <div class="place-things" aria-hidden="true">${things.map((c) => esc(c.pic || '')).join('')}</div>
+        <p class="note">${things.length} things in this one place. Tap any of them to open its card.</p>
+      </section>
+
+      ${set.groups.map((g) => sceneBlock(set, g)).join('')}
+
+      <section class="card">
+        <div class="btnrow split">
+          <button class="btn primary" data-action="goto" data-to="#/drill/${esc(set.id)}">Drill this stop</button>
+          <button class="btn" data-action="goto" data-to="#/picture">The whole street</button>
+        </div>
+      </section>`;
+  }
+
+  const w = DATA.world || {};
+  const learned = DATA.cards.filter((c) => isLearned(c.id)).length;
+  return `
+    <section class="hero">
+      <div class="hero-line">${esc(w.name || 'The whole thing in one picture')}</div>
+      <div class="street-line" aria-hidden="true">${DATA.sets
+        .map((x) => esc(x.place || ''))
+        .join('<span class="street-arrow">›</span>')}</div>
+      <div class="hero-mnemonic">${esc(w.line || DATA.sets.map((x) => x.verb).join(' · '))}</div>
+      ${bar(learned, DATA.cards.length)}
+      <div class="hero-sub">${DATA.sets.length} stops · ${DATA.cards.length} things · ${learned} learned</div>
+    </section>
+
+    <section class="card">
+      <h2>The street</h2>
+      <p class="note">Every stop, and everything standing in it. Tap a stop to walk into it.</p>
+      <div class="street">${DATA.sets.map(streetStop).join('')}</div>
+      ${w.why ? `<p class="street-why">${esc(w.why)}</p>` : ''}
+    </section>
+
+    ${DATA.sets
+      .map(
+        (x) => `
+      <section class="card place" style="--accent:${esc(x.color)}">
+        <div class="place-head is-small">
+          <span class="place-pic" aria-hidden="true">${esc(x.place || '')}</span>
+          <div>
+            <h2>${esc(x.placeName || x.name)}</h2>
+            <p class="place-case">${dot(x.color)}${esc(x.name)}</p>
+          </div>
+          <button class="btn small" data-action="goto" data-to="#/picture/${esc(x.id)}">Walk in</button>
+        </div>
+        ${x.scene ? `<p class="place-line">${esc(x.scene)}</p>` : ''}
+        ${x.groups.map((g) => sceneBlock(x, g, { named: false })).join('')}
+      </section>`
+      )
+      .join('')}`;
+}
+
 /* ---------------- render ---------------- */
 
 const VIEWS = {
   map: viewMap,
+  picture: viewPicture,
   learn: viewLearn,
   card: viewCard,
   drill: viewDrill,

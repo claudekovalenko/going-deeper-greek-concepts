@@ -37,16 +37,23 @@
           "name": "Major uses — the SPA",
           "key": "SPA",
           "mnemonic": "S-P-A — sit down in the spa.",
-          "expand": "Subject · Predicate nominative · Apposition"
+          "expand": "Subject · Predicate nominative · Apposition",
+          "spot": "🛁",
+          "scene": "In the tub: the one in the crown 👑 is doing the verb, a small box 📦 sits inside a bigger one, a ladder 🪜 leans on the wall to settle who is boss, and a name tag 🏷️ is stuck on the towel."
         },
         {
           "id": "nominative-other",
           "name": "Other uses — the AAAH",
           "key": "AAAH",
           "mnemonic": "A-A-A-H — then say aaah.",
-          "expand": "Address · Appellation · Absolute · Hanging"
+          "expand": "Address · Appellation · Absolute · Hanging",
+          "spot": "🧖",
+          "scene": "In the steam room you say aaah: someone calls out 📣, a badge 📛 gives them a title, a headline 📖 hangs over the door tied to nothing, and a knot 🪢 dangles until a pronoun picks it up."
         }
-      ]
+      ],
+      "place": "🛁",
+      "placeName": "The Spa",
+      "scene": "Sit in the tub 🛁 — that is SPA — then lie in the steam room 🧖 and say aaah."
     },
     {
       "id": "vocative",
@@ -66,9 +73,14 @@
           "name": "Uses of the vocative",
           "key": "Say the name",
           "mnemonic": "Say the name.",
-          "expand": "Direct address — and that is the list"
+          "expand": "Direct address — and that is the list",
+          "spot": "📣",
+          "scene": "One man on the doorstep, shouting one name 🗣️. Nothing else lives here."
         }
-      ]
+      ],
+      "place": "📣",
+      "placeName": "The Doorstep",
+      "scene": "You stop at one door and shout one name 🗣️. That is the whole stop."
     },
     {
       "id": "accusative",
@@ -88,23 +100,32 @@
           "name": "The idea",
           "key": "The fence",
           "mnemonic": "The nominative crowns. The accusative fences.",
-          "expand": "The nominative crowns. The accusative fences."
+          "expand": "The nominative crowns. The accusative fences.",
+          "spot": "🚧",
+          "scene": "The fence 🚧 round the yard. The verb runs until it hits the fence, and that is where the accusative stands."
         },
         {
           "id": "accusative-substantival",
           "name": "Substantival (noun-like) — DATES",
           "key": "DATES",
           "mnemonic": "D-A-T-E-S — take the object out on five DATES.",
-          "expand": "Direct object · Alias (apposition) · Two (double) · Echo (cognate) · Sub (subject of an infinitive)"
+          "expand": "Direct object · Alias (apposition) · Two (double) · Echo (cognate) · Sub (subject of an infinitive)",
+          "spot": "🌹",
+          "scene": "Five dates in the yard: a glove 🧤 catches what is thrown, a name tag 🏷️ calls it something else, a 2️⃣ means two at once, a loop 🔁 echoes the verb straight back, and a runner 🏃 takes off as the subject of an infinitive."
         },
         {
           "id": "accusative-adverbial",
           "name": "Adverbial (adverb-like) — the MMR shot",
           "key": "MMR",
           "mnemonic": "M-M-R — one shot, three jabs: how far? how? how so?",
-          "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)"
+          "expand": "Measure (how far?) · Manner (how?) · Respect (how so?)",
+          "spot": "💉",
+          "scene": "Then the jab, three needles in one shot: a tape measure 📏 for how far, a mask 🎭 for how, a target 🎯 for how so."
         }
-      ]
+      ],
+      "place": "🚧",
+      "placeName": "The Fenced Yard",
+      "scene": "Everything happens inside the fence 🚧. In the yard you go on five DATES 🌹, then take the MMR jab 💉."
     },
     {
       "id": "genitive",
@@ -124,30 +145,41 @@
           "name": "Adjectival — SWAMP RD",
           "key": "SWAMP RD",
           "mnemonic": "S-W-A-M-P R-D — the genitive lives on Swamp Rd, and whatever falls off the end lands in the Ditch. That is Description, the catch-all.",
-          "expand": "Source (from?) · Whole (part of?) · Adjective (what quality?) · Made of? · Possession (whose?) · Relationship (whose kin?) · Description (nothing else fits)"
+          "expand": "Source (from?) · Whole (part of?) · Adjective (what quality?) · Made of? · Possession (whose?) · Relationship (whose kin?) · Description (nothing else fits)",
+          "spot": "🛣️",
+          "scene": "Drive down Swamp Rd: a spring ⛲ where it came from, a pizza 🍕 you take one slice of, a paintbrush 🖌️ that could just be an adjective, a glass of milk 🥛 for what it is made of, a key 🔑 for who owns it, a father and son 👨‍👦 for kin — and whatever falls off the end lands in the bin 🗑️ at the bottom of the road."
         },
         {
           "id": "genitive-verbal",
           "name": "Verbal — a verb hiding in the noun",
           "key": "Does it · Gets it",
           "mnemonic": "Does it · Gets it — say the head word as a verb and ask which.",
-          "expand": "Subjective (X does it) · Objective (X gets it)"
+          "expand": "Subjective (X does it) · Objective (X gets it)",
+          "spot": "↔️",
+          "scene": "Where the road crosses, two arrows on one post: ➡️ does it, ⬅️ gets it. Say the head word as a verb and see which way it points."
         },
         {
           "id": "genitive-adverbial",
           "name": "Adverbial — modifies the verb: PACTS",
           "key": "PACTS",
           "mnemonic": "P-A-C-T-S — the adverbial genitive makes PACTS.",
-          "expand": "Price · Agency · Comparison · Time or place · Separation"
+          "expand": "Price · Agency · Comparison · Time or place · Separation",
+          "spot": "🤝",
+          "scene": "At the table where the pacts get signed: money 💰 for the price, a hand ✋ for by whom, scales ⚖️ for than what, a clock 🕐 for when and where, a door 🚪 for away from."
         },
         {
           "id": "genitive-other",
           "name": "Other — the odd drawer",
           "key": "Nickname · Fussy verb",
           "mnemonic": "A nickname, and a fussy verb.",
-          "expand": "Apposition (another name for it) · Direct object (the verb wanted a genitive)"
+          "expand": "Apposition (another name for it) · Direct object (the verb wanted a genitive)",
+          "spot": "🗄️",
+          "scene": "The odd drawer at the end of the road: a name tag 🏷️ for a second name, and a magnet 🧲 for the verbs that pull a genitive object to themselves."
         }
-      ]
+      ],
+      "place": "🛣️",
+      "placeName": "Swamp Road",
+      "scene": "Drive the whole of Swamp Rd 🛣️, stop where the two arrows cross ↔️, sign the PACTS 🤝, and check the odd drawer 🗄️ on the way out."
     },
     {
       "id": "dative",
@@ -167,30 +199,41 @@
           "name": "Pure — to or for: PORT",
           "key": "PORT",
           "mnemonic": "P-O-R-T — and the T, plain “to whom”, is the one you meet most.",
-          "expand": "Personal interest · Owns (possession) · Re: (reference) · To whom (indirect object)"
+          "expand": "Personal interest · Owns (possession) · Re: (reference) · To whom (indirect object)",
+          "spot": "⚓",
+          "scene": "Down at the port: a heart-wrapped gift 💝 for whose interest it serves, a key 🔑 for who owns it, an envelope ✉️ marked Re: for what it is about, and a parcel 🎁 for who it goes to."
         },
         {
           "id": "dative-locative",
           "name": "Locative — in or at: HIT",
           "key": "HIT",
           "mnemonic": "H-I-T — Here, In, Then.",
-          "expand": "Here (place) · In what realm (sphere) · Then (time)"
+          "expand": "Here (place) · In what realm (sphere) · Then (time)",
+          "spot": "🥊",
+          "scene": "Take the hit on the way up: a pin 📍 for here, a cloud ☁️ for in, a clock 🕐 for then."
         },
         {
           "id": "dative-instrumental",
           "name": "Instrumental — with or by: MAMA",
           "key": "MAMA",
           "mnemonic": "M-A-M-A — Means, Agency, Manner, Association.",
-          "expand": "Means (with what tool) · Agency (by whom) · Manner (in what style) · Association (along with)"
+          "expand": "Means (with what tool) · Agency (by whom) · Manner (in what style) · Association (along with)",
+          "spot": "👩‍🔧",
+          "scene": "Mama's workshop: a hammer 🔨 is the tool it was done with, a hand ✋ is the person who did it, a mask 🎭 is the style it was done in, and two friends 👫 came along for the ride."
         },
         {
           "id": "dative-other",
           "name": "Other — the odd BEADs",
           "key": "BEAD",
           "mnemonic": "B-E-A-D — Because, Echo, Alias, Devoted.",
-          "expand": "Because (cause) · Echo (cognate) · Alias (apposition) · Devoted verbs (direct object)"
+          "expand": "Because (cause) · Echo (cognate) · Alias (apposition) · Devoted verbs (direct object)",
+          "spot": "📿",
+          "scene": "Four beads left over on a string: fire 🔥 because, a loop 🔁 echo, a tag 🏷️ alias, hands 🙏 devoted."
         }
-      ]
+      ],
+      "place": "⚓",
+      "placeName": "The Harbour",
+      "scene": "Sail into PORT ⚓, take the HIT 🥊 on the way up the hill, call on MAMA 👩‍🔧 in her workshop, and string the leftover BEADs 📿."
     },
     {
       "id": "article",
@@ -210,16 +253,23 @@
           "name": "What it does — the three P's",
           "key": "Point · Pronoun · Poof",
           "mnemonic": "Point · Pronoun · Poof.",
-          "expand": "Points at a thing · stands in as a pronoun · vanishes, and that means something"
+          "expand": "Points at a thing · stands in as a pronoun · vanishes, and that means something",
+          "spot": "👉",
+          "scene": "The post itself: a finger 👉 pointing at one thing, a puzzle piece 🧩 standing in for a word, and a ghost 👻 where the finger vanished — gone does not mean “a”."
         },
         {
           "id": "article-rules",
           "name": "Three men, three rules",
           "key": "Sharp · Colwell · Apollonius",
           "mnemonic": "Sharp joins · Colwell drops · Apollonius matches.",
-          "expand": "Granville Sharp · Colwell's Rule · Apollonius's Canon"
+          "expand": "Granville Sharp · Colwell's Rule · Apollonius's Canon",
+          "spot": "👨‍⚖️",
+          "scene": "Three men under the post: Sharp holding a chain 🔗 that joins two into one, Colwell with an arrow ⬇️ showing the article dropped off, Apollonius with an equals sign 🟰 — both of them or neither."
         }
-      ]
+      ],
+      "place": "👉",
+      "placeName": "The Signpost",
+      "scene": "One finger on a post 👉, and three men 👨‍⚖️ standing under it arguing about what it means."
     },
     {
       "id": "adjective",
@@ -239,16 +289,23 @@
           "name": "What it does — ASAP",
           "key": "ASAP",
           "mnemonic": "A-S-A-P — Attributive, Substantival, Adverbial, Predicate.",
-          "expand": "Sticks to the noun · becomes the noun · jumps to the verb · makes a claim"
+          "expand": "Sticks to the noun · becomes the noun · jumps to the verb · makes a claim",
+          "spot": "⏱️",
+          "scene": "Four jobs ASAP: a brush 🖌️ sticks the colour to the noun, a figure 🧍 becomes the noun, a kangaroo 🦘 jumps across to the verb, a speech bubble 💬 makes the claim."
         },
         {
           "id": "adjective-degree",
           "name": "How strong — SPECS",
           "key": "SPECS",
           "mnemonic": "S-P-E-C-S — Superlative, Positive, Elative, Comparative, Special cases.",
-          "expand": "The ladder is positive → comparative → superlative. Elative turns the volume up without comparing; special cases swap the three around."
+          "expand": "The ladder is positive → comparative → superlative. Elative turns the volume up without comparing; special cases swap the three around.",
+          "spot": "👓",
+          "scene": "Then try the specs on: a gold medal 🥇 best of the lot, a 1️⃣ plain, a speaker 🔊 that only means “very”, a 2️⃣ more than one other, and a shuffle 🔀 where the forms swap jobs."
         }
-      ]
+      ],
+      "place": "🎨",
+      "placeName": "The Paint Shop",
+      "scene": "Four jobs to do ASAP ⏱️, and five strengths of paint you try on through the SPECS 👓."
     }
   ],
   "cards": [
@@ -3643,5 +3700,10 @@
       "why": "Grace is the instrument, not a person acting. MAMA — M.",
       "unofficial": true
     }
-  ]
+  ],
+  "world": {
+    "name": "One street, seven stops",
+    "line": "Bathe, shout, fence, drive, sail, point, paint.",
+    "why": "Seven places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
+  }
 }

@@ -737,7 +737,9 @@ mark {
   right: 0;
   z-index: 10;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* Six tabs now. auto-fit keeps them even without hard-coding the count. */
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
   backdrop-filter: blur(14px);
   border-top: 1px solid var(--line);
@@ -1322,4 +1324,221 @@ code {
 
 .peg-front .peg-part.on {
   padding: 2px 8px;
+}
+
+/* ---------- the picture: one street, seven stops ----------
+   The board is the whole course at a glance — every place, and every object
+   standing in it. Nothing here is hand-drawn: the stops come from the sets,
+   the objects from the cards, so a new chapter adds itself. */
+
+.street-line {
+  font-size: 27px;
+  line-height: 1.3;
+  margin: 4px 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.street-arrow {
+  font-size: 16px;
+  color: var(--muted);
+  margin: 0 1px;
+}
+
+.street {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.stop {
+  display: grid;
+  gap: 3px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 11px;
+  padding: 10px 11px;
+}
+
+.stop-pic {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.stop-name {
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.stop-things {
+  /* Everything that lives here, in one line. This is the bit you picture. */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  overflow-wrap: break-word;
+  margin: 2px 0 1px;
+}
+
+.stop-case,
+.stop-count {
+  font-size: 11.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.street-why {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.place-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.place-head h2 {
+  margin: 0;
+}
+
+.place-head.is-small h2 {
+  font-size: 16px;
+}
+
+.place-head.is-small .btn {
+  margin-left: auto;
+}
+
+.place-pic {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.place-head.is-small .place-pic {
+  font-size: 28px;
+}
+
+.place-case {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.place-line {
+  margin: 11px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.place-things {
+  font-size: 21px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+
+.scene {
+  margin-top: 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 11px 12px;
+  background: var(--bg-elev-2);
+}
+
+.scene-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.scene-spot {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.scene-title {
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.scene-line {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.things {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.things.is-bare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.thing {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 8px 6px 7px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg-elev);
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+.things.is-bare .thing {
+  padding: 5px 7px;
+  border-radius: 9px;
+}
+
+.thing-pic {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.things.is-bare .thing-pic {
+  font-size: 19px;
+}
+
+.thing-tile {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: var(--accent);
+}
+
+.thing-name {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.25;
 }
