@@ -5763,6 +5763,136 @@
       "answer": "dative-means",
       "why": "Grace is the instrument, not a person acting. MAMA — M.",
       "unofficial": true
+    },
+    {
+      "prompt": "until heaven and earth pass away, not one iota will pass from the law",
+      "greek": "ἀμὴν γὰρ λέγω ὑμῖν· ἕως ἂν *παρέλθῃ* ὁ οὐρανὸς καὶ ἡ γῆ, ἰῶτα ἓν ἢ μία κεραία οὐ μὴ παρέλθῃ ἀπὸ τοῦ νόμου (Matt 5:18)",
+      "english": "until heaven and earth pass away, not one iota will pass from the law",
+      "ref": "ch. 6 practice 1a",
+      "target": "παρέλθῃ (ἕως ἄν)",
+      "answer": "mood-subj-temporal",
+      "why": "Aorist active subjunctive, 3rd singular, παρέρχομαι. ἕως ἄν is one of the “until” words the chart names alongside ὅταν — indefinite temporal.",
+      "unofficial": true
+    },
+    {
+      "prompt": "not one iota, not one stroke, will pass from the law",
+      "greek": "ἰῶτα ἓν ἢ μία κεραία *οὐ μὴ παρέλθῃ* ἀπὸ τοῦ νόμου, ἕως ἂν πάντα γένηται (Matt 5:18)",
+      "english": "not one iota, not one stroke, will pass from the law",
+      "ref": "ch. 6 practice 1b",
+      "target": "παρέλθῃ (οὐ μή)",
+      "answer": "mood-subj-emphatic",
+      "why": "Aorist active subjunctive, 3rd singular, παρέρχομαι — the same form as 1a, doing a different job. οὐ μή in front makes it emphatic negation: not “probably not”, but never.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Jesus said to her, “Do not cling to me, for I have not yet ascended to the Father”",
+      "greek": "λέγει αὐτῇ Ἰησοῦς, μή μου *ἅπτου*, οὔπω γὰρ ἀναβέβηκα πρὸς τὸν πατέρα (John 20:17)",
+      "english": "Jesus said to her, “Do not cling to me, for I have not yet ascended to the Father”",
+      "ref": "ch. 6 practice 2",
+      "target": "ἅπτου",
+      "answer": "mood-impv-prohibition",
+      "why": "Present middle imperative, 2nd singular, ἅπτομαι. μή plus an imperative is the imperative's prohibition — compare number 3, where μή plus an aorist subjunctive is a different mood doing the same job in English.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Do not give what is holy to dogs",
+      "greek": "*μὴ δῶτε* τὸ ἅγιον τοῖς κυσὶν μηδὲ βάλητε τοὺς μαργαρίτας ὑμῶν ἔμπροσθεν τῶν χοίρων (Matt 7:6)",
+      "english": "Do not give what is holy to dogs",
+      "ref": "ch. 6 practice 3a",
+      "target": "δῶτε",
+      "answer": "mood-subj-prohibitory",
+      "why": "Aorist active subjunctive, 2nd plural, δίδωμι. Both of the chart's conditions are met: the command is negated (μή) and the subjunctive is aorist.",
+      "unofficial": true
+    },
+    {
+      "prompt": "nor throw your pearls before pigs",
+      "greek": "μὴ δῶτε τὸ ἅγιον τοῖς κυσὶν *μηδὲ βάλητε* τοὺς μαργαρίτας ὑμῶν ἔμπροσθεν τῶν χοίρων (Matt 7:6)",
+      "english": "nor throw your pearls before pigs",
+      "ref": "ch. 6 practice 3b",
+      "target": "βάλητε",
+      "answer": "mood-subj-prohibitory",
+      "why": "Aorist active subjunctive, 2nd plural, βάλλω. μηδέ carries the negative on from the first clause, and the verb is aorist subjunctive again.",
+      "unofficial": true
+    },
+    {
+      "prompt": "He said to the disciples, “Let us go to Judea again”",
+      "greek": "λέγει τοῖς μαθηταῖς· *ἄγωμεν* εἰς τὴν Ἰουδαίαν πάλιν (John 11:7)",
+      "english": "He said to the disciples, “Let us go to Judea again”",
+      "ref": "ch. 6 practice 4",
+      "target": "ἄγωμεν",
+      "answer": "mood-subj-hortatory",
+      "why": "Present active subjunctive, 1st plural, ἄγω. First person plural is the tell: he is going too, so it is hortatory, not an imperative.",
+      "unofficial": true
+    },
+    {
+      "prompt": "And behold, Jesus met them and said, “Greetings!”",
+      "greek": "καὶ ἰδοὺ Ἰησοῦς ὑπήντησεν αὐταῖς λέγων, *χαίρετε* (Matt 28:9)",
+      "english": "And behold, Jesus met them and said, “Greetings!”",
+      "ref": "ch. 6 practice 5",
+      "target": "χαίρετε",
+      "answer": "mood-impv-greeting",
+      "why": "Present active imperative, 2nd plural, χαίρω. The chart's own greeting example is the singular Χαῖρε in Matt 26:49; this is the plural of the same frozen form. Nobody is being ordered to rejoice.",
+      "unofficial": true
+    },
+    {
+      "prompt": "If anyone sees his brother sinning a sin not leading to death, he will ask and God will give him life",
+      "greek": "*ἐάν τις ἴδῃ* τὸν ἀδελφὸν αὐτοῦ ἁμαρτάνοντα ἁμαρτίαν μὴ πρὸς θάνατον, αἰτήσει καὶ δώσει αὐτῷ ζωήν (1 John 5:16)",
+      "english": "If anyone sees his brother sinning a sin not leading to death, he will ask and God will give him life",
+      "ref": "ch. 6 practice 6",
+      "target": "ἴδῃ",
+      "answer": "mood-subj-conditional",
+      "why": "Aorist active subjunctive, 3rd singular, ὁράω (εἶδον). ἐάν plus a subjunctive is the protasis of a third class conditional — a real maybe.",
+      "unofficial": true
+    },
+    {
+      "prompt": "One of his disciples said to him, “Lord, teach us to pray”",
+      "greek": "εἶπέν τις τῶν μαθητῶν αὐτοῦ πρὸς αὐτόν· κύριε, *δίδαξον* ἡμᾶς προσεύχεσθαι (Luke 11:1)",
+      "english": "One of his disciples said to him, “Lord, teach us to pray”",
+      "ref": "ch. 6 practice 7",
+      "target": "δίδαξον",
+      "answer": "mood-impv-request",
+      "why": "Aorist active imperative, 2nd singular, διδάσκω. The form is a command, but κύριε tells you who is being addressed — you do not order the Lord about, so it lands as a request.",
+      "unofficial": true
+    },
+    {
+      "prompt": "May the God of peace himself keep your spirit and soul and body blameless",
+      "greek": "αὐτὸς δὲ ὁ θεὸς τῆς εἰρήνης … ὑμῶν τὸ πνεῦμα καὶ ἡ ψυχὴ καὶ τὸ σῶμα ἀμέμπτως … *τηρηθείη* (1 Thess 5:23)",
+      "english": "May the God of peace himself keep your spirit and soul and body blameless",
+      "ref": "ch. 6 practice 8",
+      "target": "τηρηθείη",
+      "answer": "mood-opt-voluntative",
+      "why": "Aorist passive optative, 3rd singular, τηρέω. An optative closing a letter is almost always this one — a prayer or benediction. Translate with “may”.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Let your word be “yes, yes” or “no, no”",
+      "greek": "*ἔστω* δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὒ οὔ (Matt 5:37)",
+      "english": "Let your word be “yes, yes” or “no, no”",
+      "ref": "ch. 6 practice 9",
+      "target": "ἔστω",
+      "answer": "mood-impv-command",
+      "why": "Present active imperative, 3rd singular, εἰμί. English needs “let” for a third person imperative, but this is a charge about how you must speak, not a toleration — so command rather than permission.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Ask, and it will be given to you",
+      "greek": "*αἰτεῖτε* καὶ δοθήσεται ὑμῖν, ζητεῖτε καὶ εὑρήσετε, κρούετε καὶ ἀνοιγήσεται ὑμῖν (Matt 7:7)",
+      "english": "Ask, and it will be given to you",
+      "ref": "ch. 6 practice 10a",
+      "target": "αἰτεῖτε",
+      "answer": "mood-impv-conditional",
+      "why": "Present active imperative, 2nd plural, αἰτέω. Imperative + καί + future indicative is the chart's conditional pattern — “come and see” = “if you come, you will see”. Here: if you ask, it will be given. It can also be read as a plain command with a promise attached; the structure is what points to conditional.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Seek, and you will find",
+      "greek": "αἰτεῖτε καὶ δοθήσεται ὑμῖν, *ζητεῖτε* καὶ εὑρήσετε, κρούετε καὶ ἀνοιγήσεται ὑμῖν (Matt 7:7)",
+      "english": "Seek, and you will find",
+      "ref": "ch. 6 practice 10b",
+      "target": "ζητεῖτε",
+      "answer": "mood-impv-conditional",
+      "why": "Present active imperative, 2nd plural, ζητέω. Same shape a second time, and κρούετε καὶ ἀνοιγήσεται makes it three in a row — that repetition is itself the argument for reading them as conditions.",
+      "unofficial": true
     }
   ],
   "world": {
