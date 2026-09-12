@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v21 · 2026-09-12';
+const BUILD = 'v22 · 2026-09-12';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -521,12 +521,15 @@ function pegOf(card) {
 
 /** The whole key, one slot lit. `slot` of -1 lights nothing (a group heading). */
 function keyHtml(parts, slot, cls) {
+  // Letters read fine butted together (S P A). Words do not: "Aim Outcome If"
+  // needs the dots back, or it reads as one phrase.
+  const words = parts.some((part) => part.text.length > 1);
   return `<span class="peg-key ${cls || ''}">${parts
-    .map((part) =>
-      part.text === ' '
-        ? '<span class="peg-gap"></span>'
-        : `<span class="peg-part${part.slot === slot ? ' on' : ''}">${esc(part.text)}</span>`
-    )
+    .map((part, i) => {
+      if (part.text === ' ') return '<span class="peg-gap"></span>';
+      const dot = words && i ? '<span class="peg-dot">·</span>' : '';
+      return `${dot}<span class="peg-part${part.slot === slot ? ' on' : ''}">${esc(part.text)}</span>`;
+    })
     .join('')}</span>`;
 }
 
@@ -561,7 +564,13 @@ function pegHead(card) {
     </div>`;
   }
 
-  const tie = peg.letters ? `${esc(peg.tile)} is for ${esc(card.short)}` : esc(card.short);
+  // "T is for Indirect object" for a letter peg; "“If” — Conditional" for a word
+  // peg, unless the word already is the card's name, in which case say it once.
+  const tie = peg.letters
+    ? `${esc(peg.tile)} is for ${esc(card.short)}`
+    : peg.tile.toLowerCase() === card.short.toLowerCase()
+      ? esc(card.short)
+      : `“${esc(peg.tile)}” — ${esc(card.short)}`;
   return `<div class="peghead" style="--accent:${esc(set.color)}">
       ${keyHtml(peg.parts, peg.slot, 'peg-lg')}
       <div class="peg-of">${tie}</div>
@@ -1475,7 +1484,11 @@ function thingTiles(cards, { named = true } = {}) {
         (c) => `
       <button class="thing" data-action="open-card" data-card="${esc(c.id)}" title="${esc(c.short)}">
         <span class="thing-pic" aria-hidden="true">${esc(c.pic || '')}</span>
-        ${c.tile && c.tile.length === 1 ? `<span class="thing-tile">${esc(c.tile)}</span>` : ''}
+        ${
+          c.tile && c.tile.toLowerCase() !== c.short.toLowerCase()
+            ? `<span class="thing-tile">${esc(c.tile)}</span>`
+            : ''
+        }
         ${named ? `<span class="thing-name">${esc(c.short)}</span>` : ''}
       </button>`
       )

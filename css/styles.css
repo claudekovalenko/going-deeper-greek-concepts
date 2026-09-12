@@ -1199,6 +1199,9 @@ code {
 .peg-key {
   display: inline-flex;
   align-items: baseline;
+  /* Word keys can run to five slots ("Aim · Outcome · If · Whoever · Whenever"),
+     which will not fit one phone line. Let them wrap rather than overflow. */
+  flex-wrap: wrap;
   gap: 3px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -1541,4 +1544,10 @@ code {
   color: var(--muted);
   text-align: center;
   line-height: 1.25;
+}
+
+.peg-dot {
+  color: var(--muted);
+  opacity: 0.5;
+  font-weight: 400;
 }

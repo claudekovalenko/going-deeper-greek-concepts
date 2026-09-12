@@ -1,4 +1,4 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–5
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–6
 
 A small offline-first PWA for getting the five cases, the **article** and the
 **adjective** into your head and keeping them there. Sixty-four cards, each

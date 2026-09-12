@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–5 — the five cases, the article and the adjective",
+  "chapter": "ch. 2–6 — the cases, the article, the adjective, and the verb",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-08-27",
   "notes": [
@@ -306,6 +306,114 @@
       "place": "🎨",
       "placeName": "The Paint Shop",
       "scene": "Four jobs to do ASAP ⏱️, and five strengths of paint you try on through the SPECS 👓."
+    },
+    {
+      "id": "person",
+      "name": "Person & Number",
+      "verb": "Answers",
+      "does": "says who is doing it, and how many",
+      "subtitle": "Six words for who. Three on their own, three in a crowd.",
+      "eli5": "Who is talking? Me, you, or him. And is it one of them, or a whole crowd?",
+      "color": "#2f9d9d",
+      "classDate": "2026-09-22",
+      "bigIdea": "Three persons, two numbers, six words. Only one pair is dangerous: ἡμεῖς is “we” and ὑμεῖς is “you all”, and they are one letter apart.",
+      "masterMnemonic": "I, you, he — then all of us, all of you, all of them.",
+      "masterMnemonicWhy": "Say the roll call out loud in that order and the whole table is done. The Greek verb ending already tells you which one, so the pronoun is usually there for emphasis.",
+      "place": "🙋",
+      "placeName": "The Roll Call",
+      "scene": "Six people answer to their names at the door 🙋 — three on their own, three in a crowd.",
+      "groups": [
+        {
+          "id": "person-pronouns",
+          "name": "The roll call",
+          "key": "I · You · He · We · You all · They",
+          "mnemonic": "I, you, he — then we, you all, they.",
+          "expand": "ἐγώ · σύ · αὐτός — ἡμεῖς · ὑμεῖς · αὐτοί",
+          "spot": "🙋",
+          "scene": "Six answer the roll: 🙋 ἐγώ (my hand goes up), 👤 σύ (the one I am looking at), 🚗 αὐτός — an AUTO drives itSELF — then 🫂 ἡμεῖς (my lot), 👥 ὑμεῖς (your lot), 🚙 αὐτοί (their autos). The trap is the middle pair: ὑ has the u of YOU."
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "name": "Voice",
+      "verb": "Aims",
+      "does": "aims the action out, back, or in",
+      "subtitle": "How much of the action lands back on the subject.",
+      "eli5": "Who is doing it, and does it come back? I do it. I do it to me. It gets done to me.",
+      "color": "#a2578f",
+      "classDate": "2026-09-22",
+      "bigIdea": "Three voices, one question: how much of this lands back on the subject? Active none, middle some, passive all.",
+      "masterMnemonic": "I do it · I do it for me · It is done to me.",
+      "masterMnemonicWhy": "Active points out, middle bends back, passive comes in. Say those three lines in order and the voices sort themselves before you look at a single ending.",
+      "place": "🎙️",
+      "placeName": "The Recording Booth",
+      "scene": "Three faders on the desk 🎙️: push it out 💪 (active), bend it back 🪞 (middle), let it come in 📥 (passive).",
+      "groups": [
+        {
+          "id": "voice-active",
+          "name": "Active — it points out",
+          "key": "Do · Make · Me",
+          "mnemonic": "Do it · Make it happen · Do it to me.",
+          "expand": "Simple (he does it) · Causative (he makes it happen) · Reflexive (he does it to himself, with a pronoun)",
+          "spot": "💪",
+          "scene": "Push the fader out 💪: one just does it ⚡, one makes the sun come up 🌅 without lifting a finger, and one trains himself 🏋️ — active verb, reflexive pronoun."
+        },
+        {
+          "id": "voice-middle",
+          "name": "Middle — it bends back",
+          "key": "To me · For me · Let me",
+          "mnemonic": "To me · For me · Let me — the middle always has the subject in it.",
+          "expand": "Reflexive (to himself) · Special interest (for himself) · Permissive (he lets it be done to him)",
+          "spot": "🪞",
+          "scene": "Everything thrown at the mirror 🪞 comes back: a boomerang 🪃 to himself, a basket 🛒 he filled for himself, and open hands 🤲 letting it be done to him."
+        },
+        {
+          "id": "voice-passive",
+          "name": "Passive — it comes in",
+          "key": "Done to me · Let it be done",
+          "mnemonic": "Done to me · Let it be done.",
+          "expand": "Simple (he receives it) · Permissive (he consents to it)",
+          "spot": "📥",
+          "scene": "Two things land in the tray 📥: one arrives whether he likes it or not 📥, and one he opens the door to 🕊️."
+        }
+      ]
+    },
+    {
+      "id": "mood",
+      "name": "Mood",
+      "verb": "Frames",
+      "does": "frames it as fact, or as maybe",
+      "subtitle": "How real the speaker says it is.",
+      "eli5": "Is it a fact, or a maybe? Indicative says it happened. Subjunctive says it might.",
+      "color": "#7a8b34",
+      "classDate": "2026-09-22",
+      "bigIdea": "Mood is the weather of the sentence. Indicative is clear sky — this is so. Subjunctive is fog — this might be, or is being aimed at.",
+      "masterMnemonic": "Indicative: it is. Subjunctive: it might.",
+      "masterMnemonicWhy": "Every mood question starts there — fact or maybe. Only then ask which kind of fact, or which kind of maybe.",
+      "place": "🌦️",
+      "placeName": "The Weather Station",
+      "scene": "Two dials on the wall 🌦️: clear sky ☀️ for what is (indicative), fog 🌫️ for what might be (subjunctive).",
+      "groups": [
+        {
+          "id": "mood-indicative",
+          "name": "Indicative — clear sky, it is so",
+          "key": "WAIFS",
+          "mnemonic": "W-A-I-F-S — five waifs turn up at the station.",
+          "expand": "Want (potential) · Ask (interrogative) · If (conditional) · Fact (declarative) · Shall (cohortative)",
+          "spot": "☀️",
+          "scene": "Five waifs at the weather station, and every one of them speaks in plain fact: one Wants 💭, one Asks ❓, one says If 🚦, one reads out the Fact 📰, and one says you Shall 📜."
+        },
+        {
+          "id": "mood-subjunctive",
+          "name": "Subjunctive — fog, it might be",
+          "key": "Aim · Outcome · If · Whoever · Whenever",
+          "mnemonic": "Watch the little word in front: ἵνα, ἵνα, ἐάν, ὃς ἄν, ὅταν.",
+          "expand": "Purpose (aim) · Result (outcome) · Conditional (if) · Indefinite relative (whoever) · Indefinite temporal (whenever)",
+          "spot": "🌫️",
+          "scene": "Out in the fog you cannot see the verb, only the word in front of it: an arrow 🏹 for what was aimed at, a bang 💥 for what actually came of it, dice 🎲 for if, a ticket 🎟️ for whoever, an alarm clock ⏰ for whenever."
+        }
+      ]
     }
   ],
   "cards": [
@@ -3271,6 +3379,974 @@
         "degree",
         "ch-5"
       ]
+    },
+    {
+      "id": "pron-ego",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "First Person Singular",
+      "pic": "🙋",
+      "eli5": "The one talking. Me.",
+      "formula": {
+        "pattern": [
+          "ἐγώ",
+          "I"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "ἐγώ εἰμι — “I am”. The verb ending already says “I”; the pronoun adds weight."
+      },
+      "short": "I",
+      "gist": "I",
+      "tile": "I",
+      "oneLine": "ἐγώ — “I”.",
+      "mnemonic": "Roll call — I: ἐγώ.",
+      "mnemonicWhy": "ἐγώ is “ego”. Your ego is all about you — I.",
+      "spotIt": "A nominative pronoun standing on its own: ἐγώ.",
+      "bookDef": "ἐγώ (“I”)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "ἐγώ",
+          "english": "I",
+          "note": "ἐγώ εἰμι — “I am”. The verb ending already says “I”; the pronoun adds weight."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "pron-su",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "Second Person Singular",
+      "pic": "👤",
+      "eli5": "The one you are looking at. Just the one.",
+      "formula": {
+        "pattern": [
+          "σύ",
+          "you (one person)"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "Σὺ τίς εἶ; — “Who are YOU?” John 1:19. The pronoun is there to press."
+      },
+      "short": "You",
+      "gist": "you (one person)",
+      "tile": "You",
+      "oneLine": "σύ — “you (one person)”.",
+      "mnemonic": "Roll call — You: σύ.",
+      "mnemonicWhy": "σύ is one finger, pointed at one face. One person, not a room.",
+      "spotIt": "A nominative pronoun standing on its own: σύ.",
+      "bookDef": "σύ (“you” sg)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "σύ",
+          "english": "you (one person)",
+          "note": "Σὺ τίς εἶ; — “Who are YOU?” John 1:19. The pronoun is there to press."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "pron-autos",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "Third Person Singular",
+      "pic": "🚗",
+      "eli5": "Somebody else, one of them. He, she or it.",
+      "formula": {
+        "pattern": [
+          "αὐτός, –ή, –ό",
+          "he, she, it"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "Three endings for three genders: –ός he, –ή she, –ό it."
+      },
+      "short": "He",
+      "gist": "he, she, it",
+      "tile": "He",
+      "oneLine": "αὐτός, –ή, –ό — “he, she, it”.",
+      "mnemonic": "Roll call — He: αὐτός, –ή, –ό.",
+      "mnemonicWhy": "αὐτός sounds like AUTO — and an auto drives itSELF. That second meaning, “himself”, is the one you meet everywhere.",
+      "spotIt": "A nominative pronoun standing on its own: αὐτός, –ή, –ό.",
+      "bookDef": "αὐτός, –ή, –ό (“he,” “she,” “it”)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "αὐτός, –ή, –ό",
+          "english": "he, she, it",
+          "note": "Three endings for three genders: –ός he, –ή she, –ό it."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "pron-hemeis",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "First Person Plural",
+      "pic": "🫂",
+      "eli5": "My lot. Me and the people with me.",
+      "formula": {
+        "pattern": [
+          "ἡμεῖς",
+          "we"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "One letter from ὑμεῖς, and the two mean opposite sides."
+      },
+      "short": "We",
+      "gist": "we",
+      "tile": "We",
+      "oneLine": "ἡμεῖς — “we”.",
+      "mnemonic": "Roll call — We: ἡμεῖς.",
+      "mnemonicWhy": "ἡμεῖς has the H. H for Home team — us.",
+      "spotIt": "A nominative pronoun standing on its own: ἡμεῖς.",
+      "bookDef": "ἡμεῖς (“we”)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "ἡμεῖς",
+          "english": "we",
+          "note": "One letter from ὑμεῖς, and the two mean opposite sides."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ],
+      "watchOut": "ἡμεῖς and ὑμεῖς differ by one letter and mean opposite sides. ὑ = the u of YOU; ἡ = us."
+    },
+    {
+      "id": "pron-hymeis",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "Second Person Plural",
+      "pic": "👥",
+      "eli5": "Your lot. The whole room you are talking to.",
+      "formula": {
+        "pattern": [
+          "ὑμεῖς",
+          "you (more than one)"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "English hides this and Greek does not. Most New Testament “you” is this one — plural, the church, not you personally."
+      },
+      "short": "You all",
+      "gist": "you (more than one)",
+      "tile": "You all",
+      "oneLine": "ὑμεῖς — “you (more than one)”.",
+      "mnemonic": "Roll call — You all: ὑμεῖς.",
+      "mnemonicWhy": "ὑμεῖς starts with ὑ — the u of YOU.",
+      "spotIt": "A nominative pronoun standing on its own: ὑμεῖς.",
+      "bookDef": "ὑμεῖς (“you” pl)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "ὑμεῖς",
+          "english": "you (more than one)",
+          "note": "English hides this and Greek does not. Most New Testament “you” is this one — plural, the church, not you personally."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ],
+      "watchOut": "ἡμεῖς and ὑμεῖς differ by one letter and mean opposite sides. ὑ = the u of YOU; ἡ = us."
+    },
+    {
+      "id": "pron-autoi",
+      "set": "person",
+      "group": "person-pronouns",
+      "name": "Third Person Plural",
+      "pic": "🚙",
+      "eli5": "Their lot. The other crowd.",
+      "formula": {
+        "pattern": [
+          "αὐτοί, –αί, –ά",
+          "they"
+        ],
+        "filled": [
+          "the Greek",
+          "the English"
+        ],
+        "note": "Same three genders again: –οί, –αί, –ά."
+      },
+      "short": "They",
+      "gist": "they",
+      "tile": "They",
+      "oneLine": "αὐτοί, –αί, –ά — “they”.",
+      "mnemonic": "Roll call — They: αὐτοί, –αί, –ά.",
+      "mnemonicWhy": "The autos, plural. αὐτός becomes αὐτοί.",
+      "spotIt": "A nominative pronoun standing on its own: αὐτοί, –αί, –ά.",
+      "bookDef": "αὐτοί, –αί, –ά (they)",
+      "examples": [
+        {
+          "ref": "The form",
+          "greek": "αὐτοί, –αί, –ά",
+          "english": "they",
+          "note": "Same three genders again: –οί, –αί, –ά."
+        }
+      ],
+      "tags": [
+        "person",
+        "pronoun",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-active-simple",
+      "set": "voice",
+      "group": "voice-active",
+      "name": "Simple Active",
+      "pic": "⚡",
+      "eli5": "He does it. Full stop. “God loved the world.”",
+      "formula": {
+        "pattern": [
+          "subject",
+          "does it",
+          "to something"
+        ],
+        "filled": [
+          "God",
+          "loved",
+          "the world"
+        ]
+      },
+      "short": "Simple",
+      "gist": "he just does it",
+      "tile": "Do",
+      "oneLine": "The subject performs the action himself.",
+      "mnemonic": "Active — Do: he does it, and that is all.",
+      "mnemonicWhy": "The plain one, and the one you meet most. If nothing bends back and nothing is being allowed, it is simple.",
+      "spotIt": "Ask: is the subject doing it, and does none of it come back on him? Simple active.",
+      "bookDef": "The subject directly performs the action of the verb.",
+      "examples": [
+        {
+          "ref": "John 3:16",
+          "greek": "*ἠγάπησεν* ὁ θεὸς τὸν κόσμον",
+          "english": "God *loved* the world",
+          "note": "God does the loving; it lands on the world, not on God."
+        }
+      ],
+      "tags": [
+        "voice",
+        "active",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-active-causative",
+      "set": "voice",
+      "group": "voice-active",
+      "name": "Causative Active",
+      "pic": "🌅",
+      "eli5": "He does not do it himself — he makes it happen. God makes the sun come up.",
+      "formula": {
+        "pattern": [
+          "subject",
+          "causes",
+          "X",
+          "to happen"
+        ],
+        "filled": [
+          "God",
+          "causes",
+          "his sun",
+          "to rise"
+        ]
+      },
+      "short": "Causative",
+      "gist": "he makes it happen",
+      "tile": "Make",
+      "oneLine": "The subject is the reason it happens, not the one doing it.",
+      "mnemonic": "Active — Make: he makes it happen.",
+      "mnemonicWhy": "God does not personally shove the sun over the hill. He causes it to rise. Slip “causes … to” into your translation and see if it fits better.",
+      "spotIt": "Try “causes X to …” in English. If that reads better than the plain active, it is causative.",
+      "bookDef": "The subject is the cause behind the action of the verb.",
+      "examples": [
+        {
+          "ref": "Matt 5:45",
+          "greek": "τὸν ἥλιον αὐτοῦ *ἀνατέλλει*",
+          "english": "God *causes* his sun *to rise*",
+          "note": "Active form, but the subject is the cause, not the doer."
+        }
+      ],
+      "watchOut": "The form is ordinary active. Nothing marks it — only the sense does.",
+      "tags": [
+        "voice",
+        "active",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-active-reflexive",
+      "set": "voice",
+      "group": "voice-active",
+      "name": "Reflexive Active",
+      "pic": "🏋️",
+      "eli5": "He does it to himself — and says so with an extra word. “Train yourself.”",
+      "formula": {
+        "pattern": [
+          "active verb",
+          "+ self-pronoun"
+        ],
+        "filled": [
+          "γύμναζε",
+          "σεαυτόν"
+        ],
+        "note": "Two words doing what the middle does in one."
+      },
+      "short": "Reflexive (act.)",
+      "gist": "he does it to himself",
+      "tile": "Me",
+      "oneLine": "An active verb plus a reflexive pronoun: σεαυτόν, ἑαυτόν.",
+      "mnemonic": "Active — Me: active verb, and a spare “self” lying next to it.",
+      "mnemonicWhy": "This is how the active does reflexive: it has to borrow a pronoun. The middle does not — that is the whole difference.",
+      "spotIt": "Active verb, and a reflexive pronoun (σεαυτόν, ἑαυτόν) sitting beside it.",
+      "bookDef": "The subject performs the action to himself.",
+      "examples": [
+        {
+          "ref": "1 Tim 4:7",
+          "greek": "*γύμναζε* *σεαυτὸν* πρὸς εὐσέβειαν",
+          "english": "*Train* *yourself* in godliness",
+          "note": "γύμναζε is active. σεαυτόν is doing the reflexive work."
+        }
+      ],
+      "watchOut": "Not the middle. The middle reflexive carries it in the verb and needs no pronoun.",
+      "tags": [
+        "voice",
+        "active",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-middle-reflexive",
+      "set": "voice",
+      "group": "voice-middle",
+      "name": "Reflexive Middle",
+      "pic": "🪃",
+      "eli5": "It comes straight back to him, and the verb says so on its own. Judas hanged himself.",
+      "formula": {
+        "pattern": [
+          "middle verb"
+        ],
+        "filled": [
+          "ἀπήγξατο"
+        ],
+        "note": "One word: he hanged himself."
+      },
+      "short": "Reflexive (mid.)",
+      "gist": "to himself, no pronoun",
+      "tile": "To me",
+      "oneLine": "A middle verb whose action lands on the subject — no reflexive pronoun needed.",
+      "mnemonic": "Middle — To me: the boomerang. It comes back.",
+      "mnemonicWhy": "The middle carries the “self” inside the ending. Where the active had to add σεαυτόν, the middle just is reflexive.",
+      "spotIt": "A middle-form verb, and the action clearly lands on the subject, with no reflexive pronoun in sight.",
+      "bookDef": "The subject performs the action to himself.",
+      "examples": [
+        {
+          "ref": "Matt 27:5",
+          "greek": "ἀπελθὼν *ἀπήγξατο*",
+          "english": "he went out and *hanged himself*",
+          "note": "One middle verb. The “himself” is in the ending."
+        }
+      ],
+      "watchOut": "Compare 1 Tim 4:7: same idea, active verb, borrowed pronoun. The voice is the difference.",
+      "tags": [
+        "voice",
+        "middle",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-middle-interest",
+      "set": "voice",
+      "group": "voice-middle",
+      "name": "Middle of Special Interest",
+      "pic": "🛒",
+      "eli5": "He does it, and he is the one who gets the good of it. Mary picked the good bit for herself.",
+      "formula": {
+        "pattern": [
+          "subject",
+          "does it",
+          "for himself"
+        ],
+        "filled": [
+          "Mary",
+          "chose",
+          "the good portion"
+        ]
+      },
+      "short": "Special interest",
+      "gist": "for himself",
+      "tile": "For me",
+      "oneLine": "The subject does the action for his own benefit.",
+      "mnemonic": "Middle — For me: he did it, and he keeps the benefit.",
+      "mnemonicWhy": "Not to himself — for himself. The action goes out; the profit comes back.",
+      "spotIt": "The subject acts, and the person who gains by it is the subject. Try “for himself” in the translation.",
+      "bookDef": "The subject performs the action for himself.",
+      "examples": [
+        {
+          "ref": "Luke 10:42",
+          "greek": "Μαριὰμ τὴν ἀγαθὴν μερίδα *ἐξελέξατο*",
+          "english": "Mary has *chosen* the good portion",
+          "note": "She chose, and she is the one who has it."
+        }
+      ],
+      "watchOut": "“To himself” is reflexive; “for himself” is special interest. One lands on him, one profits him.",
+      "tags": [
+        "voice",
+        "middle",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-middle-permissive",
+      "set": "voice",
+      "group": "voice-middle",
+      "name": "Permissive Middle",
+      "pic": "🤲",
+      "eli5": "He does not do it and it is not forced on him — he lets it happen to him. “Get baptised.”",
+      "formula": {
+        "pattern": [
+          "subject",
+          "lets it be done",
+          "to him"
+        ],
+        "filled": [
+          "you",
+          "be baptised",
+          "—"
+        ]
+      },
+      "short": "Permissive (mid.)",
+      "gist": "he lets it be done to him",
+      "tile": "Let me",
+      "oneLine": "The subject consents to the action happening to or for him.",
+      "mnemonic": "Middle — Let me: open hands. He allows it.",
+      "mnemonicWhy": "You do not baptise yourself and you are not ambushed either. You submit to it. That is the middle's permission.",
+      "spotIt": "Try “let himself be …” or “have it done”. If that is the sense, it is permissive.",
+      "bookDef": "The subject allows something to be done to or for himself.",
+      "examples": [
+        {
+          "ref": "Acts 22:16",
+          "greek": "ἀναστὰς *βάπτισαι* καὶ *ἀπόλουσαι* τὰς ἁμαρτίας σου",
+          "english": "Get up, *be baptised*, and *wash away* your sins",
+          "note": "Both middle. Paul is told to let it be done to him."
+        }
+      ],
+      "tags": [
+        "voice",
+        "middle",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-passive-simple",
+      "set": "voice",
+      "group": "voice-passive",
+      "name": "Simple Passive",
+      "pic": "📥",
+      "eli5": "It happens to him. He did nothing. “The righteousness of God is revealed.”",
+      "formula": {
+        "pattern": [
+          "subject",
+          "is done to"
+        ],
+        "filled": [
+          "the righteousness of God",
+          "is revealed"
+        ]
+      },
+      "short": "Simple",
+      "gist": "he receives it",
+      "tile": "Done to me",
+      "oneLine": "The subject receives the action instead of doing it.",
+      "mnemonic": "Passive — Done to me: it arrives whether he moved or not.",
+      "mnemonicWhy": "The plain passive, and the easy one. The subject is the target, and somebody or something else did it.",
+      "spotIt": "The subject is not doing it. Ask “by whom?” and the answer is somewhere else, or nowhere.",
+      "bookDef": "The subject receives the action of the verb.",
+      "examples": [
+        {
+          "ref": "Rom 1:17",
+          "greek": "δικαιοσύνη θεοῦ … *ἀποκαλύπτεται*",
+          "english": "The righteousness of God *is revealed*",
+          "note": "It does not reveal itself. It is revealed."
+        }
+      ],
+      "tags": [
+        "voice",
+        "passive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "voice-passive-permissive",
+      "set": "voice",
+      "group": "voice-passive",
+      "name": "Permissive Passive",
+      "pic": "🕊️",
+      "eli5": "It is done to him — but only because he says yes. “Be filled with the Spirit.”",
+      "formula": {
+        "pattern": [
+          "subject",
+          "consents",
+          "to it being done"
+        ],
+        "filled": [
+          "you",
+          "be filled",
+          "with the Spirit"
+        ]
+      },
+      "short": "Permissive (pass.)",
+      "gist": "he consents to it",
+      "tile": "Let it be done",
+      "oneLine": "A passive where the subject is being asked to consent, not just to receive.",
+      "mnemonic": "Passive — Let it be done: he opens the door.",
+      "mnemonicWhy": "A passive you can be commanded to do only makes sense if you have a say in it. That is the tell.",
+      "spotIt": "A passive form, but the sense is consent — often an imperative you are told to allow.",
+      "bookDef": "The subject gives consent or permission regarding the action of the verb.",
+      "examples": [
+        {
+          "ref": "Eph 5:18",
+          "greek": "*πληροῦσθε* ἐν πνεύματι",
+          "english": "*Be filled* with the Spirit",
+          "note": "You do not fill yourself. You are told to let yourself be filled."
+        }
+      ],
+      "watchOut": "Very close to the middle permissive. The middle is “he lets it be done to himself”; the passive is “he consents to what is done to him”.",
+      "tags": [
+        "voice",
+        "passive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-potential",
+      "set": "mood",
+      "group": "mood-indicative",
+      "name": "Potential",
+      "pic": "💭",
+      "eli5": "Somebody wants something. “I want them to marry.” The wanting is the fact.",
+      "formula": {
+        "pattern": [
+          "want-verb",
+          "+ infinitive"
+        ],
+        "filled": [
+          "βούλομαι",
+          "γαμεῖν"
+        ]
+      },
+      "short": "Potential",
+      "gist": "want, ought, wish",
+      "tile": "W",
+      "oneLine": "A verb of wishing, wanting or obligation, with an infinitive hanging off it.",
+      "mnemonic": "WAIFS — W: Want.",
+      "mnemonicWhy": "The wanting really is happening, so the verb is indicative. What is wanted sits in the infinitive after it.",
+      "spotIt": "A verb like βούλομαι, θέλω or δεῖ, followed by an infinitive.",
+      "bookDef": "Used with verbs of obligation, wish, or desire, followed by a complementary infinitive.",
+      "examples": [
+        {
+          "ref": "1 Tim 5:14",
+          "greek": "*βούλομαι* οὖν νεωτέρας γαμεῖν",
+          "english": "So I *want* younger women to marry",
+          "note": "βούλομαι is the indicative; γαμεῖν is the infinitive it wants."
+        }
+      ],
+      "tags": [
+        "mood",
+        "indicative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-interrogative",
+      "set": "mood",
+      "group": "mood-indicative",
+      "name": "Interrogative",
+      "pic": "❓",
+      "eli5": "It asks something — and the answer will be a plain fact too. “Who are you?”",
+      "formula": {
+        "pattern": [
+          "question word",
+          "indicative verb"
+        ],
+        "filled": [
+          "τίς",
+          "εἶ"
+        ]
+      },
+      "short": "Interrogative",
+      "gist": "asks a real question",
+      "tile": "A",
+      "oneLine": "A question expecting an answer in the indicative.",
+      "mnemonic": "WAIFS — A: Ask.",
+      "mnemonicWhy": "A question about what is actually the case. Not “should we?” — that is a different mood — but “who are you?”",
+      "spotIt": "A question mark, and the answer would be a statement of fact.",
+      "bookDef": "A question that will also be answered in the indicative mood.",
+      "examples": [
+        {
+          "ref": "John 1:19",
+          "greek": "Σὺ τίς *εἶ*;",
+          "english": "Who *are* you?",
+          "note": "The answer comes back in the indicative too: “I am not the Christ.”"
+        }
+      ],
+      "tags": [
+        "mood",
+        "indicative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-conditional-ind",
+      "set": "mood",
+      "group": "mood-indicative",
+      "name": "Conditional",
+      "pic": "🚦",
+      "eli5": "“If this is true — and let us say it is.” The if-half is treated as a fact.",
+      "formula": {
+        "ladder": [
+          "First class — εἰ + indicative: if this is so, and it is.",
+          "Second class — εἰ + indicative, ἄν in the apodosis: if this were so, but it is not."
+        ]
+      },
+      "short": "Conditional",
+      "gist": "εἰ + indicative",
+      "tile": "I",
+      "oneLine": "The “if” half of a first or second class conditional, after εἰ.",
+      "mnemonic": "WAIFS — I: If.",
+      "mnemonicWhy": "εἰ takes you to the indicative. First class assumes the if is true; second class assumes it is false. Either way the speaker is treating it as settled.",
+      "spotIt": "εἰ plus an indicative verb. First class: assumed true. Second class: contrary to fact, and ἄν usually shows up in the second half.",
+      "bookDef": "First Class: The protasis (“if” clause) of a first class conditional sentence. · Second Class: The protasis of a second class conditional sentence.",
+      "examples": [
+        {
+          "ref": "Col 3:1 — first class",
+          "greek": "εἰ οὖν *συνηγέρθητε* τῷ Χριστῷ, τὰ ἄνω ζητεῖτε",
+          "english": "So if you *have been raised* with Christ, seek the things above",
+          "note": "Assumed true: you have been raised. So — seek."
+        },
+        {
+          "ref": "John 5:46 — second class",
+          "greek": "εἰ γὰρ *ἐπιστεύετε* Μωϋσεῖ, ἐπιστεύετε ἂν ἐμοί",
+          "english": "For if you *believed* Moses, you would believe me",
+          "note": "Contrary to fact: they do not believe Moses. Note the ἄν in the second half."
+        }
+      ],
+      "watchOut": "εἰ + indicative is first or second class. ἐάν + subjunctive is third class, and that is a different card in a different mood.",
+      "tags": [
+        "mood",
+        "indicative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-declarative",
+      "set": "mood",
+      "group": "mood-indicative",
+      "name": "Declarative",
+      "pic": "📰",
+      "eli5": "It just says what is. “In the beginning was the Word.”",
+      "formula": {
+        "pattern": [
+          "subject",
+          "indicative verb"
+        ],
+        "filled": [
+          "ὁ λόγος",
+          "ἦν"
+        ]
+      },
+      "short": "Declarative",
+      "gist": "states a plain fact",
+      "tile": "F",
+      "oneLine": "A plain statement, with nothing hedged.",
+      "mnemonic": "WAIFS — F: Fact.",
+      "mnemonicWhy": "The default, and the reason the indicative exists. If nothing else is going on, this is it.",
+      "spotIt": "A statement with no “if”, no question mark, and no wanting.",
+      "bookDef": "An unqualified assertion or statement.",
+      "examples": [
+        {
+          "ref": "John 1:1",
+          "greek": "ἐν ἀρχῇ *ἦν* ὁ λόγος",
+          "english": "In the beginning *was* the Word",
+          "note": "No hedge, no condition. It simply was."
+        }
+      ],
+      "tags": [
+        "mood",
+        "indicative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-cohortative",
+      "set": "mood",
+      "group": "mood-indicative",
+      "name": "Cohortative",
+      "pic": "📜",
+      "eli5": "A future that is really an order. “You shall love your neighbour.”",
+      "formula": {
+        "pattern": [
+          "future indicative",
+          "= a command"
+        ],
+        "filled": [
+          "ἀγαπήσεις",
+          "love him"
+        ]
+      },
+      "short": "Cohortative",
+      "gist": "future used as a command",
+      "tile": "S",
+      "oneLine": "A future indicative doing the work of a command.",
+      "mnemonic": "WAIFS — S: Shall.",
+      "mnemonicWhy": "This is how the Ten Commandments sound: “you shall not”. It is grammatically a prediction and functionally an order.",
+      "spotIt": "A future indicative where the sense is “do this”, not “this will happen”.",
+      "bookDef": "A future indicative that is used as a command.",
+      "examples": [
+        {
+          "ref": "Jas 2:8",
+          "greek": "*ἀγαπήσεις* τὸν πλησίον σου",
+          "english": "You *shall love* your neighbour",
+          "note": "Future in form. An order in force."
+        }
+      ],
+      "watchOut": "Not the imperative mood. The form is future indicative — only the use is a command.",
+      "tags": [
+        "mood",
+        "indicative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-purpose",
+      "set": "mood",
+      "group": "mood-subjunctive",
+      "name": "Purpose",
+      "pic": "🏹",
+      "eli5": "Why he did it. “He came SO THAT he could tell people about the light.”",
+      "formula": {
+        "pattern": [
+          "ἵνα",
+          "subjunctive"
+        ],
+        "filled": [
+          "in order that",
+          "he might testify"
+        ]
+      },
+      "short": "Purpose",
+      "gist": "so that — intended",
+      "tile": "Aim",
+      "oneLine": "ἵνα (or ὅπως) plus subjunctive, giving the aim.",
+      "mnemonic": "Subjunctive — Aim: the arrow, before it lands.",
+      "mnemonicWhy": "Purpose is about intention. It might not even come off; it is what was aimed at.",
+      "spotIt": "ἵνα or ὅπως, and the sense is “in order to”.",
+      "bookDef": "Follows the particle ἵνα (or ὅπως) and expresses purpose (intended result).",
+      "examples": [
+        {
+          "ref": "John 1:7",
+          "greek": "ἵνα *μαρτυρήσῃ* περὶ τοῦ φωτός",
+          "english": "in order to *testify* about the light",
+          "note": "That is what he came for. The aim."
+        }
+      ],
+      "watchOut": "Same word, ἵνα, as result. Only the sense separates them: aimed at, or actually happened.",
+      "tags": [
+        "mood",
+        "subjunctive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-result",
+      "set": "mood",
+      "group": "mood-subjunctive",
+      "name": "Result",
+      "pic": "💥",
+      "eli5": "What actually came of it. “…that he was born blind.” Nobody aimed at that.",
+      "formula": {
+        "pattern": [
+          "ἵνα",
+          "subjunctive"
+        ],
+        "filled": [
+          "with the result that",
+          "he was born blind"
+        ]
+      },
+      "short": "Result",
+      "gist": "so that — it happened",
+      "tile": "Outcome",
+      "oneLine": "ἵνα (or ὅπως) plus subjunctive, giving what actually followed.",
+      "mnemonic": "Subjunctive — Outcome: the bang, after it lands.",
+      "mnemonicWhy": "Same word as purpose. The test is whether anyone intended it. Nobody intends a baby to be born blind, so ἵνα there is result.",
+      "spotIt": "ἵνα, and “with the result that” reads better than “in order that”.",
+      "bookDef": "Follows the particle ἵνα (or ὅπως) and expresses result (actual result).",
+      "examples": [
+        {
+          "ref": "John 9:2",
+          "greek": "τίς ἥμαρτεν … ἵνα τυφλὸς *γεννηθῇ*;",
+          "english": "Who sinned … that *he was born* blind?",
+          "note": "The blindness is the outcome, not anybody's aim."
+        }
+      ],
+      "tags": [
+        "mood",
+        "subjunctive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-conditional",
+      "set": "mood",
+      "group": "mood-subjunctive",
+      "name": "Conditional",
+      "pic": "🎲",
+      "eli5": "A real maybe. “If anyone keeps my word” — some will, some will not.",
+      "formula": {
+        "pattern": [
+          "ἐάν",
+          "subjunctive"
+        ],
+        "filled": [
+          "if (maybe)",
+          "he keeps"
+        ]
+      },
+      "short": "Conditional",
+      "gist": "ἐάν + subjunctive",
+      "tile": "If",
+      "oneLine": "The “if” half of a third class conditional, after ἐάν.",
+      "mnemonic": "Subjunctive — If: the dice. Genuinely open.",
+      "mnemonicWhy": "ἐάν is εἰ + ἄν, and the ἄν is the uncertainty. εἰ alone goes with the indicative; ἐάν goes with the subjunctive.",
+      "spotIt": "ἐάν or ἐὰν μή, plus a subjunctive verb.",
+      "bookDef": "Follows the particle ἐάν or ἐὰν μή and is used in the protasis of a third class conditional sentence.",
+      "examples": [
+        {
+          "ref": "John 8:51",
+          "greek": "ἐάν τις τὸν ἐμὸν λόγον *τηρήσῃ*",
+          "english": "If anyone *keeps* my word",
+          "note": "Third class. Open — some will, some will not."
+        }
+      ],
+      "watchOut": "εἰ + indicative is first or second class. ἐάν + subjunctive is third. The particle tells you before the verb does.",
+      "tags": [
+        "mood",
+        "subjunctive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-relative",
+      "set": "mood",
+      "group": "mood-subjunctive",
+      "name": "Indefinite Relative",
+      "pic": "🎟️",
+      "eli5": "Not one named person — anybody at all. “Whoever calls on the name of the Lord.”",
+      "formula": {
+        "pattern": [
+          "ὃς ἄν",
+          "subjunctive"
+        ],
+        "filled": [
+          "whoever",
+          "calls on him"
+        ]
+      },
+      "short": "Indef. relative",
+      "gist": "whoever, anyone who",
+      "tile": "Whoever",
+      "oneLine": "After an indefinite relative pronoun with ἄν, the verb goes subjunctive.",
+      "mnemonic": "Subjunctive — Whoever: a ticket with no name on it.",
+      "mnemonicWhy": "The ἄν is what makes it indefinite. ὅς is “who”; ὃς ἄν is “whoever it turns out to be”.",
+      "spotIt": "ὅστις (ἄν/ἐάν) or ὃς (δ᾿) ἄν, then a subjunctive.",
+      "bookDef": "Used after the indefinite relative pronouns ὅστις (ἄν/ἐάν) or ὃς (δ᾿) ἄν.",
+      "examples": [
+        {
+          "ref": "Acts 2:21",
+          "greek": "ὃς ἂν *ἐπικαλέσηται* τὸ ὄνομα κυρίου σωθήσεται",
+          "english": "*whoever* calls on the name of the Lord will be saved",
+          "note": "No particular person is meant. Anyone who does it."
+        }
+      ],
+      "tags": [
+        "mood",
+        "subjunctive",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-temporal",
+      "set": "mood",
+      "group": "mood-subjunctive",
+      "name": "Indefinite Temporal",
+      "pic": "⏰",
+      "eli5": "Not one particular time — any time it happens. “Whenever someone says…”",
+      "formula": {
+        "pattern": [
+          "ὅταν",
+          "subjunctive"
+        ],
+        "filled": [
+          "whenever",
+          "someone says"
+        ]
+      },
+      "short": "Indef. temporal",
+      "gist": "whenever, every time",
+      "tile": "Whenever",
+      "oneLine": "After ὅταν or another temporal word, the verb goes subjunctive.",
+      "mnemonic": "Subjunctive — Whenever: the alarm that could go off any time.",
+      "mnemonicWhy": "ὅταν is ὅτε + ἄν — “when” plus the same ἄν that made “whoever” indefinite. Same trick, applied to time.",
+      "spotIt": "ὅταν, or a temporal adverb or preposition, then a subjunctive.",
+      "bookDef": "Used after the temporal conjunction ὅταν or after a temporal adverb or preposition (e.g., …",
+      "examples": [
+        {
+          "ref": "1 Cor 3:4",
+          "greek": "ὅταν γὰρ *λέγῃ* τις",
+          "english": "For *whenever* someone *says*",
+          "note": "Not one occasion. Every time it happens."
+        }
+      ],
+      "watchOut": "The chart's wording runs off the edge of the photo here — it lists more triggers after “preposition (e.g.,”. Worth catching the rest from the book.",
+      "tags": [
+        "mood",
+        "subjunctive",
+        "ch-6"
+      ]
     }
   ],
   "confusions": [
@@ -3515,6 +4591,61 @@
       "test": "Slip “as” between them.",
       "answer": "“As” fits ⇒ object + complement. “As” is nonsense and one of them is a person ⇒ person + thing.",
       "example": "“gave his life AS a ransom” · “asks him for bread”."
+    },
+    {
+      "id": "reflexive-which-voice",
+      "pair": [
+        "voice-active-reflexive",
+        "voice-middle-reflexive"
+      ],
+      "question": "He did it to himself — active or middle?",
+      "test": "Is there a reflexive pronoun sitting next to the verb?",
+      "answer": "A spare σεαυτόν / ἑαυτόν doing the work ⇒ active reflexive. The verb carries it alone, no pronoun ⇒ middle reflexive.",
+      "example": "“γύμναζε σεαυτόν” (1 Tim 4:7, active) · “ἀπήγξατο” (Matt 27:5, middle)."
+    },
+    {
+      "id": "hina-purpose-or-result",
+      "pair": [
+        "mood-subj-purpose",
+        "mood-subj-result"
+      ],
+      "question": "ἵνα + subjunctive — purpose or result?",
+      "test": "Did anybody aim at this?",
+      "answer": "Somebody intended it ⇒ purpose, “in order that”. It just turned out that way ⇒ result, “with the result that”.",
+      "example": "“came to testify” (John 1:7) · “that he was born blind” (John 9:2)."
+    },
+    {
+      "id": "ei-or-ean",
+      "pair": [
+        "mood-conditional-ind",
+        "mood-subj-conditional"
+      ],
+      "question": "An “if” clause — which class?",
+      "test": "Look at the particle before you look at the verb.",
+      "answer": "εἰ + indicative ⇒ first class (assumed true) or second class (contrary to fact, with ἄν later). ἐάν + subjunctive ⇒ third class, a real maybe.",
+      "example": "“εἰ συνηγέρθητε” (Col 3:1) · “ἐάν τις τηρήσῃ” (John 8:51)."
+    },
+    {
+      "id": "we-or-you",
+      "pair": [
+        "pron-hemeis",
+        "pron-hymeis"
+      ],
+      "question": "ἡμεῖς or ὑμεῖς?",
+      "test": "Look at the first letter, and say it.",
+      "answer": "ὑ has the u of YOU — ὑμεῖς is you all. ἡ is us — ἡμεῖς is we.",
+      "example": "ἡμεῖς = we · ὑμεῖς = you all."
+    },
+    {
+      "id": "permissive-which-voice",
+      "pair": [
+        "voice-middle-permissive",
+        "voice-passive-permissive"
+      ],
+      "question": "He allowed it — middle or passive?",
+      "test": "Is he letting it be done to himself, or consenting to what is being done?",
+      "answer": "Middle: he puts himself under it, “let yourself be baptised”. Passive: he gives way to it, “be filled”. Close cousins — the form decides.",
+      "example": "“βάπτισαι” (Acts 22:16, middle) · “πληροῦσθε” (Eph 5:18, passive)."
     }
   ],
   "extraQuiz": [
