@@ -383,17 +383,17 @@
       "id": "mood",
       "name": "Mood",
       "verb": "Frames",
-      "does": "frames it as fact, or as maybe",
-      "subtitle": "How real the speaker says it is.",
-      "eli5": "Is it a fact, or a maybe? Indicative says it happened. Subjunctive says it might.",
+      "does": "frames it as fact, maybe, order or wish",
+      "subtitle": "How real the speaker says it is — and whether he is telling you to do it.",
+      "eli5": "Is it a fact, a maybe, an order, or a wish? That is all mood is. Indicative: it happened. Subjunctive: it might. Imperative: do it. Optative: I hope so.",
       "color": "#7a8b34",
       "classDate": "2026-09-22",
-      "bigIdea": "Mood is the weather of the sentence. Indicative is clear sky — this is so. Subjunctive is fog — this might be, or is being aimed at.",
-      "masterMnemonic": "Indicative: it is. Subjunctive: it might.",
-      "masterMnemonicWhy": "Every mood question starts there — fact or maybe. Only then ask which kind of fact, or which kind of maybe.",
+      "bigIdea": "Mood is the weather of the sentence. Clear sky ☀️ for what is, fog 🌫️ for what might be, thunder ⛈️ for do it, a rainbow 🌈 for I wish.",
+      "masterMnemonic": "It is · It might · Do it · I wish.",
+      "masterMnemonicWhy": "Four moods, four postures. Indicative states, subjunctive supposes, imperative orders, optative wishes. Name the posture first and the use is a short list after that.",
       "place": "🌦️",
       "placeName": "The Weather Station",
-      "scene": "Two dials on the wall 🌦️: clear sky ☀️ for what is (indicative), fog 🌫️ for what might be (subjunctive).",
+      "scene": "Four dials on the wall 🌦️: clear sky ☀️ it is, fog 🌫️ it might be, thunder ⛈️ do it, rainbow 🌈 I wish.",
       "groups": [
         {
           "id": "mood-indicative",
@@ -406,12 +406,66 @@
         },
         {
           "id": "mood-subjunctive",
-          "name": "Subjunctive — fog, it might be",
+          "name": "Subjunctive after a word — it might be",
           "key": "Aim · Outcome · If · Whoever · Whenever",
-          "mnemonic": "Watch the little word in front: ἵνα, ἵνα, ἐάν, ὃς ἄν, ὅταν.",
+          "mnemonic": "Five little words pull a subjunctive: ἵνα, ἵνα, ἐάν, ὃς ἄν, ὅταν.",
           "expand": "Purpose (aim) · Result (outcome) · Conditional (if) · Indefinite relative (whoever) · Indefinite temporal (whenever)",
           "spot": "🌫️",
           "scene": "Out in the fog you cannot see the verb, only the word in front of it: an arrow 🏹 for what was aimed at, a bang 💥 for what actually came of it, dice 🎲 for if, a ticket 🎟️ for whoever, an alarm clock ⏰ for whenever."
+        },
+        {
+          "id": "mood-subj-main",
+          "name": "Subjunctive on its own — no word in front",
+          "key": "Let us · Should we · Never · Don't",
+          "mnemonic": "Let us · Should we · Never · Don't — four things you can say with no ἵνα in sight.",
+          "expand": "Hortatory (let us) · Deliberative (should we?) · Emphatic negation (οὐ μή, never) · Prohibitory (μή + aorist, don't)",
+          "spot": "🌬️",
+          "scene": "A gust blows the fog off 🌬️ and the subjunctive speaks for itself: hands up 🙌 “let us”, a raised eyebrow 🤔 “should we?”, a hard no 🚫 “never”, and a flat palm 🙅 “don't”."
+        },
+        {
+          "id": "mood-imperative",
+          "name": "Imperative — thunder, do it",
+          "key": "PHONIC",
+          "mnemonic": "P-H-O-N-I-C — six things you say out loud.",
+          "expand": "Please (request) · Hi (greeting) · OK (permission) · No (prohibition) · If (conditional) · Charge (command)",
+          "spot": "⛈️",
+          "scene": "Six things shouted through the thunder ⛈️: Please 🙇 to somebody above you, Hi 👋 in passing, OK 👌 letting it go, No ❌ forbidding it, If 👣 — come and see — and the plain Charge 🫡."
+        },
+        {
+          "id": "mood-optative",
+          "name": "Optative — a rainbow, I wish",
+          "key": "May · Might · Should",
+          "mnemonic": "May · Might · Should — three English words, three optative uses.",
+          "expand": "Voluntative (may it be) · Deliberative (what it might be) · Potential (if you should)",
+          "spot": "🌈",
+          "scene": "A rainbow 🌈 over the station, and three wishes under it: a candle 🕯️ “may grace be multiplied”, a puzzled question ❔ “what might this mean?”, and a four-leaf clover 🍀 for the fourth class — “even if you should suffer”."
+        }
+      ]
+    },
+    {
+      "id": "tense",
+      "name": "Tense",
+      "verb": "Times",
+      "does": "says when, and how it is being pictured",
+      "subtitle": "Six forms of λύω, and the three marks that give them away.",
+      "eli5": "When did it happen, and are we watching it happen or just told that it did?",
+      "color": "#8c5a3c",
+      "classDate": "2026-09-22",
+      "bigIdea": "Three marks decode the whole table. An ἐ- on the front means past. A σ after the stem means future or aorist. The stem said twice means perfect.",
+      "masterMnemonic": "Am · Will · Was · Did · Have · Had.",
+      "masterMnemonicWhy": "Six English helpers, six Greek forms, in the chart's own order. The book flags the catch itself: “It should be noted that this chart is an oversimplification of the wide diversity of tense-form uses and that students will not always translate verbs in such a manner.”",
+      "place": "⏳",
+      "placeName": "The Clock Tower",
+      "scene": "Six bells in the tower ⏳, and three tell-tales chalked on the wall: ἐ- means past, σ means future or aorist, and the stem said twice means perfect.",
+      "groups": [
+        {
+          "id": "tense-forms",
+          "name": "The six forms of λύω",
+          "key": "Am · Will · Was · Did · Have · Had",
+          "mnemonic": "Am · Will · Was · Did · Have · Had — say the English helper and the Greek form follows.",
+          "expand": "λύω · λύσω · ἔλυον · ἔλυσα · λέλυκα · ἐλελύκειν",
+          "spot": "⏳",
+          "scene": "Six bells, one after another 🎬 I am loosing, 🔮 I will loose, 🎞️ I was loosing, 📸 I loosed, 🧱 I have loosed, 🕰️ I had loosed. Read the marks, not the meaning: ἐ- past, σ future or aorist, doubled stem perfect."
         }
       ]
     }
@@ -3641,7 +3695,7 @@
           "the world"
         ]
       },
-      "short": "Simple",
+      "short": "Simple (act.)",
       "gist": "he just does it",
       "tile": "Do",
       "oneLine": "The subject performs the action himself.",
@@ -3887,7 +3941,7 @@
           "is revealed"
         ]
       },
-      "short": "Simple",
+      "short": "Simple (pass.)",
       "gist": "he receives it",
       "tile": "Done to me",
       "oneLine": "The subject receives the action instead of doing it.",
@@ -3955,7 +4009,7 @@
       "id": "mood-potential",
       "set": "mood",
       "group": "mood-indicative",
-      "name": "Potential",
+      "name": "Potential Indicative",
       "pic": "💭",
       "eli5": "Somebody wants something. “I want them to marry.” The wanting is the fact.",
       "formula": {
@@ -3968,7 +4022,7 @@
           "γαμεῖν"
         ]
       },
-      "short": "Potential",
+      "short": "Potential (ind.)",
       "gist": "want, ought, wish",
       "tile": "W",
       "oneLine": "A verb of wishing, wanting or obligation, with an infinitive hanging off it.",
@@ -4033,7 +4087,7 @@
       "id": "mood-conditional-ind",
       "set": "mood",
       "group": "mood-indicative",
-      "name": "Conditional",
+      "name": "Conditional Indicative",
       "pic": "🚦",
       "eli5": "“If this is true — and let us say it is.” The if-half is treated as a fact.",
       "formula": {
@@ -4042,7 +4096,7 @@
           "Second class — εἰ + indicative, ἄν in the apodosis: if this were so, but it is not."
         ]
       },
-      "short": "Conditional",
+      "short": "Conditional (ind.)",
       "gist": "εἰ + indicative",
       "tile": "I",
       "oneLine": "The “if” half of a first or second class conditional, after εἰ.",
@@ -4233,7 +4287,7 @@
       "id": "mood-subj-conditional",
       "set": "mood",
       "group": "mood-subjunctive",
-      "name": "Conditional",
+      "name": "Conditional Subjunctive",
       "pic": "🎲",
       "eli5": "A real maybe. “If anyone keeps my word” — some will, some will not.",
       "formula": {
@@ -4246,7 +4300,7 @@
           "he keeps"
         ]
       },
-      "short": "Conditional",
+      "short": "Conditional (subj.)",
       "gist": "ἐάν + subjunctive",
       "tile": "If",
       "oneLine": "The “if” half of a third class conditional, after ἐάν.",
@@ -4331,8 +4385,8 @@
       "oneLine": "After ὅταν or another temporal word, the verb goes subjunctive.",
       "mnemonic": "Subjunctive — Whenever: the alarm that could go off any time.",
       "mnemonicWhy": "ὅταν is ὅτε + ἄν — “when” plus the same ἄν that made “whoever” indefinite. Same trick, applied to time.",
-      "spotIt": "ὅταν, or a temporal adverb or preposition, then a subjunctive.",
-      "bookDef": "Used after the temporal conjunction ὅταν or after a temporal adverb or preposition (e.g., …",
+      "spotIt": "ὅταν, or an “until” word: ἕως, ἄχρι, μέχρι. Then a subjunctive.",
+      "bookDef": "Used after the temporal conjunction ὅταν or after a temporal adverb or preposition (e.g., ἕως, ἄχρι, μέχρι).",
       "examples": [
         {
           "ref": "1 Cor 3:4",
@@ -4341,12 +4395,754 @@
           "note": "Not one occasion. Every time it happens."
         }
       ],
-      "watchOut": "The chart's wording runs off the edge of the photo here — it lists more triggers after “preposition (e.g.,”. Worth catching the rest from the book.",
+      "watchOut": "ὅταν is the common one, but ἕως, ἄχρι and μέχρι — “until” words — pull the subjunctive too.",
       "tags": [
         "mood",
         "subjunctive",
         "ch-6"
       ]
+    },
+    {
+      "id": "mood-subj-hortatory",
+      "set": "mood",
+      "group": "mood-subj-main",
+      "name": "Hortatory Subjunctive",
+      "pic": "🙌",
+      "eli5": "“Let us do good.” He is telling you to do it, and putting himself in with you.",
+      "formula": {
+        "pattern": [
+          "1st person plural subjunctive"
+        ],
+        "filled": [
+          "ἐργαζώμεθα — let us work"
+        ]
+      },
+      "short": "Hortatory",
+      "gist": "let us — and me too",
+      "tile": "Let us",
+      "oneLine": "A first person plural subjunctive: the speaker orders the room and joins it.",
+      "mnemonic": "On its own — Let us: he gives the order and stands in the queue with you.",
+      "mnemonicWhy": "This is why it is not an imperative. An imperative points at you; the hortatory says “us”, and the speaker is inside the command.",
+      "spotIt": "A first person plural subjunctive, translated “let us …”.",
+      "bookDef": "The author commands his audience but also includes himself in the command.",
+      "examples": [
+        {
+          "ref": "Gal 6:10",
+          "greek": "*ἐργαζώμεθα* τὸ ἀγαθὸν πρὸς πάντας",
+          "english": "*Let us do* good to everyone",
+          "note": "Paul is not exempt from it. That is the whole point of the form."
+        }
+      ],
+      "watchOut": "Not the imperative. The imperative commands you; the hortatory commands us.",
+      "tags": [
+        "mood",
+        "subj-main",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-deliberative",
+      "set": "mood",
+      "group": "mood-subj-main",
+      "name": "Deliberative Subjunctive",
+      "pic": "🤔",
+      "eli5": "“Should we keep sinning?” It asks — sometimes for an answer, sometimes to make a point.",
+      "formula": {
+        "pattern": [
+          "subjunctive",
+          "as a question"
+        ],
+        "filled": [
+          "ἐπιμένωμεν;",
+          "should we continue?"
+        ]
+      },
+      "short": "Deliberative (subj.)",
+      "gist": "should we? — a real question",
+      "tile": "Should we",
+      "oneLine": "A subjunctive asking a question, real or rhetorical.",
+      "mnemonic": "On its own — Should we: the raised eyebrow.",
+      "mnemonicWhy": "The indicative asks what is the case; the subjunctive asks what we should do about it. Rom 6:1 is not looking for information.",
+      "spotIt": "A question, and the verb is subjunctive rather than indicative.",
+      "bookDef": "Asks a real or rhetorical question.",
+      "examples": [
+        {
+          "ref": "Rom 6:1",
+          "greek": "*ἐπιμένωμεν* τῇ ἁμαρτίᾳ, ἵνα ἡ χάρις πλεονάσῃ",
+          "english": "*Should we continue* in sin so that grace may multiply?",
+          "note": "Rhetorical. The answer is coming in the next verse, and it is no."
+        }
+      ],
+      "watchOut": "The interrogative indicative asks about facts (“who are you?”). This one asks about what should be done.",
+      "tags": [
+        "mood",
+        "subj-main",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-emphatic",
+      "set": "mood",
+      "group": "mood-subj-main",
+      "name": "Emphatic Negation",
+      "pic": "🚫",
+      "eli5": "Two “no” words at once. Not just no — never, not a chance.",
+      "formula": {
+        "pattern": [
+          "οὐ μή",
+          "+ subjunctive"
+        ],
+        "filled": [
+          "never",
+          "will you enter"
+        ]
+      },
+      "short": "Emphatic negation",
+      "gist": "οὐ μή — never, ever",
+      "tile": "Never",
+      "oneLine": "The double negative οὐ μή with a subjunctive: the strongest denial Greek has.",
+      "mnemonic": "On its own — Never: two negatives stacked, and they do not cancel.",
+      "mnemonicWhy": "In English two negatives make a positive. In Greek they make a shout. οὐ μή is the strongest no in the language.",
+      "spotIt": "The two words οὐ μή sitting together, then a subjunctive.",
+      "bookDef": "Expressed by the double negative οὐ μή, it strongly denies that something will happen.",
+      "examples": [
+        {
+          "ref": "Matt 5:20",
+          "greek": "*οὐ μὴ* *εἰσέλθητε* εἰς τὴν βασιλείαν τῶν οὐρανῶν",
+          "english": "you will *never* *enter* the kingdom of heaven",
+          "note": "Not “probably not”. Never."
+        }
+      ],
+      "tags": [
+        "mood",
+        "subj-main",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-subj-prohibitory",
+      "set": "mood",
+      "group": "mood-subj-main",
+      "name": "Prohibitory Subjunctive",
+      "pic": "🙅",
+      "eli5": "“Do not think that…” A “don't”, told with a subjunctive instead of a command.",
+      "formula": {
+        "ladder": [
+          "μή — the command is negated.",
+          "aorist subjunctive — not present, not imperative.",
+          "Both, or it is not this."
+        ]
+      },
+      "short": "Prohibitory (subj.)",
+      "gist": "μή + aorist — don't start",
+      "tile": "Don't",
+      "oneLine": "A negated aorist subjunctive doing the work of “do not”.",
+      "mnemonic": "On its own — Don't: μή out front, aorist behind.",
+      "mnemonicWhy": "Two conditions, both required: the command is negated, and the subjunctive is aorist. Miss either and it is something else.",
+      "spotIt": "μή plus an aorist subjunctive. Both parts have to be there.",
+      "bookDef": "Used when two conditions are met: (1) the command is negated, and (2) the subjunctive uses the aorist tense-form.",
+      "examples": [
+        {
+          "ref": "Matt 5:17",
+          "greek": "*μὴ* *νομίσητε* ὅτι ἦλθον καταλῦσαι τὸν νόμον ἢ τοὺς προφήτας",
+          "english": "*Do not think* that I have come to abolish the Law or the Prophets",
+          "note": "μή, and νομίσητε is aorist subjunctive. Both boxes ticked."
+        }
+      ],
+      "watchOut": "Compare the imperative's prohibition (μὴ ἀγαπᾶτε, 1 John 2:15). Same idea, different mood — the tell is which form follows the μή.",
+      "tags": [
+        "mood",
+        "subj-main",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-request",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Request",
+      "pic": "🙇",
+      "eli5": "It is shaped like an order but you are talking to somebody above you, so it lands as “please”.",
+      "formula": {
+        "pattern": [
+          "imperative",
+          "to a superior"
+        ],
+        "filled": [
+          "βοήθησον",
+          "please help us"
+        ]
+      },
+      "short": "Request",
+      "gist": "an order, softened",
+      "tile": "P",
+      "oneLine": "An imperative aimed at a superior, which turns it into a request.",
+      "mnemonic": "PHONIC — P: Please.",
+      "mnemonicWhy": "Grammar cannot tell you this one. Who is being spoken to can. Nobody orders Jesus about; “help us” is a plea.",
+      "spotIt": "An imperative addressed to someone above the speaker.",
+      "bookDef": "A command that is given to a superior and is thus weakened to a request.",
+      "examples": [
+        {
+          "ref": "Mark 9:22",
+          "greek": "εἴ τι δύνῃ, *βοήθησον* ἡμῖν",
+          "english": "If you can do anything … *help* us",
+          "note": "Imperative in form. Begging in force."
+        }
+      ],
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-greeting",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Greeting",
+      "pic": "👋",
+      "eli5": "“Greetings!” Nobody is being ordered to do anything. It is just how you say hello.",
+      "formula": {
+        "pattern": [
+          "frozen imperative",
+          "= hello"
+        ],
+        "filled": [
+          "χαῖρε",
+          "greetings"
+        ]
+      },
+      "short": "Greeting",
+      "gist": "hello, in imperative clothes",
+      "tile": "H",
+      "oneLine": "A set phrase that happens to be an imperative.",
+      "mnemonic": "PHONIC — H: Hi.",
+      "mnemonicWhy": "χαῖρε literally means “rejoice”, but nobody hears it that way — it is Greek for “hello”. A frozen form, like English “goodbye”.",
+      "spotIt": "χαῖρε or χαίρετε used to open a conversation.",
+      "bookDef": "Greetings are often expressed with a stereotyped imperative.",
+      "examples": [
+        {
+          "ref": "Matt 26:49",
+          "greek": "*Χαῖρε*, ῥαββί",
+          "english": "*Greetings*, Rabbi!",
+          "note": "Judas is not commanding Jesus to rejoice."
+        }
+      ],
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-permission",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Permission",
+      "pic": "👌",
+      "eli5": "Not an order — a shrug. “If he wants to go, let him go.”",
+      "formula": {
+        "pattern": [
+          "imperative",
+          "= allowance"
+        ],
+        "filled": [
+          "χωριζέσθω",
+          "let him leave"
+        ]
+      },
+      "short": "Permission",
+      "gist": "let him, if he must",
+      "tile": "O",
+      "oneLine": "An imperative that allows something rather than demanding it.",
+      "mnemonic": "PHONIC — O: OK.",
+      "mnemonicWhy": "Paul is not commanding anybody to leave. He is saying: if that is what happens, let it.",
+      "spotIt": "Try “let him …” in the translation. If that is the sense, it is permission, not command.",
+      "bookDef": "Used to convey permission, allowance, or toleration.",
+      "examples": [
+        {
+          "ref": "1 Cor 7:15",
+          "greek": "εἰ ὁ ἄπιστος χωρίζεται, *χωριζέσθω*",
+          "english": "If the unbeliever leaves, *let him leave*",
+          "note": "Allowance, not instruction."
+        }
+      ],
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-prohibition",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Prohibition",
+      "pic": "❌",
+      "eli5": "A command with a “not” in front. “Do not love the world.”",
+      "formula": {
+        "pattern": [
+          "μή",
+          "+ imperative"
+        ],
+        "filled": [
+          "do not",
+          "love the world"
+        ]
+      },
+      "short": "Prohibition (impv.)",
+      "gist": "μή — do not",
+      "tile": "N",
+      "oneLine": "A negated imperative: it forbids.",
+      "mnemonic": "PHONIC — N: No.",
+      "mnemonicWhy": "Greek negates commands with μή, never οὐ. See μή in front of an imperative and it is a prohibition.",
+      "spotIt": "μή plus an imperative.",
+      "bookDef": "A negative command that forbids an action.",
+      "examples": [
+        {
+          "ref": "1 John 2:15",
+          "greek": "*μὴ* *ἀγαπᾶτε* τὸν κόσμον",
+          "english": "*Do not love* the world",
+          "note": "μή plus a present imperative."
+        }
+      ],
+      "watchOut": "μή + present imperative is this. μή + aorist subjunctive is the prohibitory subjunctive. The form after μή decides.",
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-conditional",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Conditional Imperative",
+      "pic": "👣",
+      "eli5": "It looks like two orders, but the first is really an “if”. “Come and see” means “if you come, you will see”.",
+      "formula": {
+        "pattern": [
+          "imperative",
+          "καί",
+          "result"
+        ],
+        "filled": [
+          "come",
+          "and",
+          "you will see"
+        ]
+      },
+      "short": "Conditional (impv.)",
+      "gist": "come and see = if you come",
+      "tile": "I",
+      "oneLine": "An imperative standing in for the “if” half of a condition.",
+      "mnemonic": "PHONIC — I: If.",
+      "mnemonicWhy": "Two imperatives joined by καί, where the first is the condition of the second. English does it too: “touch that and you're dead.”",
+      "spotIt": "Two imperatives with καί, and the sense is “if the first, then the second”.",
+      "bookDef": "Like the subjunctive, an imperative can be used to state a condition.",
+      "examples": [
+        {
+          "ref": "John 1:46",
+          "greek": "*ἔρχου* καὶ ἴδε",
+          "english": "*Come* and see — that is, if you come, you will see",
+          "note": "Philip is not barking two orders. He is offering a deal."
+        }
+      ],
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-impv-command",
+      "set": "mood",
+      "group": "mood-imperative",
+      "name": "Command",
+      "pic": "🫡",
+      "eli5": "Just do it. “Rejoice always!”",
+      "formula": {
+        "pattern": [
+          "plain imperative"
+        ],
+        "filled": [
+          "χαίρετε — rejoice!"
+        ]
+      },
+      "short": "Command",
+      "gist": "the plain order",
+      "tile": "C",
+      "oneLine": "The plain imperative: an exhortation or a charge.",
+      "mnemonic": "PHONIC — C: Charge.",
+      "mnemonicWhy": "The default. If nobody is being softened, allowed, greeted or conditioned, it is a straight command.",
+      "spotIt": "An imperative with no μή, no καί-condition, and no superior being addressed.",
+      "bookDef": "An exhortation or charge.",
+      "examples": [
+        {
+          "ref": "1 Thess 5:16",
+          "greek": "πάντοτε *χαίρετε*",
+          "english": "*Rejoice* always!",
+          "note": "The same verb as the greeting — here it means it."
+        }
+      ],
+      "watchOut": "Same word as the greeting card (χαίρω). Context decides whether it is “hello” or “rejoice”.",
+      "tags": [
+        "mood",
+        "imperative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-opt-voluntative",
+      "set": "mood",
+      "group": "mood-optative",
+      "name": "Voluntative Optative",
+      "pic": "🕯️",
+      "eli5": "A wish said over somebody. “May grace and peace be multiplied to you.”",
+      "formula": {
+        "pattern": [
+          "optative",
+          "= may it be"
+        ],
+        "filled": [
+          "πληθυνθείη",
+          "may it be multiplied"
+        ]
+      },
+      "short": "Voluntative",
+      "gist": "a prayer or blessing",
+      "tile": "May",
+      "oneLine": "The optative of prayer, blessing and benediction.",
+      "mnemonic": "Optative — May: the candle you light over somebody.",
+      "mnemonicWhy": "This is where you actually meet the optative: the openings and closings of letters. If it reads like a benediction, it is this one.",
+      "spotIt": "Translate with “may …”. Prayers, blessings and the famous μὴ γένοιτο.",
+      "bookDef": "Expresses a prayer, benediction, blessing, or wish.",
+      "examples": [
+        {
+          "ref": "1 Pet 1:2",
+          "greek": "χάρις ὑμῖν καὶ εἰρήνη *πληθυνθείη*",
+          "english": "*May* grace and peace *be multiplied* to you",
+          "note": "A blessing, not a prediction."
+        }
+      ],
+      "tags": [
+        "mood",
+        "optative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-opt-deliberative",
+      "set": "mood",
+      "group": "mood-optative",
+      "name": "Deliberative Optative",
+      "pic": "❔",
+      "eli5": "Somebody wonders what something means. “They asked what this parable might be.”",
+      "formula": {
+        "pattern": [
+          "asking verb",
+          "+ optative"
+        ],
+        "filled": [
+          "ἐπηρώτων",
+          "τίς εἴη"
+        ]
+      },
+      "short": "Deliberative (opt.)",
+      "gist": "an indirect question",
+      "tile": "Might",
+      "oneLine": "The optative in an indirect or rhetorical question.",
+      "mnemonic": "Optative — Might: the question you ask sideways.",
+      "mnemonicWhy": "Not a direct question. It is reported: they asked what it might be. English does the same softening.",
+      "spotIt": "A reported question, usually after a verb of asking, with “might” fitting the translation.",
+      "bookDef": "Used with indirect (rhetorical) questions.",
+      "examples": [
+        {
+          "ref": "Luke 8:9",
+          "greek": "ἐπηρώτων δὲ αὐτὸν οἱ μαθηταὶ αὐτοῦ τίς αὕτη *εἴη* ἡ παραβολή",
+          "english": "His disciples questioned him as to what this parable *might be*",
+          "note": "The question is reported, not quoted. Hence the optative."
+        }
+      ],
+      "watchOut": "The deliberative subjunctive asks directly, “should we?”. This one is reported: “they asked what it might be.”",
+      "tags": [
+        "mood",
+        "optative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "mood-opt-potential",
+      "set": "mood",
+      "group": "mood-optative",
+      "name": "Potential Optative",
+      "pic": "🍀",
+      "eli5": "The furthest-out maybe there is. “Even if you should suffer…” — unlikely, but suppose it.",
+      "formula": {
+        "ladder": [
+          "First class — εἰ + indicative: and it is so.",
+          "Second class — εἰ + indicative + ἄν: but it is not.",
+          "Third class — ἐάν + subjunctive: it may well be.",
+          "Fourth class — εἰ + optative: it probably is not, but suppose."
+        ]
+      },
+      "short": "Potential (opt.)",
+      "gist": "fourth class — if you should",
+      "tile": "Should",
+      "oneLine": "The optative in a fourth class conditional.",
+      "mnemonic": "Optative — Should: the four-leaf clover. Fourth class, and about as common.",
+      "mnemonicWhy": "First class assumes true, second contrary to fact, third a real maybe, fourth a remote one — and the fourth needs the optative. The clover is your reminder that it is number four and it is rare.",
+      "spotIt": "εἰ plus an optative. Translate “if … should”.",
+      "bookDef": "Involves a fourth class conditional clause.",
+      "examples": [
+        {
+          "ref": "1 Pet 3:14",
+          "greek": "εἰ καὶ *πάσχοιτε* διὰ δικαιοσύνην, μακάριοι",
+          "english": "Even if *you should suffer* for righteousness, you are blessed",
+          "note": "Remote. Peter is not saying it will happen."
+        }
+      ],
+      "watchOut": "Now you have all four: εἰ + indicative (1st, 2nd), ἐάν + subjunctive (3rd), εἰ + optative (4th).",
+      "tags": [
+        "mood",
+        "optative",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-present",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Present",
+      "pic": "🎬",
+      "eli5": "Happening now, and still rolling. “I am loosing.”",
+      "formula": {
+        "pattern": [
+          "λύω",
+          "“I am loosing”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "No augment, no sigma, no reduplication — the bare stem."
+      },
+      "short": "Present",
+      "gist": "I am loosing",
+      "tile": "Am",
+      "oneLine": "λύω — “I am loosing”.",
+      "mnemonic": "Clock tower — Am: λύω.",
+      "mnemonicWhy": "No augment, no sigma, no reduplication — the bare stem.",
+      "spotIt": "No augment, no sigma, no reduplication — the bare stem.",
+      "bookDef": "PRESENT · λύω · “I am loosing”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "λύω",
+          "english": "I am loosing",
+          "note": "No augment, no sigma, no reduplication — the bare stem."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-future",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Future",
+      "pic": "🔮",
+      "eli5": "Not yet. “I will loose.”",
+      "formula": {
+        "pattern": [
+          "λύσω",
+          "“I will loose”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "A σ after the stem and no augment in front: that is future."
+      },
+      "short": "Future",
+      "gist": "I will loose",
+      "tile": "Will",
+      "oneLine": "λύσω — “I will loose”.",
+      "mnemonic": "Clock tower — Will: λύσω.",
+      "mnemonicWhy": "A σ after the stem and no augment in front: that is future.",
+      "spotIt": "A σ after the stem and no augment in front: that is future.",
+      "bookDef": "FUTURE · λύσω · “I will loose”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "λύσω",
+          "english": "I will loose",
+          "note": "A σ after the stem and no augment in front: that is future."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-imperfect",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Imperfect",
+      "pic": "🎞️",
+      "eli5": "Was going on, back then. “I was loosing.”",
+      "formula": {
+        "pattern": [
+          "ἔλυον",
+          "“I was loosing”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "An ἐ- augment on the front and no σ: past, and still rolling."
+      },
+      "short": "Imperfect",
+      "gist": "I was loosing",
+      "tile": "Was",
+      "oneLine": "ἔλυον — “I was loosing”.",
+      "mnemonic": "Clock tower — Was: ἔλυον.",
+      "mnemonicWhy": "An ἐ- augment on the front and no σ: past, and still rolling.",
+      "spotIt": "An ἐ- augment on the front and no σ: past, and still rolling.",
+      "bookDef": "IMPERFECT · ἔλυον · “I was loosing”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "ἔλυον",
+          "english": "I was loosing",
+          "note": "An ἐ- augment on the front and no σ: past, and still rolling."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-aorist",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Aorist",
+      "pic": "📸",
+      "eli5": "It happened. One snapshot, no comment. “I loosed.”",
+      "formula": {
+        "pattern": [
+          "ἔλυσα",
+          "“I loosed”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole."
+      },
+      "short": "Aorist",
+      "gist": "I loosed",
+      "tile": "Did",
+      "oneLine": "ἔλυσα — “I loosed”.",
+      "mnemonic": "Clock tower — Did: ἔλυσα.",
+      "mnemonicWhy": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole.",
+      "spotIt": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole.",
+      "bookDef": "AORIST · ἔλυσα · “I loosed”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "ἔλυσα",
+          "english": "I loosed",
+          "note": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-perfect",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Perfect",
+      "pic": "🧱",
+      "eli5": "Done, and it still stands. “I have loosed.”",
+      "formula": {
+        "pattern": [
+          "λέλυκα",
+          "“I have loosed”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint."
+      },
+      "short": "Perfect",
+      "gist": "I have loosed",
+      "tile": "Have",
+      "oneLine": "λέλυκα — “I have loosed”.",
+      "mnemonic": "Clock tower — Have: λέλυκα.",
+      "mnemonicWhy": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint.",
+      "spotIt": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint.",
+      "bookDef": "PERFECT · λέλυκα · “I have loosed”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "λέλυκα",
+          "english": "I have loosed",
+          "note": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ]
+    },
+    {
+      "id": "tense-pluperfect",
+      "set": "tense",
+      "group": "tense-forms",
+      "name": "Pluperfect",
+      "pic": "🕰️",
+      "eli5": "Done before the thing you are already talking about. “I had loosed.”",
+      "formula": {
+        "pattern": [
+          "ἐλελύκειν",
+          "“I had loosed”"
+        ],
+        "filled": [
+          "the form",
+          "the helper"
+        ],
+        "note": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past."
+      },
+      "short": "Pluperfect",
+      "gist": "I had loosed",
+      "tile": "Had",
+      "oneLine": "ἐλελύκειν — “I had loosed”.",
+      "mnemonic": "Clock tower — Had: ἐλελύκειν.",
+      "mnemonicWhy": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past.",
+      "spotIt": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past.",
+      "bookDef": "PLUPERFECT · ἐλελύκειν · “I had loosed”",
+      "examples": [
+        {
+          "ref": "The paradigm",
+          "greek": "ἐλελύκειν",
+          "english": "I had loosed",
+          "note": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past."
+        }
+      ],
+      "tags": [
+        "tense",
+        "ch-6"
+      ],
+      "watchOut": "The chart is only the indicative. Outside the indicative there is no time — only aspect, which is what the chapter says is the dominant force anyway."
     }
   ],
   "confusions": [
@@ -4646,6 +5442,50 @@
       "test": "Is he letting it be done to himself, or consenting to what is being done?",
       "answer": "Middle: he puts himself under it, “let yourself be baptised”. Passive: he gives way to it, “be filled”. Close cousins — the form decides.",
       "example": "“βάπτισαι” (Acts 22:16, middle) · “πληροῦσθε” (Eph 5:18, passive)."
+    },
+    {
+      "id": "prohibition-which-mood",
+      "pair": [
+        "mood-subj-prohibitory",
+        "mood-impv-prohibition"
+      ],
+      "question": "μή plus a verb — prohibitory subjunctive, or imperative prohibition?",
+      "test": "Look at what comes after the μή.",
+      "answer": "μή + aorist subjunctive ⇒ prohibitory subjunctive. μή + imperative ⇒ prohibition. The form after the μή is the whole tell.",
+      "example": "“μὴ νομίσητε” (Matt 5:17, aorist subj.) · “μὴ ἀγαπᾶτε” (1 John 2:15, pres. impv.)."
+    },
+    {
+      "id": "deliberative-which-mood",
+      "pair": [
+        "mood-subj-deliberative",
+        "mood-opt-deliberative"
+      ],
+      "question": "A question — deliberative subjunctive or optative?",
+      "test": "Is the question being asked, or being reported?",
+      "answer": "Asked straight out, “should we …?” ⇒ subjunctive. Reported, “they asked what it might be” ⇒ optative.",
+      "example": "“ἐπιμένωμεν;” (Rom 6:1) · “τίς εἴη ἡ παραβολή” (Luke 8:9)."
+    },
+    {
+      "id": "hortatory-or-command",
+      "pair": [
+        "mood-subj-hortatory",
+        "mood-impv-command"
+      ],
+      "question": "An order — hortatory subjunctive or plain imperative?",
+      "test": "Is the speaker inside the command?",
+      "answer": "“Let us …”, speaker included ⇒ hortatory subjunctive. “Do this”, pointed at you ⇒ imperative.",
+      "example": "“ἐργαζώμεθα” (Gal 6:10, let us) · “χαίρετε” (1 Thess 5:16, you)."
+    },
+    {
+      "id": "which-conditional-class",
+      "pair": [
+        "mood-subj-conditional",
+        "mood-opt-potential"
+      ],
+      "question": "Which class of conditional?",
+      "test": "Look at the particle, then the mood of the verb.",
+      "answer": "εἰ + indicative ⇒ 1st (true) or 2nd (contrary to fact, ἄν later). ἐάν + subjunctive ⇒ 3rd, a real maybe. εἰ + optative ⇒ 4th, remote.",
+      "example": "Col 3:1 · John 5:46 · John 8:51 · 1 Pet 3:14."
     }
   ],
   "extraQuiz": [
