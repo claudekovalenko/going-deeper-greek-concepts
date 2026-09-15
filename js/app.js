@@ -1,5 +1,5 @@
 /**
- * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2.
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–6.
  *
  * Deliberately one file. The sibling app (seminary-homework-2026) learned the
  * hard way that a module graph behind a service worker can serve a fresh page
@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v24 · 2026-09-12';
+const BUILD = 'v25 · 2026-09-15';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -230,6 +230,18 @@ const setColor = (id) => setById(id)?.color || 'var(--accent)';
  * last one if the term has run out. A hard-coded "this week" tag went stale the
  * moment the calendar moved, so this reads the timetable instead.
  */
+/**
+ * What this app covers, taken from the chapter line in the data rather than
+ * written out again here: "ch. 2-6 — the cases, the article, the adjective, and
+ * the verb" gives back everything after the dash. Every count and description in
+ * the hero is computed for the same reason — three of them had gone stale by
+ * chapter 6, all saying "seven" of things there were now eleven of.
+ */
+function spread() {
+  const m = String(DATA.chapter || '').split('\u2014');
+  return (m[1] || DATA.chapter || '').trim();
+}
+
 function thisWeekSets() {
   const dated = DATA.sets.filter((s) => s.classDate);
   if (!dated.length) return DATA.sets.map((s) => s.id);
@@ -626,9 +638,9 @@ function viewMap() {
 
   return `
     <section class="hero">
-      <div class="hero-line">The whole app in seven words</div>
+      <div class="hero-line">The whole app in ${DATA.sets.length} words</div>
       <div class="hero-mnemonic">${DATA.sets.map((x) => esc(x.verb)).join(' · ')}</div>
-      <div class="hero-sub">${DATA.sets.length} sets — the five cases, the article and the adjective</div>
+      <div class="hero-sub">${DATA.sets.length} sets — ${esc(spread())}</div>
       ${bar(learned, DATA.cards.length)}
       <div class="hero-sub">${learned} of ${DATA.cards.length} learned · ${esc(targetLabel())}</div>
       <div class="btnrow split">
@@ -670,7 +682,7 @@ function viewMap() {
 
     <section class="card">
       <h2>The pairs that get missed</h2>
-      <p class="note" style="margin-top:0">Nearly every wrong answer is one of these seven. Each one comes down to a single test.</p>
+      <p class="note" style="margin-top:0">Nearly every wrong answer is one of these ${DATA.confusions.length}. Each one comes down to a single test.</p>
       ${DATA.confusions.map(confusionRow).join('')}
     </section>
 
@@ -1446,8 +1458,8 @@ function viewProgress() {
 }
 
 /* ---------------- view: picture ----------------
- * The whole course as one place you can walk, instead of seven lists you can
- * read. Each case is a stop on one street, each group is a spot inside that
+ * The whole course as one place you can walk, instead of a pile of lists you
+ * can read. Each case is a stop on one street, each group is a spot inside that
  * stop, and each card is an object sitting in that spot. The board is built
  * from the data, so a new chapter opens another door on the same street
  * without anyone drawing anything.

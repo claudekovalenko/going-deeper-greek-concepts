@@ -2,7 +2,7 @@
   "book": "Going Deeper with New Testament Greek",
   "chapter": "ch. 2–6 — the cases, the article, the adjective, and the verb",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
-  "generated": "2026-08-27",
+  "generated": "2026-09-15",
   "notes": [
     "Every card carries a mnemonic hook, a plain one-line definition, a test you can actually run on a text, and real examples.",
     "eli5: the like-I'm-five line. It leads every card, above the pattern — plain words, a picture you can see, and no grammar terms at all.",
@@ -16,7 +16,9 @@
     "gist: a few words on the tile itself, so the map is readable without opening anything.",
     "verb / does on a set: the one-word and one-line answer to “what does this case do?”. The hero is built from verb, the cheat sheet's first strip from does.",
     "pic: one emoji per card, chosen to be the mnemonic's own image. It shows on the Learn card, in the Learn list, and on the BACK of a drill card — never the front, which would give the answer away.",
-    "unofficial: true marks an item from the chapter's practice exercises. The book prints those questions without answers, so the answer shown is reasoned, not the book's, and the app says so."
+    "unofficial: true marks an item from the chapter's practice exercises. The book prints those questions without answers, so the answer shown is reasoned, not the book's, and the app says so.",
+    "world / place / placeName / scene: the Picture tab. Each set is a stop on one street and each group a spot inside it; the board is generated, so a new set with a place and a scene adds itself to the walk.",
+    "spot on a group: the emoji for that group's corner of its stop, used as the heading icon in the Picture tab."
   ],
   "sets": [
     {
@@ -315,7 +317,7 @@
       "subtitle": "Six words for who. Three on their own, three in a crowd.",
       "eli5": "Who is talking? Me, you, or him. And is it one of them, or a whole crowd?",
       "color": "#2f9d9d",
-      "classDate": "2026-09-22",
+      "classDate": "2026-10-20",
       "bigIdea": "Three persons, two numbers, six words. Only one pair is dangerous: ἡμεῖς is “we” and ὑμεῖς is “you all”, and they are one letter apart.",
       "masterMnemonic": "I, you, he — then all of us, all of you, all of them.",
       "masterMnemonicWhy": "Say the roll call out loud in that order and the whole table is done. The Greek verb ending already tells you which one, so the pronoun is usually there for emphasis.",
@@ -342,7 +344,7 @@
       "subtitle": "How much of the action lands back on the subject.",
       "eli5": "Who is doing it, and does it come back? I do it. I do it to me. It gets done to me.",
       "color": "#a2578f",
-      "classDate": "2026-09-22",
+      "classDate": "2026-10-20",
       "bigIdea": "Three voices, one question: how much of this lands back on the subject? Active none, middle some, passive all.",
       "masterMnemonic": "I do it · I do it for me · It is done to me.",
       "masterMnemonicWhy": "Active points out, middle bends back, passive comes in. Say those three lines in order and the voices sort themselves before you look at a single ending.",
@@ -387,7 +389,7 @@
       "subtitle": "How real the speaker says it is — and whether he is telling you to do it.",
       "eli5": "Is it a fact, a maybe, an order, or a wish? That is all mood is. Indicative: it happened. Subjunctive: it might. Imperative: do it. Optative: I hope so.",
       "color": "#7a8b34",
-      "classDate": "2026-09-22",
+      "classDate": "2026-10-20",
       "bigIdea": "Mood is the weather of the sentence. Clear sky ☀️ for what is, fog 🌫️ for what might be, thunder ⛈️ for do it, a rainbow 🌈 for I wish.",
       "masterMnemonic": "It is · It might · Do it · I wish.",
       "masterMnemonicWhy": "Four moods, four postures. Indicative states, subjunctive supposes, imperative orders, optative wishes. Name the posture first and the use is a short list after that.",
@@ -450,7 +452,7 @@
       "subtitle": "Six forms of λύω, and the three marks that give them away.",
       "eli5": "When did it happen, and are we watching it happen or just told that it did?",
       "color": "#8c5a3c",
-      "classDate": "2026-09-22",
+      "classDate": "2026-10-20",
       "bigIdea": "Three marks decode the whole table. An ἐ- on the front means past. A σ after the stem means future or aorist. The stem said twice means perfect.",
       "masterMnemonic": "Am · Will · Was · Did · Have · Had.",
       "masterMnemonicWhy": "Six English helpers, six Greek forms, in the chart's own order. The book flags the catch itself: “It should be noted that this chart is an oversimplification of the wide diversity of tense-form uses and that students will not always translate verbs in such a manner.”",
@@ -5896,8 +5898,8 @@
     }
   ],
   "world": {
-    "name": "One street, seven stops",
-    "line": "Bathe, shout, fence, drive, sail, point, paint.",
-    "why": "Seven places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
+    "name": "One street, eleven stops",
+    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime.",
+    "why": "Eleven places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
   }
 }
