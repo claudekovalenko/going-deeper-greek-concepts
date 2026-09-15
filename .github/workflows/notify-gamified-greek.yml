@@ -1,0 +1,31 @@
+name: Notify Greek Quest
+
+# Tell claudekovalenko/gamified-greek that the cards changed, so it pulls the
+# new concepts straight away instead of waiting for its six-hourly check.
+#
+# Needs one secret on this repo: GAMIFIED_GREEK_TOKEN, a fine-grained personal
+# access token with Contents: read and write on gamified-greek. Without it the
+# job says so and stops — nothing fails, and the schedule over there catches up.
+
+on:
+  push:
+    paths: ['data/concepts.json']
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch
+        env:
+          TOKEN: ${{ secrets.GAMIFIED_GREEK_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "GAMIFIED_GREEK_TOKEN is not set; Greek Quest will pick this up on its next scheduled sync."
+            exit 0
+          fi
+          curl --fail --silent --show-error -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $TOKEN" \
+            https://api.github.com/repos/claudekovalenko/gamified-greek/dispatches \
+            -d '{"event_type":"content-updated","client_payload":{"source":"going-deeper-greek-concepts","sha":"${{ github.sha }}"}}'
