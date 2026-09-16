@@ -249,8 +249,17 @@
       "classDate": "2026-09-15",
       "bigIdea": "The article points. It particularises. And when it is missing, that is information too — not automatically “a”.",
       "masterMnemonic": "Point, Pronoun, Poof.",
-      "masterMnemonicWhy": "Three things it does: it Points at something — six ways, and a MAGPIE remembers them — it stands in as a Pronoun in five flavours, or it goes Poof and leaves you three readings to choose between. Then three named rules: Sharp joins, Colwell drops, Apollonius matches.",
+      "masterMnemonicWhy": "First the two words: ἄρθρον is a joint, so articular has the article and anarthrous has none. Then three things it does — it Points at something, six ways, and a MAGPIE remembers them; it stands in as a Pronoun in five flavours; or it goes Poof and leaves you three readings to choose between. Then three named rules: Sharp joins, Colwell drops, Apollonius matches.",
       "groups": [
+        {
+          "id": "article-terms",
+          "name": "The two words for it",
+          "key": "Articular · Anarthrous",
+          "mnemonic": "ἄρθρον is a joint. With it, articular. Without it, anarthrous.",
+          "expand": "Articular — the article is there · Anarthrous — it is not",
+          "spot": "🦴",
+          "scene": "Before you read the post at all, two labels 🦴: a bone with its joint for articular, and a hole 🕳️ where the joint should be for anarthrous."
+        },
         {
           "id": "article-point",
           "name": "Point — particularising, and generic",
@@ -290,7 +299,7 @@
       ],
       "place": "👉",
       "placeName": "The Signpost",
-      "scene": "One finger on a post 👉 with a magpie 🐦 sitting on it, and three men 👨‍⚖️ underneath arguing about what it means."
+      "scene": "One finger on a post 👉 with a magpie 🐦 sitting on it, three men 👨‍⚖️ underneath arguing about what it means, and two labels 🦴 nailed to the post naming what is and is not there."
     },
     {
       "id": "adjective",
@@ -2890,6 +2899,100 @@
           "name": "Following",
           "note": "ἀκολουθέω"
         }
+      ]
+    },
+    {
+      "id": "article-articular",
+      "set": "article",
+      "group": "article-terms",
+      "name": "Articular",
+      "pic": "🦴",
+      "type": "rule",
+      "eli5": "It has its “the”. ὁ λόγος — the word, with the little word in front.",
+      "formula": {
+        "pattern": [
+          "ὁ / ἡ / τό",
+          "+ noun"
+        ],
+        "filled": [
+          "the",
+          "word"
+        ],
+        "note": "The article is present. That is all the word means."
+      },
+      "short": "Articular",
+      "gist": "has the article",
+      "tile": "Articular",
+      "oneLine": "A noun with the article on it.",
+      "mnemonic": "Articular — the joint is there.",
+      "mnemonicWhy": "ἄρθρον is Greek for a joint, and it is also the Greek word for the article. Arthritis is a complaint about joints. Articular means the joint is in place — the article is there.",
+      "spotIt": "ὁ, ἡ, τό or one of their forms sitting in front of the noun.",
+      "examples": [
+        {
+          "ref": "John 1:1",
+          "greek": "ἐν ἀρχῇ ἦν *ὁ* λόγος",
+          "english": "In the beginning was *the* Word",
+          "note": "ὁ λόγος is articular — and in the same verse θεός is not, which is the whole argument."
+        },
+        {
+          "ref": "John 4:22",
+          "greek": "*ἡ* σωτηρία ἐκ τῶν Ἰουδαίων ἐστίν",
+          "english": "*salvation* is from the Jews",
+          "note": "Articular in Greek even though English drops the “the”."
+        }
+      ],
+      "watchOut": "The chart uses this word rather than defining it — “the articular or non-articular vocative”, “the articular noun in the genitive”. It assumes you already know it.",
+      "tags": [
+        "article",
+        "terms",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-anarthrous",
+      "set": "article",
+      "group": "article-terms",
+      "name": "Anarthrous",
+      "pic": "🕳️",
+      "type": "rule",
+      "eli5": "No “the” at all. λόγος standing on its own.",
+      "formula": {
+        "pattern": [
+          "∅",
+          "+ noun"
+        ],
+        "filled": [
+          "—",
+          "word"
+        ],
+        "note": "The article is absent. That is all the word means — not what the absence implies."
+      },
+      "short": "Anarthrous",
+      "gist": "no article",
+      "tile": "Anarthrous",
+      "oneLine": "A noun with no article on it.",
+      "mnemonic": "Anarthrous — ἀν- no, ἄρθρον joint. No joint, no article.",
+      "mnemonicWhy": "The same ἄρθρον, with the alpha privative bolted on the front — the same ἀν- that turns a theist into an atheist. No joint means no article.",
+      "spotIt": "A noun standing bare, with no ὁ, ἡ or τό in front of it.",
+      "examples": [
+        {
+          "ref": "John 1:1",
+          "greek": "καὶ *θεὸς* ἦν ὁ λόγος",
+          "english": "and the Word was *God*",
+          "note": "θεός is anarthrous. That is the fact; what it means is a separate question, and the answer is not “a god”."
+        },
+        {
+          "ref": "Acts 16:25",
+          "greek": "*Παῦλος* καὶ *Σιλᾶς* προσευχόμενοι",
+          "english": "*Paul* and *Silas* were praying",
+          "note": "Anarthrous and still perfectly definite — a proper name needs no article."
+        }
+      ],
+      "watchOut": "Two things this word does not mean. It is not the chart's word — the chart says “the absence of the article”, so that is the phrasing an exam will use. And it never means “a”: what an absent article conveys is the three-way question under Poof.",
+      "tags": [
+        "article",
+        "terms",
+        "ch-5"
       ]
     },
     {
@@ -6112,6 +6215,17 @@
       "test": "Look at the particle, then the mood of the verb.",
       "answer": "εἰ + indicative ⇒ 1st (true) or 2nd (contrary to fact, ἄν later). ἐάν + subjunctive ⇒ 3rd, a real maybe. εἰ + optative ⇒ 4th, remote.",
       "example": "Col 3:1 · John 5:46 · John 8:51 · 1 Pet 3:14."
+    },
+    {
+      "id": "articular-or-anarthrous",
+      "pair": [
+        "article-articular",
+        "article-anarthrous"
+      ],
+      "question": "Articular or anarthrous?",
+      "test": "Is there a ὁ, ἡ or τό in front of it?",
+      "answer": "There is ⇒ articular, the joint is in place. There is not ⇒ anarthrous, ἀν- plus ἄρθρον. The word only names what is there; what an absence means is the separate three-way question under Poof.",
+      "example": "John 1:1 has both in one clause: ὁ λόγος articular, θεός anarthrous."
     }
   ],
   "extraQuiz": [
