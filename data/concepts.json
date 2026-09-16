@@ -306,22 +306,22 @@
       "name": "Adjective",
       "verb": "Colours",
       "does": "colours the noun, in degrees",
-      "subtitle": "Match it first. Then four jobs, five degrees.",
+      "subtitle": "Match it, place it. Then four jobs, five degrees.",
       "eli5": "A describing word. It can stick to a noun, become the noun, jump to the doing-word, or make a claim. And it comes in degrees: plain, more, most.",
       "color": "#6b7fd7",
       "classDate": "2026-09-15",
-      "bigIdea": "First it has to match its noun in case, number and gender. Then: an adjective does one of four jobs, in one of five degrees. Name the job, then name the degree.",
+      "bigIdea": "First it has to match its noun in case, number and gender. Then look at where the article sits. Then: an adjective does one of four jobs, in one of five degrees.",
       "masterMnemonic": "Four jobs ASAP, in five degrees of SPECS.",
-      "masterMnemonicWhy": "Agreement first — case, number, gender, all three — because none of the rest means anything until you know which noun the adjective belongs to. Then four jobs, ASAP: Attributive, Substantival, Adverbial, Predicate. Then five degrees, SPECS: Superlative, Positive, Elative, Comparative, Special cases.",
+      "masterMnemonicWhy": "Agreement first — case, number, gender, all three — then position, because where the article sits is what separates attributive from predicate. Only then four jobs, ASAP: Attributive, Substantival, Adverbial, Predicate. Then five degrees, SPECS: Superlative, Positive, Elative, Comparative, Special cases.",
       "groups": [
         {
           "id": "adjective-agreement",
-          "name": "Before anything else — it has to match",
-          "key": "Case, number, gender",
-          "mnemonic": "Case, number, gender. All three, or it is not describing that noun.",
-          "expand": "The rule every row below assumes",
+          "name": "Before anything else — match it, then place it",
+          "key": "Agreement · Position",
+          "mnemonic": "Match it in case, number and gender. Then look at where the article sits.",
+          "expand": "Agreement — case, number, gender · Position — where the article sits decides attributive or predicate",
           "spot": "🎰",
-          "scene": "At the door of the paint shop a fruit machine 🎰 with three reels — case, number, gender. Nothing inside counts until all three line up."
+          "scene": "At the door of the paint shop a fruit machine 🎰 with three reels — case, number, gender — and beside it a compass 🧭 for reading where the article sits. Nothing inside counts until both are done."
         },
         {
           "id": "adjective-use",
@@ -958,7 +958,7 @@
         "vocative",
         "ch-2"
       ],
-      "kindsLabel": "Two dresses, one job",
+      "kindsLabel": "Dressed either way",
       "kinds": [
         {
           "name": "Non-articular",
@@ -1279,7 +1279,7 @@
         "substantival",
         "ch-2"
       ],
-      "kindsLabel": "The verbs that want two objects",
+      "kindsLabel": "The verbs that take a person and a thing",
       "kinds": [
         {
           "name": "Asking",
@@ -1559,7 +1559,7 @@
         "adjectival",
         "ch-3"
       ],
-      "kindsLabel": "Two ways it is written",
+      "kindsLabel": "How it gets written",
       "kinds": [
         {
           "name": "On its own",
@@ -1657,7 +1657,7 @@
         "adjectival",
         "ch-3"
       ],
-      "kindsLabel": "Two things it can say",
+      "kindsLabel": "What it can say",
       "kinds": [
         {
           "name": "Made of it",
@@ -2044,7 +2044,7 @@
         "adverbial",
         "ch-3"
       ],
-      "kindsLabel": "Two axes, one use",
+      "kindsLabel": "The axes it works on",
       "kinds": [
         {
           "name": "Time",
@@ -2096,7 +2096,7 @@
         "adverbial",
         "ch-3"
       ],
-      "kindsLabel": "Two distances",
+      "kindsLabel": "Kinds of distance",
       "kinds": [
         {
           "name": "Literal",
@@ -2699,7 +2699,7 @@
         "instrumental",
         "ch-4"
       ],
-      "kindsLabel": "Two ways of being together",
+      "kindsLabel": "Ways of being together",
       "kinds": [
         {
           "name": "Associated with",
@@ -2750,7 +2750,7 @@
         "other",
         "ch-4"
       ],
-      "kindsLabel": "Two directions a cause comes from",
+      "kindsLabel": "Where a cause comes from",
       "kinds": [
         {
           "name": "External — the occasion",
@@ -3762,12 +3762,12 @@
       },
       "short": "Agreement",
       "gist": "all three must match",
-      "tile": "Case, number, gender",
+      "tile": "Agreement",
       "oneLine": "An adjective agrees with its noun in case, number and gender.",
       "mnemonic": "Three reels, and all three have to line up.",
       "mnemonicWhy": "A fruit machine pays out only when every reel matches. An adjective describes a noun only when case, number and gender all agree — and that is what tells you which noun it belongs to when Greek word order scatters them across the clause.",
       "spotIt": "Found an adjective? Check case, number and gender against the noun before you decide what it modifies. Then look at where the article sits, which is what separates attributive from predicate.",
-      "kindsLabel": "Three reels, all three must line up",
+      "kindsLabel": "Every reel has to line up",
       "kinds": [
         {
           "name": "Case",
@@ -3800,6 +3800,75 @@
       "tags": [
         "adjective",
         "agreement",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "adj-position",
+      "set": "adjective",
+      "group": "adjective-agreement",
+      "name": "The Article's Position",
+      "pic": "🧭",
+      "type": "rule",
+      "eli5": "Where the little word “the” sits tells you which kind it is. In front of the describing word, it describes. Only in front of the thing, it is a claim. In front of neither, you cannot tell.",
+      "formula": {
+        "pattern": [
+          "the",
+          "good",
+          "man"
+        ],
+        "filled": [
+          "ὁ",
+          "ἀγαθὸς",
+          "ἄνθρωπος"
+        ],
+        "note": "Same three words, four orders, three different answers."
+      },
+      "short": "Position",
+      "gist": "where the article sits",
+      "tile": "Position",
+      "oneLine": "Where the article sits decides attributive or predicate — unless there is no article at all.",
+      "mnemonic": "Follow the article. If it reaches the adjective, the adjective sticks.",
+      "mnemonicWhy": "The article is a hand. If it reaches past the noun and takes the adjective too, they come out as one phrase. If it only ever holds the noun, the adjective is left outside with nothing to do but assert. If it is holding nothing, nobody can tell you which was meant.",
+      "spotIt": "Find the article. Immediately before the adjective — directly, or by being repeated? Attributive. Before the noun and never before the adjective? Predicate. On neither word? Genuinely either, and only context decides.",
+      "kindsLabel": "Same words, reordered",
+      "kinds": [
+        {
+          "name": "ὁ ἀγαθὸς ἄνθρωπος",
+          "note": "attributive — “the good man”. The article runs straight into the adjective."
+        },
+        {
+          "name": "ὁ ἄνθρωπος ὁ ἀγαθός",
+          "note": "attributive — “the good man”. A second article picks the adjective up again."
+        },
+        {
+          "name": "ἀγαθὸς ὁ ἄνθρωπος",
+          "note": "predicate — “the man is good”. The article is on the noun and never reaches the adjective."
+        },
+        {
+          "name": "ἄνθρωπος ἀγαθός",
+          "note": "either — no article on either word, so the form cannot settle it. Context decides."
+        }
+      ],
+      "examples": [
+        {
+          "ref": "1 John 5:20",
+          "greek": "*ὁ* *ἀληθινὸς* θεός",
+          "english": "the *true* God",
+          "note": "Article straight into the adjective. Attributive, and it labels."
+        },
+        {
+          "ref": "1 Cor 1:9",
+          "greek": "*πιστὸς* *ὁ* θεός",
+          "english": "God is *faithful*",
+          "note": "Adjective out in front, article on the noun. Predicate, and there is no verb written at all."
+        }
+      ],
+      "watchOut": "The one case the test cannot settle is no article on either word. ἄνθρωπος ἀγαθός is “a good man” or “a man is good” — the form will not tell you, and only the context will.",
+      "tags": [
+        "adjective",
+        "agreement",
+        "position",
         "ch-5"
       ]
     },
@@ -3850,7 +3919,7 @@
         "use",
         "ch-5"
       ],
-      "kindsLabel": "Two word orders, both attributive",
+      "kindsLabel": "Word orders that are attributive",
       "kinds": [
         {
           "name": "article · adjective · noun",
@@ -3861,7 +3930,7 @@
           "note": "ὁ λόγος ὁ ἀγαθός — a second article picks the adjective up again"
         }
       ],
-      "watchOut": "The position test needs an article to work. With no article anywhere — πολλῶν στρουθίων, Matt 10:31 — there is no position to read, and you are back to asking whether it labels or claims."
+      "watchOut": "The position test needs an article to read. With none on either word — πολλῶν στρουθίων, Matt 10:31 — the form is genuinely ambiguous and context is what settles it, not a quick look at whether it labels or claims."
     },
     {
       "id": "adj-substantival",
@@ -3985,13 +4054,13 @@
           "note": "Without the article, and still a claim."
         }
       ],
-      "watchOut": "Attributive and predicate is the pair that gets missed, and the article's position settles it whenever there is one. With no article at all — μακάριος ἀνήρ, Rom 4:8 — there is no position to read, so go back to sense: “the true God” labels, “God is true” claims.",
+      "watchOut": "Attributive and predicate is the pair that gets missed, and the article's position settles it whenever there is one. With none on either word — μακάριος ἀνήρ, Rom 4:8 — it could be either as far as the form goes, and only context decides.",
       "tags": [
         "adjective",
         "use",
         "ch-5"
       ],
-      "kindsLabel": "Two word orders, both predicate",
+      "kindsLabel": "Word orders that are predicate",
       "kinds": [
         {
           "name": "adjective · article · noun",
@@ -4918,7 +4987,7 @@
         "indicative",
         "ch-6"
       ],
-      "kindsLabel": "The two classes εἰ takes",
+      "kindsLabel": "The classes εἰ takes",
       "kinds": [
         {
           "name": "First class",
@@ -5360,7 +5429,7 @@
         "subj-main",
         "ch-6"
       ],
-      "kindsLabel": "Both conditions, or it is not this",
+      "kindsLabel": "What it takes to be this",
       "kinds": [
         {
           "name": "The command is negated",
@@ -6177,8 +6246,8 @@
       ],
       "question": "Attributive or predicate?",
       "test": "Where is the article? Does it precede the adjective, or only the noun?",
-      "answer": "The article precedes the adjective ⇒ attributive: ὁ ἀγαθὸς λόγος, ὁ λόγος ὁ ἀγαθός. The article precedes the noun and not the adjective ⇒ predicate: ἀγαθὸς ὁ λόγος, ὁ λόγος ἀγαθός. No article anywhere and there is no position to read — ask instead whether it labels or claims.",
-      "example": "ὁ ἀληθινὸς θεός, “the true God” (label) · πιστὸς ὁ θεός, “God is faithful” (claim, no verb written)."
+      "answer": "The article precedes the adjective ⇒ attributive: ὁ ἀγαθὸς ἄνθρωπος, ὁ ἄνθρωπος ὁ ἀγαθός. The article precedes the noun and not the adjective ⇒ predicate: ἀγαθὸς ὁ ἄνθρωπος. No article on either word ⇒ it could be either, and context decides: ἄνθρωπος ἀγαθός.",
+      "example": "ὁ ἀγαθὸς ἄνθρωπος “the good man” · ἀγαθὸς ὁ ἄνθρωπος “the man is good” · ἄνθρωπος ἀγαθός — either."
     },
     {
       "id": "comparative-vs-elative",
