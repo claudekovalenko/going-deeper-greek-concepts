@@ -306,14 +306,23 @@
       "name": "Adjective",
       "verb": "Colours",
       "does": "colours the noun, in degrees",
-      "subtitle": "Four jobs, five degrees.",
+      "subtitle": "Match it first. Then four jobs, five degrees.",
       "eli5": "A describing word. It can stick to a noun, become the noun, jump to the doing-word, or make a claim. And it comes in degrees: plain, more, most.",
       "color": "#6b7fd7",
       "classDate": "2026-09-15",
-      "bigIdea": "An adjective does one of four jobs, in one of five degrees. Name the job, then name the degree.",
+      "bigIdea": "First it has to match its noun in case, number and gender. Then: an adjective does one of four jobs, in one of five degrees. Name the job, then name the degree.",
       "masterMnemonic": "Four jobs ASAP, in five degrees of SPECS.",
-      "masterMnemonicWhy": "ASAP is what it does: Attributive, Substantival, Adverbial, Predicate. SPECS is how strong: Superlative, Positive, Elative, Comparative, Special cases.",
+      "masterMnemonicWhy": "Agreement first — case, number, gender, all three — because none of the rest means anything until you know which noun the adjective belongs to. Then four jobs, ASAP: Attributive, Substantival, Adverbial, Predicate. Then five degrees, SPECS: Superlative, Positive, Elative, Comparative, Special cases.",
       "groups": [
+        {
+          "id": "adjective-agreement",
+          "name": "Before anything else — it has to match",
+          "key": "Case, number, gender",
+          "mnemonic": "Case, number, gender. All three, or it is not describing that noun.",
+          "expand": "The rule every row below assumes",
+          "spot": "🎰",
+          "scene": "At the door of the paint shop a fruit machine 🎰 with three reels — case, number, gender. Nothing inside counts until all three line up."
+        },
         {
           "id": "adjective-use",
           "name": "What it does — ASAP",
@@ -335,7 +344,7 @@
       ],
       "place": "🎨",
       "placeName": "The Paint Shop",
-      "scene": "Four jobs to do ASAP ⏱️, and five strengths of paint you try on through the SPECS 👓."
+      "scene": "Four jobs to do ASAP ⏱️, five strengths of paint you try on through the SPECS 👓 — and a fruit machine 🎰 at the door that will not let you in until case, number and gender line up."
     },
     {
       "id": "person",
@@ -3731,6 +3740,70 @@
       ]
     },
     {
+      "id": "adj-agreement",
+      "set": "adjective",
+      "group": "adjective-agreement",
+      "name": "Agreement — Case, Number, Gender",
+      "pic": "🎰",
+      "type": "rule",
+      "eli5": "The describing word has to dress like the word it describes. Same case, same number, same gender — all three.",
+      "formula": {
+        "pattern": [
+          "adjective",
+          "must match",
+          "its noun"
+        ],
+        "filled": [
+          "καλούς",
+          "case · number · gender",
+          "καρπούς"
+        ],
+        "note": "Two out of three is not a match."
+      },
+      "short": "Agreement",
+      "gist": "all three must match",
+      "tile": "Case, number, gender",
+      "oneLine": "An adjective agrees with its noun in case, number and gender.",
+      "mnemonic": "Three reels, and all three have to line up.",
+      "mnemonicWhy": "A fruit machine pays out only when every reel matches. An adjective describes a noun only when case, number and gender all agree — and that is what tells you which noun it belongs to when Greek word order scatters them across the clause.",
+      "spotIt": "Found an adjective? Check case, number and gender against the noun before you decide what it modifies. Then look at where the article sits, which is what separates attributive from predicate.",
+      "kindsLabel": "Three reels, all three must line up",
+      "kinds": [
+        {
+          "name": "Case",
+          "note": "nominative with nominative, dative with dative"
+        },
+        {
+          "name": "Number",
+          "note": "singular with singular, plural with plural"
+        },
+        {
+          "name": "Gender",
+          "note": "masculine with masculine, feminine with feminine, neuter with neuter"
+        }
+      ],
+      "examples": [
+        {
+          "ref": "Matt 7:17",
+          "greek": "πᾶν *δένδρον* *ἀγαθὸν* *καρποὺς* *καλοὺς* ποιεῖ",
+          "english": "every *good tree* produces *good fruit*",
+          "note": "Two adjectives, each matching its own noun and not the other: δένδρον ἀγαθόν is neuter singular, καρποὺς καλούς masculine plural accusative. The endings are what keep them apart."
+        },
+        {
+          "ref": "John 10:11",
+          "greek": "ἐγώ εἰμι *ὁ* ποιμὴν *ὁ* *καλός*",
+          "english": "I am the *good* shepherd",
+          "note": "Masculine singular nominative all the way through, article included. Agreement plus the repeated article is what makes it attributive rather than a claim."
+        }
+      ],
+      "watchOut": "Agreement is not in the summary chart — it is assumed there. Every row describes what an adjective does once it already agrees. And the substantival adjective is the exception that proves it: with no noun to agree with, its own gender and number tell you who is meant — οἱ ἅγιοι, masculine plural, is “the holy ones”.",
+      "tags": [
+        "adjective",
+        "agreement",
+        "ch-5"
+      ]
+    },
+    {
       "id": "adj-attributive",
       "set": "adjective",
       "group": "adjective-use",
@@ -3755,8 +3828,8 @@
       "tile": "A",
       "oneLine": "The adjective giving the noun a quality.",
       "mnemonic": "ASAP — A: attributive, it sticks to the noun.",
-      "mnemonicWhy": "Say adjective and noun together and they still make one phrase: the true God.",
-      "spotIt": "Can you say it as “the ___ noun”? Attributive.",
+      "mnemonicWhy": "The article reaches past the noun and takes hold of the adjective, which is why they come out as one phrase: the true God. Say adjective and noun together and nothing is being claimed — it is a label.",
+      "spotIt": "Look at where the article is. Attributive when the article precedes the adjective — ὁ ἀγαθὸς λόγος, or ὁ λόγος ὁ ἀγαθός. Then confirm it reads as “the ___ noun”.",
       "bookDef": "An adjective that ascribes a particular quality to a noun or substantive.",
       "examples": [
         {
@@ -3776,7 +3849,19 @@
         "adjective",
         "use",
         "ch-5"
-      ]
+      ],
+      "kindsLabel": "Two word orders, both attributive",
+      "kinds": [
+        {
+          "name": "article · adjective · noun",
+          "note": "ὁ ἀγαθὸς λόγος — the article leads straight into the adjective"
+        },
+        {
+          "name": "article · noun · article · adjective",
+          "note": "ὁ λόγος ὁ ἀγαθός — a second article picks the adjective up again"
+        }
+      ],
+      "watchOut": "The position test needs an article to work. With no article anywhere — πολλῶν στρουθίων, Matt 10:31 — there is no position to read, and you are back to asking whether it labels or claims."
     },
     {
       "id": "adj-substantival",
@@ -3883,8 +3968,8 @@
       "tile": "P",
       "oneLine": "The adjective asserting a quality of the subject.",
       "mnemonic": "ASAP — P: predicate, it makes a claim.",
-      "mnemonicWhy": "Often with a to-be verb, and often with none written at all: πιστὸς ὁ θεός is “God is faithful” with the verb left out.",
-      "spotIt": "Does it assert something, or just label something? Assert ⇒ predicate.",
+      "mnemonicWhy": "The article stays on the noun and never reaches the adjective, which leaves the adjective outside the phrase with nothing to do but assert: πιστὸς ὁ θεός is “God is faithful” with the verb left out.",
+      "spotIt": "Look at where the article is. Predicate when the article precedes the noun and not the adjective — ἀγαθὸς ὁ λόγος, or ὁ λόγος ἀγαθός. Supply “is” and it reads as a claim.",
       "bookDef": "An adjective that predicates a certain quality to the subject, frequently by way of a copulative (linking) verb.",
       "examples": [
         {
@@ -3900,11 +3985,22 @@
           "note": "Without the article, and still a claim."
         }
       ],
-      "watchOut": "Attributive and predicate is the pair that gets missed. “The true God” labels. “God is true” claims.",
+      "watchOut": "Attributive and predicate is the pair that gets missed, and the article's position settles it whenever there is one. With no article at all — μακάριος ἀνήρ, Rom 4:8 — there is no position to read, so go back to sense: “the true God” labels, “God is true” claims.",
       "tags": [
         "adjective",
         "use",
         "ch-5"
+      ],
+      "kindsLabel": "Two word orders, both predicate",
+      "kinds": [
+        {
+          "name": "adjective · article · noun",
+          "note": "πιστὸς ὁ θεός — the adjective out in front, article on the noun"
+        },
+        {
+          "name": "article · noun · adjective",
+          "note": "ὁ λόγος ἀγαθός — the adjective trailing, and still no article on it"
+        }
       ]
     },
     {
@@ -6080,9 +6176,9 @@
         "adj-predicate"
       ],
       "question": "Attributive or predicate?",
-      "test": "Does it label, or does it claim?",
-      "answer": "“The true God” labels ⇒ attributive. “God is true” claims ⇒ predicate.",
-      "example": "ὁ ἀληθινὸς θεός (label) vs πιστὸς ὁ θεός (claim, with no verb written)."
+      "test": "Where is the article? Does it precede the adjective, or only the noun?",
+      "answer": "The article precedes the adjective ⇒ attributive: ὁ ἀγαθὸς λόγος, ὁ λόγος ὁ ἀγαθός. The article precedes the noun and not the adjective ⇒ predicate: ἀγαθὸς ὁ λόγος, ὁ λόγος ἀγαθός. No article anywhere and there is no position to read — ask instead whether it labels or claims.",
+      "example": "ὁ ἀληθινὸς θεός, “the true God” (label) · πιστὸς ὁ θεός, “God is faithful” (claim, no verb written)."
     },
     {
       "id": "comparative-vs-elative",
