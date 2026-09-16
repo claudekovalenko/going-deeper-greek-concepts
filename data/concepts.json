@@ -4080,22 +4080,18 @@
       "pic": "🥇",
       "eli5": "Best of three or more. “Most High God.”",
       "formula": {
-        "pattern": [
-          "adj",
-          "-est"
-        ],
-        "filled": [
-          "ὕψιστος",
-          "Most High"
-        ],
-        "note": "Three or more in the running."
+        "ladder": [
+          "Take the positive: μέγας, great.",
+          "Add -ιστος: μέγιστος, greatest.",
+          "Or add -τατος: ἅγιος holy → ἁγιώτατος, holiest."
+        ]
       },
       "short": "Superlative",
       "gist": "best of three or more",
       "tile": "S",
       "oneLine": "Comparing three or more.",
       "mnemonic": "SPECS — S: superlative, the -est.",
-      "mnemonicWhy": "Two things get a comparative. Three or more get a superlative.",
+      "mnemonicWhy": "Two endings, both meaning -est. -ιστος even looks like it if you squint: μέγιστος, great-est. -τατος is the other one, and it is the comparative's -τερος with the vowels swapped — τερος for two, τατος for the top.",
       "spotIt": "Ask how many are being compared. Three or more ⇒ superlative.",
       "bookDef": "Compares the qualities of three or more entities.",
       "examples": [
@@ -4104,13 +4100,31 @@
           "greek": "Ἰησοῦ υἱὲ τοῦ θεοῦ τοῦ *ὑψίστου*",
           "english": "Jesus, Son of the *Most High* God",
           "note": "Highest of all, not higher than one other."
+        },
+        {
+          "ref": "Matt 13:32",
+          "greek": "*μικρότερον* μέν ἐστιν πάντων τῶν σπερμάτων",
+          "english": "it is the *smallest* of all the seeds",
+          "note": "A comparative form doing superlative work — “smaller than all” is how Greek often says “smallest”."
         }
       ],
       "tags": [
         "adjective",
         "degree",
         "ch-5"
-      ]
+      ],
+      "kindsLabel": "How it gets built",
+      "kinds": [
+        {
+          "name": "-ιστος on a positive adjective",
+          "note": "μέγας great → μέγιστος greatest · πολύς much → πλεῖστος most · μικρός small → ἐλάχιστος smallest · ὕψιστος highest, which has no positive form in the New Testament at all."
+        },
+        {
+          "name": "-τατος on a positive adjective",
+          "note": "ἅγιος holy → ἁγιώτατος holiest · τίμιος valuable → τιμιώτατος most valuable · ἀκριβής strict → ἀκριβέστατος strictest."
+        }
+      ],
+      "watchOut": "Two of the -ιστος words are not built off the adjective beside them: πλεῖστος does not come from πολύς's stem and ἐλάχιστος does not come from μικρός's. Those pairs are learned whole, like good and best. And a superlative form with nothing to compare it against is elative — it just means “very”."
     },
     {
       "id": "adj-positive",
@@ -4148,7 +4162,8 @@
         "adjective",
         "degree",
         "ch-5"
-      ]
+      ],
+      "watchOut": "This is the form the other two are built from: add -τερος for the comparative, -ιστος or -τατος for the superlative. A few words have no positive to build from — ὕψιστος, “most high”, never appears as a positive in the New Testament."
     },
     {
       "id": "adj-elative",
@@ -4204,22 +4219,18 @@
       "pic": "2️⃣",
       "eli5": "More than one other. “More powerful than I am.”",
       "formula": {
-        "pattern": [
-          "adj",
-          "-er than"
-        ],
-        "filled": [
-          "ἰσχυρότερος",
-          "more powerful than I"
-        ],
-        "note": "Two in the running."
+        "ladder": [
+          "Take the positive: ἰσχυρός, strong.",
+          "Add -τερος: ἰσχυρότερος, stronger.",
+          "Or, for the handful that have no such form, learn the word: μείζων, greater."
+        ]
       },
       "short": "Comparative",
       "gist": "more than one other",
       "tile": "C",
       "oneLine": "Comparing two, by degree.",
       "mnemonic": "SPECS — C: comparative, the -er.",
-      "mnemonicWhy": "Degree, not kind — and there is something on the other side of the scale.",
+      "mnemonicWhy": "Greek builds it the way English does. Regular: bolt an ending on — μικρός small becomes μικρότερος smaller, and -τερος is doing the job of -er, which is also roughly what it sounds like. Irregular: a different word you simply learn, exactly like good → better and bad → worse.",
       "spotIt": "Ask what it is being compared to. If there is an answer, comparative. If not, look at elative.",
       "bookDef": "Focuses on the properties of a noun in terms of degree rather than kind.",
       "examples": [
@@ -4234,7 +4245,19 @@
         "adjective",
         "degree",
         "ch-5"
-      ]
+      ],
+      "kindsLabel": "How it gets built",
+      "kinds": [
+        {
+          "name": "-τερος on a positive adjective",
+          "note": "ἀσθενής weak → ἀσθενέστερος weaker · ἰσχυρός strong → ἰσχυρότερος stronger · μικρός small → μικρότερος smaller · πρέσβυς old → πρεσβύτερος older. Hear the -er in -τερος and the rest follows."
+        },
+        {
+          "name": "A third declension form, learned whole",
+          "note": "μείζων greater · πλέον more · χείρων worse · κρεῖσσον and κρείττων both better. Nothing to build them from — these are the good → better, bad → worse of Greek."
+        }
+      ],
+      "watchOut": "πρεσβύτερος is literally “older”, and it is where presbyter and elder come from — the office is named with a comparative. And a comparative form does not always compare: with nothing on the other side of the scale it is elative, and means “very”."
     },
     {
       "id": "adj-special-cases",
