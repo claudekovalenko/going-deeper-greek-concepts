@@ -18,7 +18,8 @@
     "pic: one emoji per card, chosen to be the mnemonic's own image. It shows on the Learn card, in the Learn list, and on the BACK of a drill card — never the front, which would give the answer away.",
     "unofficial: true marks an item from the chapter's practice exercises. The book prints those questions without answers, so the answer shown is reasoned, not the book's, and the app says so.",
     "world / place / placeName / scene: the Picture tab. Each set is a stop on one street and each group a spot inside it; the board is generated, so a new set with a place and a scene adds itself to the walk.",
-    "spot on a group: the emoji for that group's corner of its stop, used as the heading icon in the Picture tab."
+    "spot on a group: the emoji for that group's corner of its stop, used as the heading icon in the Picture tab.",
+    "kinds / kindsLabel on a card: the flavours inside one use — the verb families a case's direct object takes, the nine places an anarthrous noun is still definite. These are chunked inside the card, numbered and counted, because they are not separate uses. Where the chart names separate uses, those are separate cards."
   ],
   "sets": [
     {
@@ -248,16 +249,34 @@
       "classDate": "2026-09-15",
       "bigIdea": "The article points. It particularises. And when it is missing, that is information too — not automatically “a”.",
       "masterMnemonic": "Point, Pronoun, Poof.",
-      "masterMnemonicWhy": "Three things it does: it Points at something, it stands in as a Pronoun, or it goes Poof and leaves you to work out why. Then three named rules: Sharp joins, Colwell drops, Apollonius matches.",
+      "masterMnemonicWhy": "Three things it does: it Points at something — six ways, and a MAGPIE remembers them — it stands in as a Pronoun in five flavours, or it goes Poof and leaves you three readings to choose between. Then three named rules: Sharp joins, Colwell drops, Apollonius matches.",
       "groups": [
         {
-          "id": "article-uses",
-          "name": "What it does — the three P's",
-          "key": "Point · Pronoun · Poof",
-          "mnemonic": "Point · Pronoun · Poof.",
-          "expand": "Points at a thing · stands in as a pronoun · vanishes, and that means something",
-          "spot": "👉",
-          "scene": "The post itself: a finger 👉 pointing at one thing, a puzzle piece 🧩 standing in for a word, and a ghost 👻 where the finger vanished — gone does not mean “a”."
+          "id": "article-point",
+          "name": "Point — particularising, and generic",
+          "key": "MAGPIE",
+          "mnemonic": "M-A-G-P-I-E — a magpie on the signpost, picking out the one shiny thing.",
+          "expand": "Monadic · Abstract · Generic · Par excellence · Identification · Earlier (anaphoric)",
+          "spot": "🐦",
+          "scene": "A magpie 🐦 on the post picks out one shiny thing at a time: the only one there is 🌑, the idea itself 💭, the whole class at once 🗂️, the one that deserves the crown 👑, just this one here 🔦, and the one it was talking about a moment ago ↩️."
+        },
+        {
+          "id": "article-pronoun-kinds",
+          "name": "Pronoun — five words it stands in for",
+          "key": "Personal · Relative · Possessive · Demonstrative · Alternate",
+          "mnemonic": "They · who · his · those · some…others — five English words, five kinds.",
+          "expand": "ὁ δέ (he) · ὁ ἐν … (who) · τὸν βίον (his) · οἱ ἐν τῷ πλοίῳ (those) · ὁ μέν … ὁ δέ (some … others)",
+          "spot": "🧩",
+          "scene": "A puzzle piece 🧩 with five shapes: a man 🧔 for he, a chain ⛓️ for who, a briefcase 💼 for his, a finger 👆 for those, and two friends 👬 for some and others."
+        },
+        {
+          "id": "article-absence-kinds",
+          "name": "Poof — gone, and gone is not “a”",
+          "key": "Indefinite · Qualitative · Definite",
+          "mnemonic": "Ask three things in order: a? the quality? or still THE?",
+          "expand": "Non-particular — indefinite or qualitative · or definite anyway, in nine standard places",
+          "spot": "👻",
+          "scene": "Where the finger vanished 👻, three things it can mean: genuinely “a” 🫥, the quality itself 💎, or still THE 🔒 — and that last one has nine places it happens."
         },
         {
           "id": "article-rules",
@@ -271,7 +290,7 @@
       ],
       "place": "👉",
       "placeName": "The Signpost",
-      "scene": "One finger on a post 👉, and three men 👨‍⚖️ standing under it arguing about what it means."
+      "scene": "One finger on a post 👉 with a magpie 🐦 sitting on it, and three men 👨‍⚖️ underneath arguing about what it means."
     },
     {
       "id": "adjective",
@@ -813,6 +832,25 @@
         "nominative",
         "other",
         "ch-2"
+      ],
+      "kindsLabel": "Where introductory material turns up",
+      "kinds": [
+        {
+          "name": "Titles",
+          "note": "the heading of a book or section"
+        },
+        {
+          "name": "Headings",
+          "note": "a label over what follows"
+        },
+        {
+          "name": "Salutations",
+          "note": "the opening of a letter"
+        },
+        {
+          "name": "Addresses",
+          "note": "the name on the outside"
+        }
       ]
     },
     {
@@ -901,6 +939,17 @@
       "tags": [
         "vocative",
         "ch-2"
+      ],
+      "kindsLabel": "Two dresses, one job",
+      "kinds": [
+        {
+          "name": "Non-articular",
+          "note": "the bare vocative — Κύριε"
+        },
+        {
+          "name": "Articular",
+          "note": "with the article — ὁ πατήρ, used as a vocative"
+        }
       ]
     },
     {
@@ -1211,6 +1260,25 @@
         "accusative",
         "substantival",
         "ch-2"
+      ],
+      "kindsLabel": "The verbs that want two objects",
+      "kinds": [
+        {
+          "name": "Asking",
+          "note": "αἰτέω — asks him for bread"
+        },
+        {
+          "name": "Teaching",
+          "note": "διδάσκω — teaches you all things"
+        },
+        {
+          "name": "Reminding",
+          "note": "ὑπομιμνῄσκω"
+        },
+        {
+          "name": "Clothing and anointing",
+          "note": "ἐνδύω, χρίω"
+        }
       ]
     },
     {
@@ -1472,6 +1540,17 @@
         "genitive",
         "adjectival",
         "ch-3"
+      ],
+      "kindsLabel": "Two ways it is written",
+      "kinds": [
+        {
+          "name": "On its own",
+          "note": "the bare genitive: “one of the boats”"
+        },
+        {
+          "name": "With ἀπό or ἐκ",
+          "note": "the same idea, spelled out with a preposition"
+        }
       ]
     },
     {
@@ -1559,6 +1638,17 @@
         "genitive",
         "adjectival",
         "ch-3"
+      ],
+      "kindsLabel": "Two things it can say",
+      "kinds": [
+        {
+          "name": "Made of it",
+          "note": "the material the head noun is made from"
+        },
+        {
+          "name": "Full of it",
+          "note": "the content of a container or an abstract noun"
+        }
       ]
     },
     {
@@ -1788,7 +1878,7 @@
       "tile": "P",
       "oneLine": "What it cost, or what it is worth.",
       "mnemonic": "PACTS — P: for how much?",
-      "mnemonicWhy": "What it cost, or what it is worth.",
+      "mnemonicWhy": "PACTS opens with the price, because the first thing any pact settles is what it costs. ἠγοράσθητε τιμῆς — you were bought at a price.",
       "spotIt": "Ask: at what price? worth how much?",
       "bookDef": "Indicates the price that is paid or the value that attaches to a given item.",
       "examples": [
@@ -1935,6 +2025,17 @@
         "genitive",
         "adverbial",
         "ch-3"
+      ],
+      "kindsLabel": "Two axes, one use",
+      "kinds": [
+        {
+          "name": "Time",
+          "note": "when — and the stress is on what kind of time, not how long"
+        },
+        {
+          "name": "Place",
+          "note": "where — the kind of place, not the exact spot"
+        }
       ]
     },
     {
@@ -1976,6 +2077,17 @@
         "genitive",
         "adverbial",
         "ch-3"
+      ],
+      "kindsLabel": "Two distances",
+      "kinds": [
+        {
+          "name": "Literal",
+          "note": "actual motion away, or actual distance"
+        },
+        {
+          "name": "Figurative",
+          "note": "cut off from, free of, estranged from"
+        }
       ]
     },
     {
@@ -2088,6 +2200,29 @@
         "genitive",
         "other",
         "ch-3"
+      ],
+      "kindsLabel": "Which verbs take it",
+      "kinds": [
+        {
+          "name": "Sensation",
+          "note": "hear it, taste it, touch it"
+        },
+        {
+          "name": "Emotion or volition",
+          "note": "want it, long for it"
+        },
+        {
+          "name": "Sharing",
+          "note": "partake of it, have a share in it"
+        },
+        {
+          "name": "Ruling",
+          "note": "rule over it, be lord of it"
+        },
+        {
+          "name": "Separation",
+          "note": "leave it, be free of it"
+        }
       ]
     },
     {
@@ -2545,6 +2680,17 @@
         "dative",
         "instrumental",
         "ch-4"
+      ],
+      "kindsLabel": "Two ways of being together",
+      "kinds": [
+        {
+          "name": "Associated with",
+          "note": "the party you belong to"
+        },
+        {
+          "name": "Accompanied by",
+          "note": "the person who came along"
+        }
       ]
     },
     {
@@ -2585,6 +2731,17 @@
         "dative",
         "other",
         "ch-4"
+      ],
+      "kindsLabel": "Two directions a cause comes from",
+      "kinds": [
+        {
+          "name": "External — the occasion",
+          "note": "what happened to bring it about"
+        },
+        {
+          "name": "Internal — the motivation",
+          "note": "what moved them from inside"
+        }
       ]
     },
     {
@@ -2706,15 +2863,42 @@
         "dative",
         "other",
         "ch-4"
+      ],
+      "kindsLabel": "The verbs of devotion",
+      "kinds": [
+        {
+          "name": "Trusting",
+          "note": "πιστεύω"
+        },
+        {
+          "name": "Obeying",
+          "note": "ὑπακούω, πείθομαι"
+        },
+        {
+          "name": "Serving",
+          "note": "διακονέω, δουλεύω"
+        },
+        {
+          "name": "Worshipping",
+          "note": "προσκυνέω"
+        },
+        {
+          "name": "Thanksgiving",
+          "note": "εὐχαριστέω"
+        },
+        {
+          "name": "Following",
+          "note": "ἀκολουθέω"
+        }
       ]
     },
     {
-      "id": "article-substantives",
+      "id": "article-monadic",
       "set": "article",
-      "group": "article-uses",
-      "name": "With Substantives",
-      "pic": "👉",
-      "eli5": "It points at one. “The Prophet” is not any prophet. That one.",
+      "group": "article-point",
+      "name": "Monadic Article",
+      "pic": "🌑",
+      "eli5": "There is only one of him. “The only Son” — there is no second one to confuse him with.",
       "formula": {
         "pattern": [
           "ὁ",
@@ -2722,49 +2906,96 @@
         ],
         "filled": [
           "the",
-          "Prophet"
-        ],
-        "note": "Not any one of them. THAT one."
+          "monadic"
+        ]
       },
-      "short": "With substantives",
-      "gist": "points at one",
-      "tile": "Point",
-      "oneLine": "The article picks a thing out, or names the whole class.",
-      "mnemonic": "Point — it aims at one.",
-      "mnemonicWhy": "Six ways of aiming: at this one (identification), at THE one (par excellence), at the only one (monadic), at the idea itself (abstract), at the one just mentioned (anaphoric), or at all of them at once (generic).",
-      "spotIt": "Ask which aim it is taking: one, the best, the only, an idea, the one just named, or the whole class.",
+      "short": "Monadic",
+      "gist": "the only one there is",
+      "tile": "M",
+      "oneLine": "The article on something one-of-a-kind.",
+      "mnemonic": "MAGPIE — M: Monadic, the only one there is.",
+      "mnemonicWhy": "Not “the best of several” — there are no several. The sun, the devil, the only Son.",
+      "spotIt": "Ask whether a second one could even exist. If not, monadic.",
       "bookDef": "The article particularizes a substantive or uses it generically.",
       "examples": [
-        {
-          "ref": "Matt 2:2",
-          "greek": "ποῦ ἐστιν *ὁ* τεχθεὶς βασιλεὺς τῶν Ἰουδαίων",
-          "english": "Where is *he* who has been born King of the Jews?",
-          "note": "Identification — it picks out one particular person."
-        },
-        {
-          "ref": "John 1:21",
-          "greek": "*ὁ* προφήτης εἶ σύ;",
-          "english": "Are you *the* Prophet?",
-          "note": "Par excellence — not a prophet, THE prophet."
-        },
         {
           "ref": "John 3:16 ESV",
           "greek": "*τὸν* υἱὸν *τὸν* μονογενῆ ἔδωκεν",
           "english": "that he gave *his* only Son",
           "note": "Monadic — there is only one of him."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "point",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-abstract",
+      "set": "article",
+      "group": "article-point",
+      "name": "Abstract Article",
+      "pic": "💭",
+      "eli5": "It points at the idea, not at one example of it. “Salvation” — the whole thing, not one rescue.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "abstract"
+        ]
+      },
+      "short": "Abstract",
+      "gist": "the idea itself",
+      "tile": "A",
+      "oneLine": "The article on an abstract noun, naming the concept.",
+      "mnemonic": "MAGPIE — A: Abstract, the idea itself.",
+      "mnemonicWhy": "English usually drops the “the” here, which is why it is easy to miss: ἡ σωτηρία is just “salvation”.",
+      "spotIt": "An abstract noun with an article that English would not translate.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
         {
           "ref": "John 4:22",
           "greek": "*ἡ* σωτηρία ἐκ τῶν Ἰουδαίων ἐστίν",
           "english": "*salvation* is from the Jews",
           "note": "Abstract — the idea itself, not one instance of it."
-        },
-        {
-          "ref": "John 4:11 ESV",
-          "greek": "πόθεν οὖν ἔχεις *τὸ* ὕδωρ τὸ ζῶν",
-          "english": "So where do You get *that* ‘living water’?",
-          "note": "Anaphoric — the water already mentioned. Translate it “that”."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "point",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-generic",
+      "set": "article",
+      "group": "article-point",
+      "name": "Generic Article",
+      "pic": "🗂️",
+      "eli5": "It points at all of them at once. “Beware of false prophets” — the whole breed, not particular men.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "generic"
+        ]
+      },
+      "short": "Generic",
+      "gist": "the whole class",
+      "tile": "G",
+      "oneLine": "The article on a class as a class, rather than on one member of it.",
+      "mnemonic": "MAGPIE — G: Generic, all of them at once.",
+      "mnemonicWhy": "The one letter of MAGPIE that is not particularising. The chart's sentence has two halves — “particularizes … or uses it generically” — and this is the second half.",
+      "spotIt": "Swap in “that kind of thing” and see if it still works. If it does, generic.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
         {
           "ref": "Matt 7:15",
           "greek": "Προσέχετε ἀπὸ *τῶν* ψευδοπροφητῶν",
@@ -2772,37 +3003,156 @@
           "note": "Generic — the whole class of them, not particular ones."
         }
       ],
+      "watchOut": "This is the odd one out. The other five particularise; this one generalises.",
       "tags": [
         "article",
-        "uses",
+        "point",
         "ch-5"
       ]
     },
     {
-      "id": "article-pronoun",
+      "id": "article-par-excellence",
       "set": "article",
-      "group": "article-uses",
-      "name": "As a Pronoun",
-      "pic": "🧩",
-      "eli5": "It stands in for a word. “They told him” — the “they” is just the article.",
+      "group": "article-point",
+      "name": "Par Excellence",
+      "pic": "👑",
+      "eli5": "Not a prophet — THE Prophet. The one who deserves the name more than anyone.",
       "formula": {
         "pattern": [
-          "ὁ / οἱ",
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "par excellence"
+        ]
+      },
+      "short": "Par excellence",
+      "gist": "THE one, the best",
+      "tile": "P",
+      "oneLine": "The article marking the one that best deserves the title.",
+      "mnemonic": "MAGPIE — P: Par excellence, the one worth the name.",
+      "mnemonicWhy": "Say it out loud with the stress on “the”. If “THE Prophet” sounds right, that is this one.",
+      "spotIt": "Try putting the stress on “the”. THE Christ, THE Prophet, THE day.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
+        {
+          "ref": "John 1:21",
+          "greek": "*ὁ* προφήτης εἶ σύ;",
+          "english": "Are you *the* Prophet?",
+          "note": "Par excellence — not a prophet, THE prophet."
+        }
+      ],
+      "watchOut": "Close to monadic. Monadic means there is only one; par excellence means there are several and this is the one that counts.",
+      "tags": [
+        "article",
+        "point",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-identification",
+      "set": "article",
+      "group": "article-point",
+      "name": "Simple Identification",
+      "pic": "🔦",
+      "eli5": "It just picks out which one you mean. The plain job, and the commonest.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "identification"
+        ]
+      },
+      "short": "Identification",
+      "gist": "this particular one",
+      "tile": "I",
+      "oneLine": "The article singling out one particular person or thing.",
+      "mnemonic": "MAGPIE — I: Identification, this one here.",
+      "mnemonicWhy": "The default. If none of the other five fit, it is doing the plain job of saying which one.",
+      "spotIt": "Nothing clever going on — it just tells you which one is meant.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
+        {
+          "ref": "Matt 2:2",
+          "greek": "ποῦ ἐστιν *ὁ* τεχθεὶς βασιλεὺς τῶν Ἰουδαίων",
+          "english": "Where is *he* who has been born King of the Jews?",
+          "note": "Identification — it picks out one particular person."
+        }
+      ],
+      "tags": [
+        "article",
+        "point",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-anaphoric",
+      "set": "article",
+      "group": "article-point",
+      "name": "Anaphoric Article",
+      "pic": "↩️",
+      "eli5": "It means “that one, the one I just said”. The water he was talking about a moment ago.",
+      "formula": {
+        "pattern": [
+          "ὁ",
+          "+ word"
+        ],
+        "filled": [
+          "the",
+          "earlier"
+        ]
+      },
+      "short": "Earlier",
+      "gist": "the one just mentioned",
+      "tile": "E",
+      "oneLine": "The article pointing back at something already named.",
+      "mnemonic": "MAGPIE — E: Earlier, the one already mentioned.",
+      "mnemonicWhy": "Translate it “that” instead of “the” and see if the sentence improves. If it does, it is anaphoric — and E is for Earlier, because the thing was named earlier.",
+      "spotIt": "Look backwards. Was this noun introduced a sentence or two ago without an article? Then this article is pointing at it.",
+      "bookDef": "The article particularizes a substantive or uses it generically.",
+      "examples": [
+        {
+          "ref": "John 4:11 ESV",
+          "greek": "πόθεν οὖν ἔχεις *τὸ* ὕδωρ τὸ ζῶν",
+          "english": "So where do You get *that* ‘living water’?",
+          "note": "Anaphoric — the water already mentioned. Translate it “that”."
+        }
+      ],
+      "watchOut": "The most common of the five in narrative, and the easiest to read straight past.",
+      "tags": [
+        "article",
+        "point",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pron-personal",
+      "set": "article",
+      "group": "article-pronoun-kinds",
+      "name": "Article as Personal Pronoun",
+      "pic": "🧔",
+      "eli5": "The article is the subject all by itself. “And they said to him.”",
+      "formula": {
+        "pattern": [
+          "article",
           "(no noun)"
         ],
         "filled": [
-          "they",
-          "told him"
-        ],
-        "note": "The article is naming somebody all by itself."
+          "personal",
+          "he, she, they"
+        ]
       },
-      "short": "As a pronoun",
-      "gist": "stands in for a word",
-      "tile": "Pronoun",
-      "oneLine": "The article doing a pronoun's job.",
-      "mnemonic": "Pronoun — the article with nothing to point at.",
-      "mnemonicWhy": "Five kinds, and English tells you which: they (personal), who (relative), his (possessive), those (demonstrative), some… others (alternate).",
-      "spotIt": "An article with no noun after it. Work out which English pronoun fills the hole.",
+      "short": "Personal",
+      "gist": "he, she, they",
+      "tile": "Personal",
+      "oneLine": "ὁ / οἱ standing alone as he, she or they — usually with δέ.",
+      "mnemonic": "Pronoun — Personal: ὁ δέ means “and he”.",
+      "mnemonicWhy": "ὁ δέ and οἱ δέ are so common in narrative they are worth learning as a phrase: “and he …”, “and they …”.",
+      "spotIt": "An article with no noun, carrying δέ, at the head of a clause.",
       "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
       "examples": [
         {
@@ -2810,25 +3160,157 @@
           "greek": "*οἱ* δὲ εἶπαν αὐτῷ",
           "english": "*They* told him",
           "note": "Personal — the article is the subject on its own."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "pronoun",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pron-relative",
+      "set": "article",
+      "group": "article-pronoun-kinds",
+      "name": "Article as Relative Pronoun",
+      "pic": "⛓️",
+      "eli5": "The article starts a “who” clause. “Your Father who is in heaven.”",
+      "formula": {
+        "pattern": [
+          "article",
+          "(no noun)"
+        ],
+        "filled": [
+          "relative",
+          "who, which"
+        ]
+      },
+      "short": "Relative",
+      "gist": "who, which",
+      "tile": "Relative",
+      "oneLine": "The article introducing a phrase that describes the noun before it.",
+      "mnemonic": "Pronoun — Relative: the article that means “who”.",
+      "mnemonicWhy": "It is a chain link: the article hooks the phrase behind it onto the noun in front of it.",
+      "spotIt": "An article repeated after a noun, with a phrase rather than a noun after it.",
+      "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
+      "examples": [
         {
           "ref": "Matt 5:16 ESV",
           "greek": "τὸν πατέρα ὑμῶν *τὸν* ἐν τοῖς οὐρανοῖς",
           "english": "your Father *who* is in heaven",
           "note": "Relative — the article introduces the clause."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "pronoun",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pron-possessive",
+      "set": "article",
+      "group": "article-pronoun-kinds",
+      "name": "Article as Possessive Pronoun",
+      "pic": "💼",
+      "eli5": "The article means “his”. Greek does not bother with αὐτοῦ when it is obvious.",
+      "formula": {
+        "pattern": [
+          "article",
+          "(no noun)"
+        ],
+        "filled": [
+          "possessive",
+          "his, her, their"
+        ]
+      },
+      "short": "Possessive",
+      "gist": "his, her, their",
+      "tile": "Possessive",
+      "oneLine": "The article doing the work of a possessive pronoun.",
+      "mnemonic": "Pronoun — Possessive: the article that means “his”.",
+      "mnemonicWhy": "If the owner is obvious from the sentence, Greek leaves the possessive out and lets the article carry it. English has to put it back.",
+      "spotIt": "An article where English needs “his”, “her” or “their” and there is no genitive pronoun to supply it.",
+      "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
+      "examples": [
         {
           "ref": "Luke 15:12 ESV",
           "greek": "ὁ δὲ διεῖλεν αὐτοῖς *τὸν* βίον",
           "english": "And he divided *his* property between them",
           "note": "Possessive — no αὐτοῦ needed, the article carries it."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "pronoun",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pron-demonstrative",
+      "set": "article",
+      "group": "article-pronoun-kinds",
+      "name": "Article as Demonstrative Pronoun",
+      "pic": "👆",
+      "eli5": "The article means “those”. “Those in the boat worshipped him.”",
+      "formula": {
+        "pattern": [
+          "article",
+          "(no noun)"
+        ],
+        "filled": [
+          "demonstrative",
+          "this, those"
+        ]
+      },
+      "short": "Demonstrative",
+      "gist": "this, those",
+      "tile": "Demonstrative",
+      "oneLine": "The article standing in for this, that, these or those.",
+      "mnemonic": "Pronoun — Demonstrative: the article that means “those”.",
+      "mnemonicWhy": "Usually with a phrase hanging off it: οἱ ἐν τῷ πλοίῳ — “those in the boat”.",
+      "spotIt": "An article with no noun, followed by a prepositional phrase.",
+      "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
+      "examples": [
         {
           "ref": "Matt 14:33",
           "greek": "*οἱ* ἐν τῷ πλοίῳ προσεκύνησαν αὐτῷ",
           "english": "*those* in the boat worshiped him",
           "note": "Demonstrative — “those”."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "pronoun",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-pron-alternate",
+      "set": "article",
+      "group": "article-pronoun-kinds",
+      "name": "Article as Alternate Pronoun",
+      "pic": "👬",
+      "eli5": "Two articles taking turns. “Some as apostles… others as prophets.”",
+      "formula": {
+        "pattern": [
+          "article",
+          "(no noun)"
+        ],
+        "filled": [
+          "alternate",
+          "some… others"
+        ]
+      },
+      "short": "Alternate",
+      "gist": "some… others",
+      "tile": "Alternate",
+      "oneLine": "ὁ μέν … ὁ δέ, dividing a group into some and others.",
+      "mnemonic": "Pronoun — Alternate: μέν … δέ, some … others.",
+      "mnemonicWhy": "The tell is the pair of little words. μέν sets up “on the one hand”, δέ answers “on the other”.",
+      "spotIt": "μέν on one article and δέ on another, splitting a list in two.",
+      "bookDef": "The article functions as a personal, relative, possessive, demonstrative, or alternate pronoun.",
+      "examples": [
         {
           "ref": "Eph 4:11 NASB",
           "greek": "αὐτὸς ἔδωκεν *τοὺς* μὲν ἀποστόλους",
@@ -2838,37 +3320,34 @@
       ],
       "tags": [
         "article",
-        "uses",
+        "pronoun",
         "ch-5"
       ]
     },
     {
-      "id": "article-absence",
+      "id": "article-none-indefinite",
       "set": "article",
-      "group": "article-uses",
-      "name": "Absence of the Article",
-      "pic": "👻",
-      "eli5": "A missing “the” is a clue, not an answer. It can mean “a”, or a quality, or still THE.",
+      "group": "article-absence-kinds",
+      "name": "Absence — Indefinite",
+      "pic": "🫥",
+      "eli5": "No “the”, and it really does mean “a”. A boat. Any boat.",
       "formula": {
         "pattern": [
           "no article",
-          "→",
-          "a? quality? or still THE?"
+          "→"
         ],
         "filled": [
-          "θεοῦ εἰμι υἱός",
-          "→",
-          "“I am THE Son of God”"
-        ],
-        "note": "Three things it can mean, and only one of them is “a”."
+          "∅",
+          "genuinely “a”"
+        ]
       },
-      "short": "Absence of article",
-      "gist": "missing, and not “a”",
-      "tile": "Poof",
-      "oneLine": "What a missing article can mean — and it is not always “a”.",
-      "mnemonic": "Poof — the article vanishes, the meaning does not.",
-      "mnemonicWhy": "Three readings: indefinite (a boat), qualitative (full of grace — the quality itself), or still perfectly definite (Paul, in the Lord, the Son of God).",
-      "spotIt": "No article? Ask three questions in order: a? the quality? or still THE?",
+      "short": "Indefinite",
+      "gist": "genuinely “a”",
+      "tile": "Indefinite",
+      "oneLine": "The missing article marking something non-particular: one of many.",
+      "mnemonic": "Poof — Indefinite: it really is “a”.",
+      "mnemonicWhy": "This is the reading everyone reaches for first, and it is right about a third of the time. Ask the other two before settling.",
+      "spotIt": "Would “a” or “some” read naturally? Then indefinite.",
       "bookDef": "The absence of the article may convey that a given substantive is non-particular (indefinite or qualitative) or definite. If definite, this may be in conjunction with a proper name, a prepositional object, ordinal numbers, in predicate nominatives, as the complement in an object, complement construction, with monadic (one-of-a-kind) nouns, with abstract or generic nouns, with a pronominal adjective, or with technical expressions.",
       "examples": [
         {
@@ -2876,13 +3355,79 @@
           "greek": "ἵνα *πλοιάριον* προσκαρτερῇ αὐτῷ",
           "english": "to have *a small boat* ready for him",
           "note": "Indefinite — genuinely “a”."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "absence",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-none-qualitative",
+      "set": "article",
+      "group": "article-absence-kinds",
+      "name": "Absence — Qualitative",
+      "pic": "💎",
+      "eli5": "No “the”, and it is pointing at the quality itself. “Full of grace” — grace-ness, not a portion of grace.",
+      "formula": {
+        "pattern": [
+          "no article",
+          "→"
+        ],
+        "filled": [
+          "∅",
+          "what kind of thing"
+        ]
+      },
+      "short": "Qualitative",
+      "gist": "what kind of thing",
+      "tile": "Qualitative",
+      "oneLine": "The missing article stressing the nature of the thing rather than its identity.",
+      "mnemonic": "Poof — Qualitative: the stuff itself, not a piece of it.",
+      "mnemonicWhy": "Also non-particular, like indefinite — but the emphasis is on what kind, not on which one. Add “the very nature of” in your head and see if it fits.",
+      "spotIt": "Would “the quality of” or “the very nature of” fit in front of it? Then qualitative.",
+      "bookDef": "The absence of the article may convey that a given substantive is non-particular (indefinite or qualitative) or definite. If definite, this may be in conjunction with a proper name, a prepositional object, ordinal numbers, in predicate nominatives, as the complement in an object, complement construction, with monadic (one-of-a-kind) nouns, with abstract or generic nouns, with a pronominal adjective, or with technical expressions.",
+      "examples": [
         {
           "ref": "John 1:14",
           "greek": "πλήρης *χάριτος* καὶ *ἀληθείας*",
           "english": "full of *grace* and *truth*",
           "note": "Qualitative — the qualities themselves."
-        },
+        }
+      ],
+      "tags": [
+        "article",
+        "absence",
+        "ch-5"
+      ]
+    },
+    {
+      "id": "article-none-definite",
+      "set": "article",
+      "group": "article-absence-kinds",
+      "name": "Absence — Definite Anyway",
+      "pic": "🔒",
+      "eli5": "No “the”, and it still means THE. Paul does not need an article to be Paul.",
+      "formula": {
+        "pattern": [
+          "no article",
+          "→"
+        ],
+        "filled": [
+          "∅",
+          "still THE"
+        ]
+      },
+      "short": "Definite",
+      "gist": "still THE",
+      "tile": "Definite",
+      "oneLine": "The missing article where the noun is definite regardless — and the chart lists nine places it happens.",
+      "mnemonic": "Poof — Definite: gone, and still THE.",
+      "mnemonicWhy": "This is the reading that settles John 1:1. Anarthrous does not mean indefinite; there are nine standard places where the article is simply not needed.",
+      "spotIt": "Run the list: is it a name, after a preposition, an ordinal, a predicate nominative, a complement, one-of-a-kind, abstract or generic, a pronominal adjective, or a technical term? Any of those and it is definite.",
+      "bookDef": "The absence of the article may convey that a given substantive is non-particular (indefinite or qualitative) or definite. If definite, this may be in conjunction with a proper name, a prepositional object, ordinal numbers, in predicate nominatives, as the complement in an object, complement construction, with monadic (one-of-a-kind) nouns, with abstract or generic nouns, with a pronominal adjective, or with technical expressions.",
+      "examples": [
         {
           "ref": "Acts 16:25",
           "greek": "*Παῦλος* καὶ *Σιλᾶς* προσευχόμενοι",
@@ -2905,8 +3450,47 @@
       "watchOut": "This is the row that settles John 1:1. Anarthrous does not mean indefinite.",
       "tags": [
         "article",
-        "uses",
+        "absence",
         "ch-5"
+      ],
+      "kindsLabel": "Where gone still means definite",
+      "kinds": [
+        {
+          "name": "With a proper name",
+          "note": "Παῦλος does not need one"
+        },
+        {
+          "name": "Object of a preposition",
+          "note": "ἐν κυρίῳ — in THE Lord"
+        },
+        {
+          "name": "Ordinal numbers",
+          "note": "first, second, third"
+        },
+        {
+          "name": "In predicate nominatives",
+          "note": "θεοῦ εἰμι υἱός — and this is Colwell's territory"
+        },
+        {
+          "name": "As the complement in an object-complement construction",
+          "note": "what the object is called"
+        },
+        {
+          "name": "With monadic nouns",
+          "note": "one-of-a-kind things"
+        },
+        {
+          "name": "With abstract or generic nouns",
+          "note": "the idea, or the whole class"
+        },
+        {
+          "name": "With a pronominal adjective",
+          "note": "πᾶς, ὅλος and the like"
+        },
+        {
+          "name": "With technical expressions",
+          "note": "set phrases that have dropped it"
+        }
       ]
     },
     {
@@ -3451,8 +4035,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "ἐγώ εἰμι — “I am”. The verb ending already says “I”; the pronoun adds weight."
+        ]
       },
       "short": "I",
       "gist": "I",
@@ -3491,8 +4074,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "Σὺ τίς εἶ; — “Who are YOU?” John 1:19. The pronoun is there to press."
+        ]
       },
       "short": "You",
       "gist": "you (one person)",
@@ -3531,8 +4113,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "Three endings for three genders: –ός he, –ή she, –ό it."
+        ]
       },
       "short": "He",
       "gist": "he, she, it",
@@ -3571,8 +4152,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "One letter from ὑμεῖς, and the two mean opposite sides."
+        ]
       },
       "short": "We",
       "gist": "we",
@@ -3612,8 +4192,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "English hides this and Greek does not. Most New Testament “you” is this one — plural, the church, not you personally."
+        ]
       },
       "short": "You all",
       "gist": "you (more than one)",
@@ -3653,8 +4232,7 @@
         "filled": [
           "the Greek",
           "the English"
-        ],
-        "note": "Same three genders again: –οί, –αί, –ά."
+        ]
       },
       "short": "They",
       "gist": "they",
@@ -4044,6 +4622,21 @@
         "mood",
         "indicative",
         "ch-6"
+      ],
+      "kindsLabel": "The verbs that trigger it",
+      "kinds": [
+        {
+          "name": "Obligation",
+          "note": "δεῖ, ὀφείλω — one ought to"
+        },
+        {
+          "name": "Wish",
+          "note": "θέλω — one wants to"
+        },
+        {
+          "name": "Desire",
+          "note": "βούλομαι — one intends to"
+        }
       ]
     },
     {
@@ -4125,6 +4718,17 @@
         "mood",
         "indicative",
         "ch-6"
+      ],
+      "kindsLabel": "The two classes εἰ takes",
+      "kinds": [
+        {
+          "name": "First class",
+          "note": "εἰ + indicative — if this is so, and it is"
+        },
+        {
+          "name": "Second class",
+          "note": "εἰ + indicative, ἄν in the second half — if it were so, but it is not"
+        }
       ]
     },
     {
@@ -4556,6 +5160,17 @@
         "mood",
         "subj-main",
         "ch-6"
+      ],
+      "kindsLabel": "Both conditions, or it is not this",
+      "kinds": [
+        {
+          "name": "The command is negated",
+          "note": "μή out in front"
+        },
+        {
+          "name": "The subjunctive is aorist",
+          "note": "not present, and not an imperative"
+        }
       ]
     },
     {
@@ -4831,6 +5446,21 @@
         "mood",
         "optative",
         "ch-6"
+      ],
+      "kindsLabel": "What the wish is for",
+      "kinds": [
+        {
+          "name": "A prayer",
+          "note": "asking God for it"
+        },
+        {
+          "name": "A benediction",
+          "note": "the blessing at the end of a letter"
+        },
+        {
+          "name": "A blessing or wish",
+          "note": "and μὴ γένοιτο — “may it never be!” — is the same form saying no"
+        }
       ]
     },
     {
@@ -4926,15 +5556,14 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "No augment, no sigma, no reduplication — the bare stem."
+        ]
       },
       "short": "Present",
       "gist": "I am loosing",
       "tile": "Am",
       "oneLine": "λύω — “I am loosing”.",
       "mnemonic": "Clock tower — Am: λύω.",
-      "mnemonicWhy": "No augment, no sigma, no reduplication — the bare stem.",
+      "mnemonicWhy": "Am — the helper English reaches for when something is going on right now.",
       "spotIt": "No augment, no sigma, no reduplication — the bare stem.",
       "bookDef": "PRESENT · λύω · “I am loosing”",
       "examples": [
@@ -4942,7 +5571,7 @@
           "ref": "The paradigm",
           "greek": "λύω",
           "english": "I am loosing",
-          "note": "No augment, no sigma, no reduplication — the bare stem."
+          "note": "The default. Every other form is this one with something added to it."
         }
       ],
       "tags": [
@@ -4965,23 +5594,22 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "A σ after the stem and no augment in front: that is future."
+        ]
       },
       "short": "Future",
       "gist": "I will loose",
       "tile": "Will",
       "oneLine": "λύσω — “I will loose”.",
       "mnemonic": "Clock tower — Will: λύσω.",
-      "mnemonicWhy": "A σ after the stem and no augment in front: that is future.",
-      "spotIt": "A σ after the stem and no augment in front: that is future.",
+      "mnemonicWhy": "Will — the helper for what has not happened yet. The σ is the promise.",
+      "spotIt": "A σ after the stem and no augment in front.",
       "bookDef": "FUTURE · λύσω · “I will loose”",
       "examples": [
         {
           "ref": "The paradigm",
           "greek": "λύσω",
           "english": "I will loose",
-          "note": "A σ after the stem and no augment in front: that is future."
+          "note": "The same σ as the aorist. The augment is what separates them: the aorist has one, the future does not."
         }
       ],
       "tags": [
@@ -5004,23 +5632,22 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "An ἐ- augment on the front and no σ: past, and still rolling."
+        ]
       },
       "short": "Imperfect",
       "gist": "I was loosing",
       "tile": "Was",
       "oneLine": "ἔλυον — “I was loosing”.",
       "mnemonic": "Clock tower — Was: ἔλυον.",
-      "mnemonicWhy": "An ἐ- augment on the front and no σ: past, and still rolling.",
-      "spotIt": "An ἐ- augment on the front and no σ: past, and still rolling.",
+      "mnemonicWhy": "Was — the helper for something that kept going, back then.",
+      "spotIt": "An ἐ- augment on the front and no σ.",
       "bookDef": "IMPERFECT · ἔλυον · “I was loosing”",
       "examples": [
         {
           "ref": "The paradigm",
           "greek": "ἔλυον",
           "english": "I was loosing",
-          "note": "An ἐ- augment on the front and no σ: past, and still rolling."
+          "note": "Past and still rolling. Compare the aorist, which is past and done with."
         }
       ],
       "tags": [
@@ -5043,23 +5670,22 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole."
+        ]
       },
       "short": "Aorist",
       "gist": "I loosed",
       "tile": "Did",
       "oneLine": "ἔλυσα — “I loosed”.",
       "mnemonic": "Clock tower — Did: ἔλυσα.",
-      "mnemonicWhy": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole.",
-      "spotIt": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole.",
+      "mnemonicWhy": "Did — no fuss and no duration. One snapshot of the whole thing.",
+      "spotIt": "Augment and σ together: ἔ-λυ-σα.",
       "bookDef": "AORIST · ἔλυσα · “I loosed”",
       "examples": [
         {
           "ref": "The paradigm",
           "greek": "ἔλυσα",
           "english": "I loosed",
-          "note": "Augment and σ together: ἔ-λυ-σα. Past, and taken as a whole."
+          "note": "The workhorse of narrative. It says that it happened, not how long it took."
         }
       ],
       "tags": [
@@ -5082,23 +5708,22 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint."
+        ]
       },
       "short": "Perfect",
       "gist": "I have loosed",
       "tile": "Have",
       "oneLine": "λέλυκα — “I have loosed”.",
       "mnemonic": "Clock tower — Have: λέλυκα.",
-      "mnemonicWhy": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint.",
-      "spotIt": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint.",
+      "mnemonicWhy": "Have — finished, and you are still holding what it left behind.",
+      "spotIt": "The stem said twice at the front — λέ-λυκα.",
       "bookDef": "PERFECT · λέλυκα · “I have loosed”",
       "examples": [
         {
           "ref": "The paradigm",
           "greek": "λέλυκα",
           "english": "I have loosed",
-          "note": "The stem said twice at the front — λέ-λυκα. Reduplication is the perfect's fingerprint."
+          "note": "Reduplication is the perfect's fingerprint. Once you see the doubled front you can stop looking."
         }
       ],
       "tags": [
@@ -5121,23 +5746,22 @@
         "filled": [
           "the form",
           "the helper"
-        ],
-        "note": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past."
+        ]
       },
       "short": "Pluperfect",
       "gist": "I had loosed",
       "tile": "Had",
       "oneLine": "ἐλελύκειν — “I had loosed”.",
       "mnemonic": "Clock tower — Had: ἐλελύκειν.",
-      "mnemonicWhy": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past.",
-      "spotIt": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past.",
+      "mnemonicWhy": "Had — finished before the thing you were already talking about.",
+      "spotIt": "Reduplication and an augment together: ἐ-λε-λύκειν.",
       "bookDef": "PLUPERFECT · ἐλελύκειν · “I had loosed”",
       "examples": [
         {
           "ref": "The paradigm",
           "greek": "ἐλελύκειν",
           "english": "I had loosed",
-          "note": "Reduplication and an augment: ἐ-λε-λύκειν. Past-of-the-past."
+          "note": "The perfect pushed one step further back, and rare in the New Testament."
         }
       ],
       "tags": [
@@ -5371,7 +5995,7 @@
     {
       "id": "absence-vs-colwell",
       "pair": [
-        "article-absence",
+        "article-none-definite",
         "colwell"
       ],
       "question": "No article — indefinite, or Colwell?",
@@ -5528,8 +6152,8 @@
     },
     {
       "prompt": "\"He gave his life as a ransom for many\" (Mark 10:45).",
-      "answer": "double-accusative",
-      "why": "Two accusatives, and “as” slips between them: object + complement."
+      "answer": "double-accusative-complement",
+      "why": "Two accusatives, and “as” slips between them: object + complement. Slip \"as\" between the two accusatives — \"his life AS a ransom\" — so it is the complement, not the person-and-thing double."
     },
     {
       "prompt": "\"They were cut to the heart\" (Acts 2:37) — an inner wound, not a surgical one.",

@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v25 · 2026-09-15';
+const BUILD = 'v26 · 2026-09-16';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -750,6 +750,29 @@ function formulaBlock(card, { caption = true } = {}) {
     </div>`;
 }
 
+/**
+ * The types inside one card. Some uses are one thing with several flavours —
+ * the genitive direct object is a single use taken by five families of verb,
+ * the absence of the article is one row with nine contexts under it — and
+ * splitting those into separate cards would invent categories the summary
+ * chart does not have. They are chunked here instead, numbered and countable,
+ * so the list is learnable without pretending each line is its own use. Where
+ * the chart really does name separate uses, they are separate cards.
+ */
+function kindsBlock(card) {
+  const ks = card.kinds || [];
+  if (!ks.length) return '';
+  return `
+    <div class="kinds">
+      <span class="label">${esc(card.kindsLabel || 'The kinds')} — ${ks.length} of them</span>
+      <ol class="kind-list">
+        ${ks
+          .map((k) => `<li><b>${esc(k.name)}</b>${k.note ? ` — ${esc(k.note)}` : ''}</li>`)
+          .join('')}
+      </ol>
+    </div>`;
+}
+
 /* ---------------- view: learn ---------------- */
 
 function conceptCard(c, { open = false } = {}) {
@@ -767,6 +790,7 @@ function conceptCard(c, { open = false } = {}) {
         ${pegHead(c)}
         ${eli5Block(c.eli5, c.pic)}
         ${formulaBlock(c)}
+        ${kindsBlock(c)}
 
         <div class="spot">
           <span class="label">How to spot it</span>
