@@ -2287,13 +2287,37 @@
           "greek": "ὁ ἰὸς αὐτῶν εἰς μαρτύριον *ὑμῖν* ἔσται",
           "english": "their corrosion will be a witness *against you*",
           "note": "Not “a witness to you” but “against you”. When the dative names who suffers, “against” is usually the word."
+        },
+        {
+          "ref": "Matt 6:19",
+          "greek": "μὴ θησαυρίζετε *ὑμῖν* θησαυροὺς ἐπὶ τῆς γῆς",
+          "english": "Don't store up *for yourselves* treasures on earth",
+          "note": "Advantage. The storing up was meant to benefit them — “for” is the word that carries it."
+        },
+        {
+          "ref": "2 Cor 5:15",
+          "greek": "ἵνα οἱ ζῶντες μηκέτι *ἑαυτοῖς* ζῶσιν ἀλλὰ *τῷ* ὑπὲρ αὐτῶν *ἀποθανόντι* καὶ *ἐγερθέντι*",
+          "english": "so that those who live should no longer live *for themselves*, but *for the one who died* for them and was raised",
+          "note": "Two advantages set against each other in one clause: no longer for yourselves, but for him."
         }
       ],
       "tags": [
         "dative",
         "pure",
         "ch-4"
-      ]
+      ],
+      "kindsLabel": "Which way it points",
+      "kinds": [
+        {
+          "name": "Advantage — “for”",
+          "note": "a favourable personal relation: the action is meant to benefit them"
+        },
+        {
+          "name": "Disadvantage — “against”",
+          "note": "the obverse: the action happens to their detriment"
+        }
+      ],
+      "watchOut": "The chapter is candid that this is not a clean line. Brooks and Winbery: “All datives of advantage or disadvantage are in fact indirect objects, and all indirect objects to a greater or lesser degree express advantage or disadvantage.” Porter adds that the label combines syntax with context — it has to be inferred from the passage rather than read off the form. Expect a judgement call, not a test."
     },
     {
       "id": "dative-possession",
@@ -2385,7 +2409,7 @@
       "tile": "R",
       "oneLine": "The one respect in which the statement holds.",
       "mnemonic": "PORT — R: re:, like the subject line of an email.",
-      "mnemonicWhy": "“Re: sin — he died.” The dative names what the sentence is about, and the claim is only true about that.",
+      "mnemonicWhy": "“Re: sin — he died.” The dative names what the sentence is about, and the claim is only true about that. Robertson's rule of thumb for the whole pure dative: applied to a person it comes out as interest, applied to a thing it usually comes out as reference.",
       "spotIt": "Put “with reference to” in front. Does the sentence stop being odd?",
       "bookDef": "Limits the extent to which something is presented as true, qualifying a statement that would otherwise not be true.",
       "examples": [
@@ -2461,13 +2485,38 @@
           "greek": "δὸς δόξαν *τῷ θεῷ*",
           "english": "Give glory *to God*",
           "note": "Glory is what is given; God is who it goes to."
+        },
+        {
+          "ref": "Matt 13:3",
+          "greek": "καὶ ἐλάλησεν *αὐτοῖς* πολλὰ ἐν παραβολαῖς",
+          "english": "Then he told *them* many things in parables",
+          "note": "A telling verb, an accusative object (πολλά) and a dative — and the dative is who received the telling."
+        },
+        {
+          "ref": "Acts 16:32",
+          "greek": "καὶ ἐλάλησαν *αὐτῷ* τὸν λόγον τοῦ κυρίου",
+          "english": "Then they spoke the word of the Lord *to him*",
+          "note": "Same shape again: τὸν λόγον is what was spoken, αὐτῷ is who it was spoken to."
+        },
+        {
+          "ref": "1 Tim 1:18",
+          "greek": "ταύτην τὴν παραγγελίαν παρατίθεμαί *σοι*, τέκνον Τιμόθεε",
+          "english": "This charge I entrust *to you*, Timothy, my child (ESV)",
+          "note": "Paul entrusts the charge — the direct object — to Timothy, the indirect object."
+        },
+        {
+          "ref": "1 Pet 4:19",
+          "greek": "οἱ πάσχοντες κατὰ τὸ θέλημα τοῦ θεοῦ *πιστῷ κτίστῃ* παρατιθέσθωσαν τὰς ψυχὰς αὐτῶν",
+          "english": "let those who suffer according to God's will entrust themselves *to a faithful Creator*",
+          "note": "The same verb as 1 Tim 1:18, and the dative is personal again: it names the one the trust is placed in."
         }
       ],
       "tags": [
         "dative",
         "pure",
         "ch-4"
-      ]
+      ],
+      "watchOut": "Personal interest is widely treated as a specialised use of this one, so a dative that clearly benefits or harms someone can be labelled either way. Where the sentence hands something over and says nothing about gain or loss, indirect object is the safe answer."
     },
     {
       "id": "dative-place",
@@ -6606,9 +6655,9 @@
         "dative-personal-interest"
       ],
       "question": "Indirect object or personal interest?",
-      "test": "Is the dative receiving a thing, or gaining and losing?",
-      "answer": "Receives what was handed over ⇒ indirect object. Benefits or suffers ⇒ personal interest.",
-      "example": "“give glory to God” (receives) vs “adorned for her husband” (benefits)."
+      "test": "Does the sentence hand something over, or say who gains and loses by it?",
+      "answer": "Something is handed over and nothing is said about gain ⇒ indirect object. Somebody plainly benefits or suffers ⇒ personal interest. But the chapter says outright that every dative of advantage is also an indirect object, and that the label has to be inferred from context — so this one is a judgement call and worth saying so in class rather than answering flatly.",
+      "example": "“give glory to God” (handed over) · “adorned for her husband” (benefits) · “don't store up for yourselves” (benefits)."
     },
     {
       "id": "attributive-vs-predicate",
