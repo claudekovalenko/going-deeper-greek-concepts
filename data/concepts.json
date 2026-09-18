@@ -1460,15 +1460,9 @@
       "examples": [
         {
           "ref": "Acts 2:37",
-          "greek": "κατενύγησαν *τὴν καρδίαν*",
-          "english": "they were pierced *with respect to the heart*",
-          "note": "Not a surgical piercing — an inner one. “With respect to” is what keeps it from sounding like an operation."
-        },
-        {
-          "ref": "Acts 2:37",
           "greek": "ἀκούσαντες δὲ κατενύγησαν *τὴν καρδίαν*",
-          "english": "When they heard this, they were pierced *to the heart*",
-          "note": "The book spells the sense out: “they were pierced with reference to the heart.”"
+          "english": "when they heard this they were pierced *to the heart*",
+          "note": "Not a surgical piercing but an inner one: the book spells the sense out as “pierced with reference to the heart”, and “with respect to” is what keeps it from sounding like an operation."
         }
       ],
       "watchOut": "Easy to mistake for the object. If “with respect to” makes it better, it is respect.",
@@ -2281,6 +2275,18 @@
           "greek": "ἡ δὲ Ἡρῳδιὰς ἐνεῖχεν *αὐτῷ*",
           "english": "So Herodias held a grudge *against him*",
           "note": "Disadvantage — the grudge is to his cost."
+        },
+        {
+          "ref": "Matt 23:31",
+          "greek": "ὥστε μαρτυρεῖτε *ἑαυτοῖς* ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας",
+          "english": "So you testify *against yourselves* that you are descendants of those who murdered the prophets",
+          "note": "Disadvantage — the obverse of advantage. The testimony lands on them, and not in their favour."
+        },
+        {
+          "ref": "Jas 5:3",
+          "greek": "ὁ ἰὸς αὐτῶν εἰς μαρτύριον *ὑμῖν* ἔσται",
+          "english": "their corrosion will be a witness *against you*",
+          "note": "Not “a witness to you” but “against you”. When the dative names who suffers, “against” is usually the word."
         }
       ],
       "tags": [
@@ -2323,9 +2329,33 @@
           "greek": "*ὑμῖν* γάρ ἐστιν ἡ ἐπαγγελία",
           "english": "For the promise is *for you*",
           "note": "“To you is the promise” = you have the promise."
+        },
+        {
+          "ref": "Luke 8:30",
+          "greek": "τί *σοι* ὄνομά ἐστιν",
+          "english": "What is *your* name?",
+          "note": "More literally, “what name is to you?” The dative owns the subject of ἐστιν."
+        },
+        {
+          "ref": "Luke 12:24",
+          "greek": "*οἷς* οὐκ ἔστιν ταμεῖον οὐδὲ ἀποθήκη",
+          "english": "*they* don't have a storeroom or a barn",
+          "note": "Literally “to them there is not a storeroom”. English turns the dative into the subject; Greek does not."
+        },
+        {
+          "ref": "John 18:39",
+          "greek": "ἔστιν δὲ συνήθεια *ὑμῖν*",
+          "english": "*You have* a custom",
+          "note": "Literally “there is a custom to you”. Flip it round and the owner appears."
+        },
+        {
+          "ref": "1 Pet 4:11",
+          "greek": "*ᾧ* ἐστιν ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας τῶν αἰώνων",
+          "english": "*To him* be the glory and the power forever and ever",
+          "note": "A doxology built on the same construction: the glory is the subject, and the dative owns it."
         }
       ],
-      "watchOut": "It needs the to-be verb. Without one, you are looking at something else.",
+      "watchOut": "It needs an equative verb — εἰμί, γίνομαι, ὑπάρχω — and the dative owns that verb's subject. Dana and Mantey call it “personal interest particularized to the point of ownership”. Against the genitive of possession the emphasis flips: the genitive stresses the person who owns, the dative stresses the thing owned.",
       "tags": [
         "dative",
         "pure",
@@ -2364,9 +2394,33 @@
           "greek": "*τῇ ἁμαρτίᾳ* ἀπέθανεν ἐφάπαξ",
           "english": "he died *to sin* once for all",
           "note": "Not dead altogether — dead with reference to sin."
+        },
+        {
+          "ref": "Mark 12:40",
+          "greek": "οἱ κατεσθίοντες τὰς οἰκίας τῶν χηρῶν καὶ *προφάσει* μακρὰ προσευχόμενοι",
+          "english": "they devour widows' houses and say long prayers *just for show*",
+          "note": "With reference to appearance. The prayers are long only in that one respect."
+        },
+        {
+          "ref": "Luke 18:31",
+          "greek": "πάντα τὰ γεγραμμένα διὰ τῶν προφητῶν *τῷ υἱῷ* τοῦ ἀνθρώπου",
+          "english": "everything written by the prophets *about the Son* of Man (ESV)",
+          "note": "“About” is the giveaway: the writing is with reference to him, not given to him."
+        },
+        {
+          "ref": "1 Cor 6:12",
+          "greek": "πάντα *μοι* ἔξεστιν",
+          "english": "Everything is permissible *for me*",
+          "note": "With reference to me. It sets the boundary of the claim — permissible in my case."
+        },
+        {
+          "ref": "2 Cor 11:6",
+          "greek": "εἰ δὲ καὶ ἰδιώτης *τῷ λόγῳ*",
+          "english": "Even if I am untrained *in public speaking*",
+          "note": "Untrained in one respect only. Paul limits the admission to speech and no further."
         }
       ],
-      "watchOut": "The accusative has a respect use too (Acts 2:37, “cut with respect to the heart”). Same job, different case.",
+      "watchOut": "The accusative has a respect use too (Acts 2:37, “cut with respect to the heart”) — same job, different case. This one also travels under a pile of other names: dative of respect, frame of reference dative, limiting dative, qualifying dative, contextualizing dative.",
       "tags": [
         "dative",
         "pure",
@@ -2447,13 +2501,49 @@
           "greek": "τοὺς περὶ αὐτὸν *κύκλῳ* καθημένους",
           "english": "those sitting *in a circle* around him",
           "note": "A real ring of people on real ground."
+        },
+        {
+          "ref": "Matt 27:48",
+          "greek": "λαβὼν σπόγγον … περιθεὶς *καλάμῳ* ἐπότιζεν αὐτόν",
+          "english": "he took a sponge … put it *on a stick*, and offered him a drink",
+          "note": "Not “to or for a stick”, and not “by means of a stick” — on a stick. A physical location."
+        },
+        {
+          "ref": "John 19:2",
+          "greek": "πλέξαντες στέφανον ἐξ ἀκανθῶν ἐπέθηκαν αὐτοῦ *τῇ κεφαλῇ*",
+          "english": "they twisted a crown of thorns and put it *on* his *head*",
+          "note": "A literal head. You could point at it, so it is place and not sphere."
+        },
+        {
+          "ref": "Acts 5:31",
+          "greek": "τοῦτον ὁ θεὸς ἀρχηγὸν καὶ σωτῆρα ὕψωσεν *τῇ δεξιᾷ* αὐτοῦ",
+          "english": "God exalted this man *to his right hand* as ruler and Savior",
+          "note": "The chapter files this under place — exalted to a position. Some read it as means, “by his right hand”, so it is worth knowing both are on the table."
+        },
+        {
+          "ref": "1 Cor 9:13",
+          "greek": "οἱ *τῷ θυσιαστηρίῳ* παρεδρεύοντες",
+          "english": "those who serve *at the altar* (ESV)",
+          "note": "Where the serving happened. Note the English preposition changes — in, on, among, at, to, by — while the Greek stays a bare dative."
         }
       ],
       "tags": [
         "dative",
         "locative",
         "ch-4"
-      ]
+      ],
+      "kindsLabel": "Prepositions English has to pick from",
+      "kinds": [
+        {
+          "name": "in · on · among",
+          "note": "περιθεὶς καλάμῳ, on a stick"
+        },
+        {
+          "name": "at · to · by",
+          "note": "τῷ θυσιαστηρίῳ, at the altar"
+        }
+      ],
+      "watchOut": "Greek leaves it a bare dative and English has to choose the preposition — in, on, among, at, to or by. Picking the wrong one is what makes a place dative look like means."
     },
     {
       "id": "dative-sphere",
@@ -2487,9 +2577,33 @@
           "greek": "ἀναστενάξας *τῷ πνεύματι* αὐτοῦ",
           "english": "sighing deeply *in* his *spirit*",
           "note": "A realm, not a room."
+        },
+        {
+          "ref": "Eph 4:18",
+          "greek": "ἐσκοτωμένοι *τῇ διανοίᾳ* ὄντες",
+          "english": "they are darkened *in their understanding*",
+          "note": "Understanding is not a place you could stand. The darkness is bounded logically, not spatially."
+        },
+        {
+          "ref": "Heb 3:5",
+          "greek": "καὶ Μωϋσῆς μὲν πιστὸς ἐν *ὅλῳ τῷ οἴκῳ* αὐτοῦ",
+          "english": "Moses was faithful as a servant *in all* God's *household*",
+          "note": "A household here is a sphere of belonging rather than a building, even with ἐν written in front of it."
+        },
+        {
+          "ref": "Heb 3:10",
+          "greek": "ἀεὶ πλανῶνται *τῇ καρδίᾳ*",
+          "english": "they always go astray *in their heart* (ESV)",
+          "note": "The heart is the realm the straying happens in. Nobody wanders about inside an actual heart."
+        },
+        {
+          "ref": "1 Pet 3:18",
+          "greek": "θανατωθεὶς μὲν *σαρκὶ* ζωοποιηθεὶς δὲ *πνεύματι*",
+          "english": "being put to death *in the flesh* but made alive *in the spirit*",
+          "note": "Two spheres set against each other in one line. Neither is a location you could visit."
         }
       ],
-      "watchOut": "Place and sphere are one word doing literal and figurative duty. The test is whether you could point at it.",
+      "watchOut": "Place and sphere are one word doing literal and figurative duty, and the test is whether you could point at it. Two further warnings from the chapter: some grammarians fold sphere into “dative of place” altogether, and some examples filed under sphere really belong under reference.",
       "tags": [
         "dative",
         "locative",
@@ -2528,13 +2642,52 @@
           "greek": "καὶ *τῇ ἡμέρᾳ τῇ τρίτῃ* γάμος ἐγένετο",
           "english": "*On the third day*, a wedding took place",
           "note": "A point on the calendar."
+        },
+        {
+          "ref": "Matt 12:1",
+          "greek": "ἐπορεύθη ὁ Ἰησοῦς *τοῖς σάββασιν* διὰ τῶν σπορίμων",
+          "english": "Jesus passed through the grainfields *on the Sabbath*",
+          "note": "The point in time at which he passed through — not how long it took."
+        },
+        {
+          "ref": "Luke 2:38",
+          "greek": "καὶ *αὐτῇ τῇ ὥρᾳ* ἐπιστᾶσα ἀνθωμολογεῖτο τῷ θεῷ",
+          "english": "*At that very moment* she came up and began to thank God",
+          "note": "A moment, as sharp as the dative of time ever gets."
+        },
+        {
+          "ref": "Acts 12:6",
+          "greek": "*τῇ νυκτὶ ἐκείνῃ* ἦν ὁ Πέτρος κοιμώμενος",
+          "english": "*on that very night* Peter was sleeping",
+          "note": "A night can be a stretch, but here it pins down which night. Point, not duration."
+        },
+        {
+          "ref": "1 Cor 10:8",
+          "greek": "καὶ ἔπεσαν *μιᾷ ἡμέρᾳ* εἴκοσι τρεῖς χιλιάδες",
+          "english": "and *in a single day* twenty-three thousand people died",
+          "note": "One day named as the point it happened on. Had the stress been on how long it lasted, Greek would reach for the accusative."
         }
       ],
-      "watchOut": "The accusative measures how long something went on. The dative pins down when it happened.",
+      "watchOut": "Luke 23:56b–24:1a puts all three in one sentence: καὶ τὸ μὲν σάββατον ἡσύχασαν — accusative, how long they rested; τῇ δὲ μιᾷ τῶν σαββάτων — dative, the day they came; ὄρθρου βαθέως — genitive, what kind of hour. Learn that one verse and the three cases of time are done.",
       "tags": [
         "dative",
         "locative",
         "ch-4"
+      ],
+      "kindsLabel": "How the cases split time",
+      "kinds": [
+        {
+          "name": "Genitive — kind of time",
+          "note": "what sort of time, or time during which: ὄρθρου βαθέως, “very early”"
+        },
+        {
+          "name": "Dative — point in time",
+          "note": "when it happened: τῇ μιᾷ τῶν σαββάτων, “on the first day”"
+        },
+        {
+          "name": "Accusative — extent of time",
+          "note": "how long it went on: τὸ σάββατον, “[through] the Sabbath”"
+        }
       ]
     },
     {
@@ -2569,13 +2722,38 @@
           "greek": "κατακόπτων ἑαυτὸν *λίθοις*",
           "english": "cutting himself *with stones*",
           "note": "Stones are a tool. They did not decide anything."
+        },
+        {
+          "ref": "Matt 13:40",
+          "greek": "ὥσπερ οὖν συλλέγεται τὰ ζιζάνια καὶ *πυρὶ* κατακαίεται",
+          "english": "just as the weeds are gathered and burned *with fire* (ESV)",
+          "note": "Fire is the instrument, and fire has no will. Impersonal, so means rather than agency."
+        },
+        {
+          "ref": "Luke 7:38",
+          "greek": "*τοῖς δάκρυσιν* ἤρξατο βρέχειν τοὺς πόδας αὐτοῦ καὶ *ταῖς θριξὶν* … ἐξέμασσεν",
+          "english": "she began to wet his feet *with her tears* and wiped them *with the hair* of her head (ESV)",
+          "note": "Two instruments in one sentence. She is the agent; the tears and the hair are what she used."
+        },
+        {
+          "ref": "Acts 12:2",
+          "greek": "ἀνεῖλεν δὲ Ἰάκωβον τὸν ἀδελφὸν Ἰωάννου *μαχαίρῃ*",
+          "english": "and he executed James, John's brother, *with the sword*",
+          "note": "The sword did not decide anything. Herod is the agent; the sword is the means."
+        },
+        {
+          "ref": "Rom 1:29",
+          "greek": "πεπληρωμένους *πάσῃ ἀδικίᾳ πονηρίᾳ πλεονεξίᾳ κακίᾳ*",
+          "english": "filled *with all unrighteousness, evil, greed, and wickedness*",
+          "note": "Four datives in a row, all means: what they are filled with."
         }
       ],
       "tags": [
         "dative",
         "instrumental",
         "ch-4"
-      ]
+      ],
+      "watchOut": "Brooks and Winbery call this the most common, the simplest and the most obvious use of the instrumental case, so it is the one to try first. The rule that settles it against agency: means is always impersonal."
     },
     {
       "id": "dative-agency",
@@ -6585,6 +6763,17 @@
       "test": "Is there a ὁ, ἡ or τό in front of it?",
       "answer": "There is ⇒ articular, the joint is in place. There is not ⇒ anarthrous, ἀν- plus ἄρθρον. The word only names what is there; what an absence means is the separate three-way question under Poof.",
       "example": "John 1:1 has both in one clause: ὁ λόγος articular, θεός anarthrous."
+    },
+    {
+      "id": "which-case-of-time",
+      "pair": [
+        "dative-time",
+        "genitive-time-place"
+      ],
+      "question": "A time expression — which case?",
+      "test": "Ask what the phrase is measuring.",
+      "answer": "The point when it happened ⇒ dative. What kind of time, or time during which ⇒ genitive. How long it went on ⇒ accusative.",
+      "example": "Luke 23:56b–24:1a has all three: τὸ σάββατον (accusative, how long they rested) · τῇ μιᾷ τῶν σαββάτων (dative, the day they came) · ὄρθρου βαθέως (genitive, what kind of hour)."
     }
   ],
   "extraQuiz": [
