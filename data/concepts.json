@@ -2609,9 +2609,33 @@
           "greek": "εἰ δὲ *πνεύματι* ἄγεσθε",
           "english": "But if you are led *by the Spirit*",
           "note": "The Spirit chooses. That makes it agency."
+        },
+        {
+          "ref": "Matt 6:1",
+          "greek": "προσέχετε … μὴ ποιεῖν ἔμπροσθεν τῶν ἀνθρώπων πρὸς τὸ θεαθῆναι *αὐτοῖς*",
+          "english": "be careful not to practise your righteousness in front of others, to be seen *by them*",
+          "note": "Passive verb, personal agent. That pair is the signature of agency."
+        },
+        {
+          "ref": "Luke 23:15",
+          "greek": "οὐδὲν ἄξιον θανάτου ἐστὶν πεπραγμένον *αὐτῷ*",
+          "english": "nothing deserving death has been done *by him* (ESV)",
+          "note": "Perfect passive, and the dative names who did it. A deed has a doer; a tool does not."
+        },
+        {
+          "ref": "Acts 5:34",
+          "greek": "νομοδιδάσκαλος τίμιος *παντὶ τῷ λαῷ*",
+          "english": "a teacher of the Law, respected *by all the people* (NASB)",
+          "note": "The people are the ones doing the respecting, so they are the agent, not the means."
+        },
+        {
+          "ref": "1 Tim 3:16",
+          "greek": "ὤφθη *ἀγγέλοις*",
+          "english": "seen *by angels*",
+          "note": "Short and easy to misread. Greek usually says agency with ὑπό and the genitive, so a bare dative agent is worth stopping over."
         }
       ],
-      "watchOut": "Means and agency are the same shape on the page. The only test is whether the dative has a will.",
+      "watchOut": "Means and agency are the same shape on the page, and the only test is whether the dative has a will. Two more tells: the verb is usually passive, and dative agency is uncommon — Greek normally says it with ὑπό and the genitive, so a bare dative agent is doing something unusual.",
       "tags": [
         "dative",
         "instrumental",
@@ -2650,6 +2674,30 @@
           "greek": "*παρρησίᾳ* τὸν λόγον ἐλάλει",
           "english": "He spoke *openly* about this",
           "note": "Openly is a style, not a tool."
+        },
+        {
+          "ref": "Matt 26:4",
+          "greek": "καὶ συνεβουλεύσαντο ἵνα τὸν Ἰησοῦν *δόλῳ*",
+          "english": "and they conspired to arrest Jesus *in a treacherous way*",
+          "note": "Treachery is the style of the arrest, not the tool of it. Manner answers how."
+        },
+        {
+          "ref": "Acts 11:23",
+          "greek": "ἐχάρη καὶ παρεκάλει πάντας *τῇ προθέσει* τῆς καρδίας προσμένειν τῷ κυρίῳ",
+          "english": "he encouraged them all to remain true to the Lord *with devoted hearts*",
+          "note": "How they were to remain: with purpose of heart. Note τῷ κυρίῳ in the same verse is the object of προσμένω."
+        },
+        {
+          "ref": "1 Cor 10:30",
+          "greek": "εἰ ἐγὼ *χάριτι* μετέχω",
+          "english": "If I partake *with thankfulness* (ESV)",
+          "note": "Turn it into an adverb — thankfully — and manner is usually what you are holding."
+        },
+        {
+          "ref": "2 Cor 3:18",
+          "greek": "ἡμεῖς δὲ πάντες *ἀνακεκαλυμμένῳ προσώπῳ* … κατοπτριζόμενοι",
+          "english": "We all, *with unveiled faces*, are looking as in a mirror",
+          "note": "With unveiled face: the manner of the looking. A face is not the instrument you look with."
         }
       ],
       "watchOut": "Means answers “with what tool”. Manner answers “in what style”.",
@@ -2691,6 +2739,30 @@
           "greek": "*συν*ταφέντες *αὐτῷ* ἐν τῷ βαπτισμῷ",
           "english": "Having been buried *with him* in baptism",
           "note": "συν- on the verb, and you were buried alongside him, not using him."
+        },
+        {
+          "ref": "Luke 8:19",
+          "greek": "καὶ οὐκ ἠδύναντο *συν*τυχεῖν *αὐτῷ* διὰ τὸν ὄχλον",
+          "english": "they could not meet *with him* because of the crowd",
+          "note": "The συν- on the verb is what governs the dative. Spot the prefix and association is nearly always the answer."
+        },
+        {
+          "ref": "1 Cor 4:8",
+          "greek": "ἵνα καὶ ἡμεῖς *ὑμῖν* *συμ*βασιλεύσωμεν",
+          "english": "so that we could also reign *with you*",
+          "note": "συμβασιλεύω — reign together with. The σύν prefix again, assimilated to συμ- before the β."
+        },
+        {
+          "ref": "1 Cor 7:11",
+          "greek": "ἐὰν δὲ καὶ χωρισθῇ, μενέτω ἄγαμος ἢ *τῷ ἀνδρὶ* καταλλαγήτω",
+          "english": "she must remain unmarried or be reconciled *to her husband*",
+          "note": "No σύν prefix on this one, but reconciling is a joining word and the husband is the party joined to."
+        },
+        {
+          "ref": "Heb 4:2",
+          "greek": "μὴ *συγ*κεκερασμένους τῇ πίστει *τοῖς ἀκούσασιν*",
+          "english": "they were not united *with those who heard it* in faith",
+          "note": "συγκεράννυμι — mixed together with. τῇ πίστει sitting beside it is means, so one clause carries two dative jobs."
         }
       ],
       "watchOut": "Three uses come out as “with”: means (a tool), manner (a style), association (company).",
@@ -2743,6 +2815,30 @@
           "greek": "ἐγὼ δὲ *λιμῷ* ὧδε ἀπόλλυμαι",
           "english": "here I am dying [because] *of hunger*!",
           "note": "Hunger is the reason, not the tool."
+        },
+        {
+          "ref": "1 Cor 8:7",
+          "greek": "τινὲς δὲ *τῇ συνηθείᾳ* ἕως ἄρτι τοῦ εἰδώλου ὡς εἰδωλόθυτον ἐσθίουσιν",
+          "english": "but some, *being accustomed* to the idol until now, eat food as if it were sacrificed to an idol (NASB)",
+          "note": "They eat that way because of what they are used to. The dative gives the basis, not the method."
+        },
+        {
+          "ref": "2 Cor 2:7",
+          "greek": "μή πως τῇ περισσοτέρᾳ *λύπῃ* καταποθῇ ὁ τοιοῦτος",
+          "english": "otherwise he may be overwhelmed *by excessive grief*",
+          "note": "Grief is why he is overwhelmed, not a tool somebody used on him. Cause, not means."
+        },
+        {
+          "ref": "Gal 6:12",
+          "greek": "μόνον ἵνα *τῷ σταυρῷ* τοῦ Χριστοῦ μὴ διώκωνται",
+          "english": "only to avoid being persecuted *for the cross* of Christ",
+          "note": "The cross is the reason for the persecution, not the instrument of it."
+        },
+        {
+          "ref": "Heb 2:15",
+          "greek": "ὅσοι *φόβῳ* θανάτου διὰ παντὸς τοῦ ζῆν ἔνοχοι ἦσαν δουλείας",
+          "english": "those held in slavery all their lives *by the fear* of death",
+          "note": "Fear is the grounds of the slavery. Wallace's test: means answers how, cause answers on what basis."
         }
       ],
       "tags": [
@@ -2760,7 +2856,8 @@
           "name": "Internal — the motivation",
           "note": "what moved them from inside"
         }
-      ]
+      ],
+      "watchOut": "Cause and means both come out as “by” in English. Wallace's line is the one to keep: means says how the action was performed, cause says what it was performed on the basis of."
     },
     {
       "id": "dative-cognate",
@@ -2794,13 +2891,38 @@
           "greek": "ἐξέστησαν *ἐκστάσει μεγάλῃ*",
           "english": "they were *utterly* astounded",
           "note": "ἐξέστησαν and ἐκστάσει are the same stem. English flattens it to “utterly”."
+        },
+        {
+          "ref": "Matt 15:4",
+          "greek": "ὁ κακολογῶν πατέρα ἢ μητέρα *θανάτῳ* τελευτάτω",
+          "english": "Whoever reviles father or mother must *surely* die (ESV)",
+          "note": "θανάτῳ with τελευτάτω — death beside a dying verb. The echo comes out in English as an intensifier."
+        },
+        {
+          "ref": "John 3:29",
+          "greek": "ὁ δὲ φίλος τοῦ νυμφίου … *χαρᾷ* χαίρει",
+          "english": "the groom's friend … *rejoices greatly*",
+          "note": "χαρᾷ χαίρει: joy beside a rejoicing verb. Same root twice, and the effect is intensity, not repetition."
+        },
+        {
+          "ref": "Acts 5:28",
+          "greek": "*παραγγελίᾳ* παρηγγείλαμεν ὑμῖν μὴ διδάσκειν ἐπὶ τῷ ὀνόματι τούτῳ",
+          "english": "We *strictly* charged you not to teach in this name (ESV)",
+          "note": "A charge beside a charging verb. The ESV turns the doubling into the single word “strictly”."
+        },
+        {
+          "ref": "Acts 23:14",
+          "greek": "*ἀναθέματι* ἀνεθεματίσαμεν ἑαυτούς",
+          "english": "We have *strictly* bound ourselves (ESV)",
+          "note": "An oath beside an oath-verb. This is the one sometimes called the Hebraic dative, because Hebrew does the same."
         }
       ],
       "tags": [
         "dative",
         "other",
         "ch-4"
-      ]
+      ],
+      "watchOut": "Also called the Hebraic dative, because Hebrew builds the same doubling. Do not translate it twice — English wants one intensifying word: utterly, fervently, earnestly, strictly."
     },
     {
       "id": "dative-apposition",
@@ -2834,13 +2956,38 @@
           "greek": "ἐν τῷ Βεελζεβοὺλ *ἄρχοντι* τῶν δαιμονίων",
           "english": "by Beelzebul, *the ruler* of the demons",
           "note": "ἄρχοντι renames Βεελζεβούλ."
+        },
+        {
+          "ref": "Col 1:3",
+          "greek": "εὐχαριστοῦμεν τῷ θεῷ *πατρὶ* τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ πάντοτε",
+          "english": "We always thank God, *the Father* of our Lord Jesus Christ",
+          "note": "Two datives side by side and the second renames the first: “the Father” says which God."
+        },
+        {
+          "ref": "Jude 25",
+          "greek": "μόνῳ θεῷ *σωτῆρι* ἡμῶν",
+          "english": "to the only God, our *Savior*",
+          "note": "σωτῆρι renames θεῷ. No verb between them — the second dative just identifies the first more exactly."
+        },
+        {
+          "ref": "John 4:5",
+          "greek": "πλησίον τοῦ χωρίου ὃ ἔδωκεν Ἰακὼβ Ἰωσὴφ [τῷ] *υἱῷ αὐτοῦ*",
+          "english": "near the property Jacob had given Joseph, *his son*",
+          "note": "“His son” renames Joseph. The dative here is doing nothing of its own; it is only matching the word it renames."
+        },
+        {
+          "ref": "Acts 9:43",
+          "greek": "ἐγένετο δὲ ἡμέρας ἱκανὰς μεῖναι ἐν Ἰόππῃ παρά τινι Σίμωνι *βυρσεῖ*",
+          "english": "Peter stayed some time in Joppa with Simon, *a leather tanner*",
+          "note": "βυρσεῖ renames Σίμωνι — which Simon, exactly. The trade is the identifier."
         }
       ],
       "tags": [
         "dative",
         "other",
         "ch-4"
-      ]
+      ],
+      "watchOut": "Strictly this is a fact about the syntax rather than about the dative case itself: the second word is dative only because the word it renames is. Nothing about the dative's own meaning is in play."
     },
     {
       "id": "dative-direct-object",
@@ -2874,6 +3021,30 @@
           "greek": "εὐχαριστοῦμεν *τῷ θεῷ* … πάντοτε",
           "english": "We always thank *God*",
           "note": "εὐχαριστέω takes its object in the dative."
+        },
+        {
+          "ref": "Matt 4:20",
+          "greek": "οἱ δὲ εὐθέως ἀφέντες τὰ δίκτυα ἠκολούθησαν *αὐτῷ*",
+          "english": "Immediately they left their nets and followed *him*",
+          "note": "ἀκολουθέω is a following verb, and following verbs take their object in the dative."
+        },
+        {
+          "ref": "Mark 4:41",
+          "greek": "ὁ ἄνεμος καὶ ἡ θάλασσα ὑπακούει *αὐτῷ*",
+          "english": "the wind and the sea obey *him*",
+          "note": "ὑπακούω is an obeying verb. English gives it a plain object; Greek gives it a dative."
+        },
+        {
+          "ref": "Rom 7:25",
+          "greek": "αὐτὸς ἐγὼ τῷ μὲν νοῒ δουλεύω *νόμῳ* θεοῦ τῇ δὲ σαρκὶ *νόμῳ* ἁμαρτίας",
+          "english": "with my mind I serve *the law* of God, but with my flesh *the law* of sin",
+          "note": "δουλεύω is a serving verb, so both νόμῳ are its objects. Watch the other two datives in the same verse — τῷ νοΐ and τῇ σαρκί are means, not objects."
+        },
+        {
+          "ref": "Gal 3:6",
+          "greek": "Ἀβραὰμ ἐπίστευσεν *τῷ θεῷ*",
+          "english": "Abraham believed *God* (ESV)",
+          "note": "πιστεύω is a trusting verb. “Believed God”, and the dative is what he believed."
         }
       ],
       "watchOut": "The genitive has a fussy-verb list too — feel it, want it, share it, rule it, leave it. The dative's list is devotion.",
