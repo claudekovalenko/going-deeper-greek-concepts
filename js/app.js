@@ -1,5 +1,5 @@
 /**
- * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–6 and 12.
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–5 and 12.
  *
  * Deliberately one file. The sibling app (seminary-homework-2026) learned the
  * hard way that a module graph behind a service worker can serve a fresh page
@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v34 · 2026-09-23';
+const BUILD = 'v35 · 2026-09-23';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
