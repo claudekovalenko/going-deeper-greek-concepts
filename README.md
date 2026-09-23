@@ -1,9 +1,9 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–6 and 12
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–5 and 12
 
 A small offline-first PWA for getting the five cases, the **article**, the
-**adjective**, the **verb** and ch. 12's **little words** — pronouns,
+**adjective** and ch. 12's **little words** — pronouns,
 prepositions, conjunctions, adverbs, particles — into your head and keeping them
-there. 175 cards,
+there. 132 cards,
 each opening with its peg — the acrostic with this card's slot lit — then a
 plain-words paragraph anyone could follow, then the bare pattern of the
 construction, then a test you can run on a text, and the Greek examples.
@@ -13,10 +13,10 @@ is due, this one drills the thing itself. Each links to the other.
 
 [hw]: https://github.com/claudekovalenko/seminary-homework-2026
 
-## The whole app in sixteen words
+## The whole app in twelve words
 
-> **Names · Calls · Fences · Describes · Gives · Points · Colours · Answers ·
-> Aims · Frames · Times · Replaces · Positions · Joins · Modifies · Cries**
+> **Names · Calls · Fences · Describes · Gives · Points · Colours ·
+> Replaces · Positions · Joins · Modifies · Cries**
 
 | | | |
 |---|---|---|
@@ -27,10 +27,6 @@ is due, this one drills the thing itself. Each links to the other.
 | Dative | gives it, places it, uses it | ch. 4 |
 | Article | points at one — or vanishes | ch. 5 |
 | Adjective | colours the noun, in degrees | ch. 5 |
-| Person & Number | says who is doing it, and how many | ch. 6 |
-| Voice | aims the action out, back, or in | ch. 6 |
-| Mood | frames it as fact, maybe, order or wish | ch. 6 |
-| Tense | says when, and how it is pictured | ch. 6 |
 | Pronoun | stands in for a noun | ch. 12 |
 | Preposition | places one thing against another | ch. 12 |
 | Conjunction | joins words, clauses and sentences | ch. 12 |
@@ -83,16 +79,13 @@ over.
 | Direct object | feel it, want it, share it, rule it, leave it |
 
 Every group spells something, or says something: SPA, AAAH, CADETS, MMR, SWAMP
-RD, PACTS, PORT, HIT, MAMA, BEAD, ASAP, SPECS, WAIFS, PHONIC — plus the word
-keys where no honest acrostic exists (the article's three P's and three rules,
-the genitive's *Does it · Gets it*, the voices' *Do · Make · Me* and *To me · For
-me · Let me*, the subjunctive's *Aim · Outcome · If · Whoever · Whenever* and
-*Let us · Should we · Never · Don't*, the optative's *May · Might · Should*, and
-tense's *Am · Will · Was · Did · Have · Had*).
+RD, PACTS, PORT, HIT, MAMA, BEAD, ASAP, SPECS — plus the word keys where no
+honest acrostic exists (the article's three P's and three rules, the genitive's
+*Does it · Gets it*, and ch. 12's pronoun, conjunction, adverb and particle keys).
 
 A word key rather than a forced acrostic is a deliberate choice where more uses
-are still coming: the subjunctive went from five to nine inside one chapter, and
-a five-letter word would only have had to be thrown away.
+are still coming: a chapter can add a use, and a five-letter word would only
+have had to be thrown away.
 
 The definitions on these cards are the chapter summary chart's own wording.
 
@@ -147,22 +140,6 @@ The chart prints the double accusative as one row with two numbered types inside
 it, and they are two different constructions, so they are two cards. That is what
 turned DATES into CADETS — every letter kept its meaning, one was added.
 
-**Verbs — voice, mood, tense (ch. 6)**
-
-| | |
-|---|---|
-| Voice | **I do it · I do it for me · It is done to me** |
-| Mood | **It is · It might · Do it · I wish** |
-| Indicative | **WAIFS** — Want · Ask · If · Fact · Shall |
-| Imperative | **PHONIC** — Please · Hi · OK · No · If · Charge |
-| Optative | **May · Might · Should** |
-| Tense | **Am · Will · Was · Did · Have · Had** |
-
-ἡμεῖς and ὑμεῖς are one letter apart and mean opposite sides of the
-conversation; ὑ has the u of **YOU**. The conditional ladder runs across three
-moods: εἰ + indicative is first or second class, ἐάν + subjunctive is third,
-εἰ + optative is fourth.
-
 **The little words — ch. 12**
 
 | | |
@@ -190,17 +167,16 @@ as 4:2) and the τῷ νῦν καιρῷ of Rom 3:26 (printed as 3:25).
 ## What is in the app
 
 - **The whole thing** — every peg in the app on one screen, at the top of the
-  Map: all 43 of them and what each one stands for. This is the bus-stop page;
+  Map: all 33 of them and what each one stands for. This is the bus-stop page;
   the cards underneath are for when a peg does not hold.
 - **Picture** — the whole course as one place you can walk. Each set is a stop on
   one street — the Spa, the Doorstep, the Fenced Yard, Swamp Road, the Harbour,
-  the Signpost, the Paint Shop, the Roll Call, the Recording Booth, the Weather
-  Station, the Clock Tower, the Theatre, the Bridge, the Junction, the Toolbox,
+  the Signpost, the Paint Shop, the Theatre, the Bridge, the Junction, the Toolbox,
   the Town Crier — and the board at the top shows every stop with every
-  object standing in it, all 175 at once. Walk into a stop and each group has its
+  object standing in it, all 132 at once. Walk into a stop and each group has its
   own scene. Nothing is drawn by hand: the stops come from `sets` and the objects
   from `cards`, so a new chapter adds itself. `#/picture`, `#/picture/dative`.
-- **Map** — the acrostics as tappable tiles, plus the 44 confusion pairs
+- **Map** — the acrostics as tappable tiles, plus the 35 confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, easiest tier first, hardest-first being exactly wrong.
   It opens with the **peg**: the whole key with this card's slot lit and the
@@ -275,7 +251,7 @@ straight at the thing you want:
 #/card/hanging-nominative        one card, opened
 #/drill        #/drill/accusative
 #/spot         #/spot/nominative
-#/test         #/test/mood       the book's practice exercises, as a test
+#/test         #/test/dative      the book's practice exercises, as a test
 #/tag/saturday                   everything tagged for this week
 #/progress
 ```
@@ -430,18 +406,10 @@ and translation.
 The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
-checking in class. Thirty-eight items are in — ch. 3's four, ch. 4's thirteen,
-ch. 6's thirteen and ch. 12's eight — covering the ones whose category the
+checking in class. Twenty-five items are in — ch. 3's four, ch. 4's thirteen and
+ch. 12's eight — covering the ones whose category the
 chapters' own charts settle.
 **Spot it → Take the book's practice test** runs them as a test.
-
-Ch. 6's ten numbered exercises make thirteen questions, because Matt 5:18, Matt
-7:6 and Matt 7:7 each underline two verbs — and in Matt 5:18 the two are the
-same form doing different jobs, which is the point of the exercise. Two of the
-thirteen are arguable and say so on the card: Matt 5:37 ἔστω (a third person
-imperative, read as command rather than permission) and Matt 7:7 αἰτεῖτε /
-ζητεῖτε (imperative + καί + future indicative, the chart's own conditional
-shape, though they read as commands with a promise too).
 
 Two of ch. 4's underlined words are deliberately left out because they are
 genuinely arguable, not because they are hard:
