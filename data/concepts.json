@@ -1,8 +1,8 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–6 — the cases, the article, the adjective, and the verb",
+  "chapter": "ch. 2–6 and 12 — the cases, the article, the adjective, the verb, and the little words",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
-  "generated": "2026-09-15",
+  "generated": "2026-09-23",
   "notes": [
     "Every card carries a mnemonic hook, a plain one-line definition, a test you can actually run on a text, and real examples.",
     "eli5: the like-I'm-five line. It leads every card, above the pattern — plain words, a picture you can see, and no grammar terms at all.",
@@ -19,7 +19,8 @@
     "unofficial: true marks an item from the chapter's practice exercises. The book prints those questions without answers, so the answer shown is reasoned, not the book's, and the app says so.",
     "world / place / placeName / scene: the Picture tab. Each set is a stop on one street and each group a spot inside it; the board is generated, so a new set with a place and a scene adds itself to the walk.",
     "spot on a group: the emoji for that group's corner of its stop, used as the heading icon in the Picture tab.",
-    "kinds / kindsLabel on a card: the flavours inside one use — the verb families a case's direct object takes, the nine places an anarthrous noun is still definite. These are chunked inside the card, numbered and counted, because they are not separate uses. Where the chart names separate uses, those are separate cards."
+    "kinds / kindsLabel on a card: the flavours inside one use — the verb families a case's direct object takes, the nine places an anarthrous noun is still definite. These are chunked inside the card, numbered and counted, because they are not separate uses. Where the chart names separate uses, those are separate cards.",
+    "quizApart on a group: its cards are a different kind of question from the rest of the set, so Spot it draws their distractors only from inside the group — the prepositional phrase's three jobs are never offered alongside the seventeen prepositions."
   ],
   "sets": [
     {
@@ -505,6 +506,196 @@
           "expand": "λύω · λύσω · ἔλυον · ἔλυσα · λέλυκα · ἐλελύκειν",
           "spot": "⏳",
           "scene": "Six bells, one after another 🎬 I am loosing, 🔮 I will loose, 🎞️ I was loosing, 📸 I loosed, 🧱 I have loosed, 🕰️ I had loosed. Read the marks, not the meaning: ἐ- past, σ future or aorist, doubled stem perfect."
+        }
+      ]
+    },
+    {
+      "id": "pronoun",
+      "name": "Pronoun",
+      "verb": "Replaces",
+      "does": "stands in for a noun",
+      "subtitle": "Seven kinds of stand-in. Ask what job the stand-in is doing.",
+      "eli5": "A word that stands in for a name so you do not have to keep saying it. “Mum made tea. SHE drank IT.”",
+      "color": "#b84a4a",
+      "classDate": "2026-09-22",
+      "bigIdea": "Every pronoun stands in for a noun. The seven kinds differ only in what they add while standing in: who is talking, which one is pointed at, which one is linked back to, who is being asked about, somebody unnamed, the self, or each other.",
+      "masterMnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other.",
+      "masterMnemonicWhy": "Seven English words, one per kind, in the chart’s own order: Personal, Demonstrative, Relative, Interrogative, Indefinite, Reflexive, Reciprocal. Say the English and you have named the kind. The one trap is the pair in the middle — τίς with its accent asks “who?”, τις without one means “anyone”.",
+      "place": "🎭",
+      "placeName": "The Theatre",
+      "scene": "Backstage at the theatre 🎭, where every part has an understudy ready to stand in for it.",
+      "groups": [
+        {
+          "id": "pronoun-kinds",
+          "name": "The seven stand-ins",
+          "key": "Me · This · Who · Who? · Anyone · Myself · Each other",
+          "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — seven understudies, one line each.",
+          "expand": "Personal · Demonstrative · Relative · Interrogative · Indefinite · Reflexive · Reciprocal",
+          "spot": "🎭",
+          "scene": "Seven understudies in the wings 🎭: one says “me” 🙋, one points 👉 at “this”, one holds a rope 🪢 back to “who” was just named, one raises a question mark ❓, one wears a mask 🎭 — “anyone” —, one stares in a mirror 🪞, and two shake hands 🤝 with each other."
+        }
+      ]
+    },
+    {
+      "id": "preposition",
+      "name": "Preposition",
+      "verb": "Positions",
+      "does": "places one thing against another",
+      "subtitle": "Seventeen little words, and the case that comes after each.",
+      "eli5": "Little words that say where one thing is next to another. In the box. Out of the house. Through the door.",
+      "color": "#3d6fa6",
+      "classDate": "2026-09-22",
+      "bigIdea": "A preposition plus its object makes a phrase, and the phrase does one of three jobs: tells you how or where about a verb, tells you which one about a noun, or stands as the noun itself. The preposition’s meaning shifts with the case of its object.",
+      "masterMnemonic": "How · Which · What — then one case, two cases, three.",
+      "masterMnemonicWhy": "First the phrase’s job: How (adverbial, it hangs on a verb), Which (adjectival, it hangs on a noun), What (substantival, it is the noun). Then the seventeen, sorted by how many cases they take: eight take one, six take two, and the three P’s — ἐπί, παρά, πρός — take all three.",
+      "place": "🌉",
+      "placeName": "The Bridge",
+      "scene": "A bridge 🌉 with everything happening around it: over it, under it, through it, from it, beside it.",
+      "groups": [
+        {
+          "id": "prep-function",
+          "name": "What the phrase does",
+          "key": "How · Which · What",
+          "mnemonic": "How · Which · What — hangs on a verb, hangs on a noun, or is the noun.",
+          "expand": "Adverbial (modifies a verb) · Adjectival (modifies a noun) · Substantival (acts as a noun)",
+          "spot": "🧩",
+          "scene": "Three signs on the bridge 🧩: an arrow ➡️ to the verb for how, a label 🏷️ on the noun for which, and a crate 📦 that simply is the thing.",
+          "quizApart": true
+        },
+        {
+          "id": "prep-one-case",
+          "name": "Takes one case",
+          "key": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν",
+          "mnemonic": "Eight take one case. Genitive ones go away, accusative ones go toward, dative ones stay put.",
+          "expand": "Genitive: ἀντί, ἀπό, ἐκ, πρό · Accusative: ἀνά, εἰς · Dative: ἐν, σύν",
+          "spot": "1️⃣",
+          "scene": "Eight on the bridge, each holding one case 1️⃣: four walking off it with the genitive (from, out of, instead of, before) 🚶, two walking onto it with the accusative (into, up) ➡️, two sitting still on it with the dative (in, with) 🪑."
+        },
+        {
+          "id": "prep-two-cases",
+          "name": "Takes two cases",
+          "key": "διά · κατά · μετά · περί · ὑπέρ · ὑπό",
+          "mnemonic": "Six take two, and always the same two: genitive and accusative.",
+          "expand": "διά through / because of · κατά against / according to · μετά with / after · περί concerning / around · ὑπέρ for, above · ὑπό by, under",
+          "spot": "2️⃣",
+          "scene": "Six with two faces each 2️⃣ — genitive on one side, accusative on the other. None of the six ever takes a dative."
+        },
+        {
+          "id": "prep-three-cases",
+          "name": "Takes three cases",
+          "key": "ἐπί · παρά · πρός",
+          "mnemonic": "The three P’s take all three cases: ἐπί, παρά, πρός.",
+          "expand": "ἐπί on / upon / against · παρά from / with / beside · πρός for / at / to",
+          "spot": "3️⃣",
+          "scene": "Three at the end of the bridge 3️⃣, every one with a π in it, every one taking genitive, dative and accusative."
+        }
+      ]
+    },
+    {
+      "id": "conjunction",
+      "name": "Conjunction",
+      "verb": "Joins",
+      "does": "joins words, clauses and sentences",
+      "subtitle": "Joiners. Either two equals side by side, or one clause hung on another.",
+      "eli5": "Glue words. “And”, “but”, “so”, “because”, “if”. They stick two bits of a sentence together and say how the bits fit.",
+      "color": "#4f9a4a",
+      "classDate": "2026-09-22",
+      "bigIdea": "Two kinds of joint. A coordinating conjunction joins equals — and, or, but, so, for. A subordinating one hangs a clause on another and says why: purpose, result, cause, comparison, condition, concession, content, time or place.",
+      "masterMnemonic": "And · Or · But · So · For — then the nine ways to hang one clause on another.",
+      "masterMnemonicWhy": "The five coordinating types are just the five English joiners: And (copulative), Or (disjunctive), But (adversative), So (inferential), For (explanatory). The nine subordinating ones are the English you would use: In order that, So that, Because, As, If, Even if, That, When, Where.",
+      "place": "🚉",
+      "placeName": "The Junction",
+      "scene": "A railway junction 🚉, where lines join. Some run side by side as equals; some branch off the main line.",
+      "groups": [
+        {
+          "id": "conj-coordinating",
+          "name": "Side by side — coordinating",
+          "key": "And · Or · But · So · For",
+          "mnemonic": "And · Or · But · So · For — five joiners, two equal clauses.",
+          "expand": "Copulative (and) · Disjunctive (or) · Adversative (but) · Inferential (so) · Explanatory (for)",
+          "spot": "🛤️",
+          "scene": "Two tracks side by side 🛤️: a coupling ➕ and, points 🔀 or, a buffer 🛑 but, a signal ➡️ so, and a timetable 📋 for — here is why."
+        },
+        {
+          "id": "conj-subordinating",
+          "name": "Branch lines — subordinating",
+          "key": "In order that · So that · Because · As · If · Even if · That · When · Where",
+          "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — nine branch lines off the main one.",
+          "expand": "Purpose · Result · Causal · Comparative · Conditional · Concessive · Declarative · Temporal · Local",
+          "spot": "🔀",
+          "scene": "Nine branch lines 🔀: a target 🎯 in order that, a crash 💥 so that, a root 🌱 because, twins 👯 as, a fork 🚦 if, a shrug 🤷 even if, a speech bubble 💬 that, a clock ⏰ when, a pin 📍 where."
+        }
+      ]
+    },
+    {
+      "id": "adverb",
+      "name": "Adverb",
+      "verb": "Modifies",
+      "does": "tells when, how much, how and where",
+      "subtitle": "Says more about a verb, an adjective, or another adverb.",
+      "eli5": "A word that tells you more about the doing. Did it SECRETLY. Came AFTERWARD. Sit HERE. Or it turns up the volume on a describing word: VERY early.",
+      "color": "#6d7f8f",
+      "classDate": "2026-09-22",
+      "bigIdea": "An adverb answers one of four questions — when, how much, how, where — about a verb, an adjective or another adverb. And now and then, with an article, it borrows a noun’s or an adjective’s job.",
+      "masterMnemonic": "When · How much · How · Where.",
+      "masterMnemonicWhy": "Four questions, four uses, in the chart’s order: Time, Degree, Manner, Place. Before that, ask what it hangs on — a verb in any mood, an adjective, or another adverb. After it, one twist: put an article in front and an adverb can act as a noun or an adjective.",
+      "place": "🧰",
+      "placeName": "The Toolbox",
+      "scene": "A toolbox 🧰 of adjusters: a clock, a volume knob, a spirit level and a map pin, for tuning whatever you fit them to.",
+      "groups": [
+        {
+          "id": "adv-modifies",
+          "name": "What it hangs on",
+          "key": "Verb · Adjective · Adverb",
+          "mnemonic": "Verb · Adjective · Adverb — it tunes a doing-word, a describing word, or another tuner.",
+          "expand": "A verb in any mood · an adjective · another adverb",
+          "spot": "🔧",
+          "scene": "Three things on the workbench 🔧: a motor ⚙️ (a verb, in any mood), a paint tin 🎨 (an adjective), and a spare knob 🎛️ (another adverb)."
+        },
+        {
+          "id": "adv-uses",
+          "name": "The question it answers",
+          "key": "When · How much · How · Where",
+          "mnemonic": "When · How much · How · Where — four questions an adverb answers.",
+          "expand": "Time · Degree · Manner · Place",
+          "spot": "❔",
+          "scene": "Four gauges on the lid ❔: a clock 🕰️ when, a volume knob 🔊 how much, a spirit level 🎚️ how, and a map pin 📌 where."
+        },
+        {
+          "id": "adv-other-hat",
+          "name": "Wearing another hat",
+          "key": "Noun · Adjective",
+          "mnemonic": "Noun · Adjective — with an article in front, an adverb can do either job.",
+          "expand": "Substantival (τὸ ἐκτός, “the outside”) · Adjectival (ἐν τῷ νῦν καιρῷ, “at the present time”)",
+          "spot": "🎩",
+          "scene": "Two borrowed hats 🎩 on the peg: an article turns ἐκτός “outside” into a thing, the outside 📦, and tucks νῦν “now” between article and noun, where only an adjective ever sits 🏷️."
+        }
+      ]
+    },
+    {
+      "id": "particle",
+      "name": "Particle",
+      "verb": "Cries",
+      "does": "says yes, amen, look, woe",
+      "subtitle": "Little words that add force, or grab your attention.",
+      "eli5": "Tiny words you would shout. “Yes!” “Amen!” “Look!” “Oh!” They do not change what the sentence says; they change how loud it is.",
+      "color": "#b0762a",
+      "classDate": "2026-09-22",
+      "bigIdea": "A particle adds force or grabs attention, and leaves the grammar of the sentence alone. Intensifying particles say “yes, truly”; attention particles say “look!” and are really interjections.",
+      "masterMnemonic": "Yes! · Look!",
+      "masterMnemonicWhy": "Two kinds, two shouts. Yes! — intensification: ναί, ἀμήν, γέ. Look! — attention: ἰδού, οὐαί, ὦ.",
+      "place": "🔔",
+      "placeName": "The Town Crier",
+      "scene": "The town crier rings his bell 🔔 and shouts. He adds nothing to the news — he only makes you hear it.",
+      "groups": [
+        {
+          "id": "particle-kinds",
+          "name": "The two shouts",
+          "key": "Yes · Look",
+          "mnemonic": "Yes · Look — turn it up, or turn your head.",
+          "expand": "Intensification (ναί, ἀμήν, γέ) · Attention (ἰδού, οὐαί, ὦ)",
+          "spot": "🔔",
+          "scene": "The crier has two shouts 🔔: “Yes! Amen!” 🙌 to turn the volume up, and “Look! Woe! O!” 👀 to make the crowd turn round."
         }
       ]
     }
@@ -6458,6 +6649,2562 @@
         "ch-6"
       ],
       "watchOut": "The chart is only the indicative. Outside the indicative there is no time — only aspect, which is what the chapter says is the dominant force anyway."
+    },
+    {
+      "id": "pron-personal",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Personal Pronoun",
+      "pic": "🙋",
+      "eli5": "I, you, he, we, they. The words for the people in the conversation.",
+      "formula": {
+        "pattern": [
+          "ἐγώ / σύ / αὐτός",
+          "for a person"
+        ],
+        "filled": [
+          "we",
+          "are not like those"
+        ]
+      },
+      "short": "Personal",
+      "gist": "I, you, he",
+      "tile": "Me",
+      "oneLine": "Stands in for the speaker, the one spoken to, or the one spoken about.",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Me: personal.",
+      "mnemonicWhy": "The roll call from ch. 6 again: ἐγώ, σύ, αὐτός, ἡμεῖς, ὑμεῖς, αὐτοί. The verb ending already says who, so a nominative personal pronoun is usually there for emphasis — ἡμεῖς, “WE are not like that”.",
+      "spotIt": "Is it one of the roll-call words — ἐγώ, σύ, αὐτός or their plurals and cases (μου, ὑμῶν, αὐτοῦ)?",
+      "bookDef": "ἐγώ (“I”); μου (“my”); σύ (sg, “you”); ὑμῶν (pl, “your”); αὐτοῦ (“his”).",
+      "examples": [
+        {
+          "ref": "Heb 10:39",
+          "greek": "*ἡμεῖς* δὲ οὐκ ἐσμὲν ὑποστολῆς εἰς ἀπώλειαν",
+          "english": "But *we* are not like those who turn away from God to their own destruction (NLT)",
+          "note": "ἐσμέν already means “we are”. Writing ἡμεῖς as well puts weight on it: we, unlike them."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "αὐτός in the predicate position with a noun means “himself” (αὐτὸς ὁ θεός, “God himself”), and in the attributive position means “same” (ὁ αὐτὸς θεός). It is still the personal pronoun’s word, doing an adjective’s job.",
+      "kindsLabel": "Sample forms from the chart",
+      "kinds": [
+        {
+          "name": "ἐγώ",
+          "note": "“I”"
+        },
+        {
+          "name": "μου",
+          "note": "“my”"
+        },
+        {
+          "name": "σύ",
+          "note": "singular “you”"
+        },
+        {
+          "name": "ὑμῶν",
+          "note": "plural “your”"
+        },
+        {
+          "name": "αὐτοῦ",
+          "note": "“his”"
+        }
+      ]
+    },
+    {
+      "id": "pron-demonstrative",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Demonstrative Pronoun",
+      "pic": "👉",
+      "eli5": "A pointing word. “THIS one here,” or “THAT one over there.”",
+      "formula": {
+        "pattern": [
+          "οὗτος / ἐκεῖνος",
+          "this / that"
+        ],
+        "filled": [
+          "these things",
+          "those days"
+        ]
+      },
+      "short": "Demonstrative",
+      "gist": "this, that",
+      "tile": "This",
+      "oneLine": "Points at something as near (this) or far (that).",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — This: demonstrative.",
+      "mnemonicWhy": "Demonstrate means “show”. οὗτος is the finger pointing at what is near — this; ἐκεῖνος at what is over there — that. ἐκεῖ is “there”, so ἐκεῖνος is the one over there.",
+      "spotIt": "Can you put your finger on it and say “this” or “that”? οὗτος, αὕτη, τοῦτο for near; ἐκεῖνος, –η, –ο for far.",
+      "bookDef": "Near: οὗτος (masc, “this”); αὗται (fem, “these”). Far: ἐκεῖνο (neut, “that”); ἐκεῖνοι (masc, “those”).",
+      "examples": [
+        {
+          "ref": "Matt 1:20",
+          "greek": "*ταῦτα* δὲ αὐτοῦ ἐνθυμηθέντος",
+          "english": "But after he had considered *these things*",
+          "note": "ταῦτα is the near demonstrative, neuter plural: the things just told — Mary pregnant, Joseph’s plan."
+        },
+        {
+          "ref": "Matt 3:1",
+          "greek": "ἐν δὲ ταῖς ἡμέραις *ἐκείναις* παραγίνεται Ἰωάννης ὁ βαπτιστὴς",
+          "english": "In *those* days John the Baptist came",
+          "note": "ἐκείναις is the far demonstrative: days away back there, not the ones we are standing in."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "ἐκ- is not ἐκ “out of”. ἐκεῖνος comes from ἐκεῖ, “there” — the one over there.",
+      "kindsLabel": "Near and far",
+      "kinds": [
+        {
+          "name": "Near — οὗτος, αὕτη, τοῦτο",
+          "note": "“this”, plural “these”"
+        },
+        {
+          "name": "Far — ἐκεῖνος, ἐκείνη, ἐκεῖνο",
+          "note": "“that”, plural “those”"
+        }
+      ]
+    },
+    {
+      "id": "pron-relative",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Relative Pronoun",
+      "pic": "🪢",
+      "eli5": "A word that ties a new bit of the sentence back to someone already named. “The man WHO built his house on sand.”",
+      "formula": {
+        "pattern": [
+          "noun",
+          "ὅς / ὅστις",
+          "clause about it"
+        ],
+        "filled": [
+          "a foolish man",
+          "who",
+          "built his house on the sand"
+        ]
+      },
+      "short": "Relative",
+      "gist": "who, which",
+      "tile": "Who",
+      "oneLine": "Links a clause back to a noun already named, its antecedent.",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Who: relative.",
+      "mnemonicWhy": "Relative, because it relates the clause back to a word already there. A rope 🪢 from the new clause to the noun behind it. Looks like the article with a rough breathing and an accent: ὅς, ἥ, ὅ.",
+      "spotIt": "Is there a noun just before it that the clause is telling you more about? That is the antecedent, and the pronoun is relative.",
+      "bookDef": "οἵ (masc pl, “who”); ἧς (fem sg, “of whom”); ὅ (neut sg, “which”).",
+      "examples": [
+        {
+          "ref": "Matt 7:26",
+          "greek": "ἀνδρὶ μωρῷ, *ὅστις* ᾠκοδόμησεν αὐτοῦ τὴν οἰκίαν ἐπὶ τὴν ἄμμον",
+          "english": "a foolish man *who* built his house on the sand",
+          "note": "ὅστις reaches back to ἀνδρὶ μωρῷ. The clause after it says which foolish man: the one who built on sand."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "ὅ with a rough breathing and accent is the relative “which”; ὁ with no accent is the article “the”. And the relative matches its antecedent in gender and number, but takes its case from its own clause."
+    },
+    {
+      "id": "pron-interrogative",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Interrogative Pronoun",
+      "pic": "❓",
+      "eli5": "A question word. “WHO is it?” “WHAT is stopping me?”",
+      "formula": {
+        "pattern": [
+          "τίς / τί",
+          "…;"
+        ],
+        "filled": [
+          "what",
+          "is to prevent me?"
+        ]
+      },
+      "short": "Interrogative",
+      "gist": "who? what? why?",
+      "tile": "Who?",
+      "oneLine": "Asks a question: who? what? why?",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Who?: interrogative.",
+      "mnemonicWhy": "The question mark is in the name — “who?” with the question mark. And in the Greek it is the accent: τίς always carries it, even when a word follows, where an acute would normally drop to grave.",
+      "spotIt": "Is it τίς or τί with an accent, and is there a Greek question mark ( ; ) at the end?",
+      "bookDef": "τίς (masc/fem sg, “who?”); τίνος (masc/fem sg, “of whom?”); τί (“what/why?”).",
+      "examples": [
+        {
+          "ref": "Acts 8:36",
+          "greek": "*τί* κωλύει με βαπτισθῆναι;",
+          "english": "*What* is to prevent me from being baptized? (NRSV)",
+          "note": "τί with its accent, and the Greek question mark ( ; ) at the end. The eunuch is asking, not saying “something prevents me”."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "τί can also mean “why?” — τί με λέγεις ἀγαθόν; “Why do you call me good?” Neuter τί as an adverbial accusative."
+    },
+    {
+      "id": "pron-indefinite",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Indefinite Pronoun",
+      "pic": "🎭",
+      "eli5": "Someone, anyone — a person with no name on them.",
+      "formula": {
+        "pattern": [
+          "τις / τι",
+          "unaccented"
+        ],
+        "filled": [
+          "if",
+          "anyone",
+          "says"
+        ]
+      },
+      "short": "Indefinite",
+      "gist": "anyone, someone",
+      "tile": "Anyone",
+      "oneLine": "Refers to someone or something without saying who.",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Anyone: indefinite.",
+      "mnemonicWhy": "Same letters as the question word, no accent of its own — a face with the mask on 🎭. τις leans on the word before it (it is enclitic), so it never stands first.",
+      "spotIt": "τις or τι with no accent of its own, usually after the word it leans on: ἐάν τις, “if anyone”.",
+      "bookDef": "τις (masc sg, “anyone, someone”); τινες (masc pl, “certain ones”).",
+      "examples": [
+        {
+          "ref": "1 John 4:20",
+          "greek": "ἐάν *τις* εἴπῃ …",
+          "english": "If *anyone* says …",
+          "note": "τις with no accent, leaning on ἐάν. It is not asking who; it is saying “whoever it may be”."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "An enclitic can pick up an accent from the word after it, so an accent on τις is not proof of a question. The sure signs are position (never first), sense (“someone”), and no question mark."
+    },
+    {
+      "id": "pron-reflexive",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Reflexive Pronoun",
+      "pic": "🪞",
+      "eli5": "The word that turns the doing back on the doer. “Examine YOURSELVES.”",
+      "formula": {
+        "pattern": [
+          "ἐμαυτόν / ἑαυτούς",
+          "= the subject"
+        ],
+        "filled": [
+          "examine",
+          "yourselves"
+        ]
+      },
+      "short": "Reflexive",
+      "gist": "myself, yourselves",
+      "tile": "Myself",
+      "oneLine": "Points the action back at the subject.",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Myself: reflexive.",
+      "mnemonicWhy": "Reflexive as in reflection 🪞 — you look and see yourself. Built from αὐτός with the person stuck on the front: ἐμ-αυτόν (me-self), σε-αυτόν (your-self), ἑ-αυτόν (him-self).",
+      "spotIt": "Is it the -αυτ- stem with a prefix, and is it the same person as the subject?",
+      "bookDef": "ἐμαυτόν (“myself”); ἑαυτούς (masc, “yourselves”); ἑαυτοῖς (masc, “to themselves”).",
+      "examples": [
+        {
+          "ref": "2 Cor 13:5",
+          "greek": "*ἑαυτοὺς* πειράζετε εἰ ἐστὲ ἐν τῇ πίστει",
+          "english": "Examine *yourselves* to see whether you are in the faith (NIV)",
+          "note": "ἑαυτούς is the object and the same people as the subject of πειράζετε. The examiners and the examined are one group."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ],
+      "watchOut": "ἑαυτ- is third person in form but in the plural it does duty for all three persons, which is why ἑαυτούς here is “yourselves”. And ch. 6: an active verb with a reflexive pronoun is how Greek usually says it, rather than the middle voice."
+    },
+    {
+      "id": "pron-reciprocal",
+      "set": "pronoun",
+      "group": "pronoun-kinds",
+      "name": "Reciprocal Pronoun",
+      "pic": "🤝",
+      "eli5": "Each other. Two people doing the same thing to one another.",
+      "formula": {
+        "pattern": [
+          "ἀλλήλων",
+          "plural subject"
+        ],
+        "filled": [
+          "bearing with",
+          "one another"
+        ]
+      },
+      "short": "Reciprocal",
+      "gist": "one another",
+      "tile": "Each other",
+      "oneLine": "Expresses a two-way action between members of a group: one another.",
+      "mnemonic": "Me · This · Who · Who? · Anyone · Myself · Each other — Each other: reciprocal.",
+      "mnemonicWhy": "ἄλλος is “another”; say it twice and you have ἀλλήλων — “another … another”, each to each. A handshake 🤝 needs two hands.",
+      "spotIt": "The ἀλληλ- stem, always plural, never nominative.",
+      "bookDef": "ἀλλήλων (“one another”).",
+      "examples": [
+        {
+          "ref": "Col 3:13",
+          "greek": "ἀνεχόμενοι *ἀλλήλων*",
+          "english": "bearing with *one another*",
+          "note": "ἀλλήλων: every one of them bears with every other one. Not “yourselves” — the action crosses over."
+        }
+      ],
+      "tags": [
+        "pronoun",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-adverbial",
+      "set": "preposition",
+      "group": "prep-function",
+      "name": "Adverbial Prepositional Phrase",
+      "pic": "➡️",
+      "eli5": "The little phrase tells you more about the doing. Ask HOW? “Ask IN FAITH.”",
+      "formula": {
+        "pattern": [
+          "verb",
+          "prep + object"
+        ],
+        "filled": [
+          "let him ask",
+          "in faith"
+        ]
+      },
+      "short": "Adverbial",
+      "gist": "modifies a verb",
+      "tile": "How",
+      "oneLine": "The prepositional phrase modifies a verb: how, where, when, why.",
+      "mnemonic": "How · Which · What — How: adverbial.",
+      "mnemonicWhy": "Like an adverb, it answers a question about the verb — how, where, when, why. By far the most common job.",
+      "spotIt": "Find the verb it goes with. If the phrase says how, where, when or why that verb happened, it is adverbial.",
+      "bookDef": "Adverbial (modifying a verb)",
+      "examples": [
+        {
+          "ref": "Jas 1:6",
+          "greek": "αἰτείτω δὲ *ἐν πίστει*",
+          "english": "But let him ask *in faith*",
+          "note": "ἐν πίστει says how he is to ask. It hangs on the verb αἰτείτω."
+        }
+      ],
+      "tags": [
+        "preposition",
+        "function",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-adjectival",
+      "set": "preposition",
+      "group": "prep-function",
+      "name": "Adjectival Prepositional Phrase",
+      "pic": "🏷️",
+      "eli5": "The little phrase tells you which one. Not any teaching — the teaching THAT PROMOTES GODLINESS.",
+      "formula": {
+        "pattern": [
+          "article",
+          "prep + object",
+          "noun"
+        ],
+        "filled": [
+          "the",
+          "according to godliness",
+          "teaching"
+        ]
+      },
+      "short": "Adjectival",
+      "gist": "modifies a noun",
+      "tile": "Which",
+      "oneLine": "The prepositional phrase modifies a noun, like an adjective: which one?",
+      "mnemonic": "How · Which · What — Which: adjectival.",
+      "mnemonicWhy": "A label 🏷️ tied to the noun. The giveaway is the article: when the phrase sits between the article and its noun, or has its own article repeated after the noun, it is in attributive position — it is describing the noun.",
+      "spotIt": "Is the phrase tucked between an article and its noun, or does an article introduce it after the noun? Then it is adjectival.",
+      "bookDef": "Adjectival (modifying a noun)",
+      "examples": [
+        {
+          "ref": "1 Tim 6:3",
+          "greek": "τῇ *κατ᾽ εὐσέβειαν* διδασκαλίᾳ",
+          "english": "the teaching *that promotes godliness*",
+          "note": "κατ᾽ εὐσέβειαν sits between τῇ and διδασκαλίᾳ — attributive position. It says which teaching."
+        }
+      ],
+      "tags": [
+        "preposition",
+        "function",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-substantival",
+      "set": "preposition",
+      "group": "prep-function",
+      "name": "Substantival Prepositional Phrase",
+      "pic": "📦",
+      "eli5": "The little phrase becomes the thing itself. “The things IN THE WORLD.”",
+      "formula": {
+        "pattern": [
+          "article",
+          "prep + object",
+          "(no noun)"
+        ],
+        "filled": [
+          "the",
+          "in the world",
+          "= the things"
+        ]
+      },
+      "short": "Substantival",
+      "gist": "acts as a noun",
+      "tile": "What",
+      "oneLine": "An article plus a prepositional phrase with no noun, so the phrase acts as a noun.",
+      "mnemonic": "How · Which · What — What: substantival.",
+      "mnemonicWhy": "Same move as a substantival adjective in ch. 5: take the noun away, keep the article, and the article turns the phrase into a thing. τὰ ἐν τῷ κόσμῳ — “the in-the-world things”.",
+      "spotIt": "An article with no noun after it, followed straight away by a prepositional phrase. Supply “the one(s)” or “the thing(s)”.",
+      "bookDef": "Substantival (acting as a noun)",
+      "examples": [
+        {
+          "ref": "1 John 2:15",
+          "greek": "Μὴ ἀγαπᾶτε τὸν κόσμον μηδὲ *τὰ ἐν τῷ κόσμῳ*",
+          "english": "Do not love the world or *the things in the world* (ESV)",
+          "note": "τά has no noun. The article turns ἐν τῷ κόσμῳ into “the things in the world” — the object of ἀγαπᾶτε."
+        }
+      ],
+      "tags": [
+        "preposition",
+        "function",
+        "ch-12"
+      ],
+      "watchOut": "An article + a lone adverb does the same thing (τὸ ἐκτός, “the outside”). If what follows the article is a preposition with an object, it is a prepositional phrase; if it is a single adverb, it is an adverb used as a noun."
+    },
+    {
+      "id": "prep-ana",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "ἀνά",
+      "pic": "⬆️",
+      "eli5": "A little place-word: “each, in turn, up”.",
+      "formula": {
+        "pattern": [
+          "ἀνά +",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "each, in turn, up"
+        ]
+      },
+      "short": "each, in turn, up",
+      "gist": "+ acc",
+      "tile": "ἀνά",
+      "oneLine": "ἀνά + accusative — “each, in turn, up”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — ἀνά: ANAbaptist.",
+      "mnemonicWhy": "Anabaptists baptised again — ἀνά is “up”, “again”, “each in turn”. Only thirteen times in the NT, so recognise it and move on.",
+      "spotIt": "Look at the case of the word after ἀνά — it only ever takes the accusative.",
+      "bookDef": "ἀνά · 13 in GNT · acc · each, in turn, up",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἀνά + accusative",
+          "english": "each, in turn, up"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-anti",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "ἀντί",
+      "pic": "🔄",
+      "eli5": "A little place-word: “in place of, instead of”.",
+      "formula": {
+        "pattern": [
+          "ἀντί +",
+          "gen"
+        ],
+        "filled": [
+          "means",
+          "in place of, instead of"
+        ]
+      },
+      "short": "in place of, instead of",
+      "gist": "+ gen",
+      "tile": "ἀντί",
+      "oneLine": "ἀντί + genitive — “in place of, instead of”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — ἀντί: ANTIchrist.",
+      "mnemonicWhy": "An ANTI-christ is one who sets himself up in place of Christ. ἀντί is substitution: a ransom ἀντὶ πολλῶν, “in place of many”.",
+      "spotIt": "Look at the case of the word after ἀντί — it only ever takes the genitive.",
+      "bookDef": "ἀντί · 22 in GNT · gen · in place of, instead of",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἀντί + genitive",
+          "english": "in place of, instead of"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-apo",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "ἀπό",
+      "pic": "🚶",
+      "eli5": "A little place-word: “from, of”.",
+      "formula": {
+        "pattern": [
+          "ἀπό +",
+          "gen"
+        ],
+        "filled": [
+          "means",
+          "from, of"
+        ]
+      },
+      "short": "from, of",
+      "gist": "+ gen",
+      "tile": "ἀπό",
+      "oneLine": "ἀπό + genitive — “from, of”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — ἀπό: APOstasy.",
+      "mnemonicWhy": "APOstasy is falling away from; an APOstle is sent from. ἀπό is away from the edge of something.",
+      "spotIt": "Look at the case of the word after ἀπό — it only ever takes the genitive.",
+      "bookDef": "ἀπό · 646 in GNT · gen · from, of",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἀπό + genitive",
+          "english": "from, of"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-eis",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "εἰς",
+      "pic": "📥",
+      "eli5": "A little place-word: “into, in, at”.",
+      "formula": {
+        "pattern": [
+          "εἰς +",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "into, in, at"
+        ]
+      },
+      "short": "into, in, at",
+      "gist": "+ acc",
+      "tile": "εἰς",
+      "oneLine": "εἰς + accusative — “into, in, at”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — εἰς: EISegesis.",
+      "mnemonicWhy": "EISegesis is reading your own ideas into the text — the opposite of EXegesis, drawing them out of it. εἰς is into; the accusative is the case of direction, and εἰς is the most accusative word there is.",
+      "spotIt": "Look at the case of the word after εἰς — it only ever takes the accusative.",
+      "bookDef": "εἰς · 1768 in GNT · acc · into, in, at",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "εἰς + accusative",
+          "english": "into, in, at"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-ek",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "ἐκ",
+      "pic": "📤",
+      "eli5": "A little place-word: “from, out of”.",
+      "formula": {
+        "pattern": [
+          "ἐκ +",
+          "gen"
+        ],
+        "filled": [
+          "means",
+          "from, out of"
+        ]
+      },
+      "short": "from, out of",
+      "gist": "+ gen",
+      "tile": "ἐκ",
+      "oneLine": "ἐκ + genitive — “from, out of”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — ἐκ: EXit.",
+      "mnemonicWhy": "EXit — ἐκ (ἐξ before a vowel) is out of from the inside. ἀπό leaves from the edge; ἐκ comes out from within.",
+      "spotIt": "Look at the case of the word after ἐκ — it only ever takes the genitive.",
+      "bookDef": "ἐκ · 914 in GNT · gen · from, out of",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἐκ + genitive",
+          "english": "from, out of"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-en",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "ἐν",
+      "pic": "🪑",
+      "eli5": "A little place-word: “in, into, by”.",
+      "formula": {
+        "pattern": [
+          "ἐν +",
+          "dat"
+        ],
+        "filled": [
+          "means",
+          "in, into, by"
+        ]
+      },
+      "short": "in, into, by",
+      "gist": "+ dat",
+      "tile": "ἐν",
+      "oneLine": "ἐν + dative — “in, into, by”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — ἐν: ENclosed.",
+      "mnemonicWhy": "ENclosed, ENcased — ἐν is in. The commonest preposition in the NT, and it only ever takes the dative, the case of place, of being in something.",
+      "spotIt": "Look at the case of the word after ἐν — it only ever takes the dative.",
+      "bookDef": "ἐν · 2752 in GNT · dat · in, into, by",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἐν + dative",
+          "english": "in, into, by"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-pro",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "πρό",
+      "pic": "⏮️",
+      "eli5": "A little place-word: “before, at”.",
+      "formula": {
+        "pattern": [
+          "πρό +",
+          "gen"
+        ],
+        "filled": [
+          "means",
+          "before, at"
+        ]
+      },
+      "short": "before, at",
+      "gist": "+ gen",
+      "tile": "πρό",
+      "oneLine": "πρό + genitive — “before, at”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — πρό: PROlogue.",
+      "mnemonicWhy": "PROlogue, the word before; PROphet, one who speaks before. πρό is before, in time or place.",
+      "spotIt": "Look at the case of the word after πρό — it only ever takes the genitive.",
+      "bookDef": "πρό · 47 in GNT · gen · before, at",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "πρό + genitive",
+          "english": "before, at"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-sun",
+      "set": "preposition",
+      "group": "prep-one-case",
+      "name": "σύν",
+      "pic": "🤝",
+      "eli5": "A little place-word: “with”.",
+      "formula": {
+        "pattern": [
+          "σύν +",
+          "dat"
+        ],
+        "filled": [
+          "means",
+          "with"
+        ]
+      },
+      "short": "with",
+      "gist": "+ dat",
+      "tile": "σύν",
+      "oneLine": "σύν + dative — “with”.",
+      "mnemonic": "ἀνά · ἀντί · ἀπό · εἰς · ἐκ · ἐν · πρό · σύν — σύν: SYNagogue.",
+      "mnemonicWhy": "SYNagogue, where people gather with; SYNoptic, seeing with. σύν is together with, and dative like the dative of association.",
+      "spotIt": "Look at the case of the word after σύν — it only ever takes the dative.",
+      "bookDef": "σύν · 128 in GNT · dat · with",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "σύν + dative",
+          "english": "with"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "one-case",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "prep-dia",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "διά",
+      "pic": "🚪",
+      "eli5": "A little place-word: “through / because of”.",
+      "formula": {
+        "pattern": [
+          "διά +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "through",
+          "because of"
+        ]
+      },
+      "short": "through / because of",
+      "gist": "+ gen · acc",
+      "tile": "διά",
+      "oneLine": "διά takes 2 cases — + genitive “through”; + accusative “because of”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — διά: DIAmeter.",
+      "mnemonicWhy": "DIAmeter goes through the circle. With the genitive, through; with the accusative, because of — the reason you went through.",
+      "spotIt": "Look at the case of the word after διά, then pick the meaning that goes with that case.",
+      "bookDef": "διά · 667 in GNT · gen / acc · through / because of",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "διά + genitive / accusative",
+          "english": "genitive: through; accusative: because of"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "through"
+        },
+        {
+          "name": "accusative",
+          "note": "because of"
+        }
+      ]
+    },
+    {
+      "id": "prep-kata",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "κατά",
+      "pic": "⚖️",
+      "eli5": "A little place-word: “against / according to”.",
+      "formula": {
+        "pattern": [
+          "κατά +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "against",
+          "according to"
+        ]
+      },
+      "short": "against / according to",
+      "gist": "+ gen · acc",
+      "tile": "κατά",
+      "oneLine": "κατά takes 2 cases — + genitive “against”; + accusative “according to”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — κατά: CATAstrophe.",
+      "mnemonicWhy": "CATAstrophe comes down against you. With the genitive, against; with the accusative, according to — the gospel κατὰ Μαθθαῖον.",
+      "spotIt": "Look at the case of the word after κατά, then pick the meaning that goes with that case.",
+      "bookDef": "κατά · 473 in GNT · gen / acc · against / according to",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "κατά + genitive / accusative",
+          "english": "genitive: against; accusative: according to"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "against"
+        },
+        {
+          "name": "accusative",
+          "note": "according to"
+        }
+      ]
+    },
+    {
+      "id": "prep-meta",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "μετά",
+      "pic": "👣",
+      "eli5": "A little place-word: “with / after”.",
+      "formula": {
+        "pattern": [
+          "μετά +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "with",
+          "after"
+        ]
+      },
+      "short": "with / after",
+      "gist": "+ gen · acc",
+      "tile": "μετά",
+      "oneLine": "μετά takes 2 cases — + genitive “with”; + accusative “after”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — μετά: METAphysics.",
+      "mnemonicWhy": "METAphysics was the book shelved after the Physics. With the genitive, with (in company); with the accusative, after.",
+      "spotIt": "Look at the case of the word after μετά, then pick the meaning that goes with that case.",
+      "bookDef": "μετά · 469 in GNT · gen / acc · with / after",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "μετά + genitive / accusative",
+          "english": "genitive: with; accusative: after"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "with"
+        },
+        {
+          "name": "accusative",
+          "note": "after"
+        }
+      ]
+    },
+    {
+      "id": "prep-peri",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "περί",
+      "pic": "⭕",
+      "eli5": "A little place-word: “concerning / around”.",
+      "formula": {
+        "pattern": [
+          "περί +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "concerning",
+          "around"
+        ]
+      },
+      "short": "concerning / around",
+      "gist": "+ gen · acc",
+      "tile": "περί",
+      "oneLine": "περί takes 2 cases — + genitive “concerning”; + accusative “around”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — περί: PERImeter.",
+      "mnemonicWhy": "PERImeter goes around. With the accusative, around; with the genitive, concerning — talk that goes round a subject.",
+      "spotIt": "Look at the case of the word after περί, then pick the meaning that goes with that case.",
+      "bookDef": "περί · 333 in GNT · gen / acc · concerning / around",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "περί + genitive / accusative",
+          "english": "genitive: concerning; accusative: around"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "concerning"
+        },
+        {
+          "name": "accusative",
+          "note": "around"
+        }
+      ]
+    },
+    {
+      "id": "prep-huper",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "ὑπέρ",
+      "pic": "🛡️",
+      "eli5": "A little place-word: “for / above”.",
+      "formula": {
+        "pattern": [
+          "ὑπέρ +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "for",
+          "above"
+        ]
+      },
+      "short": "for / above",
+      "gist": "+ gen · acc",
+      "tile": "ὑπέρ",
+      "oneLine": "ὑπέρ takes 2 cases — + genitive “for”; + accusative “above”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — ὑπέρ: HYPERactive.",
+      "mnemonicWhy": "HYPERactive — HYPER is over and above. With the accusative, above; with the genitive, for — on behalf of, standing over someone to shield them.",
+      "spotIt": "Look at the case of the word after ὑπέρ, then pick the meaning that goes with that case.",
+      "bookDef": "ὑπέρ · 150 in GNT · gen / acc · for / above",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ὑπέρ + genitive / accusative",
+          "english": "genitive: for; accusative: above"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "for"
+        },
+        {
+          "name": "accusative",
+          "note": "above"
+        }
+      ]
+    },
+    {
+      "id": "prep-hupo",
+      "set": "preposition",
+      "group": "prep-two-cases",
+      "name": "ὑπό",
+      "pic": "⬇️",
+      "eli5": "A little place-word: “by / under”.",
+      "formula": {
+        "pattern": [
+          "ὑπό +",
+          "gen",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "by",
+          "under"
+        ]
+      },
+      "short": "by / under",
+      "gist": "+ gen · acc",
+      "tile": "ὑπό",
+      "oneLine": "ὑπό takes 2 cases — + genitive “by”; + accusative “under”.",
+      "mnemonic": "διά · κατά · μετά · περί · ὑπέρ · ὑπό — ὑπό: HYPOdermic.",
+      "mnemonicWhy": "HYPOdermic goes under the skin. With the accusative, under; with the genitive, by — the agent behind a passive verb.",
+      "spotIt": "Look at the case of the word after ὑπό, then pick the meaning that goes with that case.",
+      "bookDef": "ὑπό · 220 in GNT · gen / acc · by / under",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ὑπό + genitive / accusative",
+          "english": "genitive: by; accusative: under"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "two-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "by"
+        },
+        {
+          "name": "accusative",
+          "note": "under"
+        }
+      ]
+    },
+    {
+      "id": "prep-epi",
+      "set": "preposition",
+      "group": "prep-three-cases",
+      "name": "ἐπί",
+      "pic": "🔝",
+      "eli5": "A little place-word: “on, upon / upon / against”.",
+      "formula": {
+        "pattern": [
+          "ἐπί +",
+          "gen",
+          "dat",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "on, upon",
+          "upon",
+          "against"
+        ]
+      },
+      "short": "on, upon / upon / against",
+      "gist": "+ gen · dat · acc",
+      "tile": "ἐπί",
+      "oneLine": "ἐπί takes 3 cases — + genitive “on, upon”; + dative “upon”; + accusative “against”.",
+      "mnemonic": "ἐπί · παρά · πρός — ἐπί: EPIdermis.",
+      "mnemonicWhy": "EPIdermis is the skin on top. ἐπί is on, upon — and with the accusative, against: coming down upon somebody.",
+      "spotIt": "Look at the case of the word after ἐπί, then pick the meaning that goes with that case.",
+      "bookDef": "ἐπί · 890 in GNT · gen / dat / acc · on, upon / upon / against",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "ἐπί + genitive / dative / accusative",
+          "english": "genitive: on, upon; dative: upon; accusative: against"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "three-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "on, upon"
+        },
+        {
+          "name": "dative",
+          "note": "upon"
+        },
+        {
+          "name": "accusative",
+          "note": "against"
+        }
+      ]
+    },
+    {
+      "id": "prep-para",
+      "set": "preposition",
+      "group": "prep-three-cases",
+      "name": "παρά",
+      "pic": "🧍",
+      "eli5": "A little place-word: “from / with / beside”.",
+      "formula": {
+        "pattern": [
+          "παρά +",
+          "gen",
+          "dat",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "from",
+          "with",
+          "beside"
+        ]
+      },
+      "short": "from / with / beside",
+      "gist": "+ gen · dat · acc",
+      "tile": "παρά",
+      "oneLine": "παρά takes 3 cases — + genitive “from”; + dative “with”; + accusative “beside”.",
+      "mnemonic": "ἐπί · παρά · πρός — παρά: PARAllel.",
+      "mnemonicWhy": "PARAllel lines run beside each other; a PARAlegal works beside. With genitive from (beside someone), dative with, accusative beside.",
+      "spotIt": "Look at the case of the word after παρά, then pick the meaning that goes with that case.",
+      "bookDef": "παρά · 194 in GNT · gen / dat / acc · from / with / beside",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "παρά + genitive / dative / accusative",
+          "english": "genitive: from; dative: with; accusative: beside"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "three-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "from"
+        },
+        {
+          "name": "dative",
+          "note": "with"
+        },
+        {
+          "name": "accusative",
+          "note": "beside"
+        }
+      ]
+    },
+    {
+      "id": "prep-pros",
+      "set": "preposition",
+      "group": "prep-three-cases",
+      "name": "πρός",
+      "pic": "🎯",
+      "eli5": "A little place-word: “for / at / to”.",
+      "formula": {
+        "pattern": [
+          "πρός +",
+          "gen",
+          "dat",
+          "acc"
+        ],
+        "filled": [
+          "means",
+          "for",
+          "at",
+          "to"
+        ]
+      },
+      "short": "for / at / to",
+      "gist": "+ gen · dat · acc",
+      "tile": "πρός",
+      "oneLine": "πρός takes 3 cases — + genitive “for”; + dative “at”; + accusative “to”.",
+      "mnemonic": "ἐπί · παρά · πρός — πρός: PROSelyte.",
+      "mnemonicWhy": "PROSelyte, one who has come to. With the accusative, to or toward — ὁ λόγος ἦν πρὸς τὸν θεόν — which is nearly all its uses.",
+      "spotIt": "Look at the case of the word after πρός, then pick the meaning that goes with that case.",
+      "bookDef": "πρός · 700 in GNT · gen / dat / acc · for / at / to",
+      "examples": [
+        {
+          "ref": "The chart",
+          "greek": "πρός + genitive / dative / accusative",
+          "english": "genitive: for; dative: at; accusative: to"
+        }
+      ],
+      "tags": [
+        "preposition",
+        "three-cases",
+        "ch-12"
+      ],
+      "kindsLabel": "One meaning per case",
+      "kinds": [
+        {
+          "name": "genitive",
+          "note": "for"
+        },
+        {
+          "name": "dative",
+          "note": "at"
+        },
+        {
+          "name": "accusative",
+          "note": "to"
+        }
+      ]
+    },
+    {
+      "id": "conj-copulative",
+      "set": "conjunction",
+      "group": "conj-coordinating",
+      "name": "Copulative Conjunction",
+      "pic": "➕",
+      "eli5": "The “and” word. It just adds the next thing on.",
+      "formula": {
+        "pattern": [
+          "A",
+          "καί",
+          "B"
+        ],
+        "filled": [
+          "the Word was with God",
+          "and",
+          "the Word was God"
+        ]
+      },
+      "short": "Copulative",
+      "gist": "and",
+      "tile": "And",
+      "oneLine": "Joins two equal elements by adding one to the other.",
+      "mnemonic": "And · Or · But · So · For — And: copulative.",
+      "mnemonicWhy": "Copulative, as in couple — it couples two carriages together. Plain addition, no contrast, no reason.",
+      "spotIt": "Can you read it as plain “and”, with nothing contrasting and nothing following from what went before?",
+      "bookDef": "καί (“and,” “also”); δέ (“and”); οὐδέ (“and not”); μηδέ (“and not”); τέ (“and so”); οὔτε (“and not”); μήτε (“and not”).",
+      "examples": [
+        {
+          "ref": "John 1:1",
+          "greek": "ἐν ἀρχῇ ἦν ὁ λόγος, *καὶ* ὁ λόγος ἦν πρὸς τὸν θεόν, *καὶ* θεὸς ἦν ὁ λόγος",
+          "english": "In the beginning was the Word, *and* the Word was with God, *and* the Word was God",
+          "note": "Each καί adds a clause of equal weight. Nothing contrasts, nothing is inferred — three statements, coupled."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "coordinating",
+        "ch-12"
+      ],
+      "watchOut": "τε is overwhelmingly a word of Acts, and τε … τε (or τε … καί) can mean “not only … but also”: ἐθνῶν τε καὶ βασιλέων υἱῶν τε Ἰσραήλ, “to Gentiles, kings, and the Israelites” (Acts 9:15). And δέ is on two rows of the chart — “and” here, “but” under adversative. Context decides.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "καί",
+          "note": "“and,” “also”"
+        },
+        {
+          "name": "δέ",
+          "note": "“and”"
+        },
+        {
+          "name": "οὐδέ / μηδέ",
+          "note": "“and not”"
+        },
+        {
+          "name": "τέ",
+          "note": "“and so”"
+        },
+        {
+          "name": "οὔτε / μήτε",
+          "note": "“and not”"
+        }
+      ]
+    },
+    {
+      "id": "conj-disjunctive",
+      "set": "conjunction",
+      "group": "conj-coordinating",
+      "name": "Disjunctive Conjunction",
+      "pic": "🔀",
+      "eli5": "The “or” word. This one, or that one.",
+      "formula": {
+        "pattern": [
+          "A",
+          "ἤ",
+          "B"
+        ],
+        "filled": [
+          "the Law",
+          "or",
+          "the Prophets"
+        ]
+      },
+      "short": "Disjunctive",
+      "gist": "or",
+      "tile": "Or",
+      "oneLine": "Joins two elements as alternatives.",
+      "mnemonic": "And · Or · But · So · For — Or: disjunctive.",
+      "mnemonicWhy": "Dis-junctive: it joins by setting apart. Railway points 🔀 — the train goes down one line or the other.",
+      "spotIt": "Would “or” (or “whether”) fit, offering a choice between the two?",
+      "bookDef": "ἤ (“or”); εἴτε (“if,” “whether”).",
+      "examples": [
+        {
+          "ref": "Matt 5:17",
+          "greek": "Μὴ νομίσητε ὅτι ἦλθον καταλῦσαι τὸν νόμον *ἢ* τοὺς προφήτας",
+          "english": "Do not think that I have come to abolish the Law *or* the Prophets",
+          "note": "ἤ offers two alternatives — the Law, or the Prophets — and denies both."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "coordinating",
+        "ch-12"
+      ],
+      "watchOut": "ἤ after a comparative is “than”, not “or”: μᾶλλον ἤ, “rather than”. That is comparison, not a choice.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ἤ",
+          "note": "“or”"
+        },
+        {
+          "name": "εἴτε",
+          "note": "“if,” “whether”"
+        }
+      ]
+    },
+    {
+      "id": "conj-adversative",
+      "set": "conjunction",
+      "group": "conj-coordinating",
+      "name": "Adversative Conjunction",
+      "pic": "🛑",
+      "eli5": "The “but” word. It sets the next bit against the last.",
+      "formula": {
+        "pattern": [
+          "A",
+          "ἀλλά",
+          "not-A"
+        ],
+        "filled": [
+          "not perish",
+          "but",
+          "have eternal life"
+        ]
+      },
+      "short": "Adversative",
+      "gist": "but",
+      "tile": "But",
+      "oneLine": "Joins two elements in contrast.",
+      "mnemonic": "And · Or · But · So · For — But: adversative.",
+      "mnemonicWhy": "An adversary is the one set against you. The adversative sets one clause against the other: not this, but that.",
+      "spotIt": "Would “but”, “yet” or “except” fit — and does the second half push against the first?",
+      "bookDef": "ἀλλά (“but”); δέ (“but”); μέν (“but”); μέντοι (“nevertheless”); πλήν (“but,” “except”); εἰ μή (“except”); ὅμως (“yet”); καίτοι (“yet”).",
+      "examples": [
+        {
+          "ref": "John 3:16",
+          "greek": "ἵνα πᾶς ὁ πιστεύων εἰς αὐτὸν μὴ ἀπόληται *ἀλλ᾽* ἔχῃ ζωὴν αἰώνιον",
+          "english": "that whoever believes in him should not perish *but* have eternal life",
+          "note": "ἀλλά after a negative: not perish, but have life. The strongest “but” in Greek."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "coordinating",
+        "ch-12"
+      ],
+      "watchOut": "δέ is the chameleon: “and” (copulative) or “but” (adversative), and often barely more than a pause. μέν on its own is rarely translated; it sets up a following δέ — “on the one hand … on the other”.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ἀλλά",
+          "note": "“but”"
+        },
+        {
+          "name": "δέ",
+          "note": "“but”"
+        },
+        {
+          "name": "μέν",
+          "note": "“but”"
+        },
+        {
+          "name": "μέντοι",
+          "note": "“nevertheless”"
+        },
+        {
+          "name": "πλήν",
+          "note": "“but,” “except”"
+        },
+        {
+          "name": "εἰ μή",
+          "note": "“except”"
+        },
+        {
+          "name": "ὅμως",
+          "note": "“yet”"
+        },
+        {
+          "name": "καίτοι",
+          "note": "“yet”"
+        }
+      ]
+    },
+    {
+      "id": "conj-inferential",
+      "set": "conjunction",
+      "group": "conj-coordinating",
+      "name": "Inferential Conjunction",
+      "pic": "➡️",
+      "eli5": "The “so” word. Because of all that, here is what follows.",
+      "formula": {
+        "pattern": [
+          "what went before",
+          "οὖν",
+          "what follows from it"
+        ],
+        "filled": [
+          "(Rom 1–11)",
+          "therefore",
+          "I urge you"
+        ]
+      },
+      "short": "Inferential",
+      "gist": "so, therefore",
+      "tile": "So",
+      "oneLine": "Draws a conclusion from what came before.",
+      "mnemonic": "And · Or · But · So · For — So: inferential.",
+      "mnemonicWhy": "Infer: to draw a conclusion. The signal ➡️ says the line goes on from here because of what came before.",
+      "spotIt": "Would “therefore” or “so” fit, and does the clause follow as a conclusion from the one before?",
+      "bookDef": "οὖν (“therefore,” “so”); ἄρα (“then”); διό (“for this reason”); δή (“therefore”).",
+      "examples": [
+        {
+          "ref": "Rom 12:1",
+          "greek": "Παρακαλῶ *οὖν* ὑμᾶς, ἀδελφοί",
+          "english": "I appeal to you *therefore*, brothers",
+          "note": "οὖν turns eleven chapters of doctrine into a conclusion: because of all that, therefore this."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "coordinating",
+        "ch-12"
+      ],
+      "watchOut": "οὖν in narrative, especially John, is often just “then” or “so” moving the story on, not a logical inference. Ask whether the clause really follows from the last one.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "οὖν",
+          "note": "“therefore,” “so”"
+        },
+        {
+          "name": "ἄρα",
+          "note": "“then”"
+        },
+        {
+          "name": "διό",
+          "note": "“for this reason”"
+        },
+        {
+          "name": "δή",
+          "note": "“therefore”"
+        }
+      ]
+    },
+    {
+      "id": "conj-explanatory",
+      "set": "conjunction",
+      "group": "conj-coordinating",
+      "name": "Explanatory Conjunction",
+      "pic": "📋",
+      "eli5": "The “for” word. Here is why I just said that.",
+      "formula": {
+        "pattern": [
+          "statement",
+          "γάρ",
+          "the reason or explanation"
+        ],
+        "filled": [
+          "…",
+          "for",
+          "God so loved the world"
+        ]
+      },
+      "short": "Explanatory",
+      "gist": "for",
+      "tile": "For",
+      "oneLine": "Introduces an explanation of, or ground for, what came before.",
+      "mnemonic": "And · Or · But · So · For — For: explanatory.",
+      "mnemonicWhy": "γάρ gives the explanation — the timetable 📋 that says why the train is running. It points backwards, the opposite way from οὖν.",
+      "spotIt": "Would “for” fit, with the clause explaining or grounding the one before it? γάρ is postpositive: it never stands first.",
+      "bookDef": "γάρ (“for”).",
+      "examples": [
+        {
+          "ref": "John 3:16",
+          "greek": "Οὕτως *γὰρ* ἠγάπησεν ὁ θεὸς τὸν κόσμον",
+          "english": "*For* God so loved the world",
+          "note": "γάρ explains 3:15: whoever believes has eternal life, because this is how God loved the world. Second word in the sentence, as always."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "coordinating",
+        "ch-12"
+      ],
+      "watchOut": "οὖν looks forward — “so, therefore”. γάρ looks back — “for, because of what I just said”. The two are opposite arrows.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "γάρ",
+          "note": "“for”"
+        }
+      ]
+    },
+    {
+      "id": "conj-purpose",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Purpose Conjunction",
+      "pic": "🎯",
+      "eli5": "Why did you do it? “In order THAT …” The aim.",
+      "formula": {
+        "pattern": [
+          "main clause",
+          "ἵνα",
+          "the aim"
+        ],
+        "filled": [
+          "he gave his Son",
+          "in order that",
+          "whoever believes should not perish"
+        ]
+      },
+      "short": "Purpose",
+      "gist": "in order that",
+      "tile": "In order that",
+      "oneLine": "Introduces the intended aim of the main clause.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — In order that: purpose.",
+      "mnemonicWhy": "A target 🎯 — the arrow has not landed yet. Purpose is what someone meant to happen. ἵνα is the purpose word, usually with a subjunctive (ch. 6).",
+      "spotIt": "Can you put “in order that” in front of it without changing the sense? Then it is the aim, not the outcome.",
+      "bookDef": "ἵνα (“in order that,” “so that”); ὅπως (“that”).",
+      "examples": [
+        {
+          "ref": "John 3:16",
+          "greek": "*ἵνα* πᾶς ὁ πιστεύων εἰς αὐτὸν μὴ ἀπόληται",
+          "english": "*in order that* whoever believes in him should not perish",
+          "note": "ἵνα gives what God meant by giving the Son: the aim was that believers not perish."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ἵνα",
+          "note": "“in order that,” “so that”"
+        },
+        {
+          "name": "ὅπως",
+          "note": "“that”"
+        }
+      ]
+    },
+    {
+      "id": "conj-result",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Result Conjunction",
+      "pic": "💥",
+      "eli5": "What came of it? “SO THAT …” The outcome.",
+      "formula": {
+        "pattern": [
+          "main clause",
+          "ὥστε",
+          "what came of it"
+        ],
+        "filled": [
+          "God so loved the world",
+          "that",
+          "he gave his only Son"
+        ]
+      },
+      "short": "Result",
+      "gist": "so that",
+      "tile": "So that",
+      "oneLine": "Introduces the outcome of the main clause.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — So that: result.",
+      "mnemonicWhy": "A bang 💥 — the arrow has landed. Result is what actually came of it, intended or not. ὥστε is the result word, often with an infinitive.",
+      "spotIt": "Would “with the result that” fit? Then it is the outcome, not the aim.",
+      "bookDef": "ὥστε (“so that”); ὅπως (“that”).",
+      "examples": [
+        {
+          "ref": "John 3:16",
+          "greek": "Οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον, *ὥστε* τὸν υἱὸν τὸν μονογενῆ ἔδωκεν",
+          "english": "For God so loved the world, *that* he gave his only Son",
+          "note": "ὥστε gives what his love led to: the giving of the Son. And ὥστε with an indicative, ἔδωκεν, stresses that it actually happened."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "watchOut": "ὅπως is on the chart twice — purpose and result — and ἵνα can drift into result too. The word does not settle it; ask whether it was the aim or the outcome.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ὥστε",
+          "note": "“so that”"
+        },
+        {
+          "name": "ὅπως",
+          "note": "“that”"
+        }
+      ]
+    },
+    {
+      "id": "conj-causal",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Causal Conjunction",
+      "pic": "🌱",
+      "eli5": "The “because” word. Here is the reason.",
+      "formula": {
+        "pattern": [
+          "main clause",
+          "ὅτι",
+          "the reason"
+        ],
+        "filled": [
+          "blessed are the poor in spirit",
+          "because",
+          "theirs is the kingdom"
+        ]
+      },
+      "short": "Causal",
+      "gist": "because",
+      "tile": "Because",
+      "oneLine": "Introduces the cause or reason for the main clause.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — Because: causal.",
+      "mnemonicWhy": "A root 🌱 — the thing underneath that makes the rest grow. διότι is διὰ τοῦτο ὅτι squashed together: “because of this, that”.",
+      "spotIt": "Would “because” or “since” fit, giving the reason for the main clause?",
+      "bookDef": "ὅτι (“that,” “because”); διότι (“because”); ἐπεί (“because,” “since”); ἐπειδή (“because”).",
+      "examples": [
+        {
+          "ref": "Matt 5:3",
+          "greek": "Μακάριοι οἱ πτωχοὶ τῷ πνεύματι, *ὅτι* αὐτῶν ἐστιν ἡ βασιλεία τῶν οὐρανῶν",
+          "english": "Blessed are the poor in spirit, *for* theirs is the kingdom of heaven",
+          "note": "ὅτι gives the reason they are blessed. English often says “for”, but it is cause, not γάρ-style explanation."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "watchOut": "ὅτι is on the chart twice: causal (“because”) and declarative (“that”). After a verb of saying, thinking, knowing or seeing it is almost always declarative.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ὅτι",
+          "note": "“because” (and “that”)"
+        },
+        {
+          "name": "διότι",
+          "note": "“because”"
+        },
+        {
+          "name": "ἐπεί",
+          "note": "“because,” “since”"
+        },
+        {
+          "name": "ἐπειδή",
+          "note": "“because”"
+        }
+      ]
+    },
+    {
+      "id": "conj-comparative",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Comparative Conjunction",
+      "pic": "👯",
+      "eli5": "The “just as” word. This is like that.",
+      "formula": {
+        "pattern": [
+          "A",
+          "καθώς",
+          "B, the pattern"
+        ],
+        "filled": [
+          "love one another",
+          "just as",
+          "I have loved you"
+        ]
+      },
+      "short": "Comparative",
+      "gist": "as, just as",
+      "tile": "As",
+      "oneLine": "Introduces a comparison: one thing is like another.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — As: comparative.",
+      "mnemonicWhy": "Twins 👯 — one clause set beside another it matches. ὡς is “as”; add -περ for emphasis and you get ὥσπερ, “just as”; καθ-ώς is “according as”.",
+      "spotIt": "Would “as”, “like” or “just as” fit, laying one thing alongside another?",
+      "bookDef": "ὡς (“as,” “like”); ὥσπερ (“just as”); καθώς (“as,” “just as”); καθάπερ (“just as”).",
+      "examples": [
+        {
+          "ref": "John 13:34",
+          "greek": "ἵνα ἀγαπᾶτε ἀλλήλους *καθὼς* ἠγάπησα ὑμᾶς",
+          "english": "that you love one another *just as* I have loved you",
+          "note": "καθώς sets the pattern: their love is to match his."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ὡς",
+          "note": "“as,” “like”"
+        },
+        {
+          "name": "ὥσπερ",
+          "note": "“just as”"
+        },
+        {
+          "name": "καθώς",
+          "note": "“as,” “just as”"
+        },
+        {
+          "name": "καθάπερ",
+          "note": "“just as”"
+        }
+      ]
+    },
+    {
+      "id": "conj-conditional",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Conditional Conjunction",
+      "pic": "🚦",
+      "eli5": "The “if” word. This happens only if that happens.",
+      "formula": {
+        "pattern": [
+          "εἰ / ἐάν",
+          "condition",
+          "then …"
+        ],
+        "filled": [
+          "if",
+          "we confess our sins",
+          "he is faithful to forgive"
+        ]
+      },
+      "short": "Conditional",
+      "gist": "if",
+      "tile": "If",
+      "oneLine": "Introduces the condition (protasis) of a conditional sentence.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — If: conditional.",
+      "mnemonicWhy": "A traffic light 🚦 — go only if it is green. εἰ with the indicative, ἐάν with the subjunctive: the ch. 6 ladder of conditional classes starts here.",
+      "spotIt": "Would “if” fit? Then check the mood: εἰ + indicative is first or second class, ἐάν + subjunctive third, εἰ + optative fourth.",
+      "bookDef": "εἰ (“if”); ἐάν (“if”); εἴπερ (“if indeed”).",
+      "examples": [
+        {
+          "ref": "1 John 1:9",
+          "greek": "*ἐὰν* ὁμολογῶμεν τὰς ἁμαρτίας ἡμῶν, πιστός ἐστιν καὶ δίκαιος",
+          "english": "*If* we confess our sins, he is faithful and just",
+          "note": "ἐάν + the subjunctive ὁμολογῶμεν: a third class condition, a real “if”."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "watchOut": "εἰ καί and καὶ εἰ are concessive — “even if” — not plain conditions. And εἰ μή is “except”, filed under adversative.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "εἰ",
+          "note": "“if” — with the indicative or optative"
+        },
+        {
+          "name": "ἐάν",
+          "note": "“if” — with the subjunctive"
+        },
+        {
+          "name": "εἴπερ",
+          "note": "“if indeed”"
+        }
+      ]
+    },
+    {
+      "id": "conj-concessive",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Concessive Conjunction",
+      "pic": "🤷",
+      "eli5": "The “even though” word. It is true, and it still does not stop the rest.",
+      "formula": {
+        "pattern": [
+          "καίπερ / εἰ καί",
+          "concession",
+          "main clause anyway"
+        ],
+        "filled": [
+          "although",
+          "he was a son",
+          "he learned obedience"
+        ]
+      },
+      "short": "Concessive",
+      "gist": "even if, although",
+      "tile": "Even if",
+      "oneLine": "Concedes a point that might have stopped the main clause, and says it did not.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — Even if: concessive.",
+      "mnemonicWhy": "A shrug 🤷 — granted, and yet. καί + εἰ = “even if”; καίπερ is “although”, nearly always with a participle.",
+      "spotIt": "Would “although”, “even though” or “even if” fit? Look for καί glued to εἰ, or καίπερ.",
+      "bookDef": "εἰ καί (“even if”); καὶ εἰ (“even if”); κἄν (“even though”); καίπερ (“although”).",
+      "examples": [
+        {
+          "ref": "Heb 5:8",
+          "greek": "*καίπερ* ὢν υἱός, ἔμαθεν ἀφ᾽ ὧν ἔπαθεν τὴν ὑπακοήν",
+          "english": "*Although* he was a Son, he learned obedience through what he suffered",
+          "note": "καίπερ with the participle ὤν: being a Son might have exempted him, and it did not."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "εἰ καί / καὶ εἰ",
+          "note": "“even if”"
+        },
+        {
+          "name": "κἄν",
+          "note": "“even though” — καί + ἐάν"
+        },
+        {
+          "name": "καίπερ",
+          "note": "“although”"
+        }
+      ]
+    },
+    {
+      "id": "conj-declarative",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Declarative Conjunction",
+      "pic": "💬",
+      "eli5": "The “that” word after saying or thinking. It opens up what was said or thought.",
+      "formula": {
+        "pattern": [
+          "verb of saying / thinking",
+          "ὅτι",
+          "the content"
+        ],
+        "filled": [
+          "if anyone says",
+          "“",
+          "I love God”"
+        ]
+      },
+      "short": "Declarative",
+      "gist": "that",
+      "tile": "That",
+      "oneLine": "Introduces the content of what is said, thought, known or seen.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — That: declarative.",
+      "mnemonicWhy": "A speech bubble 💬 — the ὅτι opens it and the words inside are the content. Sometimes it is left untranslated and the bubble is just quotation marks.",
+      "spotIt": "Is there a verb of saying, thinking, knowing, seeing or hearing just before? Then ὅτι (or ἵνα) gives its content.",
+      "bookDef": "ὅτι (“that”); ἵνα (“that”). Conjunctions sometimes untranslated or communicated with a dash, colon, or quotation marks.",
+      "examples": [
+        {
+          "ref": "1 John 4:20",
+          "greek": "ἐάν τις εἴπῃ *ὅτι* Ἀγαπῶ τὸν θεόν",
+          "english": "If anyone says, *“*I love God”",
+          "note": "ὅτι after εἴπῃ opens the quotation and is not translated — English uses quotation marks. This is the chart’s own point."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ὅτι",
+          "note": "“that” — or quotation marks"
+        },
+        {
+          "name": "ἵνα",
+          "note": "“that”"
+        }
+      ]
+    },
+    {
+      "id": "conj-temporal",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Temporal Conjunction",
+      "pic": "⏰",
+      "eli5": "The “when” word. It says when the main thing happened.",
+      "formula": {
+        "pattern": [
+          "ὅτε / ἕως",
+          "time",
+          "main clause"
+        ],
+        "filled": [
+          "when",
+          "the fullness of time came",
+          "God sent his Son"
+        ]
+      },
+      "short": "Temporal",
+      "gist": "when, until",
+      "tile": "When",
+      "oneLine": "Introduces the time of the main clause.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — When: temporal.",
+      "mnemonicWhy": "Tempus, time: the clock ⏰. ὅτε “when”, ὅταν “whenever” (ὅτε + ἄν, so the subjunctive follows), ἕως “until”, πρίν “before”.",
+      "spotIt": "Would “when”, “whenever”, “until” or “before” fit?",
+      "bookDef": "ὅτε (“when”); ἕως (“until”); ὅταν (“whenever”); πρίν (“before”).",
+      "examples": [
+        {
+          "ref": "Gal 4:4",
+          "greek": "*ὅτε* δὲ ἦλθεν τὸ πλήρωμα τοῦ χρόνου, ἐξαπέστειλεν ὁ θεὸς τὸν υἱὸν αὐτοῦ",
+          "english": "But *when* the fullness of time had come, God sent forth his Son",
+          "note": "ὅτε says when God sent: at the fullness of time."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "ὅτε",
+          "note": "“when”"
+        },
+        {
+          "name": "ἕως",
+          "note": "“until”"
+        },
+        {
+          "name": "ὅταν",
+          "note": "“whenever”"
+        },
+        {
+          "name": "πρίν",
+          "note": "“before”"
+        }
+      ]
+    },
+    {
+      "id": "conj-local",
+      "set": "conjunction",
+      "group": "conj-subordinating",
+      "name": "Local Conjunction",
+      "pic": "📍",
+      "eli5": "The “where” word. It says where.",
+      "formula": {
+        "pattern": [
+          "ὅπου / οὗ",
+          "place",
+          "main clause"
+        ],
+        "filled": [
+          "where",
+          "your treasure is",
+          "there your heart will be"
+        ]
+      },
+      "short": "Local",
+      "gist": "where",
+      "tile": "Where",
+      "oneLine": "Introduces the place of the main clause.",
+      "mnemonic": "In order that · So that · Because · As · If · Even if · That · When · Where — Where: local.",
+      "mnemonicWhy": "Local, as in location — a pin 📍. The -ου ending is the old “where” ending: οὗ, ὅπου, ποῦ.",
+      "spotIt": "Would “where” or “from where” fit?",
+      "bookDef": "οὗ (“where”); ὅπου (“where”); ὅθεν (“from where,” “whence”).",
+      "examples": [
+        {
+          "ref": "Matt 6:21",
+          "greek": "*ὅπου* γάρ ἐστιν ὁ θησαυρός σου, ἐκεῖ ἔσται καὶ ἡ καρδία σου",
+          "english": "For *where* your treasure is, there your heart will be also",
+          "note": "ὅπου gives the place, and ἐκεῖ “there” picks it up in the main clause."
+        }
+      ],
+      "tags": [
+        "conjunction",
+        "subordinating",
+        "ch-12"
+      ],
+      "watchOut": "ὅθεν can also be inferential — “therefore”, “for which reason”, as often in Hebrews. From where → from which.",
+      "kindsLabel": "Common conjunctions from the chart",
+      "kinds": [
+        {
+          "name": "οὗ",
+          "note": "“where”"
+        },
+        {
+          "name": "ὅπου",
+          "note": "“where”"
+        },
+        {
+          "name": "ὅθεν",
+          "note": "“from where,” “whence”"
+        }
+      ]
+    },
+    {
+      "id": "adv-mod-verb",
+      "set": "adverb",
+      "group": "adv-modifies",
+      "name": "Adverb Modifying a Verb",
+      "pic": "⚙️",
+      "eli5": "It tells you more about the doing. “Divorce her SECRETLY.” Any kind of doing-word will take one.",
+      "formula": {
+        "pattern": [
+          "verb (any mood)",
+          "adverb"
+        ],
+        "filled": [
+          "to divorce her",
+          "secretly"
+        ]
+      },
+      "short": "Modifies a verb",
+      "gist": "verb, any mood",
+      "tile": "Verb",
+      "oneLine": "The adverb modifies a verb — indicative, infinitive, participle, imperative or subjunctive alike.",
+      "mnemonic": "Verb · Adjective · Adverb — Verb: an adverb modifying a verb.",
+      "mnemonicWhy": "That is what the name says: ad-verb, added to the verb. The chart’s point is that the mood does not matter — every one of the five takes an adverb.",
+      "spotIt": "Find the verb or verbal (infinitive, participle) it sits next to. Does the adverb say when, how much, how or where it was done?",
+      "bookDef": "Adverbs modifying a verb: indicative, infinitive, participle, imperative, subjunctive.",
+      "examples": [
+        {
+          "ref": "Rev 21:4",
+          "greek": "ὁ θάνατος οὐκ ἔσται *ἔτι*",
+          "english": "Death will be no *more* (NRSV)",
+          "note": "ἔτι modifies the indicative ἔσται."
+        },
+        {
+          "ref": "Matt 1:19",
+          "greek": "Ἰωσὴφ … ἐβουλήθη *λάθρᾳ* ἀπολῦσαι αὐτήν",
+          "english": "Joseph … decided to divorce her *secretly*",
+          "note": "λάθρᾳ modifies the infinitive ἀπολῦσαι, not ἐβουλήθη: he decided openly to divorce her quietly."
+        },
+        {
+          "ref": "2 Cor 9:6",
+          "greek": "ὁ σπείρων *φειδομένως* φειδομένως καὶ θερίσει",
+          "english": "The person who sows *sparingly* will also reap sparingly",
+          "note": "The first φειδομένως modifies the participle σπείρων; the second modifies the future indicative θερίσει."
+        },
+        {
+          "ref": "2 Tim 4:2",
+          "greek": "ἐπίστηθι *εὐκαίρως ἀκαίρως*",
+          "english": "be ready *in season* and *out of season* (ESV)",
+          "note": "Two adverbs modifying the imperative ἐπίστηθι — when it suits and when it does not."
+        },
+        {
+          "ref": "Titus 2:12",
+          "greek": "ἵνα … *σωφρόνως* καὶ *δικαίως* καὶ *εὐσεβῶς* ζήσωμεν ἐν τῷ νῦν αἰῶνι",
+          "english": "to live in a *sensible*, *righteous*, and *godly* way in the present age",
+          "note": "Three -ως adverbs modifying the subjunctive ζήσωμεν. -ως is the adverb ending, like English -ly."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "modifies",
+        "ch-12"
+      ],
+      "kindsLabel": "Every mood takes one",
+      "kinds": [
+        {
+          "name": "Indicative",
+          "note": "ἔσται ἔτι — Rev 21:4"
+        },
+        {
+          "name": "Infinitive",
+          "note": "λάθρᾳ ἀπολῦσαι — Matt 1:19"
+        },
+        {
+          "name": "Participle",
+          "note": "ὁ σπείρων φειδομένως — 2 Cor 9:6"
+        },
+        {
+          "name": "Imperative",
+          "note": "ἐπίστηθι εὐκαίρως ἀκαίρως — 2 Tim 4:2"
+        },
+        {
+          "name": "Subjunctive",
+          "note": "σωφρόνως … ζήσωμεν — Titus 2:12"
+        }
+      ]
+    },
+    {
+      "id": "adv-mod-adjective",
+      "set": "adverb",
+      "group": "adv-modifies",
+      "name": "Adverb Modifying an Adjective",
+      "pic": "🎨",
+      "eli5": "It turns up a describing word. Not just violent — SO violent.",
+      "formula": {
+        "pattern": [
+          "adjective",
+          "adverb"
+        ],
+        "filled": [
+          "violent",
+          "so / very"
+        ]
+      },
+      "short": "Modifies an adjective",
+      "gist": "so violent",
+      "tile": "Adjective",
+      "oneLine": "The adverb intensifies or qualifies an adjective.",
+      "mnemonic": "Verb · Adjective · Adverb — Adjective: an adverb modifying an adjective.",
+      "mnemonicWhy": "A volume knob on a describing word. λίαν, “very, exceedingly”, is the chart’s example twice over — here on an adjective, next on an adverb.",
+      "spotIt": "Is the adverb sitting next to an adjective and changing how much of it there is?",
+      "bookDef": "Adverbs modifying an adjective.",
+      "examples": [
+        {
+          "ref": "Matt 8:28",
+          "greek": "[ἦσαν] χαλεποὶ *λίαν*, ὥστε μὴ ἰσχύειν τινὰ παρελθεῖν διὰ τῆς ὁδοῦ ἐκείνης",
+          "english": "They were *so* violent that no one could pass that way",
+          "note": "λίαν modifies the adjective χαλεποί: not merely violent, exceedingly violent."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "modifies",
+        "ch-12"
+      ],
+      "watchOut": "Not the same as an adverb used AS an adjective (τῷ νῦν καιρῷ). Here the adverb is modifying an adjective that is already there."
+    },
+    {
+      "id": "adv-mod-adverb",
+      "set": "adverb",
+      "group": "adv-modifies",
+      "name": "Adverb Modifying an Adverb",
+      "pic": "🎛️",
+      "eli5": "One adverb turning up another. Not just early — VERY early.",
+      "formula": {
+        "pattern": [
+          "adverb",
+          "adverb"
+        ],
+        "filled": [
+          "very",
+          "early"
+        ]
+      },
+      "short": "Modifies an adverb",
+      "gist": "very early",
+      "tile": "Adverb",
+      "oneLine": "The adverb intensifies or qualifies another adverb.",
+      "mnemonic": "Verb · Adjective · Adverb — Adverb: an adverb modifying an adverb.",
+      "mnemonicWhy": "A knob on a knob. Mark 1:35 stacks three: πρωΐ “early”, ἔννυχα “at night”, and λίαν turning them up.",
+      "spotIt": "Is the adverb next to another adverb, and adjusting how much of it?",
+      "bookDef": "Adverbs modifying an adverb.",
+      "examples": [
+        {
+          "ref": "Mark 1:35",
+          "greek": "καὶ πρωῒ ἔννυχα *λίαν* ἀναστὰς ἐξῆλθεν καὶ ἀπῆλθεν εἰς ἔρημον τόπον",
+          "english": "*Very* early in the morning, while it was still dark, he got up, went out, and made his way to a deserted place",
+          "note": "λίαν modifies the adverbs πρωῒ ἔννυχα: not just early, very early."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "modifies",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "adv-time",
+      "set": "adverb",
+      "group": "adv-uses",
+      "name": "Adverb of Time",
+      "pic": "🕰️",
+      "eli5": "It says WHEN. Afterward, now, then, still.",
+      "formula": {
+        "pattern": [
+          "when?",
+          "adverb"
+        ],
+        "filled": [
+          "afterward",
+          "I went"
+        ]
+      },
+      "short": "Time",
+      "gist": "when?",
+      "tile": "When",
+      "oneLine": "Answers the question “when?”.",
+      "mnemonic": "When · How much · How · Where — When: time.",
+      "mnemonicWhy": "The clock 🕰️. ἔπειτα “then, afterward”, νῦν “now”, ἔτι “still”, πάντοτε “always”, σήμερον “today”.",
+      "spotIt": "Ask “when?” of the verb. If the adverb is the answer, it is time.",
+      "bookDef": "Time (When?)",
+      "examples": [
+        {
+          "ref": "Gal 1:21",
+          "greek": "*ἔπειτα* ἦλθον εἰς τὰ κλίματα τῆς Συρίας καὶ τῆς Κιλικίας",
+          "english": "*Afterward*, I went to the regions of Syria and Cilicia",
+          "note": "ἔπειτα says when he went: after the Jerusalem visit of 1:18."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "use",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "adv-degree",
+      "set": "adverb",
+      "group": "adv-uses",
+      "name": "Adverb of Degree",
+      "pic": "🔊",
+      "eli5": "It says HOW MUCH. Very, more, abundantly.",
+      "formula": {
+        "pattern": [
+          "how much?",
+          "adverb"
+        ],
+        "filled": [
+          "have it",
+          "abundantly"
+        ]
+      },
+      "short": "Degree",
+      "gist": "how much?",
+      "tile": "How much",
+      "oneLine": "Answers the question “how much?” or “to what extent?”.",
+      "mnemonic": "When · How much · How · Where — How much: degree.",
+      "mnemonicWhy": "The volume knob 🔊. λίαν “very”, μᾶλλον “more”, περισσῶς “exceedingly”, σφόδρα “greatly”.",
+      "spotIt": "Ask “how much?” or “how far?”. If the adverb is the answer, it is degree.",
+      "bookDef": "Degree (How much?)",
+      "examples": [
+        {
+          "ref": "John 10:10",
+          "greek": "ἐγὼ ἦλθον ἵνα ζωὴν ἔχωσιν καὶ *περισσὸν* ἔχωσιν",
+          "english": "I came that they may have life, and have it *abundantly* (NASB)",
+          "note": "περισσόν, a neuter adjective doing an adverb’s job, says how much life: more than enough."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "use",
+        "ch-12"
+      ],
+      "watchOut": "Degree and manner blur. “How much?” is degree; “in what way?” is manner. λίαν is always degree."
+    },
+    {
+      "id": "adv-manner",
+      "set": "adverb",
+      "group": "adv-uses",
+      "name": "Adverb of Manner",
+      "pic": "🎚️",
+      "eli5": "It says HOW. In this way, likewise, secretly, well.",
+      "formula": {
+        "pattern": [
+          "in what way?",
+          "adverb"
+        ],
+        "filled": [
+          "likewise",
+          "the free man is a slave"
+        ]
+      },
+      "short": "Manner",
+      "gist": "in what way?",
+      "tile": "How",
+      "oneLine": "Answers the question “in what way?”.",
+      "mnemonic": "When · How much · How · Where — How: manner.",
+      "mnemonicWhy": "The spirit level 🎚️ — how it was done. Most -ως adverbs are manner: ὁμοίως “likewise”, καλῶς “well”, δικαίως “justly”.",
+      "spotIt": "Ask “in what way?”. If the adverb is the answer, it is manner. An -ως ending is a strong hint.",
+      "bookDef": "Manner (In what way?)",
+      "examples": [
+        {
+          "ref": "1 Cor 7:22",
+          "greek": "*ὁμοίως* ὁ ἐλεύθερος κληθεὶς δοῦλός ἐστιν Χριστοῦ",
+          "english": "*Likewise* he who is called as a free man is Christ’s slave",
+          "note": "ὁμοίως says in what way: in the same way as the slave who is the Lord’s freedman in 7:22a."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "use",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "adv-place",
+      "set": "adverb",
+      "group": "adv-uses",
+      "name": "Adverb of Place",
+      "pic": "📌",
+      "eli5": "It says WHERE. Here, there, outside.",
+      "formula": {
+        "pattern": [
+          "where?",
+          "adverb"
+        ],
+        "filled": [
+          "sit",
+          "here"
+        ]
+      },
+      "short": "Place",
+      "gist": "where?",
+      "tile": "Where",
+      "oneLine": "Answers the question “where?”.",
+      "mnemonic": "When · How much · How · Where — Where: place.",
+      "mnemonicWhy": "The map pin 📌. ὧδε “here”, ἐκεῖ “there”, ἔξω “outside”, ἄνω “above”, κάτω “below”.",
+      "spotIt": "Ask “where?”. If the adverb is the answer, it is place.",
+      "bookDef": "Place (Where?)",
+      "examples": [
+        {
+          "ref": "Jas 2:3",
+          "greek": "σὺ κάθου *ὧδε* καλῶς",
+          "english": "Sit *here* in a good place",
+          "note": "ὧδε says where: here. καλῶς beside it is manner — sit well, comfortably."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "use",
+        "ch-12"
+      ]
+    },
+    {
+      "id": "adv-as-noun",
+      "set": "adverb",
+      "group": "adv-other-hat",
+      "name": "Adverb Used as a Noun",
+      "pic": "📦",
+      "eli5": "Put “the” in front of an “outside” word and it becomes a thing: THE OUTSIDE.",
+      "formula": {
+        "pattern": [
+          "article",
+          "adverb",
+          "(no noun)"
+        ],
+        "filled": [
+          "the",
+          "outside",
+          "= the outside of it"
+        ]
+      },
+      "short": "As a noun",
+      "gist": "τὸ ἐκτός",
+      "tile": "Noun",
+      "oneLine": "An adverb with the article, acting as a noun.",
+      "mnemonic": "Noun · Adjective — Noun: an adverb used as a noun.",
+      "mnemonicWhy": "The article is a noun-maker, just as it was for adjectives in ch. 5 and prepositional phrases here. τό + ἐκτός “outside” = “the outside”.",
+      "spotIt": "An article with no noun, and after it a single adverb. Supply “the” and make it a thing.",
+      "bookDef": "Adverbs used as nouns.",
+      "examples": [
+        {
+          "ref": "Matt 23:26",
+          "greek": "ἵνα γένηται καὶ *τὸ ἐκτὸς* αὐτοῦ καθαρόν",
+          "english": "so *the outside* of it may also become clean",
+          "note": "τὸ ἐκτός is the subject of γένηται. An adverb, turned into a thing by the article."
+        }
+      ],
+      "tags": [
+        "adverb",
+        "other",
+        "ch-12"
+      ],
+      "watchOut": "An article + a prepositional phrase does the same thing (τὰ ἐν τῷ κόσμῳ). One word after the article: adverb. A preposition and its object: prepositional phrase."
+    },
+    {
+      "id": "adv-as-adjective",
+      "set": "adverb",
+      "group": "adv-other-hat",
+      "name": "Adverb Used as an Adjective",
+      "pic": "🏷️",
+      "eli5": "Tuck a “now” word between “the” and a noun and it describes the noun: the PRESENT time.",
+      "formula": {
+        "pattern": [
+          "article",
+          "adverb",
+          "noun"
+        ],
+        "filled": [
+          "the",
+          "now",
+          "time = the present time"
+        ]
+      },
+      "short": "As an adjective",
+      "gist": "τῷ νῦν καιρῷ",
+      "tile": "Adjective",
+      "oneLine": "An adverb in attributive position, describing a noun like an adjective.",
+      "mnemonic": "Noun · Adjective — Adjective: an adverb used as an adjective.",
+      "mnemonicWhy": "The slot between an article and its noun belongs to adjectives (ch. 5, attributive position). Put an adverb in it and it becomes one: τῷ νῦν καιρῷ, “the now time”, the present time.",
+      "spotIt": "Is the adverb sandwiched between an article and its noun? Then it is describing that noun.",
+      "bookDef": "Adverbs used as adjectives.",
+      "examples": [
+        {
+          "ref": "Rom 3:26",
+          "greek": "πρὸς τὴν ἔνδειξιν τῆς δικαιοσύνης αὐτοῦ ἐν τῷ *νῦν* καιρῷ",
+          "english": "to demonstrate his righteousness at the *present* time (NIV)",
+          "note": "νῦν between τῷ and καιρῷ is in attributive position: which time? the present one. (The chart prints the reference as Rom 3:25; the phrase is in 3:26.)"
+        }
+      ],
+      "tags": [
+        "adverb",
+        "other",
+        "ch-12"
+      ],
+      "watchOut": "Not the same as an adverb modifying an adjective (χαλεποὶ λίαν). There the adjective is already there and the adverb turns it up; here there is no adjective, and the adverb is doing its job."
+    },
+    {
+      "id": "particle-intensification",
+      "set": "particle",
+      "group": "particle-kinds",
+      "name": "Particle of Intensification",
+      "pic": "🙌",
+      "eli5": "A word that says “yes, really!” and makes the sentence stronger.",
+      "formula": {
+        "pattern": [
+          "ναί / ἀμήν / γέ",
+          "statement"
+        ],
+        "filled": [
+          "yes",
+          "I also ask you"
+        ]
+      },
+      "short": "Intensification",
+      "gist": "yes! amen! even",
+      "tile": "Yes",
+      "oneLine": "A particle that intensifies the statement.",
+      "mnemonic": "Yes · Look — Yes: intensification.",
+      "mnemonicWhy": "Turn the volume up 🙌. ναί is “yes”; ἀμήν is the Hebrew “truly, so be it”; γέ is “even, indeed”.",
+      "spotIt": "Can you take the word out and the sentence still says the same thing, only less forcefully? And is it ναί, ἀμήν or γέ?",
+      "bookDef": "Some Greek particles serve to express an intensification of the statement. This class of particles includes ἀμήν [“amen”], γέ [“even”], and ναί [“yes!”].",
+      "examples": [
+        {
+          "ref": "Phil 4:3",
+          "greek": "*ναὶ* ἐρωτῶ καὶ σέ, γνήσιε σύζυγε, συλλαμβάνου αὐταῖς",
+          "english": "*Yes*, I also ask you, true partner, to help these women",
+          "note": "ναί adds force to the request. (The chapter prints the reference as Phil 4:2; the words are in 4:3.)"
+        },
+        {
+          "ref": "Rev 22:20",
+          "greek": "*ἀμήν*, ἔρχου κύριε Ἰησοῦ",
+          "english": "*Amen!* Come, Lord Jesus!",
+          "note": "ἀμήν says “so be it” to the promise just made — “Surely I am coming soon.”"
+        }
+      ],
+      "tags": [
+        "particle",
+        "ch-12"
+      ],
+      "kindsLabel": "The chapter’s three",
+      "kinds": [
+        {
+          "name": "ἀμήν",
+          "note": "“amen”"
+        },
+        {
+          "name": "γέ",
+          "note": "“even”"
+        },
+        {
+          "name": "ναί",
+          "note": "“yes!”"
+        }
+      ]
+    },
+    {
+      "id": "particle-attention",
+      "set": "particle",
+      "group": "particle-kinds",
+      "name": "Particle of Attention",
+      "pic": "👀",
+      "eli5": "A word that makes you look. “Look!” “Oh!” “Woe!”",
+      "formula": {
+        "pattern": [
+          "ἰδού / οὐαί / ὦ",
+          "what to look at"
+        ],
+        "filled": [
+          "look",
+          "the judge stands at the door"
+        ]
+      },
+      "short": "Attention",
+      "gist": "look! woe! O!",
+      "tile": "Look",
+      "oneLine": "A particle that draws the reader’s attention — an interjection.",
+      "mnemonic": "Yes · Look — Look: attention.",
+      "mnemonicWhy": "Turn your head 👀. ἰδού “look!” (the old “behold”), οὐαί “woe!”, ὦ “O!” — which is why a vocative so often follows it.",
+      "spotIt": "Is it ἰδού, οὐαί or ὦ, standing outside the grammar of the sentence and making you look?",
+      "bookDef": "Some Greek particles draw the reader’s attention and could also be classified as interjections, such as ἰδού (“look!”), οὐαί (“woe!”), and ὦ (“O!”).",
+      "examples": [
+        {
+          "ref": "Matt 15:28",
+          "greek": "*ὦ* γύναι, μεγάλη σου ἡ πίστις",
+          "english": "*O* woman, great is your faith! (ESV)",
+          "note": "ὦ followed by the vocative γύναι. ὦ adds feeling to the address."
+        },
+        {
+          "ref": "Jas 5:9",
+          "greek": "*ἰδοὺ* ὁ κριτὴς πρὸ τῶν θυρῶν ἕστηκεν",
+          "english": "*Look*, the judge stands at the door!",
+          "note": "ἰδού takes no part in the grammar; it grabs the reader by the collar."
+        }
+      ],
+      "tags": [
+        "particle",
+        "ch-12"
+      ],
+      "watchOut": "ὦ is the vocative’s companion from ch. 2 — direct address with emotion. The vocative is the case; ὦ is the particle.",
+      "kindsLabel": "The chapter’s three",
+      "kinds": [
+        {
+          "name": "ἰδού",
+          "note": "“look!”"
+        },
+        {
+          "name": "οὐαί",
+          "note": "“woe!”"
+        },
+        {
+          "name": "ὦ",
+          "note": "“O!”"
+        }
+      ]
     }
   ],
   "confusions": [
@@ -6823,6 +9570,127 @@
       "test": "Ask what the phrase is measuring.",
       "answer": "The point when it happened ⇒ dative. What kind of time, or time during which ⇒ genitive. How long it went on ⇒ accusative.",
       "example": "Luke 23:56b–24:1a has all three: τὸ σάββατον (accusative, how long they rested) · τῇ μιᾷ τῶν σαββάτων (dative, the day they came) · ὄρθρου βαθέως (genitive, what kind of hour)."
+    },
+    {
+      "id": "interrogative-or-indefinite",
+      "pair": [
+        "pron-interrogative",
+        "pron-indefinite"
+      ],
+      "question": "τίς or τις — asking, or anyone?",
+      "test": "Look for its own accent, where it stands, and a question mark.",
+      "answer": "τίς/τί with its own acute, often first, and a ; at the end ⇒ interrogative, “who? what?”. τις/τι leaning on the word before, never first, no question ⇒ indefinite, “someone, anyone”.",
+      "example": "τί κωλύει με βαπτισθῆναι; (Acts 8:36) · ἐάν τις εἴπῃ (1 John 4:20)."
+    },
+    {
+      "id": "reflexive-or-reciprocal",
+      "pair": [
+        "pron-reflexive",
+        "pron-reciprocal"
+      ],
+      "question": "Yourselves, or one another?",
+      "test": "Does the action stay with each person, or cross over to the others?",
+      "answer": "Each one to himself ⇒ reflexive, ἑαυτούς. Each one to the others ⇒ reciprocal, ἀλλήλων.",
+      "example": "ἑαυτοὺς πειράζετε (2 Cor 13:5) · ἀνεχόμενοι ἀλλήλων (Col 3:13)."
+    },
+    {
+      "id": "prep-phrase-verb-or-noun",
+      "pair": [
+        "prep-adverbial",
+        "prep-adjectival"
+      ],
+      "question": "Does the prepositional phrase hang on a verb or a noun?",
+      "test": "Where is the article? Then ask “how?” or “which?”.",
+      "answer": "Tucked between an article and its noun, or introduced by its own article after the noun ⇒ adjectival, “which one?”. Otherwise it usually hangs on the verb ⇒ adverbial, “how, where, when, why?”.",
+      "example": "αἰτείτω ἐν πίστει (Jas 1:6) · τῇ κατ᾽ εὐσέβειαν διδασκαλίᾳ (1 Tim 6:3)."
+    },
+    {
+      "id": "article-plus-what",
+      "pair": [
+        "prep-substantival",
+        "adv-as-noun"
+      ],
+      "question": "An article with no noun — what is standing in for the noun?",
+      "test": "Count what comes after the article.",
+      "answer": "A preposition and its object ⇒ substantival prepositional phrase. A single adverb ⇒ adverb used as a noun. Either way, supply “the thing(s)”.",
+      "example": "τὰ ἐν τῷ κόσμῳ (1 John 2:15) · τὸ ἐκτός (Matt 23:26)."
+    },
+    {
+      "id": "adverb-on-or-as-adjective",
+      "pair": [
+        "adv-mod-adjective",
+        "adv-as-adjective"
+      ],
+      "question": "Adverb modifying an adjective, or used as one?",
+      "test": "Is there an adjective already there?",
+      "answer": "Yes, and the adverb turns it up ⇒ modifying an adjective (χαλεποὶ λίαν). No, and the adverb sits between article and noun ⇒ used as an adjective (τῷ νῦν καιρῷ).",
+      "example": "Matt 8:28 · Rom 3:26."
+    },
+    {
+      "id": "purpose-or-result",
+      "pair": [
+        "conj-purpose",
+        "conj-result"
+      ],
+      "question": "In order that, or so that?",
+      "test": "Was it the aim, or the outcome?",
+      "answer": "What someone meant to happen ⇒ purpose, typically ἵνα. What actually came of it ⇒ result, typically ὥστε. ὅπως can be either, so the word alone does not settle it.",
+      "example": "John 3:16 has both: ὥστε … ἔδωκεν (result), ἵνα … μὴ ἀπόληται (purpose)."
+    },
+    {
+      "id": "hoti-because-or-that",
+      "pair": [
+        "conj-causal",
+        "conj-declarative"
+      ],
+      "question": "ὅτι — “because” or “that”?",
+      "test": "Look at the verb before it.",
+      "answer": "A verb of saying, thinking, knowing, seeing or hearing ⇒ declarative, it gives the content (“that”, or quotation marks). Otherwise, if it gives a reason ⇒ causal, “because”.",
+      "example": "ὅτι αὐτῶν ἐστιν ἡ βασιλεία (Matt 5:3) · εἴπῃ ὅτι Ἀγαπῶ (1 John 4:20)."
+    },
+    {
+      "id": "de-and-or-but",
+      "pair": [
+        "conj-copulative",
+        "conj-adversative"
+      ],
+      "question": "δέ — “and” or “but”?",
+      "test": "Does the new clause push against the last one?",
+      "answer": "It simply adds or moves on ⇒ copulative, “and” (or nothing at all). It sets up a contrast ⇒ adversative, “but”.",
+      "example": "ἡμεῖς δὲ οὐκ ἐσμὲν ὑποστολῆς (Heb 10:39): “But we” — set against those who shrink back."
+    },
+    {
+      "id": "oun-or-gar",
+      "pair": [
+        "conj-inferential",
+        "conj-explanatory"
+      ],
+      "question": "οὖν or γάρ — which way does the arrow point?",
+      "test": "Is the clause a conclusion, or a reason?",
+      "answer": "A conclusion drawn from what went before ⇒ inferential, οὖν “therefore”. A reason for what went before ⇒ explanatory, γάρ “for”.",
+      "example": "Παρακαλῶ οὖν ὑμᾶς (Rom 12:1) · Οὕτως γὰρ ἠγάπησεν (John 3:16)."
+    },
+    {
+      "id": "if-or-even-if",
+      "pair": [
+        "conj-conditional",
+        "conj-concessive"
+      ],
+      "question": "If, or even if?",
+      "test": "Is there a καί glued to the εἰ or ἐάν?",
+      "answer": "εἰ or ἐάν alone ⇒ conditional. εἰ καί, καὶ εἰ, κἄν, or καίπερ ⇒ concessive: granted, and it still does not stop the main clause.",
+      "example": "ἐὰν ὁμολογῶμεν (1 John 1:9) · καίπερ ὢν υἱός (Heb 5:8)."
+    },
+    {
+      "id": "degree-or-manner",
+      "pair": [
+        "adv-degree",
+        "adv-manner"
+      ],
+      "question": "How much, or how?",
+      "test": "Swap in “very” and then “in this way”.",
+      "answer": "“To what extent?” ⇒ degree (λίαν, περισσόν, μᾶλλον). “In what way?” ⇒ manner (ὁμοίως, καλῶς, most -ως words).",
+      "example": "περισσὸν ἔχωσιν (John 10:10) · ὁμοίως ὁ ἐλεύθερος (1 Cor 7:22)."
     }
   ],
   "extraQuiz": [
@@ -7230,11 +10098,193 @@
       "answer": "mood-impv-conditional",
       "why": "Present active imperative, 2nd plural, ζητέω. Same shape a second time, and κρούετε καὶ ἀνοιγήσεται makes it three in a row — that repetition is itself the argument for reading them as conditions.",
       "unofficial": true
+    },
+    {
+      "prompt": "Which preposition? Only the accusative, “each, in turn, up”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-ana",
+      "why": "ἀνά — “each, in turn, up”. 13 times in the GNT. Anabaptists baptised again — ἀνά is “up”, “again”, “each in turn”. Only thirteen times in the NT, so recognise it and move on."
+    },
+    {
+      "prompt": "Which preposition? Only the genitive, “in place of, instead of”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-anti",
+      "why": "ἀντί — “in place of, instead of”. 22 times in the GNT. An ANTI-christ is one who sets himself up in place of Christ. ἀντί is substitution: a ransom ἀντὶ πολλῶν, “in place of many”."
+    },
+    {
+      "prompt": "Which preposition? Only the genitive, “from, of”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-apo",
+      "why": "ἀπό — “from, of”. 646 times in the GNT. APOstasy is falling away from; an APOstle is sent from. ἀπό is away from the edge of something."
+    },
+    {
+      "prompt": "Which preposition? Only the accusative, “into, in, at”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-eis",
+      "why": "εἰς — “into, in, at”. 1768 times in the GNT. Into. The accusative is the case of direction, and εἰς is the most accusative word there is: motion into."
+    },
+    {
+      "prompt": "Which preposition? Only the genitive, “from, out of”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-ek",
+      "why": "ἐκ — “from, out of”. 914 times in the GNT. EXit — ἐκ (ἐξ before a vowel) is out of from the inside. ἀπό leaves from the edge; ἐκ comes out from within."
+    },
+    {
+      "prompt": "Which preposition? Only the dative, “in, into, by”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-en",
+      "why": "ἐν — “in, into, by”. 2752 times in the GNT. IN. The commonest preposition in the NT, and it only ever takes the dative — the case of place, of being in something."
+    },
+    {
+      "prompt": "Which preposition? Only the genitive, “before, at”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-pro",
+      "why": "πρό — “before, at”. 47 times in the GNT. PROlogue, the word before; PROphet, one who speaks before. πρό is before, in time or place."
+    },
+    {
+      "prompt": "Which preposition? Only the dative, “with”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-sun",
+      "why": "σύν — “with”. 128 times in the GNT. SYNagogue, where people gather with; SYNoptic, seeing with. σύν is together with, and dative like the dative of association."
+    },
+    {
+      "prompt": "Which preposition? + genitive “through”; + accusative “because of”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-dia",
+      "why": "διά — διά takes 2 cases — + genitive “through”; + accusative “because of”. 667 times in the GNT. DIAmeter goes through the circle. With the genitive, through; with the accusative, because of — the reason you went through."
+    },
+    {
+      "prompt": "Which preposition? + genitive “against”; + accusative “according to”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-kata",
+      "why": "κατά — κατά takes 2 cases — + genitive “against”; + accusative “according to”. 473 times in the GNT. CATAstrophe comes down against you. With the genitive, against; with the accusative, according to — the gospel κατὰ Μαθθαῖον."
+    },
+    {
+      "prompt": "Which preposition? + genitive “with”; + accusative “after”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-meta",
+      "why": "μετά — μετά takes 2 cases — + genitive “with”; + accusative “after”. 469 times in the GNT. METAphysics was the book shelved after the Physics. With the genitive, with (in company); with the accusative, after."
+    },
+    {
+      "prompt": "Which preposition? + genitive “concerning”; + accusative “around”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-peri",
+      "why": "περί — περί takes 2 cases — + genitive “concerning”; + accusative “around”. 333 times in the GNT. PERImeter goes around. With the accusative, around; with the genitive, concerning — talk that goes round a subject."
+    },
+    {
+      "prompt": "Which preposition? + genitive “for”; + accusative “above”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-huper",
+      "why": "ὑπέρ — ὑπέρ takes 2 cases — + genitive “for”; + accusative “above”. 150 times in the GNT. HYPER is over and above. With the accusative, above; with the genitive, for — on behalf of, standing over someone to shield them."
+    },
+    {
+      "prompt": "Which preposition? + genitive “by”; + accusative “under”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-hupo",
+      "why": "ὑπό — ὑπό takes 2 cases — + genitive “by”; + accusative “under”. 220 times in the GNT. HYPOdermic goes under the skin. With the accusative, under; with the genitive, by — the agent behind a passive verb."
+    },
+    {
+      "prompt": "Which preposition? + genitive “on, upon”; + dative “upon”; + accusative “against”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-epi",
+      "why": "ἐπί — ἐπί takes 3 cases — + genitive “on, upon”; + dative “upon”; + accusative “against”. 890 times in the GNT. EPIdermis is the skin on top. ἐπί is on, upon — and with the accusative, against: coming down upon somebody."
+    },
+    {
+      "prompt": "Which preposition? + genitive “from”; + dative “with”; + accusative “beside”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-para",
+      "why": "παρά — παρά takes 3 cases — + genitive “from”; + dative “with”; + accusative “beside”. 194 times in the GNT. PARAllel lines run beside each other; a PARAlegal works beside. With genitive from (beside someone), dative with, accusative beside."
+    },
+    {
+      "prompt": "Which preposition? + genitive “for”; + dative “at”; + accusative “to”.",
+      "ref": "ch. 12 chart",
+      "answer": "prep-pros",
+      "why": "πρός — πρός takes 3 cases — + genitive “for”; + dative “at”; + accusative “to”. 700 times in the GNT. PROSelyte, one who has come to. With the accusative, to or toward — ὁ λόγος ἦν πρὸς τὸν θεόν — which is nearly all its uses."
+    },
+    {
+      "prompt": "By that will we have been sanctified through the offering of the body of Jesus Christ once for all",
+      "greek": "ἐν ᾧ θελήματι ἡγιασμένοι ἐσμὲν *διὰ τῆς προσφορᾶς* τοῦ σώματος Ἰησοῦ Χριστοῦ ἐφάπαξ (Heb 10:10)",
+      "english": "we have been sanctified *through the offering* of the body of Jesus Christ once for all",
+      "ref": "ch. 12 practice 1a",
+      "target": "διά",
+      "answer": "prep-adverbial",
+      "why": "διά is a preposition taking the genitive, so “through”. The phrase διὰ τῆς προσφορᾶς hangs on the verb ἡγιασμένοι ἐσμέν: it says how we were sanctified — adverbial. (Asked about the word alone: διά + genitive, means or agency.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "sanctified through the offering of the body of Jesus Christ once for all",
+      "greek": "ἐν ᾧ θελήματι ἡγιασμένοι ἐσμὲν διὰ τῆς προσφορᾶς τοῦ σώματος Ἰησοῦ Χριστοῦ *ἐφάπαξ* (Heb 10:10)",
+      "english": "sanctified through the offering of the body of Jesus Christ *once for all*",
+      "ref": "ch. 12 practice 1b",
+      "target": "ἐφάπαξ",
+      "answer": "adv-time",
+      "why": "ἐφάπαξ is an adverb (ἐπί + ἅπαξ, “once”), and it answers “when?” or “how often?” — once, for all time. That is time. It could be argued as manner (“in a once-for-all way”); time is the more natural reading, but worth checking in class.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Hurry and get out of Jerusalem quickly",
+      "greek": "σπεῦσον καὶ ἔξελθε ἐν τάχει *ἐξ Ἰερουσαλήμ*, διότι οὐ παραδέξονταί σου μαρτυρίαν περὶ ἐμοῦ (Acts 22:18)",
+      "english": "Hurry and get *out of Jerusalem* quickly",
+      "ref": "ch. 12 practice 2a",
+      "target": "ἐξ",
+      "answer": "prep-adverbial",
+      "why": "ἐξ is ἐκ before a vowel — a preposition taking the genitive, “out of”. ἐξ Ἰερουσαλήμ hangs on the imperative ἔξελθε and says where from: adverbial.",
+      "unofficial": true
+    },
+    {
+      "prompt": "because they will not accept your testimony about me",
+      "greek": "σπεῦσον καὶ ἔξελθε ἐν τάχει ἐξ Ἰερουσαλήμ, *διότι* οὐ παραδέξονταί σου μαρτυρίαν περὶ ἐμοῦ (Acts 22:18)",
+      "english": "*because* they will not accept your testimony about me",
+      "ref": "ch. 12 practice 2b",
+      "target": "διότι",
+      "answer": "conj-causal",
+      "why": "διότι is a subordinating conjunction on the chart’s causal row: it gives the reason Paul must leave.",
+      "unofficial": true
+    },
+    {
+      "prompt": "they will not accept your testimony about me",
+      "greek": "διότι οὐ παραδέξονταί *σου* μαρτυρίαν περὶ ἐμοῦ (Acts 22:18)",
+      "english": "they will not accept *your* testimony about me",
+      "ref": "ch. 12 practice 2c",
+      "target": "σου",
+      "answer": "pron-personal",
+      "why": "σου is the genitive singular of σύ — a personal pronoun, “your”, here possessive on μαρτυρίαν.",
+      "unofficial": true
+    },
+    {
+      "prompt": "But we ought always to give thanks to God for you",
+      "greek": "*ἡμεῖς* δὲ ὀφείλομεν εὐχαριστεῖν τῷ θεῷ πάντοτε περὶ ὑμῶν (2 Thess 2:13)",
+      "english": "But *we* ought always to give thanks to God for you",
+      "ref": "ch. 12 practice 3a",
+      "target": "ἡμεῖς",
+      "answer": "pron-personal",
+      "why": "ἡμεῖς is the personal pronoun “we”. ὀφείλομεν already says “we”, so the pronoun is emphatic: we, in contrast to those in 2:10–12.",
+      "unofficial": true
+    },
+    {
+      "prompt": "But we ought always to give thanks to God for you",
+      "greek": "ἡμεῖς *δὲ* ὀφείλομεν εὐχαριστεῖν τῷ θεῷ πάντοτε περὶ ὑμῶν (2 Thess 2:13)",
+      "english": "*But* we ought always to give thanks to God for you",
+      "ref": "ch. 12 practice 3b",
+      "target": "δέ",
+      "answer": "conj-adversative",
+      "why": "δέ is a coordinating conjunction, and it is on the chart twice. Here it sets “we” against those who perish and believe the lie in 2:10–12, so adversative, “but”. A reader who takes it as a simple transition would call it copulative — worth hearing in class.",
+      "unofficial": true
+    },
+    {
+      "prompt": "give thanks to God for you",
+      "greek": "ἡμεῖς δὲ ὀφείλομεν εὐχαριστεῖν τῷ θεῷ πάντοτε περὶ *ὑμῶν* (2 Thess 2:13)",
+      "english": "give thanks to God for *you*",
+      "ref": "ch. 12 practice 3c",
+      "target": "ὑμῶν",
+      "answer": "pron-personal",
+      "why": "ὑμῶν is the genitive plural of σύ — personal pronoun, “you (all)”, the object of περί (“concerning, for”). ὑ has the u of YOU.",
+      "unofficial": true
     }
   ],
   "world": {
-    "name": "One street, eleven stops",
-    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime.",
-    "why": "Eleven places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
+    "name": "One street, sixteen stops",
+    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime, stand in, cross, change trains, tune, ring.",
+    "why": "Sixteen places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
   }
 }
