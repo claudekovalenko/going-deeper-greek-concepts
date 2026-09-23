@@ -1,7 +1,9 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–6
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–6 and 12
 
 A small offline-first PWA for getting the five cases, the **article**, the
-**adjective** and the **verb** into your head and keeping them there. 108 cards,
+**adjective**, the **verb** and ch. 12's **little words** — pronouns,
+prepositions, conjunctions, adverbs, particles — into your head and keeping them
+there. 175 cards,
 each opening with its peg — the acrostic with this card's slot lit — then a
 plain-words paragraph anyone could follow, then the bare pattern of the
 construction, then a test you can run on a text, and the Greek examples.
@@ -11,10 +13,10 @@ is due, this one drills the thing itself. Each links to the other.
 
 [hw]: https://github.com/claudekovalenko/seminary-homework-2026
 
-## The whole app in eleven words
+## The whole app in sixteen words
 
 > **Names · Calls · Fences · Describes · Gives · Points · Colours · Answers ·
-> Aims · Frames · Times**
+> Aims · Frames · Times · Replaces · Positions · Joins · Modifies · Cries**
 
 | | | |
 |---|---|---|
@@ -29,6 +31,11 @@ is due, this one drills the thing itself. Each links to the other.
 | Voice | aims the action out, back, or in | ch. 6 |
 | Mood | frames it as fact, maybe, order or wish | ch. 6 |
 | Tense | says when, and how it is pictured | ch. 6 |
+| Pronoun | stands in for a noun | ch. 12 |
+| Preposition | places one thing against another | ch. 12 |
+| Conjunction | joins words, clauses and sentences | ch. 12 |
+| Adverb | tells when, how much, how and where | ch. 12 |
+| Particle | says yes, amen, look, woe | ch. 12 |
 
 That is the top tier. Inside each set, the acrostics take over.
 
@@ -156,19 +163,44 @@ conversation; ὑ has the u of **YOU**. The conditional ladder runs across three
 moods: εἰ + indicative is first or second class, ἐάν + subjunctive is third,
 εἰ + optative is fourth.
 
+**The little words — ch. 12**
+
+| | |
+|---|---|
+| Pronoun | **Me · This · Who · Who? · Anyone · Myself · Each other** — Personal, Demonstrative, Relative, Interrogative, Indefinite, Reflexive, Reciprocal |
+| Prepositional phrase | **How · Which · What** — adverbial (hangs on a verb), adjectival (hangs on a noun), substantival (is the noun) |
+| The 17 prepositions | sorted by how many cases they take: **one** (ἀνά ἀντί ἀπό εἰς ἐκ ἐν πρό σύν), **two** (διά κατά μετά περί ὑπέρ ὑπό — always gen + acc), **three** (the three P's: ἐπί παρά πρός) |
+| Coordinating | **And · Or · But · So · For** — copulative, disjunctive, adversative, inferential, explanatory |
+| Subordinating | **In order that · So that · Because · As · If · Even if · That · When · Where** |
+| Adverb | hangs on a **Verb · Adjective · Adverb**, answers **When · How much · How · Where**, and with an article wears another hat: **Noun · Adjective** |
+| Particle | **Yes · Look** — intensification (ναί, ἀμήν, γέ), attention (ἰδού, οὐαί, ὦ) |
+
+The one-case prepositions carry the whole case system in miniature: the genitive
+ones go away (ἀπό, ἐκ, ἀντί, πρό), the accusative ones go toward (εἰς, ἀνά), the
+dative ones stay put (ἐν, σύν). Each of the seventeen is its own card — the drill
+shows the Greek and asks the case and gloss — and Spot it asks the other way
+round, from the case-and-gloss profile back to the word. Those questions draw
+their options only from the seventeen: a group marked `quizApart` (the phrase's
+three jobs) is never mixed in with them.
+
+Two references in the ch. 12 charts are a verse off and are given here as the
+Greek text numbers them, with a note on the card: the ναί of Phil 4:3 (printed
+as 4:2) and the τῷ νῦν καιρῷ of Rom 3:26 (printed as 3:25).
+
 ## What is in the app
 
 - **The whole thing** — every peg in the app on one screen, at the top of the
-  Map: all 28 of them and what each one stands for. This is the bus-stop page;
+  Map: all 43 of them and what each one stands for. This is the bus-stop page;
   the cards underneath are for when a peg does not hold.
 - **Picture** — the whole course as one place you can walk. Each set is a stop on
   one street — the Spa, the Doorstep, the Fenced Yard, Swamp Road, the Harbour,
   the Signpost, the Paint Shop, the Roll Call, the Recording Booth, the Weather
-  Station, the Clock Tower — and the board at the top shows every stop with every
-  object standing in it, all 108 at once. Walk into a stop and each group has its
+  Station, the Clock Tower, the Theatre, the Bridge, the Junction, the Toolbox,
+  the Town Crier — and the board at the top shows every stop with every
+  object standing in it, all 175 at once. Walk into a stop and each group has its
   own scene. Nothing is drawn by hand: the stops come from `sets` and the objects
   from `cards`, so a new chapter adds itself. `#/picture`, `#/picture/dative`.
-- **Map** — the acrostics as tappable tiles, plus the 31 confusion pairs
+- **Map** — the acrostics as tappable tiles, plus the 44 confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, easiest tier first, hardest-first being exactly wrong.
   It opens with the **peg**: the whole key with this card's slot lit and the
@@ -269,7 +301,7 @@ code. Bump `BUILD` in `js/app.js` and `CACHE` in `sw.js` together.
 
 ## Downloading it
 
-**`dist/greek-cases.html`** — the whole app in one file, about 265 KB. Save it, open it,
+**`dist/greek-cases.html`** — the whole app in one file, about 400 KB. Save it, open it,
 done: no server, no install, no network. Rebuild it after any change with:
 
 ```sh
@@ -398,8 +430,9 @@ and translation.
 The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
-checking in class. Thirty items are in — ch. 3's four, ch. 4's thirteen and ch.
-6's thirteen — covering the ones whose category the chapters' own charts settle.
+checking in class. Thirty-eight items are in — ch. 3's four, ch. 4's thirteen,
+ch. 6's thirteen and ch. 12's eight — covering the ones whose category the
+chapters' own charts settle.
 **Spot it → Take the book's practice test** runs them as a test.
 
 Ch. 6's ten numbered exercises make thirteen questions, because Matt 5:18, Matt
@@ -418,6 +451,12 @@ genuinely arguable, not because they are hard:
   easily be read as personal interest.
 - **Eph 2:5, τοῖς παραπτώμασιν.** "Dead in trespasses" sits between sphere,
   cause and reference, and commentators split on it.
+
+Ch. 12's three exercises underline eight words, and each one is a question. Two
+are flagged as arguable on the card: Heb 10:10 ἐφάπαξ (time, though manner can
+be argued) and 2 Thess 2:13 δέ (adversative against 2:10–12, though it could be
+read as a plain transition). Only the first three of the chapter's exercises are
+in; the rest were not in the pages this was built from.
 
 ## A note on one of ch. 3's practice exercises
 
