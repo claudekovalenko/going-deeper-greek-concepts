@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v35 · 2026-09-23';
+const BUILD = 'v36 · 2026-10-04';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -450,18 +450,36 @@ function cheatSheet() {
   const hasCards = (g) => DATA.cards.some((c) => c.group === g.id && c.type !== 'rule');
   const pegs = DATA.sets.reduce((n, s) => n + s.groups.filter(hasCards).length, 0);
 
+  // Each set's chapter, read off its cards' ch-N tags, and the newest chapter
+  // flagged so its sets stand out from the ones already learned.
+  const chapterOf = (set) => {
+    const tag = DATA.cards.find((c) => c.set === set.id && (c.tags || []).some((t) => /^ch-\d+$/.test(t)));
+    return tag ? Number(tag.tags.find((t) => /^ch-\d+$/.test(t)).slice(3)) : null;
+  };
+  const latest = Math.max(...DATA.sets.map(chapterOf).filter((n) => n != null));
+  const flagged = (set) => chapterOf(set) === latest;
+  const chTag = (set) => {
+    const n = chapterOf(set);
+    if (n == null) return '';
+    return flagged(set)
+      ? `<span class="ch-flag on" title="Chapter ${n}">🚩 ch. ${n}</span>`
+      : `<span class="ch-flag">ch. ${n}</span>`;
+  };
+  const latestNames = DATA.sets.filter(flagged).map((s) => s.name.toLowerCase());
+
   return `
     <section class="card sheet">
       <div class="card-head">
         <h2>The whole thing</h2>
         <span class="muted" style="font-size:12px">${pegs} pegs · ${DATA.cards.length} cards</span>
       </div>
+      <p class="ch-legend">🚩 <b>ch. ${latest}</b> — ${esc(latestNames.join(', '))}</p>
       <div class="sheet-does">
         ${DATA.sets
           .map(
             (set) => `
-          <button class="does-row" data-action="goto" data-to="#/learn/${esc(set.id)}">
-            <span class="does-name">${dot(set.color)}${esc(set.name)}</span>
+          <button class="does-row ${flagged(set) ? 'flagged' : ''}" data-action="goto" data-to="#/learn/${esc(set.id)}">
+            <span class="does-name">${dot(set.color)}${esc(set.name)}${chTag(set)}</span>
             <span class="does-what">${esc(set.does)}</span>
           </button>`
           )
@@ -471,8 +489,8 @@ function cheatSheet() {
       ${DATA.sets
         .map(
           (set) => `
-        <div class="sheet-set">
-          <div class="sheet-case">${dot(set.color)}${esc(set.name)}</div>
+        <div class="sheet-set ${flagged(set) ? 'flagged' : ''}">
+          <div class="sheet-case">${dot(set.color)}${esc(set.name)}${chTag(set)}</div>
           ${set.groups
             .map((g) => {
               const members = DATA.cards
