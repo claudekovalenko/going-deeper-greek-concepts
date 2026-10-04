@@ -1102,6 +1102,63 @@ code {
   margin-top: 3px;
 }
 
+/* The newest chapter's sets carry a flag on the cheat sheet, so the words
+   still being learned stand apart from the ones already in hand. */
+.ch-flag {
+  margin-left: auto;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 7px;
+  white-space: nowrap;
+}
+
+.ch-flag.on {
+  color: #ff8a80;
+  border-color: color-mix(in srgb, #ff8a80 45%, transparent);
+  background: color-mix(in srgb, #ff8a80 12%, transparent);
+}
+
+.does-row.flagged,
+.sheet-set.flagged {
+  background: color-mix(in srgb, #e8a33d 12%, transparent);
+  border-radius: 8px;
+}
+
+.does-row.flagged {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.sheet-set.flagged {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.sheet-set.flagged:first-of-type,
+.sheet-does + .sheet-set.flagged {
+  padding-top: 8px;
+}
+
+.ch-legend {
+  font-size: 12.5px;
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+@media (prefers-color-scheme: light) {
+  .ch-flag.on {
+    color: #b42318;
+    border-color: color-mix(in srgb, #b42318 45%, transparent);
+    background: color-mix(in srgb, #b42318 10%, transparent);
+  }
+}
+
 /* The cheat sheet's first strip: what each set does, before any acrostic. */
 .sheet-does {
   border-bottom: 1px solid var(--line);
@@ -1659,7 +1716,7 @@ globalThis.__CONCEPTS__ = {"book":"Going Deeper with New Testament Greek","chapt
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v35 · 2026-09-23';
+const BUILD = 'v36 · 2026-10-04';
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -2102,18 +2159,36 @@ function cheatSheet() {
   const hasCards = (g) => DATA.cards.some((c) => c.group === g.id && c.type !== 'rule');
   const pegs = DATA.sets.reduce((n, s) => n + s.groups.filter(hasCards).length, 0);
 
+  // Each set's chapter, read off its cards' ch-N tags, and the newest chapter
+  // flagged so its sets stand out from the ones already learned.
+  const chapterOf = (set) => {
+    const tag = DATA.cards.find((c) => c.set === set.id && (c.tags || []).some((t) => /^ch-\d+$/.test(t)));
+    return tag ? Number(tag.tags.find((t) => /^ch-\d+$/.test(t)).slice(3)) : null;
+  };
+  const latest = Math.max(...DATA.sets.map(chapterOf).filter((n) => n != null));
+  const flagged = (set) => chapterOf(set) === latest;
+  const chTag = (set) => {
+    const n = chapterOf(set);
+    if (n == null) return '';
+    return flagged(set)
+      ? `<span class="ch-flag on" title="Chapter ${n}">🚩 ch. ${n}</span>`
+      : `<span class="ch-flag">ch. ${n}</span>`;
+  };
+  const latestNames = DATA.sets.filter(flagged).map((s) => s.name.toLowerCase());
+
   return `
     <section class="card sheet">
       <div class="card-head">
         <h2>The whole thing</h2>
         <span class="muted" style="font-size:12px">${pegs} pegs · ${DATA.cards.length} cards</span>
       </div>
+      <p class="ch-legend">🚩 <b>ch. ${latest}</b> — ${esc(latestNames.join(', '))}</p>
       <div class="sheet-does">
         ${DATA.sets
           .map(
             (set) => `
-          <button class="does-row" data-action="goto" data-to="#/learn/${esc(set.id)}">
-            <span class="does-name">${dot(set.color)}${esc(set.name)}</span>
+          <button class="does-row ${flagged(set) ? 'flagged' : ''}" data-action="goto" data-to="#/learn/${esc(set.id)}">
+            <span class="does-name">${dot(set.color)}${esc(set.name)}${chTag(set)}</span>
             <span class="does-what">${esc(set.does)}</span>
           </button>`
           )
@@ -2123,8 +2198,8 @@ function cheatSheet() {
       ${DATA.sets
         .map(
           (set) => `
-        <div class="sheet-set">
-          <div class="sheet-case">${dot(set.color)}${esc(set.name)}</div>
+        <div class="sheet-set ${flagged(set) ? 'flagged' : ''}">
+          <div class="sheet-case">${dot(set.color)}${esc(set.name)}${chTag(set)}</div>
           ${set.groups
             .map((g) => {
               const members = DATA.cards

@@ -1085,6 +1085,63 @@ code {
   margin-top: 3px;
 }
 
+/* The newest chapter's sets carry a flag on the cheat sheet, so the words
+   still being learned stand apart from the ones already in hand. */
+.ch-flag {
+  margin-left: auto;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 1px 7px;
+  white-space: nowrap;
+}
+
+.ch-flag.on {
+  color: #ff8a80;
+  border-color: color-mix(in srgb, #ff8a80 45%, transparent);
+  background: color-mix(in srgb, #ff8a80 12%, transparent);
+}
+
+.does-row.flagged,
+.sheet-set.flagged {
+  background: color-mix(in srgb, #e8a33d 12%, transparent);
+  border-radius: 8px;
+}
+
+.does-row.flagged {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.sheet-set.flagged {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.sheet-set.flagged:first-of-type,
+.sheet-does + .sheet-set.flagged {
+  padding-top: 8px;
+}
+
+.ch-legend {
+  font-size: 12.5px;
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+@media (prefers-color-scheme: light) {
+  .ch-flag.on {
+    color: #b42318;
+    border-color: color-mix(in srgb, #b42318 45%, transparent);
+    background: color-mix(in srgb, #b42318 10%, transparent);
+  }
+}
+
 /* The cheat sheet's first strip: what each set does, before any acrostic. */
 .sheet-does {
   border-bottom: 1px solid var(--line);
