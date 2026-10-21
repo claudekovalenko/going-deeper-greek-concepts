@@ -1,5 +1,5 @@
 /**
- * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–5 and 12.
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–6 and 12.
  *
  * Deliberately one file. The sibling app (seminary-homework-2026) learned the
  * hard way that a module graph behind a service worker can serve a fresh page
@@ -7,7 +7,11 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v36 · 2026-10-04';
+const BUILD = 'v37 · 2026-10-21';
+
+// Chapters whose sets get the red flag on the cheat sheet, e.g. [12]. Empty
+// means no flag at all; each set still shows its plain chapter chip.
+const FLAGGED_CHAPTERS = [];
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -450,14 +454,14 @@ function cheatSheet() {
   const hasCards = (g) => DATA.cards.some((c) => c.group === g.id && c.type !== 'rule');
   const pegs = DATA.sets.reduce((n, s) => n + s.groups.filter(hasCards).length, 0);
 
-  // Each set's chapter, read off its cards' ch-N tags, and the newest chapter
-  // flagged so its sets stand out from the ones already learned.
+  // Each set's chapter, read off its cards' ch-N tags. Chapters listed in
+  // FLAGGED_CHAPTERS get a flag so their sets stand out from the ones already
+  // learned; none are flagged right now.
   const chapterOf = (set) => {
     const tag = DATA.cards.find((c) => c.set === set.id && (c.tags || []).some((t) => /^ch-\d+$/.test(t)));
     return tag ? Number(tag.tags.find((t) => /^ch-\d+$/.test(t)).slice(3)) : null;
   };
-  const latest = Math.max(...DATA.sets.map(chapterOf).filter((n) => n != null));
-  const flagged = (set) => chapterOf(set) === latest;
+  const flagged = (set) => FLAGGED_CHAPTERS.includes(chapterOf(set));
   const chTag = (set) => {
     const n = chapterOf(set);
     if (n == null) return '';
@@ -465,7 +469,13 @@ function cheatSheet() {
       ? `<span class="ch-flag on" title="Chapter ${n}">🚩 ch. ${n}</span>`
       : `<span class="ch-flag">ch. ${n}</span>`;
   };
-  const latestNames = DATA.sets.filter(flagged).map((s) => s.name.toLowerCase());
+  const flaggedSets = DATA.sets.filter(flagged);
+  const legend = FLAGGED_CHAPTERS.filter((n) => flaggedSets.some((s) => chapterOf(s) === n))
+    .map((n) => {
+      const names = flaggedSets.filter((s) => chapterOf(s) === n).map((s) => s.name.toLowerCase());
+      return `<p class="ch-legend">🚩 <b>ch. ${n}</b> — ${esc(names.join(', '))}</p>`;
+    })
+    .join('');
 
   return `
     <section class="card sheet">
@@ -473,7 +483,7 @@ function cheatSheet() {
         <h2>The whole thing</h2>
         <span class="muted" style="font-size:12px">${pegs} pegs · ${DATA.cards.length} cards</span>
       </div>
-      <p class="ch-legend">🚩 <b>ch. ${latest}</b> — ${esc(latestNames.join(', '))}</p>
+      ${legend}
       <div class="sheet-does">
         ${DATA.sets
           .map(
