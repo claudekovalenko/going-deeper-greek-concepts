@@ -1,8 +1,8 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–6 and 12 — the cases, the article, the adjective, the verb, and the little words",
+  "chapter": "ch. 2–7 and 12 — the cases, the article, the adjective, the verb and its aspect, and the little words",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
-  "generated": "2026-09-23",
+  "generated": "2026-10-28",
   "notes": [
     "Every card carries a mnemonic hook, a plain one-line definition, a test you can actually run on a text, and real examples.",
     "eli5: the like-I'm-five line. It leads every card, above the pattern — plain words, a picture you can see, and no grammar terms at all.",
@@ -506,6 +506,132 @@
           "expand": "λύω · λύσω · ἔλυον · ἔλυσα · λέλυκα · ἐλελύκειν",
           "spot": "⏳",
           "scene": "Six bells, one after another 🎬 I am loosing, 🔮 I will loose, 🎞️ I was loosing, 📸 I loosed, 🧱 I have loosed, 🕰️ I had loosed. Read the marks, not the meaning: ἐ- past, σ future or aorist, doubled stem perfect."
+        }
+      ]
+    },
+    {
+      "id": "aspect",
+      "name": "Aspect",
+      "verb": "Views",
+      "does": "views the action as ongoing, as a whole, or as a state",
+      "subtitle": "Not when it happened — how the speaker chooses to look at it.",
+      "eli5": "Are we watching it happen, looking at a photo of the whole thing, or standing in what it left behind?",
+      "color": "#9b59b6",
+      "classDate": "2026-11-03",
+      "bigIdea": "Three aspects, three tense-forms. Imperfective sees the action in process (present, imperfect). Perfective sees it whole (aorist). Stative sees the state an earlier action left (perfect, pluperfect). Time is a separate mark — the ε- on the front — and outside the indicative it disappears, leaving only the aspect.",
+      "masterMnemonic": "Film · Photo · Footprint.",
+      "masterMnemonicWhy": "A film is still running: imperfective. A photo takes the whole thing in one frame: perfective. A footprint is what a step left behind after the step is over: stative. Same event, three cameras.",
+      "place": "📷",
+      "placeName": "The Camera Shop",
+      "scene": "Three things on the counter 📷: a reel of film 🎞️ still running, a photo 📸 of the whole race in one frame, and a footprint 👣 set in the cement outside — the step is long over, the print is still there.",
+      "groups": [
+        {
+          "id": "aspect-kinds",
+          "name": "The three aspects",
+          "key": "Film · Photo · Footprint",
+          "mnemonic": "Film · Photo · Footprint — in process, as a whole, the state it left.",
+          "expand": "Imperfective — in process, ongoing (present / imperfect) · Perfective — complete, as a whole (aorist) · Stative — a state resulting from a previous action (perfect / pluperfect)",
+          "spot": "📷",
+          "scene": "On the counter: the film 🎞️ still rolling, the photo 📸 that shows it all at once, and through the window the footprint 👣 that outlasted the step."
+        },
+        {
+          "id": "aspect-reading",
+          "name": "Reading it off the form",
+          "key": "Slots · Moods",
+          "mnemonic": "The ε- tells time; the prefix and suffix tell aspect. Leave the indicative and only the aspect is left.",
+          "expand": "Slots — past-time ε · aspect prefix · stem · aspect suffix · ending · Moods — every mood has all three aspects; only the indicative has time",
+          "spot": "🔍",
+          "scene": "Under the loupe 🔍 on the back bench, a strip of negatives cut into slots 🎞️, and a rack of the same three shots printed five ways 🗂️ — one per mood."
+        }
+      ]
+    },
+    {
+      "id": "telic",
+      "name": "Telic & Atelic",
+      "verb": "Finishes",
+      "does": "says whether the verb's meaning has a built-in finish",
+      "subtitle": "Lexical aspect — what the verb itself means, before any tense-form is chosen.",
+      "eli5": "Does the action have a finish line? Building a house does. Walking does not. Verbs with a finish line like the aorist; verbs without one like the present.",
+      "color": "#d35400",
+      "classDate": "2026-11-03",
+      "bigIdea": "Telic verbs are bounded and prefer the aorist: a performance takes a while, a punctual act takes an instant. Atelic verbs have no built-in end and prefer the present/imperfect: a state just holds, an activity just goes on. A verb in the form it prefers is the default; a verb in the other one is worth asking about.",
+      "masterMnemonic": "Build · Touch — Be · Walk.",
+      "masterMnemonicWhy": "Two that finish, two that do not. Building finishes after a while, a touch finishes at once — both prefer the aorist. Being and walking never reach an end of their own — both prefer the present.",
+      "place": "🏁",
+      "placeName": "The Racetrack",
+      "scene": "A track with a finish line 🏁 painted across it. Some runners are heading for the tape; others are just jogging laps for ever, and one is sitting in the stand watching.",
+      "groups": [
+        {
+          "id": "telic-kinds",
+          "name": "Telic — there is a finish line",
+          "key": "Build · Touch",
+          "mnemonic": "Build · Touch — bounded, and the aorist is their home.",
+          "expand": "Performance — bounded, with perceived duration · Punctual — bounded, with little perceived duration · both prefer the Aorist",
+          "spot": "🏁",
+          "scene": "At the tape 🏁: a crew building a grandstand 🏗️ that will take all season, and a sprinter whose fingertip 👆 breaks the tape in an instant. Both are done when they reach it."
+        },
+        {
+          "id": "atelic-kinds",
+          "name": "Atelic — no finish line",
+          "key": "Be · Walk",
+          "mnemonic": "Be · Walk — no end in the verb, so the present is their home.",
+          "expand": "Stative — states and relationships · Activity — actions with no inherent termination · both prefer the Present/Imperfect",
+          "spot": "🔄",
+          "scene": "Round the back straight 🔄: a parent in the stand who loves the runner ❤️ the whole time, and a walker 🚶 doing lap after lap with no tape anywhere ahead."
+        },
+        {
+          "id": "telic-default",
+          "name": "Default or not",
+          "key": "Default",
+          "mnemonic": "The form a verb prefers is the default. The other one is a choice to ask about.",
+          "expand": "Telic + aorist, atelic + present = default · otherwise, ask why",
+          "spot": "🎯",
+          "scene": "The judges' table 🎯, with a scorecard: runners in their usual lane get no mark; a runner in the other lane gets circled."
+        }
+      ]
+    },
+    {
+      "id": "imperatives",
+      "name": "Interpreting Imperatives",
+      "verb": "Orders",
+      "does": "explains why a command is aorist or present",
+      "subtitle": "Three things decide a command's tense-form before the speaker's emphasis does: the word, the grammar, the setting.",
+      "eli5": "Why is this order “do it” and that one “keep doing it”? Sometimes the verb only comes one way. Sometimes it is one job versus a habit. Sometimes it is just the kind of book you are reading.",
+      "color": "#16a085",
+      "classDate": "2026-11-03",
+      "bigIdea": "Before reading anything into an aorist or present imperative, check three things. Lexical: is this verb locked into one form, or does its meaning lean one way? Grammatical: a telic verb for one occasion goes aorist; an atelic verb for a general way of life goes present. Contextual: prayers and narratives prefer the aorist, epistles the present (except 1 Peter).",
+      "masterMnemonic": "The word · The job · The setting.",
+      "masterMnemonicWhy": "Three questions in the order the chart asks them: lexical (the word), grammatical (one job or a habit), contextual (what kind of text). Only once all three are answered is the tense-form telling you something the speaker chose.",
+      "place": "🎖️",
+      "placeName": "The Parade Ground",
+      "scene": "A sergeant 🎖️ on the parade ground with three noticeboards behind him: the drill book 📖, the duty roster ⚙️, and a map 🗺️ of where the troop is posted.",
+      "groups": [
+        {
+          "id": "impv-lexical",
+          "name": "Lexical — the word itself",
+          "key": "Locked · Leaning",
+          "mnemonic": "Locked — the verb only comes in one form. Leaning — its meaning tilts it one way.",
+          "expand": "Determination — limited (or almost limited) to one tense-form · Influence — specific commands lean aorist, general instructions lean present",
+          "spot": "📖",
+          "scene": "The drill book 📖: some orders printed in one form only, padlocked 🔒; others with a compass 🧭 in the margin pointing the way they usually go."
+        },
+        {
+          "id": "impv-grammatical",
+          "name": "Grammatical — one job, or a habit",
+          "key": "Once · Always",
+          "mnemonic": "Once — a telic verb for one occasion: aorist. Always — an atelic verb for a way of life: present.",
+          "expand": "Specific occasion — telic verb, aorist · General behaviour — atelic verb, present",
+          "spot": "⚙️",
+          "scene": "The duty roster ⚙️: today's single job pinned with a target 🎯, and the standing orders on a loop 🔁 at the bottom — every day, for good."
+        },
+        {
+          "id": "impv-contextual",
+          "name": "Contextual — the kind of text",
+          "key": "Pray & tell · Write",
+          "mnemonic": "Prayers and stories go aorist; letters go present — except 1 Peter.",
+          "expand": "Prayers and historical narratives — aorist preferred · Epistles — present preferred (except 1 Peter)",
+          "spot": "🗺️",
+          "scene": "The posting map 🗺️: the chapel 🙏 and the storyteller's tent both flagged aorist, the post office ✉️ flagged present — with one envelope from Peter stamped the other way."
         }
       ]
     },
@@ -6651,6 +6777,760 @@
       "watchOut": "The chart is only the indicative. Outside the indicative there is no time — only aspect, which is what the chapter says is the dominant force anyway."
     },
     {
+      "id": "aspect-imperfective",
+      "set": "aspect",
+      "group": "aspect-kinds",
+      "name": "Imperfective Aspect",
+      "pic": "🎞️",
+      "eli5": "We are inside the action, watching it go on. It has not finished and we are not looking at the end.",
+      "formula": {
+        "pattern": [
+          "the action",
+          "seen from inside",
+          "still going"
+        ],
+        "filled": [
+          "λύω / ἔλυον",
+          "in process",
+          "ongoing"
+        ]
+      },
+      "short": "Imperfective",
+      "gist": "in process, ongoing",
+      "tile": "Film",
+      "oneLine": "The action viewed as in process — the present and imperfect tense-forms.",
+      "mnemonic": "Aspect — Film: the reel is still running.",
+      "mnemonicWhy": "A film shows the middle of things: you are watching while it happens, and the end is not in the frame. That is the present and the imperfect.",
+      "spotIt": "Present or imperfect form — no σ, no reduplication. Ask what changes if you read it as ‘was going on’, ‘kept on’, ‘used to’.",
+      "bookDef": "IMPERFECTIVE · Action viewed as in process, ongoing · Present/Imperfective",
+      "examples": [
+        {
+          "ref": "Acts 2:47",
+          "greek": "ὁ δὲ κύριος *προσετίθει* τοὺς σῳζομένους καθ᾿ ἡμέραν",
+          "english": "And the Lord *kept adding* those being saved, day by day",
+          "note": "Imperfect: the adding is pictured as going on — καθ᾿ ἡμέραν spells out what the aspect already says."
+        },
+        {
+          "ref": "The paradigm",
+          "greek": "λύω · ἔλυον",
+          "english": "I am loosing · I was loosing",
+          "note": "Present (non-past) and imperfect (past) share the aspect. Only the ε- of past time separates them."
+        }
+      ],
+      "watchOut": "Imperfective is not the same as ‘present time’. The imperfect is imperfective and past. Aspect is the view; time is the ε-.",
+      "tags": [
+        "aspect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aspect-perfective",
+      "set": "aspect",
+      "group": "aspect-kinds",
+      "name": "Perfective Aspect",
+      "pic": "📸",
+      "eli5": "We step back and see the whole thing at once, start to finish, in one snapshot.",
+      "formula": {
+        "pattern": [
+          "the action",
+          "seen from outside",
+          "as one whole"
+        ],
+        "filled": [
+          "ἔλυσα",
+          "complete",
+          "a whole"
+        ]
+      },
+      "short": "Perfective",
+      "gist": "complete, as a whole",
+      "tile": "Photo",
+      "oneLine": "The action viewed as complete, as a whole — the aorist tense-form.",
+      "mnemonic": "Aspect — Photo: one frame takes it all in.",
+      "mnemonicWhy": "A photo does not show the action unfolding; it shows the event as one thing. That is the aorist: not ‘quick’, not ‘once’, just seen whole.",
+      "spotIt": "A σ after the stem (or a second-aorist stem) with no reduplication. Read it as a single event and see if anything is lost.",
+      "bookDef": "PERFECTIVE · Action viewed as complete, as a whole · Aorist",
+      "examples": [
+        {
+          "ref": "John 11:35",
+          "greek": "*ἐδάκρυσεν* ὁ Ἰησοῦς",
+          "english": "Jesus *wept*",
+          "note": "Aorist: the weeping is told as one whole event. It need not have been short — it is simply not being watched from inside."
+        },
+        {
+          "ref": "John 2:20",
+          "greek": "τεσσεράκοντα καὶ ἓξ ἔτεσιν *οἰκοδομήθη* ὁ ναὸς οὗτος",
+          "english": "This temple *was built* in forty-six years",
+          "note": "Forty-six years of building, and still aorist. The perfective is a view of the whole, not a claim that it was quick."
+        }
+      ],
+      "watchOut": "The aorist is not ‘once-for-all’ or ‘instant’. Forty-six years of building can be aorist (John 2:20). It is the view that is whole, not the event that is short.",
+      "tags": [
+        "aspect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aspect-stative",
+      "set": "aspect",
+      "group": "aspect-kinds",
+      "name": "Stative Aspect",
+      "pic": "👣",
+      "eli5": "Something happened before, and now there is a state that came from it. We are looking at the state.",
+      "formula": {
+        "pattern": [
+          "an earlier action",
+          "→",
+          "the state it left"
+        ],
+        "filled": [
+          "ἐγήγερται",
+          "→",
+          "he is risen"
+        ]
+      },
+      "short": "Stative",
+      "gist": "the state an action left",
+      "tile": "Footprint",
+      "oneLine": "A state of affairs resulting from a previous action — the perfect and pluperfect.",
+      "mnemonic": "Aspect — Footprint: the step is over, the print is still there.",
+      "mnemonicWhy": "You never see the foot come down; you see what it left. The perfect looks at the result standing now, the pluperfect at the result standing then.",
+      "spotIt": "Reduplication on the front (λε-λυ-) and a κ in the suffix. Ask what state the action has left behind.",
+      "bookDef": "STATIVE · State of affairs resulting from a previous action · Perfect/Pluperfect",
+      "examples": [
+        {
+          "ref": "John 19:30",
+          "greek": "*τετέλεσται*",
+          "english": "*It is finished*",
+          "note": "Perfect: not just ‘it ended’ but ‘it stands finished’ — the state the work has left."
+        },
+        {
+          "ref": "1 Cor 15:4",
+          "greek": "καὶ ὅτι *ἐγήγερται* τῇ ἡμέρᾳ τῇ τρίτῃ",
+          "english": "and that he *has been raised* on the third day",
+          "note": "Perfect in a list of aorists (died, was buried): the raising is told as a state that still holds — he is risen."
+        }
+      ],
+      "watchOut": "Do not mix this up with the stative type of verb (Telic & Atelic). Stative aspect is a form: perfect/pluperfect. A stative verb is a meaning: love, be, know.",
+      "tags": [
+        "aspect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aspect-slots",
+      "set": "aspect",
+      "group": "aspect-reading",
+      "type": "rule",
+      "name": "Reading Aspect off the Form",
+      "pic": "🧩",
+      "eli5": "A Greek verb is built from slots like a train of carriages. One carriage says ‘past’. Two others say which aspect. The rest say what the verb is and who is doing it.",
+      "formula": {
+        "pattern": [
+          "past-time",
+          "aspect prefix",
+          "core",
+          "aspect suffix",
+          "ending"
+        ],
+        "filled": [
+          "ἐ",
+          "λε",
+          "λυ",
+          "κ",
+          "ειμεν"
+        ],
+        "note": "ἐλελύκειμεν — every slot filled: stative, past."
+      },
+      "short": "Slots",
+      "gist": "time in front, aspect round the stem",
+      "tile": "Slots",
+      "oneLine": "The ε- marks past time; the aspect is carried by the prefix (λε-) and suffix (σ, κ) round the lexical core.",
+      "mnemonic": "ε is the clock. λε…κ is the footprint, σ is the photo, nothing at all is the film.",
+      "mnemonicWhy": "Splitting the form into slots separates the two things a tense-form carries. The augment answers ‘when?’ and only in the indicative. Everything else about the shape answers ‘how is it viewed?’",
+      "spotIt": "Strip the ending, then look round the stem: reduplication and κ ⇒ stative; σ alone ⇒ perfective; neither ⇒ imperfective. Then check the front for ε- to see if it is past.",
+      "bookDef": "Aspectual category · past-time indicator · aspect prefix · lexical core · aspect suffix · personal ending",
+      "kindsLabel": "The book's table, slot by slot (λύω, 1st plural)",
+      "kinds": [
+        {
+          "name": "Imperfective (past)",
+          "note": "ε + λυ + ομεν → ἐλύομεν"
+        },
+        {
+          "name": "Imperfective (non-past)",
+          "note": "λυ + ομεν → λύομεν"
+        },
+        {
+          "name": "Perfective (past)",
+          "note": "ε + λυ + σ + αμεν → ἐλύσαμεν"
+        },
+        {
+          "name": "Perfective (non-past)",
+          "note": "λυ + σ + ομεν → λύσομεν"
+        },
+        {
+          "name": "Stative (past)",
+          "note": "ε + λε + λυ + κ + ειμεν → ἐλελύκειμεν"
+        },
+        {
+          "name": "Stative (non-past)",
+          "note": "λε + λυ + κ + αμεν → λελύκαμεν"
+        }
+      ],
+      "examples": [
+        {
+          "ref": "The book's table",
+          "greek": "ἐλύομεν · ἐλύσαμεν · ἐλελύκειμεν",
+          "english": "we were loosing · we loosed · we had loosed"
+        }
+      ],
+      "watchOut": "The table files the future (λύσομεν) as perfective non-past: it carries the same σ as the aorist, without the ε-.",
+      "tags": [
+        "aspect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aspect-moods",
+      "set": "aspect",
+      "group": "aspect-reading",
+      "type": "rule",
+      "name": "Aspect in Every Mood",
+      "pic": "🗂️",
+      "eli5": "The three views turn up in every mood — command, wish, ‘-ing’ word, ‘to’ word. Only the plain statement mood also tells you when.",
+      "formula": {
+        "pattern": [
+          "mood",
+          "imperfective",
+          "perfective",
+          "stative"
+        ],
+        "filled": [
+          "imperative",
+          "λῦε",
+          "λῦσον",
+          "λέλυκε"
+        ],
+        "note": "No augment outside the indicative: what is left is the aspect."
+      },
+      "short": "Moods",
+      "gist": "aspect everywhere, time only in the indicative",
+      "tile": "Moods",
+      "oneLine": "Every mood has all three aspects; the past-time ε- appears only in the indicative.",
+      "mnemonic": "Outside the indicative, an aorist is a photo with no date on it.",
+      "mnemonicWhy": "An aorist imperative or subjunctive has no augment, so it cannot be ‘past’. What it still carries is the perfective view — which is why an aorist command is not a past command.",
+      "spotIt": "Outside the indicative, do not translate the aorist as past. Ask only: is this viewed as a whole, as in process, or as a state?",
+      "bookDef": "Mood · Imperfective · Perfective · Stative — λύω across the moods",
+      "kindsLabel": "The book's table (futures in brackets)",
+      "kinds": [
+        {
+          "name": "Indicative",
+          "note": "λύω / ἔλυον · (λύσω) ἔλυσα · λέλυκα / ἐλελύκειν"
+        },
+        {
+          "name": "Infinitive",
+          "note": "λύειν · (λύσειν) λῦσαι · λελυκέναι"
+        },
+        {
+          "name": "Subjunctive",
+          "note": "λύω · λύσω · λελύκω"
+        },
+        {
+          "name": "Imperative",
+          "note": "λῦε · λῦσον · λέλυκε"
+        },
+        {
+          "name": "Participle",
+          "note": "λύων · (λύσων) λύσας · λελυκώς"
+        }
+      ],
+      "examples": [
+        {
+          "ref": "The book's table",
+          "greek": "λῦε · λῦσον · λέλυκε",
+          "english": "loose (keep loosing) · loose · have loosed"
+        }
+      ],
+      "watchOut": "λύσω in the subjunctive row is the aorist subjunctive. It is spelled like the future indicative; the mood tells them apart.",
+      "tags": [
+        "aspect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "lex-performance",
+      "set": "telic",
+      "group": "telic-kinds",
+      "name": "Performance",
+      "pic": "🏗️",
+      "eli5": "A job with an end that takes a while to get to. Building a house: it takes months, and then it is done.",
+      "formula": {
+        "pattern": [
+          "bounded",
+          "+ takes time"
+        ],
+        "filled": [
+          "build a house",
+          "months"
+        ]
+      },
+      "short": "Performance",
+      "gist": "bounded, takes a while",
+      "tile": "Build",
+      "oneLine": "A bounded action with perceived duration. Telic — prefers the aorist.",
+      "mnemonic": "Telic — Build: it takes time, and then it is finished.",
+      "mnemonicWhy": "Halfway through, it is not yet a house. The end is part of what the verb means, and it takes a while to reach it.",
+      "spotIt": "Ask: if he stops halfway, has he done it? No ⇒ telic. Then: did it take a while? Yes ⇒ performance.",
+      "bookDef": "TELIC · Performance · Bounded actions with perceived duration · Prefers Aorist",
+      "examples": [
+        {
+          "ref": "Matt 7:24",
+          "greek": "ὅστις *ᾠκοδόμησεν* αὐτοῦ τὴν οἰκίαν ἐπὶ τὴν πέτραν",
+          "english": "who *built* his house on the rock",
+          "note": "Building a house takes time and reaches an end — a performance, in the aorist it prefers."
+        }
+      ],
+      "tags": [
+        "telic",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "lex-punctual",
+      "set": "telic",
+      "group": "telic-kinds",
+      "name": "Punctual",
+      "pic": "👆",
+      "eli5": "Done in a moment. A touch, a find, a hit — over as soon as it starts.",
+      "formula": {
+        "pattern": [
+          "bounded",
+          "+ an instant"
+        ],
+        "filled": [
+          "touch",
+          "a moment"
+        ]
+      },
+      "short": "Punctual",
+      "gist": "bounded, an instant",
+      "tile": "Touch",
+      "oneLine": "A bounded action with little perceived duration. Telic — prefers the aorist.",
+      "mnemonic": "Telic — Touch: the finish line is the starting line.",
+      "mnemonicWhy": "You cannot be halfway through a touch. It has an end, and the end comes at once.",
+      "spotIt": "Could you say ‘it took him a while to …’? If that sounds wrong, it is punctual.",
+      "bookDef": "TELIC · Punctual · Bounded actions with little perceived duration · Prefers Aorist",
+      "examples": [
+        {
+          "ref": "Matt 8:3",
+          "greek": "ἐκτείνας τὴν χεῖρα *ἥψατο* αὐτοῦ",
+          "english": "stretching out his hand, he *touched* him",
+          "note": "A touch is bounded and instant — punctual, in the aorist it prefers."
+        }
+      ],
+      "watchOut": "Punctual is the verb's meaning, not the aorist's. The aorist is not ‘punctual’ in itself — see John 2:20, forty-six years of building in the aorist.",
+      "tags": [
+        "telic",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "lex-stative",
+      "set": "telic",
+      "group": "atelic-kinds",
+      "name": "Stative (verb type)",
+      "pic": "❤️",
+      "eli5": "Not doing anything — just being, having, loving, knowing. It holds, and nothing in it says when it stops.",
+      "formula": {
+        "pattern": [
+          "a state",
+          "or a relationship"
+        ],
+        "filled": [
+          "the Father loves",
+          "the Son"
+        ]
+      },
+      "short": "Stative (verb)",
+      "gist": "states and relationships",
+      "tile": "Be",
+      "oneLine": "States and relationships. Atelic — prefers the present/imperfect.",
+      "mnemonic": "Atelic — Be: it just holds.",
+      "mnemonicWhy": "Being, loving, knowing do not head anywhere. With no finish line in the meaning, the ongoing present is their natural home.",
+      "spotIt": "Is the verb a state or a relationship rather than an action — be, have, love, know, remain? Stative.",
+      "bookDef": "ATELIC · Stative · States and relationships · Prefers Present/Imperfect",
+      "examples": [
+        {
+          "ref": "John 3:35",
+          "greek": "ὁ πατὴρ *ἀγαπᾷ* τὸν υἱόν",
+          "english": "The Father *loves* the Son",
+          "note": "A relationship, not an event — stative, in the present it prefers."
+        },
+        {
+          "ref": "John 1:1",
+          "greek": "Ἐν ἀρχῇ *ἦν* ὁ λόγος",
+          "english": "In the beginning *was* the Word",
+          "note": "εἰμί is a state — and comes in the imperfect, its default."
+        }
+      ],
+      "watchOut": "Not the stative aspect. Stative aspect is the perfect/pluperfect form; a stative verb is a meaning, and it prefers the present.",
+      "tags": [
+        "telic",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "lex-activity",
+      "set": "telic",
+      "group": "atelic-kinds",
+      "name": "Activity",
+      "pic": "🚶",
+      "eli5": "Doing something that could go on and on — walking, running, talking. Stop any time and you have still done it.",
+      "formula": {
+        "pattern": [
+          "an action",
+          "+ no built-in end"
+        ],
+        "filled": [
+          "walk",
+          "in the light"
+        ]
+      },
+      "short": "Activity",
+      "gist": "goes on, no built-in end",
+      "tile": "Walk",
+      "oneLine": "Actions with no inherent termination. Atelic — prefers the present/imperfect.",
+      "mnemonic": "Atelic — Walk: lap after lap, no tape.",
+      "mnemonicWhy": "Stop walking after a minute and you have walked. Nothing in the verb is waiting to be completed — so the present, the ongoing view, suits it.",
+      "spotIt": "Ask: if he stops halfway, has he still done it? Yes ⇒ atelic. And it is a doing, not a being ⇒ activity.",
+      "bookDef": "ATELIC · Activity · Actions with no inherent termination · Prefers Present/Imperfect",
+      "examples": [
+        {
+          "ref": "1 John 1:7",
+          "greek": "ἐὰν δὲ ἐν τῷ φωτὶ *περιπατῶμεν*",
+          "english": "but if we *walk* in the light",
+          "note": "Walking has no finish line — an activity, in the present it prefers."
+        },
+        {
+          "ref": "John 6:66",
+          "greek": "καὶ οὐκέτι μετ᾿ αὐτοῦ *περιεπάτουν*",
+          "english": "and they no longer *walked* with him",
+          "note": "The same verb in the past: imperfect, still its default."
+        }
+      ],
+      "tags": [
+        "telic",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "lex-default",
+      "set": "telic",
+      "group": "telic-default",
+      "type": "rule",
+      "name": "Default or Not",
+      "pic": "🎯",
+      "eli5": "Each kind of verb has a form it usually comes in. If it shows up in that form, there is nothing special to see. If it shows up in the other form, ask why.",
+      "formula": {
+        "pattern": [
+          "telic + aorist",
+          "atelic + present"
+        ],
+        "filled": [
+          "expected",
+          "expected"
+        ],
+        "note": "Anything else is the form to stop and think about."
+      },
+      "short": "Default",
+      "gist": "expected form, or a choice?",
+      "tile": "Default",
+      "oneLine": "A verb in the tense-form its type prefers is the default; in the other form it may be a deliberate choice.",
+      "mnemonic": "Usual lane, no mark. Other lane, circle it.",
+      "mnemonicWhy": "The book warns that communication ‘often involves convention rather than conscious choices’. The default form is convention. The marked form is where the interpretation lives.",
+      "spotIt": "Classify the verb (telic or atelic), check the form, and only read meaning into the aspect when the two do not match — or when another factor (lexical, grammatical, contextual) does not explain it.",
+      "bookDef": "In interpreting a given verb form, it will be important to determine whether the tense-form of the verb is the expected form or not.",
+      "examples": [
+        {
+          "ref": "John 2:20",
+          "greek": "τεσσεράκοντα καὶ ἓξ ἔτεσιν οἰκοδομήθη ὁ ναὸς οὗτος",
+          "english": "This temple was built in forty-six years"
+        }
+      ],
+      "tags": [
+        "telic",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-determination",
+      "set": "imperatives",
+      "group": "impv-lexical",
+      "name": "Lexical Determination",
+      "pic": "🔒",
+      "eli5": "Some verbs only come in one form, or nearly always do. Then the form tells you nothing — there was no choice.",
+      "formula": {
+        "pattern": [
+          "verb",
+          "comes in",
+          "one tense-form"
+        ],
+        "filled": [
+          "ἴδε / ἰδού",
+          "only",
+          "aorist"
+        ]
+      },
+      "short": "Determination",
+      "gist": "locked into one form",
+      "tile": "Locked",
+      "oneLine": "The verb is limited to one tense-form (εἰμί, οἶδα present; ἴδε, ἰδού aorist), or almost always found in one (verbs of motion in the present).",
+      "mnemonic": "Lexical — Locked: no choice, no meaning.",
+      "mnemonicWhy": "If ἴδε is the only way to say ‘look!’, its aorist is not saying anything. You can only read a choice where there was one.",
+      "spotIt": "Is it εἰμί, οἶδα, ἴδε, ἰδού — or a verb of motion (come, go, flee, bring) in the present? Determination.",
+      "bookDef": "When a verb is limited to a particular tense-form (e.g., εἰμί and οἶδα = present; ἴδε and ἰδού = aorist) or is almost always found in a particular tense-form (e.g., verbs of motion occurring in the present tense-form).",
+      "examples": [
+        {
+          "ref": "John 1:46",
+          "greek": "λέγει αὐτῷ ὁ Φίλιππος· *ἔρχου* καὶ *ἴδε*",
+          "english": "Philip said to him, “*Come* and *see*”",
+          "note": "Both locked: ἔρχου is a verb of motion in the present, ἴδε only comes aorist. Neither form is a choice."
+        }
+      ],
+      "tags": [
+        "imperatives",
+        "lexical",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-influence",
+      "set": "imperatives",
+      "group": "impv-lexical",
+      "name": "Lexical Influence",
+      "pic": "🧭",
+      "eli5": "Some verbs have a choice of form, but their meaning pulls them one way. ‘Take this’ is a one-off order; ‘live in love’ is a way of life.",
+      "formula": {
+        "pattern": [
+          "specific command",
+          "→ aorist",
+          "general instruction",
+          "→ present"
+        ],
+        "filled": [
+          "λάβετε",
+          "aorist",
+          "περιπατεῖτε",
+          "present"
+        ]
+      },
+      "short": "Influence",
+      "gist": "the meaning leans one way",
+      "tile": "Leaning",
+      "oneLine": "A verb's inherent meaning tilts its tense-form: verbs of specific commands prefer the aorist, verbs of general instructions the present.",
+      "mnemonic": "Lexical — Leaning: the compass in the margin.",
+      "mnemonicWhy": "Not locked — the verb could go either way — but what it means makes one form the usual one. A ‘take, eat’ verb leans aorist; a ‘walk, love’ verb leans present.",
+      "spotIt": "Does the verb itself name a specific deed (take, give, bring here) or a general way of acting (walk, love, keep on)? That is the way it leans.",
+      "bookDef": "The impact of a verb's inherent meaning on its usage in various tense-forms. Verbs that convey specific commands prefer the aorist whereas verbs that denote general instructions prefer the present.",
+      "examples": [
+        {
+          "ref": "Matt 26:26",
+          "greek": "*λάβετε* φάγετε, τοῦτό ἐστιν τὸ σῶμά μου",
+          "english": "*Take*, eat; this is my body",
+          "note": "A specific command in a verb that names a single deed — the aorist it leans toward."
+        },
+        {
+          "ref": "Eph 5:2",
+          "greek": "καὶ *περιπατεῖτε* ἐν ἀγάπῃ",
+          "english": "and *walk* in love",
+          "note": "A general instruction in a verb of ongoing conduct — the present it leans toward."
+        }
+      ],
+      "watchOut": "Close to the grammatical factor. Influence is about the verb's meaning everywhere; grammatical is about a telic or atelic verb meeting this occasion.",
+      "tags": [
+        "imperatives",
+        "lexical",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-specific",
+      "set": "imperatives",
+      "group": "impv-grammatical",
+      "name": "Specific Occasion (aorist)",
+      "pic": "🎯",
+      "eli5": "A one-off job: do this, now, here. The verb has an end, so the command comes in the aorist.",
+      "formula": {
+        "pattern": [
+          "telic verb",
+          "+ one occasion",
+          "→ aorist"
+        ],
+        "filled": [
+          "fill",
+          "the jars",
+          "γεμίσατε"
+        ]
+      },
+      "short": "Specific occasion",
+      "gist": "telic, one occasion — aorist",
+      "tile": "Once",
+      "oneLine": "Telic verbs, which naturally prefer the aorist, are often used to command or forbid an action on a specific occasion.",
+      "mnemonic": "Grammatical — Once: today's job, pinned to the board.",
+      "mnemonicWhy": "A telic verb already has a finish line; a command for one occasion just points at it. Aorist is the expected result — the default, not an emphasis.",
+      "spotIt": "Is the command about one deed, here and now, and does the verb have a natural end? Aorist is the default.",
+      "bookDef": "GRAMMATICAL · Telic verbs (which naturally prefer the aorist tense) were often used to command or forbid an action on a specific occasion.",
+      "examples": [
+        {
+          "ref": "John 2:7",
+          "greek": "λέγει αὐτοῖς ὁ Ἰησοῦς· *γεμίσατε* τὰς ὑδρίας ὕδατος",
+          "english": "Jesus said to them, “*Fill* the jars with water”",
+          "note": "Filling ends when the jars are full, and this is one occasion at Cana — telic, specific, aorist."
+        }
+      ],
+      "tags": [
+        "imperatives",
+        "grammatical",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-general",
+      "set": "imperatives",
+      "group": "impv-grammatical",
+      "name": "General Behaviour (present)",
+      "pic": "🔁",
+      "eli5": "Not one job but a way of living: keep doing this, always. The verb has no end, so the command comes in the present.",
+      "formula": {
+        "pattern": [
+          "atelic verb",
+          "+ a way of life",
+          "→ present"
+        ],
+        "filled": [
+          "love",
+          "your enemies",
+          "ἀγαπᾶτε"
+        ]
+      },
+      "short": "General behaviour",
+      "gist": "atelic, a habit — present",
+      "tile": "Always",
+      "oneLine": "Atelic verbs, which naturally prefer the present, are often used to command or forbid a general behaviour.",
+      "mnemonic": "Grammatical — Always: the standing orders on a loop.",
+      "mnemonicWhy": "Loving and praying have no finish line, and the command is for every day. The present is the default — it is not shouting ‘keep on!’ by itself.",
+      "spotIt": "Is the command a rule for life rather than one deed, and does the verb have no natural end? Present is the default.",
+      "bookDef": "GRAMMATICAL · Atelic verbs (which naturally prefer the present tense) were often used to command or forbid a general behavior.",
+      "examples": [
+        {
+          "ref": "Matt 5:44",
+          "greek": "*ἀγαπᾶτε* τοὺς ἐχθροὺς ὑμῶν καὶ *προσεύχεσθε* ὑπὲρ τῶν διωκόντων ὑμᾶς",
+          "english": "*Love* your enemies and *pray* for those who persecute you",
+          "note": "Loving and praying are atelic, and this is a way of life, not one occasion — present, the default."
+        }
+      ],
+      "tags": [
+        "imperatives",
+        "grammatical",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-prayer-narrative",
+      "set": "imperatives",
+      "group": "impv-contextual",
+      "name": "Prayers & Narratives (aorist)",
+      "pic": "🙏",
+      "eli5": "When people pray, or when a story reports what somebody said, the commands are usually aorist.",
+      "formula": {
+        "pattern": [
+          "prayer or story",
+          "→ aorist",
+          "preferred"
+        ],
+        "filled": [
+          "give us today",
+          "δός",
+          "aorist"
+        ]
+      },
+      "short": "Prayer & narrative",
+      "gist": "prayers and stories — aorist",
+      "tile": "Pray & tell",
+      "oneLine": "Aorist imperatives are preferred in prayers and historical narratives.",
+      "mnemonic": "Contextual — Pray & tell: the chapel and the storyteller's tent fly the aorist flag.",
+      "mnemonicWhy": "A prayer asks for something specific; a story reports specific orders on specific days. The genre makes the aorist the normal form.",
+      "spotIt": "Is the command in a prayer, or spoken inside a narrative? Expect the aorist; it is the default there.",
+      "bookDef": "CONTEXTUAL · Aorist imperatives are preferred in prayers and historical narratives",
+      "examples": [
+        {
+          "ref": "Matt 6:11",
+          "greek": "τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον *δὸς* ἡμῖν σήμερον",
+          "english": "*Give* us today our daily bread",
+          "note": "A prayer — and an aorist imperative, the default in prayer, even for a daily request."
+        },
+        {
+          "ref": "Luke 18:13",
+          "greek": "ὁ θεός, *ἱλάσθητί* μοι τῷ ἁμαρτωλῷ",
+          "english": "God, *be merciful* to me, the sinner",
+          "note": "The tax collector's prayer: aorist imperative, as prayers prefer."
+        }
+      ],
+      "tags": [
+        "imperatives",
+        "contextual",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "impv-epistle",
+      "set": "imperatives",
+      "group": "impv-contextual",
+      "name": "Epistles (present)",
+      "pic": "✉️",
+      "eli5": "In the letters, the commands are usually present — instructions for how to keep living. 1 Peter is the odd one out.",
+      "formula": {
+        "pattern": [
+          "epistle",
+          "→ present",
+          "preferred"
+        ],
+        "filled": [
+          "rejoice always",
+          "χαίρετε",
+          "present"
+        ],
+        "note": "Except 1 Peter, which leans aorist."
+      },
+      "short": "Epistles",
+      "gist": "letters — present (not 1 Peter)",
+      "tile": "Write",
+      "oneLine": "Present imperatives are preferred in epistles — except in 1 Peter.",
+      "mnemonic": "Contextual — Write: the post office flies the present flag, but Peter's envelope is stamped aorist.",
+      "mnemonicWhy": "Letters mostly give standing instructions to a church, so the present is the usual form. 1 Peter breaks the pattern, so an aorist command there is less surprising.",
+      "spotIt": "Is the command in a letter? Expect the present. An aorist in an epistle (outside 1 Peter) is worth a second look.",
+      "bookDef": "CONTEXTUAL · Present imperatives are preferred in epistles (except in 1 Peter)",
+      "examples": [
+        {
+          "ref": "1 Thess 5:16–17",
+          "greek": "πάντοτε *χαίρετε*, ἀδιαλείπτως *προσεύχεσθε*",
+          "english": "*Rejoice* always, *pray* without ceasing",
+          "note": "A letter giving standing instructions — present imperatives, the epistolary default."
+        },
+        {
+          "ref": "1 Pet 1:13",
+          "greek": "νήφοντες τελείως *ἐλπίσατε* ἐπὶ τὴν φερομένην ὑμῖν χάριν",
+          "english": "being sober-minded, *set your hope* fully on the grace being brought to you",
+          "note": "The exception the chart names: 1 Peter prefers the aorist even in a letter."
+        }
+      ],
+      "tags": [
+        "imperatives",
+        "contextual",
+        "ch-7"
+      ]
+    },
+    {
       "id": "pron-personal",
       "set": "pronoun",
       "group": "pronoun-kinds",
@@ -9691,6 +10571,94 @@
       "test": "Swap in “very” and then “in this way”.",
       "answer": "“To what extent?” ⇒ degree (λίαν, περισσόν, μᾶλλον). “In what way?” ⇒ manner (ὁμοίως, καλῶς, most -ως words).",
       "example": "περισσὸν ἔχωσιν (John 10:10) · ὁμοίως ὁ ἐλεύθερος (1 Cor 7:22)."
+    },
+    {
+      "id": "stative-aspect-or-verb",
+      "pair": [
+        "aspect-stative",
+        "lex-stative"
+      ],
+      "question": "Stative — the aspect, or the kind of verb?",
+      "test": "Are you looking at the form, or at the dictionary meaning?",
+      "answer": "A perfect or pluperfect form, a state left by an earlier action ⇒ stative aspect. A verb that means a state or relationship (be, love, know), whatever its form ⇒ the stative verb type, which prefers the present.",
+      "example": "τετέλεσται (John 19:30, stative aspect) · ὁ πατὴρ ἀγαπᾷ τὸν υἱόν (John 3:35, stative verb, present)."
+    },
+    {
+      "id": "photo-or-footprint",
+      "pair": [
+        "aspect-perfective",
+        "aspect-stative"
+      ],
+      "question": "Aorist or perfect — done, or done and still standing?",
+      "test": "Is the point the event, or the state it left?",
+      "answer": "The action seen whole, full stop ⇒ perfective (aorist). The result still standing is the point ⇒ stative (perfect).",
+      "example": "ἐδάκρυσεν (John 11:35, perfective) · ἐγήγερται (1 Cor 15:4, stative)."
+    },
+    {
+      "id": "film-or-photo",
+      "pair": [
+        "aspect-imperfective",
+        "aspect-perfective"
+      ],
+      "question": "Imperfect or aorist — watching it, or seeing it whole?",
+      "test": "Is the story stopping inside the action, or stepping past it?",
+      "answer": "Inside it, still going ⇒ imperfective (imperfect). The whole event in one frame ⇒ perfective (aorist). Narrative runs on aorists and pauses on imperfects.",
+      "example": "προσετίθει (Acts 2:47, imperfective) · ἐδάκρυσεν (John 11:35, perfective)."
+    },
+    {
+      "id": "build-or-touch",
+      "pair": [
+        "lex-performance",
+        "lex-punctual"
+      ],
+      "question": "Bounded — but does it take time?",
+      "test": "Could you say ‘it took him a while to …’?",
+      "answer": "Yes, like building ⇒ performance. No, like touching ⇒ punctual. Both are telic and both prefer the aorist.",
+      "example": "ᾠκοδόμησεν (Matt 7:24, performance) · ἥψατο (Matt 8:3, punctual)."
+    },
+    {
+      "id": "build-or-walk",
+      "pair": [
+        "lex-performance",
+        "lex-activity"
+      ],
+      "question": "Is there a finish line?",
+      "test": "If he stops halfway, has he done it?",
+      "answer": "No — half a house is not a house ⇒ performance, telic, prefers the aorist. Yes — stop after a minute and he has still walked ⇒ activity, atelic, prefers the present.",
+      "example": "ᾠκοδόμησεν τὴν οἰκίαν (Matt 7:24) · περιπατῶμεν (1 John 1:7)."
+    },
+    {
+      "id": "locked-or-leaning",
+      "pair": [
+        "impv-determination",
+        "impv-influence"
+      ],
+      "question": "Locked, or leaning?",
+      "test": "Does the verb really have a choice of tense-form?",
+      "answer": "No, or almost never (εἰμί, οἶδα, ἴδε, ἰδού, verbs of motion) ⇒ determination. Yes, but its meaning tilts it one way ⇒ influence.",
+      "example": "ἔρχου καὶ ἴδε (John 1:46, determination) · λάβετε (Matt 26:26, influence)."
+    },
+    {
+      "id": "verb-or-occasion",
+      "pair": [
+        "impv-influence",
+        "impv-specific"
+      ],
+      "question": "An aorist command — because of the verb, or because of the occasion?",
+      "test": "Would the verb lean aorist anywhere, or is it this one occasion that makes it aorist?",
+      "answer": "The verb's meaning names a specific deed wherever it occurs ⇒ lexical influence. A telic verb meeting one specific occasion ⇒ grammatical. Often both point the same way — which only makes the aorist more expected.",
+      "example": "λάβετε φάγετε (Matt 26:26) · γεμίσατε τὰς ὑδρίας (John 2:7)."
+    },
+    {
+      "id": "aorist-or-perfective",
+      "pair": [
+        "tense-aorist",
+        "aspect-perfective"
+      ],
+      "question": "Aorist or perfective?",
+      "test": "Are you naming the form, or the view?",
+      "answer": "Aorist is the tense-form — the shape on the page. Perfective is the aspect — how the action is viewed. The aorist carries the perfective view; outside the indicative it carries nothing else.",
+      "example": "ἔλυσα (the aorist form) · ‘action viewed as complete, as a whole’ (the perfective view)."
     }
   ],
   "extraQuiz": [
@@ -10100,6 +11068,226 @@
       "unofficial": true
     },
     {
+      "prompt": "And he comes home, and the crowd gathers again",
+      "greek": "καὶ *ἔρχεται* εἰς οἶκον· καὶ συνέρχεται πάλιν [ὁ] ὄχλος (Mark 3:20)",
+      "english": "And he comes home, and the crowd gathers again",
+      "ref": "ch. 7 practice 1a",
+      "target": "ἔρχεται",
+      "answer": "aspect-imperfective",
+      "why": "Present middle indicative, 3rd singular, ἔρχομαι — imperfective. A present in past narrative: Mark's historical present, putting the reader in the room. Verbs of motion are the ones that most often take it.",
+      "unofficial": true
+    },
+    {
+      "prompt": "And he comes home, and the crowd gathers again",
+      "greek": "καὶ ἔρχεται εἰς οἶκον· καὶ *συνέρχεται* πάλιν [ὁ] ὄχλος (Mark 3:20)",
+      "english": "And he comes home, and the crowd gathers again",
+      "ref": "ch. 7 practice 1b",
+      "target": "συνέρχεται",
+      "answer": "aspect-imperfective",
+      "why": "Present middle indicative, 3rd singular, συνέρχομαι — imperfective, a second historical present. The crowd is pictured gathering as we watch.",
+      "unofficial": true
+    },
+    {
+      "prompt": "And the two disciples heard him speaking, and they followed Jesus",
+      "greek": "καὶ *ἤκουσαν* οἱ δύο μαθηταὶ αὐτοῦ λαλοῦντος καὶ ἠκολούθησαν τῷ Ἰησοῦ (John 1:37)",
+      "english": "And the two disciples heard him speaking, and they followed Jesus",
+      "ref": "ch. 7 practice 2a",
+      "target": "ἤκουσαν",
+      "answer": "aspect-perfective",
+      "why": "Aorist active indicative, 3rd plural, ἀκούω — perfective. The narrative's main line, told as one whole event.",
+      "unofficial": true
+    },
+    {
+      "prompt": "And the two disciples heard him speaking, and they followed Jesus",
+      "greek": "καὶ ἤκουσαν οἱ δύο μαθηταὶ αὐτοῦ λαλοῦντος καὶ *ἠκολούθησαν* τῷ Ἰησοῦ (John 1:37)",
+      "english": "And the two disciples heard him speaking, and they followed Jesus",
+      "ref": "ch. 7 practice 2b",
+      "target": "ἠκολούθησαν",
+      "answer": "aspect-perfective",
+      "why": "Aorist active indicative, 3rd plural, ἀκολουθέω — perfective. Hearing and following are told as two whole steps; the ongoing speaking sits in the present participle λαλοῦντος.",
+      "unofficial": true
+    },
+    {
+      "prompt": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "greek": "ὃ *ἑώρακεν* καὶ ἤκουσεν τοῦτο μαρτυρεῖ, καὶ τὴν μαρτυρίαν αὐτοῦ οὐδεὶς λαμβάνει (John 3:32)",
+      "english": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "ref": "ch. 7 practice 3a",
+      "target": "ἑώρακεν",
+      "answer": "aspect-stative",
+      "why": "Perfect active indicative, 3rd singular, ὁράω — stative. What he saw is a state he now stands in: he is an eyewitness.",
+      "unofficial": true
+    },
+    {
+      "prompt": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "greek": "ὃ ἑώρακεν καὶ *ἤκουσεν* τοῦτο μαρτυρεῖ, καὶ τὴν μαρτυρίαν αὐτοῦ οὐδεὶς λαμβάνει (John 3:32)",
+      "english": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "ref": "ch. 7 practice 3b",
+      "target": "ἤκουσεν",
+      "answer": "aspect-perfective",
+      "why": "Aorist active indicative, 3rd singular, ἀκούω — perfective. Side by side with the perfect ἑώρακεν: the hearing is told as an event, the seeing as a state.",
+      "unofficial": true
+    },
+    {
+      "prompt": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "greek": "ὃ ἑώρακεν καὶ ἤκουσεν τοῦτο *μαρτυρεῖ*, καὶ τὴν μαρτυρίαν αὐτοῦ οὐδεὶς λαμβάνει (John 3:32)",
+      "english": "What he has seen and heard, to this he testifies, and no one receives his testimony",
+      "ref": "ch. 7 practice 3c",
+      "target": "μαρτυρεῖ",
+      "answer": "aspect-imperfective",
+      "why": "Present active indicative, 3rd singular, μαρτυρέω — imperfective. The testifying is pictured as going on.",
+      "unofficial": true
+    },
+    {
+      "prompt": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "greek": "καὶ *ἥψατο* τῆς χειρὸς αὐτῆς, καὶ ἀφῆκεν αὐτὴν ὁ πυρετός, καὶ ἠγέρθη καὶ διηκόνει αὐτῷ (Matt 8:15)",
+      "english": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "ref": "ch. 7 practice 4a",
+      "target": "ἥψατο",
+      "answer": "aspect-perfective",
+      "why": "Aorist middle indicative, 3rd singular, ἅπτομαι — perfective. A touch is punctual and telic, so the aorist is its default.",
+      "unofficial": true
+    },
+    {
+      "prompt": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "greek": "καὶ ἥψατο τῆς χειρὸς αὐτῆς, καὶ *ἀφῆκεν* αὐτὴν ὁ πυρετός, καὶ ἠγέρθη καὶ διηκόνει αὐτῷ (Matt 8:15)",
+      "english": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "ref": "ch. 7 practice 4b",
+      "target": "ἀφῆκεν",
+      "answer": "aspect-perfective",
+      "why": "Aorist active indicative, 3rd singular, ἀφίημι — perfective. The second of three aorists that carry the story forward.",
+      "unofficial": true
+    },
+    {
+      "prompt": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "greek": "καὶ ἥψατο τῆς χειρὸς αὐτῆς, καὶ ἀφῆκεν αὐτὴν ὁ πυρετός, καὶ *ἠγέρθη* καὶ διηκόνει αὐτῷ (Matt 8:15)",
+      "english": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "ref": "ch. 7 practice 4c",
+      "target": "ἠγέρθη",
+      "answer": "aspect-perfective",
+      "why": "Aorist passive indicative, 3rd singular, ἐγείρω — perfective. Getting up is a bounded act, told whole.",
+      "unofficial": true
+    },
+    {
+      "prompt": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "greek": "καὶ ἥψατο τῆς χειρὸς αὐτῆς, καὶ ἀφῆκεν αὐτὴν ὁ πυρετός, καὶ ἠγέρθη καὶ *διηκόνει* αὐτῷ (Matt 8:15)",
+      "english": "He touched her hand, and the fever left her, and she got up and began to serve him",
+      "ref": "ch. 7 practice 4d",
+      "target": "διηκόνει",
+      "answer": "aspect-imperfective",
+      "why": "Imperfect active indicative, 3rd singular, διακονέω — imperfective. After three aorists, the story stops on an imperfect: her serving is pictured as going on (‘began to serve’).",
+      "unofficial": true
+    },
+    {
+      "prompt": "Then Jerusalem and all Judea were going out to him … and they were being baptised by him in the Jordan river",
+      "greek": "τότε *ἐξεπορεύετο* πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία … καὶ ἐβαπτίζοντο ἐν τῷ Ἰορδάνῃ ποταμῷ ὑπ᾿ αὐτοῦ (Matt 3:5–6)",
+      "english": "Then Jerusalem and all Judea were going out to him … and they were being baptised by him in the Jordan river",
+      "ref": "ch. 7 practice 5a",
+      "target": "ἐξεπορεύετο",
+      "answer": "aspect-imperfective",
+      "why": "Imperfect middle indicative, 3rd singular, ἐκπορεύομαι — imperfective. Crowd after crowd, pictured as a stream that kept coming. (The book prints Matt 3:5; ἐβαπτίζοντο is in 3:6 in the Greek text.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "Then Jerusalem and all Judea were going out to him … and they were being baptised by him in the Jordan river",
+      "greek": "τότε ἐξεπορεύετο πρὸς αὐτὸν Ἱεροσόλυμα καὶ πᾶσα ἡ Ἰουδαία … καὶ *ἐβαπτίζοντο* ἐν τῷ Ἰορδάνῃ ποταμῷ ὑπ᾿ αὐτοῦ (Matt 3:5–6)",
+      "english": "Then Jerusalem and all Judea were going out to him … and they were being baptised by him in the Jordan river",
+      "ref": "ch. 7 practice 5b",
+      "target": "ἐβαπτίζοντο",
+      "answer": "aspect-imperfective",
+      "why": "Imperfect passive indicative, 3rd plural, βαπτίζω — imperfective. One baptism after another, pictured as going on.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Get up, take the child and his mother, and flee to Egypt",
+      "greek": "ἐγερθεὶς *παράλαβε* τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ φεῦγε εἰς Αἴγυπτον (Matt 2:13)",
+      "english": "Get up, take the child and his mother, and flee to Egypt",
+      "ref": "ch. 7 practice 6a",
+      "target": "παράλαβε",
+      "answer": "impv-specific",
+      "why": "Aorist active imperative, 2nd singular, παραλαμβάνω — perfective. Taking them is telic, and this is one specific night: the aorist is the default, not an emphasis.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Get up, take the child and his mother, and flee to Egypt",
+      "greek": "ἐγερθεὶς παράλαβε τὸ παιδίον καὶ τὴν μητέρα αὐτοῦ καὶ *φεῦγε* εἰς Αἴγυπτον (Matt 2:13)",
+      "english": "Get up, take the child and his mother, and flee to Egypt",
+      "ref": "ch. 7 practice 6b",
+      "target": "φεῦγε",
+      "answer": "impv-determination",
+      "why": "Present active imperative, 2nd singular, φεύγω — imperfective. A verb of motion, which the chart says almost always comes in the present: lexical determination, so the default. It is not ‘keep fleeing’.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Put your finger here and see my hands",
+      "greek": "φέρε τὸν δάκτυλόν σου ὧδε καὶ *ἴδε* τὰς χεῖράς μου (John 20:27)",
+      "english": "Put your finger here and see my hands",
+      "ref": "ch. 7 practice 7a",
+      "target": "ἴδε",
+      "answer": "impv-determination",
+      "why": "Aorist imperative, 2nd singular, ὁράω (εἶδον) — perfective. The chart names ἴδε itself: it only comes aorist, so the form says nothing. (The book glosses it ‘aor mid impv’; the form is active.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "and bring your hand and put it into my side",
+      "greek": "καὶ *φέρε* τὴν χεῖρά σου καὶ βάλε εἰς τὴν πλευράν μου (John 20:27)",
+      "english": "and bring your hand and put it into my side",
+      "ref": "ch. 7 practice 7b",
+      "target": "φέρε",
+      "answer": "impv-determination",
+      "why": "Present imperative, 2nd singular, φέρω — imperfective. A verb of carrying and motion whose imperative is nearly always present (φέρε, φέρετε): determination, the default. (The book glosses it ‘pres mid impv’; the form is active.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "and bring your hand and put it into my side",
+      "greek": "καὶ φέρε τὴν χεῖρά σου καὶ *βάλε* εἰς τὴν πλευράν μου (John 20:27)",
+      "english": "and bring your hand and put it into my side",
+      "ref": "ch. 7 practice 7c",
+      "target": "βάλε",
+      "answer": "impv-specific",
+      "why": "Aorist imperative, 2nd singular, βάλλω — perfective. Putting the hand in is telic and for this one occasion: grammatical, and the default. Note φέρε (present) and βάλε (aorist) in the same breath — the difference is the verbs, not Jesus' emphasis. (The book glosses it ‘aor mid impv’; the form is active.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "So they shouted, “Away with him, away with him, crucify him!”",
+      "greek": "ἐκραύγασαν οὖν ἐκεῖνοι· *ἆρον* ἆρον, σταύρωσον αὐτόν (John 19:15)",
+      "english": "So they shouted, “Away with him, away with him, crucify him!”",
+      "ref": "ch. 7 practice 8a",
+      "target": "ἆρον",
+      "answer": "impv-specific",
+      "why": "Aorist active imperative, 2nd singular, αἴρω — perfective. A telic verb demanding one deed on one occasion: grammatical, the default. (It is also a command inside a narrative, which prefers the aorist too.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "So they shouted, “Away with him, away with him, crucify him!”",
+      "greek": "ἐκραύγασαν οὖν ἐκεῖνοι· ἆρον ἆρον, *σταύρωσον* αὐτόν (John 19:15)",
+      "english": "So they shouted, “Away with him, away with him, crucify him!”",
+      "ref": "ch. 7 practice 8b",
+      "target": "σταύρωσον",
+      "answer": "impv-specific",
+      "why": "Aorist active imperative, 2nd singular, σταυρόω — perfective. Crucifying is telic and this is one specific demand: the expected aorist.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Put on then, as God's chosen ones … compassion, kindness, humility … bearing with one another",
+      "greek": "*ἐνδύσασθε* οὖν, ὡς ἐκλεκτοὶ τοῦ θεοῦ … σπλάγχνα οἰκτιρμοῦ χρηστότητα ταπεινοφροσύνην … ἀνεχόμενοι ἀλλήλων (Col 3:12–13)",
+      "english": "Put on then, as God's chosen ones … compassion, kindness, humility … bearing with one another",
+      "ref": "ch. 7 practice 9a",
+      "target": "ἐνδύσασθε",
+      "answer": "aspect-perfective",
+      "why": "Aorist middle imperative, 2nd plural, ἐνδύω — perfective. Putting on clothes is telic, but this is a letter, where the present is preferred: the aorist is not the contextual default. It pictures the new character as put on, whole — the same verb as ἐνδυσάμενοι in 3:10.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Put on then … compassion … bearing with one another and forgiving each other",
+      "greek": "ἐνδύσασθε οὖν … σπλάγχνα οἰκτιρμοῦ … *ἀνεχόμενοι* ἀλλήλων καὶ χαριζόμενοι ἑαυτοῖς (Col 3:12–13)",
+      "english": "Put on then … compassion … bearing with one another and forgiving each other",
+      "ref": "ch. 7 practice 9b",
+      "target": "ἀνεχόμενοι",
+      "answer": "aspect-imperfective",
+      "why": "Present middle participle, nominative masculine plural, ἀνέχομαι — imperfective. Bearing with one another is atelic and ongoing: the present is the default.",
+      "unofficial": true
+    },
+    {
       "prompt": "Which preposition? Only the accusative, “each, in turn, up”.",
       "ref": "ch. 12 chart",
       "answer": "prep-ana",
@@ -10283,8 +11471,8 @@
     }
   ],
   "world": {
-    "name": "One street, sixteen stops",
-    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime, stand in, cross, change trains, tune, ring.",
-    "why": "Sixteen places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
+    "name": "One street, nineteen stops",
+    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime, develop, race, drill, stand in, cross, change trains, tune, ring.",
+    "why": "Nineteen places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
   }
 }
