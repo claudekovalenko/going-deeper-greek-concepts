@@ -1,8 +1,8 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–7 and 12 — the cases, the article, the adjective, the verb and its aspect, and the little words",
+  "chapter": "ch. 2–7 and 12 — the cases, the article, the adjective, the verb, its aspect and tense-forms, and the little words",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
-  "generated": "2026-10-28",
+  "generated": "2026-10-31",
   "notes": [
     "Every card carries a mnemonic hook, a plain one-line definition, a test you can actually run on a text, and real examples.",
     "eli5: the like-I'm-five line. It leads every card, above the pattern — plain words, a picture you can see, and no grammar terms at all.",
@@ -632,6 +632,87 @@
           "expand": "Prayers and historical narratives — aorist preferred · Epistles — present preferred (except 1 Peter)",
           "spot": "🗺️",
           "scene": "The posting map 🗺️: the chapel 🙏 and the storyteller's tent both flagged aorist, the post office ✉️ flagged present — with one envelope from Peter stamped the other way."
+        }
+      ]
+    },
+    {
+      "id": "aorist",
+      "name": "Aorist Indicative",
+      "verb": "Snaps",
+      "does": "snaps the event whole — or, now and then, something that is not past at all",
+      "subtitle": "Seven uses: three about the event itself, four where the aorist is not telling you about the past.",
+      "eli5": "The aorist takes one picture of the whole thing. Usually it is something that happened. Sometimes the picture is of the start, or the finish — and sometimes it is of something always true, or not even happened yet.",
+      "color": "#2980b9",
+      "classDate": "2026-11-03",
+      "bigIdea": "The aorist's aspect is perfective — the whole event in one frame — and context decides which part of it the frame lands on: the whole (constative), the start (inceptive), the end (culminative). Four more uses show the indicative aorist is not simply 'past': a timeless truth (gnomic), a letter written from the readers' side (epistolary), something still to come told as done (futuristic), something just now happened (dramatic).",
+      "masterMnemonic": "Whole · Start · End — Always · Letter · Not yet · Just now.",
+      "masterMnemonicWhy": "Three photos of an event — all of it, its first moment, its last — and then four photos that are not of the past at all. If the aorist will not translate as a simple past, it is in the second row.",
+      "place": "🖼️",
+      "placeName": "The Gallery",
+      "scene": "A long gallery wall 🖼️. On the left, three photos of one race — the whole race, the starting gun, the tape. On the right, four odd ones: a framed proverb, a postcard, a prophecy poster, a breaking-news front page.",
+      "groups": [
+        {
+          "id": "aorist-event",
+          "name": "The event itself",
+          "key": "Whole · Start · End",
+          "mnemonic": "Whole · Start · End — the whole thing, its first moment, its last.",
+          "expand": "Constative — in its entirety · Inceptive — the beginning · Culminative — the cessation",
+          "spot": "📸",
+          "scene": "Three photos of one race 📸: the whole field from the grandstand 🖼️, the first stride off the line 🌱, and a graduate's cap thrown in the air at the end 🎓."
+        },
+        {
+          "id": "aorist-not-past",
+          "name": "Aorists that are not about the past",
+          "key": "Always · Letter · Not yet · Just now",
+          "mnemonic": "Always · Letter · Not yet · Just now — the aorist without a date on it.",
+          "expand": "Gnomic — timeless, universal truth · Epistolary — written from the readers' point of view · Futuristic — not yet happened, told as if it had · Dramatic — recently happened, with present consequences",
+          "spot": "🗓️",
+          "scene": "Four frames with no date on them 🗓️: a stitched proverb 📜, a postcard 📮 that says 'I wrote' though the ink is still wet, a prophecy poster 🔭, and a front page 🚨 that went to press a minute ago."
+        }
+      ]
+    },
+    {
+      "id": "perfect",
+      "name": "Perfect & Pluperfect",
+      "verb": "Stands",
+      "does": "says the result still stands — now (perfect) or back then (pluperfect)",
+      "subtitle": "Nine uses: the result or the deed, a few special verbs, and the pluperfect doing the same one step back.",
+      "eli5": "Something happened, and what it left behind is still standing. The perfect says it is standing now. The pluperfect says it was standing then.",
+      "color": "#8e6c3a",
+      "classDate": "2026-11-03",
+      "bigIdea": "Every perfect has two halves — a past action and the state it left. Intensive leans on the state, consummative on the action. The perfect can also be dramatic, gnomic or iterative, and with a few verbs (οἶδα) it has simply become a present. The pluperfect repeats the pattern in the past: intensive, consummative, and a past state with no earlier action (ᾔδειν).",
+      "masterMnemonic": "Result · Deed — Vivid · Know · Always · Again — and the pluperfect: Result · Deed · Knew.",
+      "masterMnemonicWhy": "Intensive points at the result, consummative at the deed — in both tenses. The perfect has four more; the pluperfect only one, the past twin of 'know'.",
+      "place": "🏛️",
+      "placeName": "The Monument",
+      "scene": "A square with a monument 🏛️ in the middle: carved for something long over, still standing today. Round the base, older plinths that once stood and have since been taken away.",
+      "groups": [
+        {
+          "id": "perf-core",
+          "name": "Perfect — the result or the deed",
+          "key": "Result · Deed",
+          "mnemonic": "Result — the state standing now. Deed — the act that left it.",
+          "expand": "Intensive — the present state brought about by a past action · Consummative — the completed action that brought about the state",
+          "spot": "🗿",
+          "scene": "The monument 🗿 itself: the plaque on the front reads what stands now 🕊️, the plaque on the back reads the battle that was fought 🥊 to get it."
+        },
+        {
+          "id": "perf-special",
+          "name": "Perfect — four more",
+          "key": "Vivid · Know · Always · Again",
+          "mnemonic": "Vivid · Know · Always · Again — dramatic, present state, gnomic, iterative.",
+          "expand": "Dramatic — vividly portrays a past event · Present state — verbs like οἶδα, with present meaning · Gnomic — a customary or general truth · Iterative — occurred at intervals",
+          "spot": "🏛️",
+          "scene": "Round the square: a statue caught mid-stride 🎭, a guide who simply knows 🧠, a law carved over the courthouse ⚖️, and a guestbook 👀 signed again and again."
+        },
+        {
+          "id": "plupf",
+          "name": "Pluperfect — one step back",
+          "key": "Result · Deed · Knew",
+          "mnemonic": "Result · Deed · Knew — the perfect's pattern, standing in the past.",
+          "expand": "Intensive — the past results of a past action · Consummative — the completion of a past action · Past state — a past state with no antecedent action",
+          "spot": "🪦",
+          "scene": "The old plinths 🪦: one still showing what stood there then 🙏, one recording the march that had already gone into town 🚶, and one marking what everyone knew 💡."
         }
       ]
     },
@@ -7531,6 +7612,648 @@
       ]
     },
     {
+      "id": "aor-constative",
+      "set": "aorist",
+      "group": "aorist-event",
+      "name": "Constative Aorist",
+      "pic": "🖼️",
+      "eli5": "The whole thing in one picture, start to finish, without caring how long it took. Death reigned from Adam to Moses — thousands of years, one word.",
+      "formula": {
+        "pattern": [
+          "the action",
+          "in its entirety"
+        ],
+        "filled": [
+          "ἐβασίλευσεν",
+          "Adam → Moses"
+        ]
+      },
+      "short": "Constative",
+      "gist": "the whole thing, no matter how long",
+      "tile": "Whole",
+      "oneLine": "The action portrayed in its entirety, with no regard to its beginning, its end, or how long it took.",
+      "mnemonic": "Aorist — Whole: the grandstand photo of the whole race.",
+      "mnemonicWhy": "This is the aorist's own aspect with nothing added: one frame, the whole event. Thousands of years can go in it.",
+      "spotIt": "A simple past fits, and nothing in the context points at the start or the end. Long stretches of time with an aorist are the giveaway.",
+      "bookDef": "An action is portrayed in its entirety without regard to its beginning or end, or the length of time it took to accomplish the action.",
+      "examples": [
+        {
+          "ref": "Rom 5:14",
+          "greek": "*ἐβασίλευσεν* ὁ θάνατος ἀπὸ Ἀδὰμ μέχρι Μωϋσέως",
+          "english": "Death *reigned* from Adam to Moses",
+          "note": "Thousands of years in one aorist: the reign is seen whole. (The chart prints Rom 5:4; the words are in 5:14.)"
+        }
+      ],
+      "watchOut": "Not ‘once’ and not ‘quick’. The reign from Adam to Moses is constative.",
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-inceptive",
+      "set": "aorist",
+      "group": "aorist-event",
+      "name": "Inceptive Aorist",
+      "pic": "🌱",
+      "eli5": "The picture is of the first moment — when it started. He was rich, and he became poor.",
+      "formula": {
+        "pattern": [
+          "began to",
+          "/ became"
+        ],
+        "filled": [
+          "ἐπτώχευσεν",
+          "he became poor"
+        ]
+      },
+      "short": "Inceptive",
+      "gist": "the beginning — ‘became’, ‘began to’",
+      "tile": "Start",
+      "oneLine": "The aorist emphasises the beginning of an action or a state.",
+      "mnemonic": "Aorist — Start: the photo of the first stride off the line.",
+      "mnemonicWhy": "Verbs of state (be poor, live, reign, be silent) in the aorist often mean entering the state. ‘Became’ or ‘began to’ is the translation test.",
+      "spotIt": "Try ‘became …’ or ‘began to …’. If it reads better than the plain past — especially with a verb of state — it is inceptive.",
+      "bookDef": "Emphasizes the beginning of an action or a state.",
+      "examples": [
+        {
+          "ref": "2 Cor 8:9",
+          "greek": "δι᾿ ὑμᾶς *ἐπτώχευσεν* πλούσιος ὤν",
+          "english": "though he was rich, he *became poor* for your sake",
+          "note": "πτωχεύω is ‘be poor’; the aorist marks the entry into it — he became poor."
+        }
+      ],
+      "watchOut": "A verb of state is the usual candidate. With an action verb, check whether the start really is the point.",
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-culminative",
+      "set": "aorist",
+      "group": "aorist-event",
+      "name": "Culminative Aorist",
+      "pic": "🎓",
+      "eli5": "The picture is of the finish — the point where it was done. I have learned to be content.",
+      "formula": {
+        "pattern": [
+          "it came to",
+          "an end"
+        ],
+        "filled": [
+          "ἔμαθον",
+          "I have learned"
+        ]
+      },
+      "short": "Culminative",
+      "gist": "the end point — ‘have learned’",
+      "tile": "End",
+      "oneLine": "The aorist emphasises the cessation of an action or state.",
+      "mnemonic": "Aorist — End: the cap thrown in the air at graduation.",
+      "mnemonicWhy": "Learning took years; the aorist looks at the moment it was achieved. English often reaches for ‘have …’ to say that.",
+      "spotIt": "Does the sense land on the result reached — ‘has learned’, ‘managed to’, ‘finally’? Culminative.",
+      "bookDef": "Emphasizes the cessation of an action or state.",
+      "examples": [
+        {
+          "ref": "Phil 4:11",
+          "greek": "ἐγὼ γὰρ *ἔμαθον* ἐν οἷς εἰμι αὐτάρκης εἶναι",
+          "english": "For I *have learned* to be content in whatever state I am",
+          "note": "The learning is looked at from its end: Paul has got there."
+        }
+      ],
+      "watchOut": "Close to the perfect's consummative. The aorist names the end point; the perfect adds that its result still stands.",
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-gnomic",
+      "set": "aorist",
+      "group": "aorist-not-past",
+      "name": "Gnomic Aorist",
+      "pic": "📜",
+      "eli5": "Not something that happened once, but something that always happens. A saying, a proverb.",
+      "formula": {
+        "pattern": [
+          "timeless",
+          "truth"
+        ],
+        "filled": [
+          "ἐδικαιώθη",
+          "wisdom is vindicated"
+        ]
+      },
+      "short": "Gnomic (aor.)",
+      "gist": "always true — a proverb",
+      "tile": "Always",
+      "oneLine": "A statement that is timeless, universal, or generally true.",
+      "mnemonic": "Aorist — Always: the proverb stitched and framed.",
+      "mnemonicWhy": "A proverb is a photo of how things always go. English puts it in the present, and so should you.",
+      "spotIt": "Would a timeless English present (‘is vindicated’, ‘withers’) fit better than a past? A general statement ⇒ gnomic.",
+      "bookDef": "A statement that is timeless, universal, or generally true.",
+      "examples": [
+        {
+          "ref": "Luke 7:35",
+          "greek": "καὶ *ἐδικαιώθη* ἡ σοφία ἀπὸ πάντων τῶν τέκνων αὐτῆς",
+          "english": "Wisdom *is vindicated* by all her children",
+          "note": "A proverb, not a report — translated with an English present."
+        }
+      ],
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-epistolary",
+      "set": "aorist",
+      "group": "aorist-not-past",
+      "name": "Epistolary Aorist",
+      "pic": "📮",
+      "eli5": "When the letter is read, the writing is in the past. So the writer says ‘I wrote’ about the very letter he is writing.",
+      "formula": {
+        "pattern": [
+          "writer says",
+          "‘I wrote / sent’",
+          "= I write / am sending"
+        ],
+        "filled": [
+          "ἐγὼ Παῦλος",
+          "ἔγραψα",
+          "I write"
+        ]
+      },
+      "short": "Epistolary",
+      "gist": "‘I write’ — from the reader's side",
+      "tile": "Letter",
+      "oneLine": "The author writes from the readers' point of view, using the aorist where a present would be expected.",
+      "mnemonic": "Aorist — Letter: the postcard that says ‘I wrote’ with the ink still wet.",
+      "mnemonicWhy": "By the time it arrives, it is true. Watch for writing and sending verbs — ἔγραψα, ἔπεμψα — about the letter itself or its courier.",
+      "spotIt": "A verb of writing or sending in a letter, about this letter or the person carrying it? Translate with a present: epistolary.",
+      "bookDef": "The author writes from the perspective of the readers and thus uses the aorist instead of the expected present.",
+      "examples": [
+        {
+          "ref": "Phlm 19",
+          "greek": "ἐγὼ Παῦλος *ἔγραψα* τῇ ἐμῇ χειρί",
+          "english": "I, Paul, *write* this with my own hand",
+          "note": "He is writing it as they will read it: ‘I wrote’ — in English, ‘I write’."
+        }
+      ],
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-futuristic",
+      "set": "aorist",
+      "group": "aorist-not-past",
+      "name": "Futuristic Aorist",
+      "pic": "🔭",
+      "eli5": "Something still to come, told as if it had already happened — that is how sure it is.",
+      "formula": {
+        "pattern": [
+          "future event",
+          "told as past"
+        ],
+        "filled": [
+          "ἦλθεν κύριος",
+          "the Lord comes"
+        ]
+      },
+      "short": "Futuristic",
+      "gist": "not yet — told as done",
+      "tile": "Not yet",
+      "oneLine": "An event that has not yet taken place, described as if it had already occurred.",
+      "mnemonic": "Aorist — Not yet: the prophecy poster, printed as news.",
+      "mnemonicWhy": "Prophecy often speaks of the future as done. The aorist's photo can be of something nobody has seen yet.",
+      "spotIt": "Is the event plainly still future in context, yet in an aorist indicative? Futuristic.",
+      "bookDef": "Describes an event that has not yet taken place as if it had already occurred.",
+      "examples": [
+        {
+          "ref": "Jude 14",
+          "greek": "ἰδοὺ *ἦλθεν* κύριος ἐν ἁγίαις μυριάσιν αὐτοῦ",
+          "english": "Behold, the Lord *comes* with tens of thousands of his holy ones",
+          "note": "Enoch's prophecy of the Lord's coming — still future, told in the aorist."
+        }
+      ],
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "aor-dramatic",
+      "set": "aorist",
+      "group": "aorist-not-past",
+      "name": "Dramatic Aorist",
+      "pic": "🚨",
+      "eli5": "It has only just happened, and it changes things right now. ‘My daughter has just died.’",
+      "formula": {
+        "pattern": [
+          "just now",
+          "+ present consequences"
+        ],
+        "filled": [
+          "ἄρτι ἐτελεύτησεν",
+          "has just died"
+        ]
+      },
+      "short": "Dramatic (aor.)",
+      "gist": "just now — and it matters now",
+      "tile": "Just now",
+      "oneLine": "An event that recently occurred, with present consequences.",
+      "mnemonic": "Aorist — Just now: the front page that went to press a minute ago.",
+      "mnemonicWhy": "English uses ‘has just …’ for what happened a moment ago and still matters. Look for ἄρτι or νῦν beside it.",
+      "spotIt": "Does ‘has just …’ fit, and does the speaker act on it now? Dramatic.",
+      "bookDef": "Refers to an event that recently occurred, having present consequences.",
+      "examples": [
+        {
+          "ref": "Matt 9:18",
+          "greek": "ἡ θυγάτηρ μου ἄρτι *ἐτελεύτησεν*",
+          "english": "My daughter *has* just *died*",
+          "note": "ἄρτι puts it a moment ago, and the father is acting on it now."
+        }
+      ],
+      "watchOut": "Not the perfect's dramatic, which makes a past event vivid. The aorist's dramatic is about something that has only just happened.",
+      "tags": [
+        "aorist",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-intensive",
+      "set": "perfect",
+      "group": "perf-core",
+      "name": "Intensive Perfect",
+      "pic": "🕊️",
+      "eli5": "The point is how things are now, because of what happened. Your sins are forgiven — and stay forgiven.",
+      "formula": {
+        "pattern": [
+          "past action",
+          "→",
+          "present state (stressed)"
+        ],
+        "filled": [
+          "forgiving",
+          "→",
+          "ἀφέωνται"
+        ]
+      },
+      "short": "Intensive (perf.)",
+      "gist": "the state standing now",
+      "tile": "Result",
+      "oneLine": "The perfect emphasises the present state brought about by a past action.",
+      "mnemonic": "Perfect — Result: the plaque on the front, saying what stands now.",
+      "mnemonicWhy": "The perfect always has both halves. When the weight is on how things stand now, it is intensive — translate with an English present.",
+      "spotIt": "Does an English present (‘are forgiven’, ‘is written’) catch it best? Intensive.",
+      "bookDef": "Emphasizes the present state of the verb brought about by a past action.",
+      "examples": [
+        {
+          "ref": "Luke 5:20",
+          "greek": "*ἀφέωνταί* σοι αἱ ἁμαρτίαι σου",
+          "english": "your sins *are forgiven* you",
+          "note": "The forgiving happened; the point is the state it leaves — forgiven, now."
+        }
+      ],
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-consummative",
+      "set": "perfect",
+      "group": "perf-core",
+      "name": "Consummative Perfect",
+      "pic": "🥊",
+      "eli5": "The point is the thing that was done — though its result still stands. I have fought the good fight.",
+      "formula": {
+        "pattern": [
+          "past action (stressed)",
+          "→",
+          "present state"
+        ],
+        "filled": [
+          "ἠγώνισμαι",
+          "→",
+          "it stands done"
+        ]
+      },
+      "short": "Consummative (perf.)",
+      "gist": "the deed that left the state",
+      "tile": "Deed",
+      "oneLine": "The perfect emphasises the completed action that brought about the resulting state.",
+      "mnemonic": "Perfect — Deed: the plaque on the back, naming the battle that was fought.",
+      "mnemonicWhy": "Same two halves as the intensive, weight on the other end. English ‘have …’ usually catches it.",
+      "spotIt": "Does ‘have …’ (‘I have fought’, ‘they have gone out’) fit, with the action as the point? Consummative.",
+      "bookDef": "Emphasizes the completed action that brought about the resulting state.",
+      "examples": [
+        {
+          "ref": "2 Tim 4:7",
+          "greek": "τὸν καλὸν ἀγῶνα *ἠγώνισμαι*",
+          "english": "I *have fought* the good fight",
+          "note": "Paul looks back on the fighting, done — and its result stands."
+        }
+      ],
+      "watchOut": "Intensive or consummative is a question of weight, and the two often blur. Translate with a present ⇒ intensive; with ‘have’ ⇒ consummative.",
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-dramatic",
+      "set": "perfect",
+      "group": "perf-special",
+      "name": "Dramatic Perfect",
+      "pic": "🎭",
+      "eli5": "A story-teller uses the perfect to make one moment jump out. ‘He went and sold everything!’",
+      "formula": {
+        "pattern": [
+          "past event",
+          "+ vivid"
+        ],
+        "filled": [
+          "πέπρακεν",
+          "sold everything"
+        ]
+      },
+      "short": "Dramatic (perf.)",
+      "gist": "a past event made vivid",
+      "tile": "Vivid",
+      "oneLine": "The perfect vividly portrays a past event or state of affairs.",
+      "mnemonic": "Perfect — Vivid: the statue caught mid-stride.",
+      "mnemonicWhy": "A perfect in a run of aorists, in a story, where a simple English past is the translation — it is there for colour.",
+      "spotIt": "A perfect in narrative, translated as a plain past, standing out from the aorists around it? Dramatic.",
+      "bookDef": "Vividly portrays a past event or state of affairs.",
+      "examples": [
+        {
+          "ref": "Matt 13:46",
+          "greek": "ἀπελθὼν *πέπρακεν* πάντα ὅσα εἶχεν",
+          "english": "he went and *sold* everything he had",
+          "note": "The pearl merchant: one perfect between aorists, making the selling vivid."
+        }
+      ],
+      "watchOut": "Not the aorist's dramatic (just now, with present consequences). The perfect's dramatic is about vividness in telling.",
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-present-state",
+      "set": "perfect",
+      "group": "perf-special",
+      "name": "Present State Perfect",
+      "pic": "🧠",
+      "eli5": "Some verbs look perfect but just mean ‘now’. οἶδα is a perfect, and it means ‘I know’.",
+      "formula": {
+        "pattern": [
+          "perfect form",
+          "= present meaning"
+        ],
+        "filled": [
+          "οἶδας",
+          "you know"
+        ]
+      },
+      "short": "Present state",
+      "gist": "perfect form, present meaning — οἶδα",
+      "tile": "Know",
+      "oneLine": "Certain verbs have lost their perfect force and carry a present meaning.",
+      "mnemonic": "Perfect — Know: the guide who simply knows.",
+      "mnemonicWhy": "οἶδα, ἕστηκα (I stand), πέποιθα (I trust) — perfects that just mean the present. Learn them as a list.",
+      "spotIt": "Is it οἶδα, ἕστηκα, πέποιθα or a similar verb, translated with a plain present? Present state.",
+      "bookDef": "Used with certain verbs that lost their perfect significance and conveys a present tense-form meaning.",
+      "examples": [
+        {
+          "ref": "Luke 18:20",
+          "greek": "τὰς ἐντολὰς *οἶδας*",
+          "english": "*You know* the commandments",
+          "note": "οἶδας is perfect in form and present in meaning — there is no earlier act of learning in view."
+        }
+      ],
+      "watchOut": "Compare the pluperfect's past state: ᾔδειν is the same verb one step back, ‘I knew’.",
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-gnomic",
+      "set": "perfect",
+      "group": "perf-special",
+      "name": "Gnomic Perfect",
+      "pic": "⚖️",
+      "eli5": "A rule that holds for everyone: whoever does not believe is condemned already.",
+      "formula": {
+        "pattern": [
+          "anyone who …",
+          "stands …"
+        ],
+        "filled": [
+          "ὁ μὴ πιστεύων",
+          "κέκριται"
+        ]
+      },
+      "short": "Gnomic (perf.)",
+      "gist": "a general truth",
+      "tile": "Always",
+      "oneLine": "The perfect communicates a customary or general truth.",
+      "mnemonic": "Perfect — Always: the law carved over the courthouse.",
+      "mnemonicWhy": "Like the gnomic aorist, but the perfect states the truth as a standing condition. ‘Whoever …’ subjects are a good clue.",
+      "spotIt": "Is the subject general (‘whoever’, ‘a wife’, ‘anyone who’) and the statement true of all such cases? Gnomic.",
+      "bookDef": "Communicates a customary or general truth.",
+      "examples": [
+        {
+          "ref": "John 3:18",
+          "greek": "ὁ δὲ μὴ πιστεύων ἤδη *κέκριται*",
+          "english": "but anyone who does not believe *is* already *condemned*",
+          "note": "A general truth about anyone in that position, as a standing state."
+        }
+      ],
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "perf-iterative",
+      "set": "perfect",
+      "group": "perf-special",
+      "name": "Iterative Perfect",
+      "pic": "👀",
+      "eli5": "It happened again and again, here and there — and what it left still stands. ‘What we have seen with our eyes.’",
+      "formula": {
+        "pattern": [
+          "repeated",
+          "at intervals"
+        ],
+        "filled": [
+          "ἑωράκαμεν",
+          "we have seen (many times)"
+        ]
+      },
+      "short": "Iterative",
+      "gist": "happened at intervals",
+      "tile": "Again",
+      "oneLine": "The action of the perfect occurred at intervals.",
+      "mnemonic": "Perfect — Again: the guestbook signed again and again.",
+      "mnemonicWhy": "The apostles did not see Jesus once; they saw him over and over. The perfect gathers the repeated seeing into one standing testimony.",
+      "spotIt": "Does the context show the action happening repeatedly, at intervals? Iterative.",
+      "bookDef": "The action of the verb occurred at intervals.",
+      "examples": [
+        {
+          "ref": "1 John 1:1",
+          "greek": "ὃ *ἑωράκαμεν* τοῖς ὀφθαλμοῖς ἡμῶν",
+          "english": "what *we have seen* with our eyes",
+          "note": "Seen repeatedly over the years of Jesus' ministry, and still their testimony."
+        }
+      ],
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "plupf-intensive",
+      "set": "perfect",
+      "group": "plupf",
+      "name": "Intensive Pluperfect",
+      "pic": "🙏",
+      "eli5": "Back then, things stood a certain way because of something earlier. ‘The one in whom they had believed.’",
+      "formula": {
+        "pattern": [
+          "earlier action",
+          "→",
+          "past state (stressed)"
+        ],
+        "filled": [
+          "believing",
+          "→",
+          "πεπιστεύκεισαν"
+        ]
+      },
+      "short": "Intensive (plupf.)",
+      "gist": "the result standing then",
+      "tile": "Result",
+      "oneLine": "The pluperfect emphasises the past results brought about by a past action.",
+      "mnemonic": "Pluperfect — Result: the old plinth still showing what stood there then.",
+      "mnemonicWhy": "The perfect's intensive moved one step back: not ‘now’ but ‘then’.",
+      "spotIt": "A pluperfect where the point is the state that held at the time of the story? Intensive.",
+      "bookDef": "Emphasizes the (past) results brought about by a past action.",
+      "examples": [
+        {
+          "ref": "Acts 14:23",
+          "greek": "εἰς ὃν *πεπιστεύκεισαν*",
+          "english": "in whom *they had believed*",
+          "note": "Their believing had left them as believers — the state at the time Paul commits them to the Lord."
+        }
+      ],
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "plupf-consummative",
+      "set": "perfect",
+      "group": "plupf",
+      "name": "Consummative Pluperfect",
+      "pic": "🚶",
+      "eli5": "It was already done by the time of the story. ‘His disciples had gone into town.’",
+      "formula": {
+        "pattern": [
+          "past action (stressed)",
+          "already complete then"
+        ],
+        "filled": [
+          "ἀπεληλύθεισαν",
+          "had gone"
+        ]
+      },
+      "short": "Consummative (plupf.)",
+      "gist": "the deed already done then",
+      "tile": "Deed",
+      "oneLine": "The pluperfect emphasises the completion of a past action.",
+      "mnemonic": "Pluperfect — Deed: the plinth recording the march that had already gone into town.",
+      "mnemonicWhy": "The perfect's consummative moved one step back. English ‘had …’ catches it.",
+      "spotIt": "Does ‘had …’ fit, with the completed action as the point? Consummative.",
+      "bookDef": "Emphasizes the completion of a past action.",
+      "examples": [
+        {
+          "ref": "John 4:8",
+          "greek": "οἱ γὰρ μαθηταὶ αὐτοῦ *ἀπεληλύθεισαν* εἰς τὴν πόλιν",
+          "english": "For his disciples *had gone* into town",
+          "note": "Explains why Jesus is alone at the well: the going was already complete."
+        }
+      ],
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
+      "id": "plupf-past-state",
+      "set": "perfect",
+      "group": "plupf",
+      "name": "Past State Pluperfect",
+      "pic": "💡",
+      "eli5": "The same special verbs as the perfect's present state, one step back. ᾔδεισαν: ‘they knew’ — no earlier act of learning.",
+      "formula": {
+        "pattern": [
+          "pluperfect form",
+          "= simple past state"
+        ],
+        "filled": [
+          "ᾔδεισαν",
+          "they knew"
+        ]
+      },
+      "short": "Past state",
+      "gist": "pluperfect form, simple past meaning — ᾔδειν",
+      "tile": "Knew",
+      "oneLine": "Certain verbs use the pluperfect for a past state with no antecedent action.",
+      "mnemonic": "Pluperfect — Knew: the plinth marking what everyone knew.",
+      "mnemonicWhy": "If οἶδα means ‘I know’, its pluperfect means ‘I knew’. The same goes for εἴωθα, πέποιθα, ἕστηκα.",
+      "spotIt": "Is it ᾔδειν, εἰώθει, ἐπεποίθει, (παρ)ειστήκει or similar, translated as a plain past? Past state.",
+      "bookDef": "Used with certain verbs that convey a past state with no antecedent action.",
+      "examples": [
+        {
+          "ref": "Mark 1:34",
+          "greek": "οὐκ ἤφιεν λαλεῖν τὰ δαιμόνια, ὅτι *ᾔδεισαν* αὐτόν",
+          "english": "he would not permit the demons to speak, because *they knew* him",
+          "note": "οἶδα's pluperfect: a past state of knowing, nothing before it."
+        },
+        {
+          "ref": "Matt 27:15",
+          "greek": "κατὰ δὲ ἑορτὴν *εἰώθει* ὁ ἡγεμὼν ἀπολύειν ἕνα τῷ ὄχλῳ δέσμιον",
+          "english": "Now at the feast the governor *was accustomed* to release for the crowd any one prisoner",
+          "note": "εἴωθα, ‘be accustomed’: the pluperfect is simply a past custom."
+        },
+        {
+          "ref": "Luke 11:22",
+          "greek": "τὴν πανοπλίαν αὐτοῦ αἴρει ἐφ᾿ ᾗ *ἐπεποίθει*",
+          "english": "he takes from him all his weapons *he trusted in*",
+          "note": "πέποιθα, ‘trust’: pluperfect for a past state of trusting."
+        },
+        {
+          "ref": "Acts 1:10",
+          "greek": "ἄνδρες δύο *παρειστήκεισαν* αὐτοῖς",
+          "english": "two men *stood* by them",
+          "note": "ἕστηκα, ‘stand’: the pluperfect is just ‘were standing’."
+        }
+      ],
+      "watchOut": "The twin of the perfect's present state: οἶδας ‘you know’, ᾔδεισαν ‘they knew’.",
+      "tags": [
+        "perfect",
+        "ch-7"
+      ]
+    },
+    {
       "id": "pron-personal",
       "set": "pronoun",
       "group": "pronoun-kinds",
@@ -10659,6 +11382,83 @@
       "test": "Are you naming the form, or the view?",
       "answer": "Aorist is the tense-form — the shape on the page. Perfective is the aspect — how the action is viewed. The aorist carries the perfective view; outside the indicative it carries nothing else.",
       "example": "ἔλυσα (the aorist form) · ‘action viewed as complete, as a whole’ (the perfective view)."
+    },
+    {
+      "id": "whole-or-start",
+      "pair": [
+        "aor-constative",
+        "aor-inceptive"
+      ],
+      "question": "The whole thing, or the start?",
+      "test": "Does ‘became’ or ‘began to’ read better than the plain past?",
+      "answer": "Plain past, the event taken whole however long ⇒ constative. ‘Became / began to’, often with a verb of state ⇒ inceptive.",
+      "example": "ἐβασίλευσεν ὁ θάνατος (Rom 5:14, constative) · ἐπτώχευσεν (2 Cor 8:9, inceptive)."
+    },
+    {
+      "id": "start-or-end",
+      "pair": [
+        "aor-inceptive",
+        "aor-culminative"
+      ],
+      "question": "Start or finish?",
+      "test": "Is the stress on entering the action, or on reaching its end?",
+      "answer": "Entering it — ‘became’, ‘began’ ⇒ inceptive. Reaching the end — ‘has learned’, ‘managed to’ ⇒ culminative.",
+      "example": "ἐπτώχευσεν (2 Cor 8:9) · ἔμαθον (Phil 4:11)."
+    },
+    {
+      "id": "always-or-not-yet",
+      "pair": [
+        "aor-gnomic",
+        "aor-futuristic"
+      ],
+      "question": "Always true, or not yet happened?",
+      "test": "Is it a general rule, or one particular event still to come?",
+      "answer": "A rule true of all cases ⇒ gnomic. A specific future event told as done ⇒ futuristic.",
+      "example": "ἐδικαιώθη ἡ σοφία (Luke 7:35) · ἦλθεν κύριος (Jude 14)."
+    },
+    {
+      "id": "dramatic-which",
+      "pair": [
+        "aor-dramatic",
+        "perf-dramatic"
+      ],
+      "question": "Dramatic — aorist or perfect?",
+      "test": "Did it just happen, or is a past event being told vividly?",
+      "answer": "Just now, with consequences now (‘has just died’) ⇒ dramatic aorist. A past event in a story, made to stand out ⇒ dramatic perfect.",
+      "example": "ἄρτι ἐτελεύτησεν (Matt 9:18) · πέπρακεν (Matt 13:46)."
+    },
+    {
+      "id": "result-or-deed",
+      "pair": [
+        "perf-intensive",
+        "perf-consummative"
+      ],
+      "question": "Perfect — the result, or the deed?",
+      "test": "Does it translate best with an English present, or with ‘have …’?",
+      "answer": "Present (‘are forgiven’) — the state now is the point ⇒ intensive. ‘Have …’ (‘I have fought’) — the completed act is the point ⇒ consummative.",
+      "example": "ἀφέωνται (Luke 5:20) · ἠγώνισμαι (2 Tim 4:7)."
+    },
+    {
+      "id": "plupf-result-or-deed",
+      "pair": [
+        "plupf-intensive",
+        "plupf-consummative"
+      ],
+      "question": "Pluperfect — the result then, or the deed already done?",
+      "test": "Is the point the state at that time, or that the action was already complete?",
+      "answer": "The state that held then ⇒ intensive. The action already finished by then (‘had gone’) ⇒ consummative.",
+      "example": "πεπιστεύκεισαν (Acts 14:23) · ἀπεληλύθεισαν (John 4:8)."
+    },
+    {
+      "id": "know-or-knew",
+      "pair": [
+        "perf-present-state",
+        "plupf-past-state"
+      ],
+      "question": "οἶδα or ᾔδειν?",
+      "test": "Perfect form or pluperfect form?",
+      "answer": "Perfect of a verb like οἶδα, ἕστηκα, πέποιθα ⇒ present state, ‘know’. Its pluperfect ⇒ past state, ‘knew’. Neither has an earlier action in view.",
+      "example": "οἶδας (Luke 18:20) · ᾔδεισαν (Mark 1:34)."
     }
   ],
   "extraQuiz": [
@@ -11288,6 +12088,116 @@
       "unofficial": true
     },
     {
+      "prompt": "If anyone does not abide in me, he is thrown out like a branch and withers",
+      "greek": "ἐὰν μή τις μένῃ ἐν ἐμοί, *ἐβλήθη* ἔξω ὡς τὸ κλῆμα καὶ ἐξηράνθη (John 15:6)",
+      "english": "If anyone does not abide in me, he is thrown out like a branch and withers",
+      "ref": "ch. 7 tense-forms practice 1a",
+      "target": "ἐβλήθη",
+      "answer": "aor-gnomic",
+      "why": "Aorist passive indicative, 3rd singular, βάλλω. A general rule about anyone who does not abide — gnomic. Arguable: some read it as futuristic (the end told as done).",
+      "unofficial": true
+    },
+    {
+      "prompt": "By this my Father is glorified, that you bear much fruit",
+      "greek": "ἐν τούτῳ *ἐδοξάσθη* ὁ πατήρ μου, ἵνα καρπὸν πολὺν φέρητε (John 15:8)",
+      "english": "By this my Father is glorified, that you bear much fruit",
+      "ref": "ch. 7 tense-forms practice 1b",
+      "target": "ἐδοξάσθη",
+      "answer": "aor-gnomic",
+      "why": "Aorist passive indicative, 3rd singular, δοξάζω. A standing truth — whenever you bear fruit, the Father is glorified — gnomic. Arguable: futuristic is also defended.",
+      "unofficial": true
+    },
+    {
+      "prompt": "by him this man stands before you well",
+      "greek": "ἐν τούτῳ οὗτος *παρέστηκεν* ἐνώπιον ὑμῶν ὑγιής (Acts 4:10)",
+      "english": "by him this man stands before you well",
+      "ref": "ch. 7 tense-forms practice 2",
+      "target": "παρέστηκεν",
+      "answer": "perf-present-state",
+      "why": "Perfect active indicative, 3rd singular, παρίστημι. ἕστηκα and its compounds mean ‘stand’: perfect form, present meaning — present state. Compare the pluperfect παρειστήκεισαν in Acts 1:10.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Tychicus … whom I am sending to you",
+      "greek": "Τύχικος … ὃν *ἔπεμψα* πρὸς ὑμᾶς (Col 4:7–8)",
+      "english": "Tychicus … whom I am sending to you",
+      "ref": "ch. 7 tense-forms practice 3",
+      "target": "ἔπεμψα",
+      "answer": "aor-epistolary",
+      "why": "Aorist active indicative, 1st singular, πέμπω. Tychicus is carrying the letter: by the time they read it he has been sent — epistolary, translated ‘I am sending’.",
+      "unofficial": true
+    },
+    {
+      "prompt": "No one has ever seen God",
+      "greek": "θεὸν οὐδεὶς πώποτε *τεθέαται* (1 John 4:12)",
+      "english": "No one has ever seen God",
+      "ref": "ch. 7 tense-forms practice 4",
+      "target": "τεθέαται",
+      "answer": "perf-consummative",
+      "why": "Perfect middle indicative, 3rd singular, θεάομαι. With πώποτε, ‘ever’, the stress is on the act never having happened — consummative, ‘has ever seen’. Arguable: intensive (no one stands as having seen him) is a fair reading.",
+      "unofficial": true
+    },
+    {
+      "prompt": "and they came to life and reigned with Christ for a thousand years",
+      "greek": "καὶ *ἔζησαν* καὶ ἐβασίλευσαν μετὰ τοῦ Χριστοῦ χίλια ἔτη (Rev 20:4)",
+      "english": "and they came to life and reigned with Christ for a thousand years",
+      "ref": "ch. 7 tense-forms practice 5a",
+      "target": "ἔζησαν",
+      "answer": "aor-inceptive",
+      "why": "Aorist active indicative, 3rd plural, ζάω. A verb of state in the aorist marking its start: they came to life — inceptive. (Constative ‘they lived’ is possible, but 20:5 speaks of the rest not coming to life.)",
+      "unofficial": true
+    },
+    {
+      "prompt": "and they came to life and reigned with Christ for a thousand years",
+      "greek": "καὶ ἔζησαν καὶ *ἐβασίλευσαν* μετὰ τοῦ Χριστοῦ χίλια ἔτη (Rev 20:4)",
+      "english": "and they came to life and reigned with Christ for a thousand years",
+      "ref": "ch. 7 tense-forms practice 5b",
+      "target": "ἐβασίλευσαν",
+      "answer": "aor-constative",
+      "why": "Aorist active indicative, 3rd plural, βασιλεύω. A thousand years of reigning in one aorist — the whole stretch seen at once, like Rom 5:14: constative.",
+      "unofficial": true
+    },
+    {
+      "prompt": "many false prophets have gone out into the world",
+      "greek": "πολλοὶ ψευδοπροφῆται *ἐξεληλύθασιν* εἰς τὸν κόσμον (1 John 4:1)",
+      "english": "many false prophets have gone out into the world",
+      "ref": "ch. 7 tense-forms practice 6",
+      "target": "ἐξεληλύθασιν",
+      "answer": "perf-intensive",
+      "why": "Perfect active indicative, 3rd plural, ἐξέρχομαι. The point is the situation now: they are out there, which is why the readers must test the spirits — intensive. Arguable: consummative (‘have gone out’) is also read.",
+      "unofficial": true
+    },
+    {
+      "prompt": "behold, his mother and his brothers were standing outside",
+      "greek": "ἰδοὺ ἡ μήτηρ καὶ οἱ ἀδελφοὶ αὐτοῦ *εἱστήκεισαν* ἔξω (Matt 12:46)",
+      "english": "behold, his mother and his brothers were standing outside",
+      "ref": "ch. 7 tense-forms practice 7",
+      "target": "εἱστήκεισαν",
+      "answer": "plupf-past-state",
+      "why": "Pluperfect active indicative, 3rd plural, ἵστημι. ἕστηκα means ‘stand’, so its pluperfect is a simple past state — ‘were standing’, with no earlier act in view. The same as Acts 1:10.",
+      "unofficial": true
+    },
+    {
+      "prompt": "A wife is bound as long as her husband lives",
+      "greek": "γυνὴ *δέδεται* ἐφ᾿ ὅσον χρόνον ζῇ ὁ ἀνὴρ αὐτῆς (1 Cor 7:39)",
+      "english": "A wife is bound as long as her husband lives",
+      "ref": "ch. 7 tense-forms practice 8",
+      "target": "δέδεται",
+      "answer": "perf-gnomic",
+      "why": "Perfect passive indicative, 3rd singular, δέω. A rule true of any wife — gnomic. Arguable: intensive (she stands bound) is close.",
+      "unofficial": true
+    },
+    {
+      "prompt": "Mary called Magdalene, from whom seven demons had gone out",
+      "greek": "Μαρία ἡ καλουμένη Μαγδαληνή, ἀφ᾿ ἧς δαιμόνια ἑπτὰ *ἐξεληλύθει* (Luke 8:2)",
+      "english": "Mary called Magdalene, from whom seven demons had gone out",
+      "ref": "ch. 7 tense-forms practice 9",
+      "target": "ἐξεληλύθει",
+      "answer": "plupf-consummative",
+      "why": "Pluperfect active indicative, 3rd singular, ἐξέρχομαι. Before the story, the demons had already gone out of her: the completion of a past action — consummative. Arguable: intensive (she was a woman set free) is possible.",
+      "unofficial": true
+    },
+    {
       "prompt": "Which preposition? Only the accusative, “each, in turn, up”.",
       "ref": "ch. 12 chart",
       "answer": "prep-ana",
@@ -11471,8 +12381,8 @@
     }
   ],
   "world": {
-    "name": "One street, nineteen stops",
-    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime, develop, race, drill, stand in, cross, change trains, tune, ring.",
-    "why": "Nineteen places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
+    "name": "One street, twenty-one stops",
+    "line": "Bathe, shout, fence, drive, sail, point, paint, answer, record, forecast, chime, develop, race, drill, hang, carve, stand in, cross, change trains, tune, ring.",
+    "why": "Twenty-one places on one street, walked in the order the book teaches them. You are not remembering a list of cases; you are remembering where you are standing. Every new chapter opens another door on the same street."
   }
 }

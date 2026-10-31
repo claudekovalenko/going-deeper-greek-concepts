@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v38 · 2026-10-28';
+const BUILD = 'v39 · 2026-10-31';
 
 // Chapters whose sets get the red flag on the cheat sheet, e.g. [12]. Empty
 // means no flag at all; each set still shows its plain chapter chip.
@@ -1913,6 +1913,17 @@ async function boot() {
   render();
 
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    // A page painted from an older offline copy reloads once when the new
+    // worker takes over, so an update shows on this open rather than the next.
+    // The first install has no previous controller and is left alone.
+    if (navigator.serviceWorker.controller) {
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (reloaded) return;
+        reloaded = true;
+        location.reload();
+      });
+    }
     navigator.serviceWorker
       .register('./sw.js')
       .then(() => navigator.serviceWorker.ready)

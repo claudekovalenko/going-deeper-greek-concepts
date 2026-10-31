@@ -1,9 +1,9 @@
 # Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–7 and 12
 
 A small offline-first PWA for getting the five cases, the **article**, the
-**adjective**, the **verb** and ch. 7's **verbal aspect**, and ch. 12's **little words** — pronouns,
+**adjective**, the **verb**, ch. 7's **verbal aspect** and **tense-form uses**, and ch. 12's **little words** — pronouns,
 prepositions, conjunctions, adverbs, particles — into your head and keeping them
-there. 191 cards,
+there. 207 cards,
 each opening with its peg — the acrostic with this card's slot lit — then a
 plain-words paragraph anyone could follow, then the bare pattern of the
 construction, then a test you can run on a text, and the Greek examples.
@@ -13,11 +13,11 @@ is due, this one drills the thing itself. Each links to the other.
 
 [hw]: https://github.com/claudekovalenko/seminary-homework-2026
 
-## The whole app in nineteen words
+## The whole app in twenty-one words
 
 > **Names · Calls · Fences · Describes · Gives · Points · Colours · Answers ·
-> Aims · Frames · Times · Views · Finishes · Orders · Replaces · Positions ·
-> Joins · Modifies · Cries**
+> Aims · Frames · Times · Views · Finishes · Orders · Snaps · Stands ·
+> Replaces · Positions · Joins · Modifies · Cries**
 
 | | | |
 |---|---|---|
@@ -35,6 +35,8 @@ is due, this one drills the thing itself. Each links to the other.
 | Aspect | views the action as ongoing, whole, or a state | ch. 7 |
 | Telic & Atelic | says whether the verb has a built-in finish | ch. 7 |
 | Interpreting Imperatives | explains why a command is aorist or present | ch. 7 |
+| Aorist Indicative | snaps the event whole — or something not past at all | ch. 7 |
+| Perfect & Pluperfect | says the result still stands, now or then | ch. 7 |
 | Pronoun | stands in for a noun | ch. 12 |
 | Preposition | places one thing against another | ch. 12 |
 | Conjunction | joins words, clauses and sentences | ch. 12 |
@@ -179,6 +181,16 @@ moods: εἰ + indicative is first or second class, ἐάν + subjunctive is thi
 | Imperatives — grammatical | **Once · Always** — telic verb, one occasion: aorist; atelic verb, a way of life: present |
 | Imperatives — contextual | **Pray & tell · Write** — prayers and narratives prefer the aorist, epistles the present (except 1 Peter) |
 
+| Aorist — the event | **Whole · Start · End** — constative, inceptive, culminative |
+| Aorist — not past | **Always · Letter · Not yet · Just now** — gnomic, epistolary, futuristic, dramatic |
+| Perfect | **Result · Deed** — intensive, consummative — then **Vivid · Know · Always · Again** — dramatic, present state, gnomic, iterative |
+| Pluperfect | **Result · Deed · Knew** — intensive, consummative, past state |
+
+The aorist chart cites Rom 5:4 for ἐβασίλευσεν ὁ θάνατος; the words are in 5:14,
+and the card says so. The chart's own examples are on every tense-form card,
+plus the four pluperfects the chapter gives for the past state (εἰώθει, ᾔδεισαν,
+ἐπεποίθει, παρειστήκεισαν).
+
 A verb in the form its type prefers is the **default**, and the default says
 little; the other form is where to ask why. *Stative* means two different things
 in this chapter — the aspect (a perfect form) and a type of verb (be, love, know,
@@ -216,18 +228,18 @@ as 4:2) and the τῷ νῦν καιρῷ of Rom 3:26 (printed as 3:25).
 ## What is in the app
 
 - **The whole thing** — every peg in the app on one screen, at the top of the
-  Map: all 46 of them and what each one stands for. This is the bus-stop page;
+  Map: all 51 of them and what each one stands for. This is the bus-stop page;
   the cards underneath are for when a peg does not hold.
 - **Picture** — the whole course as one place you can walk. Each set is a stop on
   one street — the Spa, the Doorstep, the Fenced Yard, Swamp Road, the Harbour,
   the Signpost, the Paint Shop, the Roll Call, the Recording Booth, the Weather
   Station, the Clock Tower, the Camera Shop, the Racetrack, the Parade Ground,
-  the Theatre, the Bridge, the Junction, the Toolbox,
+  the Gallery, the Monument, the Theatre, the Bridge, the Junction, the Toolbox,
   the Town Crier — and the board at the top shows every stop with every
-  object standing in it, all 191 at once. Walk into a stop and each group has its
+  object standing in it, all 207 at once. Walk into a stop and each group has its
   own scene. Nothing is drawn by hand: the stops come from `sets` and the objects
   from `cards`, so a new chapter adds itself. `#/picture`, `#/picture/dative`.
-- **Map** — the acrostics as tappable tiles, plus the 52 confusion pairs
+- **Map** — the acrostics as tappable tiles, plus the 59 confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, easiest tier first, hardest-first being exactly wrong.
   It opens with the **peg**: the whole key with this card's slot lit and the
@@ -371,6 +383,11 @@ card tells you what to do next, and knows which browser you are in:
    - **Android** — the app shows an **Install** button of its own, because
      Chrome hands the prompt to the page rather than showing its own.
 
+When a new version is published, the next open paints from the offline copy,
+notices the new service worker taking over, and reloads once — so the update
+shows on that open rather than the one after. (That reload arrived in v39; a
+device on v38 or older needs one extra open to pick it up.)
+
 **Settings → App version** shows what a device is really running, and has a
 button that throws away its offline copy and fetches the app again — for the
 phone that stubbornly will not update. Your progress survives that.
@@ -457,8 +474,8 @@ and translation.
 The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
-checking in class. Sixty items are in — ch. 3's four, ch. 4's thirteen,
-ch. 6's thirteen, ch. 7's twenty-two and ch. 12's eight — covering the ones whose category the
+checking in class. Seventy-one items are in — ch. 3's four, ch. 4's thirteen,
+ch. 6's thirteen, ch. 7's thirty-three and ch. 12's eight — covering the ones whose category the
 chapters' own charts settle.
 **Spot it → Take the book's practice test** runs them as a test.
 
@@ -492,6 +509,13 @@ explains the tense-form — φεῦγε, ἴδε and φέρε are lexical determ
 others a telic verb on a specific occasion. ἐνδύσασθε in Col 3:12 is the one
 aorist that is not the default: it is in a letter, where the present is
 expected. Only the exercises on the pages this was built from are in.
+
+The chapter's second set — parse each verb and name its use — makes eleven more
+(John 15:6 and 15:8, and Rev 20:4, each give two). Six are flagged arguable on the
+card, because the chart's categories genuinely overlap there: ἐβλήθη and
+ἐδοξάσθη (gnomic, or futuristic), τεθέαται (consummative, or intensive),
+ἐξεληλύθασιν (intensive, or consummative), δέδεται (gnomic, or intensive) and
+ἐξεληλύθει (consummative, or intensive).
 
 ## A note on one of ch. 3's practice exercises
 

@@ -4,7 +4,7 @@
 // that had once loaded the app kept serving that version for ever. Every load
 // paints instantly from cache *and* refreshes the cache behind it, so the next
 // load is current. Bump CACHE alongside BUILD in js/app.js.
-const CACHE = 'greek-cases-v38';
+const CACHE = 'greek-cases-v39';
 
 const SHELL = [
   './',
@@ -23,7 +23,9 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE);
-      await cache.addAll(SHELL);
+      // cache: 'reload' skips the browser's HTTP cache, so a new worker never
+      // fills its offline copy with the files it is replacing.
+      await cache.addAll(SHELL.map((url) => new Request(url, { cache: 'reload' })));
       await self.skipWaiting();
     })()
   );
