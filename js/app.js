@@ -1,5 +1,5 @@
 /**
- * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–7 and 12.
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–8 and 12.
  *
  * Deliberately one file. The sibling app (seminary-homework-2026) learned the
  * hard way that a module graph behind a service worker can serve a fresh page
@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v39 · 2026-10-31';
+const BUILD = 'v40 · 2026-10-31';
 
 // Chapters whose sets get the red flag on the cheat sheet, e.g. [12]. Empty
 // means no flag at all; each set still shows its plain chapter chip.

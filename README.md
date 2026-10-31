@@ -1,7 +1,7 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–7 and 12
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–8 and 12
 
 A small offline-first PWA for getting the five cases, the **article**, the
-**adjective**, the **verb**, ch. 7's **verbal aspect** and **tense-form uses**, and ch. 12's **little words** — pronouns,
+**adjective**, the **verb**, ch. 7's **verbal aspect**, ch. 8's **aorist, perfect and pluperfect**, and ch. 12's **little words** — pronouns,
 prepositions, conjunctions, adverbs, particles — into your head and keeping them
 there. 207 cards,
 each opening with its peg — the acrostic with this card's slot lit — then a
@@ -35,8 +35,8 @@ is due, this one drills the thing itself. Each links to the other.
 | Aspect | views the action as ongoing, whole, or a state | ch. 7 |
 | Telic & Atelic | says whether the verb has a built-in finish | ch. 7 |
 | Interpreting Imperatives | explains why a command is aorist or present | ch. 7 |
-| Aorist Indicative | snaps the event whole — or something not past at all | ch. 7 |
-| Perfect & Pluperfect | says the result still stands, now or then | ch. 7 |
+| Aorist Indicative | snaps the event whole — or something not past at all | ch. 8 |
+| Perfect & Pluperfect | says the result still stands, now or then | ch. 8 |
 | Pronoun | stands in for a noun | ch. 12 |
 | Preposition | places one thing against another | ch. 12 |
 | Conjunction | joins words, clauses and sentences | ch. 12 |
@@ -181,16 +181,6 @@ moods: εἰ + indicative is first or second class, ἐάν + subjunctive is thi
 | Imperatives — grammatical | **Once · Always** — telic verb, one occasion: aorist; atelic verb, a way of life: present |
 | Imperatives — contextual | **Pray & tell · Write** — prayers and narratives prefer the aorist, epistles the present (except 1 Peter) |
 
-| Aorist — the event | **Whole · Start · End** — constative, inceptive, culminative |
-| Aorist — not past | **Always · Letter · Not yet · Just now** — gnomic, epistolary, futuristic, dramatic |
-| Perfect | **Result · Deed** — intensive, consummative — then **Vivid · Know · Always · Again** — dramatic, present state, gnomic, iterative |
-| Pluperfect | **Result · Deed · Knew** — intensive, consummative, past state |
-
-The aorist chart cites Rom 5:4 for ἐβασίλευσεν ὁ θάνατος; the words are in 5:14,
-and the card says so. The chart's own examples are on every tense-form card,
-plus the four pluperfects the chapter gives for the past state (εἰώθει, ᾔδεισαν,
-ἐπεποίθει, παρειστήκεισαν).
-
 A verb in the form its type prefers is the **default**, and the default says
 little; the other form is where to ask why. *Stative* means two different things
 in this chapter — the aspect (a perfect form) and a type of verb (be, love, know,
@@ -200,6 +190,20 @@ The summary charts give no Greek examples for the telic/atelic types or the
 imperative factors, so the examples on those cards are mine: standard NT
 illustrations, not the book's. The book's glosses on John 20:27 call ἴδε, φέρε
 and βάλε middle; the forms are active, and the practice answers say so.
+
+**Aorist, perfect and pluperfect — ch. 8**
+
+| | |
+|---|---|
+| Aorist — the event | **Whole · Start · End** — constative, inceptive, culminative |
+| Aorist — not past | **Always · Letter · Not yet · Just now** — gnomic, epistolary, futuristic, dramatic |
+| Perfect | **Result · Deed** — intensive, consummative — then **Vivid · Know · Always · Again** — dramatic, present state, gnomic, iterative |
+| Pluperfect | **Result · Deed · Knew** — intensive, consummative, past state |
+
+The aorist chart cites Rom 5:4 for ἐβασίλευσεν ὁ θάνατος; the words are in 5:14,
+and the card says so. The chart's own examples are on every tense-form card,
+plus the four pluperfects the chapter gives for the past state (εἰώθει, ᾔδεισαν,
+ἐπεποίθει, παρειστήκεισαν).
 
 **The little words — ch. 12**
 
@@ -475,7 +479,7 @@ The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
 checking in class. Seventy-one items are in — ch. 3's four, ch. 4's thirteen,
-ch. 6's thirteen, ch. 7's thirty-three and ch. 12's eight — covering the ones whose category the
+ch. 6's thirteen, ch. 7's twenty-two, ch. 8's eleven and ch. 12's eight — covering the ones whose category the
 chapters' own charts settle.
 **Spot it → Take the book's practice test** runs them as a test.
 
@@ -510,7 +514,7 @@ others a telic verb on a specific occasion. ἐνδύσασθε in Col 3:12 is t
 aorist that is not the default: it is in a letter, where the present is
 expected. Only the exercises on the pages this was built from are in.
 
-The chapter's second set — parse each verb and name its use — makes eleven more
+Ch. 8's nine exercises — parse each verb and name its use — make eleven questions
 (John 15:6 and 15:8, and Rev 20:4, each give two). Six are flagged arguable on the
 card, because the chart's categories genuinely overlap there: ἐβλήθη and
 ἐδοξάσθη (gnomic, or futuristic), τεθέαται (consummative, or intensive),

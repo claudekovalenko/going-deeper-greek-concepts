@@ -1,6 +1,6 @@
 {
   "book": "Going Deeper with New Testament Greek",
-  "chapter": "ch. 2–7 and 12 — the cases, the article, the adjective, the verb, its aspect and tense-forms, and the little words",
+  "chapter": "ch. 2–8 and 12 — the cases, the article, the adjective, the verb, its aspect and tense-forms, and the little words",
   "course": "Intermediate Greek (GREK 6003), Fall 2026",
   "generated": "2026-10-31",
   "notes": [
@@ -643,7 +643,7 @@
       "subtitle": "Seven uses: three about the event itself, four where the aorist is not telling you about the past.",
       "eli5": "The aorist takes one picture of the whole thing. Usually it is something that happened. Sometimes the picture is of the start, or the finish — and sometimes it is of something always true, or not even happened yet.",
       "color": "#2980b9",
-      "classDate": "2026-11-03",
+      "classDate": "2026-11-10",
       "bigIdea": "The aorist's aspect is perfective — the whole event in one frame — and context decides which part of it the frame lands on: the whole (constative), the start (inceptive), the end (culminative). Four more uses show the indicative aorist is not simply 'past': a timeless truth (gnomic), a letter written from the readers' side (epistolary), something still to come told as done (futuristic), something just now happened (dramatic).",
       "masterMnemonic": "Whole · Start · End — Always · Letter · Not yet · Just now.",
       "masterMnemonicWhy": "Three photos of an event — all of it, its first moment, its last — and then four photos that are not of the past at all. If the aorist will not translate as a simple past, it is in the second row.",
@@ -679,7 +679,7 @@
       "subtitle": "Nine uses: the result or the deed, a few special verbs, and the pluperfect doing the same one step back.",
       "eli5": "Something happened, and what it left behind is still standing. The perfect says it is standing now. The pluperfect says it was standing then.",
       "color": "#8e6c3a",
-      "classDate": "2026-11-03",
+      "classDate": "2026-11-10",
       "bigIdea": "Every perfect has two halves — a past action and the state it left. Intensive leans on the state, consummative on the action. The perfect can also be dramatic, gnomic or iterative, and with a few verbs (οἶδα) it has simply become a present. The pluperfect repeats the pattern in the past: intensive, consummative, and a past state with no earlier action (ᾔδειν).",
       "masterMnemonic": "Result · Deed — Vivid · Know · Always · Again — and the pluperfect: Result · Deed · Knew.",
       "masterMnemonicWhy": "Intensive points at the result, consummative at the deed — in both tenses. The perfect has four more; the pluperfect only one, the past twin of 'know'.",
@@ -7647,7 +7647,7 @@
       "watchOut": "Not ‘once’ and not ‘quick’. The reign from Adam to Moses is constative.",
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7686,7 +7686,7 @@
       "watchOut": "A verb of state is the usual candidate. With an action verb, check whether the start really is the point.",
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7725,7 +7725,7 @@
       "watchOut": "Close to the perfect's consummative. The aorist names the end point; the perfect adds that its result still stands.",
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7763,7 +7763,7 @@
       ],
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7803,7 +7803,7 @@
       ],
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7841,7 +7841,7 @@
       ],
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7880,7 +7880,7 @@
       "watchOut": "Not the perfect's dramatic, which makes a past event vivid. The aorist's dramatic is about something that has only just happened.",
       "tags": [
         "aorist",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7920,7 +7920,7 @@
       ],
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -7961,7 +7961,7 @@
       "watchOut": "Intensive or consummative is a question of weight, and the two often blur. Translate with a present ⇒ intensive; with ‘have’ ⇒ consummative.",
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8000,7 +8000,7 @@
       "watchOut": "Not the aorist's dramatic (just now, with present consequences). The perfect's dramatic is about vividness in telling.",
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8039,7 +8039,7 @@
       "watchOut": "Compare the pluperfect's past state: ᾔδειν is the same verb one step back, ‘I knew’.",
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8077,7 +8077,7 @@
       ],
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8115,7 +8115,7 @@
       ],
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8155,7 +8155,7 @@
       ],
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8193,7 +8193,7 @@
       ],
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -8250,7 +8250,7 @@
       "watchOut": "The twin of the perfect's present state: οἶδας ‘you know’, ᾔδεισαν ‘they knew’.",
       "tags": [
         "perfect",
-        "ch-7"
+        "ch-8"
       ]
     },
     {
@@ -12091,7 +12091,7 @@
       "prompt": "If anyone does not abide in me, he is thrown out like a branch and withers",
       "greek": "ἐὰν μή τις μένῃ ἐν ἐμοί, *ἐβλήθη* ἔξω ὡς τὸ κλῆμα καὶ ἐξηράνθη (John 15:6)",
       "english": "If anyone does not abide in me, he is thrown out like a branch and withers",
-      "ref": "ch. 7 tense-forms practice 1a",
+      "ref": "ch. 8 practice 1a",
       "target": "ἐβλήθη",
       "answer": "aor-gnomic",
       "why": "Aorist passive indicative, 3rd singular, βάλλω. A general rule about anyone who does not abide — gnomic. Arguable: some read it as futuristic (the end told as done).",
@@ -12101,7 +12101,7 @@
       "prompt": "By this my Father is glorified, that you bear much fruit",
       "greek": "ἐν τούτῳ *ἐδοξάσθη* ὁ πατήρ μου, ἵνα καρπὸν πολὺν φέρητε (John 15:8)",
       "english": "By this my Father is glorified, that you bear much fruit",
-      "ref": "ch. 7 tense-forms practice 1b",
+      "ref": "ch. 8 practice 1b",
       "target": "ἐδοξάσθη",
       "answer": "aor-gnomic",
       "why": "Aorist passive indicative, 3rd singular, δοξάζω. A standing truth — whenever you bear fruit, the Father is glorified — gnomic. Arguable: futuristic is also defended.",
@@ -12111,7 +12111,7 @@
       "prompt": "by him this man stands before you well",
       "greek": "ἐν τούτῳ οὗτος *παρέστηκεν* ἐνώπιον ὑμῶν ὑγιής (Acts 4:10)",
       "english": "by him this man stands before you well",
-      "ref": "ch. 7 tense-forms practice 2",
+      "ref": "ch. 8 practice 2",
       "target": "παρέστηκεν",
       "answer": "perf-present-state",
       "why": "Perfect active indicative, 3rd singular, παρίστημι. ἕστηκα and its compounds mean ‘stand’: perfect form, present meaning — present state. Compare the pluperfect παρειστήκεισαν in Acts 1:10.",
@@ -12121,7 +12121,7 @@
       "prompt": "Tychicus … whom I am sending to you",
       "greek": "Τύχικος … ὃν *ἔπεμψα* πρὸς ὑμᾶς (Col 4:7–8)",
       "english": "Tychicus … whom I am sending to you",
-      "ref": "ch. 7 tense-forms practice 3",
+      "ref": "ch. 8 practice 3",
       "target": "ἔπεμψα",
       "answer": "aor-epistolary",
       "why": "Aorist active indicative, 1st singular, πέμπω. Tychicus is carrying the letter: by the time they read it he has been sent — epistolary, translated ‘I am sending’.",
@@ -12131,7 +12131,7 @@
       "prompt": "No one has ever seen God",
       "greek": "θεὸν οὐδεὶς πώποτε *τεθέαται* (1 John 4:12)",
       "english": "No one has ever seen God",
-      "ref": "ch. 7 tense-forms practice 4",
+      "ref": "ch. 8 practice 4",
       "target": "τεθέαται",
       "answer": "perf-consummative",
       "why": "Perfect middle indicative, 3rd singular, θεάομαι. With πώποτε, ‘ever’, the stress is on the act never having happened — consummative, ‘has ever seen’. Arguable: intensive (no one stands as having seen him) is a fair reading.",
@@ -12141,7 +12141,7 @@
       "prompt": "and they came to life and reigned with Christ for a thousand years",
       "greek": "καὶ *ἔζησαν* καὶ ἐβασίλευσαν μετὰ τοῦ Χριστοῦ χίλια ἔτη (Rev 20:4)",
       "english": "and they came to life and reigned with Christ for a thousand years",
-      "ref": "ch. 7 tense-forms practice 5a",
+      "ref": "ch. 8 practice 5a",
       "target": "ἔζησαν",
       "answer": "aor-inceptive",
       "why": "Aorist active indicative, 3rd plural, ζάω. A verb of state in the aorist marking its start: they came to life — inceptive. (Constative ‘they lived’ is possible, but 20:5 speaks of the rest not coming to life.)",
@@ -12151,7 +12151,7 @@
       "prompt": "and they came to life and reigned with Christ for a thousand years",
       "greek": "καὶ ἔζησαν καὶ *ἐβασίλευσαν* μετὰ τοῦ Χριστοῦ χίλια ἔτη (Rev 20:4)",
       "english": "and they came to life and reigned with Christ for a thousand years",
-      "ref": "ch. 7 tense-forms practice 5b",
+      "ref": "ch. 8 practice 5b",
       "target": "ἐβασίλευσαν",
       "answer": "aor-constative",
       "why": "Aorist active indicative, 3rd plural, βασιλεύω. A thousand years of reigning in one aorist — the whole stretch seen at once, like Rom 5:14: constative.",
@@ -12161,7 +12161,7 @@
       "prompt": "many false prophets have gone out into the world",
       "greek": "πολλοὶ ψευδοπροφῆται *ἐξεληλύθασιν* εἰς τὸν κόσμον (1 John 4:1)",
       "english": "many false prophets have gone out into the world",
-      "ref": "ch. 7 tense-forms practice 6",
+      "ref": "ch. 8 practice 6",
       "target": "ἐξεληλύθασιν",
       "answer": "perf-intensive",
       "why": "Perfect active indicative, 3rd plural, ἐξέρχομαι. The point is the situation now: they are out there, which is why the readers must test the spirits — intensive. Arguable: consummative (‘have gone out’) is also read.",
@@ -12171,7 +12171,7 @@
       "prompt": "behold, his mother and his brothers were standing outside",
       "greek": "ἰδοὺ ἡ μήτηρ καὶ οἱ ἀδελφοὶ αὐτοῦ *εἱστήκεισαν* ἔξω (Matt 12:46)",
       "english": "behold, his mother and his brothers were standing outside",
-      "ref": "ch. 7 tense-forms practice 7",
+      "ref": "ch. 8 practice 7",
       "target": "εἱστήκεισαν",
       "answer": "plupf-past-state",
       "why": "Pluperfect active indicative, 3rd plural, ἵστημι. ἕστηκα means ‘stand’, so its pluperfect is a simple past state — ‘were standing’, with no earlier act in view. The same as Acts 1:10.",
@@ -12181,7 +12181,7 @@
       "prompt": "A wife is bound as long as her husband lives",
       "greek": "γυνὴ *δέδεται* ἐφ᾿ ὅσον χρόνον ζῇ ὁ ἀνὴρ αὐτῆς (1 Cor 7:39)",
       "english": "A wife is bound as long as her husband lives",
-      "ref": "ch. 7 tense-forms practice 8",
+      "ref": "ch. 8 practice 8",
       "target": "δέδεται",
       "answer": "perf-gnomic",
       "why": "Perfect passive indicative, 3rd singular, δέω. A rule true of any wife — gnomic. Arguable: intensive (she stands bound) is close.",
@@ -12191,7 +12191,7 @@
       "prompt": "Mary called Magdalene, from whom seven demons had gone out",
       "greek": "Μαρία ἡ καλουμένη Μαγδαληνή, ἀφ᾿ ἧς δαιμόνια ἑπτὰ *ἐξεληλύθει* (Luke 8:2)",
       "english": "Mary called Magdalene, from whom seven demons had gone out",
-      "ref": "ch. 7 tense-forms practice 9",
+      "ref": "ch. 8 practice 9",
       "target": "ἐξεληλύθει",
       "answer": "plupf-consummative",
       "why": "Pluperfect active indicative, 3rd singular, ἐξέρχομαι. Before the story, the demons had already gone out of her: the completion of a past action — consummative. Arguable: intensive (she was a woman set free) is possible.",
