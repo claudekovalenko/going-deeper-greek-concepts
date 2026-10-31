@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # main, and the branch the site has actually been published from, so every
+    # push goes live without anyone running the workflow by hand.
+    branches: [main, claude/greek-nominative-accusative-mnemonics-bfjr98]
   # Lets you publish from whatever branch you are standing on, before anything
   # has been merged: Actions tab -> Deploy to GitHub Pages -> Run workflow.
   workflow_dispatch:

@@ -7,11 +7,12 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v40 · 2026-10-31';
+const BUILD = 'v41 · 2026-10-31';
 
-// Chapters whose sets get the red flag on the cheat sheet, e.g. [12]. Empty
-// means no flag at all; each set still shows its plain chapter chip.
-const FLAGGED_CHAPTERS = [];
+// Chapters whose sets get the red flag on the cheat sheet. null means the
+// newest chapter — the one with the latest classDate — so a chapter added to
+// the data takes the flag by itself. Set e.g. [6] to pin it, or [] for none.
+const FLAGGED_CHAPTERS = null;
 
 // Where the "back to homework" link points. The seminary app links here; this
 // links back, so the two feel like two rooms rather than two buildings.
@@ -454,14 +455,18 @@ function cheatSheet() {
   const hasCards = (g) => DATA.cards.some((c) => c.group === g.id && c.type !== 'rule');
   const pegs = DATA.sets.reduce((n, s) => n + s.groups.filter(hasCards).length, 0);
 
-  // Each set's chapter, read off its cards' ch-N tags. Chapters listed in
-  // FLAGGED_CHAPTERS get a flag so their sets stand out from the ones already
-  // learned; none are flagged right now.
+  // Each set's chapter, read off its cards' ch-N tags. The flagged chapters
+  // (see FLAGGED_CHAPTERS) stand out from the ones already learned.
   const chapterOf = (set) => {
     const tag = DATA.cards.find((c) => c.set === set.id && (c.tags || []).some((t) => /^ch-\d+$/.test(t)));
     return tag ? Number(tag.tags.find((t) => /^ch-\d+$/.test(t)).slice(3)) : null;
   };
-  const flagged = (set) => FLAGGED_CHAPTERS.includes(chapterOf(set));
+  const newest = [...DATA.sets]
+    .filter((s) => s.classDate && chapterOf(s) != null)
+    .sort((a, b) => parseDay(a.classDate) - parseDay(b.classDate))
+    .pop();
+  const flaggedChapters = FLAGGED_CHAPTERS ?? (newest ? [chapterOf(newest)] : []);
+  const flagged = (set) => flaggedChapters.includes(chapterOf(set));
   const chTag = (set) => {
     const n = chapterOf(set);
     if (n == null) return '';
@@ -470,7 +475,7 @@ function cheatSheet() {
       : `<span class="ch-flag">ch. ${n}</span>`;
   };
   const flaggedSets = DATA.sets.filter(flagged);
-  const legend = FLAGGED_CHAPTERS.filter((n) => flaggedSets.some((s) => chapterOf(s) === n))
+  const legend = flaggedChapters.filter((n) => flaggedSets.some((s) => chapterOf(s) === n))
     .map((n) => {
       const names = flaggedSets.filter((s) => chapterOf(s) === n).map((s) => s.name.toLowerCase());
       return `<p class="ch-legend">🚩 <b>ch. ${n}</b> — ${esc(names.join(', '))}</p>`;
