@@ -1,5 +1,5 @@
 /**
- * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–8 and 12.
+ * Greek Cases — mnemonics and drills for Going Deeper with NT Greek, ch. 2–9 and 12.
  *
  * Deliberately one file. The sibling app (seminary-homework-2026) learned the
  * hard way that a module graph behind a service worker can serve a fresh page
@@ -7,7 +7,7 @@
  * whole app at once and there is nothing to bundle.
  */
 
-const BUILD = 'v41 · 2026-10-31';
+const BUILD = 'v42 · 2026-11-11';
 
 // Chapters whose sets get the red flag on the cheat sheet. null means the
 // newest chapter — the one with the latest classDate — so a chapter added to
@@ -1289,7 +1289,7 @@ function viewTest(arg) {
       <section class="card">
         <h2>Test — ${esc(filterLabel())}</h2>
         ${filterChips('test')}
-        <p class="note">${pool.length} questions, each one asked once, in a shuffled order. You get a mark at the end
+        <p class="note">${pool.length} question${pool.length === 1 ? '' : 's'}, each one asked once, in a shuffled order. You get a mark at the end
            and a list of what you missed.</p>
         <p class="note">These are the chapters' own practice exercises. The book sets them without printing answers,
            so the answers here are reasoned — worth checking in class.</p>

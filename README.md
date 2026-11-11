@@ -1,9 +1,9 @@
-# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–8 and 12
+# Greek Cases — mnemonics for *Going Deeper with New Testament Greek*, ch. 2–9 and 12
 
 A small offline-first PWA for getting the five cases, the **article**, the
-**adjective**, the **verb**, ch. 7's **verbal aspect**, ch. 8's **aorist, perfect and pluperfect**, and ch. 12's **little words** — pronouns,
+**adjective**, the **verb**, ch. 7's **verbal aspect**, ch. 8's **present, imperfect and future**, ch. 9's **aorist, perfect and pluperfect**, and ch. 12's **little words** — pronouns,
 prepositions, conjunctions, adverbs, particles — into your head and keeping them
-there. 207 cards,
+there. 225 cards,
 each opening with its peg — the acrostic with this card's slot lit — then a
 plain-words paragraph anyone could follow, then the bare pattern of the
 construction, then a test you can run on a text, and the Greek examples.
@@ -13,10 +13,10 @@ is due, this one drills the thing itself. Each links to the other.
 
 [hw]: https://github.com/claudekovalenko/seminary-homework-2026
 
-## The whole app in twenty-one words
+## The whole app in twenty-four words
 
 > **Names · Calls · Fences · Describes · Gives · Points · Colours · Answers ·
-> Aims · Frames · Times · Views · Finishes · Orders · Snaps · Stands ·
+> Aims · Frames · Times · Views · Finishes · Orders · Runs · Ran · Foretells · Snaps · Stands ·
 > Replaces · Positions · Joins · Modifies · Cries**
 
 | | | |
@@ -35,8 +35,11 @@ is due, this one drills the thing itself. Each links to the other.
 | Aspect | views the action as ongoing, whole, or a state | ch. 7 |
 | Telic & Atelic | says whether the verb has a built-in finish | ch. 7 |
 | Interpreting Imperatives | explains why a command is aorist or present | ch. 7 |
-| Aorist Indicative | snaps the event whole — or something not past at all | ch. 8 |
-| Perfect & Pluperfect | says the result still stands, now or then | ch. 8 |
+| Present Indicative | runs the action live, or lends it to past and future | ch. 8 |
+| Imperfect Indicative | runs it in the past — going on, starting, repeated, tried | ch. 8 |
+| Future Indicative | foretells — or commands, asks, states a rule, carries on | ch. 8 |
+| Aorist Indicative | snaps the event whole — or something not past at all | ch. 9 |
+| Perfect & Pluperfect | says the result still stands, now or then | ch. 9 |
 | Pronoun | stands in for a noun | ch. 12 |
 | Preposition | places one thing against another | ch. 12 |
 | Conjunction | joins words, clauses and sentences | ch. 12 |
@@ -191,7 +194,16 @@ imperative factors, so the examples on those cards are mine: standard NT
 illustrations, not the book's. The book's glosses on John 20:27 call ἴδε, φέρε
 and βάλε middle; the forms are active, and the practice answers say so.
 
-**Aorist, perfect and pluperfect — ch. 8**
+**Present, imperfect and future — ch. 8**
+
+| | |
+|---|---|
+| Present — really going on | **Now · Since · Often · Always** — progressive, durative, iterative, gnomic |
+| Present — lent out | **Said · Then · Trying · Will · Have** — instantaneous, historical, tendential, futuristic, perfective |
+| Imperfect | **Was · Began · Kept · Tried** — progressive, inceptive, iterative, tendential |
+| Future | **Will · Shall · How? · Always · Still** — predictive, imperatival, deliberative, gnomic, progressive |
+
+**Aorist, perfect and pluperfect — ch. 9**
 
 | | |
 |---|---|
@@ -238,12 +250,12 @@ as 4:2) and the τῷ νῦν καιρῷ of Rom 3:26 (printed as 3:25).
   one street — the Spa, the Doorstep, the Fenced Yard, Swamp Road, the Harbour,
   the Signpost, the Paint Shop, the Roll Call, the Recording Booth, the Weather
   Station, the Clock Tower, the Camera Shop, the Racetrack, the Parade Ground,
-  the Gallery, the Monument, the Theatre, the Bridge, the Junction, the Toolbox,
+  the Broadcast Studio, the Video Archive, the Observatory, the Gallery, the Monument, the Theatre, the Bridge, the Junction, the Toolbox,
   the Town Crier — and the board at the top shows every stop with every
-  object standing in it, all 207 at once. Walk into a stop and each group has its
+  object standing in it, all 225 at once. Walk into a stop and each group has its
   own scene. Nothing is drawn by hand: the stops come from `sets` and the objects
   from `cards`, so a new chapter adds itself. `#/picture`, `#/picture/dative`.
-- **Map** — the acrostics as tappable tiles, plus the 59 confusion pairs
+- **Map** — the acrostics as tappable tiles, plus the 67 confusion pairs
   that account for nearly every wrong answer.
 - **Learn** — every card, easiest tier first, hardest-first being exactly wrong.
   It opens with the **peg**: the whole key with this card's slot lit and the
@@ -478,8 +490,8 @@ and translation.
 The chapters set practice exercises but print no answers. Where an item is
 unambiguous it is in the quiz with a reasoned answer and a visible caveat: the
 app says on screen that the answer is reasoned rather than the book's, and worth
-checking in class. Seventy-one items are in — ch. 3's four, ch. 4's thirteen,
-ch. 6's thirteen, ch. 7's twenty-two, ch. 8's eleven and ch. 12's eight — covering the ones whose category the
+checking in class. Seventy-three items are in — ch. 3's four, ch. 4's thirteen,
+ch. 6's thirteen, ch. 7's twenty-two, ch. 8's two, ch. 9's eleven and ch. 12's eight — covering the ones whose category the
 chapters' own charts settle.
 **Spot it → Take the book's practice test** runs them as a test.
 
@@ -514,12 +526,16 @@ others a telic verb on a specific occasion. ἐνδύσασθε in Col 3:12 is t
 aorist that is not the default: it is in a letter, where the present is
 expected. Only the exercises on the pages this was built from are in.
 
-Ch. 8's nine exercises — parse each verb and name its use — make eleven questions
+Ch. 9's nine exercises — parse each verb and name its use — make eleven questions
 (John 15:6 and 15:8, and Rev 20:4, each give two). Six are flagged arguable on the
 card, because the chart's categories genuinely overlap there: ἐβλήθη and
 ἐδοξάσθη (gnomic, or futuristic), τεθέαται (consummative, or intensive),
 ἐξεληλύθασιν (intensive, or consummative), δέδεται (gnomic, or intensive) and
 ἐξεληλύθει (consummative, or intensive).
+
+Ch. 8's exercises are in as far as the pages went: Matt 26:63 ἐσιώπα
+(progressive imperfect, flagged arguable against iterative) and Mark 1:12
+ἐκβάλλει (historical present).
 
 ## A note on one of ch. 3's practice exercises
 
